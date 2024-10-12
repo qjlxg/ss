@@ -1,18 +1,18 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  country: JP
-  name: 12,61,103,133,449,634,655,1058,1300,1322,1537|🇯🇵 日本【付费推荐：https://a0a.xyz】43
+  name: 12,103,133,449,634,655,1058,1300,1322,1537|🇯🇵 日本【付费推荐：https://a0a.xyz】43
   password: '!!str 1234'
   port: 1234
   server: 54.248.54.190
   tfo: false
   type: ss
-- cipher: aes-256-cfb
+- alterId: -1
+  cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: US
-  name: '12,61,103,133,449,546,570,634,655,1058,1183,1207,1300,1322|🇯🇵 日本特殊|@ripaojiedian
-    #3'
+  country: 🇺🇸US
+  name: '12,63,103,133,218,230,372,449,546,570,634,655,981,1058,1183,1207,1300,1322|🇯🇵
+    日本特殊|@ripaojiedian #3'
   password: amazonskr05
   port: 443
   server: 43.201.82.24
@@ -20,8 +20,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: ' JP'
-  name: '57,58,59,102,103,132,133,224,231,240,275,283,309,311,365,396,427,429,503,544,546,547,548,553,556,557,558,561,565,568,570,629,647,755,764,769,783,829,838,877,885,910,911,914,971,1007,1036,1038,1126,1164,1181,1183,1184,1185,1190,1193,1194,1195,1198,1202,1205,1206,1207,1216,1248,1291,1314,1435,1436,1450,1455,1469|8J%2BHr%2FCfh7VKUC0zLjExMy4xMS...
-    #32'
+  name: '57,58,59,102,103,132,133,240,275,283,309,311,365,396,427,429,503,544,546,547,548,553,556,557,558,561,565,568,569,570,629,647,755,764,769,783,829,838,877,885,910,911,914,971,1007,1036,1038,1126,1164,1181,1182,1183,1184,1185,1190,1193,1194,1195,1198,1202,1205,1206,1207,1216,1291,1314,1435,1436,1450,1455,1469|8J%2BHr%2FCfh7VKUC0zLjExMy4xMS...
+    #34'
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
@@ -31,42 +31,56 @@ proxies:
   server: jp-am48-6.eqnode.net
   type: ssr
   udp: true
-- alterId: 1
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: '57,58,224,227,605,1267|🇯🇵_JP_日本 #21'
-  network: tcp
-  port: 21585
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 0
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 59|ChatGPT  JP_257
+  name: 57|Relay_ JP-JP_485
   network: ws
   port: 443
-  server: tls.85.node-for-bigairport.win
-  servername: tls.85.node-for-bigairport.win
+  server: tls.84.node-for-bigairport.win
+  servername: tls.84.node-for-bigairport.win
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-headers:
-    HOST: tls.85.node-for-bigairport.win
-  ws-path: /
+  ws-opts:
+    headers:
+      HOST: tls.84.node-for-bigairport.win
+    path: /
+- alterId: 1
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: '57,58,59,227,605,1267|🇯🇵_JP_日本 #18'
+  network: tcp
+  port: 21585
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+- alterId: 1
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: '57,58,59,227,605,1267|🇯🇵_JP_日本 #20'
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: '59,62,102,132,198,219,230,290,309,322,326,327,465,466,467,468,521,536,539,540,541,611,750,779,822,826,891,911,927,932,933,987,1074,1075,1076,1077,1118,1145,1173,1176,1177,1178,1250,1273,1423,1465,1511,1515|日本_1012002
+  name: '59,62,63,102,132,198,219,230,290,309,322,326,327,465,466,467,468,521,536,539,540,541,611,750,779,822,826,891,911,927,932,933,987,1074,1075,1076,1077,1118,1145,1173,1176,1177,1178,1273,1423,1465,1511,1515|日本_1012002
     #3'
   network: tcp
   port: '1069'
@@ -94,48 +108,60 @@ proxies:
     path: /stream
 - alterId: -1
   cipher: aes-256-cfb
+  country: 🇨🇳CN
   delay: 284
-  name: 61,218,372,497,498,981,1108,1109,1525|JP_Chūōchō_Datacamp Limited
+  name: 61,62,63,218,219,230,372,497,498,981,1108,1109,1525|JP_Chūōchō_Datacamp Limited
   password: JpTYrOJnIhNMXqli
   port: 23801
   server: 221.181.185.71
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '61,102,103,132,133,275,286,389,414,427,432,503,544,546,547,548,555,556,557,558,561,567,568,570,783,822,877,888,1000,1023,1036,1041,1126,1181,1183,1184,1185,1192,1193,1194,1195,1198,1204,1205,1206,1207,1250,1469,1511|未知_1012247
-    #1'
-  network: ws
-  port: '80'
-  server: anycast.cf.030419.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
-  ws-opts:
-    headers:
-      Host: jp.ggbycf.ggff.net
-    path: /rongseven?ed=2048
-- cipher: aes-256-cfb
-  country: JP
-  name: 61,207|SlAt5pel5pysLeS4nOS6rC0yNTAtdG...
-  obfs: plain
-  obfs-param: ''
-  password: www.xbvpn.com
-  port: '443'
-  protocol: origin
-  server: 45.67.53.250
-  type: ssr
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: '62,63,218,219,230,372,981|TG😈github.com/Ruk1ng001_245209... #1'
+  password: amazonskr05
+  port: 443
+  server: 18.183.222.13
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇵JP
+  name: '62,63,218,219,230,372,981|TG😈github.com/Ruk1ng001_418019... #1'
+  password: amazonskr05
+  port: 443
+  server: 13.115.231.230
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇵JP
+  name: '62,218,219,230,372,981|TG😈github.com/Ruk1ng001_273300... #1'
+  password: amazonskr05
+  port: 443
+  server: 3.113.6.44
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇵JP
+  name: '62,63,218,219,230,372,981|TG😈github.com/Ruk1ng001_177038... #1'
+  password: amazonskr05
+  port: 443
+  server: 54.238.98.72
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: '62,63,219,230,372,981|TG😈github.com/Ruk1ng001_272912... #1'
+  password: amazonskr05
+  port: 443
+  server: 54.178.150.106
+  type: ss
 - alterId: 64
   cipher: auto
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: '62,102,132,254,326,327,398,536,583,611,750,776,855,932,933,1009,1173,1244,1250,1273,1423,1462|PP|TG频道内随机时间更新订阅地址
+  name: '62,102,132,254,326,327,398,536,583,611,750,776,855,932,933,1009,1173,1244,1273,1423,1462|PP|TG频道内随机时间更新订阅地址
     #78'
   network: tcp
   port: 24445
@@ -281,7 +307,7 @@ proxies:
   ws-path: /chat
 - alterId: 0
   cipher: auto
-  name: '82,102,103,132,133,503,544,546,549,555,556,561,567,568,570,822,1126,1181,1183,1186,1192,1193,1198,1204,1205,1206,1207,1250,1511|美国_1012210
+  name: '82,102,103,132,133,503,544,546,549,555,556,561,567,568,569,570,822,1126,1181,1182,1183,1186,1192,1193,1198,1204,1205,1206,1207,1511|美国_1012210
     #1'
   network: ws
   port: '443'
@@ -297,7 +323,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '87,102,132,366,448,449,450,633,634,635,656,972,1057,1058,1059,1250,1299,1300,1301,1323|日本3|@ripaojiedian
+  name: '87,102,132,366,448,449,450,633,634,635,656,972,1057,1058,1059,1299,1300,1301,1323|日本3|@ripaojiedian
     #3'
   network: tcp
   port: '36328'
@@ -308,7 +334,7 @@ proxies:
   uuid: 15c2d96f-e859-4375-9780-0e1975a050a7
 - alterId: 0
   cipher: auto
-  name: '96,275,286,389,427,432,503,544,546,547,548,555,556,557,558,561,567,568,570,783,809,822,877,888,1000,1036,1041,1126,1181,1183,1184,1185,1192,1193,1194,1195,1198,1204,1205,1206,1207,1469,1496,1511|美国_1012319
+  name: '96,275,286,389,427,432,503,544,546,547,548,555,556,557,558,561,567,568,569,570,783,809,822,877,888,1000,1036,1041,1126,1181,1182,1183,1184,1185,1192,1193,1194,1195,1198,1204,1205,1206,1207,1469,1496,1511|美国_1012319
     #1'
   network: ws
   port: '80'
@@ -324,8 +350,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '96,231,275,286,389,427,432,461,503,544,547,548,555,556,557,558,561,567,568,783,829,877,888,1000,1036,1041,1070,1126,1181,1184,1185,1192,1193,1194,1195,1198,1204,1205,1206,1250,1469|🇯🇵JP-172.234.94.163-2724
-    #34'
+  name: '96,275,286,389,427,432,461,503,544,547,548,555,556,557,558,561,567,568,569,783,829,877,888,1000,1036,1041,1070,1126,1181,1182,1184,1185,1192,1193,1194,1195,1198,1204,1205,1206,1469,1534|🇯🇵JP-172.234.94.163-2724
+    #37'
   network: ws
   port: 443
   server: 172.234.94.163
@@ -351,7 +377,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 190,383,427,432,435,584,585,586,994,1036,1041,1044,1245,1246,1247,1250|4Jadi-9938
+  name: '190,383,427,432,435,584,585,586,994,1036,1041,1044,1245,1246,1247|🇺🇸 美国(油管:破解资源君2.0)
+    #367'
   network: tcp
   port: '55555'
   server: 152.69.195.171
@@ -430,7 +457,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 193,396,397,503,544,546,555,556,561,567,568,570,1007,1008,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9581
+  name: '193,396,397,503,544,546,555,556,561,567,568,569,570,1007,1008,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-138.2.39.67-2628
+    #3'
   network: ws
   port: 80
   server: 138.2.39.67
@@ -440,8 +468,6 @@ proxies:
   type: vmess
   uuid: ab335c88-d14a-4e67-b52c-54ed8be80c49
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: '0'
   cipher: auto
@@ -484,8 +510,8 @@ proxies:
   blackListed: false
   cipher: auto
   country: JP
-  name: "193,326,327,365,395,396,503,530,536,544,546,555,556,561,567,568,570,750,764,769,809,932,933,971,1006,1007,1126,1154,1173,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1423,1450,1455,1496|@Vip_Security\
-    \ join us - 230\n #1"
+  name: "193,326,327,365,395,396,503,530,536,544,546,555,556,561,567,568,569,570,750,764,769,809,932,933,971,1006,1007,1126,1154,1173,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1423,1450,1455,1496|@Vip_Security\
+    \ join us - 232\n #1"
   network: ws
   ping: 1736
   port: '12345'
@@ -501,6 +527,23 @@ proxies:
     headers:
       Host: ''
     path: /bb
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 218|Relay_🏁ZZ-JP_678 | 9.91Mb
+  network: ws
+  port: 2086
+  server: aqerdsf_cdn.hfhfb.homes
+  servername: rbcdn2.fask511.cfd
+  skip-cert-verify: true
+  type: vmess
+  uuid: 54895917-9761-487f-b949-1476bf8193ea
+  ws-opts:
+    headers:
+      HOST: rbcdn2.fask511.cfd
+    path: /?ed=512
 - name: '254,855|🇯🇵JP(AzadNet.t.me)_003 #1'
   network: tcp
   password: 18844@zxcvbn
@@ -519,7 +562,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '255,291,365,394,398,776,856,892,971,1005,1009,1250,1462|PP|@Zyw_Channel #71'
+  name: '255,291,365,394,398,776,856,892,971,1005,1009,1462|PP|@Zyw_Channel #71'
   network: ws
   port: 41597
   server: 183.181.36.194
@@ -535,7 +578,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '265,503,544,546,555,556,561,567,568,570,598,866,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1260|0.55|JPhttpsawkjcfky
+  name: '265,503,544,546,555,556,561,567,568,569,570,598,866,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1260|0.55|JPhttpsawkjcfky
     注册体验流媒体机场... #1'
   network: ws
   port: 443
@@ -579,7 +622,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 309,503,544,546,555,556,561,567,568,570,911,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-10111
+  name: '309,503,544,546,555,556,561,567,568,569,570,911,1126,1181,1182,1183,1192,1193,1198,1204,1205,1207|🇵JP-172.105.223.136-5574
+    #3'
   network: ws
   port: 443
   server: 172.105.223.136
@@ -961,7 +1005,7 @@ proxies:
   uuid: d9a7c529-f98b-429b-eb26-c90979c910a3
 - alterId: 0
   cipher: auto
-  name: '322,398,776,927,1009,1250,1462|PP|tg频道:@Zyw_Channel #37'
+  name: '322,398,776,927,1009,1462|PP|tg频道:@Zyw_Channel #37'
   network: tcp
   port: 49499
   server: 139.162.125.97
@@ -1004,7 +1048,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: '322,398,536,539,540,541,776,927,1009,1118,1173,1176,1177,1178,1226,1227,1250,1462|PP|TG频道内随机时间更新订阅地址
+  name: '322,398,536,539,540,541,776,927,1009,1118,1173,1176,1177,1178,1226,1227,1462|PP|TG频道内随机时间更新订阅地址
     #98'
   network: tcp
   port: 20081
@@ -1321,7 +1365,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '330,503,536,544,546,555,556,561,567,568,570,669,775,936,1126,1173,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1336,1461|github.com/freefq
+  name: '330,503,536,544,546,555,556,561,567,568,569,570,669,775,936,1126,1173,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1336,1461|github.com/freefq
     - 日本  48 #3'
   network: ws
   port: 27675
@@ -1757,51 +1801,6 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #17'
-  network: tcp
-  port: '21583'
-  server: 8ol9z-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #14'
-  network: tcp
-  port: '21583'
-  server: xma74-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #18'
-  network: tcp
-  port: '28785'
-  server: 0q4oh-g03.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Hs|0720|TG@FProxies| #2'
-  network: tcp
-  port: '21583'
-  server: 8jwbv-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #15'
-  network: tcp
-  port: '5061'
-  server: ru-1.dugusite3.top
-  tls: true
-  type: vmess
-  uuid: c4bbf34b-a7ec-3d6e-9c77-f6efb7472e88
-- alterId: 1
-  cipher: auto
   name: '366,972|>🇯🇵 JP|Hs|0816|TG@FProxies| #2'
   network: tcp
   port: '21586'
@@ -1809,89 +1808,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #4'
-  network: ws
-  port: '443'
-  server: tls.85.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.85.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #33'
-  network: tcp
-  port: '5061'
-  server: jp-1.dugusite3.top
-  tls: true
-  type: vmess
-  uuid: a9cbe1e7-e273-3b9c-810c-757b2823eb05
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #15'
-  network: ws
-  port: '30100'
-  server: entrance3-100.jjsagcajvv.xyz
-  tls: false
-  type: vmess
-  uuid: cbfb021c-8816-3e57-b6f5-b531b062ce1a
-  ws-opts:
-    headers:
-      Host: entrance3-100.jjsagcajvv.xyz
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '366,972|>🇸🇬 SG|Ns|0914|TG@FProxies| #5'
-  network: ws
-  port: '23617'
-  server: 17.v2-ray.cyou
-  tls: false
-  type: vmess
-  uuid: 85158984-aa17-343d-8ef0-a4c74fec4ce6
-  ws-opts:
-    headers:
-      Host: 17.v2-ray.cyou
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #16'
-  network: ws
-  port: '443'
-  server: tls.87.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.87.node-for-bigairport.win
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #10'
-  network: tcp
-  port: '21586'
-  server: chqgb-g06.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
-- alterId: 0
-  cipher: auto
-  name: '366,972|🇯🇵 日本01-联通-Vmess #1'
-  network: ws
-  port: '8080'
-  server: cfd.ipa.monster
-  tls: false
-  type: vmess
-  uuid: e03ce527-eb73-4ad3-9c88-966def39ae95
-  ws-opts:
-    headers:
-      Host: jp01vm.mypokeworld.link
-    path: /52pokemon?ed=2560
 - alterId: 64
   cipher: auto
   name: '366,972|>🇯🇵 JP|Ms|0914|TG@FProxies| #2'
@@ -1905,55 +1821,19 @@ proxies:
     headers:
       Host: ''
     path: /path/073308302711
-- alterId: 2
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #11'
-  network: tcp
-  port: '10010'
-  server: abc.airtcp12.top
-  tls: false
-  type: vmess
-  uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
 - alterId: 0
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #4'
-  network: tcp
-  port: '35218'
-  server: dzgz.tcity8.monster
-  tls: false
-  type: vmess
-  uuid: 740ba9a4-5de5-4422-a4e7-02b3dee80906
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #5'
-  network: tcp
-  port: '28785'
-  server: 88da6-g03.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #17'
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #14'
   network: ws
   port: '443'
-  server: tls.91.node-for-bigairport.win
+  server: tls.84.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-opts:
     headers:
-      Host: tls.91.node-for-bigairport.win
+      Host: tls.84.node-for-bigairport.win
     path: /
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Hs|0720|TG@FProxies| #3'
-  network: tcp
-  port: '19831'
-  server: xgcma.dx002.top
-  tls: false
-  type: vmess
-  uuid: f7ff1a87-5737-3adf-b518-87935ac26132
 - alterId: 0
   cipher: auto
   name: '366,972|>🇯🇵 JP|Hs|0816|TG@FProxies| #3'
@@ -1969,100 +1849,16 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #21'
-  network: tcp
-  port: '46484'
-  server: 042jl-g03.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #18'
-  network: ws
-  port: '443'
-  server: tls.99.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.99.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #19'
-  network: ws
-  port: '443'
-  server: tls.93.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.93.node-for-bigairport.win
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #24'
+  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #4'
   network: tcp
   port: '21583'
-  server: wo4pd-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #25'
-  network: tcp
-  port: '46484'
-  server: h4tan-g03.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #3'
-  network: tcp
-  port: '21586'
-  server: cjdxy-g06.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #6'
-  network: tcp
-  port: '45057'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 084e0a6d-c450-485c-86db-f75ffa7aa3d3
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #26'
-  network: tcp
-  port: '21583'
-  server: vitsv-g03.jp03-7d22-vm0.entry.fr0307a.art
+  server: 380e0-g03.jp01-0986-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: 0
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #20'
-  network: ws
-  port: '443'
-  server: tls.84.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.84.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0816|TG@FProxies| #6'
+  name: '366,972|>🇯🇵 JP|Ls|0816|TG@FProxies| #4'
   network: ws
   port: '30041'
   server: entrance2-41.jjsagcajvv.xyz
@@ -2075,26 +1871,136 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #13'
+  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #8'
   network: tcp
   port: '10009'
   server: cnah2.lanyunshi.top
   tls: false
   type: vmess
   uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #21'
+  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #5'
   network: ws
   port: '443'
-  server: tls.86.node-for-bigairport.win
+  server: 137.220.130.39
+  tls: true
+  type: vmess
+  uuid: 78e1c35c-7f45-4998-b45a-578cef59a5cf
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/073308302711
+- alterId: 64
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #9'
+  network: ws
+  port: '30000'
+  server: 107.148.0.244
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/073308302711
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #33'
+  network: tcp
+  port: '5061'
+  server: jp-1.dugusite3.top
+  tls: true
+  type: vmess
+  uuid: 71aa9464-810b-3a2a-98ab-fc3b6a53b9f4
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #18'
+  network: tcp
+  port: '21583'
+  server: vitsv-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #15'
+  network: ws
+  port: '443'
+  server: tls.82.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-opts:
     headers:
-      Host: tls.86.node-for-bigairport.win
+      Host: tls.82.node-for-bigairport.win
     path: /
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #19'
+  network: tcp
+  port: '21583'
+  server: 8ol9z-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #16'
+  network: ws
+  port: '443'
+  server: tls.91.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.91.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #17'
+  network: ws
+  port: '443'
+  server: tls.96.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.96.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #4'
+  network: tcp
+  port: '52117'
+  server: i.needss.top
+  tls: false
+  type: vmess
+  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #18'
+  network: ws
+  port: '443'
+  server: tls.97.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.97.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #5'
+  network: tcp
+  port: '35218'
+  server: dzgz.tcity8.monster
+  tls: false
+  type: vmess
+  uuid: 740ba9a4-5de5-4422-a4e7-02b3dee80906
 - alterId: 0
   cipher: auto
   name: '366,972|🇯🇵 日本01-电信-Vmess #1'
@@ -2110,114 +2016,207 @@ proxies:
     path: /52pokemon?ed=2560
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #27'
+  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #12'
   network: tcp
-  port: '21583'
-  server: 1dos7-g03.jp03-7d22-vm0.entry.fr0307a.art
+  port: '21586'
+  server: chqgb-g06.jp03-7d22-vm0.entry.fr0307a.art
   tls: true
   type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
+  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
+- alterId: 0
+  cipher: auto
+  name: '366,972|🇯🇵 日本01-移动-Vmess #1'
+  network: ws
+  port: '8080'
+  server: cfd.ipa.monster
+  tls: false
+  type: vmess
+  uuid: e03ce527-eb73-4ad3-9c88-966def39ae95
+  ws-opts:
+    headers:
+      Host: jp01vm.mypokeworld.link
+    path: /52pokemon?ed=2560
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #29'
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #21'
   network: tcp
   port: '46484'
   server: 8vndq-g03.jp05-6786-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 1
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #22'
-  network: tcp
-  port: '46484'
-  server: fendj-g03.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #6'
   network: ws
   port: '443'
-  server: 137.220.130.39
-  tls: true
-  type: vmess
-  uuid: 78e1c35c-7f45-4998-b45a-578cef59a5cf
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/073308302711
-- alterId: 64
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #14'
-  network: ws
-  port: '30000'
-  server: 107.148.0.244
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/073308302711
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #23'
-  network: ws
-  port: '443'
-  server: tls.97.node-for-bigairport.win
+  server: tls.85.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-opts:
     headers:
-      Host: tls.97.node-for-bigairport.win
+      Host: tls.85.node-for-bigairport.win
     path: /
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #23'
+  network: tcp
+  port: '21583'
+  server: wo4pd-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #24'
+  network: tcp
+  port: '28785'
+  server: 0q4oh-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: 0
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #7'
-  network: tcp
-  port: '52117'
-  server: i.needss.top
+  name: '366,972|日本Solutions #1'
+  network: ws
+  port: '56379'
+  server: hkzf.xsyysx.top
   tls: false
   type: vmess
-  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #4'
-  network: ws
-  port: '443'
-  server: 68.724064.xyz
-  tls: true
-  type: vmess
-  uuid: c2e87881-7c90-42d3-87a5-3b14767b82ef
+  uuid: 870cc24d-7c45-458c-8104-4c0349369cb9
   ws-opts:
     headers:
-      Host: 68.724064.xyz
-    path: /lpmjvws
-- alterId: 0
-  cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #24'
-  network: ws
-  port: '443'
-  server: tls.96.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.96.node-for-bigairport.win
-    path: /
+      Host: ''
+    path: /xsy123456
 - alterId: 2
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #5'
+  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #3'
   network: tcp
   port: '19901'
   server: cnah2.lanyunshi.top
   tls: false
   type: vmess
   uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #19'
+  network: ws
+  port: '443'
+  server: tls.98.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.98.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #27'
+  network: tcp
+  port: '5061'
+  server: ru-1.dugusite3.top
+  tls: true
+  type: vmess
+  uuid: 3969c42f-4326-39d4-ae58-6a9fb6e5a223
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #20'
+  network: ws
+  port: '443'
+  server: tls.93.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.93.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #21'
+  network: ws
+  port: '443'
+  server: tls.86.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.86.node-for-bigairport.win
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #26'
+  network: tcp
+  port: '46484'
+  server: h4tan-g03.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #22'
+  network: ws
+  port: '443'
+  server: tls.99.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.99.node-for-bigairport.win
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #23'
+  network: tcp
+  port: '46484'
+  server: fendj-g03.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #24'
+  network: tcp
+  port: '30200'
+  server: 54.223.182.189
+  tls: false
+  type: vmess
+  uuid: 2694603d-366f-4e6e-933b-ad4f4e42b6f3
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Hs|0914|TG@FProxies| #7'
+  network: tcp
+  port: '45057'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 5e47e5fe-9b78-4938-bc57-a38c4477b1da
+- alterId: 0
+  cipher: auto
+  name: '366,972|日本NTT #1'
+  network: ws
+  port: '25376'
+  server: hksm.xsyysx.top
+  tls: false
+  type: vmess
+  uuid: 870cc24d-7c45-458c-8104-4c0349369cb9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /xsy123456
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #28'
+  network: tcp
+  port: '21583'
+  server: 1dos7-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: 0
   cipher: auto
   name: '366,972|>🇯🇵 JP|Ls|0914|TG@FProxies| #1'
@@ -2233,107 +2232,193 @@ proxies:
     path: /kljllhsdagf
 - alterId: 0
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #25'
+  name: '366,972|>🇯🇵 JP|Hs|0720|TG@FProxies| #2'
   network: tcp
-  port: '30200'
-  server: 54.223.182.189
+  port: '19831'
+  server: xgcma.dx002.top
   tls: false
   type: vmess
-  uuid: 2694603d-366f-4e6e-933b-ad4f4e42b6f3
+  uuid: f7ff1a87-5737-3adf-b518-87935ac26132
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #7'
+  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #4'
   network: tcp
-  port: '21583'
-  server: 380e0-g03.jp01-0986-vm0.entry.fr0307a.art
+  port: '21586'
+  server: cjdxy-g06.jp03-7d22-vm0.entry.fr0307a.art
   tls: true
   type: vmess
-  uuid: 22acc467-7440-386a-927a-d84be554b37e
+  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
+- alterId: 0
+  cipher: auto
+  name: '366,972|日本GLOBAL #1'
+  network: ws
+  port: '31313'
+  server: hksm.xsyysx.top
+  tls: false
+  type: vmess
+  uuid: 870cc24d-7c45-458c-8104-4c0349369cb9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /xsy123456
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0816|TG@FProxies| #5'
+  network: ws
+  port: '443'
+  server: 68.724064.xyz
+  tls: true
+  type: vmess
+  uuid: c2e87881-7c90-42d3-87a5-3b14767b82ef
+  ws-opts:
+    headers:
+      Host: 68.724064.xyz
+    path: /lpmjvws
+- alterId: 0
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #25'
+  network: ws
+  port: '443'
+  server: tls.87.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.87.node-for-bigairport.win
+    path: /
 - alterId: 1
   cipher: auto
-  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #32'
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #30'
   network: tcp
   port: '28785'
   server: a52rr-g03.jp06-7c5a-vm0.entry.fr0307a.art
   tls: true
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
-- alterId: 0
+- alterId: 1
   cipher: auto
   name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #26'
-  network: ws
-  port: '443'
-  server: tls.98.node-for-bigairport.win
+  network: tcp
+  port: '21583'
+  server: xma74-g03.jp03-7d22-vm0.entry.fr0307a.art
   tls: true
   type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.98.node-for-bigairport.win
-    path: /
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 2
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ms|0816|TG@FProxies| #14'
+  network: tcp
+  port: '10010'
+  server: abc.airtcp12.top
+  tls: false
+  type: vmess
+  uuid: 242eaf22-2c23-3181-a643-5e39bef2e08a
 - alterId: 0
   cipher: auto
   name: '366,972|>🇯🇵 JP|Ns|0720|TG@FProxies| #27'
   network: ws
-  port: '443'
-  server: tls.82.node-for-bigairport.win
-  tls: true
+  port: '30100'
+  server: entrance3-100.jjsagcajvv.xyz
+  tls: false
   type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  uuid: cbfb021c-8816-3e57-b6f5-b531b062ce1a
   ws-opts:
     headers:
-      Host: tls.82.node-for-bigairport.win
+      Host: entrance3-100.jjsagcajvv.xyz
     path: /
-- alterId: -1
-  cipher: aes-256-gcm
-  name: '372,981|JP😈github.com/Ruk1ng001_241040... #1'
-  password: fade2b35-7872-442e-a54e-6ccf9b970476
-  port: 13255
-  server: shanghai.sfrae.net
-  type: ss
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ls|0720|TG@FProxies| #31'
+  network: tcp
+  port: '46484'
+  server: 042jl-g03.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Hs|0720|TG@FProxies| #3'
+  network: tcp
+  port: '21583'
+  server: 8jwbv-g03.jp03-7d22-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 0
+  cipher: auto
+  name: '366,972|日本Churros #1'
+  network: ws
+  port: '30432'
+  server: hksm.xsyysx.top
+  tls: false
+  type: vmess
+  uuid: 870cc24d-7c45-458c-8104-4c0349369cb9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /xsy123456
+- alterId: 1
+  cipher: auto
+  name: '366,972|>🇯🇵 JP|Ms|0720|TG@FProxies| #7'
+  network: tcp
+  port: '28785'
+  server: 88da6-g03.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: true
+  type: vmess
+  uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: -1
   cipher: rc4-md5
   client-fingerprint: chrome
-  name: '372,981|JP😈github.com/Ruk1ng001_180532... #1'
+  name: '372,981|JP😈github.com/Ruk1ng001_192934... #1'
   obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
   password: ENZ52K
-  port: 40202
+  port: 40221
   protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
+  protocol-param: 74592:o4fbeopsgcf
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
+  udp: true
+- alterId: -1
+  cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '372,981|JP😈github.com/Ruk1ng001_246345... #1'
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40257
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 28b09af269781f9b.cdn.jiashule.com
+  type: ssr
+  udp: true
+- alterId: -1
+  cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '372,981|JP😈github.com/Ruk1ng001_259899... #1'
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40201
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
   server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: '372,981|JP😈github.com/Ruk1ng001_230409... #2'
-  network: ws
-  port: 80
-  server: www.Kayak.com
-  servername: bRItISh.ovH.ISVvpn.UK.
-  skip-cert-verify: true
-  type: vmess
-  uuid: 0c32c3dc-e7f3-482c-b3b1-b68fd8cda65a
-  ws-opts:
-    headers:
-      HOST: bRItISh.ovH.ISVvpn.UK.
-    path: /RACEVPN?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
-- alterId: 0
-  cipher: auto
-  name: '373,389,982,1000|🔗 Vauth - 87 #1'
-  network: ws
-  port: '80'
-  server: www.Kayak.com
-  tls: false
-  type: vmess
-  uuid: 0c32c3dc-e7f3-482c-b3b1-b68fd8cda65a
-  ws-opts:
-    headers:
-      Host: bRItISh.ovH.ISVvpn.UK.
-    path: /RACEVPN?telegram-@ISVvpn-telegram-@ISVvpn-telegram-@ISVvpn
+- alterId: -1
+  cipher: rc4-md5
+  client-fingerprint: chrome
+  name: '372,981|JP😈github.com/Ruk1ng001_631076... #1'
+  obfs: plain
+  obfs-param: 8195986416.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40219
+  protocol: auth_aes128_md5
+  protocol-param: 86416:SlZFuy
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
+  udp: true
 - alterId: 0
   cipher: auto
   name: '383,994|92-🇯🇵 日本(油管:破解资源君2.0)-worker #1'
@@ -2350,7 +2435,7 @@ proxies:
     path: /js.adbse.xyz:443/down
 - alterId: 0
   cipher: auto
-  name: "391,743,809,1002,1250,1414,1496|@Vip_Security join us - 541\n #1"
+  name: "391,743,809,1002,1414,1496|@Vip_Security join us - 545\n #1"
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -2394,7 +2479,7 @@ proxies:
   uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
 - alterId: 0
   cipher: auto
-  name: '396,503,536,544,546,555,556,561,567,568,570,611,1007,1126,1173,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1273|کانال
+  name: '396,503,536,544,546,555,556,561,567,568,569,570,611,1007,1126,1173,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1273|کانال
     : @V2rayNGvpni #138'
   network: ws
   port: '1234'
@@ -2567,7 +2652,7 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: '396,503,544,546,555,556,561,567,568,570,822,1007,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1511|日本_1012006
+  name: '396,503,544,546,555,556,561,567,568,569,570,822,1007,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1511|日本_1012006
     #1'
   network: ws
   port: '443'
@@ -2612,7 +2697,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 396,503,544,546,555,556,561,567,568,570,1007,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9583
+  name: '396,503,544,546,555,556,561,567,568,569,570,1007,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-138.2.45.89-2579
+    #3'
   network: ws
   port: 4430
   server: 138.2.45.89
@@ -2622,8 +2708,6 @@ proxies:
   type: vmess
   uuid: 6abfad5a-24be-3657-85da-ceac782b7e19
   ws-opts:
-    headers:
-      Host: ''
     path: /osav101
 - cipher: aes-256-cfb
   name: '396,546,570,1007,1183,1207|🇵JP-54.178.60.213-2607 #3'
@@ -2633,7 +2717,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 396,503,536,544,546,555,556,561,567,568,570,1007,1126,1173,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-11143
+  name: '396,503,536,544,546,555,556,561,567,568,569,570,1007,1126,1173,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-43.128.225.220-2609
+    #3'
   network: ws
   port: 80
   server: 43.128.225.220
@@ -2643,12 +2728,11 @@ proxies:
   type: vmess
   uuid: 03fa8e54-41be-4e3b-b70c-50b3750b5fdc
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 396,503,544,546,555,556,561,567,568,570,1007,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9685
+  name: '396,503,544,546,555,556,561,567,568,569,570,1007,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇯🇵JP-141.147.181.219-2631
+    #3'
   network: ws
   port: 443
   server: 141.147.181.219
@@ -2658,8 +2742,6 @@ proxies:
   type: vmess
   uuid: 0b873cff-11ab-4716-c41a-04f886135091
   ws-opts:
-    headers:
-      Host: ''
     path: /roewesu
 - alterId: 0
   cipher: auto
@@ -2810,7 +2892,7 @@ proxies:
     path: /a79f2127-3ba4-4af8-96d5-2db3a0e186a7
 - alterId: 0
   cipher: auto
-  name: '397,503,544,546,555,556,561,567,568,570,1008,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-140.83.35.62-2674
+  name: '397,503,544,546,555,556,561,567,568,569,570,1008,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-140.83.35.62-2674
     #3'
   network: ws
   port: 443
@@ -3003,7 +3085,7 @@ proxies:
     path: /cctv13.m3u8
 - alterId: 0
   cipher: auto
-  name: '404,503,544,546,555,556,561,567,568,570,1014,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207|🏁RELAY-104.21.89.32-1932
+  name: '404,503,544,546,555,556,561,567,568,569,570,1014,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🏁RELAY-104.21.89.32-1932
     #3'
   network: ws
   port: 80
@@ -3106,7 +3188,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 427,432,435,546,570,584,585,586,1036,1041,1044,1183,1207,1245,1246,1247,1250|4Jadi-10112
+  name: '427,432,435,546,570,584,585,586,1036,1041,1044,1183,1207,1245,1246,1247|🇯🇵
+    日本(油管:破解资源君2.0) #95'
   network: ws
   port: '443'
   server: 172.105.238.164
@@ -3512,7 +3595,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '503,544,546,555,556,561,567,568,570,822,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1511|日本_1012004
+  name: '503,544,546,555,556,561,567,568,569,570,822,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1511|日本_1012004
     #1'
   network: ws
   port: '443'
@@ -3528,7 +3611,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '503,536,544,546,555,556,561,567,568,570,636,676,822,1126,1173,1181,1183,1192,1193,1198,1204,1205,1206,1207,1304,1343,1511|日本_1012005
+  name: '503,536,544,546,555,556,561,567,568,569,570,636,676,822,1126,1173,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1304,1343,1511|日本_1012005
     #1'
   network: ws
   port: '443'
@@ -3544,7 +3627,8 @@ proxies:
     path: /roewesu
 - alterId: 0
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1232,1250|4Jadi-10109
+  name: 503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1232|🇯🇵
+    v2cross.com - 日本东京Linode数据中...
   network: ws
   port: 443
   server: 172.105.219.18
@@ -3554,12 +3638,10 @@ proxies:
   type: vmess
   uuid: 927094d3-d678-4763-8591-e240d0bcae87
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '503,544,546,555,556,561,567,568,570,597,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1259|3.51|JP1391621171731123202246b...
+  name: '503,544,546,555,556,561,567,568,569,570,597,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1259|3.51|JP1391621171731123202246b...
     #1'
   network: ws
   port: 443
@@ -3573,7 +3655,8 @@ proxies:
     path: /chat
 - alterId: 64
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9944
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|JP-152.70.103.195-1474
+    #3'
   network: ws
   port: 37206
   server: 152.70.103.195
@@ -3588,7 +3671,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '503,544,546,555,556,561,567,568,570,595,611,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250,1257,1273|日本-3.89MB/s(Youtube:不良林)
+  name: '503,544,546,555,556,561,567,568,569,570,595,611,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1257,1273|日本-3.89MB/s(Youtube:不良林)
     #3'
   network: ws
   port: '24429'
@@ -3604,7 +3687,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-52.196.144.61-2332
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-52.196.144.61-2332
     #3'
   network: ws
   port: 3331
@@ -3620,7 +3703,8 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-8599
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇵JP-35.72.161.88-2388
+    #3'
   network: ws
   port: 22356
   server: 001.AP.POP.node-for-smallairport.win
@@ -3635,7 +3719,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207|🇯🇵JP-3.112.210.227-2635
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207|🇯🇵JP-3.112.210.227-2635
     #3'
   network: ws
   port: 23245
@@ -3649,11 +3733,12 @@ proxies:
     headers:
       Host: jp04.170203.xyz
     path: /
-- alterId: 2
+- alterId: '2'
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1226,1227,1250|4Jadi-9949
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1226,1227|_32
+    #2'
   network: ws
-  port: 32407
+  port: '32407'
   server: 153.122.173.53
   servername: ''
   skip-cert-verify: false
@@ -3661,14 +3746,13 @@ proxies:
   type: vmess
   uuid: 26c5fdc7-b3be-3482-9a45-d97b958a889a
   ws-opts:
-    headers:
-      Host: ''
     path: /v2ray
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1226,1227,1250|4Jadi-9584
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1206,1207,1226,1227|github.com/mehdimoghaddam-cell...
+    #236'
   network: ws
-  port: 10021
+  port: '10021'
   server: 138.2.49.230
   servername: ''
   skip-cert-verify: false
@@ -3676,12 +3760,11 @@ proxies:
   type: vmess
   uuid: a12e496e-f89a-434a-8011-108846f0e412
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9654
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1207|🇵JP-147.78.244.7-5736
+    #3'
   network: ws
   port: 443
   server: 147.78.244.7
@@ -3696,7 +3779,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1206,1207,1250|4Jadi-9518
+  name: '503,544,546,555,556,561,567,568,569,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1207|🇯🇵JP-124.156.225.184-5765
+    #3'
   network: ws
   port: 443
   server: 124.156.225.184
@@ -3711,7 +3795,8 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1207,1250|4Jadi-9889
+  name: '503,544,546,555,556,561,567,568,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1207|🇵JP-157.254.193.68-6192
+    #3'
   network: ws
   port: 10020
   server: 157.254.193.68
@@ -3721,12 +3806,11 @@ proxies:
   type: vmess
   uuid: f1f45005-f074-430b-a4db-7109f50c3bce
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: 503,544,555,556,561,567,568,1126,1181,1192,1193,1198,1204,1205,1250|4Jadi-11399
+  name: '503,544,555,556,561,567,568,1126,1181,1182,1192,1193,1198,1204,1205|🇯🇵JP-8.209.252.35-0029
+    #14'
   network: ws
   port: 443
   server: 8.209.252.35
@@ -3740,7 +3824,8 @@ proxies:
     path: /down
 - alterId: 0
   cipher: auto
-  name: 503,544,546,555,556,561,567,568,570,1126,1181,1183,1192,1193,1198,1204,1205,1207,1250|4Jadi-9586
+  name: '503,544,546,555,556,561,567,568,570,1126,1181,1182,1183,1192,1193,1198,1204,1205,1207|JP-138.2.52.244-8123
+    #3'
   network: ws
   port: 443
   server: 138.2.52.244
@@ -3750,8 +3835,6 @@ proxies:
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
-    headers:
-      Host: ''
     path: /ray
 - cipher: chacha20-ietf-poly1305
   name: '507,1130|🇯🇵 https://www.mattkaydiary.co... #2'
@@ -3791,7 +3874,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '532,1158|🇯🇵JP-172.234.94.163-2724 #22'
+  name: '532,1158|🇯🇵JP-172.234.94.163-2724 #23'
   network: ws
   port: 443
   server: 172.234.94.163
@@ -5357,7 +5440,7 @@ proxies:
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 0
   cipher: auto
-  name: '605,1250,1267|🇯🇵_JP_日本 #25'
+  name: '605,1267|🇯🇵_JP_日本 #25'
   network: ws
   port: 11111
   server: 38.bbzbb.top
@@ -5509,7 +5592,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '636,1250,1304|日本(油管:破解资源君) #4'
+  name: '636,1304|日本(油管:破解资源君) #4'
   network: ws
   port: '443'
   server: cf-lt.sharecentre.online
@@ -5535,18 +5618,18 @@ proxies:
     headers:
       Host: do9.yyhm9.com
     path: /das321S8
-- auth: b93afcb0-c981-4ba3-8dc1-5fea7e2401dc
-  name: 641|🇯🇵 日本-2-1A
-  password: b93afcb0-c981-4ba3-8dc1-5fea7e2401dc
+- auth: 1894d8e3-9bd2-49d5-8b49-ad1c3bb771bb
+  name: 641|🇯🇵 日本-2
+  password: 1894d8e3-9bd2-49d5-8b49-ad1c3bb771bb
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
   sni: osaka.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: b93afcb0-c981-4ba3-8dc1-5fea7e2401dc
-  name: 641|🇯🇵 日本-1-1A
-  password: b93afcb0-c981-4ba3-8dc1-5fea7e2401dc
+- auth: 1894d8e3-9bd2-49d5-8b49-ad1c3bb771bb
+  name: 641|🇯🇵 日本-1
+  password: 1894d8e3-9bd2-49d5-8b49-ad1c3bb771bb
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
@@ -5569,7 +5652,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: '669,775,1250,1336,1461|github.com/freefq - 日本东京Linode... #4'
+  name: '669,775,1336,1461|github.com/freefq - 日本东京Linode... #4'
   network: ws
   port: 443
   server: 172.105.219.18
@@ -5583,7 +5666,7 @@ proxies:
     path: /chat
 - alterId: 64
   cipher: auto
-  name: '669,775,1250,1336,1461|github.com/freefq - 日本东京PEG TE... #3'
+  name: '669,775,1336,1461|github.com/freefq - 日本东京PEG TE... #3'
   network: ws
   port: 443
   server: 104.233.240.59
@@ -5909,7 +5992,7 @@ proxies:
     path: /CAT
 - alterId: 0
   cipher: auto
-  name: '766,769,1250,1452,1455|🇯🇵日本 02 #3'
+  name: '766,769,1452,1455|🇯🇵日本 02 #3'
   network: ws
   port: '2086'
   server: cf.335570.xyz
@@ -6064,6 +6147,12 @@ proxies:
   password: cfa789e7-0421-37e1-90cb-a0962a74b957
   port: 494
   server: iq3u5-g03.jp04-ae5.entry.v50307shvkaa.art
+  type: ss
+- cipher: aes-256-cfb
+  name: 1525|JP_Tokyo_Amazon Technologies I...
+  password: amazonskr05
+  port: 443
+  server: 18.182.55.134
   type: ss
 - cipher: aes-256-gcm
   name: 1525|JP_Tokyo_Prime Security Corp
