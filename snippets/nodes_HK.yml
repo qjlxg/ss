@@ -1,17 +1,10 @@
 proxies:
 - cipher: chacha20-ietf
-  country: 🇰 HK
-  name: '1,2,97,126,431,455|🇬SG-103.36.91.23-0486 #1'
+  country: 🇰HK
+  name: '1,2,3,9,10,97,131,431,455|🇬SG-103.36.91.23-0486 #1'
   password: asd123456
   port: 8388
   server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 1|Relay_ HK-HK_457
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node4.s.nodelist-airport.com
   type: ss
 - alterId: 64
   cipher: auto
@@ -91,15 +84,6 @@ proxies:
   type: vmess
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '25,38,52,91,97,98,418,431,434,455,625|HK2 857.3KB/s #3'
-  password: 1f3fbde2-c6ca-44a6-9445-180db90469d3
-  port: 36002
-  server: 45.87.103.75
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: 31,33,51,264,344,345,346,516,517,518,539,541,661|China_None_vmess_1138
   network: tcp
@@ -157,11 +141,22 @@ proxies:
   type: ssr
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: '38,91,99,102,625|HK #3'
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29204
+  name: '38,91,625|HK2 #2'
+  network: tcp
+  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
+  port: 16212
   server: 91.199.84.195
+  skip-cert-verify: true
+  sni: data.steamdownload.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: '38,91,103,625|HK3 #2'
+  password: 3a690709-5011-4a6c-ab62-da2fb5291233
+  port: 50203
+  server: 38.150.12.188
   skip-cert-verify: true
   tls: true
   type: ss
@@ -235,6 +230,12 @@ proxies:
   tls: false
   type: vmess
   uuid: a5b081ca-aaa2-4f46-ae19-f156ac5706ef
+- cipher: chacha20-ietf-poly1305
+  name: '52,97,98,418,431,434,455|🇰HK-45.87.103.75-0757 #1'
+  password: 1f3fbde2-c6ca-44a6-9445-180db90469d3
+  port: 36002
+  server: 45.87.103.75
+  type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 52,345,431,455,517,538,661|Seychelles_None_ss_1119
@@ -338,7 +339,7 @@ proxies:
     path: None
 - alterId: 1
   cipher: auto
-  name: 67|20-1530-HK
+  name: 67|20-1519-HK
   network: ws
   port: '443'
   server: 5.188.33.172
@@ -567,6 +568,12 @@ proxies:
   port: 47969
   server: 213.130.141.113
   type: ss
+- cipher: aes-128-gcm
+  name: '99,102|HK #2'
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29204
+  server: 91.199.84.195
+  type: ss
 - alterId: 0
   cipher: auto
   name: 99,391,430,431,440,441,446,452,453,455,692|香港_1026010
@@ -665,12 +672,6 @@ proxies:
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
   ws-opts:
     path: /
-- cipher: aes-128-gcm
-  name: 103|🇭 SS-TCP-NA 🇰 HK-38.150.12.188:50203
-  password: 3a690709-5011-4a6c-ab62-da2fb5291233
-  port: 50203
-  server: 38.150.12.188
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 106|[🇭🇰]a4a09ce.h1.glados-config.net:2377(t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv)
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -722,7 +723,7 @@ proxies:
   country: 🇰 HK
   h2-opts: {}
   http-opts: {}
-  name: 126|🇰 HK_488
+  name: 126| HK_481
   network: ws
   port: 30000
   server: 27.124.10.146
@@ -1949,7 +1950,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '263,495|未命名 #170'
+  name: '263,495|未命名 #162'
   network: ws
   port: '80'
   server: 182.16.1.194
@@ -4525,19 +4526,6 @@ proxies:
     headers:
       Host: uh-lawyers-instruments-kernel.trycloudflare.com
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
-- alterId: 0
-  cipher: auto
-  name: 417|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_65
-  network: ws
-  port: 8880
-  server: 104.26.5.57
-  tls: false
-  type: vmess
-  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: 417|🇭🇰 Twitter苏小柠|深港隧道|流媒体解锁_69
