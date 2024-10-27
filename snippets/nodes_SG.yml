@@ -25,36 +25,41 @@ proxies:
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
   ws-path: /
-- cipher: chacha20-ietf
-  country: ' HK'
-  name: '3,9,96,431,455|🇬SG-103.36.91.23-0507 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
+- cipher: chacha20-ietf-poly1305
+  country: 🇬SG
+  name: 1,126|🇬SG_544
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node3.s.nodelist-airport.com
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 4|SG |  LB-1H
-  network: ws
-  port: 443
-  server: sgcft01.xqc.best
-  servername: d16henb377mok4.cloudfront.net
-  tls: true
-  type: vmess
-  udp: true
-  uuid: b7de9b5b-aa40-4840-9515-29c731e65774
-  ws-opts:
-    headers:
-      Host: d16henb377mok4.cloudfront.net
-    path: /stream
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: SG
-  name: 9,24,52,243,345,431,455,517,538,661|Singapore_Singapore_ss_1128
+  name: 9|disney_netflix_SG
   password: amazonskr05
   port: 443
-  server: 13.229.98.87
+  server: 13.229.212.209
+  type: ss
+- cipher: aes-256-cfb
+  name: 9,24,243,431,455,661|Singapore_Singapore_ss_111
+  password: amazonskr05
+  port: 443
+  server: 47.128.240.40
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 9,24,52,97,243,270,345,431,455,517,538,661|Singapore_Singapore_ss_1129
+  password: amazonskr05
+  port: 443
+  server: 54.255.245.62
   tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  country: SG
+  name: '9|disney_netflix_SG #2'
+  password: amazonskr05
+  port: 443
+  server: 13.250.3.43
   type: ss
 - cipher: aes-256-cfb
   country: SG
@@ -66,13 +71,6 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: SG
-  name: 9,702|SG_Singapore_Amazon Technologies Inc.2
-  password: amazonskr05
-  port: 443
-  server: 13.250.25.159
-  type: ss
-- cipher: aes-256-cfb
-  country: SG
   delay: 608
   name: '9,385,386|新加坡 - 新加坡 - Amazon Technologies Inc. - 5 #1'
   password: amazonskr05
@@ -80,20 +78,21 @@ proxies:
   server: 18.142.50.59
   type: ss
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 9,24,52,243,345,431,455,517,538,661|Singapore_Singapore_ss_1128
+  password: amazonskr05
+  port: 443
+  server: 13.229.98.87
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
   country: US
-  name: '9|netflix_SG #1'
+  name: '9|disney_netflix_SG #3'
   password: amazonskr05
   port: 443
   server: 47.130.3.54
   type: ss
-- cipher: aes-128-gcm
-  country: ' ZZ'
-  name: 9,34|🇭🇰 香港01｜tg@ghosxtop
-  password: 1c47b2d3-6ff0-491d-89fa-7f8a38e49c99
-  port: 29971
-  server: osg020.nod3.org
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 17|新加坡 Linode数据中心
@@ -533,15 +532,6 @@ proxies:
   ws-headers:
     Host: eeh7iewe.com
   ws-path: /ws
-- alterId: -1
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 24,52,97,243,270,345,431,455,517,538,661|Singapore_Singapore_ss_1129
-  password: amazonskr05
-  port: 443
-  server: 54.255.245.62
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf
   name: 34|🇸🇬 新加坡01｜tg@ghosxtop
   obfs: plain
@@ -1191,13 +1181,6 @@ proxies:
   server: 167.99.31.176
   type: vmess
   uuid: d58f81a7-083a-4ff2-e50a-7078c58bbccf
-- cipher: chacha20-ietf-poly1305
-  country: 🇬SG
-  name: 126|🇬SG_539
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node3.s.nodelist-airport.com
-  type: ss
 - alterId: 0
   cipher: auto
   name: 134|SG_youtube@资源分享师_38
@@ -2302,13 +2285,15 @@ proxies:
     path: /stream
 - alterId: 2
   cipher: auto
-  name: '264|>🇸🇬 SG|Ns|1013|TG@FProxies| #12'
+  name: 264,467|🇸🇬 [vip①]新加坡1 - MG Network
   network: ws
-  port: '23612'
+  port: 23612
   server: 12.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 48f476f3-ca83-3e71-8d7a-22f23ad08065
+  udp: true
+  uuid: b8816427-ebed-3eda-8935-a8f5844a00c4
   ws-opts:
     headers:
       Host: 12.mamamajd.site
@@ -2612,26 +2597,30 @@ proxies:
     path: /sshkit/1828396894/66cf268530688/
 - alterId: 2
   cipher: auto
-  name: '264|>🇸🇬 SG|Ns|1013|TG@FProxies| #13'
+  name: 264,467|🇧 [vip①]英国2 - MG Network
   network: ws
-  port: '23613'
+  port: 23613
   server: 13.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 48f476f3-ca83-3e71-8d7a-22f23ad08065
+  udp: true
+  uuid: b8816427-ebed-3eda-8935-a8f5844a00c4
   ws-opts:
     headers:
       Host: 13.mamamajd.site
     path: /
 - alterId: 2
   cipher: auto
-  name: '264|>🇸🇬 SG|Ns|1013|TG@FProxies| #14'
+  name: 264,467|🇬 [vip①]新加坡2 - MG Network
   network: ws
-  port: '23617'
+  port: 23617
   server: 17.mamamajd.site
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ac5d02ff-6df5-3edb-b56c-372369798120
+  udp: true
+  uuid: b8816427-ebed-3eda-8935-a8f5844a00c4
   ws-opts:
     headers:
       Host: 17.mamamajd.site
@@ -4887,6 +4876,81 @@ proxies:
     path: /54f634fs
 - alterId: 0
   cipher: auto
+  name: 467|【高级】🇸🇬新加坡 - 滑梯云
+  network: ws
+  port: 20011
+  server: htsub-2024.899696998.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: eb9b6d07-8644-437f-a1c5-dbed378d38ed
+  ws-opts:
+    headers:
+      Host: yyyt-sg-2024.mofaxw.top
+    path: /2024
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 467|🇸🇬 新加坡 101 - 墙了个墙
+  network: grpc
+  password: d8314801-ba63-3020-be24-64da8df36e99
+  port: 11223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 467|🇸🇬 新加坡 102 - 墙了个墙
+  network: grpc
+  password: d8314801-ba63-3020-be24-64da8df36e99
+  port: 21223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 467|🇸🇬 新加坡 103 - 墙了个墙
+  network: grpc
+  password: d8314801-ba63-3020-be24-64da8df36e99
+  port: 31223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 467|🇸🇬 新加坡 104 - 墙了个墙
+  network: grpc
+  password: d8314801-ba63-3020-be24-64da8df36e99
+  port: 41223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: sgvip101
+  name: 467|🇸🇬 新加坡 105 - 墙了个墙
+  network: grpc
+  password: d8314801-ba63-3020-be24-64da8df36e99
+  port: 51223
+  server: sgvip101.qlgq.fun
+  skip-cert-verify: true
+  sni: sgvip101.qlgq.fun
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   name: '468|🇸🇬 _SG_新加坡 #1'
   network: ws
   port: '443'
@@ -5855,6 +5919,12 @@ proxies:
     mode: http
   port: 1192
   server: yd-02.paofunlink.com
+  type: ss
+- cipher: aes-256-cfb
+  name: 702|SG_Singapore_Amazon Technologies Inc.2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 702|SG_Singapore_Akile LTD1
