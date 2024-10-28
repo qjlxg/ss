@@ -1,11 +1,21 @@
 proxies:
-- cipher: chacha20-ietf
-  country: 🇰 HK
-  name: '1,101,131,436,460|🇬SG-103.36.91.23-0528 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 1,3,14,15,37,71,92,109,269,329,334,336,474,475,476,546|中转节点-22.0MB/s
+  network: tcp
+  port: 15086
+  server: 15086.kuaiyin02.top
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  ws-headers:
+    Host: 15086.kuaiyin02.top
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇰 HK
   name: 3,131|🇰 HK_481
@@ -28,6 +38,23 @@ proxies:
   type: vmess
   uuid: a32ea699-fcb2-4fbe-c039-39a05223ef5d
   ws-path: /path/1719403410088
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: '3,14,15,51,89,90,269,300,420,426,546,688|@Vip_Security join us - 643
+
+    '
+  network: tcp
+  port: '30251'
+  server: hkt2.bika.hk
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  ws-path: /
 - cipher: aes-256-cfb
   country: HK
   name: 10,80,106,269,637|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -114,42 +141,10 @@ proxies:
   type: ssr
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '38,95,102,105,630|HK2 #2'
-  password: 6a85a72c-c77e-4034-9384-fbae0495013d
-  port: 47969
-  server: 213.130.141.113
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: aes-128-gcm
-  name: '38,95,102,103,105,630|HK3 #2'
+  name: '38,95,102,103,105,630|HK #2'
   password: 69037302-0050-43ae-abf3-f8e62740aff1
   port: 25203
-  server: 91.199.84.195
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '38,95,630|HK4 #5'
-  network: ws
-  port: 12909
-  server: 210.0.158.219
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      host: 19.lwdh.us
-    path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '38,95,100,102,103,630|HK5 #2'
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 29204
   server: 91.199.84.195
   skip-cert-verify: true
   tls: true
@@ -436,13 +431,13 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 91|🇭🇰 香港NO.1-1A
+  name: 91|🇭🇰 香港NO.1-1B
   network: tcp
   port: '45050'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 5b087ce2-69b3-4b01-b56d-f31a4d0db157
+  uuid: fd5969df-59e9-43ed-bdaf-5df677f763a9
 - alterId: 0
   cipher: auto
   name: 91|🇭🇰 香港-1A
@@ -451,7 +446,7 @@ proxies:
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 5b087ce2-69b3-4b01-b56d-f31a4d0db157
+  uuid: e0a0a8e0-100e-4be0-b3a2-21a75990b532
 - alterId: 64
   cipher: auto
   name: 92|🇭🇰 香港_102718012
@@ -503,6 +498,12 @@ proxies:
   port: 39051
   server: office-0f1df58e3d.f9umiigcm1awo6o-kr.qytnode.com
   type: ss
+- cipher: aes-128-gcm
+  name: '100,102,103|HK5🇭🇰 #1'
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29204
+  server: 91.199.84.195
+  type: ss
 - cipher: aes-256-gcm
   name: 100|🇰 HK(mibei77.com 节点) 16
   password: JBCFWWRQF4XTAE0E
@@ -551,6 +552,12 @@ proxies:
   password: dbefcef0-836b-4d58-aa05-146f7e63f06f
   port: 61005
   server: api-a-asia-2.mcqqn.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 102,105|🇰 SS-TCP-NA 🇰 HK-213.130.141.113:47969
+  password: 6a85a72c-c77e-4034-9384-fbae0495013d
+  port: 47969
+  server: 213.130.141.113
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '102,103,302,436,460|🇰HK-119.237.242.151-2276 #1'
@@ -671,8 +678,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '105,180,185,190,293,329,334,338,340,364,365,581,597,603,606,607,608,611,616,618,631|HK4
-    #6'
+  name: '105,180,185,190,293,329,334,338,364,365,581,597,603,606,607,608,611,616,618|🔒
+    VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909 #14'
   network: ws
   port: '12909'
   server: 210.0.158.219
