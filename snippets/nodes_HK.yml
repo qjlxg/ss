@@ -1,18 +1,19 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   country: ' HK'
-  name: 3|ChatGPT  HK_254
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node4.s.nodelist-airport.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 3|ChatGPT  HK_255
-  password: ea541b1a-b823-4e91-8cd4-42ac6d4d4569
-  port: 40000
-  server: soonhk.soon.guru
-  type: ss
+  h2-opts: {}
+  http-opts: {}
+  name: 3,14,15,420,426,546|香港-24.1MB/s
+  network: tcp
+  port: 30251
+  server: 1.65.205.116
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -43,12 +44,41 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- cipher: chacha20-ietf
+  name: 9|netflix_HK
+  password: asd123456
+  port: 8388
+  server: 154.197.26.120
+  type: ss
+- alterId: 64
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 408
+  h2-opts: {}
+  http-opts: {}
+  name: '9,65,168,269,293,390,391,688|@Vip_Security join us - 340
+
+    '
+  network: tcp
+  port: '54104'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      host: 183.236.51.23
+    path: None
 - alterId: 0
   cipher: auto
   country: HK
   h2-opts: {}
   http-opts: {}
-  name: 9|HK_238
+  name: 9|HK_291
   network: tcp
   port: 14247
   server: 103.75.117.78
@@ -133,13 +163,38 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: '38,95,101,105,630|HK #2'
-  password: 69037302-0050-43ae-abf3-f8e62740aff1
-  port: 25203
-  server: 91.199.84.195
+  name: '38,95,101,630|HK #2'
+  password: 3a690709-5011-4a6c-ab62-da2fb5291233
+  port: 50203
+  server: 38.150.12.188
   skip-cert-verify: true
   tls: true
   type: ss
+- alterId: 0
+  name: '38,95,630|HK2 #2'
+  network: tcp
+  password: 9ff83a73-c9da-4233-a9e2-7fa9b83b5f75
+  port: 16212
+  server: 91.199.84.195
+  skip-cert-verify: true
+  sni: data.steamdownload.top
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '38,95,630|HK3 #4'
+  network: ws
+  port: 12909
+  server: 210.0.158.219
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      host: 19.lwdh.us
+    path: /
 - alterId: 0
   cipher: auto
   name: 40|🇭🇰 11|香港3|@ripaojiedian
@@ -323,7 +378,7 @@ proxies:
     path: None
 - alterId: 0
   cipher: auto
-  name: 66,67|23-2366-HK
+  name: 66,67|23-2483-HK
   network: ws
   port: '8080'
   server: m004.mmzhk.website
@@ -331,7 +386,7 @@ proxies:
   tls: true
   type: vmess
   udp: true
-  uuid: 5e9b33cc-7d88-4dee-a6bb-9bbef6a022ea
+  uuid: 37745d93-3ce5-4e03-a1e0-0b89b72ae5e9
   ws-opts:
     headers:
       Host: m004.mmzhk.website
@@ -499,8 +554,8 @@ proxies:
     path: /80
 - alterId: 0
   cipher: auto
-  name: '92,180,185,190,293,329,334,338,364,365,581,597,603,606,607,608,611,616,618|🔒
-    VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909 #14'
+  name: '92,180,185,190,293,329,334,338,340,364,365,581,597,603,606,607,608,611,616,618,631|HK3
+    #5'
   network: ws
   port: '12909'
   server: 210.0.158.219
@@ -540,6 +595,12 @@ proxies:
     headers:
       Host: fullaccesstohongkongnet.azurewebsites.net
     path: /ws
+- cipher: aes-128-gcm
+  name: '101,105|🇰 SS-TCP-NA 🇰 HK-91.199.84.195:25203 #1'
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25203
+  server: 91.199.84.195
+  type: ss
 - alterId: 0
   cipher: auto
   name: 101,396,435,436,445,446,451,457,458,460,697|香港_1028007
@@ -581,12 +642,6 @@ proxies:
   password: sC3B19RI4HHzgQI4HWamzG
   port: 36766
   server: 141.98.234.195
-  type: ss
-- cipher: aes-128-gcm
-  name: 101|🇭🇰 SS-TCP-NA 🇰 HK-38.150.12.188:50203
-  password: 3a690709-5011-4a6c-ab62-da2fb5291233
-  port: 50203
-  server: 38.150.12.188
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: '103,232,302,436,460|🇰HK-112.119.48.214-2108 #1'
@@ -1984,7 +2039,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '268,500|未命名 #167'
+  name: '268,500|未命名 #158'
   network: ws
   port: '80'
   server: 182.16.1.194
@@ -3047,6 +3102,12 @@ proxies:
     headers:
       Host: 8.210.55.79
     path: /
+- cipher: rc4-md5
+  name: '359,436,460|🇨CN-36.134.115.217-0485 #1'
+  password: uYhVA160ZoSg3AI5
+  port: 6700
+  server: 36.134.115.217
+  type: ss
 - cipher: aes-128-gcm
   name: 359|🇭🇰 香港_Telegram@kxswa 5
   password: 1ce3431c-4e12-432e-a336-ca20c47c2084
