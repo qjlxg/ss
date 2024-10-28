@@ -944,5 +944,5 @@ def main():
     print("写出完成！")
 
 if __name__ == '__main__':
-    # from dynamic import AUTOURLS, AUTOFETCH
-    # main()
+    from dynamic import AUTOURLS, AUTOFETCH
+    main()
