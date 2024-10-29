@@ -1,19 +1,4 @@
 proxies:
-- alterId: -1
-  cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: '1,2,10,101,106,275,436,460|🇬SG-103.36.91.23-0544 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 3|ChatGPT  HK_279
-  password: 0e91a29a-989d-4934-a1fb-7b653319397f
-  port: 50101
-  server: iepl1.forlive.live
-  type: ss
 - alterId: 0
   cipher: auto
   country: ' HK'
@@ -44,8 +29,14 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 9|disney_netflix_HK
+  password: 0e91a29a-989d-4934-a1fb-7b653319397f
+  port: 50101
+  server: iepl1.forlive.live
+  type: ss
 - cipher: aes-256-cfb
-  name: 9|netflix_HK
+  name: '9|disney_netflix_HK #1'
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
@@ -80,6 +71,15 @@ proxies:
   tls: true
   type: vmess
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  delay: 323
+  name: 24,100,248,350,390,391,436,460,522,543,666|Hong Kong_None_ss_1123
+  password: asd123456
+  port: 8388
+  server: 38.147.190.72
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 24,248,269,349,350,351,521,522,523,544,666|Hong Kong_None_vmess_1146
@@ -324,7 +324,7 @@ proxies:
     path: None
 - alterId: 0
   cipher: auto
-  name: 66,67|24-2982-HK
+  name: 66,67|24-2985-HK
   network: ws
   port: '8080'
   server: m004.mmzhk.website
@@ -1730,7 +1730,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '268,500|未命名 #160'
+  name: '268,500|未命名 #163'
   network: ws
   port: '80'
   server: 182.16.1.194
