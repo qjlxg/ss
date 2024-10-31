@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   country: ' JP'
-  name: '1,3,67,104,181,189,215,217,271,305,334,336,346,403,442,443,444,445,450,453,454,455,458,462,465,467,525,542,644,653,658,673|8J%2BHr%2FCfh7VKUC0xMy4xMTIuNTIuMjIwLTA2MTY%3D
+  name: '1,2,3,67,104,132,181,189,215,217,271,305,334,336,346,403,442,443,444,445,450,453,454,455,458,462,465,467,525,542,644,653,658,673|8J%2BHr%2FCfh7VKUC0xMy4xMTIuNTIuMjIwLTA2MTY%3D
     #16'
   obfs: tls1.2_ticket_auth
   obfs-param: ''
@@ -12,22 +12,6 @@ proxies:
   server: jp-am48-6.eqnode.net
   type: ssr
   udp: true
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: '1,2,3,9,16,51,90,92,135,321,553,557,696,709,724,726|日本【付费推荐：https://a0a.xyz】66
-    #1'
-  network: tcp
-  port: '43720'
-  server: 61.120.9.18
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
-  ws-path: /
 - alterId: 1
   cipher: auto
   country: ' JP'
@@ -48,21 +32,27 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: JP
   h2-opts: {}
   http-opts: {}
-  name: 3|ChatGPT  JP_303
-  network: ws
-  port: 443
-  server: tls.96.node-for-bigairport.win
-  servername: tls.96.node-for-bigairport.win
+  name: '1,2,9,16,51,90,92,321,553,557,696,709,724,726|日本【付费推荐：https://a0a.xyz】66
+    #1'
+  network: tcp
+  port: '43720'
+  server: 61.120.9.18
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-headers:
-    HOST: tls.96.node-for-bigairport.win
+  uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: ' JP'
+  name: 3|ChatGPT  JP_310
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node1.s.nodelist-airport.com
+  type: ss
 - cipher: aes-256-cfb
   delay: 1850
   name: '9,396,397,398|日本 - 京都 - OPTAGE Inc. - 2 #2'
@@ -70,36 +60,13 @@ proxies:
   port: 15084
   server: 120.232.81.50
   type: ss
-- cipher: aes-256-cfb
-  country: BE
-  name: 9,364|🇧🇪 比利时_Telegram@kxswa
-  password: amazonskr05
-  port: 443
-  server: 57.181.42.181
-  type: ss
-- cipher: aes-256-cfb
-  country: JP
-  name: 9,715|JP_Tokyo_Amazon Technologies Inc.2
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  delay: 2389
-  name: '9,396,397,398|日本 - 东京 - Amazon Technologies Inc. - 5 #2'
-  password: amazonskr05
-  port: 443
-  server: 52.69.236.102
-  type: ss
-- cipher: aes-256-cfb
+- alterId: -1
+  cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: JP
-  name: 9,24,52,104,107,251,355,443,467,529,550,674,715|JP_Tokyo_Amazon Technologies
-    Inc.3
+  name: 9,104,278|KR😈github.com/Ruk1ng001_2310364438
   password: amazonskr05
   port: 443
-  server: 3.112.215.69
+  server: 52.198.168.235
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -110,23 +77,27 @@ proxies:
   port: 443
   server: 13.113.17.246
   type: ss
-- alterId: 0
-  cipher: auto
-  country: ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 9|Relay_ZZ-JP_204
+- cipher: aes-256-cfb
+  country: JP
+  name: 9,715|JP_Tokyo_Amazon Technologies Inc.1
+  password: amazonskr05
+  port: 443
+  server: 52.198.194.170
+  type: ss
+- country: JP
+  fingerprint: randomized
+  name: '9|disney_netflix_JP #3'
   network: ws
-  port: 80
-  server: cfcdn2.yzcloud006.xyz
-  servername: RXwAGyNZjp3.zvhdeaof.xyz
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4b0e2010-9879-4a58-bcf7-b6aa133b4bdb
+  password: FLorg
+  port: 443
+  server: 43.153.175.137
+  sni: trojan.tcorg.filegear-sg.me
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      HOST: RXwAGyNZjp3.zvhdeaof.xyz
-    path: /video/fKmZKfiJ
+      Host: trojan.tcorg.filegear-sg.me
+    path: /?ed=2048
 - alterId: 64
   cipher: auto
   country: JP
@@ -275,10 +246,18 @@ proxies:
   ws-headers:
     Host: vjp3.0bad.com
   ws-path: /chat
-- alterId: -1
-  cipher: aes-256-cfb
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 24,52,104,251,278,355,443,467,529,550,674|Japan_Tokyo_ss_1151
+  name: 24,52,104,107,251,355,443,467,529,550,674,715|JP_Tokyo_Amazon Technologies
+    Inc.3
+  password: amazonskr05
+  port: 443
+  server: 3.112.215.69
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 24,52,104,251,355,443,467,529,550,674|Japan_Tokyo_ss_1151
   password: amazonskr05
   port: 443
   server: 52.193.244.212
@@ -398,7 +377,7 @@ proxies:
       host: jp03.thomasina.buzz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 66|24-2777-JP
+  name: 66|24-2821-JP
   password: bb915f28-5ef1-41ef-b180-d6a23c6babac
   port: 10089
   server: osaka002-a.oraclenat.cc
@@ -609,7 +588,7 @@ proxies:
 - alterId: 64
   cipher: auto
   name: '92,161,275,403,442,443,452,453,458,464,465,467,705,724|美国 v2rayfree.eu.org
-    #1'
+    #2'
   network: ws
   port: 443
   server: 134.122.139.79
@@ -895,7 +874,24 @@ proxies:
     path: /bb
 - alterId: 1
   cipher: auto
-  name: 135|🇯🇵 JP_493
+  country: 🇵 JP
+  h2-opts: {}
+  http-opts: {}
+  name: 132| JP_499
+  network: ws
+  port: 443
+  server: 92.38.178.69
+  servername: 92.38.178.69
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: 92.38.178.69
+  ws-path: linkvws
+- alterId: 1
+  cipher: auto
+  name: 135|🇯🇵 JP_499
   network: ws
   port: 443
   server: 92.38.178.69
@@ -2369,15 +2365,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '279|JP😈github.com/Ruk1ng001_704862010 #1'
-  network: ''
-  port: 25004
-  server: d.baodesign.top
-  tls: false
-  type: vmess
-  uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
-- alterId: 0
-  cipher: auto
   name: '288,290|49-🇯🇵JP-40.74.100.129-0822-worker #1'
   network: ws
   port: 443
@@ -3357,6 +3344,14 @@ proxies:
     headers:
       HOST: lnjp.pmcloud.top
     path: /
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  delay: 2389
+  name: '396,397,398|日本 - 东京 - Amazon Technologies Inc. - 5 #2'
+  password: amazonskr05
+  port: 443
+  server: 52.69.236.102
+  type: ss
 - alterId: 0
   cipher: auto
   delay: 1972
@@ -5542,18 +5537,6 @@ proxies:
   uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 0
   cipher: auto
-  name: 553|瑶「日本|传说」「解锁」
-  network: ws
-  port: 12955
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
   name: 553|巨蟹「日本」「海外专用」
   network: tcp
   port: 12931
@@ -5968,6 +5951,12 @@ proxies:
     headers:
       Host: ''
     path: /ct/sh2/jp2
+- cipher: aes-256-cfb
+  name: 715|JP_Tokyo_Amazon Technologies Inc.2
+  password: amazonskr05
+  port: 443
+  server: 54.95.5.168
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 715|JP_Tokyo_Akile LTD
   password: dd6d6d4b-8a0b-492f-b478-a04863e4be11

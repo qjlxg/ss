@@ -1,17 +1,17 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: ' SG'
-  name: 1,2,3,52,101,104,107,160|🇸🇬SG(AzadNet.t.me)_004
+  country: 🇬 SG
+  name: 1,2,3,52,101,104,107,132,160|🇸🇬SG(AzadNet.t.me)_004
   password: ZdWZ9QvFlbOOGreMoE3Bq8
   port: 18814
   server: 159.65.129.128
   type: ss
 - alterId: 0
   cipher: auto
-  country: ' SG'
+  country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: 1,2,3,38,96,135,181,187,192,241,247,334,339,344,345,571,578,579,599,603,610,611,612,613,614,615,617,623,624,637,638,696,724|新加坡
+  name: 1,2,3,38,96,132,135,181,187,192,241,247,334,339,344,345,571,578,579,599,603,610,611,612,613,614,615,617,623,624,637,638,696,724|新加坡
     v2rayfree.eu.org
   network: tcp
   port: 57614
@@ -22,20 +22,28 @@ proxies:
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: ' SG'
-  name: 3|ChatGPT  SG_425
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node3.s.nodelist-airport.com
+- alterId: -1
+  cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: '3,9,104,132,137,278,443,467|🇬SG-103.36.91.23-0479 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   country: ' SG'
-  name: '3,9,52,101,379,443,467|🇬SG-54.254.7.5-0918 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.254.7.5
-  type: ss
+  h2-opts: {}
+  http-opts: {}
+  name: 3|ChatGPT  SG_432
+  network: ws
+  port: 13389
+  server: 00000000000000000000000001.node-for-smallairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 4|SG |  LB-2A
@@ -52,6 +60,12 @@ proxies:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
 - cipher: aes-256-cfb
+  name: 9|disney_netflix_SG
+  password: amazonskr05
+  port: 443
+  server: 54.255.245.62
+  type: ss
+- cipher: aes-256-cfb
   country: 🇸🇬 SG
   delay: 1696
   name: '9,396,397,398|新加坡 - 新加坡 - Amazon.com, Inc. - 1 #2'
@@ -60,31 +74,10 @@ proxies:
   server: 54.169.216.179
   type: ss
 - cipher: aes-256-cfb
-  name: '9|disney_netflix_SG #1'
+  name: '9|disney_netflix_SG #2'
   password: amazonskr05
   port: 443
-  server: 54.169.139.18
-  type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 9,101,278|JP😈github.com/Ruk1ng001_736257985
-  password: amazonskr05
-  port: 443
-  server: 13.229.98.87
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  name: '9|disney_netflix_SG #3'
-  password: amazonskr05
-  port: 443
-  server: 54.255.245.62
-  type: ss
-- cipher: aes-256-cfb
-  name: 9,364|🇸🇬 新加坡_Telegram@kxswa
-  password: amazonskr05
-  port: 443
-  server: 13.229.212.209
+  server: 54.255.237.249
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸 US
@@ -93,6 +86,12 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.213.30.242
+  type: ss
+- cipher: aes-256-cfb
+  name: 9,364|🇸🇬 新加坡_Telegram@kxswa
+  password: amazonskr05
+  port: 443
+  server: 13.229.212.209
   type: ss
 - cipher: aes-256-cfb
   country: SG
@@ -108,15 +107,6 @@ proxies:
   port: 6700
   server: 43.143.243.164
   type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  country: SG
-  name: 9,52,278,384|🇺🇸_US_美国->🇯🇵_JP_日本
-  password: amazonskr05
-  port: 443
-  server: 13.215.205.186
-  type: ss
-  udp: true
 - alterId: -1
   cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -136,26 +126,38 @@ proxies:
   server: 13.250.3.43
   tfo: false
   type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 9,101,278|JP😈github.com/Ruk1ng001_736257985
+  password: amazonskr05
+  port: 443
+  server: 13.229.98.87
+  tfo: false
+  type: ss
+- alterId: -1
+  cipher: aes-256-cfb
+  country: SG
+  name: 9,52,278,384|🇺🇸_US_美国->🇯🇵_JP_日本
+  password: amazonskr05
+  port: 443
+  server: 13.215.205.186
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: US
-  name: '9|disney_netflix_SG #13'
+  name: '9|disney_netflix_SG #10'
   password: amazonskr05
   port: 443
   server: 47.130.3.54
   type: ss
 - cipher: aes-256-cfb
   country: US
-  name: '9|disney_netflix_SG #14'
+  name: '9|disney_netflix_SG #11'
   password: amazonskr05
   port: 443
   server: 47.129.50.131
-  type: ss
-- cipher: aes-256-cfb
-  country: US
-  name: '9|disney_netflix_SG #15'
-  password: amazonskr05
-  port: 443
-  server: 47.129.244.12
   type: ss
 - alterId: 0
   cipher: auto
@@ -717,7 +719,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 66,67|24-2794-SG
+  name: 66,67|24-2838-SG
   network: ws
   port: '8080'
   server: m002.mmzhk.website
@@ -732,7 +734,7 @@ proxies:
     path: /xyz
 - alterId: 0
   cipher: auto
-  name: 67|13-0777-SG
+  name: 67|13-0792-SG
   network: ws
   port: '30002'
   server: xjpx6.12123.org
@@ -745,7 +747,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 67|13-0827-SG
+  name: 67|13-0842-SG
   network: ws
   port: '30002'
   server: xjpx5.12123.org
@@ -1181,6 +1183,13 @@ proxies:
   server: 167.99.31.176
   type: vmess
   uuid: d58f81a7-083a-4ff2-e50a-7078c58bbccf
+- cipher: chacha20-ietf-poly1305
+  country: 🇬SG
+  name: 132|🇬SG_593
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node3.s.nodelist-airport.com
+  type: ss
 - alterId: 0
   cipher: auto
   name: 140|SG_youtube@资源分享师_38
