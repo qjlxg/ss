@@ -1,17 +1,9 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 35,36,37,125|中转节点-32.07MB/s
-  password: 0e91a29a-989d-4934-a1fb-7b653319397f
-  port: 50101
-  server: iepl1.forlive.live
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' KR'
-  name: 37,125|韩国-765.1KB/s
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node2.s.nodelist-airport.com
+- cipher: aes-256-cfb
+  name: 39,90,125,221|disney_KR🇰🇷
+  password: qwerREWQ@@
+  port: 54345
+  server: 221.139.79.57
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 62|🇰🇷 韩国02｜tg@ghosxtop
@@ -22,7 +14,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '67,213,902|_121320001 #4'
+  name: '67,213,902|_121320001 #6'
   network: ws
   port: 20254
   server: muran-kr.qrfly.me
@@ -45,14 +37,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 34a8ac77-4f20-4635-9334-565e48011cd1
-- cipher: chacha20-ietf-poly1305
-  name: '72,108,109,123,125,126,227,314,393,432,445,622,646|🇳CN-120.238.122.160-0410
-    #1'
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 90|🇰🇷 韩国_1
   password: ayucl243113
@@ -387,29 +371,29 @@ proxies:
   port: 443
   server: 43.201.253.180
   type: ss
-- auth: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
-  name: 122|🇰🇷 韩国-首尔-1A
-  password: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
-  port: 30001
-  server: oracle-arm-seoul1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
-  name: 122|🇰🇷 韩国-2-1A
-  password: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
+- auth: 776c1a3b-7f29-4414-872b-73e655eed831
+  name: 122|🇰🇷 韩国-2
+  password: 776c1a3b-7f29-4414-872b-73e655eed831
   port: 30001
   server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
-  name: 122|🇰🇷 韩国-1-1A
-  password: 4ae66280-a6ef-4f3f-a6dd-1a79600a94d1
+- auth: 776c1a3b-7f29-4414-872b-73e655eed831
+  name: 122|🇰🇷 韩国-1
+  password: 776c1a3b-7f29-4414-872b-73e655eed831
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- auth: 776c1a3b-7f29-4414-872b-73e655eed831
+  name: 122|🇰🇷 韩国-首尔
+  password: 776c1a3b-7f29-4414-872b-73e655eed831
+  port: 30001
+  server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
@@ -468,6 +452,37 @@ proxies:
   tls: false
   type: vmess
   uuid: c0e6d2ab-9fc2-4a0f-8011-844e5b45ec0c
+- cipher: aes-256-cfb
+  name: 125|KR,Incheon_1
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- name: 125|韩国-2.60MB/s
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20980
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 125|韩国-3.51MB/s_1
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: enabling-filly.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 125|🇰🇷KR_120
+  network: tcp
+  password: a1718180-d616-4b71-9bb6-3e96ba20f921
+  port: 443
+  server: jgw3.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: '125|🇰🇷 韩国-三网优化2-1E #1'
   network: tcp
   password: 6d84a8a8-718d-4739-892f-373eaefa8e26
@@ -487,61 +502,48 @@ proxies:
   tls: false
   type: vmess
   uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
-- name: 125|韩国-2.60MB/s
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20980
-  server: ent1.imyourdaddy.top
+- name: 125|🇰🇷 KR-1
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 152.70.234.12
   skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 125|韩国-1.35MB/s
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: enabling-filly.opossum872.cfd
+  sni: api.push.apple.com
+  type: hysteria2
+- name: 125|🇰🇷 KR-2
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 193.122.114.172
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 125|KR,Incheon_1
-  password: amazonskr05
-  port: 443
-  server: 18.136.197.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 125|👉www.85la.com👉韩国KR_1
-  password: amazonskr05
-  port: 443
-  server: 13.125.222.81
-  type: ss
-- cipher: aes-256-cfb
-  name: 125|👉www.85la.com👉韩国KR_3
-  password: amazonskr05
-  port: 443
-  server: 13.125.209.191
-  type: ss
-- cipher: aes-256-cfb
-  name: 125|👉www.85la.com👉韩国KR_4
-  password: amazonskr05
-  port: 443
-  server: 52.78.63.211
-  type: ss
-- cipher: aes-256-cfb
-  name: '125,622,646|🇷KR-52.78.205.132-0428 #1'
-  password: amazonskr05
-  port: 443
-  server: 52.78.205.132
-  type: ss
-- name: 125|🇰🇷KR_120
-  network: tcp
-  password: a1718180-d616-4b71-9bb6-3e96ba20f921
-  port: 443
-  server: jgw3.gaox.ml
+  sni: api.push.apple.com
+  type: hysteria2
+- name: 125|🇰🇷 KR-3
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 193.122.113.204
   skip-cert-verify: true
-  type: trojan
-  udp: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 125|🇰🇷 KR-4
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 146.56.100.103
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 125|🇰🇷 KR-5
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 152.69.225.196
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 125|🇰🇷 KR-6
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 146.56.174.194
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
 - name: 125|韩国+V2CROSS.COM_1
   network: ws
   password: 95b
@@ -568,6 +570,146 @@ proxies:
     headers:
       host: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
     path: /trojan-6qo.pages.dev/
+- cipher: aes-256-cfb
+  name: '125,622,646|🇷KR-3.35.222.240-0434 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.35.222.240
+  type: ss
+- cipher: aes-256-gcm
+  name: '125,622,646|🇷KR-146.56.158.178-0442 #1'
+  password: 1ijeblXtJy
+  port: 21744
+  server: shouer1.209966.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: '125,622,646|🇳CN-221.181.185.71-0496 #1'
+  password: f52SZksXnGNfc72Q
+  port: 23382
+  server: 221.181.185.71
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 125|🇰🇷 KR😈SSRSUB_2632274952
+  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
+  port: 40016
+  server: hzhz2.sssyun.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】
+  network: ws
+  port: 443
+  server: b6.wuxianliulianng.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 3a4d4b52-81ff-4aea-a451-99ed4587bfb4
+  ws-opts:
+    headers:
+      host: 6.wuxianliulianng.xyz
+    path: /mp4
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_2
+  network: ws
+  port: 443
+  server: 146.56.132.247
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
+  ws-opts:
+    headers:
+      host: d.freeh1.xyz
+    path: /dongtaiwang.com
+- cipher: aes-256-cfb
+  name: 125|👉www.85la.com👉韩国KR_1
+  password: amazonskr05
+  port: 443
+  server: 13.125.222.81
+  type: ss
+- cipher: aes-256-cfb
+  name: 125|👉www.85la.com👉韩国KR_3
+  password: amazonskr05
+  port: 443
+  server: 13.125.209.191
+  type: ss
+- cipher: aes-256-cfb
+  name: 125|👉www.85la.com👉韩国KR_4
+  password: amazonskr05
+  port: 443
+  server: 52.78.63.211
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_1
+  network: ws
+  port: 2053
+  server: 152.70.243.94
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
+  ws-opts:
+    headers:
+      host: ecc.vtcss.top
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_2_1
+  network: ws
+  port: 2053
+  server: 146.56.144.191
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
+  ws-opts:
+    headers:
+      host: ecc.vtcss.top
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_3
+  network: ws
+  port: 2053
+  server: 146.56.37.227
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
+  ws-opts:
+    headers:
+      host: ecc.vtcss.top
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_4
+  network: ws
+  port: 2053
+  server: 146.56.164.118
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
+  ws-opts:
+    headers:
+      host: ecc.vtcss.top
+    path: /blue
+- alterId: 0
+  cipher: auto
+  name: 125|韩国_【YouTube-VV科技】_5
+  network: ws
+  port: 2053
+  server: 146.56.183.39
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
+  ws-opts:
+    headers:
+      host: ecc.vtcss.top
+    path: /blue
 - alterId: 0
   cipher: auto
   name: 125|韩国 蘑菇主机BGP数据中心
@@ -714,154 +856,19 @@ proxies:
     headers:
       host: mf-aws-kr-06.xncloud.xyz
     path: /niaoyun
-- cipher: aes-256-cfb
-  name: '125,622,646|🇷KR-3.35.222.240-0434 #1'
-  password: amazonskr05
-  port: 443
-  server: 3.35.222.240
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 125|韩国_【YouTube-VV科技】
+  name: 125|韩国-2.92MB/s
   network: ws
-  port: 443
-  server: b6.wuxianliulianng.xyz
+  port: 20602
+  server: kr1.yibao.ink
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 3a4d4b52-81ff-4aea-a451-99ed4587bfb4
+  uuid: fd992674-80d7-4744-953a-58788e5afaef
   ws-opts:
     headers:
-      host: 6.wuxianliulianng.xyz
-    path: /mp4
-- alterId: 0
-  cipher: auto
-  name: 125|韩国_【YouTube-VV科技】_1
-  network: ws
-  port: 2053
-  server: 152.70.243.94
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
-  ws-opts:
-    headers:
-      host: ecc.vtcss.top
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 125|韩国_【YouTube-VV科技】_2
-  network: ws
-  port: 2053
-  server: 146.56.144.191
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
-  ws-opts:
-    headers:
-      host: ecc.vtcss.top
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 125|韩国_【YouTube-VV科技】_3
-  network: ws
-  port: 2053
-  server: 146.56.37.227
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
-  ws-opts:
-    headers:
-      host: ecc.vtcss.top
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 125|韩国_【YouTube-VV科技】_4
-  network: ws
-  port: 2053
-  server: 146.56.164.118
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
-  ws-opts:
-    headers:
-      host: ecc.vtcss.top
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: 125|韩国_【YouTube-VV科技】_5
-  network: ws
-  port: 2053
-  server: 146.56.183.39
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 2b4956d4-f2bc-4a14-d060-4e69adee01c9
-  ws-opts:
-    headers:
-      host: ecc.vtcss.top
-    path: /blue
-- name: 125|🇰🇷 KR-1
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 152.70.234.12
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- name: 125|🇰🇷 KR-2
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 193.122.114.172
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- name: 125|🇰🇷 KR-3
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 193.122.113.204
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 125|🇰🇷 KR-4
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 146.56.100.103
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 125|🇰🇷 KR-5
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 152.69.225.196
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 125|🇰🇷 KR-6
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 146.56.174.194
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 125|🇰🇷 KR😈SSRSUB_2632274952
-  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
-  port: 40016
-  server: hzhz2.sssyun.xyz
-  type: ss
-- name: '125|韩国 002 #1'
-  network: ws
-  password: CMLiu
-  port: 443
-  server: 59.3.3.161
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
+      host: kr1.yibao.ink
     path: /
 - alterId: 0
   cipher: auto
@@ -877,42 +884,17 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '125|韩国_【YouTube-VV科技】_1_1 #1'
+- name: '125|韩国 002 #1'
   network: ws
+  password: CMLiu
   port: 443
-  server: 146.56.132.247
+  server: 59.3.3.161
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2
-  ws-opts:
-    headers:
-      host: d.freeh1.xyz
-    path: /dongtaiwang.com
-- alterId: 0
-  cipher: auto
-  name: 125|韩国-2.92MB/s
-  network: ws
-  port: 20602
-  server: kr1.yibao.ink
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fd992674-80d7-4744-953a-58788e5afaef
-  ws-opts:
-    headers:
-      host: kr1.yibao.ink
-    path: /
-- name: 125|韩国(yudou66.com 玉豆免费节点)
-  network: tcp
-  password: NISHIKUITAN222
-  port: 443
-  server: 152.70.71.23
-  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
   type: trojan
   udp: true
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   name: 125|👉www.85la.com👉韩国KR_1_1
   password: amazonskr05
@@ -924,6 +906,12 @@ proxies:
   password: amazonskr05
   port: 443
   server: 52.78.193.3
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 125|韩国-765.1KB/s
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node2.s.nodelist-airport.com
   type: ss
 - cipher: aes-256-cfb
   name: 125|韩国-1.92MB/s
@@ -1065,7 +1053,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '219,622,646|🇰🇷KR-146.56.133.140-8770 #8'
+  name: 219,622,646|🇰🇷KR-146.56.133.140-8750
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -1137,10 +1125,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: 222,239|Relay_🏁ZZ-🇷KR_588 | 3.85Mb
+  name: 222|Relay_🏁ZZ-🇷KR_616 | 0.56Mb
   network: ws
   port: 80
   server: 104.17.213.241
@@ -1150,8 +1135,6 @@ proxies:
   type: vmess
   uuid: e6543319-0574-42ac-b778-1c4325d626f5
   ws-opts:
-    headers:
-      HOST: chunchuan.kejixiaoqi666.store
     path: /
 - alterId: '0'
   cipher: auto
@@ -1312,19 +1295,19 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '351,352,622,646|🇷KR-43.202.49.222-9368 #1'
+  name: 351,352,622,646|🇷KR-43.202.49.222-9346
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '351,352,622,646|🇷KR-43.201.108.109-9369 #1'
+  name: 351,352,622,646|🇷KR-43.201.108.109-9347
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '351,352,622,646|🇷KR-125.141.26.5-9967 #1'
+  name: 351,352,622,646|🇷KR-125.141.26.5-9945
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1866,7 +1849,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '442,567,621,622,631,632,637,643,644,646|KR-131.186.24.103-2548 #1'
+  name: 442,567,621,622,631,632,637,643,644,646|KR-131.186.24.103-2525
   network: ws
   port: 443
   server: 131.186.24.103
@@ -1915,7 +1898,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '442,622,646|🇷KR-43.201.48.212-2705 #1'
+  name: 442,622,646|🇷KR-43.201.48.212-2682
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -2921,7 +2904,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: '567,621,622,631,632,637,643,644,646|🇷KR-52.78.213.224-2314 #1'
+  name: 567,621,622,631,632,637,643,644,646|🇷KR-52.78.213.224-2291
   network: ws
   port: 80
   server: 52.78.213.224
@@ -3005,7 +2988,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '567,621,622,631,632,637,643,644,646|🇷KR-3.38.115.106-6380 #1'
+  name: 567,621,622,631,632,637,643,644,646|🇷KR-3.38.115.106-6356
   network: ws
   port: 80
   server: 3.38.115.106
@@ -3018,7 +3001,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '567,617,618,621,622,631,632,637,643,644,646|🇷KR-3.38.108.255-6382 #1'
+  name: 567,617,618,621,622,631,632,637,643,644,646|🇷KR-3.38.108.255-6358
   network: ws
   port: 80
   server: 3.38.108.255
@@ -3031,7 +3014,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '567,621,622,631,632,637,643,644,646|🇷KR-54.180.114.77-6738 #1'
+  name: 567,621,622,631,632,637,643,644,646|🇷KR-54.180.114.77-6714
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -3044,7 +3027,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '567,621,622,631,632,637,643,644,646|🇷KR-211.177.40.235-8110 #1'
+  name: 567,621,622,631,632,637,643,644,646|🇷KR-211.177.40.235-8086
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -3057,7 +3040,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '567,621,622,631,632,637,643,644,646|🇷KR-1.238.102.214-8111 #1'
+  name: 567,621,622,631,632,637,643,644,646|🇷KR-1.238.102.214-8087
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -3234,7 +3217,7 @@ proxies:
       Host: lg30.cfcdn3.xyz
     path: /ray
 - cipher: aes-256-cfb
-  name: '605,622,646|🇷KR-3.36.118.190-6185 #1'
+  name: 605,622,646|🇷KR-3.36.118.190-6161
   password: amazonskr05
   port: 443
   server: 3.36.118.190
