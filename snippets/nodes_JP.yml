@@ -16,6 +16,19 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
+  name: 35,36,37|ChatGPT  JP_305
+  network: tcp
+  port: 46484
+  server: jp05-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
   name: 35,198|🇯🇵JP-92.38.178.69-443
   network: ws
   port: 443
@@ -32,23 +45,10 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 35,36,37|ChatGPT  JP_282
-  network: tcp
-  port: 46484
-  server: jp05-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  type: vmess
-  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: ' ZZ'
-  h2-opts: {}
-  http-opts: {}
-  name: '35,36,704|🇯🇵_JP_日本 #9'
+  name: '35,36,37,704|🇯🇵_JP_日本 #6'
   network: tcp
   port: 21585
-  server: jp03-alt-vm0.entry.srthdw.art
+  server: jp01-alt-vm0.entry.srthdw.art
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -68,51 +68,50 @@ proxies:
   uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
 - alterId: 1
   cipher: auto
-  country: ' JP'
+  country: ' ZZ'
   h2-opts: {}
   http-opts: {}
-  name: '35,36,37,704|🇯🇵_JP_日本 #6'
+  name: '35,36,704|🇯🇵_JP_日本 #9'
   network: tcp
   port: 21585
-  server: jp01-alt-vm0.entry.srthdw.art
+  server: jp03-alt-vm0.entry.srthdw.art
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 0
-  cipher: none
+  cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '37,44,136,138,198,199,403,404,452,461,672,762,924|@Vip_Security join us -
-    59
-
-    '
-  network: tcp
-  port: '43720'
-  server: 61.120.9.18
-  servername: ''
+  name: 37|ChatGPT  JP_301
+  network: ws
+  port: 443
+  server: tls.85.node-for-bigairport.win
+  servername: tls.85.node-for-bigairport.win
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-headers:
+    HOST: tls.85.node-for-bigairport.win
   ws-path: /
 - alterId: 0
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 37|ChatGPT  JP_283
+  name: 37|ChatGPT  JP_303
   network: ws
   port: 443
-  server: tls.99.node-for-bigairport.win
-  servername: tls.99.node-for-bigairport.win
+  server: tls.96.node-for-bigairport.win
+  servername: tls.96.node-for-bigairport.win
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-headers:
-    HOST: tls.99.node-for-bigairport.win
+    HOST: tls.96.node-for-bigairport.win
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -129,46 +128,6 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: 39|netflix_JP
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m2.gladns.com
-  type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  country: JP
-  name: 39,125,213,403,530,622,646,902,944|JP_Tokyo_Amazon Technologies Inc.2
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: JP
-  name: 39,90,125,403,944|JP_Tokyo_Amazon Technologies Inc.3
-  password: amazonskr05
-  port: 443
-  server: 3.112.215.69
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: '39|netflix_JP #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m3.gladns.com
-  type: ss
 - alterId: 64
   cipher: auto
   country: JP
@@ -328,6 +287,16 @@ proxies:
   tfo: false
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 53,81,108,125,372,483,622,646,737,759,908,944|JP_Tokyo_Amazon Technologies
+    Inc.1
+  password: amazonskr05
+  port: 443
+  server: 52.198.194.170
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
   name: 62|🇯🇵 日本01｜tg@ghosxtop
   obfs: plain
@@ -480,7 +449,7 @@ proxies:
       host: jp03.thomasina.buzz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 99|05-0424-JP
+  name: 99|05-0423-JP
   password: 36d21791-522c-44f5-9967-79c0c3e269e9
   port: 10089
   server: osaka002-a.oraclenat.cc
