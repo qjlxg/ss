@@ -1,18 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   country: ' TW'
-  name: 37|ChatGPT Relay  TW_41
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.m6.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: 37|ChatGPT Relay  TW_42
+  name: 37|ChatGPT Relay  TW_40
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -23,25 +12,36 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' TW'
-  name: 37|ChatGPT Relay  TW_43
+  name: 37|ChatGPT  TW_41
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: 84858fa.vpnhat.t.me:73643
     mode: tls
   port: 2377
-  server: 84858fa.m5.gladns.com
+  server: 84858fa.t2.gladns.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' TW'
-  name: 37|ChatGPT  TW_44
+  name: 37|ChatGPT  TW_42
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: 84858fa.vpnhat.t.me:73643
     mode: tls
   port: 2377
-  server: 84858fa.h2.gladns.com
+  server: 84858fa.t3.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 37|ChatGPT  TW_43
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.t1.gladns.com
   type: ss
 - alterId: 0
   cipher: auto
@@ -98,6 +98,35 @@ proxies:
     headers:
       host: www.35709620.xyz
     path: /path/351212081517
+- cipher: aes-128-gcm
+  name: 90|🇹🇼 台湾_1
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: cf686101971.download.windowsupdate.com
+    mode: http
+  port: '926'
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 90|🇹🇼 台湾_2
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: cf686101971.download.windowsupdate.com
+    mode: http
+  port: '9048'
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 90,125,393|🇪🇸 ES 9 → tg@nicevpn123
+  password: d52848a3-5101-3ccc-aed8-113ce65928a8
+  port: 61006
+  server: 2.forlive.live
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 99,108|TG频道@mfbpn-0355-TW
   password: 4dcf1a0d-8dd2-4648-afcb-aa7f19e5ef67
@@ -233,6 +262,29 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
+  name: '125,388,520,521,762|台湾-1.68MB/s_1 #1'
+  network: ws
+  port: 12945
+  server: 154.40.60.172
+  servername: 55.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    path: /
+- name: 125|台湾-89.0MB/s
+  network: tcp
+  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+  port: 443
+  server: twnode11.oportal.cc
+  skip-cert-verify: true
+  sni: twnode11.oportal.cc
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
   name: 125|🇹🇼 台湾1
   network: ''
   port: 45078
@@ -261,22 +313,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
-- alterId: 0
-  cipher: auto
-  name: '125,316,444,567,621,622,631,632,637,643,644,646,672,689,892,893,900|PP|@Zyw_Channel
-    #42'
-  network: ws
-  port: 31945
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - name: 125|台湾省+中华电信_1
   network: tcp
   password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
@@ -286,150 +322,12 @@ proxies:
   sni: twnode11.oportal.cc
   type: trojan
   udp: true
-- name: 125|台湾省+中华电信_2
-  network: tcp
-  password: 981db44e-9f07-49eb-9ba0-6ab4939919a2
+- cipher: aes-256-cfb
+  name: 125,225|🇵
+  password: amazonskr05
   port: 443
-  server: twnode11.oportal.cc
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '125,388,520,521,762|台湾-1.68MB/s_1 #1'
-  network: ws
-  port: 12945
-  server: 154.40.60.172
-  servername: 55.lwdh.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
-  name: '125,517,567,614,618,621,622,631,632,637,643,644,646,667,670,763|mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
-    #2'
-  network: ws
-  port: 33792
-  server: 61.222.202.140
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
-  ws-opts:
-    headers:
-      host: 61.222.202.140
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 125|🇹🇼TW_445 | 9.37Mb
-  network: tcp
-  port: 15789
-  server: 61.222.202.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4535e708-5988-4377-a083-755ed60d8068
-- name: 125|🇹🇼TW_219
-  network: tcp
-  password: 283695dc-fcc8-11ea-8684-f23c913c8d2b
-  port: 443
-  server: tw.tcpbbr.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 125|🇹🇼TW_220
-  network: tcp
-  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
-  port: 443
-  server: 2.58.242.43
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 125|🇹🇼TW_221
-  network: tcp
-  password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U
-  port: 443
-  server: pastry.taiwanesefood.link
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 125,279|🇹🇼_TW_台湾
-  network: ws
-  port: 888
-  server: fmhfa-1039-v2-1.tpe-d-hinet.nd.cjhh.mom
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
-  ws-opts:
-    headers:
-      host: node.inforun.work
-    path: /je5x3pBN1vez3NQudNkB
-- alterId: 0
-  cipher: auto
-  name: 125|🇹🇼 TW😈SSRSUB_-1615409974
-  network: ws
-  port: 8080
-  server: 104.19.172.163
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 125|🇹🇼 TW😈SSRSUB_213192865
-  network: ws
-  port: 8080
-  server: 172.67.172.205
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 125|🇹🇼 TW😈SSRSUB_-1890001595
-  network: ws
-  port: 8080
-  server: 104.19.47.185
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  ws-opts:
-    path: /?ed=2048&Telegram🇨🇳 @WangCai2
-- alterId: 0
-  cipher: auto
-  name: 125|台湾省台北市 中华电信
-  network: ws
-  port: 13601
-  server: duoduotw.cdn-sgp.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
-  ws-opts:
-    path: /
-- name: 125|台湾_【YouTube-VV科技】_2
-  network: tcp
-  password: 1e772fe7-b0dd-47d7-81d9-d4798ff6677c
-  port: 443
-  server: tw1.yihaobao.xyz
-  skip-cert-verify: true
-  sni: tls.yihaobao.xyz
-  type: trojan
-  udp: true
+  server: 13.250.3.43
+  type: ss
 - alterId: 1
   cipher: auto
   name: 125|台湾_1
@@ -552,6 +450,128 @@ proxies:
   tls: false
   type: vmess
   uuid: 00231314-0d96-4dfc-bac8-cb52a989fd10
+- name: 125|台湾_【YouTube-VV科技】_2
+  network: tcp
+  password: 1e772fe7-b0dd-47d7-81d9-d4798ff6677c
+  port: 443
+  server: tw1.yihaobao.xyz
+  skip-cert-verify: true
+  sni: tls.yihaobao.xyz
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 125|🇹🇼 TW😈SSRSUB_-1615409974
+  network: ws
+  port: 8080
+  server: 104.19.172.163
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 125|🇹🇼 TW😈SSRSUB_213192865
+  network: ws
+  port: 8080
+  server: 172.67.172.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 125|🇹🇼 TW😈SSRSUB_-1890001595
+  network: ws
+  port: 8080
+  server: 104.19.47.185
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts:
+    path: /?ed=2048&Telegram🇨🇳 @WangCai2
+- alterId: 0
+  cipher: auto
+  name: 125|台湾省台北市 中华电信
+  network: ws
+  port: 13601
+  server: duoduotw.cdn-sgp.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
+  name: '125,517,567,614,618,621,622,631,632,637,643,644,646,667,670,763|mattkaydiary.com|中国台湾(TW)Taiwan/CityOffice_22
+    #2'
+  network: ws
+  port: 33792
+  server: 61.222.202.140
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
+  ws-opts:
+    headers:
+      host: 61.222.202.140
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 125|🇹🇼TW_445 | 9.37Mb
+  network: tcp
+  port: 15789
+  server: 61.222.202.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4535e708-5988-4377-a083-755ed60d8068
+- name: 125|🇹🇼TW_219
+  network: tcp
+  password: 283695dc-fcc8-11ea-8684-f23c913c8d2b
+  port: 443
+  server: tw.tcpbbr.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 125|🇹🇼TW_220
+  network: tcp
+  password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT
+  port: 443
+  server: 2.58.242.43
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 125|🇹🇼TW_221
+  network: tcp
+  password: ZVqSTHcLasKIKGnzjnr8aHRPATiaTj5U
+  port: 443
+  server: pastry.taiwanesefood.link
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 125,279|🇹🇼_TW_台湾
+  network: ws
+  port: 888
+  server: fmhfa-1039-v2-1.tpe-d-hinet.nd.cjhh.mom
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fbc2efb0-786a-4074-81ea-8ab12ca5422c
+  ws-opts:
+    headers:
+      host: node.inforun.work
+    path: /je5x3pBN1vez3NQudNkB
 - name: 125|台湾_【YouTube-VV科技】_1_1
   network: tcp
   password: 25258af0-ca08-43a8-a638-6c039c33da21
@@ -918,7 +938,7 @@ proxies:
   uuid: 0ed35629-919a-4891-ba0f-13cd198f863b
 - alterId: 0
   cipher: auto
-  name: '347,444,567,621,622,631,632,637,643,644,646,672,900|PP|@Zyw_Channel #24'
+  name: '347,444,567,621,622,631,632,637,643,644,646,672,688,900|PP|@Zyw_Channel #24'
   network: ws
   port: 443
   server: 123.58.197.70
@@ -1005,7 +1025,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '397,567,621,622,631,632,637,643,644,646,935|台湾_1030004 #1'
+  name: '397,567,621,622,631,632,637,643,644,646,688,935|台湾_1030004 #1'
   network: ws
   port: '30013'
   server: 103.177.33.19
@@ -1020,7 +1040,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '442,567,621,622,631,632,637,643,644,646|TW-1.161.186.146-2315 #1'
+  name: 442,567,621,622,631,632,637,643,644,646,688|4Sarina-7842
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -1030,6 +1050,8 @@ proxies:
   type: vmess
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
   ws-opts:
+    headers:
+      Host: ''
     path: /clientarea
 - alterId: 0
   cipher: auto
@@ -1164,7 +1186,7 @@ proxies:
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
 - alterId: 0
   cipher: auto
-  name: '443,567,621,622,631,632,637,643,644,646|🇼TW-114.43.163.80-2521 #1'
+  name: 443,567,621,622,631,632,637,643,644,646,688|4Sarina-7834
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -1912,20 +1934,6 @@ proxies:
   network: ws
   port: '443'
   server: cf.335570.xyz
-  servername: tw.appleid.bf
-  tls: true
-  type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
-  ws-opts:
-    headers:
-      Host: tw.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '892,893|🇹🇼台湾 02 #1'
-  network: ws
-  port: '13080'
-  server: 182.160.14.145
   servername: tw.appleid.bf
   tls: true
   type: vmess
