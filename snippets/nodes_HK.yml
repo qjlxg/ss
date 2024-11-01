@@ -1,4 +1,25 @@
 proxies:
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: '35,37,40,125,239,245,622,646|🇬SG-103.36.91.23-0505 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 35,42,43,125,198,199,200,201,203,205,206,762|中转节点-22.0MB/s
+  network: tcp
+  port: 15086
+  server: 15086.kuaiyin02.top
+  servername: 15086.kuaiyin02.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 0
   cipher: auto
   name: 38|HK |  LB-2K
@@ -14,15 +35,6 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
-- cipher: chacha20-ietf
-  delay: 599
-  name: '39,90,108,125,547,548,549|中国 - 香港 - Jiangxi Meilan Network Technology Co
-    - 1 #2'
-  password: asd123456
-  port: 8388
-  server: 154.197.98.64
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: HK
   name: 40,119,128,873|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -54,7 +66,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 0
   cipher: auto
-  name: '53,61,68,80,124,136,138,251,372,394,420,458,483,484,518,519,520,521,611,736,737,738,760,908,924|@Vip_Security
+  name: '53,61,68,80,124,136,138,251,372,394,458,483,484,518,519,520,521,611,736,737,738,760,908,924|@Vip_Security
     join us - 203
 
     '
@@ -608,6 +620,14 @@ proxies:
   server: hk8.lvuy.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf
+  delay: 1863
+  name: '108,125,547,548,549|中国 - 香港 - Xnnet LLC - 2 #2'
+  password: asd123456
+  port: 8388
+  server: 38.147.190.72
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 109|TG频道@mfbpn-0005-HK
@@ -691,7 +711,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip103
-  name: '124,219,458,622,646|🇭🇰HK-47.243.130.39-1327 #1'
+  name: '124,458,622,646|🇭🇰HK-47.243.130.39-1327 #1'
   network: grpc
   password: 7b12813e-e79e-35dc-9c0c-e75b828fdf55
   port: 11116
@@ -739,7 +759,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip105
-  name: '124,225,458,622,646|🇭🇰HK-8.210.4.83-1331 #1'
+  name: '124,458,622,646|🇭🇰HK-8.210.4.83-1331 #1'
   network: grpc
   password: 7b12813e-e79e-35dc-9c0c-e75b828fdf55
   port: 51116
@@ -751,7 +771,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: hkvip101
-  name: '124,225,458,622,646|🇰HK-8.218.234.94-1340 #1'
+  name: '124,458,622,646|🇰HK-8.218.234.94-1340 #1'
   network: grpc
   password: 7b12813e-e79e-35dc-9c0c-e75b828fdf55
   port: 22249
@@ -832,6 +852,12 @@ proxies:
   ws-opts:
     path: ''
 - cipher: aes-256-cfb
+  name: 125|HK,Kowloon
+  password: amazonskr05
+  port: 443
+  server: 54.255.245.62
+  type: ss
+- cipher: aes-256-cfb
   name: '125|HK #1'
   password: amazonskr05
   port: 443
@@ -871,9 +897,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '125,138,198,199,420|🇨🇳 中国_107 #1'
+  name: 125,138,198,199|🇹🇼TW-1.169.80.226-25009
   network: tcp
-  port: '25009'
+  port: 25009
   server: a.baodesign.top
   skip-cert-verify: true
   tls: false
@@ -881,7 +907,7 @@ proxies:
   uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
 - alterId: 0
   cipher: auto
-  name: 125,138,198,199,420,762|中国_由快嘴科技提供：kkzui.com241
+  name: 125,138,198,199,762|中国_由快嘴科技提供：kkzui.com241
   network: tcp
   port: 25007
   server: c.baodesign.top
@@ -891,7 +917,7 @@ proxies:
   uuid: ba2e86ee-65fc-4b4e-97c7-165b5b64023b
 - alterId: 0
   cipher: auto
-  name: 125,138,198,199,420,762|中国_由快嘴科技提供：kkzui.com240
+  name: 125,138,198,199,762|中国_由快嘴科技提供：kkzui.com240
   network: tcp
   port: 25006
   server: b.baodesign.top
@@ -3760,33 +3786,6 @@ proxies:
     headers:
       Host: z8.fragranceninja.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 225,567,621,622,631,632,637,643,644,646,779,935|香港_1030005
-  network: ws
-  port: '443'
-  server: fullaccesstohongkongnet.azurewebsites.net
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstohongkongnet.azurewebsites.net
-    path: /ws
-- cipher: chacha20-ietf-poly1305
-  name: 225|🇰 Hong Kong-06
-  password: dpcf4H
-  port: 56006
-  server: 62b547fd.fbnode-all.6pzfwf.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '225,442,622,646|🇰HK-112.119.48.214-2206 #1'
-  password: dbefcef0-836b-4d58-aa05-146f7e63f06f
-  port: 61005
-  server: api-a-asia-2.mcqqn.com
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 228|[🇭🇰]a4a09ce.h1.glados-config.net:2377(t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv)
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
@@ -4501,6 +4500,21 @@ proxies:
     path: /path/1690973478986
 - alterId: 0
   cipher: auto
+  name: 351,352,397,567,621,622,631,632,637,643,644,646,935|香港_1030018
+  network: ws
+  port: '80'
+  server: 154.92.9.99
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /blue
+- alterId: 0
+  cipher: auto
   name: 351,352,397,567,621,622,631,632,637,643,644,646,935|香港_1030019
   network: ws
   port: '80'
@@ -4610,21 +4624,6 @@ proxies:
   network: ws
   port: '80'
   server: 154.92.9.81
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  ws-opts:
-    headers:
-      Host: ''
-    path: /blue
-- alterId: 0
-  cipher: auto
-  name: '351,352,397,567,621,622,631,632,637,643,644,646,935|香港_1030027 #1'
-  network: ws
-  port: '80'
-  server: 154.92.9.80
   servername: ''
   skip-cert-verify: false
   tls: false
@@ -5293,7 +5292,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '393,710|未命名 #44'
+  name: '393,710|未命名 #53'
   network: ws
   port: '80'
   server: 182.16.1.194
@@ -5530,20 +5529,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 420|13,14|香港2|@ripaojiedian
-  network: ws
-  port: '30006'
-  server: 134.122.135.233
-  servername: www.60991390.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.60991390.xyz
-    path: /path/351212081517
 - alterId: 0
   cipher: auto
   name: 442|🇭🇰_HK_香港_2@54
@@ -6266,7 +6251,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "493,504|@vpnclashfa - 41\n #1"
+  name: "493,504|@vpnclashfa - 38\n #1"
   network: tcp
   port: '443'
   server: 135.125.134.177
@@ -6724,6 +6709,21 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
+- alterId: 0
+  cipher: auto
+  name: 567,621,622,631,632,637,643,644,646,779,935|香港_1030005
+  network: ws
+  port: '443'
+  server: fullaccesstohongkongnet.azurewebsites.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstohongkongnet.azurewebsites.net
+    path: /ws
 - alterId: 0
   cipher: auto
   name: 567,621,622,631,632,637,643,644,646,844|🇭🇰 HK😈SSRSUB_3695677373
