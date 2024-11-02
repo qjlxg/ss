@@ -16,8 +16,8 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '35,36,37,44,80,125,136,138,198,199,403,404,452,461,672,762,924|@Vip_Security
-    join us - 60
+  name: '35,36,37,44,80,125,136,138,198,199,452,461,672,762,924|@Vip_Security join
+    us - 60
 
     '
   network: tcp
@@ -45,19 +45,6 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- alterId: 1
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: 35,36,37|ChatGPT  JP_299
-  network: tcp
-  port: 46484
-  server: jp05-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  type: vmess
-  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
-  ws-path: /
 - alterId: 1
   cipher: auto
   country: ' ZZ'
@@ -102,7 +89,7 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 37|ChatGPT  JP_297
+  name: 37|ChatGPT  JP_308
   network: ws
   port: 443
   server: tls.96.node-for-bigairport.win
@@ -113,6 +100,23 @@ proxies:
   uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-headers:
     HOST: tls.96.node-for-bigairport.win
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: 37|ChatGPT  JP_309
+  network: ws
+  port: 443
+  server: tls.85.node-for-bigairport.win
+  servername: tls.85.node-for-bigairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-headers:
+    HOST: tls.85.node-for-bigairport.win
   ws-path: /
 - alterId: 0
   cipher: auto
@@ -129,6 +133,39 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
+- cipher: chacha20-ietf-poly1305
+  country: ' TW'
+  name: 39|netflix_JP
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.m2.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: '39|netflix_JP #2'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.m3.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: '39|netflix_JP #4'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.j1.gladns.com
+  type: ss
 - alterId: 64
   cipher: auto
   country: JP
@@ -278,19 +315,19 @@ proxies:
   ws-headers:
     Host: vjp3.0bad.com
   ws-path: /chat
-- alterId: -1
-  cipher: aes-256-cfb
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 53,81,90,108,125,372,403,483,622,646,737,759,908|Japan_Tokyo_ss_1129
+  name: 53,81,90,108,125,372,483,622,646,737,759,908|Japan_Tokyo_ss_1129
   password: amazonskr05
   port: 443
   server: 52.69.236.102
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- alterId: -1
+  cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 53,81,108,125,372,483,622,646,737,759,908,944|JP_Tokyo_Amazon Technologies
+  name: 53,81,108,125,372,403,483,622,646,737,759,908,944|JP_Tokyo_Amazon Technologies
     Inc.1
   password: amazonskr05
   port: 443
@@ -366,16 +403,6 @@ proxies:
     headers:
       Host: yxtw.651568.xyz
     path: /
-- alterId: 1
-  cipher: auto
-  name: "68,135,493,504,924|@Vip_Security join us - 421\n #1"
-  network: tcp
-  port: 21581
-  server: 35.74.231.235
-  servername: ie9as-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
 - alterId: 1
   cipher: auto
   name: '80,124,452,458,461|日本 东京Amazon数据中心 #12'
@@ -536,11 +563,14 @@ proxies:
   server: 54.249.197.65
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 90,125,515|🇭🇰 香港_Telegram@kxswa 7
+- alterId: -1
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 90,125,403,515|🇭🇰 香港_Telegram@kxswa 7
   password: hGkQ6915tD
   port: 15084
   server: 120.232.81.50
+  tfo: false
   type: ss
 - cipher: rc4-md5
   name: 90,125|???? JP??SSRSUB_631076657
@@ -652,7 +682,7 @@ proxies:
       host: jp03.thomasina.buzz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 99|05-0423-JP
+  name: 99|05-0438-JP
   password: 36d21791-522c-44f5-9967-79c0c3e269e9
   port: 10089
   server: osaka002-a.oraclenat.cc
@@ -4955,6 +4985,15 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3003719830 #1'
+  network: ''
+  port: 21584
+  server: qrztu-g04.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
   name: '404|JP😈github.com/Ruk1ng001_1921764974 #1'
   network: ''
   port: 21581
@@ -4964,19 +5003,172 @@ proxies:
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2638381500 #1'
+  name: '404|JP😈github.com/Ruk1ng001_1979314271 #1'
   network: ''
-  port: 21586
-  server: jtiij-g06.jp01-0986-vm0.entry.fr0307a.art
+  port: 46482
+  server: stgr6-g01.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2975844284 #1'
+  network: ''
+  port: 28783
+  server: g1uhb-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_442304073 #1'
+  network: ''
+  port: 28783
+  server: jb3t5-g01.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3027924849 #1'
+  network: ''
+  port: 28783
+  server: e88zt-g01.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3583294538 #1'
+  network: ''
+  port: 28786
+  server: rpcuz-g04.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_4162102540 #1'
+  network: ''
+  port: 11776
+  server: gug1v-g04.jp02-9a99-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2076595589 #1'
+  network: ''
+  port: 28783
+  server: 837zn-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3862323686 #1'
+  network: ''
+  port: 11778
+  server: lbk0q-g06.jp02-9a99-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4215189051 #1'
+  name: '404|JP😈github.com/Ruk1ng001_2501642872 #1'
   network: ''
-  port: 28788
-  server: b8b2v-g06.jp07-1f28-vm0.entry.fr0307a.art
+  port: 444
+  server: h6o4t-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2708295739 #1'
+  network: ''
+  port: 449
+  server: yeiuq-g06.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_339267895 #1'
+  network: ''
+  port: 444
+  server: duhm6-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1331566896 #1'
+  network: ''
+  port: 444
+  server: zmnlg-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_194075507 #1'
+  network: ''
+  port: 21581
+  server: m0itm-g01.jp01-0986-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3986974705 #1'
+  network: ''
+  port: 46485
+  server: c0roy-g04.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2270588825 #1'
+  network: ''
+  port: 28786
+  server: pf3lk-g04.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3020489169 #1'
+  network: ''
+  port: 21586
+  server: ovo0u-g06.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1297980182 #1'
+  network: ''
+  port: 28783
+  server: ldgo3-g01.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2523167922 #1'
+  network: ''
+  port: 28786
+  server: wofa2-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_209552158 #1'
+  network: ''
+  port: 449
+  server: 5jy5x-g06.jp04-3771-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: 076c0982-f879-324d-8683-35a0eb5615ee
@@ -4991,280 +5183,28 @@ proxies:
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_983413867 #1'
+  name: '404|JP😈github.com/Ruk1ng001_2248680337 #1'
   network: ''
-  port: 11773
-  server: w9ad5-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3628604137 #1'
-  network: ''
-  port: 444
-  server: zmnlg-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3597702192 #1'
-  network: ''
-  port: 28783
-  server: 7o4sp-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3856744042 #1'
-  network: ''
-  port: 46482
-  server: y0lc9-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1167852549 #1'
-  network: ''
-  port: 11778
-  server: 9jnb9-g06.jp02-9a99-vm0.entry.fr0307a.art
+  port: 21586
+  server: oamd2-g06.jp01-0986-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2523167922 #1'
+  name: '404|JP😈github.com/Ruk1ng001_2311364816 #1'
   network: ''
   port: 28786
-  server: wofa2-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: 2mcvs-g04.jp07-1f28-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4204188092 #1'
-  network: ''
-  port: 21581
-  server: ym0yo-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1614730032 #1'
-  network: ''
-  port: 28783
-  server: e88zt-g01.jp07-1f28-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_201620599 #1'
-  network: ''
-  port: 46487
-  server: dkfdm-g06.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_75717003 #1'
-  network: ''
-  port: 46482
-  server: qj6ig-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3003719830 #1'
+  name: '404|JP😈github.com/Ruk1ng001_983068799 #1'
   network: ''
   port: 21584
-  server: qrztu-g04.jp03-7d22-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_782914445 #1'
-  network: ''
-  port: 21581
-  server: ea6ob-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2076595589 #1'
-  network: ''
-  port: 28783
-  server: 837zn-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3314152242 #1'
-  network: ''
-  port: 21581
-  server: hx5gt-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1702978686 #1'
-  network: ''
-  port: 449
-  server: 6iduo-g06.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_915041401 #1'
-  network: ''
-  port: 444
-  server: yko4c-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2184442287 #1'
-  network: ''
-  port: 28783
-  server: eax1a-g01.jp07-1f28-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1773737070 #1'
-  network: ''
-  port: 28788
-  server: u2yye-g06.jp07-1f28-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2650520870 #1'
-  network: ''
-  port: 11773
-  server: pujoa-g01.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3960517753 #1'
-  network: ''
-  port: 444
-  server: 68qgf-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1291000325 #1'
-  network: ''
-  port: 28786
-  server: 74im2-g04.jp07-1f28-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3583294538 #1'
-  network: ''
-  port: 28786
-  server: rpcuz-g04.jp07-1f28-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4276738418 #1'
-  network: ''
-  port: 21581
-  server: 8c7t6-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1119903431 #1'
-  network: ''
-  port: 46487
-  server: bp97p-g06.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4136549210 #1'
-  network: ''
-  port: 21581
-  server: 3dp8g-g01.jp01-0986-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4162102540 #1'
-  network: ''
-  port: 11776
-  server: gug1v-g04.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4256164389 #1'
-  network: ''
-  port: 28786
-  server: re7hx-g04.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2506288490 #1'
-  network: ''
-  port: 21581
-  server: znuer-g01.jp03-7d22-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3507497597 #1'
-  network: ''
-  port: 46482
-  server: ydgrj-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1099460370 #1'
-  network: ''
-  port: 449
-  server: yeiuq-g06.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2621909805 #1'
-  network: ''
-  port: 28786
-  server: gli6j-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  server: uv998-g04.jp01-0986-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
@@ -5279,58 +5219,40 @@ proxies:
   uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2975844284 #1'
+  name: '404|JP😈github.com/Ruk1ng001_4204188092 #1'
   network: ''
-  port: 28783
-  server: g1uhb-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  port: 21581
+  server: ym0yo-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1593146527 #1'
+  network: ''
+  port: 28788
+  server: 0bwcp-g06.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2879175967 #1'
+  network: ''
+  port: 444
+  server: z4zog-g01.jp04-3771-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1119793231 #1'
-  network: ''
-  port: 46482
-  server: pc467-g01.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3461175183 #1'
-  network: ''
-  port: 444
-  server: xa4is-g01.jp04-3771-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4069850942 #1'
-  network: ''
-  port: 46485
-  server: m825r-g04.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2311364816 #1'
+  name: '404|JP😈github.com/Ruk1ng001_2621909805 #1'
   network: ''
   port: 28786
-  server: 2mcvs-g04.jp07-1f28-vm0.entry.fr0307a.art
+  server: gli6j-g04.jp06-7c5a-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_3862323686 #1'
-  network: ''
-  port: 11778
-  server: lbk0q-g06.jp02-9a99-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 1
   cipher: auto
   name: '404|JP😈github.com/Ruk1ng001_2829572880 #1'
@@ -5342,6 +5264,24 @@ proxies:
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - alterId: 1
   cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_4215189051 #1'
+  network: ''
+  port: 28788
+  server: b8b2v-g06.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2506288490 #1'
+  network: ''
+  port: 21581
+  server: znuer-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
   name: '404|JP😈github.com/Ruk1ng001_3650158243 #1'
   network: ''
   port: 21586
@@ -5351,40 +5291,121 @@ proxies:
   uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2573779888 #1'
+  name: '404|JP😈github.com/Ruk1ng001_604249193 #1'
   network: ''
-  port: 46485
-  server: c0roy-g04.jp05-6786-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2014025358 #1'
-  network: ''
-  port: 11773
-  server: 4plxh-g01.jp02-9a99-vm0.entry.fr0307a.art
+  port: 46482
+  server: 3m994-g01.jp05-6786-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_992326916 #1'
+  name: '404|JP😈github.com/Ruk1ng001_3851667142 #1'
   network: ''
   port: 21581
-  server: c2nnc-g01.jp03-7d22-vm0.entry.fr0307a.art
+  server: 094of-g01.jp01-0986-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_1521852970 #1'
+  name: '404|JP😈github.com/Ruk1ng001_1785279744 #1'
   network: ''
-  port: 11773
-  server: a7lsx-g01.jp02-9a99-vm0.entry.fr0307a.art
+  port: 444
+  server: yko4c-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2057892464 #1'
+  network: ''
+  port: 447
+  server: eidnc-g04.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1702978686 #1'
+  network: ''
+  port: 449
+  server: 6iduo-g06.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_75717003 #1'
+  network: ''
+  port: 46482
+  server: qj6ig-g01.jp05-6786-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_58401580 #1'
+  network: ''
+  port: 28788
+  server: 77e62-g06.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2317341800 #1'
+  network: ''
+  port: 11778
+  server: cwx0l-g06.jp02-9a99-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_4136549210 #1'
+  network: ''
+  port: 21581
+  server: 3dp8g-g01.jp01-0986-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_535788800 #1'
+  network: ''
+  port: 444
+  server: 68qgf-g01.jp04-3771-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_553126950 #1'
+  network: ''
+  port: 28786
+  server: v5i7l-g04.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3673983082 #1'
+  network: ''
+  port: 21581
+  server: 8b8rx-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2745027130 #1'
+  network: ''
+  port: 21584
+  server: kxj2w-g04.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
 - alterId: 1
   cipher: auto
   name: '404|JP😈github.com/Ruk1ng001_3482609302 #1'
@@ -5396,25 +5417,34 @@ proxies:
   uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_339267895 #1'
+  name: '404|JP😈github.com/Ruk1ng001_2255807398 #1'
   network: ''
-  port: 444
-  server: duhm6-g01.jp04-3771-vm0.entry.fr0307a.art
+  port: 28783
+  server: eax1a-g01.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_992326916 #1'
+  network: ''
+  port: 21581
+  server: c2nnc-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_4227083180 #1'
+  network: ''
+  port: 28783
+  server: sajrs-g01.jp06-7c5a-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_4031129978 #1'
-  network: ''
-  port: 28788
-  server: 9hct7-g06.jp06-7c5a-vm0.entry.fr0307a.art
-  tls: false
-  type: vmess
-  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
-- alterId: 1
-  cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_317643985 #1'
+  name: '404|JP😈github.com/Ruk1ng001_821008440 #1'
   network: ''
   port: 11773
   server: zw9ox-g01.jp02-9a99-vm0.entry.fr0307a.art
@@ -5423,10 +5453,37 @@ proxies:
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
 - alterId: 1
   cipher: auto
-  name: '404|JP😈github.com/Ruk1ng001_2540523685 #1'
+  name: '404|JP😈github.com/Ruk1ng001_3297094190 #1'
   network: ''
-  port: 21584
-  server: 3ifg0-g04.jp01-0986-vm0.entry.fr0307a.art
+  port: 11773
+  server: augxe-g01.jp02-9a99-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: a6374634-9d44-3a70-9bef-ffa21ea2bb32
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1989740202 #1'
+  network: ''
+  port: 28783
+  server: q4615-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2620373702 #1'
+  network: ''
+  port: 46482
+  server: pc467-g01.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_2692384356 #1'
+  network: ''
+  port: 11776
+  server: hg4xg-g04.jp02-9a99-vm0.entry.fr0307a.art
   tls: false
   type: vmess
   uuid: d91b00bb-3f92-336a-a65b-7c4c9858dae1
@@ -5439,6 +5496,33 @@ proxies:
   tls: false
   type: vmess
   uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_181100314 #1'
+  network: ''
+  port: 21581
+  server: nspj9-g01.jp03-7d22-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: fb43824b-a53d-3341-b27c-6e50dc0aa113
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_1773737070 #1'
+  network: ''
+  port: 28788
+  server: u2yye-g06.jp07-1f28-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
+- alterId: 1
+  cipher: auto
+  name: '404|JP😈github.com/Ruk1ng001_3166470494 #1'
+  network: ''
+  port: 46487
+  server: bp97p-g06.jp05-6786-vm0.entry.fr0307a.art
+  tls: false
+  type: vmess
+  uuid: 076c0982-f879-324d-8683-35a0eb5615ee
 - alterId: 0
   cipher: auto
   name: 442|🇯🇵_JP_日本_1_0@8
