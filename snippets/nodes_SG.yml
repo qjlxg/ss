@@ -6,6 +6,17 @@ proxies:
   port: 18814
   server: 159.65.129.128
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' SG'
+  name: 37|ChatGPT  SG_418
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.d3.gladns.com
+  type: ss
 - alterId: -1
   cipher: aes-256-cfb
   country: ' SG'
@@ -16,14 +27,47 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: ' US'
-  name: '37,39|disney_netflix_SG #5'
+  name: '37,39|disney_netflix_US #8'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
     host: 84858fa.vpnhat.t.me:73643
     mode: tls
   port: 2377
-  server: 84858fa.s3.gladns.com
+  server: 84858fa.d1.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: '37,39|netflix_SG #4'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.s1.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' US'
+  name: 37,39|Relay_ US-US_82
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.h1.gladns.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' SG'
+  name: 37|ChatGPT  SG_424
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 84858fa.vpnhat.t.me:73643
+    mode: tls
+  port: 2377
+  server: 84858fa.d2.gladns.com
   type: ss
 - alterId: 0
   cipher: auto
@@ -39,26 +83,30 @@ proxies:
   type: vmess
   uuid: ab0ab89d-de80-44bd-b938-cafda772976d
   ws-path: /
-- country: NL
-  fingerprint: randomized
-  name: 39|disney_netflix_SG
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 188.114.98.6
-  sni: 403b3611-99bc-43b7-88d7-26eD5D0825a9-3.pagES.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-    path: /trHMgc3gUnNOpvjx2i?ed=2560
 - cipher: aes-256-cfb
-  country: SG
   name: 39,115|HK,Kowloon
   password: amazonskr05
   port: 443
   server: 54.255.245.62
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 39,98,115,437,551,575,661,683,806|Singapore_Singapore_ss_1146
+  password: amazonskr05
+  port: 443
+  server: 13.250.3.43
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: SG
+  name: 39,84,115|HK,NewTerritories
+  password: amazonskr05
+  port: 443
+  server: 13.229.98.87
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -69,47 +117,6 @@ proxies:
   server: 52.77.209.61
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: SG
-  name: 39,84,115|HK,NewTerritories
-  password: amazonskr05
-  port: 443
-  server: 13.229.98.87
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: '39|disney_netflix_SG #3'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.s1.gladns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' US'
-  name: '39|disney_netflix_SG #4'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 84858fa.vpnhat.t.me:73643
-    mode: tls
-  port: 2377
-  server: 84858fa.s2.gladns.com
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: US
-  name: 39,84,98,115,437,551,575,661,683,806|Singapore_Singapore_ss_1144
-  password: amazonskr05
-  port: 443
-  server: 47.129.244.12
-  tfo: false
-  type: ss
-  udp: true
 - cipher: chacha20-ietf
   name: 58|🇸🇬 新加坡01｜tg@ghosxtop
   obfs: plain
@@ -184,22 +191,6 @@ proxies:
   uuid: 7e30d039-1751-4fbd-aa0a-918b03003515
   ws-opts:
     path: /chami
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 84,115|JP,Tokyo
-  password: amazonskr05
-  port: 443
-  server: 54.169.135.226
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 84|🇸🇬 新加坡_3
-  password: amazonskr05
-  port: '443'
-  server: 47.129.50.131
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 84,115|TG😈SSRSUB_881154881
@@ -411,15 +402,6 @@ proxies:
   server: sg4.lvuy.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 98,115,437,551,575,661,683,806|Singapore_Singapore_ss_1146
-  password: amazonskr05
-  port: 443
-  server: 13.250.3.43
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
   name: '99|TG频道@mfbpn-0010-SG #1'
@@ -578,6 +560,80 @@ proxies:
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 115|黑森林「新加坡|传说」
+  network: ws
+  port: 12926
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '115,188,189,190,192,193,194,195,196|🇸🇬SG-31.192.234.7-12954 #7'
+  network: tcp
+  port: 12954
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 115|青龙「新加坡|传说」「专线Z」
+  network: ws
+  port: 12938
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '115,188,189,190,191,192,193,194,195,196|🇸🇬SG-82.153.135.32-12953 #8'
+  network: tcp
+  port: 12953
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: '115,401,469,470,472|🔒🇸🇬 SG 103.14.92.61 ◈ tcp:12953 ◈ Akari Networks / AUK
+    Network ◈ d44bb #2'
+  network: tcp
+  port: '12953'
+  server: 63.lwdh.us
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- cipher: aes-256-cfb
+  name: '115,551,575|🇬SG-13.250.59.97-0486 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.250.59.97
+  type: ss
+- cipher: aes-256-cfb
+  name: '115,551,575|🇬SG-18.142.178.38-0476 #1'
+  password: amazonskr05
+  port: 443
+  server: 18.142.178.38
+  type: ss
+- cipher: aes-256-cfb
+  name: '115,551,575|🇬SG-54.255.183.152-0479 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.255.183.152
+  type: ss
 - name: 115|新加坡+Amazon数据中心
   network: tcp
   password: '!!str 3672449442956713984'
@@ -586,6 +642,24 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- name: 115|🇸🇬 SG-2
+  password: 9a601d59-4941-45e3-a863-c040737f2b25
+  port: 8005
+  server: sg-02.cloudlion.me
+  skip-cert-verify: true
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: '115|新加坡 001 #1'
+  network: ws
+  port: 8080
+  server: m002.mmzhk.website
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 782b949f-59ea-457b-bfa3-71530e6966ff
+  ws-opts:
+    path: /xyz
 - alterId: 2
   cipher: auto
   name: 115|🇸🇬_油管：全网最强白嫖_1
@@ -597,13 +671,35 @@ proxies:
   type: vmess
   uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
   ws-opts:
-    path: ''
-- cipher: chacha20-ietf-poly1305
-  name: 115,439|_油管：全网最强白嫖 207
-  password: a6a6d724-c1ad-4c18-aa07-b784b34491a9
-  port: 1274
-  server: n24.emovpn.xyz
-  type: ss
+    headers:
+      host: 626sg01.fx6688.top
+    path: /ray
+- name: '115|新加坡+Amazon数据中心 #1'
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: easy-mako.opossum872.cfd
+  skip-cert-verify: true
+  sni: easy-mako.opossum872.cfd
+  type: trojan
+  udp: true
+- name: 115|新加坡-1.30MB/s
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: winning-doe.sheepdog670.boats
+  skip-cert-verify: true
+  sni: winning-doe.sheepdog670.boats
+  type: trojan
+  udp: true
+- name: 115|新加坡-3.52MB/s
+  network: tcp
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: glad-boxer.opossum872.cfd
+  skip-cert-verify: true
+  sni: glad-boxer.opossum872.cfd
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
@@ -617,18 +713,15 @@ proxies:
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: '115|新加坡 001 #1'
-  network: ws
-  port: 8080
-  server: m002.mmzhk.website
+- name: 115|新加坡+Amazon数据中心_1
+  network: tcp
+  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
+  port: 20230
+  server: sg005.421421.xyz
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 782b949f-59ea-457b-bfa3-71530e6966ff
-  ws-opts:
-    path: /xyz
+  sni: 421421.xyz
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 115|🇸🇬 新加坡 IEPL专线NO3
@@ -681,60 +774,78 @@ proxies:
   tls: false
   type: vmess
   uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
-- name: 115|新加坡-1.30MB/s
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: winning-doe.sheepdog670.boats
-  skip-cert-verify: true
-  sni: winning-doe.sheepdog670.boats
-  type: trojan
-  udp: true
-- name: 115|新加坡-3.52MB/s
-  network: tcp
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: glad-boxer.opossum872.cfd
-  skip-cert-verify: true
-  sni: glad-boxer.opossum872.cfd
-  type: trojan
-  udp: true
-- name: 115|新加坡-335.0KB/s_1
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: easy-mako.opossum872.cfd
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '115,188,189,190,192,193,194,195,196|🇸🇬SG-31.192.234.7-12954 #7'
-  network: tcp
-  port: 12954
-  server: z2.fragranceninja.com
+  name: 115|新加坡_【YouTube-VV科技】
+  network: ws
+  port: 2082
+  server: js.bfyun.eu.org
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: be3b9651-71c7-46cf-80ed-8d0c33347046
+  ws-opts:
+    headers:
+      host: hostodo.galenet.online
+    path: /hostodo
+- alterId: 0
+  cipher: auto
+  name: 115|新加坡-4.7MB/s
+  network: ws
+  port: 443
+  server: 192.53.172.172
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
+  ws-opts:
+    headers:
+      host: 192.53.172.172
+    path: /nrMnVTFq
 - alterId: 0
   cipher: auto
-  name: '115,188,189,190,191,192,193,194,195,196|🇸🇬SG-82.153.135.32-12953 #8'
-  network: tcp
-  port: 12953
-  server: z2.fragranceninja.com
+  name: 115|新加坡 001_1
+  network: ws
+  port: 8443
+  server: acting.zhangyuanyi19920627.top
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- name: '115|新加坡+Amazon数据中心 #1'
-  network: tcp
-  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
-  port: 20230
-  server: sg005.421421.xyz
+  uuid: 74514f38-13d9-4825-c1bc-cdb9275f2d99
+  ws-opts:
+    path: /acting
+- alterId: 0
+  cipher: auto
+  name: '115|新加坡 002 #1'
+  network: ws
+  port: 443
+  server: profit-server.aken.my.id
   skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: d9a31ea0-d3b6-4a7b-be2e-01bbdba6c6e2
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '115,271,278,282,330,336,425,429,601,701,708,709,729,733,741,742,743,744,745,746,748,754,755,811|@Vip_Security
+    join us - 49
+
+    '
+  network: tcp
+  port: '57614'
+  server: 5.34.176.111
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+- cipher: chacha20-ietf-poly1305
+  name: 115,439|_油管：全网最强白嫖 207
+  password: a6a6d724-c1ad-4c18-aa07-b784b34491a9
+  port: 1274
+  server: n24.emovpn.xyz
+  type: ss
   udp: true
 - name: 115|新加坡-2.55MB/s
   network: tcp
@@ -770,18 +881,102 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '115,271,278,282,330,336,425,429,601,701,708,709,729,733,741,742,743,744,745,746,748,754,755,811|@Vip_Security
-    join us - 49
-
-    '
-  network: tcp
-  port: '57614'
-  server: 5.34.176.111
-  servername: ''
+  name: 115|新加坡_【YouTube-VV科技】_2
+  network: ws
+  port: 2082
+  server: 8.222.197.251
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
+  ws-opts:
+    headers:
+      host: hostodo.galenet.online
+    path: /hostodo
+- cipher: aes-256-cfb
+  name: 115,829|SG_Singapore_Amazon Technologies Inc.2
+  password: amazonskr05
+  port: 443
+  server: 13.250.25.159
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_4
+  password: amazonskr05
+  port: 443
+  server: 18.142.50.59
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_5
+  password: amazonskr05
+  port: 443
+  server: 13.229.81.137
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_6
+  password: amazonskr05
+  port: 443
+  server: 54.254.23.34
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_7
+  password: amazonskr05
+  port: 443
+  server: 54.255.167.158
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_10
+  password: amazonskr05
+  port: 443
+  server: 18.142.243.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|👉www.85la.com👉新加坡SG_11
+  password: amazonskr05
+  port: 443
+  server: 13.229.57.182
+  type: ss
+- alterId: 64
+  cipher: auto
+  name: 115|🇸🇬SG-159.223.94.156-172
+  network: ws
+  port: 80
+  server: 159.223.94.156
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
+  ws-opts:
+    path: ''
+- cipher: aes-256-cfb
+  name: 115|新加坡-974.0KB/s_1
+  password: amazonskr05
+  port: 443
+  server: 13.229.212.209
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-1.44MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.92.61
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-418.2KB/s
+  password: amazonskr05
+  port: 443
+  server: 54.255.222.67
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-3.88MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.128.233.58
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-2.16MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.174.107
+  type: ss
 - name: 115|Relay_🇸🇬SG-🇸🇬SG_207 |16.53Mb
   network: tcp
   password: a79da040-2e7c-11ed-91c2-1239d0255272
@@ -900,257 +1095,6 @@ proxies:
   sni: 20-212-60-88.nhost.00cdn.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 115|新加坡 001_1
-  network: ws
-  port: 8443
-  server: acting.zhangyuanyi19920627.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 74514f38-13d9-4825-c1bc-cdb9275f2d99
-  ws-opts:
-    path: /acting
-- alterId: 0
-  cipher: auto
-  name: '115|新加坡 002 #1'
-  network: ws
-  port: 443
-  server: profit-server.aken.my.id
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d9a31ea0-d3b6-4a7b-be2e-01bbdba6c6e2
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 115|新加坡-4.7MB/s
-  network: ws
-  port: 443
-  server: 192.53.172.172
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
-  ws-opts:
-    headers:
-      host: 192.53.172.172
-    path: /nrMnVTFq
-- alterId: 0
-  cipher: auto
-  name: '115|新加坡_【YouTube-VV科技】_1 #1'
-  network: ws
-  port: 2082
-  server: 8.222.197.251
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
-  ws-opts:
-    headers:
-      host: hostodo.galenet.online
-    path: /hostodo
-- name: 115|🇸🇬 SG-2
-  password: 9a601d59-4941-45e3-a863-c040737f2b25
-  port: 8005
-  server: sg-02.cloudlion.me
-  skip-cert-verify: true
-  type: hysteria2
-- alterId: 64
-  cipher: auto
-  name: 115|🇸🇬SG-159.223.94.156-172
-  network: ws
-  port: 80
-  server: 159.223.94.156
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
-  ws-opts:
-    path: ''
-- cipher: aes-256-cfb
-  name: 115,829|SG_Singapore_Amazon Technologies Inc.2
-  password: amazonskr05
-  port: 443
-  server: 13.250.25.159
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_4
-  password: amazonskr05
-  port: 443
-  server: 18.142.50.59
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_5
-  password: amazonskr05
-  port: 443
-  server: 13.229.81.137
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_6
-  password: amazonskr05
-  port: 443
-  server: 54.254.23.34
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_7
-  password: amazonskr05
-  port: 443
-  server: 54.255.167.158
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_10
-  password: amazonskr05
-  port: 443
-  server: 18.142.243.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|👉www.85la.com👉新加坡SG_11
-  password: amazonskr05
-  port: 443
-  server: 13.229.57.182
-  type: ss
-- cipher: aes-256-cfb
-  name: '115,393,551,575|🇬SG-13.213.46.196-6343 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.213.46.196
-  type: ss
-- cipher: aes-256-cfb
-  name: '115,359,393,551,575|🇬SG-54.251.168.143-6345 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.251.168.143
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-2.15MB/s
-  password: qRDZ7kfsdrbVvq8iGBeqzU
-  port: 44719
-  server: 68.183.181.235
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-1.19MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.228.79.13
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-367.3KB/s
-  password: K6H3qXY0upaOpwvNVcMa4O
-  port: 29057
-  server: 128.199.209.8
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-1.61MB/s
-  password: Nj9lJsm5P0CPho5iKahEcM
-  port: 63912
-  server: 157.245.207.199
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-914.7KB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.150.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-1.10MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.243.64
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-3.44MB/s
-  password: SfdixuRDwvlkQ7Be9hWiD0
-  port: 4439
-  server: 206.189.151.251
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-171.4KB/s
-  password: amazonskr05
-  port: 443
-  server: 13.214.209.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-767.7KB/s
-  password: 2sO6dg6cy1bQypanen8h21
-  port: 3127
-  server: 167.172.67.16
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-3.93MB/s
-  password: 7FbpQln3U7KFyaqk2UoWaH
-  port: 3127
-  server: 128.199.69.163
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-2.22MB/s
-  password: Pldzrr9Kh3OmtgBk1atN9X
-  port: 3127
-  server: 167.71.215.22
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-4.5MB/s
-  password: efQkeiDDQHWtSh7I75qwuM
-  port: 57093
-  server: 104.248.155.147
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-3.19MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.240.139
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-132.4KB/s
-  password: amazonskr05
-  port: 443
-  server: 54.179.241.46
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-4.14MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.78.228
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 115|新加坡-4.15MB/s_1
-  password: XEmXHgl79qAIf4YeiDCf2f
-  port: 26404
-  server: 47.129.223.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-974.0KB/s_1
-  password: amazonskr05
-  port: 443
-  server: 13.229.212.209
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-1.44MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.179.92.61
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-418.2KB/s
-  password: amazonskr05
-  port: 443
-  server: 54.255.222.67
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-3.88MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.233.58
-  type: ss
-- cipher: aes-256-cfb
-  name: 115|新加坡-2.16MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.174.107
-  type: ss
 - alterId: 16
   cipher: auto
   name: 115|新加坡_1
@@ -1301,6 +1245,115 @@ proxies:
     headers:
       host: v12.88host.buzz
     path: /mojing
+- cipher: aes-256-cfb
+  name: '115,393,551,575|🇬SG-13.213.46.196-6343 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.213.46.196
+  type: ss
+- cipher: aes-256-cfb
+  name: '115,359,393,551,575|🇬SG-54.251.168.143-6345 #1'
+  password: amazonskr05
+  port: 443
+  server: 54.251.168.143
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-2.15MB/s
+  password: qRDZ7kfsdrbVvq8iGBeqzU
+  port: 44719
+  server: 68.183.181.235
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-1.19MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.228.79.13
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-367.3KB/s
+  password: K6H3qXY0upaOpwvNVcMa4O
+  port: 29057
+  server: 128.199.209.8
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-1.61MB/s
+  password: Nj9lJsm5P0CPho5iKahEcM
+  port: 63912
+  server: 157.245.207.199
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-914.7KB/s
+  password: amazonskr05
+  port: 443
+  server: 47.128.150.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-1.10MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.229.243.64
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-3.44MB/s
+  password: SfdixuRDwvlkQ7Be9hWiD0
+  port: 4439
+  server: 206.189.151.251
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-171.4KB/s
+  password: amazonskr05
+  port: 443
+  server: 13.214.209.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-767.7KB/s
+  password: 2sO6dg6cy1bQypanen8h21
+  port: 3127
+  server: 167.172.67.16
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-3.93MB/s
+  password: 7FbpQln3U7KFyaqk2UoWaH
+  port: 3127
+  server: 128.199.69.163
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-2.22MB/s
+  password: Pldzrr9Kh3OmtgBk1atN9X
+  port: 3127
+  server: 167.71.215.22
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-4.5MB/s
+  password: efQkeiDDQHWtSh7I75qwuM
+  port: 57093
+  server: 104.248.155.147
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-3.19MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.212.240.139
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-132.4KB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.241.46
+  type: ss
+- cipher: aes-256-cfb
+  name: 115|新加坡-4.14MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.229.78.228
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 115|新加坡-4.15MB/s_1
+  password: XEmXHgl79qAIf4YeiDCf2f
+  port: 26404
+  server: 47.129.223.61
+  type: ss
 - alterId: 0
   cipher: auto
   name: '125,126|Channel: @axproxy  🇸🇬1530 #1'
@@ -1458,6 +1511,17 @@ proxies:
     path: /path/091615350227
 - alterId: 0
   cipher: auto
+  name: '188,189,192,196|🇸🇬SG-38.54.17.250-12926 #6'
+  network: ws
+  port: 12926
+  server: z2.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
   name: 188|🇸🇬SG-54.254.253.28-33443
   network: ws
   port: 33443
@@ -1496,6 +1560,17 @@ proxies:
   ws-opts:
     headers:
       Host: z2.fragranceninja.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '190,191,192,194|🇸🇬SG-103.190.178.19-12938 #6'
+  network: ws
+  port: 12938
+  server: z2.fragranceninja.com
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
     path: /
 - alterId: 0
   cipher: auto
@@ -2938,7 +3013,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 360,437,438,660,661,662,684,806|China_None_vmess_1157
+  name: 360,412,413,437,438,660,661,662,684,806|China_None_vmess_1157
   network: tcp
   port: '40002'
   server: 183.236.48.163
