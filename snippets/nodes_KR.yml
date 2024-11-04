@@ -1,6 +1,16 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '0,53,348,398,399,400,425,426,427,648,649,650,672|韩国2|@ripaojiedian #2'
+  network: tcp
+  port: '41510'
+  server: 45.94.68.210
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 18e11bb1-2ecc-4700-902e-9a172b762bbd
+- alterId: 0
+  cipher: auto
   name: '5,12,17,26,32|14|韩国2|@ripaojiedian #4'
   network: tcp
   port: '26465'
@@ -11,7 +21,7 @@ proxies:
   uuid: ca233c52-9c01-412b-961f-cb71a07d298d
 - alterId: 0
   cipher: auto
-  name: 34,46,73,97,106,108,117,118,201,327,348,399,400,402,412,417,425,426,427,447,601,602,603,798,811|韩国_1103001
+  name: 34,46,73,97,106,108,117,118,201,327,348,402,412,417,447,601,602,603,798,811|韩国_1103001
   network: tcp
   port: '22330'
   server: 45.141.136.221
@@ -23,16 +33,20 @@ proxies:
   ws-headers:
     Host: 45.141.136.221
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '53,348,398,648,649,650,672|韩国2|@ripaojiedian #1'
-  network: tcp
-  port: '41510'
-  server: 45.94.68.210
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 18e11bb1-2ecc-4700-902e-9a172b762bbd
+- cipher: chacha20-ietf-poly1305
+  country: ' KR'
+  name: 35,107|中转节点-32.07MB/s
+  password: 0e91a29a-989d-4934-a1fb-7b653319397f
+  port: 50101
+  server: iepl1.forlive.live
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: ' KR'
+  name: 37,107|韩国-765.1KB/s
+  password: 2155145a-b1b5-443a-8977-670f6bd10f02
+  port: 50001
+  server: bgroup.node2.s.nodelist-airport.com
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 54|🇰🇷 韩国02｜tg@ghosxtop
   password: b9c94578-5861-460f-8f94-a2cb939f9876
@@ -95,7 +109,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 90|13-1194-KR
+  name: 90|13-1171-KR
   network: ws
   port: '30002'
   server: ch1.12123.org
@@ -108,7 +122,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 90|13-1197-KR
+  name: 90|13-1174-KR
   network: ws
   port: '30000'
   server: cc111.12123.org
@@ -121,7 +135,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 90|13-1214-KR
+  name: 90|13-1191-KR
   network: ws
   port: '30000'
   server: cc112.12123.org
@@ -134,7 +148,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 90|13-1251-KR
+  name: 90|13-1228-KR
   network: ws
   port: '30002'
   server: shouer2112.12123.org
@@ -147,7 +161,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 95|TG频道@mfbpn-024-KR
+  name: 95|TG频道@mfbpn-0024-KR
   network: ws
   port: 443
   server: 138.2.122.225
@@ -307,18 +321,43 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 107|韩国-2.92MB/s
+  name: 107|射手「韩国|史诗」
   network: ws
-  port: 20602
-  server: kr1.yibao.ink
+  port: 13007
+  server: z8.fragranceninja.com
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: fd992674-80d7-4744-953a-58788e5afaef
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
   ws-opts:
-    headers:
-      host: kr1.yibao.ink
-    path: /
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 107|刑天「韩国|传说」「专线X」
+  network: tcp
+  port: 12951
+  server: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- name: 107|韩国-2.60MB/s
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20980
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 107|韩国-3.51MB/s_1
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: enabling-filly.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 107,342|🔰NGINX_KIT 🔻🇨🇦CA 🔺🇰🇷KR ☑ADSL ⏰6/8/2024_234
@@ -345,47 +384,6 @@ proxies:
     headers:
       Host: amd2.720208.xyz
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- cipher: aes-256-cfb
-  name: 107|👉www.85la.com👉韩国KR_1
-  password: amazonskr05
-  port: 443
-  server: 13.125.222.81
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|👉www.85la.com👉韩国KR_3
-  password: amazonskr05
-  port: 443
-  server: 13.125.209.191
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|👉www.85la.com👉韩国KR_4
-  password: amazonskr05
-  port: 443
-  server: 52.78.63.211
-  type: ss
-- cipher: aes-256-cfb
-  name: '107,539,563|🇷KR-52.78.205.132-0466 #1'
-  password: amazonskr05
-  port: 443
-  server: 52.78.205.132
-  type: ss
-- name: 107|韩国-2.60MB/s
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20980
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 107|韩国-3.51MB/s_1
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: enabling-filly.opossum872.cfd
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 107|???? KR??SSRSUB_455686761
@@ -396,183 +394,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476
-- cipher: aes-256-cfb
-  name: '107,539,563|🇷KR-3.35.222.240-0472 #1'
-  password: amazonskr05
-  port: 443
-  server: 3.35.222.240
-  type: ss
-- cipher: aes-256-gcm
-  name: '107,539,563|🇷KR-146.56.158.178-0480 #1'
-  password: 1ijeblXtJy
-  port: 21744
-  server: shouer1.209966.xyz
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 107|Relay_🏁ZZ-🇰🇷KR_143
-  network: ws
-  port: 80
-  server: 104.17.213.241
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 107|Relay_🏁ZZ-🇰🇷KR_145
-  network: ws
-  port: 80
-  server: 104.17.221.248
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 107|Relay_🏁ZZ-🇰🇷KR_147
-  network: ws
-  port: 80
-  server: 104.16.155.10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 107|Relay_🏁ZZ-🇰🇷KR_148
-  network: ws
-  port: 80
-  server: 104.19.48.236
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 107|🇰🇷 KR_311 | 9.21Mb
+- name: '107|🇰🇷 韩国-三网优化2-1E #1'
   network: tcp
-  port: 18152
-  server: 152.70.247.24
+  password: 6d84a8a8-718d-4739-892f-373eaefa8e26
+  port: 44732
+  server: kr-qingyun.dwyun.me
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8dee0987-1be4-47aa-a1dc-5f141d8d7e91
-- alterId: 0
-  cipher: auto
-  name: 107|射手「韩国|史诗」
-  network: ws
-  port: 13007
-  server: z8.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 107|刑天「韩国|传说」「专线X」
-  network: tcp
-  port: 12951
-  server: z6.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- name: 107|韩国+V2CROSS.COM_1
-  network: ws
-  password: 95b
-  port: 28825
-  server: 117.123.144.67
-  skip-cert-verify: true
-  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  sni: kr-qingyun.dwyun.me
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
-    path: /trojan-6qo.pages.dev/
-- name: 107|韩国+V2CROSS.COM_2
-  network: ws
-  password: 95b
-  port: 25001
-  server: 211.107.201.14
+- alterId: 0
+  cipher: auto
+  name: 107|🇰🇷 韩国 IEPL专线NO1
+  network: ''
+  port: 20021
+  server: i.needss.top
   skip-cert-verify: true
-  sni: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
-    path: /trojan-6qo.pages.dev/
-- name: 107|🇰🇷_油管：全网最强白嫖_1
-  network: tcp
-  password: 375e1e34-8f6f-39be-bdb9-52080f546d4d
-  port: 34210
-  server: hg.jiashumao.net
-  skip-cert-verify: true
-  sni: hg.jiashumao.net
-  type: trojan
-  udp: true
-- name: 107|🇰🇷 KR-1
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 152.70.234.12
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- name: 107|🇰🇷 KR-2
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 193.122.114.172
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- name: 107|🇰🇷 KR-3
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 193.122.113.204
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 107|🇰🇷 KR-4
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 146.56.100.103
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 107|🇰🇷 KR-5
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 152.69.225.196
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-- name: 107|🇰🇷 KR-6
-  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
-  port: 35000
-  server: 146.56.174.194
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
+  tls: false
+  type: vmess
+  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
 - alterId: 0
   cipher: auto
   name: 107|韩国_【YouTube-VV科技】_1
@@ -601,25 +441,39 @@ proxies:
     headers:
       host: d.freeh1.xyz
     path: /dongtaiwang.com
-- name: '107|🇰🇷 韩国-三网优化2-1E #1'
+- name: 107|🇰🇷_油管：全网最强白嫖_1
   network: tcp
-  password: 6d84a8a8-718d-4739-892f-373eaefa8e26
-  port: 44732
-  server: kr-qingyun.dwyun.me
+  password: 375e1e34-8f6f-39be-bdb9-52080f546d4d
+  port: 34210
+  server: hg.jiashumao.net
   skip-cert-verify: true
-  sni: kr-qingyun.dwyun.me
+  sni: hg.jiashumao.net
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 107|🇰🇷 韩国 IEPL专线NO1
-  network: ''
-  port: 20021
-  server: i.needss.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
+- cipher: aes-256-cfb
+  name: '107,539,563|🇷KR-43.202.68.249-0420 #1'
+  password: amazonskr05
+  port: 443
+  server: 43.202.68.249
+  type: ss
+- cipher: aes-256-cfb
+  name: '107,539,563|🇷KR-3.38.102.189-0401 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.38.102.189
+  type: ss
+- cipher: aes-256-cfb
+  name: '107,539,563|🇷KR-3.35.222.240-0414 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.35.222.240
+  type: ss
+- cipher: aes-256-cfb
+  name: '107,539,563|🇷KR-52.78.205.132-0408 #1'
+  password: amazonskr05
+  port: 443
+  server: 52.78.205.132
+  type: ss
 - alterId: 0
   cipher: auto
   name: 107|韩国_【YouTube-VV科技】_1_1
@@ -690,18 +544,16 @@ proxies:
     headers:
       host: ecc.vtcss.top
     path: /blue
-- cipher: chacha20-ietf-poly1305
-  name: 107|🇰🇷 KR😈SSRSUB_2632274952
-  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
-  port: 40016
-  server: hzhz2.sssyun.xyz
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|KR,Incheon_1
-  password: amazonskr05
-  port: 443
-  server: 18.136.197.165
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 107|🇰🇷 KR_311 | 9.21Mb
+  network: tcp
+  port: 18152
+  server: 152.70.247.24
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8dee0987-1be4-47aa-a1dc-5f141d8d7e91
 - alterId: 0
   cipher: auto
   name: 107,496|v韩国03
@@ -716,6 +568,248 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 107|韩国+V2CROSS.COM_1
+  network: ws
+  password: 95b
+  port: 28825
+  server: 117.123.144.67
+  skip-cert-verify: true
+  sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+    path: /trojan-6qo.pages.dev/
+- name: 107|韩国+V2CROSS.COM_2
+  network: ws
+  password: 95b
+  port: 25001
+  server: 211.107.201.14
+  skip-cert-verify: true
+  sni: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
+    path: /trojan-6qo.pages.dev/
+- alterId: 0
+  cipher: auto
+  name: "107,118,798|@Vip_Security join us - 10\n #1"
+  network: tcp
+  port: '20937'
+  server: 45.94.68.200
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c0e6d2ab-9fc2-4a0f-8011-844e5b45ec0c
+- name: 107|🇰🇷 KR-1
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 152.70.234.12
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+- name: 107|🇰🇷 KR-2
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 193.122.114.172
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+- name: 107|🇰🇷 KR-3
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 193.122.113.204
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 107|🇰🇷 KR-4
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 146.56.100.103
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 107|🇰🇷 KR-5
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 152.69.225.196
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+- name: 107|🇰🇷 KR-6
+  password: 38c31b4c-117d-429a-9469-aa2a420ac04e
+  port: 35000
+  server: 146.56.174.194
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: '107,539,563|🇷KR-146.56.158.178-0422 #1'
+  password: 1ijeblXtJy
+  port: 21744
+  server: shouer1.209966.xyz
+  type: ss
+- cipher: aes-256-cfb
+  name: '107,539,563|🇳CN-221.181.185.71-0476 #1'
+  password: f52SZksXnGNfc72Q
+  port: 23382
+  server: 221.181.185.71
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|KR,Incheon
+  password: amazonskr05
+  port: 443
+  server: 18.136.197.165
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 107|Relay_🏁ZZ-🇰🇷KR_143
+  network: ws
+  port: 80
+  server: 104.17.213.241
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 107|Relay_🏁ZZ-🇰🇷KR_148
+  network: ws
+  port: 80
+  server: 104.19.48.236
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 107|🇰🇷 KR😈SSRSUB_2632274952
+  password: 9ddd5a1c-2d57-4c68-9f3d-b39ea2b8b698
+  port: 40016
+  server: hzhz2.sssyun.xyz
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 107|韩国-2.92MB/s
+  network: ws
+  port: 20602
+  server: kr1.yibao.ink
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fd992674-80d7-4744-953a-58788e5afaef
+  ws-opts:
+    headers:
+      host: kr1.yibao.ink
+    path: /
+- name: 107|🇰🇷KR_120
+  network: tcp
+  password: a1718180-d616-4b71-9bb6-3e96ba20f921
+  port: 443
+  server: jgw3.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 107|韩国 蘑菇主机BGP数据中心
+  network: tcp
+  port: 10001
+  server: 103.214.68.57
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
+- alterId: 0
+  cipher: auto
+  name: 107|🇰🇷 KR😈SSRSUB_752622824
+  network: ws
+  port: 80
+  server: tg.lsjc_group.xn--yfr72t8r4bvhd.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d87a6d3-1966-46c2-a520-bf26cfd754ac
+  ws-opts:
+    headers:
+      host: tg.lsjc_group.xn--yfr72t8r4bvhd.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 107|🇰🇷 KR😈SSRSUB_321889496
+  network: ws
+  port: 8080
+  server: baobaojichang.bbjc.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9ec32656-553f-46c1-82bf-1404c37766ec
+  ws-opts:
+    headers:
+      host: baobaojichang.bbjc.xyz
+    path: /?ed=2048
+- cipher: aes-256-cfb
+  name: 107|👉www.85la.com👉韩国KR_1
+  password: amazonskr05
+  port: 443
+  server: 13.125.222.81
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|👉www.85la.com👉韩国KR_3
+  password: amazonskr05
+  port: 443
+  server: 13.125.209.191
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|👉www.85la.com👉韩国KR_4
+  password: amazonskr05
+  port: 443
+  server: 52.78.63.211
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|👉www.85la.com👉韩国KR_1_1
+  password: amazonskr05
+  port: 443
+  server: 13.125.235.88
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|👉www.85la.com👉韩国KR_4_1
+  password: amazonskr05
+  port: 443
+  server: 52.78.193.3
+  type: ss
+- name: '107|韩国 002 #1'
+  network: tcp
+  password: CMLiu
+  port: 443
+  server: 59.3.3.161
+  skip-cert-verify: true
+  sni: aliorg.filegear-sg.me
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 107|韩国-1.92MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.180.243.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 107|韩国-2.49MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.201.112.173
+  type: ss
 - alterId: 16
   cipher: auto
   name: 107|韩国_1
@@ -824,99 +918,6 @@ proxies:
     headers:
       host: mf-aws-kr-06.xncloud.xyz
     path: /niaoyun
-- name: 107|韩国(yudou66.com 玉豆免费节点)
-  network: tcp
-  password: NISHIKUITAN222
-  port: 443
-  server: 152.70.71.23
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: '107|韩国 002 #1'
-  network: tcp
-  password: CMLiu
-  port: 443
-  server: 59.3.3.161
-  skip-cert-verify: true
-  sni: aliorg.filegear-sg.me
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 107|韩国 蘑菇主机BGP数据中心
-  network: tcp
-  port: 10001
-  server: 103.214.68.57
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ebca5f68-bf59-4081-e658-f158839c2f5c
-- alterId: 0
-  cipher: auto
-  name: 107|🇰🇷 KR😈SSRSUB_752622824
-  network: ws
-  port: 80
-  server: tg.lsjc_group.xn--yfr72t8r4bvhd.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d87a6d3-1966-46c2-a520-bf26cfd754ac
-  ws-opts:
-    headers:
-      host: tg.lsjc_group.xn--yfr72t8r4bvhd.xyz
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 107|🇰🇷 KR😈SSRSUB_321889496
-  network: ws
-  port: 8080
-  server: baobaojichang.bbjc.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9ec32656-553f-46c1-82bf-1404c37766ec
-  ws-opts:
-    headers:
-      host: baobaojichang.bbjc.xyz
-    path: /?ed=2048
-- cipher: aes-256-cfb
-  name: 107|👉www.85la.com👉韩国KR_1_1
-  password: amazonskr05
-  port: 443
-  server: 13.125.235.88
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|👉www.85la.com👉韩国KR_4_1
-  password: amazonskr05
-  port: 443
-  server: 52.78.193.3
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 107|韩国-765.1KB/s
-  password: 2155145a-b1b5-443a-8977-670f6bd10f02
-  port: 50001
-  server: bgroup.node2.s.nodelist-airport.com
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|韩国-1.92MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.180.243.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 107|韩国-2.49MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.201.112.173
-  type: ss
-- name: 107|🇰🇷KR_120
-  network: tcp
-  password: a1718180-d616-4b71-9bb6-3e96ba20f921
-  port: 443
-  server: jgw3.gaox.ml
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: '123,745|🇰🇷 KR😈SSRSUB_455686761 #1'
@@ -1174,19 +1175,19 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '308,309,539,563|🇷KR-43.202.49.222-9455 #1'
+  name: '308,309,539,563|🇷KR-43.202.49.222-9610 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '308,309,539,563|🇷KR-43.201.108.109-9456 #1'
+  name: '308,309,539,563|🇷KR-43.201.108.109-9611 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '308,309,539,563|🇷KR-125.141.26.5-10054 #1'
+  name: '308,309,539,563|🇷KR-125.141.26.5-10209 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1821,7 +1822,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '389,499,538,539,548,549,554,560,561,563|KR-131.186.24.103-2644 #1'
+  name: '389,499,538,539,548,549,554,560,561,563|KR-131.186.24.103-2796 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -1870,7 +1871,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '389,539,563|🇷KR-43.201.48.212-2801 #1'
+  name: '389,539,563|🇷KR-43.201.48.212-2953 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -2874,7 +2875,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-52.78.213.224-2410 #1'
+  name: '499,538,539,548,549,554,560,561,563|🇷KR-52.78.213.224-2562 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -2991,7 +2992,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-3.38.115.106-6467 #1'
+  name: '499,538,539,548,549,554,560,561,563|🇷KR-3.38.115.106-6619 #1'
   network: ws
   port: 80
   server: 3.38.115.106
@@ -3004,7 +3005,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '499,534,535,538,539,548,549,554,560,561,563|🇰🇷KR-3.38.108.255-6469 #8'
+  name: '499,534,535,538,539,548,549,554,560,561,563|🇷KR-3.38.108.255-6621 #1'
   network: ws
   port: 80
   server: 3.38.108.255
@@ -3017,7 +3018,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-54.180.114.77-6825 #1'
+  name: '499,538,539,548,549,554,560,561,563|🇷KR-54.180.114.77-6977 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -3030,7 +3031,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-211.177.40.235-8197 #1'
+  name: '499,538,539,548,549,554,560,561,563|🇷KR-211.177.40.235-8349 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -3043,7 +3044,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-1.238.102.214-8198 #1'
+  name: '499,538,539,548,549,554,560,561,563|🇷KR-1.238.102.214-8350 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -3056,12 +3057,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇰🇷KR-146.56.166.153-0131 #8'
+  name: '499,538,548,549,554,560,561|🇰🇷KR-146.56.166.153-0131 #6'
   network: ws
   port: 443
   server: 146.56.166.153
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -3071,12 +3071,11 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇰🇷KR-146.56.149.205-0129 #8'
+  name: '499,538,548,549,554,560,561|🇰🇷KR-146.56.149.205-0129 #6'
   network: ws
   port: 443
   server: 146.56.149.205
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
@@ -3086,12 +3085,11 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇷KR-146.56.162.25-0124 #1'
+  name: '499,538,548,549,554,560,561|🇰🇷KR-146.56.162.25-0124 #6'
   network: ws
   port: 443
   server: 146.56.162.25
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -3116,12 +3114,11 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '499,538,539,548,549,554,560,561,563|🇰🇷KR-146.56.149.205-0096 #8'
+  name: '499,538,548,549,554,560,561|🇰🇷KR-146.56.149.205-0096 #6'
   network: ws
   port: 443
   server: 146.56.149.205
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
@@ -3280,7 +3277,7 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: '524,539,563|🇷KR-3.36.118.190-6272 #1'
+  name: '524,539,563|🇷KR-3.36.118.190-6424 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -3428,7 +3425,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '539,563|🇰🇷KR-146.56.133.140-8860 #8'
+  name: '539,563|🇰🇷KR-146.56.133.140-9014 #1'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -3721,14 +3718,6 @@ proxies:
   ws-headers:
     Host: cn2.soow.win
   ws-path: /video
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 649,671|🇰🇷 韩国3|@ripaojiedian
-  password: 38798780-6d99-4896-8e3d-258e630c1265
-  port: 39202
-  server: hzhz1.sssyun.xyz
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: '653|韩国(油管:破解资源君) #2'
