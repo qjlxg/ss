@@ -283,7 +283,7 @@ proxies:
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - cipher: chacha20-ietf-poly1305
-  name: 63,93,105,117,118,212,478,482,521,552,576,770|LT-45.87.175.188-0071 | 2.056MB
+  name: 63,105,117,118,212,478,482,521,552,576,770|LT-45.87.175.188-0071 | 2.056MB
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
@@ -548,6 +548,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 117|中转节点-102.5KB/s
+  network: tcp
+  password: 5b4becce-5739-483f-97ec-68b81a855d68
+  port: 13030
+  server: naiu-sg.05vr9nyqg5.download
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
+  udp: true
 - alterId: 64
   cipher: auto
   name: '117,128,134,196,197,198,200,201,202,762,815|@Vip_Security join us - 331
@@ -639,6 +648,12 @@ proxies:
   server: mmt.bjcu.donghui.tech
   type: ss
 - cipher: aes-256-cfb
+  name: 117|中转节点-12.0MB/s
+  password: hGkQ6915tD
+  port: 16088
+  server: 120.232.81.50
+  type: ss
+- cipher: aes-256-cfb
   name: 117|中转节点-2.00MB/s
   password: hGkQ6915tD
   port: 15083
@@ -673,12 +688,6 @@ proxies:
   password: 030b7ede-55e5-4e1f-b509-efcacc1877e1
   port: 21017
   server: tt07.51feitu.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 117|中转节点-32.07MB/s
-  password: 0e91a29a-989d-4934-a1fb-7b653319397f
-  port: 50101
-  server: iepl1.forlive.live
   type: ss
 - alterId: 0
   cipher: auto
@@ -939,6 +948,12 @@ proxies:
   sni: cloudflare.node-ssl.cdn-alibaba.com
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 117|中转节点-22.55MB/s
+  password: e7623dcf-82db-4b5c-89e4-3885fc4c3d86
+  port: 50006
+  server: iepl2.forlive.live
+  type: ss
 - cipher: aes-128-gcm
   name: 117|中转节点-484.0KB/s
   password: a19a57a8-bf7d-4944-9680-212c7d374b30
@@ -1107,6 +1122,21 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  name: 130,224,413,448,459,512,551,552,561,562,567,573,574,576,815,828|美国_1104006
+  network: ws
+  port: '2082'
+  server: 172.64.194.76
+  servername: ip18.6929198.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: 130|CF中转_103018401
   network: ws
   port: '2095'
@@ -1176,6 +1206,19 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  name: 130|CF中转_103018079
+  network: ws
+  port: '2082'
+  server: 104.26.5.57
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: 130|CF中转_1030183996
@@ -1436,7 +1479,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🏁ZZ-🇨🇦CA_354 | 2.28Mb #1'
+  name: '130,224|Relay_🏁ZZ-🇨🇦CA_372 | 7.62Mb #1'
   network: ws
   port: 2095
   server: 162.159.140.33
@@ -1591,6 +1634,19 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
+  name: '130,224|Relay_🇺🇸US-🇨🇦CA_292 |20.85Mb #1'
+  network: ws
+  port: 2095
+  server: 172.64.166.16
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip2.6016725.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: '130,214,216,255,256,264,271,282,287,400,424,429,512,543,551,552,553,554,561,562,563,564,567,573,574,576,597,599,688,809|🏁RELAY-188.114.96.3-3157
     #1'
   network: ws
@@ -1640,7 +1696,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '130,216,224,255,256,271,282,287,400,424,429,512,543,551,552,553,554,561,562,563,564,567,573,574,576,597,599,688,809|🏁RELAY-188.114.97.8-3165
+  name: '130,216,255,256,271,282,287,400,424,429,512,543,551,552,553,554,561,562,563,564,567,573,574,576,597,599,688,809|🏁RELAY-188.114.97.8-3165
     #1'
   network: ws
   port: 443
@@ -1763,7 +1819,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🇺🇸US-🇨🇦CA_274 | 9.03Mb #1'
+  name: '130,224|Relay_🇺🇸US-🇨🇦CA_283 |15.25Mb #1'
   network: ws
   port: 2095
   server: 172.64.166.9
@@ -1776,7 +1832,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🇺🇸US-🇨🇦CA_273 | 8.52Mb #1'
+  name: '130,224|Relay_🇺🇸US-🇨🇦CA_330 |18.12Mb #1'
   network: ws
   port: 2095
   server: 172.64.194.76
@@ -1789,7 +1845,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🏁ZZ-🇨🇦CA_329 | 4.87Mb #1'
+  name: '130,224|Relay_🏁ZZ-🇨🇦CA_409 |13.80Mb #1'
   network: ws
   port: 2082
   server: 104.19.45.35
@@ -1900,19 +1956,6 @@ proxies:
   port: 2095
   server: 104.19.46.103
   servername: ''
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 130|CF中转_103018125
-  network: ws
-  port: '2095'
-  server: 162.159.140.45
   tls: false
   type: vmess
   uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
@@ -2044,7 +2087,7 @@ proxies:
     path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🇺🇸US-🇨🇦CA_256 | 9.24Mb #1'
+  name: '130,224|Relay_🇺🇸US-🇨🇦CA_341 |11.81Mb #1'
   network: ws
   port: 2095
   server: 172.64.167.35
@@ -2185,6 +2228,19 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  name: 130|CF中转_103018407
+  network: ws
+  port: '2082'
+  server: 104.26.5.112
+  tls: false
+  type: vmess
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      Host: ip3.6929198.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: 130|CF中转_103018385
   network: ws
   port: '2082'
@@ -2211,7 +2267,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🏁ZZ-🇨🇦CA_371 | 2.30Mb #1'
+  name: '130,224|Relay_🏁ZZ-🇨🇦CA_377 | 8.78Mb #1'
   network: ws
   port: 2095
   server: 104.16.148.244
@@ -2224,7 +2280,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🇺🇸US-🇨🇦CA_263 | 6.92Mb #1'
+  name: '130,224|Relay_🇺🇸US-🇨🇦CA_326 |19.76Mb #1'
   network: ws
   port: 2095
   server: 172.67.71.187
@@ -2374,19 +2430,6 @@ proxies:
     headers:
       Host: ip5.6929198.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: 130|CF中转_103018097
-  network: ws
-  port: '2095'
-  server: 104.26.5.88
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: ip2.6016725.xyz
-    path: github.com/Alvin9999
 - alterId: 1
   cipher: auto
   name: 130|CF中转_103018363
@@ -2488,9 +2531,9 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '130,224|Relay_🏁ZZ-🇺🇸US_336 |48.76Mb #1'
+  name: 130|CF中转_103018052
   network: ws
-  port: 2086
+  port: '2086'
   server: 104.16.68.38
   tls: false
   type: vmess
