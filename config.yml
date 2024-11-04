@@ -1,3 +1,5 @@
+proxies: []
+
 proxy-groups:
   - name: 🚀 选择代理
     type: select
@@ -7,4 +9,49 @@ proxy-groups:
       - 🔰 延迟最低
       - ✅ 手动选择
       - 🗺️ 选择地区
-proxies: []
+
+  - name: 🎯 负载均衡
+    type: load-balance
+    url: https://www.google.com/
+    interval: 300
+    proxies: []
+
+  - name: ♻ 自动选择
+    type: fallback
+    url: https://www.google.com/
+    interval: 300
+    proxies: []
+
+  - name: 🔰 延迟最低
+    type: url-test
+    url: https://www.google.com/
+    interval: 300
+    tolerance: 20
+    proxies: []
+
+  - name: ✅ 手动选择
+    type: select
+    proxies: []
+
+  - name: 🌐 突破锁区
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 选择代理
+      - DIRECT
+
+  - name: ⛔ 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: 🗺️ 选择地区
+    type: select
+    proxies: []
