@@ -11,7 +11,7 @@ proxies:
   uuid: fe7035e0-85da-4c64-9051-f5a3b380354a
 - alterId: 0
   cipher: auto
-  name: '33,46,53,68,81,107,118,212,224,271,282,287,328,339,360,363,410,411,412,424,429,437,438,439,448,459,602,614,615,616,662,663,664,686,703,710,711,724,736,744,745,746,747,748,749,750,752,758,759,810,815,828|日本_1104001
+  name: '33,46,81,107,118,212,224,271,282,287,328,339,360,363,424,429,448,459,602,614,615,616,703,710,711,724,736,744,745,746,747,748,749,750,752,758,759,815,828|日本_1104001
     #2'
   network: tcp
   port: '23468'
@@ -24,23 +24,19 @@ proxies:
   ws-headers:
     Host: 47.74.8.202
   ws-path: /
-- alterId: 0
-  cipher: none
-  country: 🇵 JP
+- alterId: 1
+  cipher: auto
+  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '35,37,44,81,117,128,130,193,194,195,196,197,225,602,815|@Vip_Security join
-    us - 64
-
-    '
+  name: 35,36,37,117|Relay_🇺🇸US-🇺🇸US_55 |42.67Mb
   network: tcp
-  port: '43720'
-  server: 61.120.9.18
-  servername: ''
+  port: 46484
+  server: jp05-vm0.entry.srthdw.art
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
   ws-path: /
 - alterId: 1
   cipher: auto
@@ -60,24 +56,10 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  country: 🇵 JP
+  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 35,37,117,225|🇵 JP_484
-  network: tcp
-  port: 46484
-  server: jp05-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: '35,36,37,225,635|🇯🇵_JP_日本 #5'
+  name: '35,36,37,635|🇯🇵_JP_日本 #5'
   network: tcp
   port: 21585
   server: jp01-alt-vm0.entry.srthdw.art
@@ -87,23 +69,10 @@ proxies:
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 1
   cipher: auto
-  country: 🇯🇵JP
+  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '35,225,635|🇯🇵_JP_日本 #8'
-  network: tcp
-  port: 21585
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- alterId: 1
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: '35,36,37,225,635|🇯🇵_JP_日本 #7'
+  name: '35,36,37,635|🇯🇵_JP_日本 #7'
   network: tcp
   port: 21583
   server: jp01-alt-vm0.entry.srthdw.art
@@ -111,6 +80,19 @@ proxies:
   tls: true
   type: vmess
   uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- alterId: 1
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: '35,635|🇯🇵_JP_日本 #8'
+  network: tcp
+  port: 21585
+  server: jp03-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 0
   cipher: auto
   name: 38|JP |  LB-1S
@@ -126,6 +108,38 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: JP
+  name: 39,93,117|👉www.85la.com👉日本JP_12
+  password: amazonskr05
+  port: 443
+  server: 52.69.236.102
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇯🇵 JP
+  delay: 601
+  name: '39,105,117,497,498,499|日本 - 东京 - Amazon Technologies Inc - 1 #2'
+  password: amazonskr05
+  port: 443
+  server: 13.113.17.246
+  type: ss
+  udp: true
+- country: JP
+  fingerprint: randomized
+  name: 39|Relay_JP-JP_65
+  network: ws
+  password: FLorg
+  port: 443
+  server: 43.153.175.137
+  sni: trojan.tcorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.tcorg.filegear-sg.me
+    path: /?ed=2048
 - alterId: 64
   cipher: auto
   country: JP
@@ -142,8 +156,7 @@ proxies:
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 46,82,105,117,118,212,339,409,438,552,576,663,685,810,832|JP_Tokyo_Amazon.com,
-    Inc.
+  name: 46,82,105,117,118,212,339,409,552,576,832|JP_Tokyo_Amazon.com, Inc.
   password: amazonskr05
   port: 443
   server: 54.249.197.65
@@ -153,8 +166,8 @@ proxies:
 - alterId: -1
   cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 46,82,105,117,118,212,339,366,409,438,552,576,663,685,810,832|JP_Tokyo_Amazon
-    Technologies Inc.1
+  name: 46,82,105,117,118,212,339,366,409,552,576,832|JP_Tokyo_Amazon Technologies
+    Inc.1
   password: amazonskr05
   port: 443
   server: 52.198.194.170
@@ -205,7 +218,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '62,207,300,316,804|_121320001 #4'
+  name: '62,207,300,316,804|_121320001 #6'
   network: ws
   port: 443
   server: 103.35.190.65
@@ -783,14 +796,6 @@ proxies:
   server: 231103level3.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 93,117|👉www.85la.com👉日本JP_12
-  password: amazonskr05
-  port: 443
-  server: 52.69.236.102
-  tfo: false
-  type: ss
 - cipher: aes-128-gcm
   name: 93|🇯🇵 日本_13
   password: ay21d1
@@ -887,15 +892,6 @@ proxies:
   password: DQOhoPIAlRWM11GH
   port: 10058
   server: jp4.lvuy.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇯🇵 JP
-  delay: 601
-  name: '105,117,497,498,499|日本 - 东京 - Amazon Technologies Inc - 1 #2'
-  password: amazonskr05
-  port: 443
-  server: 13.113.17.246
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -1015,223 +1011,24 @@ proxies:
   port: 443
   server: 43.207.118.251
   type: ss
-- auth: 0535c391-f6dc-4cef-9009-4deaa5750c34
-  name: 114|🇯🇵 日本-1-1B
-  password: 0535c391-f6dc-4cef-9009-4deaa5750c34
+- auth: 463f4365-0413-461b-820e-6fd8958120ad
+  name: 114|🇯🇵 日本-1
+  password: 463f4365-0413-461b-820e-6fd8958120ad
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: 0535c391-f6dc-4cef-9009-4deaa5750c34
-  name: 114|🇯🇵 日本-2-1B
-  password: 0535c391-f6dc-4cef-9009-4deaa5750c34
+- auth: 463f4365-0413-461b-820e-6fd8958120ad
+  name: 114|🇯🇵 日本-2
+  password: 463f4365-0413-461b-820e-6fd8958120ad
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
   sni: osaka.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 117|鲲「日本|传说」「解锁」
-  network: ws
-  port: 12929
-  server: z8.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '117,196,197,198,199,200,201,202|🇯🇵JP-38.54.56.25-12940 #6'
-  network: tcp
-  port: 12940
-  server: z6.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 117|瑶「日本|传说」「解锁」
-  network: ws
-  port: 12955
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 117,360|>🇯🇵 JP|Ms|0914|TG@FProxies|
-  network: tcp
-  port: '12931'
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 117|女妭「日本|传说」「专线X」
-  network: ws
-  port: 12974
-  server: z6.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '117,130,196,197,198,199,200,202,360,532|美国(yudou66.com 玉豆免费节点) #44'
-  network: tcp
-  port: '12928'
-  server: z6.fragranceninja.com
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 117|巨蟹「日本」「海外专用」
-  network: tcp
-  port: 12931
-  server: 41.lwdh.us
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 117|⚡@DeamNet_Proxy 🔻🏁ZZ 🔺🇯🇵JP ☑MTN_729
-  network: ws
-  port: 41597
-  server: 183.181.36.194
-  type: vmess
-  udp: true
-  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
-  ws-opts:
-    headers:
-      Host: 183.181.36.194
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_1
-  network: ws
-  port: 15665
-  server: jpaws002.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
-  ws-opts:
-    headers:
-      host: www.baidu.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_2
-  network: ws
-  port: 20000
-  server: jp02.henet.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 279e0915-b0ce-49c7-a4df-39f9232d2034
-  ws-opts:
-    headers:
-      host: cctv.com
-    path: /live
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_3
-  network: ws
-  port: 80
-  server: janpanbpjcyos.loseyourip.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dcec9778-3e07-4800-824e-5bccb04bc2b8
-  ws-opts:
-    headers:
-      host: v.qq.com
-    path: /images
-- alterId: 2
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_4
-  network: ws
-  port: 15698
-  server: jplin005.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
-  ws-opts:
-    headers:
-      host: www.baidu.com
-    path: /index
-- alterId: 1
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_7
-  network: ws
-  port: 446
-  server: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c498879d-8a73-3baf-a4f4-a0f38b75949c
-  ws-opts:
-    path: ''
-- alterId: 2
-  cipher: auto
-  name: 117|🇯🇵_油管：全网最强白嫖_8
-  network: ws
-  port: 15863
-  server: jpaws006.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
-  ws-opts:
-    headers:
-      host: www.baidu.com
-    path: /index
-- name: 117|🇯🇵_油管：全网最强白嫖_325
-  network: tcp
-  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-  port: 28000
-  server: 164.70.68.67
-  skip-cert-verify: true
-  sni: huayun.xyz
-  type: trojan
-  udp: true
-- name: 117|🇯🇵_油管：全网最强白嫖_326
-  network: tcp
-  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
-  port: 28000
-  server: 203.138.98.199
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP-103.200.30.8-030
-  network: tcp
-  port: 45458
-  server: 103.200.30.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: bbe8249a-3bfe-43c2-fe55-838e7ae13c45
 - name: 117|日本+东京Amazon数据中心
   network: tcp
   password: 2155145a-b1b5-443a-8977-670f6bd10f02
@@ -1240,18 +1037,16 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 117,832|JP_Tokyo_Amazon Technologies Inc.4
-  password: amazonskr05
-  port: 443
-  server: 18.176.53.132
-  type: ss
-- cipher: aes-256-cfb
-  name: 117,832|SG_Singapore_Amazon Technologies Inc.1
-  password: amazonskr05
-  port: 443
-  server: 13.212.252.162
-  type: ss
+- alterId: 1
+  cipher: auto
+  name: 117|Relay_🇯🇵JP-🇯🇵JP_28 |38.92Mb
+  network: ''
+  port: 21585
+  server: jp03-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 1
   cipher: auto
   name: 117|日本-88.8MB/s
@@ -1632,12 +1427,299 @@ proxies:
   tls: true
   type: vmess
   uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+- alterId: 0
+  cipher: auto
+  name: 117|鲲「日本|传说」「解锁」
+  network: ws
+  port: 12929
+  server: z8.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '117,196,197,198,199,200,201,202|🇯🇵JP-38.54.56.25-12940 #6'
+  network: tcp
+  port: 12940
+  server: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 117|瑶「日本|传说」「解锁」
+  network: ws
+  port: 12955
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '117,360|>🇯🇵 JP|Ms|0914|TG@FProxies| #1'
+  network: tcp
+  port: '12931'
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 117|女妭「日本|传说」「专线X」
+  network: ws
+  port: 12974
+  server: z6.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 117|巨蟹「日本」「海外专用」
+  network: tcp
+  port: 12931
+  server: 41.lwdh.us
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 117|⚡@DeamNet_Proxy 🔻🏁ZZ 🔺🇯🇵JP ☑MTN_729
+  network: ws
+  port: 41597
+  server: 183.181.36.194
+  type: vmess
+  udp: true
+  uuid: 4a6eaa2d-5603-4c05-d967-fb6f42250a5a
+  ws-opts:
+    headers:
+      Host: 183.181.36.194
+    path: /
+- name: 117|🇯🇵 JP-1
+  password: 1bea3512-76e9-4c48-b828-6e1ac603926f
+  port: 21316
+  server: tokyo2-500m.node.xn--l6qx3lcvp58x.com
+  skip-cert-verify: true
+  sni: 2.nodes.yljc.online
+  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_1
+  network: ws
+  port: 15665
+  server: jpaws002.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
+  ws-opts:
+    headers:
+      host: www.baidu.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_2
+  network: ws
+  port: 20000
+  server: jp02.henet.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 279e0915-b0ce-49c7-a4df-39f9232d2034
+  ws-opts:
+    headers:
+      host: cctv.com
+    path: /live
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_3
+  network: ws
+  port: 80
+  server: janpanbpjcyos.loseyourip.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dcec9778-3e07-4800-824e-5bccb04bc2b8
+  ws-opts:
+    headers:
+      host: v.qq.com
+    path: /images
+- alterId: 2
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_4
+  network: ws
+  port: 15698
+  server: jplin005.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
+  ws-opts:
+    headers:
+      host: www.baidu.com
+    path: /index
+- alterId: 1
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_7
+  network: ws
+  port: 446
+  server: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c498879d-8a73-3baf-a4f4-a0f38b75949c
+  ws-opts:
+    path: ''
+- alterId: 2
+  cipher: auto
+  name: 117|🇯🇵_油管：全网最强白嫖_8
+  network: ws
+  port: 15863
+  server: jpaws006.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60517dbb-a465-32c6-87e7-2a457663de53
+  ws-opts:
+    headers:
+      host: www.baidu.com
+    path: /index
+- name: 117|🇯🇵_油管：全网最强白嫖_325
+  network: tcp
+  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
+  port: 28000
+  server: 164.70.68.67
+  skip-cert-verify: true
+  sni: huayun.xyz
+  type: trojan
+  udp: true
+- name: 117|🇯🇵_油管：全网最强白嫖_326
+  network: tcp
+  password: 52a98419-efab-4c34-b4cc-4e2a7bc37029
+  port: 28000
+  server: 203.138.98.199
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 117|👉www.85la.com👉日本JP_3
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20990
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 117|👉www.85la.com👉日本JP_4
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20990
+  server: 146.56.151.232
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 117|👉www.85la.com👉日本JP_5
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 21005
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: ent1.imyourdaddy.top
+  type: trojan
+  udp: true
+- name: 117|👉www.85la.com👉日本JP_6
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20992
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 117|👉www.85la.com👉日本JP_7
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20983
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 117|日本 003
+  network: ws
+  port: 30005
+  server: 104.233.170.150
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/351212081517
+- alterId: 0
+  cipher: auto
+  name: 117|日本 008
+  network: tcp
+  port: 14072
+  server: 45.159.50.65
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1a72c7ca-ff6c-4dd8-8efe-388d2bfdf92f
+- cipher: rc4-md5
+  name: 117|???? JP??SSRSUB_192934526
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40221
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: 117|???? JP??SSRSUB_2598990979
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40201
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
 - cipher: aes-256-cfb
-  name: 117|JP,Tokyo
+  name: '117,552,576|🇷KR-43.201.82.24-0503 #1'
   password: amazonskr05
   port: 443
-  server: 54.169.135.226
+  server: 43.201.82.24
   type: ss
+- cipher: aes-256-cfb
+  name: '117,552,576|🇳CN-221.181.185.71-0506 #1'
+  password: JpTYrOJnIhNMXqli
+  port: 23801
+  server: 221.181.185.71
+  type: ss
+- name: 117|日本+V2CROSS.COM_4
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20982
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 117,202|🇩🇪DE-5.75.206.231-443
@@ -1682,73 +1764,41 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 117|日本+V2CROSS.COM_3
+- cipher: aes-256-cfb
+  name: 117,832|JP_Tokyo_Amazon Technologies Inc.4
+  password: amazonskr05
+  port: 443
+  server: 18.176.53.132
+  type: ss
+- cipher: aes-256-cfb
+  name: 117,832|SG_Singapore_Amazon Technologies Inc.1
+  password: amazonskr05
+  port: 443
+  server: 13.212.252.162
+  type: ss
+- name: 117|👉www.85la.com👉日本JP_5_1
   network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20992
-  server: ent1.imyourdaddy.top
+  password: 2aa1581d-bfc9-4d3a-84f3-742674fb5d3a
+  port: 20230
+  server: jp005.421421.xyz
   skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 117|日本+V2CROSS.COM_4
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20983
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 117|👉www.85la.com👉日本JP_3
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20990
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 117|👉www.85la.com👉日本JP_4
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20990
-  server: 146.56.151.232
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 117|👉www.85la.com👉日本JP_5
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 21005
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: ent1.imyourdaddy.top
+  sni: 421421.xyz
   type: trojan
   udp: true
 - alterId: 1
   cipher: auto
-  name: 117|Relay_🇯🇵JP-🇯🇵JP_28 |38.92Mb
-  network: ''
-  port: 21585
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- name: 117|日本+V2CROSS.COM_4_1
+  name: 117,824|日本_1104002
   network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20982
-  server: ent1.imyourdaddy.top
+  port: '21586'
+  server: jp03-alt-vm0.entry.srthdw.art
+  servername: ''
   skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 272291d0-18b5-39eb-ac67-202de689dd44
 - alterId: 0
   cipher: auto
-  name: 117|日本_【YouTube-VV科技】
+  name: 117|日本_【YouTube-VV科技】_3
   network: kcp
   port: 53
   server: 20.222.250.168
@@ -1756,8 +1806,145 @@ proxies:
   tls: false
   type: vmess
   uuid: 7a0816b2-3af5-4739-9784-941b75150e98
+- name: 117|日本-1.02MB/s
+  network: tcp
+  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
+  port: 443
+  server: xjjp.zf.edu.ge
+  skip-cert-verify: true
+  sni: xjjp.zf.edu.ge
+  type: trojan
+  udp: true
+- name: 117|日本-573.7KB/s
+  network: tcp
+  password: 6ffa0d17-129b-44fd-9271-804c4b4a0cac
+  port: 443
+  server: vn.mjt000.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 117|日本-1.90MB/s
+  network: tcp
+  port: 5061
+  server: ru-1.dugusite3.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4bbf34b-a7ec-3d6e-9c77-f6efb7472e88
+- alterId: 1
+  cipher: auto
+  name: 117|日本-1.93MB/s
+  network: tcp
+  port: 46482
+  server: 0pa7j-g01.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-2.72MB/s
+  network: tcp
+  port: 46482
+  server: q5aek-g01.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-2.88MB/s
+  network: tcp
+  port: 448
+  server: 8mfl6-g05.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
+- alterId: 1
+  cipher: auto
+  name: 117|日本-2.50MB/s
+  network: tcp
+  port: 449
+  server: 1isg5-g06.jp04-3771-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e9537990-d286-3eaf-8596-d74249d3f347
+- alterId: 1
+  cipher: auto
+  name: 117|日本-2.54MB/s_1
+  network: tcp
+  port: 28783
+  server: rgytk-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-713.4KB/s
+  network: tcp
+  port: 28783
+  server: ssopv-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-559.6KB/s
+  network: tcp
+  port: 28783
+  server: x0f08-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-2.02MB/s
+  network: tcp
+  port: 28783
+  server: 9x2i9-g01.jp06-7c5a-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-594.9KB/s
+  network: tcp
+  port: 46482
+  server: gwmx9-g01.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
+- alterId: 1
+  cipher: auto
+  name: 117|日本-1.31MB/s
+  network: tcp
+  port: 46482
+  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
+- alterId: 1
+  cipher: auto
+  name: 117|日本-749.0KB/s
+  network: tcp
+  port: 21586
+  server: ov1vf-g06.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
 - cipher: aes-256-cfb
-  name: 117|👉www.85la.com👉日本JP_1
+  name: 117|👉www.85la.com👉日本JP_1_1
   password: amazonskr05
   port: 443
   server: 54.250.103.70
@@ -1769,25 +1956,13 @@ proxies:
   server: 172.105.199.111
   type: ss
 - cipher: aes-256-cfb
-  name: '117,552,576|🇵JP-54.178.150.106-0428 #1'
-  password: amazonskr05
-  port: 443
-  server: 54.178.150.106
-  type: ss
-- cipher: aes-256-cfb
-  name: '117,552,576|🇵JP-13.115.231.230-0488 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.115.231.230
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|👉www.85la.com👉日本JP_6
+  name: 117|👉www.85la.com👉日本JP_6_1
   password: amazonskr05
   port: 443
   server: 52.192.45.11
   type: ss
 - cipher: aes-256-cfb
-  name: 117|👉www.85la.com👉日本JP_7
+  name: 117|👉www.85la.com👉日本JP_7_1
   password: amazonskr05
   port: 443
   server: 13.114.133.24
@@ -1841,22 +2016,221 @@ proxies:
   server: 13.231.124.247
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 117,770|MD-103.35.190.211-4231 | 28.439MB
+  name: 117,770|MD-103.35.190.211-4211 | 27.244MB
   password: Q5dCQruOnq7OKjtJE1eSRi
   port: 55672
   server: 103.35.190.211
   type: ss
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 117,824|日本_1104002
+  name: 117|🇯🇵 JP_291 | 6.88Mb
   network: tcp
-  port: '21586'
-  server: jp03-alt-vm0.entry.srthdw.art
-  servername: ''
+  port: 44634
+  server: 150.230.197.142
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 272291d0-18b5-39eb-ac67-202de689dd44
+  uuid: c2d05105-857a-4c94-be34-5534e7e8285f
+- alterId: 0
+  cipher: auto
+  name: 117|Relay_🇯🇵JP-🇯🇵JP_305
+  network: ws
+  port: 15880
+  server: xmrj002.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-opts:
+    headers:
+      host: file-1250914411.cos.ap-tokyo.myqcloud.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP_359 | 2.73Mb
+  network: ws
+  port: 80
+  server: 167.179.102.146
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 648659f9-c89a-437f-8b8f-1869499f5c78
+  ws-opts:
+    headers:
+      host: /YouTube-aweikeji
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP_360 | 8.85Mb
+  network: tcp
+  port: 54696
+  server: 168.138.50.96
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7bd1a172-2f4d-40c9-9f24-1cfe89a27a9a
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 117,505,544|JP_168.138.207.66_03152023a5cc-802vmess
+  network: tcp
+  port: '21365'
+  server: 168.138.207.66
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP_407 | 7.63Mb
+  network: tcp
+  port: 6666
+  server: 146.56.167.119
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP_408 | 1.25Mb
+  network: ws
+  port: 2052
+  server: 146.56.118.227
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498
+  ws-opts:
+    path: /update
+- alterId: 0
+  cipher: auto
+  name: 117|Relay_🇯🇵JP-🇯🇵JP_403
+  network: tcp
+  port: 12356
+  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d35280d3-731c-4f2b-b6df-323aaa07f1a5
+- alterId: 0
+  cipher: auto
+  name: 117|Relay_🇯🇵JP-🇯🇵JP_404
+  network: ws
+  port: 15880
+  server: xmrk002.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-opts:
+    headers:
+      host: file-1250914411.cos.ap-tokyo.myqcloud.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 117|Relay_🇯🇵JP-🇯🇵JP_405
+  network: ws
+  port: 15880
+  server: xmrk001.xmrth-node.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
+  ws-opts:
+    headers:
+      host: file-1250914411.cos.ap-tokyo.myqcloud.com
+    path: /index
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP |10.77Mb
+  network: ws
+  port: 1558
+  server: 45.76.106.120
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc
+  ws-opts:
+    headers:
+      host: ajpn01.xiaohouzi.club
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP | 2.59Mb
+  network: ws
+  port: 1558
+  server: 141.164.41.115
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc
+  ws-opts:
+    headers:
+      host: 141.164.41.115
+    path: /v2ray
+- alterId: 64
+  cipher: auto
+  name: 117|🇯🇵JP_390 | 4.74Mb
+  network: tcp
+  port: 41954
+  server: 146.56.167.249
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0a1d4a77-7cd3-488a-cb62-ddda2d8dea3a
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵JP_285 | 8.97Mb
+  network: tcp
+  port: 53702
+  server: 146.56.110.129
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d0ee8ec0-ef63-41aa-9087-11edf7a978b9
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵 日本 IEPL专线NO3
+  network: ''
+  port: 52117
+  server: i.needss.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵 日本 IEPL专线NO1
+  network: ''
+  port: 20017
+  server: i.needss.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵 日本NO.2
+  network: ''
+  port: 45057
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
+- alterId: 0
+  cipher: auto
+  name: 117|🇯🇵 日本NO.1
+  network: ''
+  port: 45056
+  server: haa.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
 - cipher: chacha20-ietf-poly1305
   name: 117,440|_油管：全网最强白嫖 221
   password: G!yBwPWH3Vao
@@ -3012,69 +3386,251 @@ proxies:
   server: 89.31.126.225
   type: ss
   udp: true
-- alterId: 64
+- name: 117|🇯🇵 日本 v2rayfree.eu.org
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20991
+  server: 146.56.151.232
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- name: 117|🇯🇵 日本 v2rayfree.eu.org 4
+  network: tcp
+  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
+  port: 20991
+  server: ent1.imyourdaddy.top
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 117|日本 003
-  network: ws
-  port: 30005
-  server: 104.233.170.150
+  name: '117,360|>🇯🇵 JP|Ms|1013|TG@FProxies| #4'
+  network: tcp
+  port: '5061'
+  server: jp-1.dugusite3.top
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    path: /path/351212081517
-- alterId: 0
-  cipher: auto
-  name: 117|日本 008
+  uuid: 6429a4c9-87a4-3fb4-ac62-9a87d2f5d99d
+- name: 117|👉www.85la.com👉日本JP_1_2
   network: tcp
-  port: 14072
-  server: 45.159.50.65
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: 54.150.8.182
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1a72c7ca-ff6c-4dd8-8efe-388d2bfdf92f
+  sni: central-minnow.opossum872.cfd
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 117|👉www.85la.com👉日本JP_9_1
+  password: amazonskr05
+  port: 443
+  server: 13.114.140.218
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|🇯🇵JP-13.115.189.201-0670 | 2.223MB
+  password: amazonskr05
+  port: 443
+  server: 13.115.189.201
+  type: ss
+- name: 117|🇯🇵JP-139.162.83.219-095
+  network: tcp
+  password: 7a566d21dfcd0f12490275fd3dd3cfc4
+  port: 443
+  server: trs11.bolab.net
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 117|🇯🇵JP-85.208.108.21-117
+  password: Y6R9pAtvxxzmGC
+  port: 3306
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: 117|🇯🇵JP-85.208.108.21-118
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 85.208.108.21
+  type: ss
+- cipher: aes-256-gcm
+  name: '117,308,552,576,595,596|Pool_🇳🇱NL_236 #1'
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 85.208.108.60
+  type: ss
+- cipher: aes-256-cfb
+  name: '117,320,321,359,392,552,576|🇵JP-54.199.83.239-6230 #1'
+  password: doub.io
+  port: 2333
+  server: 54.199.83.239
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 117|日本-2.29MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.95.170.220
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-195.7KB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.7.26
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-143.0KB/s
+  password: amazonskr05
+  port: 443
+  server: 43.207.143.83
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-2.35MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.194.189.140
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-2.16MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.174.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-530.6KB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.13.193
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-127.5KB/s
+  password: amazonskr05
+  port: 443
+  server: 52.199.182.245
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-591.1KB/s_1
+  password: amazonskr05
+  port: 443
+  server: 3.112.220.140
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-1.45MB/s_1
+  password: amazonskr05
+  port: 443
+  server: 52.197.108.167
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-443.6KB/s
+  password: amazonskr05
+  port: 443
+  server: 13.230.97.225
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-116.6KB/s
+  password: amazonskr05
+  port: 443
+  server: 52.194.223.127
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-231.6KB/s
+  password: amazonskr05
+  port: 443
+  server: 52.194.250.138
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-422.2KB/s
+  password: amazonskr05
+  port: 443
+  server: 3.112.240.59
+  type: ss
+- cipher: aes-256-cfb
+  name: 117|日本-1.81MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.112.106.148
+  type: ss
+- name: 117|@SSRSUB-trojan日本T01-付费推荐:dlj.tf/ssrsub
+  network: tcp
+  password: f736834f-1fc8-4738-9884-9afe0eb0d818
+  port: 443
+  server: jp1.trojan.tel
+  skip-cert-verify: true
+  sni: douyincdn.com
+  type: trojan
+  udp: true
+- name: 117|@SSRSUB-trojan日本T02-付费推荐:dlj.tf/ssrsub
+  network: tcp
+  password: f736834f-1fc8-4738-9884-9afe0eb0d818
+  port: 443
+  server: jp2.trojan.tel
+  skip-cert-verify: true
+  sni: douyincdn.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 117|🇯🇵 日本 IEPL专线NO3
-  network: ''
-  port: 52117
-  server: i.needss.top
+  name: 117|日本 东京Fastly节点
+  network: ws
+  port: 80
+  server: www.hkbu.edu.hk
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
+  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
+  ws-opts:
+    headers:
+      host: nmsl.kp
+    path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 117|🇯🇵 日本 IEPL专线NO1
-  network: ''
-  port: 20017
-  server: i.needss.top
+  name: 117|🇯🇵 JP😈SSRSUB_476951725
+  network: ws
+  port: 44443
+  server: tls.07.node-for-bigairport.win
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts:
+    headers:
+      host: tls.07.node-for-bigairport.win
+    path: /
 - alterId: 0
   cipher: auto
-  name: 117|🇯🇵 日本NO.2
-  network: ''
-  port: 45057
-  server: xdd.dashuai.cyou
+  name: 117|🇯🇵 JP😈SSRSUB_1163289939
+  network: ws
+  port: 443
+  server: 141.147.174.244
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
+  uuid: 3c5d5534-4b08-4f1a-f8da-f1f9134554f6
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  name: 117|🇯🇵 日本NO.1
-  network: ''
-  port: 45056
-  server: haa.dashuai.cyou
+  name: 117|🇯🇵 JP😈SSRSUB_-1534771290
+  network: ws
+  port: 22443
+  server: tls.04.node-for-bigairport.win
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
-- name: 117|日本 002
+  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
+  ws-opts:
+    headers:
+      host: tls.04.node-for-bigairport.win
+    path: /
+- cipher: aes-256-cfb
+  name: 117|🇯🇵JP-52.198.168.235-2732 | 16.395MB
+  password: amazonskr05
+  port: 443
+  server: 52.198.168.235
+  type: ss
+- name: 117|日本 002_1
   network: ws
   password: auto
   port: 443
@@ -3085,26 +3641,16 @@ proxies:
   udp: true
   ws-opts:
     path: /
-- cipher: rc4-md5
-  name: 117|???? JP??SSRSUB_192934526
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40221
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: 117|???? JP??SSRSUB_2598990979
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40201
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
+- alterId: 64
+  cipher: auto
+  name: 117|日本_【YouTube-VV科技】_1
+  network: tcp
+  port: 44522
+  server: 185.160.24.17
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 117|Relay_🇯🇵JP-🇯🇵JP_110 | 3.46Mb
   network: tcp
   password: f2117e99-9b6e-47fd-b0a9-634a0b15b998
@@ -3213,378 +3759,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 80b5645a-86b7-48af-9252-977ba807a338
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵 JP_291 | 6.88Mb
-  network: tcp
-  port: 44634
-  server: 150.230.197.142
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c2d05105-857a-4c94-be34-5534e7e8285f
-- alterId: 0
-  cipher: auto
-  name: 117|Relay_🇯🇵JP-🇯🇵JP_305
-  network: ws
-  port: 15880
-  server: xmrj002.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
-  ws-opts:
-    headers:
-      host: file-1250914411.cos.ap-tokyo.myqcloud.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP_359 | 2.73Mb
-  network: ws
-  port: 80
-  server: 167.179.102.146
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 648659f9-c89a-437f-8b8f-1869499f5c78
-  ws-opts:
-    headers:
-      host: /YouTube-aweikeji
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP_360 | 8.85Mb
-  network: tcp
-  port: 54696
-  server: 168.138.50.96
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7bd1a172-2f4d-40c9-9f24-1cfe89a27a9a
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP_407 | 7.63Mb
-  network: tcp
-  port: 6666
-  server: 146.56.167.119
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 64779fce-63a5-4faa-b59b-e4af40f4e419
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP_408 | 1.25Mb
-  network: ws
-  port: 2052
-  server: 146.56.118.227
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 448a9087-28f3-4fe4-fa49-36c912e0f498
-  ws-opts:
-    path: /update
-- alterId: 0
-  cipher: auto
-  name: 117|Relay_🇯🇵JP-🇯🇵JP_403
-  network: tcp
-  port: 12356
-  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d35280d3-731c-4f2b-b6df-323aaa07f1a5
-- alterId: 0
-  cipher: auto
-  name: 117|Relay_🇯🇵JP-🇯🇵JP_404
-  network: ws
-  port: 15880
-  server: xmrk002.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
-  ws-opts:
-    headers:
-      host: file-1250914411.cos.ap-tokyo.myqcloud.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: 117|Relay_🇯🇵JP-🇯🇵JP_405
-  network: ws
-  port: 15880
-  server: xmrk001.xmrth-node.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e23a5542-8e62-3572-9afb-6640d61d91b1
-  ws-opts:
-    headers:
-      host: file-1250914411.cos.ap-tokyo.myqcloud.com
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP |10.77Mb
-  network: ws
-  port: 1558
-  server: 45.76.106.120
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc
-  ws-opts:
-    headers:
-      host: ajpn01.xiaohouzi.club
-    path: /v2ray
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP | 2.59Mb
-  network: ws
-  port: 1558
-  server: 141.164.41.115
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc
-  ws-opts:
-    headers:
-      host: 141.164.41.115
-    path: /v2ray
-- alterId: 64
-  cipher: auto
-  name: 117|🇯🇵JP_390 | 4.74Mb
-  network: tcp
-  port: 41954
-  server: 146.56.167.249
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0a1d4a77-7cd3-488a-cb62-ddda2d8dea3a
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵JP_285 | 8.97Mb
-  network: tcp
-  port: 53702
-  server: 146.56.110.129
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d0ee8ec0-ef63-41aa-9087-11edf7a978b9
-- name: 117|日本-1.02MB/s
-  network: tcp
-  password: 3698a3e7-2877-4ded-a665-d81ee3cfd449
-  port: 443
-  server: xjjp.zf.edu.ge
-  skip-cert-verify: true
-  sni: xjjp.zf.edu.ge
-  type: trojan
-  udp: true
-- name: 117|日本-573.7KB/s
-  network: tcp
-  password: 6ffa0d17-129b-44fd-9271-804c4b4a0cac
-  port: 443
-  server: vn.mjt000.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 117|日本-1.90MB/s
-  network: tcp
-  port: 5061
-  server: ru-1.dugusite3.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c4bbf34b-a7ec-3d6e-9c77-f6efb7472e88
-- name: 117|日本-1.86MB/s_1
-  network: tcp
-  password: a3467343-8c87-40a6-a87f-a466b340475c
-  port: 20230
-  server: jp007.421421.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 117|日本-1.93MB/s
-  network: tcp
-  port: 46482
-  server: 0pa7j-g01.jp05-6786-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-2.72MB/s
-  network: tcp
-  port: 46482
-  server: q5aek-g01.jp05-6786-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-2.88MB/s
-  network: tcp
-  port: 448
-  server: 8mfl6-g05.jp04-3771-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac7ff9e6-8770-3f96-a818-9fc37daa6c4a
-- alterId: 1
-  cipher: auto
-  name: 117|日本-2.50MB/s
-  network: tcp
-  port: 449
-  server: 1isg5-g06.jp04-3771-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e9537990-d286-3eaf-8596-d74249d3f347
-- alterId: 1
-  cipher: auto
-  name: 117|日本-2.54MB/s_1
-  network: tcp
-  port: 28783
-  server: rgytk-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-713.4KB/s
-  network: tcp
-  port: 28783
-  server: ssopv-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-559.6KB/s
-  network: tcp
-  port: 28783
-  server: x0f08-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-2.02MB/s
-  network: tcp
-  port: 28783
-  server: 9x2i9-g01.jp06-7c5a-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-594.9KB/s
-  network: tcp
-  port: 46482
-  server: gwmx9-g01.jp05-6786-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704
-- alterId: 1
-  cipher: auto
-  name: 117|日本-1.31MB/s
-  network: tcp
-  port: 46482
-  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- alterId: 1
-  cipher: auto
-  name: 117|日本-749.0KB/s
-  network: tcp
-  port: 21586
-  server: ov1vf-g06.jp03-7d22-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 942245f3-ac32-3198-b673-9ad861cf0d85
-- name: 117|👉www.85la.com👉日本JP_5_2
-  network: tcp
-  password: 2aa1581d-bfc9-4d3a-84f3-742674fb5d3a
-  port: 20230
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: 117|🇯🇵 JP-1
-  password: 1bea3512-76e9-4c48-b828-6e1ac603926f
-  port: 21316
-  server: tokyo2-500m.node.xn--l6qx3lcvp58x.com
-  skip-cert-verify: true
-  sni: 2.nodes.yljc.online
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: '117,552,576|🇷KR-43.201.82.24-0503 #1'
-  password: amazonskr05
-  port: 443
-  server: 43.201.82.24
-  type: ss
-- name: 117|👉www.85la.com👉日本JP_1_2
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: 54.150.8.182
-  skip-cert-verify: true
-  sni: central-minnow.opossum872.cfd
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 117|🇯🇵JP-52.198.168.235-2732 | 16.395MB
-  password: amazonskr05
-  port: 443
-  server: 52.198.168.235
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '117,360|>🇯🇵 JP|Ls|1013|TG@FProxies| #13'
-  network: tcp
-  port: '5061'
-  server: jp-1.dugusite3.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 84031392-08f6-3d6f-b544-13f4c60ee48e
-- name: 117|🇯🇵 日本 v2rayfree.eu.org
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20991
-  server: 146.56.151.232
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 117|🇯🇵 日本 v2rayfree.eu.org 4
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20991
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 117|日本-78.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.115.189.201
-  type: ss
 - cipher: aes-256-cfb
   name: 117|日本-1.25MB/s
   password: amazonskr05
@@ -3597,78 +3771,60 @@ proxies:
   port: 443
   server: 52.193.244.212
   type: ss
-- name: 117|@SSRSUB-trojan日本T01-付费推荐:dlj.tf/ssrsub
+- name: 117|日本_【YouTube-VV科技】_1_1
   network: tcp
-  password: f736834f-1fc8-4738-9884-9afe0eb0d818
-  port: 443
-  server: jp1.trojan.tel
+  password: a9aad274-e226-4716-a8d2-7f6516d880d1
+  port: 10075
+  server: jp3.yihaobao.xyz
   skip-cert-verify: true
-  sni: douyincdn.com
+  sni: tls.yihaobao.xyz
   type: trojan
   udp: true
-- name: 117|@SSRSUB-trojan日本T02-付费推荐:dlj.tf/ssrsub
+- name: 117|日本_【YouTube-VV科技】_2_1
   network: tcp
-  password: f736834f-1fc8-4738-9884-9afe0eb0d818
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
   port: 443
-  server: jp2.trojan.tel
+  server: gsawsjp1.aiopen.cfd
   skip-cert-verify: true
-  sni: douyincdn.com
+  sni: 20-212-60-88.nhost.00cdn.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 117|日本 东京Fastly节点
-  network: ws
-  port: 80
-  server: www.hkbu.edu.hk
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
-  ws-opts:
-    headers:
-      host: nmsl.kp
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵 JP😈SSRSUB_476951725
-  network: ws
-  port: 44443
-  server: tls.07.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-opts:
-    headers:
-      host: tls.07.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵 JP😈SSRSUB_1163289939
-  network: ws
+- name: '117|日本_【YouTube-VV科技】_3 #1'
+  network: tcp
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
   port: 443
-  server: 141.147.174.244
+  server: gsawsjp2.aiopen.cfd
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3c5d5534-4b08-4f1a-f8da-f1f9134554f6
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 117|🇯🇵 JP😈SSRSUB_-1534771290
-  network: ws
-  port: 22443
-  server: tls.04.node-for-bigairport.win
+  sni: 20-212-60-88.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 117|日本_【YouTube-VV科技】_4
+  network: tcp
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  port: 443
+  server: gsawshk1.aiopen.cfd
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 247faa95-f929-4f49-95a3-0e0582e50cf5
-  ws-opts:
-    headers:
-      host: tls.04.node-for-bigairport.win
-    path: /
+  sni: 20-212-60-88.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 117|日本_【YouTube-VV科技】_5
+  network: tcp
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  port: 443
+  server: gsawshk2.aiopen.cfd
+  skip-cert-verify: true
+  sni: 20-212-60-88.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 117|日本_【YouTube-VV科技】
+  network: tcp
+  password: 36606545-bc8b-4152-a751-3f0957318bd9
+  port: 443
+  server: pqawsjp1.aiopen.cfd
+  skip-cert-verify: true
+  sni: 18-140-66-207.nhost.00cdn.com
+  type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
   name: 117|日本_1
@@ -3789,194 +3945,6 @@ proxies:
     headers:
       host: azhk1.sf66.cf
     path: /
-- name: 117|日本_【YouTube-VV科技】_1_1
-  network: tcp
-  password: a9aad274-e226-4716-a8d2-7f6516d880d1
-  port: 10075
-  server: jp3.yihaobao.xyz
-  skip-cert-verify: true
-  sni: tls.yihaobao.xyz
-  type: trojan
-  udp: true
-- name: 117|日本_【YouTube-VV科技】_2_1
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawsjp1.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
-- name: 117|日本_【YouTube-VV科技】_3
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawsjp2.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
-- name: 117|日本_【YouTube-VV科技】_4
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawshk1.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
-- name: 117|日本_【YouTube-VV科技】_5
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawshk2.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
-- name: '117|日本_【YouTube-VV科技】 #1'
-  network: tcp
-  password: 36606545-bc8b-4152-a751-3f0957318bd9
-  port: 443
-  server: pqawsjp1.aiopen.cfd
-  skip-cert-verify: true
-  sni: 18-140-66-207.nhost.00cdn.com
-  type: trojan
-  udp: true
-- alterId: 64
-  cipher: auto
-  name: 117|日本_【YouTube-VV科技】_1
-  network: tcp
-  port: 44522
-  server: 185.160.24.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 117|🇯🇵JP-139.162.83.219-126
-  network: tcp
-  password: 7a566d21dfcd0f12490275fd3dd3cfc4
-  port: 443
-  server: trs11.bolab.net
-  skip-cert-verify: true
-  sni: trs11.bolab.net
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 117|👉www.85la.com👉日本JP_9_1
-  password: amazonskr05
-  port: 443
-  server: 13.114.140.218
-  type: ss
-- cipher: aes-256-gcm
-  name: 117|🇯🇵JP-85.208.108.21-117
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: 117|🇯🇵JP-85.208.108.21-118
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 85.208.108.21
-  type: ss
-- cipher: aes-256-gcm
-  name: '117,308,552,576,595,596|Pool_🇳🇱NL_236 #1'
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 85.208.108.60
-  type: ss
-- cipher: aes-256-cfb
-  name: '117,320,321,359,392,552,576|🇵JP-54.199.83.239-6230 #1'
-  password: doub.io
-  port: 2333
-  server: 54.199.83.239
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 117|日本-2.29MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.95.170.220
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-195.7KB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.7.26
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-143.0KB/s
-  password: amazonskr05
-  port: 443
-  server: 43.207.143.83
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-2.35MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.194.189.140
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-2.16MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.179.174.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-530.6KB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.13.193
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-127.5KB/s
-  password: amazonskr05
-  port: 443
-  server: 52.199.182.245
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-591.1KB/s_1
-  password: amazonskr05
-  port: 443
-  server: 3.112.220.140
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-1.45MB/s_1
-  password: amazonskr05
-  port: 443
-  server: 52.197.108.167
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-443.6KB/s
-  password: amazonskr05
-  port: 443
-  server: 13.230.97.225
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-116.6KB/s
-  password: amazonskr05
-  port: 443
-  server: 52.194.223.127
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-231.6KB/s
-  password: amazonskr05
-  port: 443
-  server: 52.194.250.138
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-422.2KB/s
-  password: amazonskr05
-  port: 443
-  server: 3.112.240.59
-  type: ss
-- cipher: aes-256-cfb
-  name: 117|日本-1.81MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.112.106.148
-  type: ss
 - alterId: 0
   cipher: auto
   name: 128|日本-优化3
@@ -3993,7 +3961,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 129|🇯🇵 日本NO.1-1B
+  name: 129|🇯🇵 日本NO.1-1A
   network: tcp
   port: '45056'
   server: haa.dashuai.cyou
@@ -4002,13 +3970,13 @@ proxies:
   uuid: a6861390-6d06-4d3c-be1f-573fbbfa6243
 - alterId: 0
   cipher: auto
-  name: '129,360|>🇯🇵 JP|Hs|0914|TG@FProxies| #1'
+  name: '129,360|>🇯🇵 JP|Hs|0914|TG@FProxies| #2'
   network: tcp
   port: '45057'
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 5e47e5fe-9b78-4938-bc57-a38c4477b1da
+  uuid: 084e0a6d-c450-485c-86db-f75ffa7aa3d3
 - alterId: 0
   cipher: auto
   name: 130,324,805|github.com/freefq - 日本东京Linode数据中心 1
@@ -4278,7 +4246,7 @@ proxies:
   uuid: 0e9102ca-477e-47a1-a2c8-f734daf7cc34
 - alterId: 0
   cipher: auto
-  name: '195,360|>🇯🇵 JP|Ns|1013|TG@FProxies| #2'
+  name: '195,360|>🇯🇵 JP|Ns|1013|TG@FProxies| #5'
   network: ws
   port: '443'
   server: tls.84.node-for-bigairport.win
@@ -4596,7 +4564,7 @@ proxies:
   cipher: auto
   country: JP
   name: '213,320,321,359,401,512,533,544,551,552,561,562,567,573,574,576,632,775,790,795,815|@Vip_Security
-    join us - 219
+    join us - 218
 
     '
   network: ws
@@ -4614,23 +4582,6 @@ proxies:
     headers:
       Host: ''
     path: /bb
-- alterId: 1
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 225|🇵 JP_483
-  network: ws
-  port: 443
-  server: 92.38.178.69
-  servername: 92.38.178.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 92.38.178.69
-  ws-path: linkvws
 - name: 251|🇯🇵JP(AzadNet.t.me)_003
   network: tcp
   password: 18844@zxcvbn
@@ -5380,7 +5331,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '330,336,360,602,811|@Vip_Security join us - 642
+  name: '330,336,360,602,811|@Vip_Security join us - 470
 
     '
   network: tcp
@@ -5392,7 +5343,7 @@ proxies:
   uuid: dfbae13f-7fff-4c10-916d-c053fc2152c5
 - alterId: 0
   cipher: auto
-  name: '330,336,360,602,811|@Vip_Security join us - 643
+  name: '330,336,360,602,811|@Vip_Security join us - 471
 
     '
   network: tcp
@@ -5826,54 +5777,70 @@ proxies:
   server: 13.231.229.41
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 360|>🇯🇵 JP|Ms|0914|TG@FProxies|
+  network: ws
+  port: '443'
+  server: 107.148.0.160
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/073308302711
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #11'
+  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #12'
   network: ws
   port: '443'
   server: jpcft01.xqc.best
   tls: true
   type: vmess
-  uuid: 7a43f247-a0a9-4ac4-aae1-8f9c9b6a55bc
+  uuid: 07a69c05-5fa8-4070-85a9-8346936b47a3
   ws-opts:
     headers:
       Host: jpcft01.xqc.best
     path: /stream
 - alterId: 0
   cipher: auto
-  name: 360|日本D
+  name: 360|🇯🇵 日本-R1
   network: tcp
-  port: '43870'
-  server: 110.40.69.43
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
-- alterId: 0
-  cipher: auto
-  name: 360|🇯🇵 日本-R0
-  network: tcp
-  port: '28694'
-  server: hd-hk-relay00.nodeup.top
+  port: '18693'
+  server: hd-relay01.nodeup.top
   tls: false
   type: vmess
   uuid: dfbae13f-7fff-4c10-916d-c053fc2152c5
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Ms|1013|TG@FProxies| #1'
+  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #1'
   network: ws
-  port: '12974'
-  server: z6.fragranceninja.com
+  port: '443'
+  server: tls.95.node-for-bigairport.win
   tls: true
   type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-opts:
     headers:
-      Host: z6.fragranceninja.com
+      Host: tls.95.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #1'
+  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #2'
+  network: ws
+  port: '443'
+  server: tls.90.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.90.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #3'
   network: ws
   port: '443'
   server: tls.98.node-for-bigairport.win
@@ -5883,6 +5850,19 @@ proxies:
   ws-opts:
     headers:
       Host: tls.98.node-for-bigairport.win
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #4'
+  network: ws
+  port: '443'
+  server: tls.85.node-for-bigairport.win
+  tls: true
+  type: vmess
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  ws-opts:
+    headers:
+      Host: tls.85.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto
@@ -5897,63 +5877,31 @@ proxies:
     headers:
       Host: core.host-api.speedtest.net
     path: /kljllhsdagf
-- alterId: 64
-  cipher: auto
-  name: '360|>🇯🇵 JP|Ms|0914|TG@FProxies| #1'
-  network: ws
-  port: '443'
-  server: 107.148.0.160
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/073308302711
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Hs|0914|TG@FProxies| #2'
-  network: tcp
-  port: '35218'
-  server: dzgz.tcity8.monster
-  tls: false
-  type: vmess
-  uuid: 740ba9a4-5de5-4422-a4e7-02b3dee80906
-- alterId: 0
-  cipher: auto
-  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #3'
+  name: '360|>🇯🇵 JP|Ms|1013|TG@FProxies| #3'
   network: ws
-  port: '443'
-  server: tls.95.node-for-bigairport.win
+  port: '12974'
+  server: z6.fragranceninja.com
   tls: true
   type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
   ws-opts:
     headers:
-      Host: tls.95.node-for-bigairport.win
+      Host: z6.fragranceninja.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 360|日本Akiler
+  name: 360|🇯🇵 日本-R0
   network: tcp
-  port: '26318'
-  server: 110.40.69.43
-  servername: ''
+  port: '28694'
+  server: hd-hk-relay00.nodeup.top
   tls: false
   type: vmess
-  uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc
+  uuid: dfbae13f-7fff-4c10-916d-c053fc2152c5
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Hs|0914|TG@FProxies| #3'
-  network: tcp
-  port: '52117'
-  server: i.needss.top
-  tls: false
-  type: vmess
-  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
-- alterId: 0
-  cipher: auto
-  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #10'
+  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #9'
   network: ws
   port: '443'
   server: live.theworldwidewolf.com
@@ -5966,20 +5914,7 @@ proxies:
     path: ws/?ed=2048
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #4'
-  network: ws
-  port: '443'
-  server: tls.90.node-for-bigairport.win
-  tls: true
-  type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.90.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #12'
+  name: '360|>🇯🇵 JP|Ls|1013|TG@FProxies| #10'
   network: ws
   port: '37920'
   server: 13.208.191.40
@@ -5992,26 +5927,22 @@ proxies:
     path: /6ddb29ab
 - alterId: 0
   cipher: auto
-  name: 360|🇯🇵 日本-R1
+  name: '360|>🇯🇵 JP|Hs|0914|TG@FProxies| #1'
   network: tcp
-  port: '18693'
-  server: hd-relay01.nodeup.top
+  port: '52117'
+  server: i.needss.top
   tls: false
   type: vmess
-  uuid: dfbae13f-7fff-4c10-916d-c053fc2152c5
+  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
 - alterId: 0
   cipher: auto
-  name: '360|>🇯🇵 JP|Ns|1013|TG@FProxies| #5'
-  network: ws
-  port: '443'
-  server: tls.85.node-for-bigairport.win
-  tls: true
+  name: '360|>🇯🇵 JP|Hs|0914|TG@FProxies| #3'
+  network: tcp
+  port: '35218'
+  server: dzgz.tcity8.monster
+  tls: false
   type: vmess
-  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
-  ws-opts:
-    headers:
-      Host: tls.85.node-for-bigairport.win
-    path: /
+  uuid: 740ba9a4-5de5-4422-a4e7-02b3dee80906
 - alterId: 0
   cipher: auto
   name: 363,512,551,552,561,562,567,573,574,576,824|日本_1104005
@@ -9214,12 +9145,6 @@ proxies:
     headers:
       Host: ''
     path: /chat
-- cipher: aes-256-gcm
-  name: 770|🇯🇵JP-45.12.207.208-4084 | 27.575MB
-  password: 3426362sED92Yty14d86a
-  port: 8448
-  server: 45.12.207.208
-  type: ss
 - cipher: aes-256-cfb
   name: 772|TG频道@mfbpn-日本2
   obfs: tls1.2_ticket_auth
