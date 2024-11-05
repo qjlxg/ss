@@ -1,8 +1,26 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: ' KR'
+  name: 9,41,1134|🇭🇰 香港_原神专线_多莉的奈子
+  password: 7521b14f-f20a-3184-b177-b27c8031a56a
+  port: 50101
+  server: iepl1.forlive.live
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: 20,366,595,1228,1244,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_Incheon_ss_1134
+  country: KR
+  name: 20,366,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_None_ss_1132
+  password: amazonskr05
+  port: 443
+  server: 13.125.51.118
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: KR
+  name: 20,366,1228,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_Incheon_ss_1134
   password: amazonskr05
   port: 443
   server: 52.79.157.153
@@ -28,7 +46,7 @@ proxies:
   uuid: 54de5bc2-fd5d-4aa1-adc8-6beb11e402b5
 - alterId: 0
   cipher: auto
-  name: 333,607,1551,2251,2262,2379,2400,2401,2427|14|韩国2|@ripaojiedian
+  name: 333,607,1551,2251,2379,2400,2401,2427|14|韩国2|@ripaojiedian
   network: tcp
   port: '41510'
   server: 45.94.68.210
@@ -48,16 +66,7 @@ proxies:
   uuid: fd2a9866-c16c-49d3-badd-650cdbfa63c8
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇷KR
-  name: 366,595,1244,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_None_ss_1132
-  password: amazonskr05
-  port: 443
-  server: 13.125.51.118
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 366,595,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_Incheon_ss_1133
+  name: 366,1508,1621,1687,1823,1867,1935,1959,2205|South Korea_Incheon_ss_1133
   password: amazonskr05
   port: 443
   server: 43.201.254.74
@@ -78,29 +87,43 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 412|mahdibland-🇰🇷KR-146.56.47.1-2690-worker-general
+  name: 412|mahdibland-🇰🇷KR-146.56.162.25-0047-worker-general
   network: ws
   port: 443
-  server: cloudflare.com
+  server: codepen.io
   servername: cool-darkness-e663.mehdipost667.workers.dev
   tls: true
   type: vmess
-  uuid: e98fc1a0-9c52-4091-91a5-c159b0aa274e
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
     headers:
       Host: cool-darkness-e663.mehdipost667.workers.dev
-    path: /kr-arm2.018999.xyz:443/e98fc1a0-9c52-4091-91a5-c159b0aa274e
+    path: /lg30.cfcdn3.xyz:443/ray
 - alterId: 0
   cipher: auto
-  name: '412,1551,1797,1807,1808,1813,1820,1821,1823,1885,2258|韩国_1104003 #1'
+  name: 412,1600,1797,1807,1808,1813,1820,1821,1823,2397|_KR_韩国_2_13@34
   network: ws
   port: '443'
-  server: 146.56.162.25
+  server: 131.186.24.103
   servername: ''
-  skip-cert-verify: true
-  tls: false
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  udp: true
+  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+  ws-opts:
+    headers:
+      Host: ''
+    path: /reffs7y26g0ua
+- alterId: 0
+  cipher: auto
+  name: 412,1797,1807,1808,1813,1820,1821,1823|🇷KR-146.56.166.153-0006
+  network: ws
+  port: 443
+  server: 146.56.166.153
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
     headers:
@@ -108,32 +131,47 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '412,1797,1807,1808,1813,1820,1821,1823,2395,2396|US_112_0@111 #1'
+  name: 412,1797,1807,1808,1813,1820,1821,1823|KR-211.177.40.235-8125
   network: ws
-  port: '80'
-  server: 3.38.115.106
-  servername: tms.dingtalk.com
+  port: 30001
+  server: 211.177.40.235
+  servername: p3.chigua.tk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '412,1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-150.230.249.15-3156 #6'
+  network: http
+  port: 46842
+  server: 150.230.249.15
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 2d8c7bd6-7a3e-4a9a-d486-1192d3a999a7
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
-  name: 412,1797,1807,1808,1813,1820,1821,1823,1885|1.01|KR13016214110411222022ce2d708
+  name: '412,1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-138.2.122.225-0004 #6'
   network: ws
   port: 443
-  server: 130.162.141.104
+  server: 138.2.122.225
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
-    path: /reffs7y26g0ua
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /ray
 - alterId: 0
   cipher: auto
   name: 449|🇰🇷 韩国 | V1 | 01
@@ -157,7 +195,7 @@ proxies:
   name: 515|🇰🇷韩国/한국1/SK区域1节点
   network: tcp
   port: '20180'
-  server: zbD8Bp.gov.goldliond.top
+  server: bG74FC.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -166,7 +204,7 @@ proxies:
   name: 515|🇰🇷韩国/한국2/KT区域2节点
   network: tcp
   port: '20180'
-  server: lvYwbS.gov.goldliond.top
+  server: PpeCLU.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -175,7 +213,7 @@ proxies:
   name: 515|🇰🇷韩国/한국3/KT区域3节点
   network: tcp
   port: '20180'
-  server: 6nEBpG.gov.goldliond.top
+  server: JMBiPc.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
@@ -184,39 +222,10 @@ proxies:
   name: 515|🇰🇷韩国/한국4/KT/Neflix区域4节点
   network: tcp
   port: '60182'
-  server: 8KHQub.gov.goldliond.top
+  server: UhO403.gov.goldliond.top
   tls: false
   type: vmess
   uuid: dff90a14-6c25-4181-9791-0be9131da5a3
-- alterId: 0
-  cipher: auto
-  name: 571|🇰🇷KR-52.231.200.179-2569-worker
-  network: ws
-  port: 443
-  server: freevpn878.hamidimorteza680.workers.dev
-  servername: freevpn878.hamidimorteza680.workers.dev
-  tls: true
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: freevpn878.hamidimorteza680.workers.dev
-    path: /fullaccesstokoreannetsubnode1.azurewebsites.net/ws
-- alterId: 0
-  cipher: auto
-  name: 571,1551,1797,1807,1808,1813,1820,1821,1823,2258,2397|_KR_韩国_1_14@0
-  network: ws
-  port: '443'
-  server: fullaccesstokoreannetsubnode1.azurewebsites.net
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
-    path: /ws
 - alterId: '0'
   cipher: auto
   name: 610|[🇰🇷]kr06.wxfz.ml:35212(5ab3f1a4-0793-4f2a-f14a-d427105aa99a)
@@ -1328,20 +1337,7 @@ proxies:
   server: ydyh1.nanbeicloud.top
   type: ss
 - country: CY
-  name: 1228|Relay_CY-KR_318
-  network: ws
-  password: auto
-  port: 443
-  server: 195.85.59.95
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: CY
-  name: 1228|Relay_CY-KR_319
+  name: 1228|Relay_CY-KR_340
   network: ws
   password: auto
   port: 443
@@ -1353,6 +1349,33 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: CY
+  name: 1228|Relay_CY-KR_341
+  network: ws
+  password: auto
+  port: 443
+  server: 195.85.59.95
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ES
+  fingerprint: randomized
+  name: 1228|Relay_ES-KR_349
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 185.238.228.6
+  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /trLb1imnrxPEhfzfwk?ed
 - alterId: 0
   cipher: auto
   country: KR
@@ -1368,22 +1391,35 @@ proxies:
   tls: false
   type: vmess
   uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
-- country: NL
-  fingerprint: randomized
-  name: 1228|Relay_NL-KR_415
+- country: KZ
+  name: 1228|Relay_KZ-KR_396
   network: ws
   password: bpb-trojan
   port: 443
-  server: 188.114.98.89
-  sni: bpB-woRker-PanEL-AY6.pagEs.dev
+  server: 195.245.221.15
+  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: bpb-worker-panel-ay6.pages.dev
-    path: /trBLUKS93cpgZZCas5?ed=2560
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /trSo3btsDgOHHUM6Nb?ed=2560
 - country: NL
-  name: 1228|Relay_NL-KR_416
+  fingerprint: randomized
+  name: 1228|Relay_NL-KR_411
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 188.114.98.6
+  sni: 403b3611-99bc-43b7-88d7-26eD5D0825a9-3.pagES.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /trHMgc3gUnNOpvjx2i?ed=2560
+- country: NL
+  name: 1228|Relay_NL-KR_412
   network: ws
   password: bpb-trojan
   port: 2053
@@ -1395,87 +1431,35 @@ proxies:
     headers:
       Host: bpb-worker-panel1-e4p.pages.dev
     path: /tr9pU4LSFNK5k8URSo/ZGUucmFkaWNhbGx5LnBybw==
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1160
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.19.131
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1162
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.110
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
+- country: NL
   fingerprint: randomized
-  name: 1228|Relay_ZZ-KR_1163
+  name: 1228|Relay_NL-KR_413
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 45.131.208.81
+  sni: 403B3611-99BC-43b7-88D7-26eD5d0825A9-3.PaGES.dEv
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
+    path: /trt3XSTgGNyK4r9U0o?ed=2560
+- country: NL
+  name: 1228|Relay_NL-KR_414
   network: ws
   password: bpb-trojan
   port: 2053
-  server: 104.18.34.21
-  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
+  server: 188.114.97.159
+  sni: BPB-worKEr-pANel1-E4p.PAgES.Dev
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: bpb-worker-panel1-e4p.pages.dev
-    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
+    path: /tr9pU4LSFNK5k8URSo/ZGUucmFkaWNhbGx5LnBybw==
 - country: ZZ
-  name: 1228|Relay_ZZ-KR_1164
-  network: ws
-  password: auto
-  port: 443
-  server: 104.17.37.105
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1166
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.17.176
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1167
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.18.8
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1168
+  name: 1228|disney_KR
   network: ws
   password: auto
   port: 443
@@ -1488,428 +1472,8 @@ proxies:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
 - country: ZZ
-  name: 1228|Relay_ZZ-KR_1169
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.20.58
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1171
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.17.138
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1172
-  network: ws
-  password: auto
-  port: 443
-  server: 104.26.8.160
-  sni: trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojanfree-76s.pages.dev
-    path: /trojanfree-76s.pages.dev/?ed=2560
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1174
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.19.232
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1175
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.176
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1176
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.22.170
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1177
-  network: ws
-  password: auto
-  port: 443
-  server: 104.17.36.105
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1178
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.19.169
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1180
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.17.128
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1183
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.20.6
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
   fingerprint: randomized
-  name: '1228|netflix_KR #1'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.17.147.22
-  sni: bpB-wORkeR-pANEl-ay6.pages.deV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel-ay6.pages.dev
-    path: /trsOhXJ7DIsVTqppwd?ed=2560
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1186
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.209
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1187
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.18.72
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1188
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.159
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1189
-  network: ws
-  password: auto
-  port: 443
-  server: 104.26.12.54
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1190
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.21.152
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  fingerprint: randomized
-  name: 1228|Relay_ZZ-KR_1191
-  network: ws
-  password: auto
-  port: 443
-  server: 104.19.222.79
-  sni: trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojanfree-76s.pages.dev
-    path: /trojanfree-76s.pages.dev/?ed=2560
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1192
-  network: ws
-  password: auto
-  port: 443
-  server: 104.26.12.31
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1193
-  network: ws
-  password: auto
-  port: 443
-  server: 104.21.81.225
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: '1228|netflix_KR #2'
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.22.232
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  fingerprint: chrome
-  name: 1228|Relay_ZZ-KR_1195
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.18.37.111
-  sni: mindrOOm-5cz.pAgEs.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: mindroom-5cz.pages.dev
-    path: /trC8BM8bTsAF0AnLYL?ed=2560
-- country: ZZ
-  name: '1228|netflix_KR #3'
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.188
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1197
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.18.35
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1198
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.21.155
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1199
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.22.2
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1200
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.168
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1201
-  network: ws
-  password: auto
-  port: 8443
-  server: 162.159.135.232
-  sni: e9464f45.trauma-2r4.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: e9464f45.trauma-2r4.pages.dev
-    path: /
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1202
-  network: ws
-  password: auto
-  port: 2083
-  server: 104.20.19.168
-  sni: e9464f45.trauma-2r4.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: e9464f45.trauma-2r4.pages.dev
-    path: /
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1203
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.20.84
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  fingerprint: randomized
-  name: 1228|Relay_ZZ-KR_1204
-  network: ws
-  password: auto
-  port: 443
-  server: 104.19.174.68
-  sni: trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojanfree-76s.pages.dev
-    path: /trojanfree-76s.pages.dev/?ed=2560
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1205
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.17.55
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 1228|Relay_ZZ-KR_1206
-  network: ws
-  password: auto
-  port: 443
-  server: 104.20.19.105
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  fingerprint: randomized
-  name: '1228|netflix_KR #4'
+  name: 1228|Relay_ZZ-KR_1112
   network: ws
   password: azadnet-trojan
   port: 443
@@ -1922,7 +1486,135 @@ proxies:
       Host: xn----pmcnaac0dkn0rb71nda.pages.dev
     path: /trbRb6rQQHUXO1sk03?ed=2560
 - country: ZZ
-  name: 1228|Relay_ZZ-KR_1209
+  name: '1228|disney_KR #1'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.232
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1114
+  network: ws
+  password: auto
+  port: 443
+  server: 104.21.90.210
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #2'
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.159
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1116
+  network: ws
+  password: auto
+  port: 2087
+  server: 104.25.254.4
+  sni: trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+- country: ZZ
+  fingerprint: randomized
+  name: 1228|Relay_ZZ-KR_1117
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 104.18.34.21
+  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
+- country: ZZ
+  name: '1228|disney_KR #3'
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.188
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #5'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.26.8.160
+  sni: trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojanfree-76s.pages.dev
+    path: /trojanfree-76s.pages.dev/?ed=2560
+- country: ZZ
+  name: '1228|disney_KR #6'
+  network: ws
+  password: auto
+  port: 8443
+  server: 162.159.135.232
+  sni: e9464f45.trauma-2r4.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: e9464f45.trauma-2r4.pages.dev
+    path: /
+- country: ZZ
+  fingerprint: randomized
+  name: 1228|Relay_ZZ-KR_1122
+  network: ws
+  password: auto
+  port: 443
+  server: 104.19.222.79
+  sni: trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojanfree-76s.pages.dev
+    path: /trojanfree-76s.pages.dev/?ed=2560
+- country: ZZ
+  name: '1228|disney_KR #7'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.18.72
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1126
   network: ws
   password: auto
   port: 443
@@ -1935,8 +1627,112 @@ proxies:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
 - country: ZZ
+  name: 1228|Relay_ZZ-KR_1128
+  network: ws
+  password: auto
+  port: 443
+  server: 104.26.13.31
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1129
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.20.84
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #9'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.17.138
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1131
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.20.58
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #10'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.18.1.89
+  sni: join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: join-midas-x-x-----join-midas-x-x-----join-midas-x-x.join-midas-x-x-a14.workers.dev
+    path: /?ed=2560
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1133
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.110
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1135
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.17.176
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1136
+  network: ws
+  password: auto
+  port: 443
+  server: 104.26.12.31
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
   fingerprint: randomized
-  name: 1228|Relay_ZZ-KR_1210
+  name: 1228|Relay_ZZ-KR_1137
   network: ws
   password: auto
   port: 443
@@ -1948,6 +1744,215 @@ proxies:
     headers:
       Host: trojanfree-76s.pages.dev
     path: /trojanfree-76s.pages.dev/?ed=2560
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1138
+  network: ws
+  password: auto
+  port: 443
+  server: 104.17.36.105
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1141
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.176
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #12'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.19.105
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #13'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.20.6
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #14'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.170
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #15'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.155
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1152
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.209
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1153
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.152
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1154
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.168
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1155
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.18.8
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1157
+  network: ws
+  password: auto
+  port: 443
+  server: 104.21.81.225
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1158
+  network: ws
+  password: auto
+  port: 443
+  server: 104.26.12.54
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1159
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.22.2
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  fingerprint: randomized
+  name: 1228|Relay_ZZ-KR_1161
+  network: ws
+  password: auto
+  port: 443
+  server: 104.19.174.68
+  sni: trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojanfree-76s.pages.dev
+    path: /trojanfree-76s.pages.dev/?ed=2560
+- country: ZZ
+  name: 1228|Relay_ZZ-KR_1163
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.21.89
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- country: ZZ
+  name: '1228|disney_KR #17'
+  network: ws
+  password: auto
+  port: 443
+  server: 104.20.19.131
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
 - alterId: 0
   cipher: auto
   name: 1298|🇰🇷KR韩国(youtube阿伟科技)
@@ -2495,6 +2500,22 @@ proxies:
     headers:
       Host: yx.niubi.site
     path: /niu?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '1551,1797,1807,1808,1813,1820,1821,1823,1885,2258|韩国_1104003 #1'
+  network: ws
+  port: '443'
+  server: 146.56.162.25
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /ray
 - alterId: 64
   cipher: auto
   name: 1551,1600,1797,1807,1808,1813,1820,1821,1823,2258,2397|_KR_韩国_0@4
@@ -2510,6 +2531,21 @@ proxies:
     headers:
       Host: ''
     path: /path/220128071100
+- alterId: 0
+  cipher: auto
+  name: 1551,1797,1807,1808,1813,1820,1821,1823,2258,2397|_KR_韩国_1_14@0
+  network: ws
+  port: '443'
+  server: fullaccesstokoreannetsubnode1.azurewebsites.net
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
+    path: /ws
 - alterId: 0
   cipher: auto
   name: 1551,1797,1807,1808,1813,1820,1821,1823,2258,2397|_KR_韩国_20@24
@@ -2678,21 +2714,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1600,1797,1807,1808,1813,1820,1821,1823,2397|_KR_韩国_2_13@34
-  network: ws
-  port: '443'
-  server: 131.186.24.103
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-  ws-opts:
-    headers:
-      Host: ''
-    path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
   name: 1600|🇰🇷_KR_韩国_1_14@0
@@ -3199,6 +3220,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 1797,1807,1808,1813,1820,1821,1823,1885|1.01|KR13016214110411222022ce2d708
+  network: ws
+  port: 443
+  server: 130.162.141.104
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+  ws-opts:
+    path: /reffs7y26g0ua
+- alterId: 0
+  cipher: auto
   name: 1797,1807,1808,1813,1820,1821,1823,2397|_KR_韩国_3@22
   network: ws
   port: '80'
@@ -3227,21 +3261,6 @@ proxies:
     headers:
       Host: 161.129.34.102
     path: /
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-150.230.249.15-3156 #6'
-  network: http
-  port: 46842
-  server: 150.230.249.15
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
 - alterId: 0
   cipher: auto
   name: '1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-152.70.252.218-3201 #6'
@@ -3296,6 +3315,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: '1797,1807,1808,1813,1820,1821,1823,2395,2396|US_112_0@111 #1'
+  network: ws
+  port: '80'
+  server: 3.38.115.106
+  servername: tms.dingtalk.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2d8c7bd6-7a3e-4a9a-d486-1192d3a999a7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 1797,1807,1808,1813,1820,1821,1823|🇷KR-54.180.114.77-6753
   network: ws
   port: 42517
@@ -3307,19 +3341,6 @@ proxies:
   uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1797,1807,1808,1813,1820,1821,1823|KR-211.177.40.235-8125
-  network: ws
-  port: 30001
-  server: 211.177.40.235
-  servername: p3.chigua.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    path: /vmess
 - alterId: 0
   cipher: auto
   name: 1797,1807,1808,1813,1820,1821,1823|🇷KR-1.238.102.214-8126
@@ -3465,36 +3486,6 @@ proxies:
   uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1797,1807,1808,1813,1820,1821,1823|🇷KR-146.56.166.153-0006
-  network: ws
-  port: 443
-  server: 146.56.166.153
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: '1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-138.2.122.225-0004 #6'
-  network: ws
-  port: 443
-  server: 138.2.122.225
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
 - alterId: 0
   cipher: auto
   name: '1797,1807,1808,1813,1820,1821,1823|🇰🇷KR-43.201.106.220-0003 #6'
