@@ -1,32 +1,54 @@
 proxies:
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: mm_grpc
-  name: 403|🇲🇴 特殊｜澳门-A [2.0][gRPC]
-  network: grpc
-  password: 5b4c3ff4-16c7-35f5-97e9-68eb9a053815cmynw
-  port: 64707
-  server: kaizen-ctm-1.cmydns2.com
-  sni: chimuni.com
-  tls: true
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: '1144,1181,1201|🇲🇴 澳门|MO #2'
-  password: 2MkHPhqUTQKK7N7D
-  port: 47749
-  server: v6.zhenxunwudi.top
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 1174|🇲🇴 澳门 A01 IDC 2x
-  password: 5c5ed740-a6cd-434b-8044-5307d6cdb9a6
-  port: 37139
-  server: ap-g.hinetwork.tw
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 1481|澳门_121320001
+  name: 177|🇲🇴 澳门NO.2
+  network: ''
+  port: 45051
+  server: xdd.dashuai.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fcc338ed-d213-4952-ab5b-0a1e6d5400e4
+- alterId: 1
+  cipher: auto
+  name: 177|🇲🇴 澳门_1
+  network: ws
+  port: 35553
+  server: ctm.poloddns.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: ctm.poloddns.xyz
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 177|🇲🇴 澳门_4
+  network: ws
+  port: 19072
+  server: cxcu.jiyunshu.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fb1680d4-01b9-4cdd-919f-4d49faf2c326
+  ws-opts:
+    headers:
+      host: cxcu.jiyunshu.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 191|🇲🇴 澳门NO.2-1B
+  network: tcp
+  port: '45051'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: f4356165-f610-44e5-b105-2a8f597c7cd8
+- alterId: 0
+  cipher: auto
+  name: 516|澳门_121320001
   network: ''
   port: '10065'
   server: 163.53.246.239
@@ -36,7 +58,7 @@ proxies:
   uuid: 1f308996-7fa6-46ac-8700-7d766eae084b
 - alterId: 0
   cipher: auto
-  name: 1481|澳门_121320002
+  name: 516|澳门_121320002
   network: tcp
   port: '10065'
   server: 163.53.246.239
@@ -44,9 +66,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 1f308996-7fa6-46ac-8700-7d766eae084b
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 1797,1807,1808,1813,1820,1821,1823|🇴MO-45.64.22.22-0879
+  name: 859,919,920,921,930,931,936,943,944,946,951|🇲🇴_MO_澳门->🇨🇳_CN_中国
   network: ws
   port: 443
   server: 45.64.22.22
@@ -56,10 +78,12 @@ proxies:
   type: vmess
   uuid: e55ed7b2-ed4f-480c-8b99-08482da1e4c7
   ws-opts:
+    headers:
+      host: hkbn.pgypgykmoljklj.xyz
     path: /OB7jTM5cTTrL
 - alterId: 0
   cipher: auto
-  name: 1797,1807,1808,1813,1820,1821,1823|MO-45.64.22.6-8130
+  name: 859,919,921,930,931,936,943,944,946|MO-45.64.22.6-8128
   network: ws
   port: 443
   server: 45.64.22.6
@@ -72,7 +96,19 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '1989,2431|Youtube顺丰资源  - 澳门澳门电讯 28 #1'
+  name: 1152|🇲🇴 Youtube顺丰资源  - 澳门澳门电讯 13
+  network: ws
+  port: 443
+  server: 45.64.22.55
+  tls: true
+  type: vmess
+  uuid: d217db0c-0faa-4270-ea38-e6093d9774e3
+  ws-headers:
+    Host: h2.800876.xyz
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1153|Youtube顺丰资源  - 澳门澳门电讯 28
   network: ws
   port: '443'
   server: 45.64.22.55
@@ -86,7 +122,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1989,2431|Youtube顺丰资源  - 澳门澳门电讯 6 #1'
+  name: 1153|Youtube顺丰资源  - 澳门澳门电讯 6
   network: ws
   port: '443'
   server: 45.64.22.6
@@ -100,7 +136,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '1989,2431|Youtube顺丰资源  - 澳门澳门电讯 13 #1'
+  name: 1153|Youtube顺丰资源  - 澳门澳门电讯 13
   network: ws
   port: '443'
   server: 45.64.22.55
