@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: '4,11,16,25,31,33,91,99,128,156,167,168,179,180,182,241,242,243,244,245,261,262,454,455,528,557,646,648,649,650,674,682,685,692,703,704,705,941,942,943,944,1011,1012,1013,1045,1047,1292,1308,1332|14|香港|@ripaojiedian
+  name: '4,11,16,25,31,33,91,99,128,156,167,168,179,180,182,241,242,243,244,245,261,262,528,557,646,648,649,650,674,682,685,692,703,704,705,733,941,942,943,944,1011,1012,1013,1045,1047,1292,1308,1332|14|香港|@ripaojiedian
     #18'
   network: tcp
   port: '48009'
@@ -45,16 +45,16 @@ proxies:
   ws-headers:
     Host: 143.92.42.65
   ws-path: /
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   country: ' HK'
-  name: 47,167|中转节点-32.07MB/s
-  password: 0e91a29a-989d-4934-a1fb-7b653319397f
-  port: 50101
-  server: iepl1.forlive.live
+  name: '42,167,859,885|🇬SG-103.36.91.23-0546 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
   type: ss
 - cipher: aes-256-gcm
   country: ' HK'
-  name: 47,54,274|Relay_ HK-HK_476
+  name: 47,54,274|Relay_ HK-HK_601
   password: b12360f4-33ba-4c9b-ae0c-3da5f8c6ed05
   port: 43761
   server: 1r3zcdlz.wmdkwwurw.top
@@ -74,6 +74,13 @@ proxies:
     headers:
       Host: d1th2ch215a6xr.cloudfront.net
     path: /stream?ed=2048
+- cipher: chacha20-ietf
+  country: SC
+  name: 54,274|SC_650
+  password: asd123456
+  port: 8388
+  server: 154.197.26.237
+  type: ss
 - cipher: aes-256-cfb
   country: HK
   name: 61,557,1250|[02-24]-🇸-欧洲-096-150.107.46.21
@@ -164,6 +171,15 @@ proxies:
   server: ohk020.nod3.org
   type: ss
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '105,252,1233|HK3 #2'
+  password: 6a85a72c-c77e-4034-9384-fbae0495013d
+  port: 47969
+  server: 213.130.141.113
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: auto
   name: 107|🇭🇰 11|香港3|@ripaojiedian
@@ -2308,7 +2324,7 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 145,179,180,416,428,434,578,674,682,690,807,857,859,869,870,875,882,883,885,913,1087,1092,1100,1102,1134,1179,1184,1193,1195,1196,1197,1198,1199,1200,1205,1213,1215,1308,1317|香港_1106018
+  name: 145,179,180,416,428,434,578,674,682,690,807,857,859,869,870,875,882,883,885,913,1087,1092,1100,1102,1134,1179,1184,1193,1196,1197,1198,1199,1200,1205,1213,1215,1308,1317|香港_1106018
   network: ws
   port: '30000'
   server: 27.124.10.146
@@ -5654,22 +5670,22 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 181|🇭🇰 香港NO.1-1B
-  network: tcp
-  port: '45050'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 46834918-529f-4fa1-90aa-082bc2176b07
-- alterId: 0
-  cipher: auto
   name: 181|🇭🇰 香港-1A
   network: tcp
   port: '19901'
   server: xg.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 3ebf870c-d956-44f3-be57-526ec9e9ad97
+  uuid: 46834918-529f-4fa1-90aa-082bc2176b07
+- alterId: 0
+  cipher: auto
+  name: 181|🇭🇰 香港NO.1-1B
+  network: tcp
+  port: '45050'
+  server: haa.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 86b4ee82-a24d-4e61-ab1d-0d2e28ae9ece
 - alterId: 0
   cipher: auto
   name: 182|🇭🇰 15,16|香港2|@ripaojiedian
@@ -6420,8 +6436,19 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '416,428,434,578,597,599,603,674,682,690,753,754,1087,1092,1100,1102,1134,1179,1184,1193,1195,1196,1197,1198,1199,1200,1205,1213,1215|🔒
-    VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909 #24'
+  name: '416,428,434,674,682,690,1134,1179,1183,1193,1194,1197,1198,1199,1200,1204,1213,1214|🔒
+    VM-TCP-NA 🇭🇰 HK-163.53.18.154:19901 #17'
+  network: tcp
+  port: '19901'
+  server: 163.53.18.154
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fa1b482c-ff16-4ba0-ad5f-a8e8d7bae396
+- alterId: 0
+  cipher: auto
+  name: '416,428,434,578,597,599,603,674,682,690,753,754,1087,1092,1100,1102,1134,1179,1184,1193,1196,1197,1198,1199,1200,1205,1213,1215|🔒
+    VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909 #22'
   network: ws
   port: '12909'
   server: 210.0.158.219
@@ -6433,17 +6460,6 @@ proxies:
     headers:
       Host: 19.lwdh.us
     path: /
-- alterId: 0
-  cipher: auto
-  name: '416,428,434,674,682,690,1134,1179,1183,1193,1194,1197,1198,1199,1200,1204,1213,1214|🔒
-    VM-TCP-NA 🇭🇰 HK-163.53.18.154:19901 #17'
-  network: tcp
-  port: '19901'
-  server: 163.53.18.154
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fa1b482c-ff16-4ba0-ad5f-a8e8d7bae396
 - alterId: 2
   cipher: auto
   name: 466|github.com/mianfeifq |v2rayfree.eu.org - 香港阿里云 1
@@ -6835,7 +6851,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '554,977|未命名 #34'
+  name: '554,977|未命名 #32'
   network: ws
   port: '80'
   server: 182.16.1.194
