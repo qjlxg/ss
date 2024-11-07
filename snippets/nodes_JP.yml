@@ -6,9 +6,9 @@ proxies:
   delay: 2517
   h2-opts: {}
   http-opts: {}
-  name: '34,107,152,173,189,288,396,397,398|日本 - 东京 - G-Core Labs S.A. - 4 #4'
+  name: '34,107,152,173,189,288|日本 - 东京 - G-Core Labs S.A. - 4 #1'
   network: ws
-  port: 443
+  port: '443'
   server: 92.38.178.69
   servername: 92.38.178.69
   skip-cert-verify: true
@@ -18,13 +18,41 @@ proxies:
   udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
+    headers:
+      Host: ''
     path: linkvws
 - alterId: 1
   cipher: auto
-  country: 🇯🇵JP
+  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '34,36,177,476|🇯🇵_JP_日本 #3'
+  name: 34,35,36,173|Relay_ JP-JP_465
+  network: tcp
+  port: 46484
+  server: jp05-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  type: vmess
+  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
+  ws-path: /
+- alterId: 1
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: '34,35,36,173,476|🇯🇵_JP_日本 #5'
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- alterId: 1
+  cipher: auto
+  country: ' JP'
+  h2-opts: {}
+  http-opts: {}
+  name: '34,35,36,173,476|🇯🇵_JP_日本 #3'
   network: tcp
   port: 21585
   server: jp01-alt-vm0.entry.srthdw.art
@@ -32,37 +60,13 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: ' JP'
-  name: 36,79,105,114|SS-TCP-NA 🇯🇵 JP-54.95.5.168:443
-  password: amazonskr05
-  port: 443
-  server: 54.95.5.168
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  country: SG
-  name: 36,108,173|Relay_SG-JP_581
+  country: ' JP'
+  name: 36,108|TG:@hkaa0|新加坡
   password: 1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY=
   port: 25056
   server: sg.premium404.web.id
   type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 36,68,132,248,256,259,298,314,384,385,386,387,403,419,420,421,482,573,594,607,609|日本_1107003
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: 37|JP |  LB-1x
@@ -78,31 +82,6 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: JP
-  name: 38,79,85,105,114|SS-TCP-NA 🇯🇵 JP-52.198.194.170:443
-  password: amazonskr05
-  port: 443
-  server: 52.198.194.170
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: JP
-  h2-opts: {}
-  http-opts: {}
-  name: 38|Relay_JP-JP_151
-  network: ws
-  port: 13389
-  server: 00000000000000000000000007.node-for-smallairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
-  ws-opts:
-    path: /
 - alterId: 64
   cipher: auto
   country: JP
@@ -122,7 +101,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 49,56,58,63,68,102,112,165,166,173,174,176,215,226,231,236,280,288,301,328,329,330,331,342,346,348,349,354,360,361,362,369,378,456,459,460,461,462,516,522,524,530,531,541,543,549,550,552,553,554,555,557,563,564,596,601,609|美国_1107008
+  name: 49,56,58,63,68,102,112,165,166,173,174,176,215,226,231,236,280,288,301,328,329,330,331,342,346,348,349,354,360,361,362,369,378,456,459,460,461,462,516,522,524,530,531,541,543,549,550,552,555,557,563,564,596,601,609|美国_1107008
   network: tcp
   port: '20219'
   server: 107.148.1.76
@@ -136,7 +115,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 49,68,102,112,130,131,165,166,215,226,231,288,328,329,330,331,342,346,348,349,354,360,361,362,456,459,460,461,462,516,522,524,530,531,533,541,543,549,550,552,553,554,555,557,563,564,596,601,609|日本_1107001
+  name: 49,68,102,112,130,131,165,166,215,226,231,288,328,329,330,331,342,346,348,349,354,360,361,362,456,459,460,461,462,516,522,524,530,531,533,541,543,549,550,552,555,557,563,564,596,601,609|日本_1107001
   network: tcp
   port: '17763'
   server: 45.159.50.245
@@ -196,8 +175,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '57,114,183,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,553,554,555,558,563,564|🔒
-    VM-WS-NA 🇯🇵 JP-132.145.123.206:58372 #20'
+  name: '57,114,183,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
+    VM-WS-NA 🇯🇵 JP-132.145.123.206:58372 #18'
   network: ws
   port: '58372'
   server: 132.145.123.206
@@ -649,218 +628,15 @@ proxies:
   server: jp5.boom.party
   type: ssr
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 79,85,102,112,165,327,361,425,459,596|China_None_ss_1117
-  password: 13391662-0c19-44cd-a283-2aaa91d87254
-  port: 11001
-  server: 61.172.235.22
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_4
-  password: ay232sffssd1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '4321'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_5
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '9051'
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_6
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '9059'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_7
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '813'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_8
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '818'
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 79|🇯🇵 日本_9
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40257'
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 28b09af269781f9b.cdn.jiashule.com
-  type: ssr
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: JP
-  name: 79,105,173|JP_546
+  country: 🇧🇪BE
+  name: 79,105,114,173,174,569|🇯🇵JP-57.181.42.181-3968 | 28.739MB
   password: amazonskr05
   port: 443
-  server: 3.112.215.69
+  server: 57.181.42.181
   tfo: false
   type: ss
-- cipher: rc4-md5
-  name: 79|🇯🇵 日本_11
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40201'
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: 79|🇯🇵 日本_12
-  obfs: plain
-  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40221'
-  protocol: auth_aes128_md5
-  protocol-param: 74592:o4fbeopsgcf
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: 79|🇯🇵 日本_14
-  obfs: plain
-  obfs-param: 8195986416.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: '40219'
-  protocol: auth_aes128_md5
-  protocol-param: 86416:SlZFuy
-  server: 7438974b54cf5c57.cdn.jiashule.com
-  type: ssr
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_15
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '9062'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_16
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '9021'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_17
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '819'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_18
-  password: fjlfjafl231303831
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '1313'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_19
-  password: ayu1245
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '909'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_20
-  password: ay2dsd1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '811'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_21
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '914'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_22
-  password: ay21d1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '901'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 79|🇯🇵 日本_23
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: ff2cf102214.download.windowsupdate.com
-    mode: http
-  port: '918'
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 85,408,423,425,431,432,435,440,441,607|日本_1106002
@@ -882,6 +658,15 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.207.191.29
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 85,105,114|SS-TCP-NA 🇯🇵 JP-52.198.194.170:443
+  password: amazonskr05
+  port: 443
+  server: 52.198.194.170
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -1219,41 +1004,41 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '98,389|🇯🇵 日本_4 #2'
+  name: '98,389|🇯🇵 日本_4 #1'
   password: amazonskr05
   port: '443'
   server: 13.230.99.62
   type: ss
 - cipher: aes-256-cfb
-  name: '98,287,389|🇯🇵 日本_7 #2'
+  name: '98,287,389|🇯🇵 日本_7 #1'
   password: amazonskr05
   port: '443'
   server: 52.195.237.101
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '98,389|🇯🇵 日本_8 #2'
+  name: '98,389|🇯🇵 日本_8 #1'
   password: O31sdedvkN4TcLit
   port: '10039'
   server: bcc.xiyun.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '98,389|🇯🇵 日本_10 #2'
+  name: '98,389|🇯🇵 日本_10 #1'
   password: O31sdedvkN4TcLit
   port: '10058'
   server: bcc.xiyun.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '98,389|🇯🇵 日本_12 #2'
+  name: '98,389|🇯🇵 日本_12 #1'
   password: O31sdedvkN4TcLit
   port: '10038'
   server: bcc.xiyun.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '98,389|🇯🇵 日本_13 #2'
+  name: '98,389|🇯🇵 日本_13 #1'
   password: O31sdedvkN4TcLit
   port: '10037'
   server: bcc.xiyun.co
@@ -1842,6 +1627,14 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
+  name: 105|🇯🇵 JP 2
+  password: amazonskr05
+  port: 443
+  server: 3.112.215.69
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 105|🇯🇵 JP 3
   password: amazonskr05
   port: 443
@@ -1867,8 +1660,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,553,554,555,558,563,564|🔒
-    VM-WS-NA 🇯🇵 JP-132.145.123.206:58373 #20'
+  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
+    VM-WS-NA 🇯🇵 JP-132.145.123.206:58373 #18'
   network: ws
   port: '58373'
   server: 132.145.123.206
@@ -1882,8 +1675,8 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,553,554,555,558,563,564|🔒
-    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #20'
+  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
+    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #18'
   network: ws
   port: '43215'
   server: 103.106.228.234
@@ -2552,36 +2345,6 @@ proxies:
     headers:
       Host: ''
     path: /bb
-- alterId: 1
-  cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: '173,177,476|🇯🇵_JP_日本 #5'
-  network: tcp
-  port: 21583
-  server: jp01-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
-- alterId: 1
-  cipher: auto
-  country: 🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 177|🇵 JP_459
-  network: ws
-  port: 443
-  server: 92.38.178.69
-  servername: 92.38.178.69
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 92.38.178.69
-  ws-path: linkvws
 - name: 199|🇯🇵JP(AzadNet.t.me)_003
   network: tcp
   password: 18844@zxcvbn
@@ -4950,6 +4713,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 408,423,431,432,435,440,441,607|未知_1106173
+  network: ws
+  port: '80'
+  server: jp2.1vpn.sbs
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df4a2a93-6717-4f90-9856-36d7a44639cc
+  ws-opts:
+    headers:
+      Host: jp2.1vpn.sbs
+    path: /kiulujunuqs
+- alterId: 0
+  cipher: auto
   name: 408,423,425,431,432,435,440,441,470|3.51|JP1391621171731123202246b5194
   network: ws
   port: 443
@@ -5038,7 +4815,7 @@ proxies:
     path: /
 - alterId: '2'
   cipher: auto
-  name: '408,423,425,431,432,435,440,441,451,452|_32 #4'
+  name: '408,423,425,431,432,435,440,441,451,452|_32 #2'
   network: ws
   port: '32407'
   server: 153.122.173.53
