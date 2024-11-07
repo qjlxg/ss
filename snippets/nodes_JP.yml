@@ -26,7 +26,7 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 34,35,36,173|Relay_ JP-JP_465
+  name: 34,35,36,173|Relay_ JP-JP_437
   network: tcp
   port: 46484
   server: jp05-vm0.entry.srthdw.art
@@ -34,25 +34,19 @@ proxies:
   type: vmess
   uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
   ws-path: /
+- cipher: chacha20-ietf-poly1305
+  country: SG
+  name: 36,108,173|Relay_SG-JP_473
+  password: 1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY=
+  port: 25056
+  server: sg.premium404.web.id
+  type: ss
 - alterId: 1
   cipher: auto
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '34,35,36,173,476|🇯🇵_JP_日本 #5'
-  network: tcp
-  port: 21583
-  server: jp01-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
-- alterId: 1
-  cipher: auto
-  country: ' JP'
-  h2-opts: {}
-  http-opts: {}
-  name: '34,35,36,173,476|🇯🇵_JP_日本 #3'
+  name: '36,476|🇯🇵_JP_日本 #3'
   network: tcp
   port: 21585
   server: jp01-alt-vm0.entry.srthdw.art
@@ -60,13 +54,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- cipher: chacha20-ietf-poly1305
-  country: ' JP'
-  name: 36,108|TG:@hkaa0|新加坡
-  password: 1TB1N/FO5QA4NoIrAT8IFmf0x3gynq3ZzCIhctObHoY=
-  port: 25056
-  server: sg.premium404.web.id
-  type: ss
 - alterId: 0
   cipher: auto
   name: 37|JP |  LB-1x
@@ -82,6 +69,37 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 38|JP_136
+  network: ws
+  port: 13389
+  server: 00000000000000000000000007.node-for-smallairport.win
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  country: JP
+  fingerprint: randomized
+  name: 38,189|[Trojan] 🇯🇵 Relay_🇯🇵JP-🇺🇸US_563
+  network: ws
+  password: FLorg
+  port: 443
+  server: 43.153.175.137
+  skip-cert-verify: true
+  sni: trojan.tcorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.tcorg.filegear-sg.me
+    path: /?ed=2048
 - alterId: 64
   cipher: auto
   country: JP
@@ -101,7 +119,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 49,56,58,63,68,102,112,165,166,173,174,176,215,226,231,236,280,288,301,328,329,330,331,342,346,348,349,354,360,361,362,369,378,456,459,460,461,462,516,522,524,530,531,541,543,549,550,552,555,557,563,564,596,601,609|美国_1107008
+  name: 49,56,58,63,68,102,112,165,166,174,176,215,226,231,236,280,288,301,328,329,330,331,342,346,348,349,354,360,361,362,369,378,456,459,460,461,462,516,522,524,530,531,541,543,549,550,552,554,557,563,564,596,601,609|美国_1107008
   network: tcp
   port: '20219'
   server: 107.148.1.76
@@ -115,7 +133,7 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 49,68,102,112,130,131,165,166,215,226,231,288,328,329,330,331,342,346,348,349,354,360,361,362,456,459,460,461,462,516,522,524,530,531,533,541,543,549,550,552,555,557,563,564,596,601,609|日本_1107001
+  name: 49,68,102,112,130,131,165,166,215,226,231,288,328,329,330,331,342,346,348,349,354,360,361,362,456,459,460,461,462,516,522,524,530,531,533,541,543,549,550,552,554,557,563,564,596,601,609|日本_1107001
   network: tcp
   port: '17763'
   server: 45.159.50.245
@@ -175,7 +193,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '57,114,183,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
+  name: '57,114,183,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,554,558,563,564|🔒
     VM-WS-NA 🇯🇵 JP-132.145.123.206:58372 #18'
   network: ws
   port: '58372'
@@ -630,8 +648,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇧🇪BE
-  name: 79,105,114,173,174,569|🇯🇵JP-57.181.42.181-3968 | 28.739MB
+  country: BE
+  name: 79,105,114,173,569|🇯🇵JP-57.181.42.181-3968 | 28.739MB
   password: amazonskr05
   port: 443
   server: 57.181.42.181
@@ -871,21 +889,21 @@ proxies:
   server: 43.207.118.251
   type: ss
 - auth: 04a20747-dab3-4558-9794-6d79b5c629fc
-  name: 93|🇯🇵 日本-1
-  password: 04a20747-dab3-4558-9794-6d79b5c629fc
-  port: 30001
-  server: oracle-amd-tokyo1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: tokyo.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: 04a20747-dab3-4558-9794-6d79b5c629fc
-  name: 93|🇯🇵 日本-2
+  name: 93|🇯🇵 日本-2-1A
   password: 04a20747-dab3-4558-9794-6d79b5c629fc
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
   sni: osaka.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- auth: 04a20747-dab3-4558-9794-6d79b5c629fc
+  name: 93|🇯🇵 日本-1-1A
+  password: 04a20747-dab3-4558-9794-6d79b5c629fc
+  port: 30001
+  server: oracle-amd-tokyo1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
 - alterId: 0
@@ -1627,7 +1645,8 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 105|🇯🇵 JP 2
+  country: JP
+  name: 105,173|JP_440
   password: amazonskr05
   port: 443
   server: 3.112.215.69
@@ -1644,7 +1663,8 @@ proxies:
 - alterId: -1
   cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 105,294|CA😈github.com/Ruk1ng001_3906910768
+  country: JP
+  name: 105,173,294|CA😈github.com/Ruk1ng001_3906910768
   password: amazonskr05
   port: 443
   server: 52.69.236.102
@@ -1658,9 +1678,17 @@ proxies:
   server: 54.249.197.65
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 105,114|SS-TCP-NA 🇯🇵 JP-54.95.5.168:443
+  password: amazonskr05
+  port: 443
+  server: 54.95.5.168
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
+  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,554,558,563,564|🔒
     VM-WS-NA 🇯🇵 JP-132.145.123.206:58373 #18'
   network: ws
   port: '58373'
@@ -1675,8 +1703,8 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,555,558,563,564|🔒
-    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #18'
+  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,558,563,564|🔒
+    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #17'
   network: ws
   port: '43215'
   server: 103.106.228.234
@@ -2327,7 +2355,7 @@ proxies:
   cipher: auto
   country: JP
   name: '167,259,287,317,408,412,423,425,431,432,435,440,441,473,573,581,586,601|@Vip_Security
-    join us - 226
+    join us - 228
 
     '
   network: ws
@@ -6344,6 +6372,24 @@ proxies:
   tls: true
   type: vmess
   uuid: 22acc467-7440-386a-927a-d84be554b37e
+- alterId: 1
+  cipher: auto
+  name: '476|🇯🇵_JP_日本 #5'
+  network: tcp
+  port: 21583
+  server: jp01-alt-vm0.entry.srthdw.art
+  tls: true
+  type: vmess
+  uuid: c4b2e7ea-1a0e-316f-8e28-0717cc087534
+- alterId: 1
+  cipher: auto
+  name: '476|🇯🇵_JP_日本 #6'
+  network: tcp
+  port: 21585
+  server: jp03-alt-vm0.entry.srthdw.art
+  tls: true
+  type: vmess
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - alterId: 0
   cipher: auto
   name: '476|🇯🇵_JP_日本 #8'
