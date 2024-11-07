@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 4,11,16,25,31,49,51,63,68,100,102,112,130,131,164,165,166,215,226,231,280,288,328,329,330,331,333,342,346,348,349,354,360,361,362,369,378,459,460,461,462,516,522,524,530,531,535,541,543,549,550,552,557,563,564,596,601,609|英国_1107001
+  name: 4,11,16,25,31,33,49,51,63,68,100,102,112,130,131,164,165,166,215,226,231,280,288,328,329,330,331,333,342,346,348,349,354,360,361,362,369,378,459,460,461,462,516,522,524,530,531,535,543,549,550,552,557,563,564,596,601,609|英国_1107001
   network: tcp
   port: '47369'
   server: 45.94.68.135
@@ -13,10 +13,33 @@ proxies:
   ws-headers:
     Host: 45.94.68.135
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 33,49,51,56,63,68,100,102,112,130,131,164,165,166,215,226,231,280,288,328,329,330,331,333,342,346,348,349,354,360,361,362,369,378,459,460,461,462,516,522,524,530,531,543,549,550,552,557,563,564,596,601,609|韩国_1107001
+  network: tcp
+  port: '13258'
+  server: 45.141.136.151
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6e5ecb6d-e763-4d16-b9c2-e7cc682a26da
+  ws-headers:
+    Host: 45.141.136.151
+  ws-path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: KR
-  name: 38,84,85,102,105,109,112,114,165,173,327,361,425,459,569,596|South Korea_Incheon_ss_1127
+  name: 38,105,173|KR_457
+  password: amazonskr05
+  port: 443
+  server: 52.79.157.153
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 38,84,85,102,105,109,112,114,165,173,174,327,361,425,459,569,596|South Korea_Incheon_ss_1127
   password: amazonskr05
   port: 443
   server: 3.35.137.32
@@ -32,30 +55,6 @@ proxies:
   server: 221.139.79.57
   type: ss
   udp: true
-- alterId: -1
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: US
-  name: 38,105,173,294,414|🇰🇷KR-43.201.72.28-1179
-  password: amazonskr05
-  port: 443
-  server: 43.201.72.28
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 49,51,56,63,68,100,102,112,130,131,164,165,166,215,226,231,280,288,328,329,330,331,333,342,346,348,349,354,360,361,362,369,378,456,459,460,461,462,516,522,524,530,531,541,543,549,550,552,557,563,564,596,601,609|韩国_1107001
-  network: tcp
-  port: '13258'
-  server: 45.141.136.151
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6e5ecb6d-e763-4d16-b9c2-e7cc682a26da
-  ws-headers:
-    Host: 45.141.136.151
-  ws-path: /
 - alterId: 0
   cipher: auto
   name: '55,159,593|_121320001 #5'
@@ -92,9 +91,20 @@ proxies:
   server: n13.boom.party
   type: ssr
   udp: true
+- alterId: -1
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇷KR
+  name: 79,85,102,105,112,114,165,173,174,294,327,361,425,459,569,596|South Korea_None_ss_1129
+  password: amazonskr05
+  port: 443
+  server: 13.125.51.118
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 83|13-0998-KR
+  name: 83|13-0996-KR
   network: ws
   port: '30002'
   server: ch1.12123.org
@@ -107,7 +117,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 83|13-1001-KR
+  name: 83|13-0999-KR
   network: ws
   port: '30000'
   server: cc111.12123.org
@@ -120,7 +130,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 83|13-1018-KR
+  name: 83|13-1016-KR
   network: ws
   port: '30000'
   server: cc112.12123.org
@@ -133,7 +143,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 83|13-1055-KR
+  name: 83|13-1053-KR
   network: ws
   port: '30002'
   server: shouer2112.12123.org
@@ -183,6 +193,22 @@ proxies:
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
     path: /ray
+- alterId: 1
+  cipher: auto
+  name: 85,318,358,518|Relay_🇨🇳CN-🇺🇸US_36
+  network: ws
+  port: 50205
+  server: data-hk-v2.shwjfkw.cn
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-hk-v2.shwjfkw.cn
+    path: /hls/cctv5phd.m3u8
 - cipher: chacha20-ietf-poly1305
   name: 85,86,103|🇰🇷 韩国01 - Cyanmori
   password: hJRTbknS8oyylv6x
@@ -682,7 +708,7 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: "114,215,226,231,342,346,354,378,522,525,530,531,541,544,549,550,552,558,563,564,601|@Vip_Security\
+  name: "114,215,226,231,342,346,354,378,522,525,530,531,544,549,550,552,558,563,564,601|@Vip_Security\
     \ join us - 383\n #1"
   network: ws
   port: '30359'
@@ -697,8 +723,8 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '114,215,226,231,342,346,354,522,525,530,531,541,544,549,550,552,558,563,564|🔒
-    VM-WS-NA 🇰🇷 KR-193.123.244.147:30358 #17'
+  name: '114,215,226,231,342,346,354,522,525,530,531,544,549,550,552,558,563,564|🔒
+    VM-WS-NA 🇰🇷 KR-193.123.244.147:30358 #16'
   network: ws
   port: '30358'
   server: 193.123.244.147
@@ -853,6 +879,21 @@ proxies:
   uuid: 58781eee-baba-6666-baba-2ca0ada6568b
 - client-fingerprint: chrome
   country: CY
+  name: 173,189|[Trojan] Relay_🇨🇾CY-🇰🇷KR_505
+  network: ws
+  password: auto
+  port: 443
+  server: 195.85.59.95
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- client-fingerprint: chrome
+  country: CY
   name: 173,189|[Trojan] Relay_🇨🇾CY-🇰🇷KR_506
   network: ws
   password: auto
@@ -866,36 +907,22 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ES
-  fingerprint: randomized
-  name: 173|Relay_ES-KR_321
+- country: NL
+  name: 173|Relay_NL-KR_482
   network: ws
   password: bpb-trojan
-  port: 443
-  server: 185.238.228.6
-  sni: 403b3611-99bc-43b7-88D7-26Ed5D0825a9-3.PAgeS.dEv
+  port: 2053
+  server: 188.114.97.159
+  sni: BPB-worKEr-pANel1-E4p.PAgES.Dev
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-    path: /trLb1imnrxPEhfzfwk?ed
-- country: KZ
-  name: 173|Relay_KZ-KR_365
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 195.245.221.15
-  sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
-    path: /trSo3btsDgOHHUM6Nb?ed=2560
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /tr9pU4LSFNK5k8URSo/ZGUucmFkaWNhbGx5LnBybw==
 - country: NL
   fingerprint: randomized
-  name: 173|Relay_NL-KR_382
+  name: 173|Relay_NL-KR_484
   network: ws
   password: bpb-trojan
   port: 443
@@ -909,7 +936,7 @@ proxies:
     path: /trHMgc3gUnNOpvjx2i?ed=2560
 - country: NL
   fingerprint: randomized
-  name: 173|Relay_NL-KR_384
+  name: 173|Relay_NL-KR_485
   network: ws
   password: bpb-trojan
   port: 443
@@ -922,34 +949,7 @@ proxies:
       Host: 403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev
     path: /trt3XSTgGNyK4r9U0o?ed=2560
 - country: NL
-  fingerprint: randomized
-  name: 173|Relay_NL-KR_385
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 188.114.98.89
-  sni: bpB-woRker-PanEL-AY6.pagEs.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel-ay6.pages.dev
-    path: /trBLUKS93cpgZZCas5?ed=2560
-- country: NL
-  name: 173|Relay_NL-KR_386
-  network: ws
-  password: bpb-trojan
-  port: 2053
-  server: 188.114.97.159
-  sni: BPB-worKEr-pANel1-E4p.PAgES.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel1-e4p.pages.dev
-    path: /tr9pU4LSFNK5k8URSo/ZGUucmFkaWNhbGx5LnBybw==
-- country: NL
-  name: 173|Relay_NL-KR_387
+  name: 173|Relay_NL-KR_486
   network: ws
   password: bpb-trojan
   port: 2053
@@ -961,34 +961,6 @@ proxies:
     headers:
       Host: bpb-worker-panel1-e4p.pages.dev
     path: /tr9pU4LSFNK5k8URSo/ZGUucmFkaWNhbGx5LnBybw==
-- client-fingerprint: chrome
-  country: ZZ
-  name: 173,189|[Trojan] Relay_🏁ZZ-🇰🇷KR_1377
-  network: ws
-  password: auto
-  port: 443
-  server: 162.159.44.188
-  skip-cert-verify: true
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  name: 173|Relay_ZZ-KR_1106
-  network: ws
-  password: auto
-  port: 443
-  server: 104.26.12.31
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
 - client-fingerprint: chrome
   country: ZZ
   name: 173,189|[Trojan] Relay_🏁ZZ-🇰🇷KR_1406
@@ -1004,48 +976,6 @@ proxies:
     headers:
       Host: b96ef9ae.trojanfree-76s.pages.dev
     path: /b96ef9ae.trojanfree-76s.pages.dev/
-- country: ZZ
-  fingerprint: randomized
-  name: 173|Relay_ZZ-KR_1132
-  network: ws
-  password: bpb-trojan
-  port: 2053
-  server: 104.18.34.21
-  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel1-e4p.pages.dev
-    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
-- country: ZZ
-  fingerprint: randomized
-  name: 173|Relay_ZZ-KR_1134
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 104.17.147.22
-  sni: bpB-wORkeR-pANEl-ay6.pages.deV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb-worker-panel-ay6.pages.dev
-    path: /trsOhXJ7DIsVTqppwd?ed=2560
-- country: ZZ
-  fingerprint: randomized
-  name: 173|Relay_ZZ-KR_1140
-  network: ws
-  password: azadnet-trojan
-  port: 443
-  server: 104.21.36.165
-  sni: XN----PmCnaaC0dKn0Rb71NdA.PagES.DeV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: xn----pmcnaac0dkn0rb71nda.pages.dev
-    path: /trbRb6rQQHUXO1sk03?ed=2560
 - client-fingerprint: chrome
   country: ZZ
   fingerprint: chrome
@@ -1078,18 +1008,47 @@ proxies:
       Host: trojanmz.pages.dev
     path: /trojanmz.pages.dev/?ed=2560
 - country: ZZ
-  name: 173|Relay_ZZ-KR_1153
+  fingerprint: randomized
+  name: 173|Relay_ZZ-KR_1175
   network: ws
-  password: bpb-trojan
-  port: 2053
-  server: 104.17.147.22
-  sni: bPB-worker-PANeL1-e4p.paGes.DeV
+  password: azadnet-trojan
+  port: 443
+  server: 104.21.36.165
+  sni: XN----PmCnaaC0dKn0Rb71NdA.PagES.DeV
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: bpb-worker-panel1-e4p.pages.dev
-    path: /trn6lSYIYbgvYGra0u/ZGUucmFkaWNhbGx5LnBybw==
+      Host: xn----pmcnaac0dkn0rb71nda.pages.dev
+    path: /trbRb6rQQHUXO1sk03?ed=2560
+- country: ZZ
+  name: 173|Relay_ZZ-KR_1189
+  network: ws
+  password: auto
+  port: 443
+  server: 104.26.12.31
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
+- client-fingerprint: chrome
+  country: ZZ
+  name: 173,189|[Trojan] Relay_🏁ZZ-🇰🇷KR_1377
+  network: ws
+  password: auto
+  port: 443
+  server: 162.159.44.188
+  skip-cert-verify: true
+  sni: b96ef9ae.trojanfree-76s.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: b96ef9ae.trojanfree-76s.pages.dev
+    path: /b96ef9ae.trojanfree-76s.pages.dev/
 - client-fingerprint: chrome
   country: ZZ
   fingerprint: chrome
@@ -1106,6 +1065,33 @@ proxies:
     headers:
       Host: t-watashi-r-jacket-o-people-jan.watashi-java.ir
     path: /?TM@AZARBAYJAB1 TM@AZARBAYJAB1 @AZARBAYJAB1
+- country: ZZ
+  fingerprint: randomized
+  name: 173|Relay_ZZ-KR_1206
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 104.18.34.21
+  sni: bpB-worKER-paneL1-e4p.pAGes.dEV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==
+- country: ZZ
+  name: 173|Relay_ZZ-KR_1215
+  network: ws
+  password: bpb-trojan
+  port: 2053
+  server: 104.17.147.22
+  sni: bPB-worker-PANeL1-e4p.paGes.DeV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb-worker-panel1-e4p.pages.dev
+    path: /trn6lSYIYbgvYGra0u/ZGUucmFkaWNhbGx5LnBybw==
 - alterId: 0
   cipher: auto
   name: 181|🇰🇷KR韩国(youtube阿伟科技)
@@ -1120,20 +1106,6 @@ proxies:
     headers:
       Host: cr4.biger.club
     path: /
-- client-fingerprint: chrome
-  name: 189|[Trojan] Relay_🇨🇾CY-🇰🇷KR_505
-  network: ws
-  password: auto
-  port: 443
-  server: 195.85.59.95
-  skip-cert-verify: true
-  sni: b96ef9ae.trojanfree-76s.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: b96ef9ae.trojanfree-76s.pages.dev
-    path: /b96ef9ae.trojanfree-76s.pages.dev/
 - client-fingerprint: chrome
   name: 189|[Trojan] Relay_🇰🇿KZ-🇰🇷KR_569
   network: ws
@@ -1550,45 +1522,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '288|>🇰🇷 KR|Ls|1013|TG@FProxies| #1'
-  network: ws
-  port: '2053'
-  server: yx.niubi.site
-  tls: true
-  type: vmess
-  uuid: e7aec9f3-ab8f-4fe2-a4f6-23ab17f3d6ae
-  ws-opts:
-    headers:
-      Host: yx.niubi.site
-    path: /niu?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 288|>🇰🇷 KR|Hs|0914|TG@FProxies|
-  network: ws
-  port: '41900'
-  server: 146.56.182.244
-  tls: false
-  type: vmess
-  uuid: 7f1e0179-3a0c-4b73-8e47-23af361e903e
-  ws-opts:
-    headers:
-      Host: ''
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 288|>🇰🇷 KR|Ms|1013|TG@FProxies|
-  network: ws
-  port: '30001'
-  server: entrance3-89.jjsagcajvv.xyz
-  tls: false
-  type: vmess
-  uuid: 93a916b8-7557-3b07-917a-92242da06a65
-  ws-opts:
-    headers:
-      Host: entrance3-89.jjsagcajvv.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 288|🇰🇷 春川  | 01
   network: ws
   port: '58908'
@@ -1600,15 +1533,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 288|>🇰🇷 KR|Ms|0914|TG@FProxies|
-  network: tcp
-  port: '20021'
-  server: i.needss.top
-  tls: false
-  type: vmess
-  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
 - alterId: 2
   cipher: auto
   name: 288|>🇰🇷 KR|Ns|0914|TG@FProxies|
@@ -1624,6 +1548,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 288|>🇰🇷 KR|Ms|1013|TG@FProxies|
+  network: ws
+  port: '30001'
+  server: entrance3-89.jjsagcajvv.xyz
+  tls: false
+  type: vmess
+  uuid: 93a916b8-7557-3b07-917a-92242da06a65
+  ws-opts:
+    headers:
+      Host: entrance3-89.jjsagcajvv.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 288|>🇰🇷 KR|Ls|1013|TG@FProxies|
+  network: ws
+  port: '2053'
+  server: yx.niubi.site
+  tls: true
+  type: vmess
+  uuid: e7aec9f3-ab8f-4fe2-a4f6-23ab17f3d6ae
+  ws-opts:
+    headers:
+      Host: yx.niubi.site
+    path: /niu?ed=2560
+- alterId: 0
+  cipher: auto
   name: 288|🇰🇷 首尔  | 01
   network: ws
   port: '30360'
@@ -1635,6 +1585,28 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: 288|>🇰🇷 KR|Hs|0914|TG@FProxies|
+  network: ws
+  port: '41900'
+  server: 146.56.182.244
+  tls: false
+  type: vmess
+  uuid: 7f1e0179-3a0c-4b73-8e47-23af361e903e
+  ws-opts:
+    headers:
+      Host: ''
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 288|>🇰🇷 KR|Ms|0914|TG@FProxies|
+  network: tcp
+  port: '20021'
+  server: i.needss.top
+  tls: false
+  type: vmess
+  uuid: 5fcf0569-dfd7-4904-9383-e5149cdd8d87
 - alterId: 0
   cipher: auto
   name: 293|💰🇰🇷 KR 13.125.215.33 ◈ ws:80 ◈ AWS EC2 (ap-northeast-2) ◈ 9f63b
