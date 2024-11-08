@@ -1,14 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '4,11,16,25,31,49,218,229,233,238,342,346,354,369,378,514,520,522,528,529,541,547,548,550,551,555,561,562,599|@Vip_Security
+  name: '4,11,16,25,31,49,218,229,233,266,342,346,354,369,378,514,520,522,528,529,541,547,548,550,551,552,555,561,562,599|@Vip_Security
     join us - 171
 
     '
   network: tcp
   port: '20219'
   server: 107.148.1.76
-  servername: ''
+  servername: null
   tls: false
   type: vmess
   uuid: c9f5b2aa-d50c-48e0-fd7d-d4cdc325d905
@@ -26,7 +26,7 @@ proxies:
   uuid: e6d7ed00-84fa-4c07-b106-28c757b0e6d9
 - cipher: aes-256-cfb
   country: ' JP'
-  name: 34,35,36,193,249,251,288,318,371,406,413,421,423,430,433,439,444,496,506,573,579,584,593,605|5pel5pysXzExMDgwMDQ
+  name: 34,36,249,251,288,318,371,406,413,421,423,430,433,439,444,496,506,573,579,584,593,605|5pel5pysXzExMDgwMDQ
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
@@ -38,48 +38,40 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
+  client-fingerprint: chrome
   country: JP
   h2-opts: {}
   http-opts: {}
-  name: 34,158,178|JP_536
+  name: 34,158,178,194|[VMess] JP_690
   network: ws
   port: 443
   server: 92.38.178.69
   servername: 92.38.178.69
   skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      HOST: 92.38.178.69
     path: linkvws
-- alterId: 1
-  cipher: auto
+- alterId: 0
+  cipher: none
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 34,35,36|ChatGPT  JP_276
+  name: '34,68,135,136,137,151,152,153,154,155,156,157,158,159,454,514,599|@Vip_Security
+    join us - 66
+
+    '
   network: tcp
-  port: 46484
-  server: jp05-vm0.entry.srthdw.art
+  port: '43720'
+  server: 61.120.9.18
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9
-  ws-path: /
-- alterId: 1
-  cipher: auto
-  country: ' ZZ'
-  h2-opts: {}
-  http-opts: {}
-  name: '34,35,474|🇯🇵_JP_日本 #6'
-  network: tcp
-  port: 21585
-  server: jp03-alt-vm0.entry.srthdw.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
+  uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
 - alterId: 1
   cipher: auto
   country: ' JP'
@@ -108,25 +100,6 @@ proxies:
     headers:
       Host: d17ttua58dfmz.cloudfront.net
     path: /stream
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 38,44,79,85,107,117,170,276,328,361,423,457|🇳CN-61.172.235.22-165
-  password: a58a5239-3b34-4c35-8724-953ef363015c
-  port: 11001
-  server: 61.172.235.22
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: JP
-  name: 38,85,110,119|SS-TCP-NA 🇯🇵 JP-52.198.194.170:443
-  password: amazonskr05
-  port: 443
-  server: 52.198.194.170
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
   country: JP
@@ -141,13 +114,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- name: '44,276|Japan_Tokyo_trojan_1137 #1'
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇵JP
+  name: 44,85,107,110,117,170,179,276,328,361,423,457,594|Japan_Tokyo_ss_1136
+  password: amazonskr05
+  port: 443
+  server: 3.112.215.69
+  tfo: false
+  type: ss
+  udp: true
+- name: 44,276,594|Japan_Tokyo_trojan_1141
   network: tcp
   password: '!!str 3669023833404481536'
   port: 443
   server: fleet-gopher.iguana938.mom
   type: trojan
-- name: '44,276|Japan_Tokyo_trojan_1138 #1'
+- name: '44,276,594|Japan_Tokyo_trojan_1142 #2'
   network: tcp
   password: '!!str 3669023833404481536'
   port: 443
@@ -161,7 +144,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '55,164,245,257,591|_121320001 #5'
+  name: '55,164,245,257,591|_121320001 #4'
   network: ws
   port: 443
   server: 103.35.190.65
@@ -661,10 +644,20 @@ proxies:
     path: /roewesu
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 85,110,119|SS-TCP-NA 🇯🇵 JP-57.181.42.181:443
+  country: 🇧🇪BE
+  name: 85,110,119,178,179|BE_18 | 3.34Mb
   password: amazonskr05
   port: 443
   server: 57.181.42.181
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 85,110,119|SS-TCP-NA 🇯🇵 JP-52.198.194.170:443
+  password: amazonskr05
+  port: 443
+  server: 52.198.194.170
   tfo: false
   type: ss
   udp: true
@@ -863,18 +856,18 @@ proxies:
   port: 443
   server: 43.207.118.251
   type: ss
-- auth: cc6c079d-1be5-4403-a36c-e45f621c0f06
-  name: 98|🇯🇵 日本-1-1A
-  password: cc6c079d-1be5-4403-a36c-e45f621c0f06
+- auth: 29479de9-d3cb-49a5-b241-a44cc1551f06
+  name: 98|🇯🇵 日本-1
+  password: 29479de9-d3cb-49a5-b241-a44cc1551f06
   port: 30001
   server: oracle-amd-tokyo1.lanmaoyun.icu
   skip-cert-verify: true
   sni: tokyo.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: cc6c079d-1be5-4403-a36c-e45f621c0f06
-  name: 98|🇯🇵 日本-2-1A
-  password: cc6c079d-1be5-4403-a36c-e45f621c0f06
+- auth: 29479de9-d3cb-49a5-b241-a44cc1551f06
+  name: 98|🇯🇵 日本-2
+  password: 29479de9-d3cb-49a5-b241-a44cc1551f06
   port: 30001
   server: oracle-amd-osaka1.lanmaoyun.icu
   skip-cert-verify: true
@@ -1070,6 +1063,17 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
+  name: 108|🇳🇬 Web 尼日利亚I-原生 - AyucLouD-Services
+  password: aa2x2sa2/1a
+  plugin: obfs
+  plugin-opts:
+    host: 2db8f102301.download.windowsupdate.com
+    mode: http
+  port: 10021
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   name: 108|🇯🇵 Game 日本01-标准 - AyucLouD-Services
   password: ayucloud1
   plugin: obfs
@@ -1220,17 +1224,6 @@ proxies:
     host: 2db8f102301.download.windowsupdate.com
     mode: http
   port: 9051
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 108|🇳🇬 Web 尼日利亚I-原生 - AyucLouD-Services
-  password: aa2x2sa2/1a
-  plugin: obfs
-  plugin-opts:
-    host: 2db8f102301.download.windowsupdate.com
-    mode: http
-  port: 10021
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
@@ -1645,20 +1638,17 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: JP
-  name: 110,119,178|JP_534
+  name: 110,119,178|JP_688
   password: amazonskr05
   port: 443
   server: 54.95.5.168
   tfo: false
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 119,121,567|🇯🇵JP-45.12.207.208-4053 | 28.915MB
+- cipher: aes-256-gcm
+  name: 119,567|🇯🇵JP-45.12.207.208-4053 | 28.915MB
   password: 3426362sED92Yty14d86a
   port: 8448
   server: 45.12.207.208
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 119|SS-TCP-NA 🇯🇵 JP-54.64.148.82:2377
@@ -1666,14 +1656,11 @@ proxies:
   port: 2377
   server: 54.64.148.82
   type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '119,121|未知27 #1'
+- cipher: aes-256-gcm
+  name: 119|SS-TCP-NA 🇯🇵 JP-5.253.41.160:8443
   password: 35e41a9d-c318-4f7d-8e1b-69b032428255
   port: 8443
   server: 5.253.41.160
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 119|SS-TCP-NA 🇯🇵 JP-43.207.207.206:2377
@@ -1694,8 +1681,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '119,218,229,233,342,346,354,520,523,528,529,547,548,550,551,556,561,562|🔒
-    VM-WS-NA 🇯🇵 JP-132.145.123.206:58373 #16'
+  name: '119,218,229,233,342,346,354,520,523,528,529,542,547,548,550,551,552,556,561,562|🔒
+    VM-WS-NA 🇯🇵 JP-132.145.123.206:58373 #18'
   network: ws
   port: '58373'
   server: 132.145.123.206
@@ -1709,11 +1696,11 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '119,218,229,233,342,346,354,520,523,528,529,547,548,550,551,556,561,562|🔒
-    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #16'
+  name: '119,218,229,233,342,346,354,520,523,528,529,542,547,548,550,551,552,556,561,562|🔒
+    VM-WS-NA 🇯🇵 JP-132.145.123.206:58372 #18'
   network: ws
-  port: '43215'
-  server: 103.106.228.234
+  port: '58372'
+  server: 132.145.123.206
   servername: ''
   tls: false
   type: vmess
@@ -1724,11 +1711,11 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '119,218,229,233,342,346,354,520,523,528,529,547,548,550,551,556,561,562|🔒
-    VM-WS-NA 🇯🇵 JP-132.145.123.206:58372 #16'
+  name: '119,218,229,233,342,346,354,520,523,528,529,542,547,548,550,551,556,561,562|🔒
+    VM-WS-NA 🇯🇵 JP-103.106.228.234:43215 #17'
   network: ws
-  port: '58372'
-  server: 132.145.123.206
+  port: '43215'
+  server: 103.106.228.234
   servername: ''
   tls: false
   type: vmess
@@ -2333,6 +2320,22 @@ proxies:
     headers:
       Host: ''
     path: /bb
+- client-fingerprint: chrome
+  country: JP
+  fingerprint: randomized
+  name: 178,194|[Trojan] 🇯🇵 Relay_🇯🇵JP-🇯🇵JP_691
+  network: ws
+  password: FLorg
+  port: 443
+  server: 43.153.175.137
+  skip-cert-verify: true
+  sni: trojan.tcorg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.tcorg.filegear-sg.me
+    path: /?ed=2048
 - name: 204|🇯🇵JP(AzadNet.t.me)_003
   network: tcp
   password: 18844@zxcvbn
