@@ -1,14 +1,51 @@
 proxies:
 - cipher: aes-256-gcm
-  country: ' CH'
-  name: '36,170,457|CH-23.166.88.132-034 #1'
+  country: ZZ
+  name: '36,170,178,457|CH-23.166.88.132-034 #1'
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 23.166.88.132
   type: ss
+- cipher: aes-256-gcm
+  country: ' CH'
+  name: 36,119|SS-TCP-NA 🇨🇭 CH-23.166.88.198:4444
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 23.166.88.198
+  type: ss
 - alterId: 1
   cipher: auto
-  name: 57,137,160,188,218,221,233,342,346,348,406,421,422,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.32-8191
+  name: 45,84,114,168,193,406,421,423,429,430,433,438,439,605|巴拿马_1108001
+  network: ws
+  port: '443'
+  server: 186.190.215.32
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 45,84,114,168,193,406,421,423,429,430,433,438,439,605|巴拿马_1108002
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 57,137,160,188,218,221,233,342,346,348,406,421,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.32-8191
   network: ws
   port: 443
   server: 186.190.215.32
@@ -50,34 +87,15 @@ proxies:
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
 - alterId: 1
   cipher: auto
-  name: 84,114,168,193,406,421,422,423,429,430,433,438,439,605|巴拿马_1108001
+  name: 83,158|🇨🇭CH-186.190.215.193-443
   network: ws
-  port: '443'
+  port: 443
   server: 186.190.215.32
-  servername: ''
-  skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: 186.190.215.32
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 84,114,168,193,406,421,422,423,429,430,433,438,439,605|巴拿马_1108002
-  network: ws
-  port: '443'
-  server: 186.190.215.75
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.75
-    path: /
+    path: linkvws
 - cipher: chacha20-ietf-poly1305
   name: 119,567|CH-51.103.208.180-3958 | 33.318MB
   password: 8kt98zYM8KlOmWvgxDNen7
@@ -95,6 +113,12 @@ proxies:
   password: AdcivTASb8XWqRKubWaz2w
   port: 5555
   server: 195.15.243.125
+  type: ss
+- cipher: aes-256-gcm
+  name: 119|SS-TCP-NA 🇨🇭 CH-23.166.88.198:2376
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.166.88.198
   type: ss
 - name: 119|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
@@ -120,7 +144,7 @@ proxies:
   ws-opts: {}
 - alterId: 1
   cipher: auto
-  name: 218,221,233,342,346,348,406,421,422,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.75-8263
+  name: 218,221,233,342,346,348,406,421,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.75-8263
   network: ws
   port: 443
   server: 186.190.215.75
