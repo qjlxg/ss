@@ -1,7 +1,37 @@
 proxies:
 - alterId: 1
   cipher: auto
-  name: 57,133,155,184,214,217,229,338,342,344,402,417,419,420,425,426,427,429,434,435,450,589|🇨🇭CH-186.190.215.32-8191
+  name: 45,84,109,164,189,402,417,419,425,426,429,434,435,601|巴拿马_1106001
+  network: ws
+  port: '443'
+  server: 186.190.215.32
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.32
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 45,84,109,164,189,402,417,419,425,426,429,434,435,601|巴拿马_1106002
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 57,133,155,184,214,217,229,338,342,402,417,419,420,425,426,427,429,434,435,450,589|🇨🇭CH-186.190.215.32-8191
   network: ws
   port: 443
   server: 186.190.215.32
@@ -43,36 +73,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
-- alterId: 1
-  cipher: auto
-  name: 84,109,164,189,402,417,419,425,426,429,434,435,601|巴拿马_1106001
-  network: ws
-  port: '443'
-  server: 186.190.215.32
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.32
-    path: /
-- alterId: 1
-  cipher: auto
-  name: 84,109,164,189,402,417,419,425,426,429,434,435,601|巴拿马_1106002
-  network: ws
-  port: '443'
-  server: 186.190.215.75
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 186.190.215.75
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 114|SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555
   password: IsKL2GpJCddHk0HDIcg1_A
@@ -84,6 +84,15 @@ proxies:
   password: 8kt98zYM8KlOmWvgxDNen7
   port: 11241
   server: 51.103.208.180
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '114,116|未知17 #1'
+  password: AdcivTASb8XWqRKubWaz2w
+  port: 5555
+  server: 195.15.243.125
+  skip-cert-verify: true
+  tls: true
   type: ss
 - name: 114|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
@@ -109,7 +118,7 @@ proxies:
   ws-opts: {}
 - alterId: 1
   cipher: auto
-  name: 214,217,229,338,342,344,402,417,419,420,425,426,427,429,434,435,450,589|🇨🇭CH-186.190.215.75-8263
+  name: 214,217,229,338,342,402,417,419,420,425,426,427,429,434,435,450,589|🇨🇭CH-186.190.215.75-8263
   network: ws
   port: 443
   server: 186.190.215.75
@@ -204,7 +213,7 @@ proxies:
       Host: 186.190.215.149
     path: linkvws
 - cipher: aes-256-cfb
-  name: 419|CH-185.126.116.125-0123
+  name: 419|🇨CH-185.126.116.125-0188
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
