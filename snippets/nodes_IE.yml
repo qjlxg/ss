@@ -1,19 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇪 IE
-  name: 34,35,36,85,119,178,179,182| IE_461
+  name: 34,35,36,85,119,178,179,182| IE_472
   password: qM7y4D7jun6cC5NMdQ3FE5
   port: 64401
   server: 52.169.126.67
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇮🇪IE
+  country: 🇪IE
   name: 34,35,36,106,182,260,423|🇪IE-23.92.127.133-9508
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.133
   type: ss
+- cipher: aes-128-gcm
+  name: 79,108|🇮🇪 Web 爱尔兰I-原生 - AyucLouD-Services
+  password: Vdssf.mj/2Zr
+  plugin: obfs
+  plugin-opts:
+    host: b113e102336.download.windowsupdate.com
+    mode: http
+  port: 36201
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
 - name: 100|1|_IE_
   network: tcp
   password: telegram-id-privatevpns
@@ -105,7 +116,7 @@ proxies:
   type: trojan
   udp: true
 - country: IE
-  name: 106,178|IE_617
+  name: 106,178|IE_669
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -115,7 +126,7 @@ proxies:
   type: trojan
   udp: true
 - country: IE
-  name: 106,178|IE_618
+  name: 106,178|IE_668
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -297,17 +308,6 @@ proxies:
   tls: false
   type: vmess
   uuid: ee26bd64-ed28-4ad3-b67d-45a006909774
-- cipher: aes-128-gcm
-  name: 108|🇮🇪 Web 爱尔兰I-原生 - AyucLouD-Services
-  password: Vdssf.mj/2Zr
-  plugin: obfs
-  plugin-opts:
-    host: b113e102336.download.windowsupdate.com
-    mode: http
-  port: 36201
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 119|SS-TCP-NA 🇮🇪 IE-13.74.65.20:42492
   password: u7rbIkzBXeyBUyPCq4nyAN
@@ -364,24 +364,34 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8
+  name: 289|PkJldGF88J-HuvCfh7MgRlB8TnN8MTAxM3xUR0BGUHJveGllc3w
   obfs: plain
   obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
-  port: '40257'
+  port: '40203'
   protocol: auth_aes128_md5
   protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 28b09af269781f9b.cdn.jiashule.com
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
-  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #1'
+  name: 289|PkJldGF88J-HuvCfh7MgRlB8THN8MTAxM3xUR0BGUHJveGllc3w
   obfs: plain
   obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
-  port: '40256'
+  port: '40220'
   protocol: auth_aes128_md5
   protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 28b09af269781f9b.cdn.jiashule.com
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #2'
+  obfs: plain
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40201'
+  protocol: auth_aes128_md5
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
   name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #3'
@@ -394,41 +404,21 @@ proxies:
   server: 7438974b54cf5c57.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
+  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #4'
+  obfs: plain
+  obfs-param: ODE5NTk4NjQxNi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40255'
+  protocol: auth_aes128_md5
+  protocol-param: ODY0MTY6U2xaRnV5
+  server: 28b09af269781f9b.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
   name: 289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8
   obfs: plain
   obfs-param: ODE5NTk4NjQxNi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
   port: '40209'
-  protocol: auth_aes128_md5
-  protocol-param: ODY0MTY6U2xaRnV5
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #4'
-  obfs: plain
-  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40201'
-  protocol: auth_aes128_md5
-  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: 289|PkJldGF88J-HuvCfh7MgRlB8TnN8MTAxM3xUR0BGUHJveGllc3w
-  obfs: plain
-  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40203'
-  protocol: auth_aes128_md5
-  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #1'
-  obfs: plain
-  obfs-param: ODE5NTk4NjQxNi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40207'
   protocol: auth_aes128_md5
   protocol-param: ODY0MTY6U2xaRnV5
   server: 95b1cd85a0968ff2.cdn.jiashule.com
@@ -444,37 +434,27 @@ proxies:
   server: 28b09af269781f9b.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
-  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #3'
+  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #5'
   obfs: plain
   obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
-  port: '40240'
+  port: '40256'
   protocol: auth_aes128_md5
   protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
   server: 28b09af269781f9b.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
-  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #4'
-  obfs: plain
-  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40213'
-  protocol: auth_aes128_md5
-  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
-  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #5'
-  obfs: plain
-  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40215'
-  protocol: auth_aes128_md5
-  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
-- cipher: rc4-md5
   name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #6'
+  obfs: plain
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40257'
+  protocol: auth_aes128_md5
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
+  server: 28b09af269781f9b.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #7'
   obfs: plain
   obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
@@ -484,14 +464,44 @@ proxies:
   server: 7438974b54cf5c57.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
-  name: '289|PvCfh6_wn4e1IEpQfExzfDA5MTR8VEdARlByb3hpZXN8 #7'
+  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #2'
+  obfs: plain
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40240'
+  protocol: auth_aes128_md5
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
+  server: 28b09af269781f9b.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #3'
+  obfs: plain
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40213'
+  protocol: auth_aes128_md5
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #4'
+  obfs: plain
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  password: ENZ52K
+  port: '40215'
+  protocol: auth_aes128_md5
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
+- cipher: rc4-md5
+  name: '289|PvCfh63wn4ewIEhLfExzfDA5MTR8VEdARlByb3hpZXN8 #5'
   obfs: plain
   obfs-param: ODE5NTk4NjQxNi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
-  port: '40255'
+  port: '40207'
   protocol: auth_aes128_md5
   protocol-param: ODY0MTY6U2xaRnV5
-  server: 28b09af269781f9b.cdn.jiashule.com
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
 - cipher: aes-256-cfb
   name: 318,423|🇮🇪IE-54.228.27.121-2265
@@ -542,7 +552,7 @@ proxies:
   uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - alterId: 64
   cipher: auto
-  name: '406,421,422,423,429,430,433,438,439|🇮🇪IE-185.108.128.60-0958 #7'
+  name: '406,421,423,429,430,433,438,439|🇮🇪IE-185.108.128.60-0958 #6'
   network: ws
   port: 443
   server: 185.108.128.60
