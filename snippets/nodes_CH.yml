@@ -30,6 +30,21 @@ proxies:
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
 - alterId: 1
   cipher: auto
+  name: 84,114,168,193,406,421,423,429,430,433,438,439,605|巴拿马_1108002
+  network: ws
+  port: '443'
+  server: 186.190.215.75
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 186.190.215.75
+    path: /
+- alterId: 1
+  cipher: auto
   name: 84,114,168,193,406,421,423,429,430,433,438,439,605|巴拿马_1108001
   network: ws
   port: '443'
@@ -45,18 +60,27 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 84,114,168,193,406,421,423,429,430,433,438,439,605|巴拿马_1108002
+  name: 106|CH-186.190.215.32-8207 | 1.292MB
   network: ws
-  port: '443'
-  server: 186.190.215.75
-  servername: ''
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 186.190.215.32
+  skip-cert-verify: true
+  tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: 186.190.215.75
+    path: /
+- alterId: 1
+  cipher: auto
+  name: 106|CH-186.190.215.75-8241 | 1.254MB
+  network: ws
+  port: 443
+  server: 186.190.215.75
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
     path: /
 - cipher: aes-256-gcm
   name: 106|CH-01@𝙢𝙛𝙗𝙥𝙣
@@ -64,6 +88,17 @@ proxies:
   port: 20001
   server: tg_mfbpn05.52cloud.us.kg
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 106,160,475|162@ProSSH
+  network: tcp
+  port: '50002'
+  server: 120.210.205.82
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 106|瑞士 001
@@ -76,25 +111,14 @@ proxies:
   uuid: 6e1ea1c1-c140-4f15-b98e-457390972704
   ws-opts:
     path: /xyz
-- alterId: 64
-  cipher: auto
-  name: 106,160,475|162@ProSSH
-  network: tcp
-  port: '50002'
-  server: 120.210.205.82
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
-  name: 106,423|🇨CN-36.134.115.217-0437
+  name: 106,423|🇨CN-36.134.115.217-0506
   password: uYhVA160ZoSg3AI5
   port: 6700
   server: 36.134.115.217
   type: ss
 - cipher: aes-256-cfb
-  name: 106,116,423|🇳CN-221.181.185.71-0471
+  name: 106,116,423|🇳CN-221.181.185.71-0540
   password: f52SZksXnGNfc72Q
   port: 23382
   server: 221.181.185.71
@@ -149,6 +173,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 0dbf5048-e89c-4295-859c-71dc8bf71d1f
+- cipher: chacha20-ietf-poly1305
+  name: 119|SS-TCP-NA 🇨🇭 CH-195.15.243.125:5555
+  password: AdcivTASb8XWqRKubWaz2w
+  port: 5555
+  server: 195.15.243.125
+  type: ss
 - name: 119|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
   password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
@@ -159,13 +189,7 @@ proxies:
   ws-opts:
     headers:
       Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-    path: ''
-- cipher: chacha20-ietf-poly1305
-  name: 119|SS-TCP-NA 🇨🇭 CH-195.15.243.125:5555
-  password: AdcivTASb8XWqRKubWaz2w
-  port: 5555
-  server: 195.15.243.125
-  type: ss
+    path: /Telegram@Linkvws?ed=2560
 - alterId: 0
   cipher: auto
   name: 157|🇨🇭CH-194.87.18.224-443
@@ -179,8 +203,8 @@ proxies:
   ws-opts: {}
 - alterId: 1
   cipher: auto
-  name: '218,221,233,342,346,406,421,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.75-8388
-    #14'
+  name: '218,233,342,346,406,421,423,424,429,430,431,433,438,439,454,593|🇨🇭CH-186.190.215.75-8388
+    #1'
   network: ws
   port: 443
   server: 186.190.215.75
@@ -289,7 +313,7 @@ proxies:
       Host: 186.190.215.149
     path: linkvws
 - cipher: aes-256-cfb
-  name: 423|CH-185.126.116.125-0118
+  name: 423|🇨CH-185.126.116.125-0187
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
