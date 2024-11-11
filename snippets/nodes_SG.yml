@@ -19,14 +19,20 @@ proxies:
   ws-path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇬SG
-  name: 36,38,79,85,106,110,119,180|🇬SG_138 | 7.38Mb
+  country: SG
+  name: 36,38,79,106,110,179|SG_611
   password: amazonskr05
   port: 443
-  server: 54.169.139.18
+  server: 13.229.98.87
   tfo: false
   type: ss
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: ' SG'
+  name: 36|ChatGPT  SG_388
+  password: e7623dcf-82db-4b5c-89e4-3885fc4c3d86
+  port: 50006
+  server: iepl2.forlive.live
+  type: ss
 - alterId: -1
   cipher: aes-256-cfb
   client-fingerprint: chrome
@@ -52,10 +58,33 @@ proxies:
     headers:
       Host: d16henb377mok4.cloudfront.net
     path: /stream
+- cipher: chacha20-ietf
+  name: '38,79,106,179|_331 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- cipher: chacha20-ietf
+  country: HK
+  name: 38|disney_SG
+  password: asd123456
+  port: 8388
+  server: 103.36.90.195
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇸🇬SG
+  name: 38,79,85,106,110,119,179,180|🇸🇬SG_139 | 5.98Mb
+  password: amazonskr05
+  port: 443
+  server: 13.250.3.43
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: SG
-  name: '38,53,119,161,179,570|未知70 693.0KB/s #2'
+  name: '38,53,119,121,161,179,570|未知70 693.0KB/s #3'
   password: VnKRbi9ulWdVcfLQebabPL
   port: 14585
   server: 139.59.241.241
@@ -69,35 +98,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.229.212.209
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇸🇬SG
-  name: 38,85,106,110,119,180|🇸🇬SG_140 | 7.57Mb
-  password: amazonskr05
-  port: 443
-  server: 54.255.237.249
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇸🇬SG
-  name: 38,79,85,106,110,119,179,180|🇸🇬SG_139 | 5.98Mb
-  password: amazonskr05
-  port: 443
-  server: 13.250.3.43
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: US
-  name: 38,79,106,110|🇸🇬 SG 10
-  password: amazonskr05
-  port: 443
-  server: 47.130.3.54
   tfo: false
   type: ss
 - alterId: 0
@@ -480,6 +480,14 @@ proxies:
   port: 16015
   server: tg_mfbpn05.52cloud.us.kg
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 79,106,110|🇸🇬 SG 10
+  password: amazonskr05
+  port: 443
+  server: 47.130.3.54
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   name: 79,106|SG-010@𝙢𝙛𝙗𝙥𝙣
   password: 5OKQZMFRQAWJRRUM
@@ -523,15 +531,9 @@ proxies:
   skip-cert-verify: true
   sni: 234224.1234567890spcloud.com
   type: hysteria2
-- cipher: chacha20-ietf
-  name: '79,106,179|_331 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '82,83|13-0483-SG #1'
+  name: '82,83|13-0484-SG #1'
   network: ws
   port: '30002'
   server: xjpx6.12123.org
@@ -546,7 +548,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: '82,83|13-0533-SG #1'
+  name: '82,83|13-0534-SG #1'
   network: ws
   port: '30002'
   server: xjpx5.12123.org
@@ -576,7 +578,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: '84,114,407,422,424,430,431,434,439,440|🇸🇬SG-206.238.236.36-1580 #6'
+  name: '84,114,119,407,422,424,430,431,434,439,440|🇸🇬SG-206.238.236.36-1580 #6'
   network: ws
   port: 2052
   server: 206.238.236.36
@@ -710,25 +712,6 @@ proxies:
     headers:
       host: None
     path: None
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 86,195,572|US 60|openitr
-  network: ws
-  port: '80'
-  server: 206.238.236.36
-  servername: mysan2.jaquay22.workers.dev
-  skip-cert-verify: true
-  skip-cert-vertify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-  ws-opts:
-    headers:
-      Host: ''
-    path: /gwdef.sbs/linkws
 - alterId: 0
   cipher: auto
   name: 86|TG频道@mfbpn-1115-SG
@@ -976,6 +959,82 @@ proxies:
   port: '9025'
   server: 103.172.116.103
   type: ss
+- name: 106|新加坡-333.9KB/s_2
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: easy-mako.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 106|黑森林「新加坡|传说」
+  network: ws
+  port: 12926
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: '106,160,290|>🇸🇬 SG|Ls|1013|TG@FProxies| #13'
+  network: tcp
+  port: '12954'
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 106|青龙「新加坡|传说」「专线Z」
+  network: ws
+  port: 12938
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 106,160|🇸🇬SG-82.153.135.32-12953
+  network: tcp
+  port: 12953
+  server: z2.fragranceninja.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: '106,318,385,386,388|🔒🇸🇬 SG 103.14.92.61 ◈ tcp:12953 ◈ Akari Networks / AUK
+    Network ◈ d44bb #2'
+  network: tcp
+  port: '12953'
+  server: 63.lwdh.us
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+- alterId: 0
+  cipher: auto
+  name: 106|🇸🇬SG-206.238.236.36-8223 | 32.014MB
+  network: ws
+  port: 2052
+  server: 206.238.236.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 106,110|🇸🇬 SG
@@ -1000,26 +1059,67 @@ proxies:
   server: 47.129.170.82
   tfo: false
   type: ss
-- name: 106|新加坡-333.9KB/s_2
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: easy-mako.opossum872.cfd
+- alterId: 2
+  cipher: auto
+  name: 106|🇸🇬_油管：全网最强白嫖_1
+  network: ws
+  port: 80
+  server: 626sg01.fx6688.top
   skip-cert-verify: true
-  type: trojan
+  tls: true
+  type: vmess
+  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
+  ws-opts:
+    headers:
+      host: 626sg01.fx6688.top
+    path: /ray
+- cipher: chacha20-ietf-poly1305
+  name: 106,364|_油管：全网最强白嫖 207
+  password: a6a6d724-c1ad-4c18-aa07-b784b34491a9
+  port: 1274
+  server: n24.emovpn.xyz
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 106|🇸🇬SG-206.238.236.36-8223 | 32.014MB
+  name: 106|新加坡_【YouTube-VV科技】
   network: ws
-  port: 2052
-  server: 206.238.236.36
+  port: 2082
+  server: js.bfyun.eu.org
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  uuid: be3b9651-71c7-46cf-80ed-8d0c33347046
   ws-opts:
-    path: /
+    headers:
+      host: hostodo.galenet.online
+    path: /hostodo
+- alterId: 0
+  cipher: auto
+  name: '106|新加坡 001 #2'
+  network: ws
+  port: 8080
+  server: m002.mmzhk.website
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 782b949f-59ea-457b-bfa3-71530e6966ff
+  ws-opts:
+    path: /xyz
+- alterId: 0
+  cipher: auto
+  name: 106|新加坡_【YouTube-VV科技】_2
+  network: ws
+  port: 2082
+  server: 8.222.197.251
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
+  ws-opts:
+    headers:
+      host: hostodo.galenet.online
+    path: /hostodo
 - alterId: 0
   cipher: auto
   name: 106|🇸🇬SG_78
@@ -1044,34 +1144,208 @@ proxies:
   uuid: 9d655d30-cfad-4cda-82d6-9028ab41907d
   ws-opts:
     path: /
+- name: 106|新加坡+Amazon数据中心
+  network: tcp
+  password: '!!str 3672449442956713984'
+  port: 443
+  server: devoted-liger.mite885.beauty
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 106|🇸🇬 SG-2
+  password: 9a601d59-4941-45e3-a863-c040737f2b25
+  port: 8005
+  server: sg-02.cloudlion.me
+  skip-cert-verify: true
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 106|新加坡_【YouTube-VV科技】_1
-  network: ws
-  port: 2082
-  server: js.bfyun.eu.org
+  name: 106|🇸🇬 新加坡NO.2
+  network: ''
+  port: 45055
+  server: xdd.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: be3b9651-71c7-46cf-80ed-8d0c33347046
-  ws-opts:
-    headers:
-      host: hostodo.galenet.online
-    path: /hostodo
+  uuid: fcc338ed-d213-4952-ab5b-0a1e6d5400e4
 - alterId: 0
   cipher: auto
-  name: 106|新加坡_【YouTube-VV科技】_2
-  network: ws
-  port: 2082
-  server: 8.222.197.251
+  name: 106|🇸🇬 新加坡NO.1
+  network: ''
+  port: 45054
+  server: haa.dashuai.cyou
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 6db5d855-657d-4ede-9023-e594bb936d90
+  uuid: fcc338ed-d213-4952-ab5b-0a1e6d5400e4
+- name: 106|新加坡_【YouTube-VV科技】_1
+  network: tcp
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  port: 443
+  server: gsawssg2.aiopen.cfd
+  skip-cert-verify: true
+  sni: 20-212-60-88.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 106|新加坡_【YouTube-VV科技】_3
+  network: tcp
+  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
+  port: 443
+  server: gsawssg1.aiopen.cfd
+  skip-cert-verify: true
+  sni: 20-212-60-88.nhost.00cdn.com
+  type: trojan
+  udp: true
+- alterId: 16
+  cipher: auto
+  name: 106|新加坡_1
+  network: ws
+  port: 41250
+  server: gy.jjxcloud.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f15287b4-c711-3333-8afa-298f83d8b0e7
   ws-opts:
     headers:
-      host: hostodo.galenet.online
-    path: /hostodo
+      host: gy.jjxcloud.xyz
+    path: /v2ray
+- alterId: 1
+  cipher: auto
+  name: 106|新加坡_2
+  network: tcp
+  port: 10002
+  server: 112.33.32.148
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 00231314-0d96-4dfc-bac8-cb52a989fd10
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_1 #2'
+  network: ws
+  port: 21888
+  server: 103.83.156.89
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fb1680d4-01b9-4cdd-919f-4d49faf2c326
+  ws-opts:
+    headers:
+      host: 103.83.156.89
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_2 #2'
+  network: ws
+  port: 8888
+  server: 128.199.75.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: 128.199.75.23
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_3 #2'
+  network: ws
+  port: 9999
+  server: 18.141.180.10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9bf3ddad-c2a5-4056-8dae-5a3cb9e9b84c
+  ws-opts:
+    headers:
+      host: 18.141.180.10
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_4 #2'
+  network: ws
+  port: 61531
+  server: ah.jiyunshu.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: ah.jiyunshu.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_5 #2'
+  network: ws
+  port: 27120
+  server: ah.jiyunshu.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: ah.jiyunshu.com
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_9 #2'
+  network: ws
+  port: 20005
+  server: azhk1.sf66.cf
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: azhk1.sf66.cf
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_12 #2'
+  network: ws
+  port: 32011
+  server: azhk3.sf66.cf
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9bf3ddad-c2a5-4056-8dae-5a3cb9e9b84c
+  ws-opts:
+    headers:
+      host: azhk3.sf66.cf
+    path: /
+- alterId: 1
+  cipher: auto
+  name: '106|🇸🇬 新加坡_19 #2'
+  network: ws
+  port: 20039
+  server: cxcu.jiyunshu.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
+  ws-opts:
+    headers:
+      host: cxcu.jiyunshu.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: '106|🇸🇬 新加坡_22 #2'
+  network: ws
+  port: 18004
+  server: v12.88host.buzz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e842b316-864c-38ed-b26e-31f07add8ddb
+  ws-opts:
+    headers:
+      host: v12.88host.buzz
+    path: /mojing
 - name: 106|新加坡-1.30MB/s
   network: tcp
   password: '!!str 3690911436885991424'
@@ -1092,48 +1366,16 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 106|🇸🇬 新加坡-1N
+  name: 106|Relay_🇸🇬SG-🇸🇬SG_37
   network: ws
-  port: 8080
-  server: m002.mmzhk.website
+  port: 11521
+  server: 00000000000000000000000008.node-for-smallairport.win
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 5c6f7e0e-cdbd-4854-97a5-70edac0134de
-  ws-opts:
-    path: /xyz
-- alterId: 0
-  cipher: auto
-  name: 106|🇸🇬 新加坡NO.1
-  network: ''
-  port: 45054
-  server: haa.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
-- alterId: 0
-  cipher: auto
-  name: 106|🇸🇬 新加坡05极速节点|油管速度优化
-  network: ws
-  port: 80
-  server: yx.sulink.one
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dcfa0bd0-0233-4519-ab71-7452acfd952b
+  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 106|🇸🇬 新加坡NO.2
-  network: ''
-  port: 45055
-  server: xdd.dashuai.cyou
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 233f2a3c-5c7f-4bce-b6f8-b4dc00828de8
 - name: 106|Relay_🇸🇬SG-🇸🇬SG_207 |16.53Mb
   network: tcp
   password: a79da040-2e7c-11ed-91c2-1239d0255272
@@ -1234,50 +1476,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 106|黑森林「新加坡|传说」
-  network: ws
-  port: 12926
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '106,160,290|>🇸🇬 SG|Ls|1013|TG@FProxies| #13'
-  network: tcp
-  port: '12954'
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: 106,160|🇸🇬SG-82.153.135.32-12953
-  network: tcp
-  port: 12953
-  server: z2.fragranceninja.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-- alterId: 0
-  cipher: auto
-  name: '106,318,385,386,388|🔒🇸🇬 SG 103.14.92.61 ◈ tcp:12953 ◈ Akari Networks / AUK
-    Network ◈ d44bb #2'
-  network: tcp
-  port: '12953'
-  server: 63.lwdh.us
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
 - alterId: 4
   cipher: auto
   name: 106|Relay_-🇸🇬SG_44 | 8.52Mb
@@ -1488,219 +1686,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 5b00bd34-a2a7-4471-8b17-3f4768ac0330
-- name: 106|新加坡+Amazon数据中心
-  network: tcp
-  password: '!!str 3672449442956713984'
-  port: 443
-  server: devoted-liger.mite885.beauty
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 106|🇸🇬_油管：全网最强白嫖_1
-  network: ws
-  port: 80
-  server: 626sg01.fx6688.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa
-  ws-opts:
-    path: ''
-- cipher: chacha20-ietf-poly1305
-  name: 106,364|_油管：全网最强白嫖 207
-  password: a6a6d724-c1ad-4c18-aa07-b784b34491a9
-  port: 1274
-  server: n24.emovpn.xyz
-  type: ss
-  udp: true
-- name: 106|🇸🇬 SG-2
-  password: 9a601d59-4941-45e3-a863-c040737f2b25
-  port: 8005
-  server: sg-02.cloudlion.me
-  skip-cert-verify: true
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 106|Relay_🇸🇬SG-🇸🇬SG_37
-  network: ws
-  port: 11521
-  server: 00000000000000000000000008.node-for-smallairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
-  ws-opts:
-    path: /
-- alterId: 16
-  cipher: auto
-  name: 106|新加坡_1
-  network: ws
-  port: 41250
-  server: gy.jjxcloud.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f15287b4-c711-3333-8afa-298f83d8b0e7
-  ws-opts:
-    headers:
-      host: gy.jjxcloud.xyz
-    path: /v2ray
-- alterId: 1
-  cipher: auto
-  name: 106|新加坡_2
-  network: tcp
-  port: 10002
-  server: 112.33.32.148
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 00231314-0d96-4dfc-bac8-cb52a989fd10
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_1 #2'
-  network: ws
-  port: 21888
-  server: 103.83.156.89
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fb1680d4-01b9-4cdd-919f-4d49faf2c326
-  ws-opts:
-    headers:
-      host: 103.83.156.89
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_2 #2'
-  network: ws
-  port: 8888
-  server: 128.199.75.23
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
-  ws-opts:
-    headers:
-      host: 128.199.75.23
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_3 #2'
-  network: ws
-  port: 9999
-  server: 18.141.180.10
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9bf3ddad-c2a5-4056-8dae-5a3cb9e9b84c
-  ws-opts:
-    headers:
-      host: 18.141.180.10
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_4 #2'
-  network: ws
-  port: 61531
-  server: ah.jiyunshu.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
-  ws-opts:
-    headers:
-      host: ah.jiyunshu.com
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_5 #2'
-  network: ws
-  port: 27120
-  server: ah.jiyunshu.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
-  ws-opts:
-    headers:
-      host: ah.jiyunshu.com
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_9 #2'
-  network: ws
-  port: 20005
-  server: azhk1.sf66.cf
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
-  ws-opts:
-    headers:
-      host: azhk1.sf66.cf
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_12 #2'
-  network: ws
-  port: 32011
-  server: azhk3.sf66.cf
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9bf3ddad-c2a5-4056-8dae-5a3cb9e9b84c
-  ws-opts:
-    headers:
-      host: azhk3.sf66.cf
-    path: /
-- alterId: 1
-  cipher: auto
-  name: '106|🇸🇬 新加坡_19 #2'
-  network: ws
-  port: 20039
-  server: cxcu.jiyunshu.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0d821ee-75f0-4d9e-a56f-52d3eea79ce6
-  ws-opts:
-    headers:
-      host: cxcu.jiyunshu.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: '106|🇸🇬 新加坡_22 #2'
-  network: ws
-  port: 18004
-  server: v12.88host.buzz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e842b316-864c-38ed-b26e-31f07add8ddb
-  ws-opts:
-    headers:
-      host: v12.88host.buzz
-    path: /mojing
-- name: '106|新加坡_【YouTube-VV科技】_1 #1'
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawssg2.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
-- name: 106|新加坡_【YouTube-VV科技】_3
-  network: tcp
-  password: db4fb0e6-0e5b-4b12-95ac-03e60f5685d7
-  port: 443
-  server: gsawssg1.aiopen.cfd
-  skip-cert-verify: true
-  sni: 20-212-60-88.nhost.00cdn.com
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 107,362,424,454|二爷免费翻墙 https://1808.free.hr 节点_21
   password: amazonskr05
@@ -1957,7 +1942,7 @@ proxies:
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 9060
   server: 231103level3.unclemanco.com
@@ -1968,7 +1953,7 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 9037
   server: 231103level3.unclemanco.com
@@ -1979,7 +1964,7 @@ proxies:
   password: ayuc211
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 902
   server: 231103level3.unclemanco.com
@@ -1990,7 +1975,7 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 9038
   server: 231103level2.unclemanco.com
@@ -2001,7 +1986,7 @@ proxies:
   password: dajkdkjda&dja*/?
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 19999
   server: 231103level2.unclemanco.com
@@ -2012,7 +1997,7 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: b6285102398.download.windowsupdate.com
+    host: 831c8102435.download.windowsupdate.com
     mode: http
   port: 6879
   server: 231103level1.unclemanco.com
@@ -2027,19 +2012,16 @@ proxies:
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 119|SS-TCP-NA 🇸🇬 SG-45.158.59.74:47969
+  password: 6a85a72c-c77e-4034-9384-fbae0495013d
+  port: 47969
+  server: 45.158.59.74
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 119|SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252
   password: Twnob16nHC2FV05JZEy5p9
   port: 52252
   server: 174.138.17.254
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '119,121|未知92 #1'
-  password: c6d35094-dd85-4202-81ef-5e387c560481
-  port: 21850
-  server: 140.245.57.33
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 119,205|🇸🇬SG(AzadNet.t.me)_004
@@ -2047,27 +2029,12 @@ proxies:
   port: 18814
   server: 159.65.129.128
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 119|SS-TCP-NA 🇸🇬 SG-45.158.59.74:47969
-  password: 6a85a72c-c77e-4034-9384-fbae0495013d
-  port: 47969
-  server: 45.158.59.74
+- cipher: aes-256-gcm
+  name: 119|SS-TCP-NA 🇸🇬 SG-140.245.57.33:21850
+  password: c6d35094-dd85-4202-81ef-5e387c560481
+  port: 21850
+  server: 140.245.57.33
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 119,219,221,234,306,308,343,347,355,407,422,424,425,430,431,432,434,439,440,455,521,524,529,530,538,543,548,549,551,553,554,557,562,563,606|南非_1110001
-  network: ws
-  port: '2052'
-  server: 206.238.236.36
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: mysan2.jaquay22.workers.dev
-    path: /afrhms16v.bestxray.buzz/linkws
 - name: 119|TR-WS-TLS 🇸🇬 SG-206.238.236.187:2096
   network: ws
   password: 0d89a36e-36bc-41d2-8bd3-bbd639991f29
@@ -2271,6 +2238,15 @@ proxies:
     headers:
       Host: de-new01.daluquan.top
     path: /
+- alterId: 64
+  cipher: auto
+  name: '153,154,155,156,157,158,159|🇸🇬SG-118.107.9.35-51582 #6'
+  network: tcp
+  port: 51582
+  server: 120.232.153.27
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 156|🇸🇬SG-154.26.136.194-23563
@@ -2594,6 +2570,21 @@ proxies:
   uuid: 533724ad-58ef-4147-88dc-9da523c15fc4
   ws-opts:
     path: /anti13.zingfast.vn
+- alterId: 0
+  cipher: auto
+  name: 219,221,234,306,308,343,347,355,407,422,424,425,430,431,432,434,439,440,455,521,524,529,530,538,543,548,549,551,557,562,563,606|南非_1110001
+  network: ws
+  port: '2052'
+  server: 206.238.236.36
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
   name: 241|SG
