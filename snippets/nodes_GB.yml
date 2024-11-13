@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 4,41,311|🇬🇧GB-77.72.5.150-3821 | 12.291MB
+  name: 4,5,41,311|🇬🇧GB-77.72.5.150-3821 | 12.291MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 77.72.5.150
@@ -25,7 +25,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 4,212,311,313|未知95 3.4MB/s
+  name: 4,212,311,313|未知9 2.1MB/s
   password: shadowsocks
   port: 443
   server: 212.102.53.79
@@ -38,14 +38,11 @@ proxies:
   port: 443
   server: 212.102.53.197
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 4,5,41,163,180,311,313|未知131 3.3MB/s
+- cipher: aes-128-gcm
+  name: 4,5,41,163,180,311|🇬🇧GB-212.102.53.80-3490 | 32.156MB
   password: shadowsocks
   port: 443
   server: 212.102.53.80
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: 4,5,78,163,311|🇬🇧GB-212.102.53.195-3627 | 32.085MB
@@ -100,13 +97,13 @@ proxies:
   server: series-a1.samanehha.co
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 4,5,163,197,311|🇬🇧GB-13.43.127.204-0129 | 31.612MB
+  name: 4,5,163,311|🇬🇧GB-13.43.127.204-0129 | 31.612MB
   password: W74XFALLLuw6m5IA
   port: 443
   server: freakconfig.drroyazare.ir
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 4,5,65,121,163,197,311|🇬🇧GB-13.43.127.204-7461 | 31.777MB
+  name: 4,5,65,121,163,311|🇬🇧GB-13.43.127.204-7461 | 31.777MB
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.samanehha.co
@@ -127,10 +124,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,163,169,178,351|英国_1112014
+  name: 5,163,169,178,351|英国_1112009
   network: ws
   port: '443'
-  server: 172.99.190.206
+  server: 149.7.16.188
   servername: ''
   skip-cert-verify: false
   tls: false
@@ -138,8 +135,15 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: 149.7.16.188
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 5,65,163|🇬🇧GB-18.169.86.164-0670 | 32.646MB
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.varzesh360.co
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 5,163,169,178,351|美国_1112195
@@ -157,10 +161,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,163,169,178,351|英国_1112018
+  name: 5,163,169,178,351|英国_1112017
   network: ws
   port: '443'
-  server: 149.7.16.174
+  server: 149.7.16.248
   servername: ''
   skip-cert-verify: false
   tls: false
@@ -168,7 +172,7 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: ''
+      Host: 149.7.16.248
     path: /
 - alterId: 0
   cipher: auto
@@ -187,6 +191,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 5,163,169,178,351|英国_1112014
+  network: ws
+  port: '443'
+  server: 172.99.190.206
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 5,163,169,178,351|英国_1112018
+  network: ws
+  port: '443'
+  server: 149.7.16.174
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
   name: 5,163,169,178,351|美国_1112199
   network: ws
   port: '443'
@@ -202,45 +236,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 5,163,169,178,351|英国_1112017
-  network: ws
-  port: '443'
-  server: 149.7.16.248
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 149.7.16.248
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 5,65,163|🇬🇧GB-18.169.86.164-0670 | 32.646MB
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.varzesh360.co
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 5,163,169,178,351|英国_1112009
-  network: ws
-  port: '443'
-  server: 149.7.16.188
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 149.7.16.188
-    path: /
-- alterId: 0
-  cipher: auto
   name: '19,20,110,161,162,169,171,178,191,193,194,254,339,341|@Vip_Security join
-    us - 402
+    us - 392
 
     '
   network: ws
@@ -257,7 +254,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '19,20,110,161,162,169,171,178,191,193,194,254,339,341|@Vip_Security join
-    us - 337
+    us - 329
 
     '
   network: ws
@@ -274,7 +271,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '19,20,84,86,110,161,162,169,171,178,191,193,194,254,339,341|@Vip_Security
-    join us - 401
+    join us - 391
 
     '
   network: ws
@@ -291,7 +288,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '19,20,110,161,162,169,171,178,191,193,194,254,339,341|@Vip_Security join
-    us - 336
+    us - 328
 
     '
   network: ws
@@ -307,8 +304,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '19,20,110,161,162,169,171,178,191,193,194,254,339|🇬🇧GB-149.7.16.248-2927
-    #1'
+  name: 19,20,110,161,162,169,171,178,191,193,194,254,339|🇬🇧GB-149.7.16.248-2927
   network: ws
   port: 443
   server: 149.7.16.248
@@ -322,8 +318,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '19,20,110,161,162,169,171,178,191,193,194,254,339|🇬🇧GB-149.7.16.188-2928
-    #1'
+  name: 19,20,110,161,162,169,171,178,191,193,194,254,339|🇬🇧GB-149.7.16.188-2928
   network: ws
   port: 443
   server: 149.7.16.188
@@ -785,24 +780,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '110,118,266,271,272,276,290,291,293,299,304,305,341|@Vip_Security join us
-    - 334
-
-    '
-  network: ws
-  port: '52793'
-  server: 5.39.254.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: '110,161,162,169,171,178,194,339|🇬🇧GB-172.99.190.206-8161 #1'
+  name: 110,161,162,169,171,178,194,339|🇬🇧GB-172.99.190.206-8161
   network: ws
   port: 443
   server: 172.99.190.206
@@ -816,7 +794,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '110,161,162,169,171,178,194,339|🇬🇧GB-149.7.16.174-8165 #1'
+  name: 110,161,162,169,171,178,194,339|🇬🇧GB-149.7.16.174-8165
   network: ws
   port: 443
   server: 149.7.16.174
@@ -1252,7 +1230,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '194,345|@Vip_Security join us - 653
+  name: '194,345|@Vip_Security join us - 657
 
     '
   network: ws
