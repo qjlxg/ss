@@ -70,29 +70,24 @@ proxies:
   uuid: 474e8680-701f-11ee-b436-205c6d5f5d78
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: 7,304|🇨🇦CA-51.222.157.179-3902 | 65.543MB
-  password: 7gaTTlW73G
-  port: 49602
-  server: 51.222.157.179
-  type: ss
-- alterId: -1
-  cipher: aes-128-gcm
-  name: 7,9,70,158,192,304,312,342|CA_speednode_0003
+- cipher: aes-128-gcm
+  name: 7,304,342|CA_speednode_0003
   password: shadowsocks
   port: 443
   server: 149.22.95.183
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 7,61,304|🇨🇦CA-142.4.216.225-3672 | 24.812MB
-  password: JIhN6rBKkaEboLNXVSv5rq
-  port: 80
-  server: 142.4.216.225
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 7,304,306|未知46 27.6MB/s
+  password: 7gaTTlW73G
+  port: 49602
+  server: 51.222.157.179
+  skip-cert-verify: true
+  tls: true
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 9,158,164,173,304,343|未知_1114140
+  name: 7,9,158,164,173,343|未知_1114140
   network: ws
   port: '443'
   server: 23.162.200.227
@@ -105,6 +100,16 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 7,61,304,306|未知66 17.0MB/s
+  password: JIhN6rBKkaEboLNXVSv5rq
+  port: 80
+  server: 142.4.216.225
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 9,158,164,173,343|未知_1114110
@@ -122,7 +127,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '9,158,164,173|🇨🇦CA-158.51.121.36-0635 #1'
+  name: '9,158,164,173|🇨🇦CA-158.51.121.36-0606 #1'
   network: ws
   port: 443
   server: 158.51.121.36
@@ -134,21 +139,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 9,158,164,173,343|加拿大_1114003
-  network: ws
-  port: '443'
-  server: 134.195.198.147
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
     path: /
 - alterId: 0
   cipher: auto
@@ -164,32 +154,6 @@ proxies:
   ws-opts:
     headers:
       Host: 158.51.121.36
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 18,106,115,148,259,265,266,278,284,285,292,298,299,308|CA 2|openitr
-  network: tcp
-  port: '17163'
-  server: 108.181.200.220
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d54814a1-7a93-45f8-9117-db317a25d100
-- alterId: 0
-  cipher: auto
-  name: 18,61,106,115,148,260,265,266,284,285,293,298,299,304,308|CA 3|openitr
-  network: ws
-  port: '50613'
-  server: 108.181.200.220
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 09e81eaa-d298-432c-e7b6-17add32d14fc
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -239,20 +203,6 @@ proxies:
   network: ws
   port: 443
   server: 188.114.97.2
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '26,27,164,173,186,188,248,331|🏁RELAY-188.114.96.2-2934 #2'
-  network: ws
-  port: 443
-  server: 188.114.96.2
-  servername: ''
   tls: true
   type: vmess
   uuid: f584de15-2034-4170-a723-f48c2bae5e0f
@@ -320,21 +270,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,106,156,157,164,166,173,186,188,189,210,248,331|🏁RELAY-172.67.181.241-2944
-    #6'
-  network: ws
-  port: 443
-  server: 172.67.181.241
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: 26,27,164,173,186,188,248,343|美国_1114422
   network: ws
   port: '2086'
@@ -391,7 +326,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,186,188,189,248,333|@Vip_Security join us - 107
+  name: '26,27,186,188,189,248,333|@Vip_Security join us - 443
 
     '
   network: ws
@@ -732,7 +667,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 17
+  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 353
 
     '
   network: ws
@@ -762,7 +697,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 32
+  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 368
 
     '
   network: ws
@@ -833,20 +768,6 @@ proxies:
     path: /gmvfvws
 - alterId: 0
   cipher: auto
-  name: '26,27,148,164,173,186,188,189,248,331|🏁RELAY-188.114.97.21-2992 #2'
-  network: ws
-  port: 443
-  server: 188.114.97.21
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: '26,27|加拿大_多伦多 #241'
   network: ws
   port: 443
@@ -860,7 +781,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '26,27,186,188,189,248,337|@Vip_Security join us - 665
+  name: '26,27,186,188,189,248,337|@Vip_Security join us - 659
 
     '
   network: ws
@@ -876,7 +797,26 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 26,27,45,50,164,173,186,188,248,333,343|未知_1114384
+  name: '26,27,61,72,106,130,140,148,156,157,164,166,173,186,188,189,248,311,331,333,337|@Vip_Security
+    join us - 303
+
+    '
+  network: ws
+  port: '443'
+  server: 172.67.174.42
+  servername: gwdef.sbs
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
+  ws-opts:
+    headers:
+      Host: gwdef.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 26,27,164,173,186,188,248,333,343|未知_1114384
   network: ws
   port: '2086'
   server: 162.159.140.33
@@ -890,41 +830,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,41,42,45,50,72,106,128,135,148,156,157,164,166,173,186,188,189,248,331,333,337|@Vip_Security
-    join us - 147
-
-    '
-  network: ws
-  port: '443'
-  server: 104.21.46.121
-  servername: ivideos.sbs
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: ivideos.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '26,27,45,50,148,164,173,186,188,210,248,308,331,333|@Vip_Security join us
-    - 118
-
-    '
-  network: ws
-  port: 443
-  server: hms24.ivideos.sbs
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: ivideos.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 26,27,45,50,164,173,186,188,248,333,343|未知_1114385
+  name: 26,27,164,173,186,188,248,333,343|未知_1114385
   network: ws
   port: '2086'
   server: 104.18.15.19
@@ -938,7 +844,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 26,27,45,50,164,173,186,188,248,333,343|未知_1114386
+  name: 26,27,164,173,186,188,248,333,343|未知_1114386
   network: ws
   port: '2086'
   server: 104.18.14.19
@@ -952,23 +858,23 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,45,50,148,164,173,186,188,248,331,333|@Vip_Security join us - 86
+  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 350
 
     '
   network: ws
   port: 443
-  server: 188.114.97.8
+  server: 104.18.206.97
   servername: ''
   tls: true
   type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
   ws-opts:
     headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
+      Host: 7whrapid-river-a083.sisay70779.workers.dev
+    path: /afrhms07.xfixedfloat.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 26,27,45,50,164,173,186,188,248,333,343|加拿大_1114023
+  name: 26,27,164,173,186,188,248,333,343|加拿大_1114023
   network: ws
   port: '2086'
   server: 23.227.38.8
@@ -980,24 +886,6 @@ proxies:
     headers:
       Host: ip5-4.freegradely.xyz
     path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: '26,27,45,50,61,148,164,173,186,188,248,331,333|@Vip_Security join us - 84
-
-    '
-  network: ws
-  port: 443
-  server: 188.114.96.1
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: '26,27|加拿大_多伦多 #257'
@@ -1013,7 +901,7 @@ proxies:
     path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
-  name: 26,27,45,50,128,135,164,173,186,188,248,333,343|美国_1114457
+  name: 26,27,128,135,164,173,186,188,248,333,343|美国_1114457
   network: ws
   port: '80'
   server: 104.26.15.148
@@ -1027,7 +915,7 @@ proxies:
     path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
-  name: 26,27,164,173,186,188,248,343|美国_1114458
+  name: 26,27,45,50,115,164,173,186,188,248,260,265,266,272,284,285,343|美国_1114458
   network: ws
   port: '2086'
   server: 104.26.5.57
@@ -1041,20 +929,36 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 26,27,61,128,135,148,164,173,186,188,189,248,331,337,343|未知_1114388
+  name: '26,27,45,50,106,148,156,157,164,166,173,186,188,189,248,337|@Vip_Security
+    join us - 299
+
+    '
   network: ws
   port: '443'
-  server: 104.21.24.170
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  server: 172.67.156.210
+  servername: glweidf.sbs
+  tls: true
   type: vmess
-  udp: true
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
   ws-opts:
     headers:
-      Host: adenc36v.xtooltech.cfd
+      Host: glweidf.sbs
     path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '26,27,45,50,115,164,173,186,188,248,260,265,266,272,284,285|🔒 VM-WS-NA 🏴‍☠️
+    NA-104.16.68.38:8880 #6'
+  network: ws
+  port: 8880
+  server: 104.16.68.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: subhk.osafari599.workers.dev
+    path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
   name: 26,27,164,173,186,188,248,333,337,343|美国_1114402
@@ -1071,7 +975,7 @@ proxies:
     path: /video/orbHPhkP
 - alterId: 0
   cipher: auto
-  name: 26,27,164,173,186,188,189,248,343|美国_1114460
+  name: 26,27,45,50,164,173,186,188,189,248,343|美国_1114460
   network: ws
   port: '443'
   server: parsvds.com
@@ -1085,7 +989,8 @@ proxies:
     path: /aveiror.com/linkvws
 - alterId: 0
   cipher: auto
-  name: '26,27,106,156,157,164,166,173,186,188,248,331|🇨🇦CA-158.51.121.36-3033 #6'
+  name: '26,27,45,50,106,156,157,164,166,173,186,188,248,331|🇨🇦CA-158.51.121.36-3036
+    #6'
   network: ws
   port: 443
   server: 158.51.121.36
@@ -1099,7 +1004,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '26,27,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_207 #2'
+  name: '26,27,45,50,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_207 #4'
   network: ws
   port: 443
   server: 145.724064.xyz
@@ -1110,6 +1015,23 @@ proxies:
     headers:
       Host: 145.724064.xyz
     path: /zrqrvws
+- alterId: 0
+  cipher: auto
+  name: '26,27,106,128,135,148,156,157,164,166,173,186,188,189,248,331,333,337|@Vip_Security
+    join us - 314
+
+    '
+  network: ws
+  port: '443'
+  server: 172.67.223.119
+  servername: hms02.fxiaomi.sbs
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      Host: hms02.fxiaomi.sbs
+    path: /link
 - alterId: 0
   cipher: auto
   name: 26,27,164,173,186,188,248,333,343|美国_1114461
@@ -1140,6 +1062,41 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
+  name: '26,27,106,148,156,157,164,166,173,186,188,248,333|@Vip_Security join us -
+    453
+
+    '
+  network: ws
+  port: 443
+  server: hms182.glweidf.sbs
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '26,27,61,164,173,186,188,248,333|@Vip_Security join us - 406
+
+    '
+  network: ws
+  port: 443
+  server: 172.66.213.38
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: green-morning-ce19.mehdipost667.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
   name: 26,27,164,173,186,188,248,343|美国_1114465
   network: ws
   port: '2086'
@@ -1154,20 +1111,32 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 26,27,61,72,80,82,128,135,148,164,173,186,188,189,210,248,331,337,343|美国_1114466
+  name: '26,27,164,173,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_234 #2'
   network: ws
-  port: '443'
-  server: 172.67.219.194
+  port: 443
+  server: discord.com
   servername: ''
-  skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  udp: true
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
   ws-opts:
     headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws
+      Host: cool-darkness-e663.mehdipost667.workers.dev
+    path: /gwdef.sbs:443/linkws
+- alterId: 0
+  cipher: auto
+  name: '26,27,164,173,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_235 #2'
+  network: ws
+  port: 443
+  server: 162.159.1.94
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: green-morning-ce19.mehdipost667.workers.dev
+    path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
   name: '26,27,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_236 #2'
@@ -1267,21 +1236,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,72,106,130,140,148,156,157,164,166,173,186,188,189,210,216,248,331|🏁RELAY-104.21.83.208-3071
-    #6'
-  network: ws
-  port: 443
-  server: 104.21.83.208
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: afrhms16v.bestxray.buzz
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: '26,27,31,164,173,186,188,248|二爷免费翻墙 https://1808.free.hr 节点_245 #2'
   network: ws
   port: 2086
@@ -1296,7 +1250,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 16
+  name: '26,27,164,173,186,188,248,333|@Vip_Security join us - 352
 
     '
   network: ws
@@ -2055,7 +2009,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '32,164,173,186,188,248,333|@Vip_Security join us - 22
+  name: '32,164,173,186,188,248,333|@Vip_Security join us - 358
 
     '
   network: ws
@@ -2482,18 +2436,34 @@ proxies:
     path: /ECTCJ0DF
 - alterId: 0
   cipher: auto
-  name: '79,81,83|73-🇨🇦CA_1_@Surfboardv2ray-worker #2'
+  name: '77,95,128,135,164,173,210,327,331,337|@Vip_Security join us - 602
+
+    '
   network: ws
-  port: 443
-  server: vcp3.surfboardv2ray8830.wOrKers.deV
-  servername: vcp3.surfboardv2ray8830.wOrKerS.dEv
+  port: '443'
+  server: hms04.xmivideo.cfd
+  servername: xmivideo.cfd
   tls: true
   type: vmess
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
   ws-opts:
     headers:
-      Host: vcp3.surfboardv2ray8830.wOrKerS.dEv
-    path: /hms19.best-tizi.top:443/linkws
+      Host: xmivideo.cfd
+    path: /linkws
+- alterId: 1
+  cipher: auto
+  name: '79,81,83|99-🇨🇦CA_7_@Surfboardv2ray-worker #2'
+  network: ws
+  port: 443
+  server: vcp3.surfboardv2ray8830.WORkERs.DEv
+  servername: vcp3.surfboardv2ray8830.WoRKERS.dEv
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vcp3.surfboardv2ray8830.WoRKERS.dEv
+    path: /be.kalavryta.org:443/linkvws
 - cipher: aes-256-cfb
   name: 93,131,162,204,231,242|8J%2BHqPCfh6ZDQS0zLjk2LjI0My4xNy0xNDUz
   obfs: http_simple
@@ -2681,7 +2651,17 @@ proxies:
     path: /clientarea
 - alterId: 0
   cipher: auto
-  name: '106,156,157,164,166,173,189,331|🇨🇦CA-23.162.200.94-8283 #6'
+  name: 106,115,148,259,265,266,278,284,285,292,298,299,308|CA 2|openitr
+  network: tcp
+  port: '17163'
+  server: 108.181.200.220
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d54814a1-7a93-45f8-9117-db317a25d100
+- alterId: 0
+  cipher: auto
+  name: '106,156,157,164,166,173,189,331|🇨🇦CA-23.162.200.94-8280 #6'
   network: ws
   port: 443
   server: 23.162.200.94
@@ -2695,7 +2675,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '106,156,157,164,166,173,175,186,189,331|🇨🇦CA-158.51.121.36-3145 #6'
+  name: '106,156,157,164,166,173,175,186,189,331|🇨🇦CA-158.51.121.36-3148 #6'
   network: ws
   port: 443
   server: 158.51.121.36
@@ -2707,20 +2687,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '106,156,157,164,166,173,189,331|🇨🇦CA-134.195.198.147-8377 #6'
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -6133,6 +6099,34 @@ proxies:
     headers:
       Host: cadld2.gophers.gay
     path: /
+- alterId: 0
+  cipher: auto
+  name: '164,173,189,331|🇨🇦CA-134.195.198.147-8312 #2'
+  network: ws
+  port: 443
+  server: 134.195.198.147
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 164,173,343|加拿大_1114003
+  network: ws
+  port: '443'
+  server: 134.195.198.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /
 - alterId: 1
   cipher: auto
   name: 164,173,343|加拿大_1114005
@@ -6149,7 +6143,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '164,173|🇨🇦CA-104.247.81.52-1421 #1'
+  name: '164,173|🇨🇦CA-104.247.81.52-1380 #1'
   network: ws
   port: 443
   server: uk.xlkjjs.top
@@ -6195,7 +6189,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '164,173,186,188,248,319,321,333|@Vip_Security join us - 55
+  name: '164,173,186,188,248,319,321,333|@Vip_Security join us - 391
 
     '
   network: http
@@ -6221,7 +6215,7 @@ proxies:
     path: /JAGOANSSH/
 - alterId: 0
   cipher: auto
-  name: '164,173|🇨🇦CA-104.247.81.52-5701 #1'
+  name: '164,173|🇨🇦CA-104.247.81.52-5704 #1'
   network: ws
   port: 443
   server: tw.xlkjjs.top
@@ -6235,7 +6229,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '164,173|🇨🇦CA-149.56.95.159-5729 #1'
+  name: '164,173|🇨🇦CA-149.56.95.159-5732 #1'
   network: ws
   port: 23784
   server: 149.56.95.159
@@ -6249,7 +6243,7 @@ proxies:
     path: /
 - alterId: 4
   cipher: auto
-  name: '164,173|🇨🇦CA-138.197.165.31-6281 #1'
+  name: '164,173|🇨🇦CA-138.197.165.31-6284 #1'
   network: ws
   port: 8080
   server: 138.197.165.31
@@ -6277,20 +6271,6 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 164,173,343|加拿大_1114029
-  network: ws
-  port: '443'
-  server: 15.235.50.172
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: baradiha.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 164,173,189,343|加拿大_1114028
   network: ws
   port: '443'
@@ -6303,6 +6283,20 @@ proxies:
     headers:
       Host: mankadmu.com
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 164,173,343|加拿大_1114029
+  network: ws
+  port: '443'
+  server: 15.235.50.172
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: baradiha.com
+    path: /
 - alterId: 1
   cipher: auto
   name: '164,173,189|美国 v2rayfree.eu.org #6'
@@ -6319,7 +6313,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '164,173|🇨🇦CA-38.96.254.35-8896 #1'
+  name: '164,173|🇨🇦CA-38.96.254.35-8905 #1'
   network: ws
   port: 443
   server: 38.96.254.35
