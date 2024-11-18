@@ -1,13 +1,16 @@
 proxies:
-- cipher: aes-128-gcm
-  name: 7,9,155,158,304,347|JP_Tokyo_Datacamp Limited1
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 7,9,155,158,304,306,347|JP_Tokyo_Datacamp Limited1
   password: shadowsocks
   port: 443
   server: 149.22.87.240
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 1
   cipher: auto
-  name: 12,343|日本_1116006
+  name: 12,343|日本_1118002
   network: ws
   port: '443'
   server: 92.38.178.93
@@ -21,21 +24,32 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '15,17,18,102,106,110,112,257,259,265,266,276,278,284,285,287,288,289,290,292,298,299,306,307|HK5
-    #5'
-  network: tcp
-  port: '15086'
-  server: 125.59.146.198
+  name: '15|🇯🇵[openproxylist.com] vmess-JP #1'
+  network: ws
+  port: 443
+  server: jpvbshohcgc.com
   servername: ''
-  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: fa1897db-1925-4c86-a495-939a959af900
+  ws-opts:
+    headers:
+      Host: jpvbshohcgc.com
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 18,45,50,58,102,106,110,138,257,259,265,266,276,278,284,285,287,288,289,290,292,298,299,333,337,343|日本_1118003
+  network: tcp
+  port: '23468'
+  server: 47.74.8.202
+  servername: ''
   tls: false
   type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  uuid: 9f563bc7-0481-41d2-f8fd-a4736ded9bc0
 - alterId: 0
-  cipher: none
-  name: '18,106,189,292,298,299,337|@Vip_Security join us - 72
-
-    '
+  cipher: auto
+  name: "18,45,50,102,106,110,189,257,259,265,266,276,278,284,285,287,288,289,290,292,298,299,333,337|@Vip_Security\
+    \ join us - 73\n #1"
   network: tcp
   port: '43720'
   server: 61.120.9.18
@@ -43,60 +57,6 @@ proxies:
   tls: false
   type: vmess
   uuid: f248d0e9-19f7-ea7f-6659-17a610dfe8d6
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: '19,66,98,99,102,106,109,112,120,121,122,155,164,165,168,173,174,193,194,195,234,247,332,337|@Vip_Security
-    join us - 434
-
-    '
-  network: ws
-  port: '33202'
-  server: yd2.ainivp.com
-  servername: yd2.ainivp.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 9204afcd-023e-781f-1abc-c12efccd1344
-  ws-opts:
-    headers:
-      Host: yd2.ainivp.com
-    path: /ray
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19,66,98,99,102,106,109,112,120,121,122,155,164,165,168,173,174,189,193,194,195,234,332,345|新加坡_1117001
-  network: ws
-  port: '30002'
-  server: 134.122.184.117
-  servername: www.31402191.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.31402191.xyz
-    path: /path/351212081517
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 19,66,98,99,102,106,109,112,120,121,122,155,164,165,168,173,174,189,193,194,195,234,332,345|美国_1117007
-  network: ws
-  port: '443'
-  server: 107.148.1.118
-  servername: www.44010396.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.44010396.xyz
-    path: /path/351212081517
 - name: 37|🆔@LuxyNet💎❖❖JP❖131
   network: tcp
   password: 254aa898-bc2a-4ec8-87d1-9f5d37658f6c
@@ -114,25 +74,25 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 37,155|🇺🇸US-172.234.222.143-8968
+  name: 37,155|🇺🇸US-172.234.222.138-8868
   password: G!yBwPWH3Vao
   port: 812
   server: ak1794.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37,155|🇺🇸US-172.234.222.143-8970
+  name: 37,155|🇺🇸US-172.234.222.138-8870
   password: G!yBwPWH3Vao
   port: 804
   server: ak1785.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37,155|🇺🇸US-172.234.222.138-8974
+  name: 37,155|🇺🇸US-172.234.222.143-8874
   password: G!yBwPWH3Vao
   port: 810
   server: ak1774.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
   type: ss
 - cipher: aes-256-cfb
-  name: 37,65,155|🇵JP-54.199.83.239-6000
+  name: 37,65,155|🇵JP-54.199.83.239-5898
   password: doub.io
   port: 2333
   server: 54.199.83.239
@@ -159,14 +119,14 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 37,155|🇵JP-43.207.83.221-9139
+  name: 37,155|🇵JP-43.207.83.221-9039
   password: amazonskr05
   port: 443
   server: 43.207.83.221
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇯🇵JP
-  name: 37,65,74,155|🇵JP-185.172.113.182-6077
+  name: 37,65,74,155|🇵JP-185.172.113.182-5975
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
@@ -174,7 +134,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇯🇵JP
-  name: 37,65,74,155|🇵JP-185.172.113.182-6075
+  name: 37,65,74,155|🇵JP-185.172.113.182-5973
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
@@ -182,7 +142,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇯🇵JP
-  name: 37,65,74,155|🇵JP-185.172.113.182-6072
+  name: 37,65,74,155|🇵JP-185.172.113.182-5970
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
@@ -191,7 +151,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '37,65,93,155,164,165,168,173,174,206,308,316,321,337|@Vip_Security join us
-    - 218
+    - 229
 
     '
   network: ws
@@ -212,7 +172,7 @@ proxies:
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 37,74,90,128,150,151,152,215,308,329,343|日本_1116001
+  name: '37,74,90,128,150,151,152,215,308,329|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) #63'
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -244,7 +204,7 @@ proxies:
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - cipher: aes-256-cfb
-  name: 37,155|JP-103.75.118.27-9923
+  name: 37,155|JP-103.75.118.27-9823
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.75.118.27
@@ -755,6 +715,34 @@ proxies:
   server: 13.231.229.41
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 66,251|CN_ youtube@资源分享师  _8
+  network: ws
+  port: 15202
+  server: gy.xiyunchen.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 66,251|CN_ youtube@资源分享师  _6
+  network: ws
+  port: 49352
+  server: gy.xiyunchen.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 15b190b3-f974-4ee1-a289-613d14b38b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: -1
   cipher: aes-256-cfb
   name: 70|JP😈github.com/Ruk1ng001_2278574007
@@ -762,13 +750,21 @@ proxies:
   port: 443
   server: 3.38.209.2
   type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  name: 70,155|🇷KR-52.79.56.225-2924
-  password: amazonskr05
-  port: 443
-  server: 52.79.56.225
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '79,81,83,155,164,165,168,173,174|🇯🇵JP-52.196.144.61-2337 #4'
+  network: ws
+  port: 3331
+  server: f1f3227.u1.glados-config.net
+  servername: f1f3227.u1.glados-config.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  ws-opts:
+    headers:
+      Host: f1f3227.u1.glados-config.net
+    path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
   name: 93|🇯🇵_JP_日本_1_0@8
@@ -838,13 +834,13 @@ proxies:
       host: suzhihan.eu.org
     path: /roewesu
 - cipher: aes-256-gcm
-  name: 93,155|🇯🇵JP-85.208.108.90-2334
+  name: 93,155|🇯🇵JP-85.208.108.90-2242
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.90
   type: ss
 - cipher: aes-256-gcm
-  name: 93,155|🇯🇵JP-85.208.108.90-2353
+  name: 93,155|🇯🇵JP-85.208.108.90-2261
   password: zDNVedRFPQexG9v
   port: 6379
   server: 85.208.108.90
@@ -875,13 +871,13 @@ proxies:
       host: www.wyca.ga
     path: /giuivws
 - cipher: aes-256-gcm
-  name: 93,155|🇵JP-85.208.108.90-2402
+  name: 93,155|🇵JP-85.208.108.90-2310
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.90
   type: ss
 - cipher: aes-256-cfb
-  name: 93,155|🇵JP-43.207.166.104-2403
+  name: 93,155|🇵JP-43.207.166.104-2311
   password: amazonskr05
   port: 443
   server: 43.207.166.104
@@ -989,7 +985,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 93,155,164,165,168,173,174,343|日本_1116015
+  name: 93,155,164,165,168,173,174,343|日本_1118013
   network: ws
   port: '443'
   server: 172.104.78.98
@@ -1003,13 +999,13 @@ proxies:
       Host: ''
     path: /chat
 - cipher: aes-256-cfb
-  name: 93,155|🇵JP-43.207.153.185-2601
+  name: 93,155|🇵JP-43.207.153.185-2509
   password: amazonskr05
   port: 443
   server: 43.207.153.185
   type: ss
 - cipher: aes-256-cfb
-  name: 93,155|🇵JP-175.41.205.247-2623
+  name: 93,155|🇵JP-175.41.205.247-2531
   password: amazonskr05
   port: 443
   server: 175.41.205.247
@@ -1032,7 +1028,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '93,155,164,165,168,173,174|🇯🇵JP-138.2.45.89-2597 #4'
+  name: '93,155,164,165,168,173,174|🇯🇵JP-138.2.45.89-2584 #4'
   network: ws
   port: 4430
   server: 138.2.45.89
@@ -1046,14 +1042,14 @@ proxies:
       Host: ''
     path: /osav101
 - cipher: aes-256-cfb
-  name: 93,155|🇵JP-54.178.60.213-2704
+  name: 93,155|🇵JP-54.178.60.213-2612
   password: amazonskr05
   port: 443
   server: 54.178.60.213
   type: ss
 - alterId: 0
   cipher: auto
-  name: '93,155,164,165,168,173,174|🇯🇵JP-43.128.225.220-2627 #4'
+  name: '93,155,164,165,168,173,174|🇯🇵JP-43.128.225.220-2614 #4'
   network: ws
   port: 80
   server: 43.128.225.220
@@ -1068,7 +1064,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '93,94,155,164,165,168,173,174|🇯🇵JP-138.2.39.67-2646 #4'
+  name: '93,94,155,164,165,168,173,174|🇯🇵JP-138.2.39.67-2633 #4'
   network: ws
   port: 80
   server: 138.2.39.67
@@ -1083,7 +1079,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '93,155,164,165,168,173,174|🇯🇵JP-141.147.181.219-2649 #4'
+  name: '93,155,164,165,168,173,174|🇯🇵JP-141.147.181.219-2636 #5'
   network: ws
   port: 443
   server: 141.147.181.219
@@ -1212,7 +1208,7 @@ proxies:
   ws-opts:
     path: /hls/cctv5phd.m3u8
 - cipher: aes-256-cfb
-  name: 93,155|🇯🇵JP-43.207.82.53-2809
+  name: 93,155|🇯🇵JP-43.207.82.53-2717
   password: amazonskr05
   port: 443
   server: 43.207.82.53
@@ -1245,7 +1241,7 @@ proxies:
     path: /a79f2127-3ba4-4af8-96d5-2db3a0e186a7
 - alterId: 0
   cipher: auto
-  name: '94,155,164,165,168,173,174|🇯🇵JP-140.83.35.62-2692 #4'
+  name: '94,155,164,165,168,173,174|🇯🇵JP-140.83.35.62-2679 #4'
   network: ws
   port: 443
   server: jp-amd1.018999.xyz
@@ -1425,14 +1421,6 @@ proxies:
   port: 443
   server: 43.207.88.83
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 121,155,188,192,328,332|Singapore_Singapore_ss_1134
-  password: amazonskr05
-  port: 443
-  server: 54.151.152.144
-  tfo: false
-  type: ss
 - alterId: 1
   cipher: auto
   name: '124|🇯🇵_油管：全网最强白嫖 #6'
@@ -1540,10 +1528,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-47.91.23.182-0008 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-47.74.43.158-0045 #4'
   network: ws
   port: 443
-  server: 47.91.23.182
+  server: 47.74.43.158
   servername: ''
   skip-cert-verify: false
   tls: true
@@ -1554,43 +1542,43 @@ proxies:
       Host: lg30.cfcdn3.xyz
     path: /ray
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇵JP-89.31.126.150-0138
+  name: 155|🇵JP-89.31.126.150-0126
   password: G!yBwPWH3Vao
   port: 802
   server: 89.31.126.150
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇵JP-45.66.134.176-0139
+  name: 155|🇯🇵JP-45.66.134.176-0127
   password: G!yBwPWH3Vao
   port: 809
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0140
+  name: 155|🇯🇵JP-45.66.134.176-0128
   password: G!yBwPWH3Vao
   port: 806
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-89.31.126.150-0141
+  name: 155|🇯🇵JP-89.31.126.150-0129
   password: G!yBwPWH3Vao
   port: 812
   server: 89.31.126.150
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-185.160.24.217-0142
+  name: 155|🇯🇵JP-185.160.24.217-0130
   password: G!yBwPWH3Vao
   port: 804
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-185.160.24.217-0143
+  name: 155|🇯🇵JP-185.160.24.217-0131
   password: G!yBwPWH3Vao
   port: 812
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0144
+  name: 155|🇯🇵JP-45.66.134.176-0132
   password: G!yBwPWH3Vao
   port: 810
   server: 45.66.134.176
@@ -1602,110 +1590,110 @@ proxies:
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0147
+  name: 155|🇯🇵JP-45.66.134.176-0135
   password: G!yBwPWH3Vao
   port: 802
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0148
+  name: 155|🇯🇵JP-45.66.134.176-0136
   password: G!yBwPWH3Vao
   port: 807
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0150
+  name: 155|🇯🇵JP-45.66.134.176-0138
   password: G!yBwPWH3Vao
   port: 801
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0151
+  name: 155|🇯🇵JP-45.66.134.176-0139
   password: G!yBwPWH3Vao
   port: 805
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-185.160.24.217-0152
+  name: 155|🇯🇵JP-185.160.24.217-0140
   password: G!yBwPWH3Vao
   port: 805
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-185.160.24.217-0153
+  name: 155|🇯🇵JP-185.160.24.217-0141
   password: G!yBwPWH3Vao
   port: 808
   server: 185.160.24.217
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-45.66.134.176-0154
+  name: 155|🇯🇵JP-45.66.134.176-0142
   password: G!yBwPWH3Vao
   port: 803
   server: 45.66.134.176
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155|🇯🇵JP-185.160.24.217-0155
+  name: 155|🇯🇵JP-185.160.24.217-0143
   password: G!yBwPWH3Vao
   port: 803
   server: 185.160.24.217
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-54.238.98.72-0410
+  name: 155|🇵JP-54.238.98.72-0398
   password: amazonskr05
   port: 443
   server: 54.238.98.72
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇯🇵JP-43.207.191.29-0415
+  name: 155|🇯🇵JP-43.207.191.29-0403
   password: amazonskr05
   port: 443
   server: 43.207.191.29
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-54.178.150.106-0422
+  name: 155|🇵JP-54.178.150.106-0410
   password: amazonskr05
   port: 443
   server: 54.178.150.106
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇯🇵JP-3.113.6.44-0446
+  name: 155|🇯🇵JP-3.113.6.44-0434
   password: amazonskr05
   port: 443
   server: 3.113.6.44
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-18.183.222.13-0448
+  name: 155|🇵JP-18.183.222.13-0436
   password: amazonskr05
   port: 443
   server: 18.183.222.13
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-43.206.230.24-0461
+  name: 155|🇵JP-43.206.230.24-0449
   password: amazonskr05
   port: 443
   server: 43.206.230.24
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇯🇵JP-57.180.242.217-0471
+  name: 155|🇯🇵JP-57.180.242.217-0459
   password: amazonskr05
   port: 443
   server: 57.180.242.217
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-13.115.231.230-0482
+  name: 155|🇵JP-13.115.231.230-0470
   password: amazonskr05
   port: 443
   server: 13.115.231.230
   type: ss
 - cipher: aes-256-cfb
-  name: 155|🇵JP-172.104.123.158-0845
+  name: 155|🇵JP-172.104.123.158-0833
   password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
   port: 8097
   server: 172.104.123.158
   type: ss
 - alterId: 0
   cipher: auto
-  name: 155,164,165,168,173,174,343|日本_1116012
+  name: 155,164,165,168,173,174,343|日本_1118010
   network: ws
   port: '443'
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -1720,7 +1708,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 155,164,165,168,173,174,343|日本_1116013
+  name: 155,164,165,168,173,174,343|日本_1118011
   network: ws
   port: '443'
   server: suzhihan.eu.org
@@ -1734,20 +1722,20 @@ proxies:
       Host: suzhihan.eu.org
     path: /roewesu
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.61-0891
+  name: 155|🇵JP-85.208.108.61-0879
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.61
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-20.210.122.21-0916
+  name: 155|🇯🇵JP-20.210.122.21-0904
   password: 233blog.com
   port: 443
   server: 20.210.122.21
   type: ss
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.105.219.18-0928 #5'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.105.219.18-0916 #5'
   network: ws
   port: 443
   server: 172.105.219.18
@@ -1775,7 +1763,7 @@ proxies:
     path: /chat
 - alterId: 64
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-152.70.103.195-1570 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-152.70.103.195-1560 #4'
   network: ws
   port: 37206
   server: 152.70.103.195
@@ -1803,24 +1791,24 @@ proxies:
     headers:
       Host: 138.2.52.176
     path: /
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-52.196.144.61-2350 #4'
+  name: 155,164,165,168,173,174,189,343,345|美国_1117007
   network: ws
-  port: 3331
-  server: f1f3227.u1.glados-config.net
-  servername: f1f3227.u1.glados-config.net
+  port: '443'
+  server: 107.148.1.118
+  servername: www.44010396.xyz
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: f1f3227.u1.glados-config.net
-    path: /s/f1f3227.fm.apple.com:111548
+      Host: www.44010396.xyz
+    path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-35.72.161.88-2406 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-35.72.161.88-2393 #4'
   network: ws
   port: 22356
   server: 001.AP.POP.node-for-smallairport.win
@@ -1835,7 +1823,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-3.112.210.227-2653 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-3.112.210.227-2640 #5'
   network: ws
   port: 23245
   server: jp04.170203.xyz
@@ -1847,6 +1835,21 @@ proxies:
   ws-opts:
     headers:
       Host: jp04.170203.xyz
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '155,164,165,168,173,174,186,188,248|🇸🇬 二爷翻墙20241111更新_65_US #2'
+  network: ws
+  port: 443
+  server: 107.148.1.118
+  servername: www.44010396.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.44010396.xyz
     path: /
 - cipher: aes-256-gcm
   name: '155,176,181,184,185|🇯🇵_JP_日本_8 #1'
@@ -2127,38 +2130,38 @@ proxies:
   server: 85.208.108.92
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.20-5262
+  name: 155|🇵JP-85.208.108.20-5165
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-5263
+  name: 155|🇯🇵JP-85.208.108.20-5166
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.20-5266
+  name: 155|🇵JP-85.208.108.20-5169
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-5267
+  name: 155|🇯🇵JP-85.208.108.20-5170
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.60-5426
+  name: 155|🇵JP-85.208.108.60-5329
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.60
   type: ss
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.105.223.136-5457 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.105.223.136-5431 #4'
   network: ws
   port: 443
   server: 172.105.223.136
@@ -2173,7 +2176,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-52.196.144.61-5466 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-52.196.144.61-5440 #5'
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -2188,7 +2191,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-152.69.193.245-5574 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-152.69.193.245-5548 #5'
   network: ws
   port: 80
   server: 152.69.193.245
@@ -2203,7 +2206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 155,164,165,168,173,174,343|日本_1116021
+  name: 155,164,165,168,173,174,343|日本_1118019
   network: ws
   port: '443'
   server: 147.78.244.7
@@ -2218,7 +2221,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-124.156.225.184-5648 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-124.156.225.184-5622 #5'
   network: ws
   port: 443
   server: 124.156.225.184
@@ -2239,7 +2242,7 @@ proxies:
   type: ss
 - alterId: 4
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-157.254.193.68-5909 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-157.254.193.68-5878 #4'
   network: ws
   port: 10020
   server: 157.254.193.68
@@ -2253,218 +2256,218 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.93-6300
+  name: 155|🇵JP-85.208.108.93-6198
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.93
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6501
+  name: 155|🇵JP-85.208.108.59-6399
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.18-6503
+  name: 155|🇵JP-85.208.108.18-6401
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.18
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6505
+  name: 155|🇵JP-85.208.108.59-6403
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.20-6506
+  name: 155|🇵JP-85.208.108.20-6404
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.21-6507
+  name: 155|🇯🇵JP-85.208.108.21-6405
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6508
+  name: 155|🇯🇵JP-85.208.108.59-6406
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.21-6509
+  name: 155|🇵JP-85.208.108.21-6407
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-6510
+  name: 155|🇯🇵JP-85.208.108.20-6408
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.21-6511
+  name: 155|🇵JP-85.208.108.21-6409
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6514
+  name: 155|🇵JP-85.208.108.59-6412
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-6515
+  name: 155|🇯🇵JP-85.208.108.20-6413
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-6516
+  name: 155|🇯🇵JP-85.208.108.20-6414
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6518
+  name: 155|🇵JP-85.208.108.59-6416
   password: KixLvKzwjekG00rm
   port: 8000
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6519
+  name: 155|🇯🇵JP-85.208.108.59-6417
   password: XKFKl2rULjIp74
   port: 8008
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.94-6521
+  name: 155|🇵JP-85.208.108.94-6419
   password: KixLvKzwjekG00rm
   port: 8080
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6524
+  name: 155|🇯🇵JP-85.208.108.59-6422
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6529
+  name: 155|🇵JP-85.208.108.59-6427
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6533
+  name: 155|🇵JP-85.208.108.59-6431
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6534
+  name: 155|🇯🇵JP-85.208.108.59-6432
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.21-6536
+  name: 155|🇵JP-85.208.108.21-6434
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6537
+  name: 155|🇵JP-85.208.108.59-6435
   password: e4FCWrgpkji3QY
   port: 9102
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.58-6538
+  name: 155|🇯🇵JP-85.208.108.58-6436
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.58
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.94-6540
+  name: 155|🇵JP-85.208.108.94-6438
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 85.208.108.94
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6541
+  name: 155|🇯🇵JP-85.208.108.59-6439
   password: pKEW8JPByTVTLtM
   port: 443
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6542
+  name: 155|🇵JP-85.208.108.59-6440
   password: faBAoD54k87UJG7
   port: 2375
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6544
+  name: 155|🇵JP-85.208.108.59-6442
   password: faBAoD54k87UJG7
   port: 2376
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6546
+  name: 155|🇵JP-85.208.108.59-6444
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6550
+  name: 155|🇯🇵JP-85.208.108.59-6448
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.21-6551
+  name: 155|🇵JP-85.208.108.21-6449
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.21
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-6552
+  name: 155|🇯🇵JP-85.208.108.20-6450
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.20-6554
+  name: 155|🇯🇵JP-85.208.108.20-6452
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.20
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6555
+  name: 155|🇵JP-85.208.108.59-6453
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇯🇵JP-85.208.108.59-6557
+  name: 155|🇯🇵JP-85.208.108.59-6455
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 85.208.108.59
   type: ss
 - cipher: aes-256-gcm
-  name: 155|🇵JP-85.208.108.59-6558
+  name: 155|🇵JP-85.208.108.59-6456
   password: e4FCWrgpkji3QY
   port: 9101
   server: 85.208.108.59
   type: ss
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-138.2.52.244-7840 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-138.2.52.244-7809 #4'
   network: ws
   port: 443
   server: 138.2.52.244
@@ -2479,7 +2482,7 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 155,164,165,168,173,174,189,343|新加坡_1116002
+  name: 155,164,165,168,173,174,189,343|新加坡_1118002
   network: ws
   port: '443'
   server: 134.122.139.79
@@ -2494,7 +2497,7 @@ proxies:
     path: /path/011410073331
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.234.94.163-8180 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.234.94.163-8164 #4'
   network: ws
   port: 443
   server: 172.234.94.163
@@ -2509,7 +2512,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.234.88.187-8191 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.234.88.187-8175 #5'
   network: ws
   port: 443
   server: 172.234.88.187
@@ -2524,7 +2527,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.233.92.155-8195 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.233.92.155-8179 #4'
   network: ws
   port: 443
   server: 172.233.92.155
@@ -2539,7 +2542,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '155,164,165,168,173,174|🇯🇵JP-172.234.86.166-8198 #4'
+  name: '155,164,165,168,173,174|🇯🇵JP-172.234.86.166-8182 #4'
   network: ws
   port: 12000
   server: 172.234.86.166
@@ -2584,7 +2587,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 155,164,165,168,173,174,343|日本_1116026
+  name: 155,164,165,168,173,174,343|日本_1118025
   network: ws
   port: '888'
   server: 103.168.155.26
@@ -2599,7 +2602,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 155,164,165,168,173,174,343|日本_1116027
+  name: 155,164,165,168,173,174,343|日本_1118026
   network: ws
   port: '888'
   server: 103.168.155.40
@@ -2834,19 +2837,6 @@ proxies:
     headers:
       Host: jp1.sanfen001.pics
     path: /cn
-- alterId: 64
-  cipher: auto
-  name: 192|🇵JP-107.148.1.118-110
-  network: ws
-  port: 443
-  server: 107.148.1.118
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: www.44010396.xyz
-  ws-path: /path/351212081517
 - alterId: 0
   cipher: auto
   name: 201|@V2ray_NG🇯🇵
@@ -3681,7 +3671,7 @@ proxies:
   uuid: 22acc467-7440-386a-927a-d84be554b37e
 - alterId: 1
   cipher: auto
-  name: 209,343|日本_1116003
+  name: 209,343|日本_1118005
   network: tcp
   port: '21585'
   server: jp01-alt-vm0.entry.srthdw.art
@@ -4228,17 +4218,6 @@ proxies:
     path: /ct/sh2/jp2
 - alterId: 0
   cipher: auto
-  name: 328|🇵 日本_121320001
-  network: ws
-  port: 443
-  server: 103.35.190.65
-  tls: false
-  type: vmess
-  uuid: ed531ebe-4971-47f9-a881-636d0b101a45
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 328|🇯🇵 日本_121320009
   network: ws
   port: 80
@@ -4292,27 +4271,9 @@ proxies:
     headers:
       Host: pqrb.xsjhl.xyz
     path: /?ed=2048
-- name: 332|Japan_Tokyo_trojan_1122
-  network: tcp
-  password: AO0FjYBS38ZFCC2q93RpcAXySE6wON5apeaT83nDRDZlz7KxyeYC3xaDISgul4
-  port: 28332
-  server: 154.31.115.33
-  skip-cert-verify: false
-  sni: feadal.superpokemon.com
-  type: trojan
 - alterId: 1
   cipher: auto
-  name: 343|日本_1116004
-  network: ''
-  port: '21585'
-  server: jp03-alt-vm0.entry.srthdw.art
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
-- alterId: 1
-  cipher: auto
-  name: 343|日本_1116005
+  name: 343|日本_1118001
   network: ws
   port: '443'
   server: 92.38.178.69
@@ -4326,7 +4287,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: 343|日本_1116007
+  name: 343|日本_1118004
   network: ''
   port: '24445'
   server: 140.83.63.38
@@ -4334,34 +4295,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 343|日本_1116008
-  network: ws
-  port: '13389'
-  server: 00000000000000000000000009.node-for-smallairport.win
+  name: 343|日本_1118006
+  network: ''
+  port: '21585'
+  server: jp03-alt-vm0.entry.srthdw.art
   servername: ''
   tls: false
   type: vmess
-  uuid: ab0ab89d-de80-44bd-b938-cafda772976d
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 343|日本_1116009
-  network: ws
-  port: '443'
-  server: 92.38.178.93
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: linkvws
+  uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10
 - cipher: chacha20-ietf-poly1305
   name: 347|JP_Tokyo_Akari Networks12
   password: a4ac2592-28e7-4927-94b3-277edae0869a
