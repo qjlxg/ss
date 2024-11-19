@@ -1,26 +1,21 @@
 proxies:
 - cipher: aes-128-cfb
-  name: 0,53,332|The Netherlands_Rozendaal_ssr_1120
-  obfs: plain
-  password: shadowsocks
-  port: 443
-  protocol: origin
-  server: 109.201.152.181
-  type: ssr
-- alterId: -1
-  cipher: aes-128-cfb
   client-fingerprint: chrome
-  name: 7,9,37,53,70,121,155,158,304,332,342|NL_speednode_0017
+  name: 7,9,37,53,65,121,155,158,304,332|The Netherlands_Rozendaal_ss_1129
   password: shadowsocks
   port: 443
   server: 109.201.152.181
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 7|🇳🇱NL-89.23.103.21-3179 | 30.661MB
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 7,306|未知68
   password: oYQ8JwEldYn4KT2gfZ6eNl
   port: 51584
   server: 89.23.103.21
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 7,304|🇳🇱NL-5.35.47.122-4655 | 18.458MB
@@ -36,7 +31,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 7,306|未知46 13.6MB/s
+  name: 7,306|未知119 4.5MB/s
   password: uQS5ntVqC00sSKkeNzUiD3
   port: 42090
   server: 89.23.103.125
@@ -49,29 +44,26 @@ proxies:
   port: 30252
   server: 176.124.199.255
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 7,306,312|SS-荷兰-NF解锁兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:19999
+- cipher: chacha20-ietf-poly1305
+  name: 7,312|SS-荷兰-NF解锁兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:19999
   password: '%-MVa11&zp'
   port: 19999
   server: 176.124.199.255
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 7,306|未知126 2.0MB/s
+  password: Q52u8uJPVPXApYrqsRnZgu
+  port: 16942
+  server: 178.208.91.118
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 7|🇳🇱NL-178.208.91.118-3329 | 7.611MB
-  password: Q52u8uJPVPXApYrqsRnZgu
-  port: 16942
-  server: 178.208.91.118
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 7,304,306|未知54 1.2MB/s
+  name: 7,304|🇳🇱NL-147.45.136.147-3334 | 9.117MB
   password: VvWvM0IP6whUKaMEuqeN6M
   port: 41095
   server: 147.45.136.147
-  skip-cert-verify: true
-  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -127,11 +119,12 @@ proxies:
       host: v2node12.bipbupvpn.com
     path: /AAA
 - cipher: chacha20-ietf-poly1305
-  name: 37,155,206|MOHSEN-🇳🇱-NL_4
+  name: 37,65,155,206|MOHSEN-🇳🇱-NL_4
   password: qGjmI8WQlF0tfhDbkLqGdN
   port: 8080
   server: passconf.xyz
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37,155|NL-172.233.51.96-8824
   password: XvK0ltH67Xhv9ht9RhYsFy
@@ -139,11 +132,12 @@ proxies:
   server: masting.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37,155|🇺🇸US-13.248.169.48-8905
+  name: 37,65,155|🇺🇸US-13.248.169.48-8905
   password: Z1wBgCIV329qt77IFvDEGE
   port: 8080
   server: beeconf.xyz
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 37,155|🇺🇸US-13.248.169.48-8907
   password: T1pb7XxxrolvPSb0u2xSOA
@@ -400,6 +394,14 @@ proxies:
     headers:
       Host: nl-a.yuji2022.eu.org
     path: /doxwPZje9wMMZi4m9xY8GkU5zT3Hs4kRDL4W3nistSRmDw3x2
+- cipher: aes-128-cfb
+  name: 53|The Netherlands_Rozendaal_ssr_1114
+  obfs: plain
+  password: shadowsocks
+  port: 443
+  protocol: origin
+  server: 109.201.152.181
+  type: ssr
 - alterId: 0
   cipher: aes-128-gcm
   name: '56,201|Netherlands Scaleway #1'
@@ -410,6 +412,84 @@ proxies:
   tls: false
   type: vmess
   uuid: 691aed00-01a8-4b04-b8dc-ce2266d41952
+- alterId: 64
+  cipher: auto
+  name: 65,308|NL 3|openitr
+  network: ws
+  port: '30000'
+  server: 51.89.2.48
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/203113182529
+- alterId: 64
+  cipher: auto
+  name: 65|🇳🇱 NL 11 → tg@nicevpn123
+  network: ws
+  port: 41000
+  server: 46.182.107.23
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 65|🇳🇱 NL 12 → tg@nicevpn123
+  network: ws
+  port: 18888
+  server: sgp.xrenblog.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6731a7a4-cac0-4218-d3e7-a4fe8c933b5a
+  ws-opts:
+    headers:
+      Host: sgp.xrenblog.com
+    path: /xrenblog
+- cipher: chacha20-ietf-poly1305
+  name: 65|🇳🇱 NL 4 → tg@nicevpn123
+  password: a8bt9fY0QsLS6eLnXUe0Ym
+  port: 8080
+  server: beedoost.org
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 65|🇳🇱 NL 7 → tg@nicevpn123
+  network: ws
+  port: 41001
+  server: 46.182.107.56
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 65,308|NL 2|openitr
+  network: ws
+  port: '80'
+  server: hdfy8d1.cpionline.co
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  ws-opts:
+    headers:
+      Host: hdfy8d1.cpionline.co
+    path: /Av8czorIlYicU6D349brWUw6a
 - cipher: chacha20-ietf-poly1305
   name: 93,155|NL-51.124.217.177-2442
   password: TRoGQKepg1AsWO2kTnfPnb
@@ -459,6 +539,20 @@ proxies:
   port: 8389
   server: 89.238.177.234
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 130,140,189|🏁RELAY-172.67.74.4-0155
+  network: ws
+  port: 443
+  server: 172.67.74.4
+  servername: mikasa.yaemiko.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  ws-opts:
+    headers:
+      Host: mikasa.yaemiko.cloudns.org
+    path: /ivideos.sbs/linkws
 - alterId: 0
   cipher: auto
   name: "130,140|@vpnclashfa - 8\n #2"
@@ -732,12 +826,6 @@ proxies:
       Host: www.47734647.xyz
     path: /path/1698239888914
 - cipher: chacha20-ietf-poly1305
-  name: 155|NL-185.242.86.156-0249
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 155|🇳🇱NL-77.221.154.33-0253
   password: lU6*V8=shP
   port: 59529
@@ -750,7 +838,7 @@ proxies:
   server: 193.29.139.248
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 155,312,332,342|NL_speednode_0018
+  name: 155,312|SS-荷兰-NF解锁自制剧-ChatGPT-TikTok-YouTube-194.87.82.28:12224
   password: 2fwufOmJ9ELfN4umzcHBfV
   port: 12224
   server: 194.87.82.28
@@ -785,12 +873,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 155,188,312|SS-美国-NF解锁兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.102.95:21771
-  password: sE4HkRH9agsPPc7DE2IMDT
-  port: 21771
-  server: 150.241.102.95
-  type: ss
 - alterId: 64
   cipher: auto
   name: '155,164,165,168,173,174,329|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) #74'
@@ -1711,7 +1793,7 @@ proxies:
     path: /path/1707820793174
 - alterId: 0
   cipher: auto
-  name: '189,337|@Vip_Security join us - 240
+  name: '189,337|@Vip_Security join us - 234
 
     '
   network: tcp
@@ -1723,7 +1805,7 @@ proxies:
   uuid: fa1897db-1925-4c86-a495-939a959af900
 - alterId: 0
   cipher: auto
-  name: '189,337|@Vip_Security join us - 239
+  name: '189,337|@Vip_Security join us - 233
 
     '
   network: tcp
@@ -1745,7 +1827,7 @@ proxies:
   uuid: fa1897db-1925-4c86-a495-939a959af900
 - alterId: 0
   cipher: auto
-  name: '189,337|@Vip_Security join us - 242
+  name: '189,337|@Vip_Security join us - 236
 
     '
   network: tcp
@@ -1757,7 +1839,7 @@ proxies:
   uuid: fa1897db-1925-4c86-a495-939a959af900
 - alterId: 0
   cipher: auto
-  name: '189,337|@Vip_Security join us - 241
+  name: '189,337|@Vip_Security join us - 235
 
     '
   network: tcp
@@ -2588,32 +2670,6 @@ proxies:
     path: /path/051111230910
 - alterId: 0
   cipher: auto
-  name: 308|NL 2|openitr
-  network: ws
-  port: '80'
-  server: hdfy8d1.cpionline.co
-  tls: false
-  type: vmess
-  uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  ws-opts:
-    headers:
-      Host: hdfy8d1.cpionline.co
-    path: /Av8czorIlYicU6D349brWUw6a
-- alterId: 64
-  cipher: auto
-  name: 308|NL 3|openitr
-  network: ws
-  port: '30000'
-  server: 51.89.2.48
-  tls: true
-  type: vmess
-  uuid: 9f58234c-355b-4065-ae21-d4a63099aba5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/203113182529
-- alterId: 0
-  cipher: auto
   name: 309|🇳🇱 荷兰 1
   network: ws
   port: 8080
@@ -2645,6 +2701,22 @@ proxies:
   port: 10070
   server: bjct.xsus.link
   type: ss
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 312|VMESS-未知>荷兰-NF解锁荷兰自制剧-ChatGPT-TikTok-YouTube-104.18.20.153:80
+  network: ws
+  port: 80
+  server: 104.18.20.153
+  servername: 58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7e0eec71-4bf0-4841-a083-4201226d0616
+  ws-opts:
+    headers:
+      HOST: 58892877706648357761980405045364.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
+    path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 64
   cipher: auto
   name: '317,321|荷兰 V2CROSS.COM #1'
@@ -2807,6 +2879,20 @@ proxies:
     headers:
       Host: hdfy8d1.cpi2hidd.eu.org
     path: /Av8czorIlYicU6D349brWUw6a
+- alterId: 0
+  cipher: auto
+  name: 343|荷兰_1118023
+  network: ws
+  port: '443'
+  server: 188.114.96.2
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 343|荷兰_1118024

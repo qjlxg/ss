@@ -27,17 +27,25 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 37,155|🇪IE-23.92.127.134-9168
+  name: 37,65,155|🇪IE-23.92.127.134-9168
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.134
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 37,155|🇪IE-23.92.127.133-9169
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.133
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 65|IE 5 → tg@nicevpn123
+  password: R5vcCFayGJ8ZwKMSUfdyfF
+  port: 28612
+  server: 52.169.202.174
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 93,155|🇮IE-54.216.133.22-2244
   obfs: http_simple
@@ -122,7 +130,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '164,165,168,173,174,251,333|@Vip_Security join us - 346
+  name: '164,165,168,173,174,251,333|@Vip_Security join us - 519
 
     '
   network: grpc
@@ -234,14 +242,3 @@ proxies:
     headers:
       Host: ''
     path: /path/051111230910
-- alterId: 0
-  name: 306|IE
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 34.253.96.3
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
