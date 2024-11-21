@@ -27,24 +27,25 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 38|🆔@LuxyNet💎❖🇮🇪❖IE❖876
+  name: 38,156|🇪IE-23.92.127.134-9176
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.134
   type: ss
 - cipher: aes-256-cfb
-  name: 38|🆔@LuxyNet💎❖🇪❖IE❖877
+  name: 38,156|🇪IE-23.92.127.133-9177
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.133
   type: ss
 - cipher: aes-256-cfb
-  name: 94|🇮🇪_IE_爱尔兰_0@9
+  name: 94,156|🇮🇪IE-54.194.221.29-2282
   obfs: http_simple
   obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
   password: YpX2opBbrfqJzzMs
   port: 42833
   protocol: origin
+  protocol-param: ''
   server: z0116.security-cloudfront-cdn.com
   type: ssr
 - name: 94|🇮🇪_IE_爱尔兰_9@35
@@ -71,13 +72,26 @@ proxies:
   port: 8389
   server: 217.138.222.138
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 156|🇪IE-52.169.50.64-0147
+  password: jjxXMDnfbChUWPL1QM02fM
+  port: 16141
+  server: 52.169.50.64
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 156|🇪IE-13.79.174.197-0290
+  password: nAOsWTXwwlBFd2Ez2dGK2s
+  port: 63314
+  server: 13.79.174.197
+  type: ss
 - alterId: 64
   cipher: auto
-  name: '165,169,174,175|🇮🇪IE-185.108.128.60-1000 #3'
+  name: '156,165,169,174,175|🇮🇪IE-185.108.128.60-1000 #3'
   network: ws
   port: 443
   server: 185.108.128.60
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
@@ -85,20 +99,27 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 4
+- cipher: aes-256-gcm
+  name: 156|🇪IE-146.70.48.53-2034
+  password: WCuz7yrfZSCQQXSNrtGPz2HT
+  port: 50168
+  server: 146.70.48.53
+  type: ss
+- alterId: 0
   cipher: auto
-  name: '165,169,174,175|🇮🇪IE-54.78.134.111-5779 #3'
+  name: '156,165,169,174,175,330|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) #45'
   network: ws
-  port: 443
-  server: mycfwork.herokuapp.com
+  port: '443'
+  server: ac2088.herokuapp.com
   servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+  uuid: d1babe08-f8ac-490b-b66f-9be27467f3cc
   ws-opts:
     headers:
-      Host: mycfwork.herokuapp.com
-    path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess
+      Host: ac2088.herokuapp.com
+    path: /d1babe08-f8ac-490b-b66f-9be27467f3cc-vmess
 - alterId: 0
   cipher: auto
   name: 202|@V2ray_NG🇮🇪
@@ -201,3 +222,25 @@ proxies:
     headers:
       Host: ''
     path: /path/051111230910
+- alterId: 0
+  name: 307|IE
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.215.96.168
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 307|🇮🇪IE爱尔兰2
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.35.125.126
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
