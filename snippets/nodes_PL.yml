@@ -5,11 +5,14 @@ proxies:
   port: 9044
   server: 217.30.10.70
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 8,63,168|SS-TCP-NA 🇵🇱 PL-77.83.246.74:33320
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '8,63,168,339|未知69 #1'
   password: SQj0SiArKuBiIzcrPCvr5j
   port: 33320
   server: 77.83.246.74
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -213,18 +216,16 @@ proxies:
   port: 8389
   server: 217.138.209.122
   type: ss
-- cipher: aes-256-cfb
-  name: 152,168,188|🇱PL-217.30.10.18-0500
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 148,152,163,168,170,188,225|🇷FR-193.243.147.128-004
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  skip-cert-verify: true
+  tls: true
   type: ss
-- cipher: aes-256-cfb
-  name: 152|波兰-64.2MB/s
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
-  type: ss
+  udp: true
 - name: 152|波兰-1.45MB/s
   network: tcp
   password: '!!str 3648425794742788096'
@@ -243,29 +244,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 6bd68f20-a6ac-4225-c9e5-6bb2478f630f
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: '@M_Buy'
-  name: '152,370|@Vip_Security join us - 193
-
-    '
-  network: grpc
-  port: '29594'
-  server: 128.204.223.42
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 250b8152-3cb0-4dae-b21c-5ca5d0aca063
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 152,163,168,170,188,225,339|PL
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  skip-cert-verify: true
-  tls: true
+- cipher: aes-256-cfb
+  name: 152,168,188|🇱PL-217.30.10.18-0500
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 152|波兰-64.2MB/s
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
   type: ss
 - alterId: 0
   cipher: auto
@@ -281,13 +270,6 @@ proxies:
     headers:
       host: pl-a.yuji2022.eu.org
     path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
-- cipher: chacha20-ietf-poly1305
-  name: 154|🇵🇱 波兰 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 19008
-  server: host-060.crazyspeed.xyz
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 154|🇵🇱 Web 波兰I-原生 - AyucLouD-Services
   password: dajkdkjda&dja*/?
@@ -300,16 +282,32 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 161,168,188,191,337|🇵🇱PL-45.144.48.58-0035 | 17.798MB
+  name: 154|🇵🇱 波兰 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 19008
+  server: host-060.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 161,188,191,337|🇵🇱PL-45.144.48.58-0035 | 17.798MB
   password: d3837224ed465f00
   port: 57456
   server: 45.144.48.58
   type: ss
 - cipher: aes-256-gcm
-  name: 168,176,188,208|🇵🇱_PL_波兰_23
+  name: 168,188,208|🇵🇱_PL_波兰_19
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 51.77.53.200
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 168,176,188,208,339|未知111 1.4MB/s
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 51.77.53.200
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 168|SS-TCP-NA 🇵🇱 PL-95.164.35.90:8388
@@ -318,29 +316,26 @@ proxies:
   server: 95.164.35.90
   type: ss
 - cipher: aes-256-gcm
-  name: 168,188,208|🇵🇱_PL_波兰_19
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
   name: 168,188,208|🇵🇱_PL_波兰_15
   password: faBAoD54k87UJG7
   port: 2375
   server: 51.77.53.200
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 168|SS-TCP-NA 🇵🇱 PL-23.27.24.223:40030
-  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
-  port: 40030
-  server: 23.27.24.223
-  type: ss
 - alterId: 0
   cipher: aes-256-gcm
-  name: '168,170,188,339|未知105 1.8MB/s #1'
+  name: 168,170,188|🇱PL-51.77.53.200-6503
   password: FoOiGlkAA9yPEGP
   port: 7307
   server: 51.77.53.200
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '168,339|未知40 #1'
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  port: 40030
+  server: 23.27.24.223
   skip-cert-verify: true
   tls: true
   type: ss
@@ -383,7 +378,7 @@ proxies:
     path: /blue06
 - alterId: 0
   cipher: auto
-  name: '188,197,198,201,206,207|🇵🇱PL-51.68.139.22-0884 #4'
+  name: '188,197,201,206,207|🇵🇱PL-51.68.139.22-0884 #3'
   network: ws
   port: 80
   server: 51.68.139.22
@@ -500,7 +495,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '188,197,198,201,206,207|🇵🇱PL-70.34.252.176-5163 #4'
+  name: '188,197,201,206,207|🇵🇱PL-70.34.252.176-5163 #3'
   network: ws
   port: 8081
   server: 70.34.252.176
