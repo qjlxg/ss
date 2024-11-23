@@ -12,16 +12,17 @@ proxies:
   server: 77.83.246.74
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 8,10,152,161,168,188,191,345|SS--NF解锁兰自制剧-ChatGPT-TikTok-YouTube-45.144.48.63:57456
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 8,10,152,161,168,188,191,339,345|SS--NF解锁兰自制剧-ChatGPT-TikTok-YouTube-45.144.48.63:57456
   password: d3837224ed465f00
   port: 57456
   server: 45.144.48.63
+  skip-cert-verify: true
+  tls: true
   type: ss
-- alterId: -1
-  cipher: aes-256-cfb
-  country: 🇵🇱PL
-  name: 8,72,152|波兰-64.2MB/s
+- cipher: aes-256-cfb
+  name: 8,152|波兰-64.2MB/s
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.18
@@ -221,14 +222,6 @@ proxies:
   port: 8389
   server: 217.138.209.122
   type: ss
-- name: 152|波兰-1.45MB/s
-  network: tcp
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: square-husky.sunbeam921.monster
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 152|波兰_由快嘴科技提供;kkzui.com30
@@ -239,6 +232,26 @@ proxies:
   tls: false
   type: vmess
   uuid: 6bd68f20-a6ac-4225-c9e5-6bb2478f630f
+- cipher: aes-128-gcm
+  name: 152|波兰+V2CROSS.COM_1
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- cipher: aes-256-gcm
+  name: 152,163,188,225|🇷FR-193.243.147.128-004
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  type: ss
+- name: 152|波兰-1.45MB/s
+  network: tcp
+  password: '!!str 3648425794742788096'
+  port: 443
+  server: square-husky.sunbeam921.monster
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 152,188|🇱PL-217.30.10.18-0510
   password: GA9KzeEgvfxNrgmM
@@ -271,33 +284,12 @@ proxies:
   password: dajkdkjda&dja*/?
   plugin: obfs
   plugin-opts:
-    host: b2b45102999.download.windowsupdate.com
+    host: 2c48c103018.download.windowsupdate.com
     mode: http
   port: 2205
   server: 231103levelx.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '163,188,208|🇵🇱_PL_波兰_4 #1'
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 51.77.53.200
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '168,170,339|未知131 #1'
-  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
-  port: 40030
-  server: 23.27.24.223
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 168,188,208|🇵🇱_PL_波兰_15
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 51.77.53.200
-  type: ss
 - cipher: aes-256-gcm
   name: 168,188|🇱PL-51.77.53.200-6447
   password: FoOiGlkAA9yPEGP
@@ -309,6 +301,21 @@ proxies:
   password: ZDMyNmZi
   port: 8388
   server: 95.164.35.90
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '168,170,339|未知86 #1'
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  port: 40030
+  server: 23.27.24.223
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  name: 168,188,208|🇵🇱_PL_波兰_15
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
   name: 176,188,208|🇵🇱_PL_波兰_12
@@ -355,7 +362,7 @@ proxies:
     path: /blue06
 - alterId: 0
   cipher: auto
-  name: '188,197,198,201,206,207|🇵🇱PL-51.68.139.22-0855 #4'
+  name: '188,197,201,206,207|🇵🇱PL-51.68.139.22-0855 #3'
   network: ws
   port: 80
   server: 51.68.139.22
@@ -368,6 +375,12 @@ proxies:
     headers:
       Host: ''
     path: /vmess
+- cipher: aes-256-gcm
+  name: '188,208|🇵🇱_PL_波兰_4 #1'
+  password: KixLvKzwjekG00rm
+  port: 5500
+  server: 51.77.53.200
+  type: ss
 - cipher: aes-256-gcm
   name: '188,208|🇵🇱_PL_波兰_1 #1'
   password: PCnnH6SQSnfoS27
@@ -472,7 +485,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '188,197,198,201,206,207|🇵🇱PL-70.34.252.176-5215 #4'
+  name: '188,197,201,206,207|🇵🇱PL-70.34.252.176-5215 #3'
   network: ws
   port: 8081
   server: 70.34.252.176
