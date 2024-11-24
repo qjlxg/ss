@@ -1,10 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: '0,10,12,68,119,453,938,945,974,984,1033,1113,1114,1115,1116,1144,1145,1166,1167,1431,1522|美国(yudou66.com
+  name: '0,10,12,119,453,974,984,1113,1114,1115,1116,1144,1145,1166,1167,1431,1522|美国(yudou66.com
     玉豆免费节点) #74'
   network: tcp
   port: '53002'
@@ -16,14 +13,10 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.236.51.23
-  ws-opts: {}
   ws-path: /
 - alterId: 64
   cipher: auto
-  country: CN
-  h2-opts: {}
-  http-opts: {}
-  name: 0,8,10,12,37,453,893,945,966,974,984,1021,1023,1033,1064,1113,1114,1115,1116,1144,1145,1166,1167,1208,1431|11,16|香港5|@ripaojiedian
+  name: 0,8,10,12,453,974,984,1021,1023,1064,1113,1114,1115,1116,1144,1145,1166,1167,1208,1431|China_None_vmess_1132
   network: tcp
   port: '58831'
   server: 183.236.48.163
@@ -34,12 +27,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.236.48.163
-  ws-opts: {}
   ws-path: /
 - alterId: 64
   cipher: auto
-  name: '0,10,12,119,945,984,1033,1114,1115,1116,1167,1522|美国(yudou66.com 玉豆免费节点)
-    #68'
+  country: CN
+  h2-opts: {}
+  http-opts: {}
+  name: '0,10,12,68,119,984,1113,1114,1115,1116,1167,1522|美国(yudou66.com 玉豆免费节点) #68'
   network: tcp
   port: '58002'
   server: 120.232.153.27
@@ -50,28 +44,34 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 120.232.153.27
-  ws-opts: {}
   ws-path: /
 - cipher: chacha20-ietf
+  country: ' SG'
+  name: 20,32,35|ChatGPT  SG_406
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: '20,29,32,35,49,490,769,828,860,1100|🇬SG-103.36.91.23-0520 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf
   country: HK
-  name: 20|HK_1466
+  name: 20|HK_1379
   password: asd123456
   port: 8388
   server: 103.149.183.10
   type: ss
 - cipher: chacha20-ietf
   country: HK
-  name: 20|HK_1467
+  name: 20|HK_1380
   password: asd123456
   port: 8388
   server: 154.197.26.237
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇰HK
-  name: '20,29,32,35,49,490,828,860,1100|🇬SG-103.36.91.23-0520 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
   type: ss
 - cipher: aes-256-cfb
   country: HK
@@ -84,10 +84,10 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  country: ' HK'
+  country: HK
   h2-opts: {}
   http-opts: {}
-  name: '20,32,35,984,1205|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193:30251 #1'
+  name: '20,32,35,37,68,984,1205|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193:30251 #1'
   network: tcp
   port: '30251'
   server: 34.92.66.193
@@ -99,13 +99,41 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  country: 🇰HK
+  country: HK
   h2-opts: {}
   http-opts: {}
-  name: 35,307,959,1072,1167,1290|香港_1124003
+  name: 20|Relay_HK-RU_1383
+  network: tcp
+  port: 15073
+  server: 125.59.146.198
+  servername: 15073.kuaiyin02.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 35,959,1072,1113,1167,1290|香港_1124003
   network: tcp
   port: '30251'
   server: hkt2.bika.hk
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  country: ' HK'
+  h2-opts: {}
+  http-opts: {}
+  name: 35,959,1072,1167,1290|香港_1124006
+  network: tcp
+  port: '30251'
+  server: 1.65.205.116
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -119,7 +147,7 @@ proxies:
   server: jsyd.yeahfast.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 37,1285|CN_speednode_0003
+  name: 37,1285|CN_speednode_0005
   password: 1285ebd4-be55-4a33-b215-006da491db3f
   port: 31672
   server: jsyd.yunnode.win
@@ -927,20 +955,6 @@ proxies:
     headers:
       host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 453,974,984,1104,1113,1114,1115,1116,1144,1145,1166,1431|11,16|香港4|@ripaojiedian
-  network: tcp
-  port: '18271'
-  server: 38.147.188.139
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3ba5dca3-a24b-48f3-a571-60052ab43fef
-  ws-headers:
-    Host: 38.147.188.139
-  ws-path: /
 - cipher: aes-256-cfb
   name: 463|【A】香港  VIP 1 - Nearoute
   obfs: http_simple
@@ -2228,13 +2242,6 @@ proxies:
   uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
   ws-opts:
     path: /zh-cn/download
-- cipher: chacha20-ietf-poly1305
-  name: '490,935,1100|🇰HK-218.250.204.209-1837 #1'
-  password: 82fb692e-1c8b-3a65-ad83-23ad9deee111
-  port: 61005
-  server: 2.forlive.live
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '490,962,1100|🇰HK-218.250.204.209-2289 #1'
   password: 3e836edc-e738-4e63-964d-ad61d9e3f27b
@@ -5409,36 +5416,36 @@ proxies:
   up: 100
 - down: 200
   name: 1015|香港1
-  password: d8cd7d69-395d-4637-a0ad-59e70fdd07df
-  port: 26333
-  ports: 26000-26999
+  password: 9b52518d-88f7-4244-8b15-71264217c126
+  port: 20186
+  ports: 20101-20199
   server: hk.legeth.cc
   skip-cert-verify: false
   type: hysteria2
   up: 200
 - down: 200
   name: 1015|香港2
-  password: d8cd7d69-395d-4637-a0ad-59e70fdd07df
-  port: 26281
-  ports: 26000-26999
+  password: 9b52518d-88f7-4244-8b15-71264217c126
+  port: 20196
+  ports: 20101-20199
   server: hk.legeth.cc
   skip-cert-verify: false
   type: hysteria2
   up: 200
 - down: 200
   name: 1015|香港3
-  password: d8cd7d69-395d-4637-a0ad-59e70fdd07df
-  port: 26666
-  ports: 26000-26999
+  password: 9b52518d-88f7-4244-8b15-71264217c126
+  port: 20109
+  ports: 20101-20199
   server: hk.legeth.cc
   skip-cert-verify: false
   type: hysteria2
   up: 200
 - down: 200
   name: 1015|香港4
-  password: d8cd7d69-395d-4637-a0ad-59e70fdd07df
-  port: 26252
-  ports: 26000-26999
+  password: 9b52518d-88f7-4244-8b15-71264217c126
+  port: 20157
+  ports: 20101-20199
   server: hk.legeth.cc
   skip-cert-verify: false
   type: hysteria2
@@ -5793,7 +5800,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '1074,1251|美国 CloudFlare节点 #207'
+  name: '1074,1251|美国 CloudFlare节点 #170'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -6552,6 +6559,16 @@ proxies:
     headers:
       Host: www.37420790.xyz
     path: /path/182320181512
+- alterId: 0
+  cipher: auto
+  name: 1113|TG频道@mfbpn-0292-HK
+  network: tcp
+  port: 54037
+  server: 38.147.188.137
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 01c2c827-e55e-4a81-83aa-85c0a17dfc96
 - alterId: 2
   cipher: auto
   name: 1129|🇭🇰 HK_666
@@ -7237,23 +7254,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 1143|🇭🇰 香港
-  network: ws
-  port: 12959
-  server: z3.fragranceninja.com
-  servername: z3.fragranceninja.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z3.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 1143|🇭🇰 香港2
   network: ws
   port: 2086
@@ -7267,6 +7267,13 @@ proxies:
     headers:
       Host: hkrg0nf30ik5piq1zr.lovebaipiao.com
     path: /
+- name: 1145,1431|China_None_trojan_1113
+  network: tcp
+  password: QwwHvrnN
+  port: 42395
+  server: 36.151.192.196
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 1149|🇭🇰 香港(欢迎订阅Youtube破解资源君) 4
@@ -7458,9 +7465,21 @@ proxies:
   server: 47.243.45.101
   tfo: false
   type: ss
+- alterId: 1
+  cipher: auto
+  name: 1167|香港-62.1MB/s_25_25
+  network: ws
+  port: 443
+  server: 5.188.33.172
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
 - alterId: 64
   cipher: auto
-  name: 1167|香港-9.8MB/s_429_429_429
+  name: 1167|香港-9.8MB/s_578_578
   network: ws
   port: 36000
   server: 223.26.61.135
@@ -7474,7 +7493,7 @@ proxies:
     path: /path/011410073331
 - alterId: 64
   cipher: auto
-  name: 1167|香港-42.5MB/s_430_430_430
+  name: 1167|香港-42.5MB/s_579_579
   network: ws
   port: 30000
   server: 27.124.10.146
@@ -7486,18 +7505,48 @@ proxies:
     headers:
       host: www.60443882.xyz
     path: /path/011410073331
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 1167|香港-62.1MB/s_873_873_873
+  name: 1167|香港 阿里云_1_374
   network: ws
   port: 443
-  server: 5.188.33.172
+  server: 47.57.13.107
   skip-cert-verify: true
   tls: true
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
-    path: linkvws
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 1167|香港 阿里云_2_506
+  network: ws
+  port: 443
+  server: 47.243.236.86
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 1167|香港 电讯盈科有限公司_578
+  network: ws
+  port: 443
+  server: 219.76.13.164
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
 - alterId: 64
   cipher: auto
   name: 1167|🇭🇰 香港_Telegram@kxswa 8
@@ -7754,7 +7803,7 @@ proxies:
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
   cipher: aes-128-gcm
-  name: '1224|HK #1'
+  name: 1224|HK
   password: 83fd6a24-41c2-4158-ac18-6fcf0b842764
   port: 20004
   server: 91.199.84.65
@@ -7762,39 +7811,8 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: 1224|HK2
-  network: tcp
-  password: 4e399fb9-5a4c-49cd-9849-2051512f4c6c
-  port: 27101
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: 1224|HK3
-  password: bd12f79e-3209-4970-83cd-5e1f3526ff51
-  port: 39781
-  server: 91.103.122.32
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: 1224|HK4
-  network: tcp
-  password: de45945e-65ea-4d13-b29d-1835a4281023
-  port: 35003
-  server: 103.100.177.32
-  skip-cert-verify: true
-  sni: updates.sub-nthu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 1224|HK5
   password: 58488114-45ae-4577-8764-7826ab621ee1
   port: 50242
   server: 46.232.123.24
