@@ -7,14 +7,13 @@ proxies:
   server: war.ssvpnapp.win
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: ' PL'
-  name: 0,1,2,3,44,372|SS-TCP-NA 🇸🇪 SE-94.228.165.178:58176
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 0,1,2,3,6,117,421,441,442,606|21|🇱PL_630
+  password: KixLvKzwjekG00rm
+  port: 8000
+  server: 51.77.53.200
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
   name: 0,1,2,3,6,117,421,441,442,606|21|🇱PL_631
@@ -24,16 +23,9 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: PL
-  name: 0|PL_1529
+  name: 0|PL_1497
   password: pKEW8JPByTVTLtM
   port: 443
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 0,1,2,3,6,117,421,441,442,606|21|🇱PL_630
-  password: KixLvKzwjekG00rm
-  port: 8000
   server: 51.77.53.200
   type: ss
 - alterId: 0
@@ -41,7 +33,7 @@ proxies:
   country: PL
   h2-opts: {}
   http-opts: {}
-  name: 0,135,156|[🇵🇱] [vm-no-ws] [mon-08am-1311475]
+  name: 0,135,156|[🇵🇱] [vm-no-ws] [mon-09am-1050727]
   network: ws
   port: '80'
   server: 3h-poland1.09vpn.com
@@ -54,6 +46,14 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
+- alterId: -1
+  cipher: aes-256-cfb
+  name: 44,246,252|Euro😈github.com/Ruk1ng001_884534536
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 217.30.10.18
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '67,216|🆔@LuxyNet💎❖🇱❖PL❖422 #1'
@@ -223,7 +223,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '117,132,420,421,430,431,434,439,440,441|PL-51.68.139.22-0562 #2'
+  name: '117,420,421,430,431,434,439,440,441|PL-51.68.139.22-0562 #2'
   network: ws
   port: 80
   server: 51.68.139.22
@@ -236,7 +236,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '117,132,420,421,430,431,434,439,440,441|🇱PL-70.34.252.176-4835 #2'
+  name: '117,420,421,430,431,434,439,440,441|🇱PL-70.34.252.176-4835 #2'
   network: ws
   port: 8081
   server: 70.34.252.176
@@ -351,35 +351,51 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 132|🇵🇱PL-45.144.48.128-3862
+  name: 144|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ c014f
   network: ws
-  port: 80
-  server: 3h-poland1.09vpn.com
+  port: '443'
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: max.mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 144|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ 021f3
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: me.kalakatha.org
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 144|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a
+  network: ws
+  port: '8880'
+  server: speed.cloudflare.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 10e2ff65-0e20-462d-a282-164e48b955a9
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
   ws-opts:
     headers:
-      Host: 3h-poland1.09vpn.com
-    path: /vmess/
+      Host: pl-a.yuji2022.eu.org
+    path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
 - alterId: 0
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: 132|🇵🇱PL-193.124.41.186-3838
-  network: grpc
-  port: 443
-  server: 193.124.41.186
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 314fa7a6-efdd-4e83-a93e-9fe3c39cd65e
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 132,211|👉🆔 @v2ray_configs_pool📡🇵🇱Poland
+  name: 211|👉🆔 @v2ray_configs_pool📡🇵🇱Poland
   network: grpc
   port: '3064'
   server: freedns3065.ip-dynamic.org
@@ -389,7 +405,17 @@ proxies:
   uuid: 6f004d92-ba37-4f21-8e50-79fcb67721fe
 - alterId: 0
   cipher: auto
-  name: 132,212|波兰_121320026
+  name: 212|波兰_121320022
+  network: ''
+  port: '38612'
+  server: 147.135.208.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: db53bc29-0f62-4cd3-832b-85499c9278a8
+- alterId: 0
+  cipher: auto
+  name: 212|波兰_121320026
   network: ws
   port: '2086'
   server: 94.131.96.137
@@ -403,7 +429,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 132,212|波兰_121320029
+  name: 212|波兰_121320029
   network: ws
   port: '8880'
   server: 94.131.96.137
@@ -417,30 +443,6 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '132,268|www.youneed.win #46'
-  network: ws
-  port: 443
-  server: 212.110.134.10
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  ws-opts:
-    headers:
-      Host: 154.v2ray3.xyz
-    path: /ECTCJ0DF
-- alterId: 0
-  cipher: auto
-  name: 212|波兰_121320022
-  network: ''
-  port: '38612'
-  server: 147.135.208.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: db53bc29-0f62-4cd3-832b-85499c9278a8
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: '@AstroVPN_Official'
   name: 262|@AstroVPN_Official 🇵🇱
@@ -451,6 +453,20 @@ proxies:
   tls: true
   type: vmess
   uuid: 70073f5e-9182-4f17-8758-5f7b16b241b4
+- alterId: 0
+  cipher: auto
+  name: 281|US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_12
+  network: ws
+  port: '8880'
+  server: poland.seeworld.pro
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3e18f9bf-21b5-47d5-9b92-e712bf3daef6
+  ws-opts:
+    headers:
+      Host: poland.seeworld.pro
+    path: /c986
 - cipher: aes-256-gcm
   name: 293|VIP0.波兰1
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
@@ -608,3 +624,25 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: ''
+  name: '488|کانفیگ های بیشتر در Asak_Vpn@  🆔 #2'
+  network: grpc
+  port: '39478'
+  server: 128.204.223.117
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 5a1d551b-f4be-43e5-eee3-59c4dc63998b
+- alterId: 0
+  cipher: auto
+  name: 488,606,607|NO 1|openitr
+  network: tcp
+  port: '12960'
+  server: 146.59.17.58
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48a86563-63c5-4218-e887-d752f801ae82
