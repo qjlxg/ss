@@ -1,21 +1,36 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  country: CZ
+  name: 0,78,369,598|🇺🇸US-85.239.248.94-3371 | 1.127MB
+  password: PItOQl7TLtrb9DcwSKlpam
+  port: 14976
+  server: 85.239.248.94
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: ' CZ'
-  name: 0,1,2,3,78,369,371,598,601|未知103 12.1MB/s
+  name: 0,1,2,3,43,78,369,371,598|CZ-195.181.160.6-3457 | 7.216MB
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 195.181.160.6
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: CZ
-  name: 0,78,369|SS-TCP-NA 🇺🇸 US-85.239.248.94:14976
-  password: PItOQl7TLtrb9DcwSKlpam
-  port: 14976
-  server: 85.239.248.94
-  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: ES
+  h2-opts: {}
+  http-opts: {}
+  name: 3,8,289|俄罗斯 V2CROSS.COM
+  network: tcp
+  port: 8080
+  server: 95.182.98.33
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f7dcaac2-cb74-499f-ca16-b33efc2c7e7e
+  ws-path: /
 - cipher: aes-256-cfb
   name: '66,116,213,418,438|CZ-212.102.38.88-8926 #2'
   password: asdKkaskJKfnsa
@@ -40,6 +55,52 @@ proxies:
   port: 443
   server: 143.244.58.102
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 131,243,603,604|UA 8|openitr
+  network: ws
+  port: '80'
+  server: 94.131.97.10
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 13c4fa1d-c558-4cd0-8108-c1f64cd399ff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 131,243|🇪🇸 ES 27 → tg@nicevpn123
+  network: ws
+  port: 8080
+  server: 77.75.230.125
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d466dd36-8b86-48b7-b0f0-67e7d128de6c
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '131,243,525,528|Czechia #1'
+  network: ws
+  port: '80'
+  server: 77.75.230.125
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac6b7169-7367-4693-8b40-2b506e562dc9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess
 - cipher: chacha20-ietf-poly1305
   name: 323|CZ 🇨🇿 Prague
   password: S4w7wHjBRxCVkxZLgTaN
