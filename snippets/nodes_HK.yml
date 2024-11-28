@@ -69,8 +69,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '44,46,47,69,122,125,132,134,214,282,284,286,296,298,300,302,303,304,305,307,313,314|🔒
-    VM-TCP-NA 🇭🇰 HK-34.92.66.193:30251 #18'
+  name: '44,46,47,122,125,132,134,214,282,284,286,296,298,300,302,303,305,307,313,314|🔒
+    VM-TCP-NA 🇭🇰 HK-34.92.66.193:30251 #16'
   network: tcp
   port: '30251'
   server: 34.92.66.193
@@ -78,45 +78,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9e88a10b-655c-5120-89d0-408634169561
-- alterId: 0
-  cipher: auto
-  name: 47,108|🇺🇸US_8_@Surfboardv2ray
-  network: ws
-  port: '2095'
-  server: eryteftxwbcv_cdn.hfhfb.homes
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9a471651-28cd-4b30-a180-f280059ba636
-  ws-opts:
-    headers:
-      Host: hkcdn3.fask511.cfd
-    path: /?ed=512
-- alterId: 0
-  cipher: auto
-  name: '69,122,125,132,282,284,286,296,298,300,302,303,304,305,307,313,314|🔒 VM-TCP-NA
-    🇭🇰 HK-163.53.18.154:19901 #16'
-  network: tcp
-  port: '19901'
-  server: 163.53.18.154
-  tls: false
-  type: vmess
-  uuid: 9c280b61-07d8-4263-813e-670d3eabf416
-- alterId: 0
-  cipher: auto
-  name: '69,122,125,132,296,299,301,303,304,305,308,313,315|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909
-    #12'
-  network: ws
-  port: '12909'
-  server: 210.0.158.219
-  servername: 19.lwdh.us
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: 19.lwdh.us
-    path: /
 - alterId: 1
   cipher: auto
   name: 71|🇭🇰香港 ☆☆  02 ☆AWS☆  1.2倍率
@@ -917,8 +878,26 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '98,122,125,128,134,138,139,140,214,216,217,254,276,348|@Vip_Security join
-    us - 302
+  name: '98,101,122,125,128,134,138,139,140,214,216,217,254,348|@Vip_Security join
+    us - 311
+
+    '
+  network: tcp
+  port: '53002'
+  server: 183.236.51.23
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.23
+  ws-opts: {}
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: '98,101,122,125,128,134,138,139,140,153,214,216,217,254,276,348|@Vip_Security
+    join us - 303
 
     '
   network: tcp
@@ -931,6 +910,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.236.48.163
+  ws-opts: {}
   ws-path: /
 - alterId: 64
   cipher: none
@@ -944,7 +924,7 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: '98,214,348|@Vip_Security join us - 308
+  name: '98,214,348|@Vip_Security join us - 309
 
     '
   network: tcp
@@ -999,6 +979,31 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai2
 - alterId: 0
   cipher: auto
+  name: '122,125,132,296,299,301,303,305,308,313,315|🔒 VM-WS-TLS 🇭🇰 HK-210.0.158.219:12909
+    #10'
+  network: ws
+  port: '12909'
+  server: 210.0.158.219
+  servername: 19.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+  ws-opts:
+    headers:
+      Host: 19.lwdh.us
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '122,125,132,282,284,286,296,298,300,302,303,305,307,313,314|🔒 VM-TCP-NA 🇭🇰
+    HK-163.53.18.154:19901 #14'
+  network: tcp
+  port: '19901'
+  server: 163.53.18.154
+  tls: false
+  type: vmess
+  uuid: 9c280b61-07d8-4263-813e-670d3eabf416
+- alterId: 0
+  cipher: auto
   name: 137|香港2Hongkong
   network: ws
   port: 36777
@@ -1008,9 +1013,17 @@ proxies:
   uuid: 9DC41E4B-53A8-A442-E911-4BC5F490F2CD
   ws-opts:
     path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 139,197,216,254|13|🇭🇰 香港4|@ripaojiedian
+  password: 6ed66cb3-734d-4cc9-918f-88b3f9e28249
+  port: 11001
+  server: 183.240.255.75
+  tfo: false
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 139,254,274|🇭🇰 香港6|@ripaojiedian
+  name: 139,254|13|🇭🇰 香港6|@ripaojiedian
   obfs: plain
   obfs-param: 255e7112598.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -1021,10 +1034,18 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 139,164,197,216,254,274,355,365|🇨🇳 中国【付费推荐：https://a0a.xyz】72
+  name: 139,164,197,216,254,365|🇨🇳 中国【付费推荐：https://a0a.xyz】72
   password: cbd12f94-bfa2-4079-95bb-50c49d7aaf7e
   port: 30017
   server: 117.176.203.229
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 139,167,197,216,254|13|🇭🇰 香港8|@ripaojiedian
+  password: eb2642d8-1ab6-4cbd-826d-d3e9efdf0377
+  port: 11001
+  server: 183.232.229.165
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1035,7 +1056,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: "144,153|@vpnclashfa - 34\n #1"
+  name: "144,153|@vpnclashfa - 35\n #1"
   network: tcp
   port: '443'
   server: 135.125.134.177
@@ -1160,7 +1181,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 170|24-2107-HK
+  name: 170|24-2096-HK
   network: ws
   port: 443
   server: hk.fuck-av.com
@@ -2208,9 +2229,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: '179,188,191,196,197,212,348|@Vip_Security join us - 373
-
-    '
+  name: "179,188,191,196,197,212,348|@Vip_Security join us - 376\n #1"
   network: ws
   port: '30000'
   server: 27.124.10.146
@@ -2512,7 +2531,7 @@ proxies:
   uuid: 0eb9d2fa-17d1-4276-af80-15323dc1dca5
 - alterId: 0
   cipher: auto
-  name: '200,201,223,235,278,348|@Vip_Security join us - 368
+  name: '200,201,223,235,278,348|@Vip_Security join us - 370
 
     '
   network: tcp
@@ -2579,6 +2598,18 @@ proxies:
     headers:
       host: 426hk.fans8.xyz
     path: /ray
+- alterId: 64
+  cipher: auto
+  name: '212,214,348|@Vip_Security join us - 300
+
+    '
+  network: tcp
+  port: '59952'
+  server: 183.236.48.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 212|🇭🇰HK-182.16.1.194-11547
@@ -2623,9 +2654,7 @@ proxies:
     path: /dongtaiwang.com
 - alterId: 0
   cipher: auto
-  name: '214,348|@Vip_Security join us - 388
-
-    '
+  name: "214,348|@Vip_Security join us - 391\n #1"
   network: tcp
   port: '54037'
   server: 38.147.188.137
@@ -2687,12 +2716,6 @@ proxies:
     headers:
       Host: in05.dns2333.xyz
     path: /biteb
-- cipher: chacha20-ietf-poly1305
-  name: 216|HK-218.250.204.209-061
-  password: 25cb8cd7-800f-359e-81b5-a12863e2018d
-  port: 50118
-  server: iepl5.forlive.live
-  type: ss
 - alterId: 0
   cipher: auto
   name: 223|Hong Kong Baxet
@@ -3968,6 +3991,54 @@ proxies:
   server: 47.243.45.101
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 274|🇭🇰 香港6|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 154.197.26.120
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 274|🇭🇰 香港7|@ripaojiedian
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
+  ws-opts:
+    headers:
+      Host: 3fe454755ea98eaa00f870f7fa2990c7.mobgslb.tbcache.com
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 274|🇭🇰 香港8|@ripaojiedian
+  password: 2c3f6d56-e5d6-44e8-a69b-a7bcd810ca0b
+  port: 41903
+  server: 111.29.57.108
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 274|🇭🇰 香港9|@ripaojiedian
+  network: ws
+  port: 2086
+  server: cdn2.bpcdn.cc
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3db2d115-1db9-457d-850f-818b73228f67
+  ws-opts:
+    headers:
+      Host: hkrg0nf30ik5piq1zr.lovebaipiao.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 278|Relay_🇨🇳CN-🇭🇰HK_26
