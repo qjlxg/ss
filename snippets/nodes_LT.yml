@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 10,63,64,87,90,155,182,214,227,248,314,338,353,354,355,356,361,364,365,366,368,374,375,380,446,464,469,573,581,592,597,613,640|5pel5pysXzExMjgwMDE
+  name: 10,63,64,87,90,144,155,182,214,227,248,314,338,353,354,355,356,361,364,365,366,368,374,375,380,446,464,469,573,581,592,597,613,640|5pel5pysXzExMjgwMDE
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   password: eAokbaDN6
@@ -21,10 +21,40 @@ proxies:
   type: vmess
   uuid: db5afae4-ac23-41a6-8378-f307a9a47436
 - cipher: chacha20-ietf-poly1305
-  name: '128,155,283,291,354,375|LT-45.87.175.157-0686 #1'
+  name: '128,155,283,354,375|LT-45.87.175.157-0686 #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.157
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 144,275,573,574|LT 1|openitr
+  network: ws
+  port: '26639'
+  server: 91.149.236.44
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cctv13/hd.m3u8/
+- cipher: aes-256-cfb
+  name: 144,155,573|21|_433
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 144,155,573|21|_434
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.62
   type: ss
   udp: true
 - cipher: aes-256-cfb
