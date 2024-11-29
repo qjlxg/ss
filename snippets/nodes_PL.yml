@@ -53,7 +53,7 @@ proxies:
   server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
-  name: 20,69,144,185,354,375,376,402,573|21|_354
+  name: 20,144,354,375,376,402,573|21|_354
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 51.77.53.200
@@ -90,12 +90,15 @@ proxies:
   server: 51.77.53.200
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 20,354,375,376,573|21|🇱PL_629
+  name: 20,354,375,376,571,573|21|🇱PL_629
   password: e4FCWrgpkji3QY
   port: 9101
   server: 51.77.53.200
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-256-gcm
   country: 🇵🇱PL
@@ -163,12 +166,15 @@ proxies:
   port: 7002
   server: 51.77.53.200
   type: ss
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 20,144,306,354,375,376,464,573|21|🇱PL_625
+  name: 20,69,144,185,306,354,375,376,464,571,573|21|🇱PL_625
   password: faBAoD54k87UJG7
   port: 2375
   server: 51.77.53.200
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - blackListed: false
@@ -199,12 +205,15 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '62,67,72,135,204,217,225,246,504,506,515,516,527,529,538,539,541,542,543,544,546,552,553|🔒
-    VM-TCP-NA 🇵🇱 PL-128.204.223.115:44085 #20'
+  name: '57,67,72,204,213,217,222,224,246,255,527,529,538,539,542,543,544,546,552,553,571,572,630|@Vip_Security
+    join us - 237
+
+    '
   network: tcp
   port: '44085'
   server: 128.204.223.115
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 1db458f2-5df2-4fa5-8754-497c7ef0681b
@@ -522,11 +531,14 @@ proxies:
   server: 54.36.174.181
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 144,354,375,402,464|France_Gravelines_ss_1354
+- alterId: 0
+  cipher: aes-256-gcm
+  name: '144,354,375,402,464,571|PL #3'
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -681,7 +693,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 269,314,353,354,363,364,368,373,374,375,391,640|法国_1128058
+  name: 269,271,314,353,354,363,364,368,373,374,375,391,640|法国_1128058
   network: ws
   port: '443'
   server: 146.59.55.50
@@ -696,7 +708,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 269|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a
+  name: '269,271|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a #1'
   network: ws
   port: '8880'
   server: speed.cloudflare.com
@@ -708,6 +720,34 @@ proxies:
     headers:
       Host: pl-a.yuji2022.eu.org
     path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
+- alterId: 0
+  cipher: auto
+  name: 271|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ c014f
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: max.mankadmu.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 271|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ 021f3
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: me.kalakatha.org
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: '293,314,353,354,363,364,368,373,374,375|🇹🇼TW-211.72.35.110-6398 #1'
