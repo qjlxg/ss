@@ -199,8 +199,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '76,83,231,235,241,558,560,569,570,573,574,575,577,583,584|🔒 VM-TCP-NA 🇵🇱
-    PL-128.204.223.42:37036 #14'
+  name: '76,83,235,241,558,560,569,570,573,574,575,577,583,584|🔒 VM-TCP-NA 🇵🇱 PL-128.204.223.42:37036
+    #13'
   network: tcp
   port: '37036'
   server: 128.204.223.42
@@ -210,8 +210,8 @@ proxies:
   uuid: 7cd92514-55a3-45cb-bd4a-7106f01300fa
 - alterId: 0
   cipher: auto
-  name: '76,83,231,235,241,368,508,558,560,569,570,573,574,575,577,583,584|🔒 VM-TCP-NA
-    🇵🇱 PL-128.204.223.115:44085 #14'
+  name: '76,83,235,241,368,508,558,560,569,570,573,574,575,577,583,584|🔒 VM-TCP-NA
+    🇵🇱 PL-128.204.223.115:44085 #13'
   network: tcp
   port: '44085'
   server: 128.204.223.115
@@ -220,6 +220,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 1db458f2-5df2-4fa5-8754-497c7ef0681b
+- cipher: aes-256-gcm
+  name: 85,161,204,378,399,495|France_Gravelines_ss_1354
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 91|PL
@@ -535,13 +542,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 161,378,399,495|France_Gravelines_ss_1354
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   country: 🇫🇷FR
   name: 161,179,378,399,604|21|🇷FR_550
   password: TEzjfAYq2IjtuoS
@@ -691,6 +691,35 @@ proxies:
   port: 8389
   server: 217.138.209.122
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 288,335,377,378,387,388,392,397,398,399,415,673|法国_1206049
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 288|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a
+  network: ws
+  port: '8880'
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  ws-opts:
+    headers:
+      Host: pl-a.yuji2022.eu.org
+    path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
 - alterId: 0
   cipher: auto
   name: '313,335,377,378,387,388,392,397,398,399|🇹🇼TW-211.72.35.110-5074 #8'
@@ -965,9 +994,12 @@ proxies:
   tls: false
   type: vmess
   uuid: 6bd68f20-a6ac-4225-c9e5-6bb2478f630f
-- cipher: chacha20-ietf-poly1305
-  name: 599|🇵🇱PL-94.131.96.213-4916 | 23.115MB
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 599,602|未知23 2.8MB/s
   password: qmOD5x09KyNNJ6USCZiQ4RvN2lSVQ6jzAEYmvrSLtRZsSX5gF6CfcElvUcuLlnZD
   port: 29647
   server: 94.131.96.213
+  skip-cert-verify: true
+  tls: true
   type: ss
