@@ -1,37 +1,30 @@
 proxies:
-- auth: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+- auth: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   name: '13,62|🇰🇷 韩国-1 #1'
-  password: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+  password: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+- auth: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   name: '13,62|🇰🇷 韩国-2 #1'
-  password: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+  password: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   port: 30001
   server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+- auth: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   name: '13,62|🇰🇷 韩国-首尔 #1'
-  password: f7645d2b-e5eb-4d24-ab44-e899a8943e9b
+  password: 37a3dffe-01fb-4656-84f8-41b8b3a7685c
   port: 30001
   server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 16,18,31,143,219,262,436,457,484,486|DE-91.195.240.12-007
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20003
-  server: service.ouluyun9803.com
-  type: ss
   udp: true
 - cipher: chacha20-ietf
   name: 17,689|8J-HsPCfh7cgS1IgfCDpn6nlm70gMDE
@@ -44,9 +37,16 @@ proxies:
   server: 7cb198.qcmzao.xyz
   type: ssr
 - cipher: chacha20-ietf-poly1305
+  name: 18,31,219,436,457,486|DE-91.195.240.12-007
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 20003
+  server: service.ouluyun9803.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   delay: 2451
-  name: 21,26,31,231,268,314,369,379,484,486,542,564|🇰🇷 韩国|@ripaojiedian
+  name: 21,26,31,231,268,314,379,486,542,564|🇰🇷 韩国|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54008
   server: k-r01.loveroise.com
@@ -54,7 +54,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 21,25,31,231,268,314,354,369,484,486,542,564|🇰🇷 韩国3|@ripaojiedian
+  name: 21,25,31,231,268,314,354,369,486,542,564|🇰🇷 韩国3|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54012
   server: k-r03.loveroise.com
@@ -63,15 +63,30 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 789
-  name: 21,26,28,31,33,268,314,379,436,439,457,484,486,542,564|🇰🇷 韩国特殊|@ripaojiedian
+  name: 21,26,28,31,33,268,314,379,413,436,439,457,486,542,564,657|🇯🇵JP-43.207.112.115-9228
+    | 1.27MB
   password: amazonskr05
   port: 443
   server: 43.207.112.115
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国01 - Cyanmori
+  password: hJRTbknS8oyylv6x
+  port: 10047
+  server: kr1.lvuy.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国02 - Cyanmori
+  password: hJRTbknS8oyylv6x
+  port: 10048
+  server: kr2.lvuy.xyz
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 22,483|TG频道@mfbpn-0184-CN
+  name: 22,483|TG频道@mfbpn-0196-CN
   network: ws
   port: 23611
   server: 11.mamamajd.site
@@ -80,11 +95,46 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 2af4bfb2-b6e1-3c84-8a49-c9b151e8d549
+  uuid: 38896104-1828-3841-a204-debac57f69c4
   ws-opts:
     headers:
       Host: 11.mamamajd.site
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国 01 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21006
+  server: host-026.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国 02 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21007
+  server: host-027.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国 03 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21008
+  server: host-028.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国 04 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21009
+  server: host-029.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇰🇷 韩国 05 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21010
+  server: host-030.crazyspeed.xyz
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   name: 22|🇰🇷 Game 韩国01-标准 - AyucLouD-Services
   password: QHPy2u
@@ -239,55 +289,6 @@ proxies:
   server: 231103level2.unclemanco.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,484|TG频道@mfbpn-0302-KR
-  password: Okszj6e6gVbXIejB
-  port: 10047
-  server: kr1.lvuy.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,484|TG频道@mfbpn-0303-KR
-  password: Okszj6e6gVbXIejB
-  port: 10048
-  server: kr2.lvuy.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇰🇷 韩国 01 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21006
-  server: host-026.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇰🇷 韩国 02 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21007
-  server: host-027.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇰🇷 韩国 03 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21008
-  server: host-028.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇰🇷 韩国 04 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21009
-  server: host-029.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇰🇷 韩国 05 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21010
-  server: host-030.crazyspeed.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 23|🇷 Github_Action_韩国_3
   password: qwerREWQ@@
@@ -326,7 +327,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 915
-  name: 24,26,231,379,484|TG频道@mfbpn-1431-KR
+  name: '24,26,231,379|韩国 - 首尔特别市 - Amazon Technologies Inc. - 4 #1'
   password: amazonskr05
   port: 443
   server: 13.124.203.141
@@ -527,14 +528,14 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   delay: 1705
-  name: 26,231,379,484|TG频道@mfbpn-1430-NOWHERE
+  name: '26,231,379|韩国 - 春川市 - Oracle Corporation - 6 #1'
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54014
   server: k-r04.loveroise.com
   type: ss
 - cipher: aes-256-cfb
   delay: 1212
-  name: 26,379,413,436,457,484|TG频道@mfbpn-1433-KR
+  name: '26,379|韩国 - 首尔特别市 - Amazon.com, Inc. - 2 #1'
   password: amazonskr05
   port: 443
   server: 3.36.86.96
@@ -542,25 +543,34 @@ proxies:
 - cipher: aes-256-cfb
   country: 🇰🇷KR
   delay: 1193
-  name: 26,33,379,484|TG频道@mfbpn-1434-KR
+  name: 26,33,379,657|🇰🇷KR-43.201.31.40-4012 | 1.088MB
   password: amazonskr05
   port: 443
   server: 43.201.31.40
   type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '33,35,660|未知73 1.2MB/s #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
-  skip-cert-verify: true
-  tls: true
+- cipher: aes-256-cfb
+  name: 33|SS-TCP-NA 🇰🇷 KR-54.180.151.198:443
+  password: amazonskr05
+  port: 443
+  server: 54.180.151.198
   type: ss
 - cipher: aes-256-cfb
   name: 33|SS-TCP-NA 🇰🇷 KR-43.203.241.235:443
   password: amazonskr05
   port: 443
   server: 43.203.241.235
+  type: ss
+- cipher: aes-256-cfb
+  name: 33|SS-TCP-NA 🇰🇷 KR-43.202.55.184:443
+  password: amazonskr05
+  port: 443
+  server: 43.202.55.184
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 33|SS-TCP-NA 🇰🇷 KR-154.90.63.193:990
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 154.90.63.193
   type: ss
 - alterId: 0
   cipher: auto
@@ -662,21 +672,7 @@ proxies:
       Host: cr4.biger.club
     path: /
 - client-fingerprint: chrome
-  name: 85|[Trojan] Relay_-🇰🇷KR_488
-  network: ws
-  password: blue2024
-  port: 443
-  server: 190.93.246.191
-  skip-cert-verify: true
-  sni: td.promote.icu
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: td.promote.icu
-    path: '%2F%3Fed%3D2560'
-- client-fingerprint: chrome
-  name: 85|[Trojan] Relay_-🇰🇷KR_492
+  name: 85|[Trojan] Relay_-🇰🇷KR_761
   network: ws
   password: blue2024
   port: 443
@@ -689,6 +685,70 @@ proxies:
     headers:
       Host: td.promote.icu
     path: '%2F%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: 85|[Trojan] Relay_-🇰🇷KR_762
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.20.1.0
+  skip-cert-verify: true
+  sni: td.promote.icu
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: td.promote.icu
+    path: '%2F%3Fed%3D2560'
+- client-fingerprint: chrome
+  name: 85|[Trojan] Relay_-🇰🇷KR_764
+  network: ws
+  password: blue2024
+  port: 443
+  server: 190.93.246.191
+  skip-cert-verify: true
+  sni: td.promote.icu
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: td.promote.icu
+    path: '%2F%3Fed%3D2560'
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 85,566|🇱🇦 www.85la.com 老挝 08
+  network: ws
+  port: 80
+  server: 104.17.213.241
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 85|[VMess] Relay_🏁ZZ-🇰🇷KR_1804
+  network: ws
+  port: 80
+  server: usnew.lbxjc.site
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: usnew.lbxjc.site
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -710,13 +770,12 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 85,413,484,566|🇱🇦 www.85la.com 老挝 08
+  name: 85|[VMess] Relay_🏁ZZ-🇰🇷KR_2282
   network: ws
   port: 80
-  server: 104.17.213.241
+  server: hsj.lbxjc.online
   servername: chunchuan.kejixiaoqi666.store
   skip-cert-verify: true
-  skip-cert-vertify: true
   tfo: false
   tls: false
   type: vmess
@@ -724,12 +783,12 @@ proxies:
   uuid: e6543319-0574-42ac-b778-1c4325d626f5
   ws-opts:
     headers:
-      host: chunchuan.kejixiaoqi666.store
+      Host: hsj.lbxjc.online
     path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 85|[VMess] Relay_🏁ZZ-🇰🇷KR_1393
+  name: 85|[VMess] Relay_🏁ZZ-🇰🇷KR_2327
   network: ws
   port: 80
   server: 5e0yC.c6tu5uwk9.buzz
@@ -743,6 +802,56 @@ proxies:
   ws-opts:
     headers:
       Host: 5e0yC.c6tu5uwk9.buzz
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 85,566|美国由快嘴科技提供：kkzui.com82
+  network: ws
+  port: 80
+  server: 104.16.155.10
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 85,566|美国_由快嘴科技提供：kkzui.com68_2
+  network: ws
+  port: 80
+  server: 104.17.221.248
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      host: chunchuan.kejixiaoqi666.store
+    path: /
+- client-fingerprint: chrome
+  name: 85|[Trojan] disney_netflix_KR
+  network: ws
+  password: blue2024
+  port: 443
+  server: 162.159.44.207
+  skip-cert-verify: true
+  sni: tb.promote.icu
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tb.promote.icu
     path: /
 - name: 94|KR(AzadNet.t.me)_001
   network: tcp
@@ -804,7 +913,7 @@ proxies:
     path: /tg@herhero6
 - alterId: 0
   cipher: auto
-  name: '126,135,141,193,194,200,289,293,299,593,596,604,606,616,619,627,629,630,631,632,633,636,641,643,716,731|韩国_1208003
+  name: '126,135,141,289,293,299,593,596,604,606,616,619,627,629,630,631,632,633,636,641,643,716,731|韩国_1208003
     #1'
   network: ws
   port: '50035'
@@ -819,7 +928,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '126,135,141,193,194,200,289,293,299,616,619,627,629,631,632,633,636,641,643,716,731|韩国_1208002
+  name: '126,135,141,289,293,299,616,619,627,629,631,632,633,636,641,643,716,731|韩国_1208002
     #1'
   network: ws
   port: '50000'
@@ -941,19 +1050,19 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '183,436,457|🇷KR-43.202.49.222-8997 #1'
+  name: '183,436,457|🇷KR-43.202.49.222-9138 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '183,436,457|🇷KR-43.201.108.109-8998 #1'
+  name: '183,436,457|🇷KR-43.201.108.109-9139 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '183,436,457|🇷KR-125.141.26.5-9596 #1'
+  name: '183,436,457|🇷KR-125.141.26.5-9737 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -1592,7 +1701,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '259,393,435,436,445,446,450,455,456,457|KR-131.186.24.103-2476 #1'
+  name: '259,393,435,436,445,446,450,455,456,457|KR-131.186.24.103-2630 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -1641,7 +1750,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '259,436,457|🇷KR-43.201.48.212-2633 #1'
+  name: '259,436,457|🇷KR-43.201.48.212-2787 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -1958,8 +2067,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 637d3
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    637d3 #2'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -1973,8 +2082,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳\xa0@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ a871c
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    a871c #2'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -1988,8 +2097,8 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ aa5b0
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    aa5b0 #2'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2003,8 +2112,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ ceb0f
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    ceb0f #2'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2018,8 +2127,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ e3cb1
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    e3cb1 #2'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2033,8 +2142,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ e6485
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    e6485 #2'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2048,8 +2157,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ f2822
-    #1'
+  name: '346,347,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈
+    f2822 #2'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2063,8 +2172,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 1e0c5
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ 1e0c5 #3'
   network: ws
   port: '8080'
   server: speed.cloudflare.com
@@ -2078,8 +2187,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 8ee60
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ 8ee60 #3'
   network: ws
   port: '8080'
   server: speed.cloudflare.com
@@ -2093,8 +2202,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 9aa33
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ 9aa33 #3'
   network: ws
   port: 8080
   server: speed.cloudflare.com
@@ -2108,8 +2217,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 3968c
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ 3968c #3'
   network: ws
   port: '8080'
   server: speed.cloudflare.com
@@ -2123,8 +2232,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳\xa0@WangCai_8
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ c1583
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ c1583 #3'
   network: ws
   port: '8080'
   server: speed.cloudflare.com
@@ -2138,8 +2247,8 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ f991d
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ f991d #3'
   network: ws
   port: 8080
   server: speed.cloudflare.com
@@ -2153,8 +2262,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '346,347,348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ fee0b
-    #2'
+  name: '346,347,348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1)
+    ◈ fee0b #3'
   network: ws
   port: 8080
   server: speed.cloudflare.com
@@ -2168,7 +2277,7 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 346,347,348,662,663|US 167|openitr
+  name: 346,347,348,349,662,663|US 167|openitr
   network: tcp
   port: '26022'
   server: 152.70.39.9
@@ -2178,7 +2287,8 @@ proxies:
   uuid: e0254dda-dc8c-46b0-8df8-07c453aaafd7
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 4d8d7
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 4d8d7
+    #1'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2192,7 +2302,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 8dc53
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 8dc53
+    #1'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2206,7 +2317,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳\xa0@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 44b6a
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 44b6a
+    #1'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2220,7 +2332,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 129c0
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 129c0
+    #1'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2234,7 +2347,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 59714
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 59714
+    #1'
   network: ws
   port: 8080
   server: amd2.720208.xyz
@@ -2248,7 +2362,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ d2c2d
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ d2c2d
+    #1'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2262,7 +2377,8 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: 347|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ fef24
+  name: '347,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ fef24
+    #1'
   network: ws
   port: '8080'
   server: amd2.720208.xyz
@@ -2276,7 +2392,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 23617
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 23617
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2290,7 +2407,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 66707
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 66707
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2304,7 +2422,8 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 72942
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 72942
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2318,7 +2437,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ c9489
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ c9489
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2332,7 +2452,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ cc632
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ cc632
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2346,7 +2467,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳\xa0@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ e0d63
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ e0d63
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2360,7 +2482,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 348|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ f6ff4
+  name: '348,349|🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ f6ff4
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2374,7 +2497,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 43f1e
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 43f1e
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2388,7 +2512,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 433ae
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 433ae
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2416,7 +2541,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳\xa0@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 6945f
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 6945f
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2430,7 +2556,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳@WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 95421
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ 95421
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2444,7 +2571,8 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ a40c2
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ a40c2
+    #1'
   network: ws
   port: 8080
   server: 193.122.97.28
@@ -2458,7 +2586,8 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳 @WangCai_8
 - alterId: 0
   cipher: auto
-  name: 348|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ eca5e
+  name: '348,349|💰🇰🇷 KR 193.122.97.28 ◈ ws:8080 ◈ Oracle Cloud (ap-seoul-1) ◈ eca5e
+    #1'
   network: ws
   port: '8080'
   server: 193.122.97.28
@@ -2725,7 +2854,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇷KR-52.78.213.224-2242 #1'
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-52.78.213.224-2396 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -2736,6 +2865,21 @@ proxies:
   uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-59.24.3.174-2400 #1'
+  network: ws
+  port: 48203
+  server: v2hk-ws-tls.ytv2line.top
+  servername: v2hk-ws-tls.ytv2line.top
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 8d5e7a95-a0c5-444f-b9d7-e680eed2ee3a
+  ws-opts:
+    headers:
+      Host: v2hk-ws-tls.ytv2line.top
+    path: /cpyhyfd3
 - alterId: 0
   cipher: auto
   name: '393,435,436,445,446,450,455,456,457,469,472,567|二爷翻墙网 https://1808.free.hr_KR_4
@@ -2786,7 +2930,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇰🇷KR-161.129.34.102-2770 #8'
+  name: '393,435,436,445,446,450,455,456,457|🇰🇷KR-161.129.34.102-2907 #8'
   network: ws
   port: 443
   server: 161.129.34.102
@@ -2825,21 +2969,6 @@ proxies:
   uuid: ec736482-173e-3eff-9114-b49df8056e7d
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 393,435,436,445,446,450,455,456,457,483|TG频道@mfbpn-0069-KR
-  network: ws
-  port: 42517
-  server: 13.124.228.70
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    headers:
-      Host: 13.124.228.70
-    path: /
 - alterId: '0'
   cipher: auto
   name: 393,435,436,445,446,450,455,456,457,459|KR_FreeNode.me_18_2
@@ -2872,7 +3001,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇷KR-3.38.115.106-5970 #1'
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-3.38.115.106-6107 #1'
   network: ws
   port: 80
   server: 3.38.115.106
@@ -2885,7 +3014,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '393,431,432,433,435,436,445,446,450,455,456,457|🇰🇷KR-3.38.108.255-5972 #8'
+  name: '393,431,432,433,435,436,445,446,450,455,456,457|🇷KR-3.38.108.255-6109 #1'
   network: ws
   port: 80
   server: 3.38.108.255
@@ -2898,7 +3027,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇷KR-54.180.114.77-6326 #1'
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-54.180.114.77-6463 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -2911,7 +3040,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇷KR-211.177.40.235-7698 #1'
+  name: '393,435,436,445,446,450,455,456,457|🇰🇷KR-13.124.228.70-0068 #8'
+  network: ws
+  port: 42517
+  server: 13.124.228.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    headers:
+      Host: 13.124.228.70
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-211.177.40.235-7835 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -2924,7 +3068,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457|🇷KR-1.238.102.214-7699 #1'
+  name: '393,435,436,445,446,450,455,456,457|🇷KR-1.238.102.214-7836 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -2937,20 +3081,16 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '393,435,436,445,446,450,455,456,457,484|TG频道@mfbpn-0044-KR #1'
+  name: '393,435,436,445,446,450,455,456,457|KR-43.200.177.138-0043 #1'
   network: ws
   port: 42517
   server: 43.200.177.138
   servername: ''
   skip-cert-verify: false
-  skip-cert-vertify: true
   tls: false
   type: vmess
-  udp: true
   uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
   ws-opts:
-    headers:
-      host: None
     path: /
 - alterId: 0
   cipher: auto
@@ -3134,7 +3274,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 401|12-0935-KR
+  name: 401|12-1003-KR
   network: ws
   port: 23451
   server: seoul-02-ddns.faforex.eu.org
@@ -3148,7 +3288,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 401|13-0975-KR
+  name: 401|13-1043-KR
   network: ws
   port: 30002
   server: ch1.12123.org
@@ -3162,7 +3302,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 401|13-0978-KR
+  name: 401|13-1046-KR
   network: ws
   port: 30000
   server: cc111.12123.org
@@ -3176,7 +3316,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 401|13-0995-KR
+  name: 401|13-1063-KR
   network: ws
   port: 30000
   server: cc112.12123.org
@@ -3190,7 +3330,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 401|13-1032-KR
+  name: 401|13-1100-KR
   network: ws
   port: 30002
   server: shouer2112.12123.org
@@ -3203,7 +3343,7 @@ proxies:
       Host: www.baidu.com
     path: /12123.org
 - cipher: aes-256-cfb
-  name: '420,436,457|🇷KR-3.36.118.190-5775 #1'
+  name: '420,436,457|🇷KR-3.36.118.190-5912 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -3293,19 +3433,19 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: aes-256-gcm
-  name: '436,457|🇰🇷KR-141.164.39.146-2775 #1'
+  name: '436,457|🇰🇷KR-141.164.39.146-2912 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '436,457|🇷KR-158.247.205.87-2802 #1'
+  name: '436,457|🇷KR-158.247.205.87-2939 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '436,457|🇰🇷KR-158.247.205.87-2803 #1'
+  name: '436,457|🇰🇷KR-158.247.205.87-2940 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -3348,7 +3488,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '436,457|🇰🇷KR-146.56.133.140-8488 #8'
+  name: '436,457|🇰🇷KR-146.56.133.140-8641 #8'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -3404,21 +3544,21 @@ proxies:
     path: /path/180401120101
 - alterId: 0
   cipher: auto
-  name: 483|TG频道@mfbpn-0000-KR
+  name: 483|TG频道@mfbpn-0119-KR
   network: ws
-  port: 42517
-  server: 13.124.228.70
+  port: 80
+  server: 193.122.110.139
   servername: ''
   tls: false
   type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467
   ws-opts:
     headers:
-      Host: None
-    path: /
+      Host: w1.800876.xyz
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 483|TG频道@mfbpn-0044-KR
+  name: 483|TG频道@mfbpn-0120-KR
   network: ws
   port: 42517
   server: 43.200.177.138
@@ -3432,18 +3572,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '484|TG频道@mfbpn-0069-KR #1'
+  name: 483|TG频道@mfbpn-0121-KR
   network: ws
   port: 42517
   server: 13.124.228.70
-  skip-cert-vertify: true
+  servername: ''
   tls: false
   type: vmess
-  udp: true
   uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
   ws-opts:
     headers:
-      host: 13.124.228.70
+      Host: None
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 483|TG频道@mfbpn-0122-KR
+  network: ws
+  port: 80
+  server: 152.69.230.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6aa24ded-5f15-48c7-8cba-3e2a159d6b77
+  ws-opts:
+    headers:
+      Host: None
     path: /
 - alterId: 64
   cipher: auto
@@ -3657,6 +3810,14 @@ proxies:
   ws-headers:
     Host: cn2.soow.win
   ws-path: /video
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 540|🇰🇷 韩国2
+  password: f2a7baac-c6d4-4d29-aab2-02426814f0ce
+  port: 40015
+  server: hzhz2.sssyun.xyz
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 548|韩国(油管:破解资源君2.0) 4
