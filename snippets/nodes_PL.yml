@@ -1,18 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 8,23,221,438,459,488,555|France_Gravelines_ss_1354
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇵🇱 波兰 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 19008
-  server: host-060.crazyspeed.xyz
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 14|🇵🇱 Web 波兰I-原生 - AyucLouD-Services
   password: dajkdkjda&dja*/?
@@ -22,6 +8,13 @@ proxies:
     mode: http
   port: 2205
   server: 231103levelx.unclemanco.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇵🇱 波兰 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 19008
+  server: host-060.crazyspeed.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -50,14 +43,26 @@ proxies:
   port: 57456
   server: war.ssvpnapp.win
   type: ss
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: '@AstroVPN_Official&@freeiranweb'
+  name: '25,128,137,143,291,295,301,595,596,606,607,618,619,629,630,632,633,634,635,636,643,644|🔒
+    VM-GRPC-NA 🇵🇱 PL-188.68.240.160:38737 #20'
+  network: grpc
+  port: '38737'
+  server: 188.68.240.160
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 1eacad0a-5284-4e2d-ade1-18dbeff82ef7
 - cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 25,96,221,387,438,459,460,555,664|21|🇱PL_625
-  password: faBAoD54k87UJG7
-  port: 2375
+  country: 🇱PL
+  name: 25,96,387,438,459,664|21|🇱PL_617
+  password: FoOiGlkAA9yPEGP
+  port: 7307
   server: 51.77.53.200
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
   name: 25,96,221,555,664|21|🇱PL_624
@@ -66,10 +71,24 @@ proxies:
   server: 51.77.53.200
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇵🇱 PL-95.164.35.90:8388
+  password: ZDMyNmZi
+  port: 8388
+  server: 95.164.35.90
+  type: ss
 - cipher: aes-256-gcm
   name: 25,96,221,438,459,460,506,664|21|_340
   password: e4FCWrgpkji3QY
   port: 9102
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 25,96,221,387,438,459,460,555,664|21|🇱PL_625
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 51.77.53.200
   type: ss
   udp: true
@@ -78,13 +97,6 @@ proxies:
   password: qmOD5x09KyNNJ6USCZiQ4RvN2lSVQ6jzAEYmvrSLtRZsSX5gF6CfcElvUcuLlnZD
   port: 29647
   server: 94.131.96.213
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇱PL
-  name: 25,96,387,438,459,664|21|🇱PL_617
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
   name: 25,221,555,664|21|_337
@@ -101,12 +113,6 @@ proxies:
   server: 77.83.246.74
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇵🇱 PL-95.164.35.90:8388
-  password: ZDMyNmZi
-  port: 8388
-  server: 95.164.35.90
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -293,21 +299,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  grpc-opts:
-    grpc-service-name: '@AstroVPN_Official&@freeiranweb'
-  name: '128,137,291,301,595,596,606,607,618,619,629,630,632,633,634,635,636,643,644|🔒
-    VM-GRPC-NA 🇵🇱 PL-188.68.240.160:38737 #18'
-  network: grpc
-  port: '38737'
-  server: 188.68.240.160
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 1eacad0a-5284-4e2d-ade1-18dbeff82ef7
-- alterId: 0
-  cipher: auto
-  name: '128,137,291,301,595,606,608,614,618,629,631,632,633|🔒 VM-SPLITHTTP-TLS 🏴‍☠️
-    NA-104.20.187.176:2096 #12'
+  name: '143,291,295,595,606,608,631,632|🔒 VM-SPLITHTTP-TLS 🏴‍☠️ NA-104.20.187.176:2096
+    #7'
   network: splithttp
   port: '2096'
   server: 104.20.187.176
@@ -761,7 +754,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '348,349,351|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a #2'
+  name: '348,349,350,351|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a #3'
   network: ws
   port: '8880'
   server: speed.cloudflare.com
@@ -775,7 +768,7 @@ proxies:
     path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
 - alterId: 0
   cipher: auto
-  name: '349,351|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ c014f #1'
+  name: '349,350,351|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ c014f #2'
   network: ws
   port: '443'
   server: 146.59.55.50
@@ -789,7 +782,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '349,351|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ 021f3 #1'
+  name: '349,350,351|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ 021f3 #2'
   network: ws
   port: '443'
   server: 146.59.55.50

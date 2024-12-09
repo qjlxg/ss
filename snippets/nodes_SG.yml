@@ -64,7 +64,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13,17,23,233,316,371,488,544,566|🇸🇬 新加坡|@ripaojiedian
+  name: 13,23,233,316,371,488,544,566|🇸🇬 新加坡|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54030
   server: s-g04.loveroise.com
@@ -469,7 +469,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 563
-  name: 16,18,25,48,381,659|🇸🇬SG-13.212.36.13-0162 | 16.948MB
+  name: 16,18,48,381,659|🇸🇬SG-13.212.36.13-0162 | 16.948MB
   password: amazonskr05
   port: 443
   server: 13.212.36.13
@@ -680,7 +680,7 @@ proxies:
   client-fingerprint: chrome
   country: 🇺🇸US
   delay: 413
-  name: '16,18,25,48,381|新加坡 - 新加坡 - Amazon Technologies Inc - 3 #2'
+  name: '16,18,48,381|新加坡 - 新加坡 - Amazon Technologies Inc - 3 #2'
   password: amazonskr05
   port: 443
   server: 47.128.215.67
@@ -688,7 +688,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 16,25|SS-TCP-NA 🇸🇬 SG-47.128.225.94:443
+  name: 16|🇸🇬 SG 39
   password: amazonskr05
   port: 443
   server: 47.128.225.94
@@ -696,7 +696,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 16,25,659|🇸🇬SG-47.128.246.130-3751 | 17.121MB
+  name: 16,659|🇸🇬SG-47.128.246.130-3751 | 17.121MB
   password: amazonskr05
   port: 443
   server: 47.128.246.130
@@ -950,6 +950,19 @@ proxies:
   server: 54.255.245.62
   tfo: false
   type: ss
+- name: '17,356|_1 #5'
+  network: ws
+  password: blue2024
+  port: 443
+  server: 104.26.10.85
+  skip-cert-verify: true
+  sni: ta.promote.icu
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: ta.promote.icu
+    path: /
 - cipher: chacha20-ietf-poly1305
   delay: 2661
   name: '18,48,233,381|新加坡 - 新加坡 - Akamai Technologies - 5 #2'
@@ -980,22 +993,16 @@ proxies:
       Host: mysan2.jaquay22.workers.dev
     path: /
 - cipher: aes-256-cfb
-  name: 25|SS-TCP-NA 🇸🇬 SG-18.140.70.53:443
-  password: amazonskr05
-  port: 443
-  server: 18.140.70.53
-  type: ss
-- cipher: aes-256-cfb
   name: 25|SS-TCP-NA 🇸🇬 SG-18.136.207.46:443
   password: amazonskr05
   port: 443
   server: 18.136.207.46
   type: ss
 - cipher: aes-256-cfb
-  name: 25|SS-TCP-NA 🇸🇬 SG-175.41.187.222:443
+  name: 25|SS-TCP-NA 🇸🇬 SG-54.255.203.251:443
   password: amazonskr05
   port: 443
-  server: 175.41.187.222
+  server: 54.255.203.251
   type: ss
 - cipher: aes-256-cfb
   name: 25|SS-TCP-NA 🇸🇬 SG-18.143.139.72:443
@@ -1010,16 +1017,22 @@ proxies:
   server: 54.251.74.54
   type: ss
 - cipher: aes-256-cfb
-  name: 25|SS-TCP-NA 🇸🇬 SG-54.251.216.7:443
+  name: 25|SS-TCP-NA 🇸🇬 SG-175.41.187.222:443
   password: amazonskr05
   port: 443
-  server: 54.251.216.7
+  server: 175.41.187.222
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇸🇬 SG-54.251.126.150:443
+  password: 2y0tJ02XWp5AsdeMBgsZXx
+  port: 443
+  server: 54.251.126.150
   type: ss
 - cipher: aes-256-cfb
-  name: 25|SS-TCP-NA 🇸🇬 SG-54.255.203.251:443
+  name: 25|SS-TCP-NA 🇸🇬 SG-18.140.70.53:443
   password: amazonskr05
   port: 443
-  server: 54.255.203.251
+  server: 18.140.70.53
   type: ss
 - cipher: aes-256-cfb
   name: 25|SS-TCP-NA 🇸🇬 SG-18.142.177.17:443
@@ -1027,6 +1040,23 @@ proxies:
   port: 443
   server: 18.142.177.17
   type: ss
+- cipher: aes-256-cfb
+  name: 25|SS-TCP-NA 🇸🇬 SG-54.251.216.7:443
+  password: amazonskr05
+  port: 443
+  server: 54.251.216.7
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 25|VM-WS-NA 🇸🇬 SG-192.124.176.87:6090
+  network: ws
+  port: 6090
+  server: 192.124.176.87
+  tls: false
+  type: vmess
+  uuid: a5fa5f80-a383-46aa-b589-86ef68b5820c
+  ws-opts:
+    path: /
 - name: 25|TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087
   network: ws
   password: dns68
@@ -1038,12 +1068,6 @@ proxies:
     headers:
       Host: trojan.putata.us.kg
     path: /?ed
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇸🇬 SG-54.251.126.150:443
-  password: 2y0tJ02XWp5AsdeMBgsZXx
-  port: 443
-  server: 54.251.126.150
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 26|新加坡01 | 1x SG
   password: 04767f30-d9ef-4da3-9795-811d1d7483d3
@@ -1348,21 +1372,6 @@ proxies:
     path: /anti13.zingfast.vn
 - alterId: 0
   cipher: auto
-  name: '128,137,143,211,212,243,291,295,301,616,618,621,629,630,633,634,635,638,643,644|🔒
-    VM-WS-NA 🇸🇬 SG-192.124.176.87:6090 #16'
-  network: ws
-  port: '6090'
-  server: 192.124.176.87
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a5fa5f80-a383-46aa-b589-86ef68b5820c
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
-- alterId: 0
-  cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
@@ -1379,6 +1388,21 @@ proxies:
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: '128,137,143,211,212,243,291,295,301,616,618,621,629,630,633,634,635,638,643,644|🔒
+    VM-WS-NA 🇸🇬 SG-192.124.176.87:6090 #16'
+  network: ws
+  port: '6090'
+  server: 192.124.176.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a5fa5f80-a383-46aa-b589-86ef68b5820c
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
 - alterId: 0
   cipher: auto
   name: '128,138,143,291,295,304,395,403,437,438,439,440,447,448,449,450,452,457,458,459,475,705|🇸🇬SG-206.238.236.36-8016
@@ -3517,8 +3541,8 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '348,349,351|🔒🇸🇬 SG 168.138.163.13 ◈ ws:443 ◈ Oracle Corporation / Oracle
-    Public Cloud ◈ e87bc #2'
+  name: '348,349,350,351|🔒🇸🇬 SG 168.138.163.13 ◈ ws:443 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ e87bc #3'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -3546,7 +3570,8 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '348,349,351|🇸🇬 SG 213.35.113.150 ◈ ws:80 ◈ Oracle Corporation ◈ f39ed #2'
+  name: '348,349,350,351|🇸🇬 SG 213.35.113.150 ◈ ws:80 ◈ Oracle Corporation ◈ f39ed
+    #3'
   network: ws
   port: '80'
   server: 213.35.113.150
@@ -3560,8 +3585,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '348,349,351|🇸🇬 SG 168.138.163.13 ◈ ws:80 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ fccca #2'
+  name: '348,349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:80 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ fccca #3'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3575,8 +3600,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '348,349,351|🇸🇬 SG 168.138.163.13 ◈ ws:8080 ◈ Oracle Corporation / Oracle
-    Public Cloud ◈ fdaaa #1'
+  name: '348,349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:8080 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ fdaaa #2'
   network: ws
   port: 8080
   server: speed.cloudflare.com
@@ -3632,8 +3657,8 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '349,351|🇸🇬 SG 168.138.163.13 ◈ ws:2052 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ b1b6f #1'
+  name: '349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:2052 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ b1b6f #2'
   network: ws
   port: 2052
   server: speed.cloudflare.com
@@ -3647,8 +3672,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '349,351|🇸🇬 SG 168.138.163.13 ◈ ws:2082 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ fc42f #1'
+  name: '349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:2082 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ fc42f #2'
   network: ws
   port: 2082
   server: speed.cloudflare.com
@@ -3662,8 +3687,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '349,351|🇸🇬 SG 168.138.163.13 ◈ ws:2086 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ eb21d #1'
+  name: '349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:2086 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ eb21d #2'
   network: ws
   port: 2086
   server: speed.cloudflare.com
@@ -3677,8 +3702,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '349,351|🇸🇬 SG 168.138.163.13 ◈ ws:2095 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ cf92c #1'
+  name: '349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:2095 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ cf92c #2'
   network: ws
   port: 2095
   server: speed.cloudflare.com
@@ -3692,8 +3717,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '349,351|🇸🇬 SG 168.138.163.13 ◈ ws:8880 ◈ Oracle Corporation / Oracle Public
-    Cloud ◈ f0e96 #1'
+  name: '349,350,351|🇸🇬 SG 168.138.163.13 ◈ ws:8880 ◈ Oracle Corporation / Oracle
+    Public Cloud ◈ f0e96 #2'
   network: ws
   port: 8880
   server: speed.cloudflare.com
@@ -3707,7 +3732,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 351|🔒🇸🇬 SG 31.192.234.7 ◈ tcp:12954 ◈ Chelyabinsk-Signal ◈ 918e6
+  name: '350,351|🔒🇸🇬 SG 31.192.234.7 ◈ tcp:12954 ◈ Chelyabinsk-Signal ◈ 918e6 #1'
   network: tcp
   port: '12954'
   server: 31.192.234.7
@@ -3715,6 +3740,76 @@ proxies:
   tls: true
   type: vmess
   uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+- alterId: 0
+  cipher: auto
+  name: 350|🔒🇸🇬 SG 157.230.241.29 ◈ ws:443 ◈ DigitalOcean ◈ 5bc26
+  network: ws
+  port: '443'
+  server: 157.230.241.29
+  servername: sgdo.vipcasper.com
+  tls: true
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 350|🇸🇬 SG 157.230.241.29 ◈ ws:80 ◈ DigitalOcean ◈ 80762
+  network: ws
+  port: 80
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 350|💰🇸🇬 SG 157.230.241.29 ◈ ws:80 ◈ DigitalOcean ◈ 5889b
+  network: ws
+  port: 80
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 350|🇸🇬 SG 157.230.241.29 ◈ ws:8080 ◈ DigitalOcean ◈ 8d10e
+  network: ws
+  port: 8080
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 350|💰🇸🇬 SG 157.230.241.29 ◈ ws:8080 ◈ DigitalOcean ◈ 13c12
+  network: ws
+  port: 8080
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /vmess
 - alterId: 2
   cipher: auto
   name: 353,507|🇸🇬 SG_1302 |19.74Mb
@@ -6198,6 +6293,18 @@ proxies:
     headers:
       host: sg25.jnstore.biz.id
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 568|🇸🇬SG-206.238.236.36-7862 | 25.022MB
+  network: ws
+  port: 2052
+  server: 206.238.236.36
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 568|🇸🇬 www.85la.com 新加坡 08

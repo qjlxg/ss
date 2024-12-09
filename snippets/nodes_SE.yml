@@ -13,20 +13,20 @@ proxies:
   server: 121.127.46.147
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 25,659,662|未知58 454.8KB/s
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 25|SS-TCP-NA 🇸🇪 SE-94.228.165.178:58176
   password: afKAHp1VfRWZu91LIi9o0D
   port: 58176
   server: 94.228.165.178
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '25,27,659,662|未知58 454.8KB/s #1'
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  skip-cert-verify: true
+  tls: true
   type: ss
 - client-fingerprint: chrome
   name: 25,87|[Trojan] Relay_🇸🇪SE-🇳🇱NL_887
@@ -41,6 +41,20 @@ proxies:
   ws-opts:
     headers:
       Host: nl1.trojanvpn.xyz
+    path: /
+- client-fingerprint: chrome
+  name: 25,87|[Trojan] Relay_🇸🇪SE-🇬🇧GB_888
+  network: ws
+  password: b697183d-288b-40ab-98ae-8e3eb85f371c
+  port: 443
+  server: 185.146.173.69
+  skip-cert-verify: true
+  sni: uk1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: uk1.trojanvpn.xyz
     path: /
 - client-fingerprint: chrome
   name: 25,87|[Trojan] Relay_🇸🇪SE-🇩🇪DE_886
@@ -69,20 +83,6 @@ proxies:
   ws-opts:
     headers:
       Host: fr1.trojanvpn.xyz
-    path: /
-- client-fingerprint: chrome
-  name: 25,87|[Trojan] Relay_🇸🇪SE-🇬🇧GB_888
-  network: ws
-  password: b697183d-288b-40ab-98ae-8e3eb85f371c
-  port: 443
-  server: 185.146.173.69
-  skip-cert-verify: true
-  sni: uk1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: uk1.trojanvpn.xyz
     path: /
 - cipher: aes-256-cfb
   name: 68,227,311,736|576O5Zu9XzEyMDkwMDE
