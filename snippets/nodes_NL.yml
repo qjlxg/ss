@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1136
-  name: 0,1,2,18,47,48,65,67,73,148,227,291,295,298,363,381,395,403,437,438,447,448,452,457,458,459,485,489,490,491,579,733,736|荷兰_1209001
+  name: 0,1,2,18,47,48,65,67,73,148,227,291,295,299,363,381,395,403,437,438,447,448,452,457,458,459,485,489,490,491,579,733,736|荷兰_1209001
   network: ws
   port: '2082'
   server: 45.131.4.208
@@ -17,12 +17,11 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,1,2,39,71,72,395,437,438,447,448,452,457,458,459,485|TG频道@mfbpn-1171-RELAY
+  name: 0,1,2,39,71,72,395,437,447,448,452,457,458,485|TG频道@mfbpn-1348-RELAY
   network: ws
   port: 2082
   server: 45.131.208.116
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -46,12 +45,13 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1,2,47,71,72,73,227,233,291,295,298,485,489,490,491,579,733|英国_1208026
+  name: '0,1,2,47,71,72,73,227,233,291,295,299,438,459,485,489,490,491,579,733|英国_1208026
     #1'
   network: ws
   port: '2082'
   server: 185.193.31.108
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -61,7 +61,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 0,1,2,39,47,71,72,227,291,295,298,395,437,438,447,448,452,457,458,459,485,489,490,491,733|美国_1208035
+  name: 0,1,2,39,47,71,72,227,233,291,295,299,395,437,438,447,448,452,457,458,459,485,489,490,491,733|美国_1208035
   network: ws
   port: '2082'
   server: 45.159.219.89
@@ -76,7 +76,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1,2,39,47,227,291,295,298,395,437,438,447,448,452,457,458,459,489,490,491,733|美国_1208376
+  name: '0,1,2,39,47,227,291,295,299,395,437,438,447,448,452,457,458,459,489,490,491,733|美国_1208376
     #1'
   network: ws
   port: '2082'
@@ -92,15 +92,18 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '0,1,2,47,71,72,227,233,291,295,298,395,437,438,447,448,452,457,458,459,485,489,490,491,733|英国_1208024
+  client-fingerprint: chrome
+  name: '0,1,2,47,71,72,87,227,233,291,295,299,395,437,438,447,448,452,457,458,459,485,489,490,491,733|英国_1208024
     #1'
   network: ws
   port: '2082'
   server: 185.193.30.187
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
@@ -109,12 +112,13 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1094
-  name: '2,18,39,47,48,71,72,73,227,233,291,295,298,381,397,403,485,489,490,491,579,733|荷兰_1208003
+  name: '2,18,39,47,48,71,72,73,227,233,291,295,381,403,438,459,485,489,490,491,579,733|荷兰_1208003
     #1'
   network: ws
   port: '2082'
   server: 45.131.211.23
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -124,12 +128,11 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '2,73,227,395,437,438,447,448,452,457,458,459,485,579,733|荷兰_1208001 #1'
+  name: '2,73,227,395,437,447,448,452,457,458,485,579,733|荷兰_1208001 #1'
   network: ws
   port: '2082'
   server: 45.131.6.94
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -174,27 +177,30 @@ proxies:
   server: host-050.crazyspeed.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19,25,394,659|🇬🇧GB-107.181.155.244-5607 | 6.531MB
-  password: TjTxgBFTGHrHS6x2RVJmVN3wPco1gcJaR4hnofLBt9gGA9kG724TCAARfVxBKA1fEq5mKtqi68ugML8XVfP16EU4EtctfA5E
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '19,25,27,394,662|未知98 34.7KB/s #1'
+  password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
   port: 55330
   server: 107.181.155.244
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: aes-128-cfb
-  name: 20,25,28,96,185,221,415,438,441,459,664|21|_372
+  name: 20,25,28,96,185,221,415,438,441,459,659,664|21|_372
   password: shadowsocks
   port: 443
   server: 109.201.152.181
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 20,23,25,415,438,441,459,488,677|SS-兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:30252
+  name: 20,23,25,438,441,459,488,677|SS-兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:30252
   password: Zgg@X0m515
   port: 30252
   server: 176.124.199.255
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 20,23,25,415,438,441,459,488,677|SS-兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:19999
+  name: 20,23,438,441,459,488,677|SS-兰-NF解锁荷兰地区非自制剧-ChatGPT-TikTok-YouTube-176.124.199.255:19999
   password: '%-MVa11&zp'
   port: 19999
   server: 176.124.199.255
@@ -207,102 +213,11 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 23,25,371,488|🇱NL-77.246.97.187-370
+  name: 23,25,371,438,459,488|NL-77.246.97.187-547
   password: 7kJQs2RYHhViTYWaf1RobB
   port: 7749
   server: 77.246.97.187
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-193.29.139.202:8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.202
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-195.74.86.162:443
-  password: U2EIOHS5CMFms1vO5IhbJW
-  port: 443
-  server: 195.74.86.162
-  type: ss
-- cipher: aes-128-gcm
-  name: 25,659|🇳🇱NL-149.34.244.77-3721 | 22.486MB
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.77
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '25,27,662|未知21 #1'
-  password: uQS5ntVqC00sSKkeNzUiD3
-  port: 42090
-  server: 89.23.103.125
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25,659|🇳🇱NL-82.115.5.141-3777 | 18.886MB
-  password: ZzY0_Jm7T0NtZck-KZFOgQ
-  port: 1080
-  server: 82.115.5.141
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-194.87.82.28:12224
-  password: 2fwufOmJ9ELfN4umzcHBfV
-  port: 12224
-  server: 194.87.82.28
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25,677|SS-美国-NF解锁兰地区非自制剧-ChatGPT-TikTok-YouTube-150.241.68.171:24064
-  password: LcEDAhRkNrjwB16SvN5d7fAmpswtGTAexB1qdzmeFrg=
-  port: 24064
-  server: 150.241.68.171
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-89.23.103.21:51584
-  password: oYQ8JwEldYn4KT2gfZ6eNl
-  port: 51584
-  server: 89.23.103.21
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-195.200.26.173:35333
-  password: wryam6CwJGcsPtUuJOHnL6
-  port: 35333
-  server: 195.200.26.173
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-45.67.231.156:17233
-  password: bLN43fbhH0Dhx8pXcMwXloN5WlXn09BRzIZjMl0vt0SaLPiIC43Xq8lXgCcgANOY
-  port: 17233
-  server: 45.67.231.156
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇳🇱 NL-150.241.102.95:21771
-  password: VDVtjQVaNbiyV0dJV4f92g
-  port: 21771
-  server: 150.241.102.95
-  type: ss
-- name: 25|TR-WS-TLS 🇳🇱 NL-5.10.247.97:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.10.247.97
-  sni: zb.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
-- name: 25|TR-WS-TLS 🇳🇱 NL-5.10.244.100:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 5.10.244.100
-  sni: zb.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: '25,227,395,437,438,447,448,452,457,458,459,471,474,569|二爷翻墙网 https://1808.free.hr_GB_43
@@ -319,20 +234,27 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: '25,86,395,437,438,447,448,452,457,458,459|🇱NL-45.199.138.226-0394 #1'
+- name: 25|TR-WS-TLS 🇳🇱 NL-45.131.209.89:443
   network: ws
-  port: 41003
-  server: 45.199.138.226
-  servername: www.36092822.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
+  password: NISHIKUITAN111
+  port: 443
+  server: 45.131.209.89
+  sni: za.ylks.xyz
+  type: trojan
   ws-opts:
     headers:
-      Host: www.36092822.xyz
+      Host: za.ylks.xyz
+    path: /
+- name: 25|TR-WS-TLS 🇳🇱 NL-5.10.247.97:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 5.10.247.97
+  sni: zb.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
     path: /
 - name: 25|TR-WS-TLS 🇳🇱 NL-5.10.245.142:443
   network: ws
@@ -345,11 +267,33 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 25|TR-WS-TLS 🇳🇱 NL-45.131.209.89:443
+- name: 25|TR-WS-TLS 🇳🇱 NL-5.10.244.100:443
   network: ws
   password: NISHIKUITAN111
   port: 443
-  server: 45.131.209.89
+  server: 5.10.244.100
+  sni: zb.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
+- name: 25|TR-WS-NA 🇳🇱 NL-45.131.208.126:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 45.131.208.126
+  sni: za.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: //
+- name: 25|TR-WS-TLS 🇳🇱 NL-156.229.48.169:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 156.229.48.169
   sni: za.ylks.xyz
   type: trojan
   ws-opts:
@@ -367,28 +311,95 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: /
-- name: 25|TR-WS-TLS 🇳🇱 NL-156.229.48.169:443
+- alterId: 64
+  cipher: auto
+  name: '25,395,437,447,448,452,457,458|🇳🇱NL-45.199.138.226-0394 #6'
   network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 156.229.48.169
-  sni: za.ylks.xyz
-  type: trojan
+  port: 41003
+  server: 45.199.138.226
+  servername: www.36092822.xyz
+  tls: true
+  type: vmess
+  uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
   ws-opts:
     headers:
-      Host: za.ylks.xyz
+      Host: www.36092822.xyz
     path: /
-- name: 25|TR-WS-NA 🇳🇱 NL-45.131.208.126:443
-  network: ws
-  password: NISHIKUITAN111
+- cipher: chacha20-ietf-poly1305
+  name: 25,659|🇳🇱NL-150.241.68.171-3840 | 1.609MB
+  password: LcEDAhRkNrjwB16SvN5d7fAmpswtGTAexB1qdzmeFrg=
+  port: 24064
+  server: 150.241.68.171
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇳🇱 NL-193.29.139.202:8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '25,27,662|未知116 #1'
+  password: oYQ8JwEldYn4KT2gfZ6eNl
+  port: 51584
+  server: 89.23.103.21
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25,659|🇳🇱NL-82.115.5.141-4035 | 4.53MB
+  password: ZzY0_Jm7T0NtZck-KZFOgQ
+  port: 1080
+  server: 82.115.5.141
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇳🇱 NL-195.200.26.173:35333
+  password: wryam6CwJGcsPtUuJOHnL6
+  port: 35333
+  server: 195.200.26.173
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇳🇱 NL-45.67.231.156:17233
+  password: bLN43fbhH0Dhx8pXcMwXloN5WlXn09BRzIZjMl0vt0SaLPiIC43Xq8lXgCcgANOY
+  port: 17233
+  server: 45.67.231.156
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '25,27,662|未知23 #1'
+  password: 5mgZJzPv7hrLX4KMdPIeAW
+  port: 21771
+  server: 150.241.102.95
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25,659|🇳🇱NL-89.23.103.125-3751 | 1.344MB
+  password: uQS5ntVqC00sSKkeNzUiD3
+  port: 42090
+  server: 89.23.103.125
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇳🇱 NL-194.87.82.28:12224
+  password: 2fwufOmJ9ELfN4umzcHBfV
+  port: 12224
+  server: 194.87.82.28
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '25,27,662|未知59 #1'
+  password: U2EIOHS5CMFms1vO5IhbJW
   port: 443
-  server: 45.131.208.126
-  sni: za.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: //
+  server: 195.74.86.162
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-128-gcm
+  name: 25,486,659|🇳🇱NL-149.34.244.77-4121 | 7.882MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.77
+  type: ss
 - name: 25|TR-WS-NONE 🇳🇱 NL-86.106.20.145:18730
   network: ws
   password: e4f694e3-8299-4942-bbeb-227d41435edf
@@ -422,10 +433,12 @@ proxies:
   uuid: 3138d0e2-50d4-4950-9d50-5b833eb218f0
 - alterId: 0
   cipher: auto
-  name: 75,233|🟠_🇳🇱_💼_github.com/Ruk1ng001_3139653733616365
+  name: '75,233,486|TG频道@mfbpn-1348-RELAY #1'
   network: ws
   port: 2082
   server: 45.131.208.116
+  skip-cert-vertify: true
+  tls: false
   type: vmess
   udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -470,7 +483,7 @@ proxies:
   type: vmess
   uuid: bc8e1235-6cef-4bdd-f3f2-0b4f3c8a7b70
 - cipher: aes-256-cfb
-  name: 96,659,664|21|_57
+  name: 96,664|21|_57
   password: dU3DSNS8wYPXzEKw
   port: 9029
   server: 45.89.52.66
@@ -483,7 +496,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
-  name: 96,659,664|21|🇷🇺RU_651
+  name: 96,664|21|🇷🇺RU_651
   password: ZET59LF6DvCC8KVt
   port: 9005
   server: 45.89.52.66
@@ -495,6 +508,13 @@ proxies:
   server: 45.89.52.66
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇷🇺RU
+  name: 96,664|21|🇷🇺RU_652
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 45.89.52.66
+  type: ss
 - cipher: aes-256-cfb
   country: 🇷🇺RU
   name: 96,664|21|🇺RU_650
@@ -620,6 +640,21 @@ proxies:
     headers:
       Host: www.42077230.xyz
     path: /path/1683629314915
+- alterId: 0
+  cipher: auto
+  name: '128,137,143,291,295,301,595,598,606,608,615,618,621,629,631,632,633,718,733|荷兰_1208005
+    #1'
+  network: ws
+  port: '2053'
+  server: 141.144.198.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
 - alterId: 64
   cipher: auto
   name: '128,137,143,291,295,301,615,618,621,629,631,633,634,635,638,643,645|🔒 VM-WS-TLS
@@ -635,21 +670,6 @@ proxies:
     headers:
       Host: www.36092822.xyz
     path: /path/1733306433373
-- alterId: 0
-  cipher: auto
-  name: '128,137,143,195,196,202,291,295,301,485,595,598,606,608,615,618,621,629,631,632,633,718,733|荷兰_1208005
-    #1'
-  network: ws
-  port: '2053'
-  server: 141.144.198.113
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: 151|NL
@@ -792,7 +812,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '158,395,437,438,447,448,452,457,458,459|🇳🇱NL-45.155.249.151-5975 #8'
+  name: '158,395,437,438,447,448,452,457,458,459|🇳🇱NL-45.155.249.151-6013 #1'
   network: ws
   port: 80
   server: 45.155.249.151
@@ -1049,20 +1069,20 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|NL-172.233.51.96-8827 #1'
+  name: '185,438,459|NL-172.233.51.96-8870 #1'
   password: XvK0ltH67Xhv9ht9RhYsFy
   port: 8080
   server: masting.xyz
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '185,221,438,459|🇺🇸US-13.248.169.48-8908 #1'
+  name: '185,221,438,459|🇺🇸US-13.248.169.48-8951 #1'
   password: Z1wBgCIV329qt77IFvDEGE
   port: 8080
   server: beeconf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|🇺🇸US-13.248.169.48-8910 #1'
+  name: '185,438,459|🇺🇸US-13.248.169.48-8953 #1'
   password: T1pb7XxxrolvPSb0u2xSOA
   port: 8080
   server: beacomf.xyz
@@ -1123,7 +1143,7 @@ proxies:
     path: /V2RayyNGvpn
 - alterId: 0
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇫🇷FR-51.15.105.39-9025 #8'
+  name: '185,395,437,438,447,448,452,457,458,459|🇫🇷FR-51.15.105.39-9068 #1'
   network: ws
   port: 443
   server: 51.15.105.39
@@ -1135,20 +1155,20 @@ proxies:
   ws-opts:
     path: /nimvws
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|🇱NL-40.114.213.220-9104 #1'
+  name: '185,438,459|🇱NL-40.114.213.220-9147 #1'
   password: f7Pj0c73PqQf97lmWYmBbX
   port: 64504
   server: 40.114.213.220
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|🇳🇱NL-40.114.210.138-9106 #1'
+  name: '185,438,459|🇳🇱NL-40.114.210.138-9149 #1'
   password: pWqTTV6lrnPApdEAF8Qsm8
   port: 40943
   server: 40.114.210.138
   type: ss
 - alterId: 0
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-199.247.30.45-9272 #1'
+  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-199.247.30.45-9315 #1'
   network: ws
   port: 8080
   server: 199.247.30.45
@@ -1215,20 +1235,20 @@ proxies:
       Host: ''
     path: /?ed=2048
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|🇱NL-185.88.141.118-9318 #1'
+  name: '185,438,459|🇱NL-185.88.141.118-9361 #1'
   password: XvK0ltH67Xhv9ht9RhYsFy
   port: 8080
   server: 185.88.141.118
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '185,438,459|🇳🇱NL-185.88.140.204-9320 #1'
+  name: '185,438,459|🇳🇱NL-185.88.140.204-9363 #1'
   password: qGjmI8WQlF0tfhDbkLqGdN
   port: 8080
   server: 185.88.140.204
   type: ss
 - alterId: 64
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-154.85.1.4-9580 #1'
+  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-154.85.1.4-9623 #1'
   network: ws
   port: 443
   server: 154.85.1.4
@@ -1241,7 +1261,7 @@ proxies:
     path: /path/1683881458407
 - alterId: 64
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇳🇱NL-154.85.1.3-9585 #8'
+  name: '185,395,437,438,447,448,452,457,458,459|🇳🇱NL-154.85.1.3-9628 #1'
   network: ws
   port: 443
   server: 154.85.1.3
@@ -1254,7 +1274,7 @@ proxies:
     path: /path/1683629314915
 - alterId: 64
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇳🇱NL-154.85.1.130-9588 #8'
+  name: '185,395,437,438,447,448,452,457,458,459|🇳🇱NL-154.85.1.130-9631 #1'
   network: ws
   port: 443
   server: 154.85.1.130
@@ -1267,7 +1287,7 @@ proxies:
     path: /path/1690369250008
 - alterId: 64
   cipher: auto
-  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-154.85.1.129-9589 #1'
+  name: '185,395,437,438,447,448,452,457,458,459|🇱NL-154.85.1.129-9632 #1'
   network: ws
   port: 443
   server: 154.85.1.129
@@ -1519,14 +1539,16 @@ proxies:
     path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE
 - alterId: 0
   cipher: auto
-  name: '227,395,437,438,447,448,452,457,458,459,468,733|荷兰_1208013 #1'
+  name: '227,395,437,438,447,448,452,457,458,459,468,486,733|荷兰_1208013 #1'
   network: ws
   port: '443'
   server: 188.114.99.11
   servername: ''
   skip-cert-verify: false
+  skip-cert-vertify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
   ws-opts:
     headers:
@@ -1579,7 +1601,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '227,336,395,437,438,447,448,452,457,458,459,475,733|荷兰_1208020 #1'
+  name: '227,326,336,395,437,438,447,448,452,457,458,459,475,733|荷兰_1208020 #1'
   network: ws
   port: '443'
   server: 188.114.99.183
@@ -1639,12 +1661,31 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 233|🟠_🇳🇱_💼_github.com/Ruk1ng001_6434353264393962
+  name: '233,486|TG频道@mfbpn-1498-RELAY #1'
   network: ws
   port: 2082
   server: 45.131.5.226
   skip-cert-verify: true
+  skip-cert-vertify: true
   sni: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '233,404,486|TG频道@mfbpn-1486-RELAY #1'
+  network: ws
+  port: 2082
+  server: 45.131.6.94
+  skip-cert-verify: true
+  skip-cert-vertify: true
+  sni: ''
+  tls: false
   type: vmess
   udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
@@ -1653,7 +1694,7 @@ proxies:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
 - cipher: chacha20-ietf-poly1305
-  name: '261,438,459|NL-51.124.217.177-2427 #1'
+  name: '261,438,459|NL-51.124.217.177-2472 #1'
   password: TRoGQKepg1AsWO2kTnfPnb
   port: 62048
   server: 51.124.217.177
@@ -1691,7 +1732,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   country: 🇺🇸US
-  name: '261,385,438,459|🇱NL-172.99.188.99-2744 #1'
+  name: '261,385,438,459|🇱NL-172.99.188.99-2789 #1'
   password: faBAoD54k87UJG7
   port: 2376
   server: 172.99.188.99
@@ -1714,7 +1755,7 @@ proxies:
     path: /footers
 - alterId: 64
   cipher: auto
-  name: '268,395,437,438,447,448,452,457,458,459|🇳🇱NL-46.182.107.45-1986 #8'
+  name: '268,395,437,438,447,448,452,457,458,459|🇳🇱NL-46.182.107.45-2031 #1'
   network: ws
   port: 443
   server: 46.182.107.45
@@ -1793,7 +1834,7 @@ proxies:
     path: /footers
 - alterId: 64
   cipher: auto
-  name: '268,395,437,438,447,448,452,457,458,459|🇳🇱NL-46.182.107.39-1997 #8'
+  name: '268,395,437,438,447,448,452,457,458,459|🇱NL-46.182.107.39-2042 #1'
   network: ws
   port: 443
   server: 46.182.107.39
@@ -1824,7 +1865,7 @@ proxies:
     path: /footers
 - alterId: 64
   cipher: auto
-  name: '268,395,437,438,447,448,452,457,458,459|🇳🇱NL-46.182.107.46-2004 #8'
+  name: '268,395,437,438,447,448,452,457,458,459|🇳🇱NL-46.182.107.46-2049 #1'
   network: ws
   port: 443
   server: 46.182.107.46
@@ -1869,21 +1910,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: 324,326|NL🇳🇱 | yelad9yh0eoeyelan.uunlockeeedworlld.cloudns.org-443 | 200.36ms
-  network: ws
-  port: '443'
-  server: studioroofingservices.com
-  servername: yelad9yh0eoeyelan.uunlockeeedworlld.cloudns.org
-  tls: true
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: yelan.uunlockeeedworlld.cloudns.org
-    path: /linkws/afrhms16v.bestxray.buzz
-- alterId: 0
-  cipher: auto
-  name: 324,326|NL🇳🇱 | yelaye9hh9dh9dy9dlan.uunlockeeedworlld.cloudns.org-443 | 347.48ms
+  name: 324,326|NL🇳🇱 | yelaye9hh9dh9dy9dlan.uunlockeeedworlld.cloudns.org-443 | 246.79ms
   network: ws
   port: '443'
   server: git.bartsmeding.nl
@@ -1897,7 +1924,7 @@ proxies:
     path: /linkws/glweidf.sbs
 - alterId: 0
   cipher: auto
-  name: 324,326|DE🇩🇪 | ye96hr96ge06geyelan.uunlockeeedworlld.cloudns.org-443 | 208.03ms
+  name: 324,326|DE🇩🇪 | ye96hr96ge06geyelan.uunlockeeedworlld.cloudns.org-443 | 116.8ms
   network: ws
   port: '443'
   server: sasski.sofurry.com
@@ -1910,23 +1937,8 @@ proxies:
       Host: yelan.uunlockeeedworlld.cloudns.org
     path: /vpnjantit/ua1.vpnjantit.com
 - alterId: 0
-  cipher: auto
-  name: 324,326|NL🇳🇱 | yupvevpus7v07ev0uckyelan.uunlockeeedworlld.cloudns.org-443
-    | 260.32ms
-  network: ws
-  port: '443'
-  server: www.chinazstb.com
-  servername: yupvevpus7v07ev0uckyelan.uunlockeeedworlld.cloudns.org
-  tls: true
-  type: vmess
-  uuid: 91855896-b328-11ef-957b-fb6c9a39ccf9
-  ws-opts:
-    headers:
-      Host: yelan.uunlockeeedworlld.cloudns.org
-    path: /vpnjantit/ae1.vpnjantit.com
-- alterId: 0
   cipher: aes-128-gcm
-  name: 324,326|DE🇩🇪 | yelhd88bdy8bd8yyelan.uunlockeeedworlld.cloudns.org-443 | 87.05ms
+  name: 324,326|NL🇳🇱 | yelhd88bdy8bd8yyelan.uunlockeeedworlld.cloudns.org-443 | 116.15ms
   network: ws
   port: '443'
   server: fa.world-crypt.net
@@ -3603,13 +3615,16 @@ proxies:
   sni: ta.promote.icu
   type: trojan
   udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 371|🇳🇱_荷兰_7
+  name: '371,486|TG频道@mfbpn-1633-RELAY #1'
   network: ws
-  port: '2082'
-  server: 213.109.205.63
+  port: 2082
+  server: 194.152.44.218
+  skip-cert-vertify: true
+  tls: false
   type: vmess
+  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
@@ -3617,13 +3632,31 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 371,404|🇳🇱_NL_荷->🇨🇦_CA_加拿大_3
+  name: '371,486|TG频道@mfbpn-1628-RELAY #1'
+  network: ws
+  port: 2082
+  server: 213.109.205.63
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+  ws-opts:
+    headers:
+      host: ip18.6929198.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: '371,404,486|TG频道@mfbpn-1634-RELAY #1'
   network: ws
   port: 2082
   server: 45.131.211.23
   skip-cert-verify: true
+  skip-cert-vertify: true
   sni: ''
+  tls: false
   type: vmess
+  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
@@ -3631,25 +3664,31 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '371,404|🇳🇱_NL_荷兰->🇨🇦_CA_加拿大_1 #1'
+  name: '371,404,486|TG频道@mfbpn-1366-RELAY #1'
   network: ws
   port: 2082
   server: 45.159.219.89
   skip-cert-verify: true
+  skip-cert-vertify: true
   sni: ''
+  tls: false
   type: vmess
+  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 371|🇳🇱_荷兰_13
+  name: 371,486|TG道@mfbpn-1447-RELAY
   network: ws
-  port: '2082'
+  port: 2082
   server: 185.193.30.187
+  skip-cert-vertify: true
+  tls: false
   type: vmess
+  udp: true
   uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
   ws-opts:
     headers:
@@ -3657,7 +3696,7 @@ proxies:
     path: /github.com/Alvin9999
 - cipher: aes-256-cfb
   country: 🇳🇱NL
-  name: '386,387,388,438,459|🇳🇱NL-94.102.57.163-6167 #1'
+  name: '386,387,388,438,459|🇳🇱NL-94.102.57.163-6205 #1'
   obfs: http_simple
   obfs-param: WWW.YOUNEED.WIN
   password: sEscPBiAD9K$&@79
@@ -3668,24 +3707,11 @@ proxies:
   type: ssr
 - cipher: aes-256-gcm
   country: 🇳🇱NL
-  name: '388,438,459|🇵JP-85.208.108.93-6225 #1'
+  name: '388,438,459|🇵JP-85.208.108.93-6263 #1'
   password: FoOiGlkAA9yPEGP
   port: 7306
   server: 85.208.108.93
   type: ss
-- alterId: 64
-  cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇱NL-46.182.107.45-0736 #1'
-  network: ws
-  port: 443
-  server: 46.182.107.45
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: '395,437,438,447,448,452,457,458,459,587,694|github.com/freefq - 美国Microsoft公司
@@ -3704,12 +3730,24 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|NL-45.199.138.226-1826 #1'
+  name: '395,437,438,447,448,452,457,458,459|🇱NL-46.182.107.45-0736 #1'
+  network: ws
+  port: 443
+  server: 46.182.107.45
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fe5f69e7-e183-439b-950b-9661ef0651f2
+  ws-opts:
+    path: /
+- alterId: 64
+  cipher: auto
+  name: '395,437,447,448,452,457,458|🇳🇱NL-45.199.138.226-1826 #6'
   network: ws
   port: 41003
   server: 45.199.138.226
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
@@ -3719,12 +3757,11 @@ proxies:
     path: /path/1733651459092
 - alterId: 64
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇱NL-45.199.138.226-1827 #1'
+  name: '395,437,447,448,452,457,458|🇳🇱NL-45.199.138.226-1827 #6'
   network: ws
   port: 41003
   server: 45.199.138.226
   servername: ''
-  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949
@@ -3734,7 +3771,7 @@ proxies:
     path: /path/1733477783705
 - alterId: 0
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇳🇱NL-195.54.174.18-2119 #8'
+  name: '395,437,438,447,448,452,457,458,459|🇳🇱NL-195.54.174.18-2164 #1'
   network: ws
   port: 80
   server: 195.54.174.18
@@ -3822,7 +3859,7 @@ proxies:
     path: /dgfdrg5GB5t5er
 - alterId: 0
   cipher: auto
-  name: '395,419,437,438,447,448,452,457,458,459|🇳🇱NL-195.54.174.18-5708 #8'
+  name: '395,419,437,438,447,448,452,457,458,459|🇳🇱NL-195.54.174.18-5746 #1'
   network: ws
   port: 80
   server: 195.54.174.18
@@ -3835,7 +3872,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇱NL-5.45.94.28-7814 #1'
+  name: '395,437,438,447,448,452,457,458,459|🇱NL-5.45.94.28-7852 #1'
   network: ws
   port: 80
   server: 5.45.94.28
@@ -4241,7 +4278,7 @@ proxies:
       Host: www.47734647.xyz
     path: /path/1698239888914
 - cipher: aes-256-gcm
-  name: '438,459|🇳🇱NL-81.19.208.107-1998 #1'
+  name: '438,459|🇳🇱NL-81.19.208.107-2043 #1'
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 81.19.208.107
@@ -4259,7 +4296,7 @@ proxies:
   server: 172.99.188.99
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇱NL-37.120.192.158-5193 #1'
+  name: '438,459|🇱NL-37.120.192.158-5231 #1'
   password: G!yBwPWH3Vao
   port: 800
   server: 37.120.192.158
@@ -4271,7 +4308,7 @@ proxies:
   server: 213.183.59.185
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.51.171-5195 #1'
+  name: '438,459|🇳🇱NL-213.183.51.171-5233 #1'
   password: U6qnYRhfyDmn8sgn
   port: 9041
   server: 213.183.51.171
@@ -4283,7 +4320,7 @@ proxies:
   server: 37.120.192.158
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇱NL-37.120.192.158-5197 #1'
+  name: '438,459|🇱NL-37.120.192.158-5235 #1'
   password: G!yBwPWH3Vao
   port: 803
   server: 37.120.192.158
@@ -4295,31 +4332,31 @@ proxies:
   server: 213.183.59.177
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇱NL-37.120.192.158-5202 #1'
+  name: '438,459|🇱NL-37.120.192.158-5240 #1'
   password: G!yBwPWH3Vao
   port: 809
   server: 37.120.192.158
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇱NL-37.120.192.158-5203 #1'
+  name: '438,459|🇱NL-37.120.192.158-5241 #1'
   password: G!yBwPWH3Vao
   port: 804
   server: 37.120.192.158
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.185-5206 #1'
+  name: '438,459|🇱NL-213.183.59.185-5244 #1'
   password: BejrQvtu9sqUeNuZ
   port: 9024
   server: 213.183.59.185
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.185-5207 #1'
+  name: '438,459|🇱NL-213.183.59.185-5245 #1'
   password: TN2YqghxeFDKZfLU
   port: 9037
   server: 213.183.59.185
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇳🇱NL-37.120.192.158-5208 #1'
+  name: '438,459|🇳🇱NL-37.120.192.158-5246 #1'
   password: G!yBwPWH3Vao
   port: 810
   server: 37.120.192.158
@@ -4331,37 +4368,37 @@ proxies:
   server: 37.120.192.158
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇱NL-37.120.192.158-5211 #1'
+  name: '438,459|🇱NL-37.120.192.158-5249 #1'
   password: G!yBwPWH3Vao
   port: 802
   server: 37.120.192.158
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.51.172-5212 #1'
+  name: '438,459|🇱NL-213.183.51.172-5250 #1'
   password: EXN3S3eQpjE7EJu8
   port: 9027
   server: 213.183.51.172
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '438,459|🇳🇱NL-37.120.192.158-5213 #1'
+  name: '438,459|🇳🇱NL-37.120.192.158-5251 #1'
   password: G!yBwPWH3Vao
   port: 801
   server: 37.120.192.158
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-185.246.155.35-5545 #1'
+  name: '438,459|🇱NL-185.246.155.35-5583 #1'
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 185.246.155.35
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.211-5547 #1'
+  name: '438,459|🇱NL-213.183.59.211-5585 #1'
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 213.183.59.211
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.206-5554 #1'
+  name: '438,459|🇳🇱NL-213.183.59.206-5592 #1'
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 213.183.59.206
@@ -4373,7 +4410,7 @@ proxies:
   server: 213.183.59.214
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.206-5559 #1'
+  name: '438,459|🇱NL-213.183.59.206-5597 #1'
   password: c3NtHJ5ujV2tGDfj
   port: 9084
   server: 213.183.59.206
@@ -4385,13 +4422,13 @@ proxies:
   server: 213.183.59.206
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.206-5565 #1'
+  name: '438,459|🇳🇱NL-213.183.59.206-5603 #1'
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 213.183.59.206
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.211-5568 #1'
+  name: '438,459|🇳🇱NL-213.183.59.211-5606 #1'
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 213.183.59.211
@@ -4403,13 +4440,13 @@ proxies:
   server: 213.183.59.190
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.190-5574 #1'
+  name: '438,459|🇱NL-213.183.59.190-5612 #1'
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 213.183.59.190
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.211-5575 #1'
+  name: '438,459|🇱NL-213.183.59.211-5613 #1'
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 213.183.59.211
@@ -4445,7 +4482,7 @@ proxies:
   server: 213.183.59.214
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.206-5600 #1'
+  name: '438,459|🇳🇱NL-213.183.59.206-5638 #1'
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 213.183.59.206
@@ -4457,13 +4494,13 @@ proxies:
   server: 213.183.59.206
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.211-5609 #1'
+  name: '438,459|🇳🇱NL-213.183.59.211-5647 #1'
   password: ueLXVkvh4hckhErQ
   port: 9060
   server: 213.183.59.211
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.211-5616 #1'
+  name: '438,459|🇳🇱NL-213.183.59.211-5654 #1'
   password: FG5ddLsMPbV5CutE
   port: 9050
   server: 213.183.59.211
@@ -4475,13 +4512,13 @@ proxies:
   server: 213.183.59.214
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.206-5622 #1'
+  name: '438,459|🇱NL-213.183.59.206-5660 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 213.183.59.206
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇳🇱NL-213.183.59.211-5626 #1'
+  name: '438,459|🇳🇱NL-213.183.59.211-5664 #1'
   password: GeregetR8cvQHzYr
   port: 9030
   server: 213.183.59.211
@@ -4499,7 +4536,7 @@ proxies:
   server: 213.183.59.211
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.211-5633 #1'
+  name: '438,459|🇱NL-213.183.59.211-5671 #1'
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 213.183.59.211
@@ -4517,7 +4554,7 @@ proxies:
   server: 213.183.59.206
   type: ss
 - cipher: aes-256-cfb
-  name: '438,459|🇱NL-213.183.59.214-5653 #1'
+  name: '438,459|🇱NL-213.183.59.214-5691 #1'
   password: cp8pRSUAyLhTfVWH
   port: 9064
   server: 213.183.59.214
@@ -4572,6 +4609,12 @@ proxies:
   tls: false
   type: vmess
   uuid: fa1897db-1925-4c86-a495-939a959af900
+- cipher: aes-128-gcm
+  name: 486,659|🇳🇱NL-149.34.244.82-3977 | 3.403MB
+  password: shadowsocks
+  port: 443
+  server: 149.34.244.82
+  type: ss
 - alterId: 0
   cipher: aes-128-gcm
   name: 495|荷兰-3.65MB/s
@@ -5177,11 +5220,11 @@ proxies:
     headers:
       Host: ''
     path: /path/051111230910
-- cipher: aes-128-gcm
-  name: 659|🇳🇱NL-149.34.244.82-3986 | 27.171MB
-  password: shadowsocks
-  port: 443
-  server: 149.34.244.82
+- cipher: chacha20-ietf-poly1305
+  name: 659|🇳🇱NL-5.35.47.122-6462 | 1.949MB
+  password: CLphyEMQT8nbG8EImX0A2D
+  port: 45635
+  server: 5.35.47.122
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
@@ -5259,7 +5302,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '685,689|荷兰 V2CROSS.COM #1'
+  name: '685,689|荷兰 V2CROSS.COM #4'
   network: ws
   port: 41000
   server: 46.182.107.65

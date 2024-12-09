@@ -1,20 +1,20 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 10,145,264,364|🇨_CH_
+  name: 10,364,486|TG频道@mfbpn-0532-CH
   password: asdKkaskJKfnsa
   port: 80
   server: 84.17.53.163
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 20,25,415,438,441,459,659|CH-156.146.62.164-3949 | 18.549MB
+  name: 20,25,415,438,441,459,486|TG频道@mfbpn-1448-CH
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
 - alterId: 1
   cipher: auto
-  name: '20,227,395,437,438,441,447,448,452,457,458,459,733|巴拿马_1208001 #1'
+  name: '20,86,227,395,437,438,441,447,448,452,457,458,459,733|巴拿马_1208001 #1'
   network: ws
   port: '443'
   server: 186.190.215.32
@@ -27,26 +27,42 @@ proxies:
     headers:
       Host: 186.190.215.32
     path: /
-- cipher: aes-128-gcm
-  name: 25,659|CH-156.146.62.162-3837 | 18.327MB
-  password: shadowsocks
+- name: 25|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
+  network: ws
+  password: NISHIKUITAN111
   port: 443
-  server: 156.146.62.162
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '25,27,662|未知107 1.3MB/s #1'
+  server: 185.18.250.112
+  sni: zb.ylks.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
+- name: 25|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+  network: ws
+  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
+  port: 443
+  server: 185.18.250.117
+  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- cipher: aes-256-gcm
+  name: 25|SS-TCP-NA 🇨🇭 CH-23.166.88.221:8118
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 23.166.88.221
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '25,27,662|未知51 #1'
+  password: dK18qW8Psf5xDaQ8vtHJtK
+  port: 19057
+  server: 91.103.253.151
   skip-cert-verify: true
   tls: true
-  type: ss
-- cipher: aes-256-gcm
-  name: 25|SS-TCP-NA 🇨🇭 CH-23.166.88.198:4444
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 23.166.88.198
   type: ss
 - cipher: aes-256-gcm
   name: 25|SS-TCP-NA 🇨🇭 CH-23.166.88.198:5003
@@ -60,34 +76,18 @@ proxies:
   port: 4248
   server: 45.95.232.236
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇨🇭 CH-91.103.253.151:19057
-  password: dK18qW8Psf5xDaQ8vtHJtK
-  port: 19057
-  server: 91.103.253.151
+- cipher: aes-128-gcm
+  name: 25,486,659|CH-156.146.62.162-3936 | 1.458MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
   type: ss
-- name: 25|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
-  network: ws
-  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
-  port: 443
-  server: 185.18.250.117
-  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 25|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  sni: zb.ylks.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
+- cipher: aes-256-gcm
+  name: 25|SS-TCP-NA 🇨🇭 CH-23.166.88.198:4444
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 23.166.88.198
+  type: ss
 - alterId: 0
   cipher: auto
   name: '42,67,258,324,348,349,350,351,475,568,722|@Vip_Security join us - 383
@@ -103,7 +103,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: '46,722|@Vip_Security join us - 369
+  name: '46,722|@Vip_Security join us - 370
 
     '
   network: tcp
@@ -184,50 +184,6 @@ proxies:
   server: 156.146.62.160
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '195,196,202,718,733|美国_1208057 #1'
-  network: ws
-  port: '443'
-  server: 141.148.187.195
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '195,196,202,485,718,733|印度_1208003 #1'
-  network: ws
-  port: '443'
-  server: 141.148.203.6
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '195,196,202,485,718|@Vip_Security join us - 430
-
-    '
-  network: ws
-  port: 443
-  server: 152.67.65.201
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
 - cipher: chacha20-ietf-poly1305
   name: 322|CH 🇨🇭 Zurich
   password: EGTHtnGhcnggx5yBYSqS
@@ -267,7 +223,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇭CH-140.238.212.95-8057 #1'
+  name: '395,437,438,447,448,452,457,458,459|🇭CH-140.238.212.95-8124 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -282,7 +238,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '395,437,438,447,448,452,457,458,459|🇨🇭CH-23.166.88.27-8175 #8'
+  name: '395,437,438,447,448,452,457,458,459|🇨🇭CH-23.166.88.27-8242 #1'
   network: ws
   port: 443
   server: 23.166.88.27
