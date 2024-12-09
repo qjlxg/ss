@@ -1,20 +1,20 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 22|🇵🇱 波兰 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 19008
-  server: host-060.crazyspeed.xyz
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 22|🇵🇱 Web 波兰I-原生 - AyucLouD-Services
   password: dajkdkjda&dja*/?
   plugin: obfs
   plugin-opts:
-    host: 42877103667.download.windowsupdate.com
+    host: 47d91103707.download.windowsupdate.com
     mode: http
   port: 2205
   server: 231103levelx.unclemanco.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22|🇵🇱 波兰 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 19008
+  server: host-060.crazyspeed.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -44,18 +44,13 @@ proxies:
   server: 94.131.96.213
   type: ss
 - cipher: aes-256-gcm
-  name: 33,219,553,662|21|_337
-  password: KixLvKzwjekG00rm
-  port: 8080
+  country: 🇵🇱PL
+  name: 33,94,219,385,436,457,458,553,662|21|🇱PL_625
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 51.77.53.200
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 33,94,183,436,457,657|🇵🇱PL-217.30.10.70-3773 | 7.488MB
-  password: KBGjZYcy4SyRShmA
-  port: 9044
-  server: 217.30.10.70
-  type: ss
 - cipher: aes-256-gcm
   country: 🇵🇱PL
   name: 33,94,219,553,662|21|🇱PL_624
@@ -71,6 +66,19 @@ proxies:
   server: 51.77.53.200
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 33,219,553,662|21|_337
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 33,94,183,436,457,657|🇵🇱PL-217.30.10.70-3773 | 7.488MB
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 217.30.10.70
+  type: ss
 - alterId: 0
   cipher: aes-256-gcm
   country: 🇱PL
@@ -96,14 +104,6 @@ proxies:
   password: sBLOK9HeCl05ZHLZ6ezpA1
   port: 33320
   server: 77.83.246.74
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 33,94,219,385,436,457,458,553,662|21|🇱PL_625
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 51.77.53.200
   type: ss
   udp: true
 - alterId: 0
@@ -301,17 +301,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 51844633-d49f-4267-ea21-54d25301f520
-- alterId: 0
-  cipher: auto
-  name: '126,135,141,241,289,293,299,593,595,604,605,616,618,627,628,630,631,632,633,635,641,642|🔒
-    VM-TCP-NA 🇵🇱 PL-128.204.223.42:37036 #22'
-  network: tcp
-  port: '37036'
-  server: 128.204.223.42
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7cd92514-55a3-45cb-bd4a-7106f01300fa
 - alterId: 0
   cipher: auto
   name: 149|PL
@@ -1002,39 +991,3 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 566|🇵🇱 www.85la.com 波兰 11
-  network: ws
-  port: 8880
-  server: pl-a.yuji2022.eu.org
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  ws-opts:
-    headers:
-      host: pl-a.yuji2022.eu.org
-    path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
-- alterId: 0
-  cipher: auto
-  name: 566|🇵🇱 www.85la.com 波兰 03
-  network: ws
-  port: 443
-  server: 51.77.20.137
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 566|波兰_由快嘴科技提供;kkzui.com30
-  network: tcp
-  port: 13194
-  server: 128.204.223.115
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6bd68f20-a6ac-4225-c9e5-6bb2478f630f
