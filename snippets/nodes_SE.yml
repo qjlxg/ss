@@ -1,4 +1,30 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '8,224,225|瑞典 V2CROSS.COM #3'
+  network: ws
+  port: 80
+  server: Back.MsV2ray.online
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: d396-flower-d396.megare7260.workers.dev
+    path: /obdii.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: '8,224,225|瑞典 V2CROSS.COM #4'
+  network: ws
+  port: 80
+  server: 185.146.173.158
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: d396-flower-d396.megare7260.workers.dev
+    path: /obdii.cfd/linkws
 - cipher: chacha20-ietf-poly1305
   name: 14|🇸🇪 瑞典 - V2Link VPN
   password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
@@ -7,42 +33,40 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '20,25,96,185,221,415,438,441,459|🇪SE-121.127.46.147-0466 #1'
+  name: 20,25,96,185,221,415,438,441,459,659|SE-121.127.46.147-3823 | 17.135MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇸🇪 SE-94.228.165.178:58176
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 25|SS-TCP-NA 🇸🇪 SE-46.246.98.155:44013
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
 - client-fingerprint: chrome
-  name: 25,87|[Trojan] Relay_🇸🇪SE-🇩🇪DE_964
+  name: 25,87|[Trojan] Relay_🇸🇪SE-🇳🇱NL_1192
   network: ws
-  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
+  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
   port: 443
-  server: 185.146.173.32
+  server: 185.146.173.34
   skip-cert-verify: true
-  sni: de1.trojanvpn.xyz
+  sni: nl1.trojanvpn.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: de1.trojanvpn.xyz
+      Host: nl1.trojanvpn.xyz
     path: /
 - client-fingerprint: chrome
-  name: 25,87|[Trojan] Relay_🇸🇪SE-🇫🇷FR_962
-  network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
-  port: 443
-  server: 185.146.173.42
-  skip-cert-verify: true
-  sni: fr1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: fr1.trojanvpn.xyz
-    path: /
-- client-fingerprint: chrome
-  name: 25,87|[Trojan] Relay_🇸🇪SE-🇬🇧GB_966
+  name: 25,87|[Trojan] Relay_🇸🇪SE-🇬🇧GB_1193
   network: ws
   password: b697183d-288b-40ab-98ae-8e3eb85f371c
   port: 443
@@ -56,33 +80,35 @@ proxies:
       Host: uk1.trojanvpn.xyz
     path: /
 - client-fingerprint: chrome
-  name: 25,87|[Trojan] Relay_🇸🇪SE-🇳🇱NL_968
+  name: 25,87|[Trojan] Relay_🇸🇪SE-🇫🇷FR_1191
   network: ws
-  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
+  password: 542f66d8-6b06-4340-a829-76d23db7ca80
   port: 443
-  server: 185.146.173.34
+  server: 185.146.173.42
   skip-cert-verify: true
-  sni: nl1.trojanvpn.xyz
+  sni: fr1.trojanvpn.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: nl1.trojanvpn.xyz
+      Host: fr1.trojanvpn.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 25|SS-TCP-NA 🇸🇪 SE-94.228.165.178:58176
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 25,659|SE-46.246.98.155-3975 | 1.347MB
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
+- client-fingerprint: chrome
+  name: 25,87|[Trojan] Relay_🇸🇪SE-🇩🇪DE_1196
+  network: ws
+  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
+  port: 443
+  server: 185.146.173.32
+  skip-cert-verify: true
+  sni: de1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: de1.trojanvpn.xyz
+    path: /
 - cipher: aes-256-cfb
-  name: 68,227,311,736|576O5Zu9XzEyMDkwMDE
+  name: 68,311,733,736|576O5Zu9XzEyMDkwMDE
   obfs: http_simple
   obfs-param: ZG93bmxvYWQud2luZG93c3VwZGF0ZS5jb20
   password: Uk92CS
@@ -109,7 +135,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 96|🇪SE(AzadNet.t.me)_004
+  name: 96,568|瑞典_由快嘴科技提供：kkzui.com194
   network: ws
   port: 443
   server: 185.146.173.158
@@ -170,25 +196,25 @@ proxies:
       Host: 94.131.98.104
     path: /vmess
 - cipher: aes-256-cfb
-  name: '185,438,459|🇸SE-37.19.222.214-9160 #1'
+  name: '185,438,459|🇸SE-37.19.222.214-9977 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-cfb
-  name: '185,438,459|🇪SE-37.19.222.213-9161 #1'
+  name: '185,438,459|🇪SE-37.19.222.213-9978 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: '185,438,459|🇸🇪SE-37.19.222.212-9162 #1'
+  name: '185,438,459|🇸🇪SE-37.19.222.212-9979 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.212
   type: ss
 - cipher: aes-256-cfb
-  name: '185,438,459|🇸🇪SE-37.19.222.211-9163 #1'
+  name: '185,438,459|🇸🇪SE-37.19.222.211-9980 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
@@ -384,19 +410,6 @@ proxies:
   udp: true
   ws-opts:
     path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252CTurk'
-- alterId: 0
-  cipher: auto
-  name: 221|SE 20 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: 185.146.173.129
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 64
   cipher: auto
   name: 221|SE 21 → tg@nicevpn123
@@ -412,7 +425,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 221|SE 22 → tg@nicevpn123
+  name: 221,568|瑞典_由快嘴科技提供：kkzui.com122
   network: ws
   port: 443
   server: 185.146.173.59
@@ -422,6 +435,8 @@ proxies:
   udp: true
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
+    headers:
+      host: obdii.cfd
     path: /linkws
 - name: 221|SE 25 → tg@nicevpn123
   network: ws
@@ -516,30 +531,6 @@ proxies:
   udp: true
   ws-opts:
     path: '%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F%25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252CTurk'
-- alterId: 0
-  cipher: auto
-  name: '227,395,437,438,447,448,452,457,458,459,733|瑞典_1208002 #1'
-  network: ws
-  port: '443'
-  server: Back.MsV2ray.online
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
-  ws-opts:
-    headers:
-      Host: jahfkjha.cfd
-    path: /
-- country: 🇸🇪SE
-  name: 233|❓_🇸🇪_💼_github.com/Ruk1ng001_3235326465396336
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.16.237.164
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - cipher: aes-256-cfb
   name: 261,327,395,431,437,438,445,448,452,458,459,503,532,560|8J%2BHuPCfh6pTRS0xMy40OS43Ny4xMjYtNjE4NA%3D%3D
   obfs: http_simple
@@ -592,7 +583,9 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: "325,334|@vpnclashfa - 13\n #1"
+  name: '325,334,722|@Vip_Security join us - 128
+
+    '
   network: ws
   port: '2095'
   server: 104.17.147.22
@@ -2604,17 +2597,18 @@ proxies:
   country: SE
   h2-opts: {}
   http-opts: {}
-  name: 555|Sweden_None_vmess_1143
+  name: 555,568|瑞典_由快嘴科技提供;kkzui.com171
   network: ws
   port: 80
   server: Back.MsV2ray.online
   servername: d396-flower-d396.megare7260.workers.dev
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      HOST: d396-flower-d396.megare7260.workers.dev
+      host: d396-flower-d396.megare7260.workers.dev
     path: /obdii.cfd/linkws
 - client-fingerprint: chrome
   name: 555|Sweden_Stockholm_trojan_12284
@@ -2636,6 +2630,62 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: false
+- alterId: 0
+  cipher: auto
+  name: 568|瑞典_由快嘴科技提供;kkzui.com170
+  network: ws
+  port: 80
+  server: 185.146.173.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: d396-flower-d396.megare7260.workers.dev
+    path: /obdii.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 568|瑞典_由快嘴科技提供：kkzui.com54
+  network: ws
+  port: 80
+  server: 185.146.173.59
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      host: freevpn878.hamidimorteza680.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 568|瑞典_由快嘴科技提供：kkzui.com212
+  network: ws
+  port: 443
+  server: Back.MsV2ray.online
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      host: jahfkjha.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 568|瑞典_由快嘴科技提供：kkzui.com93
+  network: ws
+  port: 443
+  server: 185.146.173.59
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      host: hms02.fxiaomi.sbs
+    path: /link
 - alterId: 0
   cipher: auto
   name: 664,665|SE 1|openitr
