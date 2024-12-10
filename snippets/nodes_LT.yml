@@ -17,41 +17,6 @@ proxies:
   port: 8080
   server: 45.87.175.164
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|SS-TCP-NA 🇱🇹 LT-45.87.175.188:8080
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24|SS-TCP-NA 🇱🇹 LT-45.87.175.157:8080
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24,401,541|LT-45.87.175.178-3775 | 16.492MB
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 24,541|LT-45.87.175.171-6059 | 9.113MB
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.171
-  type: ss
-- name: 24|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 89.116.250.94
-  sni: bpb.my79801.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - name: 24|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
   network: ws
   password: bpb-trojan
@@ -63,6 +28,41 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
+- name: 24|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 89.116.250.94
+  sni: bpb.my79801.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
+- cipher: chacha20-ietf-poly1305
+  name: 24|SS-TCP-NA 🇱🇹 LT-45.87.175.188:8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24,401,541|LT-45.87.175.178-3775 | 16.492MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|SS-TCP-NA 🇱🇹 LT-45.87.175.157:8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24,541|LT-45.87.175.171-6059 | 9.113MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.171
+  type: ss
 - alterId: 0
   cipher: auto
   name: '111,117,177,333|D-WEALTH-2386 #3'
@@ -140,9 +140,27 @@ proxies:
   protocol-param: ''
   server: 94.102.57.163
   type: ssr
+- name: 316|🇱🇹_立陶宛_1
+  network: tcp
+  password: blue2024
+  port: 443
+  server: 185.148.104.78
+  skip-cert-verify: true
+  sni: ta.promote.icu
+  type: trojan
+  udp: true
+- name: 316|🇱🇹_立陶宛_9
+  network: tcp
+  password: blue2024
+  port: 443
+  server: 89.116.46.94
+  skip-cert-verify: true
+  sni: ta.promote.icu
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '316,341,401|TG频道@mfbpn-1664-RELAY #1'
+  name: '316,341,401|TG频道@mfbpn-1861-RELAY #1'
   network: ws
   port: 2082
   server: 185.148.106.140
@@ -157,24 +175,6 @@ proxies:
     headers:
       host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: 316|🇱🇹_立陶宛_9
-  network: tcp
-  password: blue2024
-  port: 443
-  server: 185.148.104.78
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  type: trojan
-  udp: true
-- name: 316|🇱🇹_立陶宛_10
-  network: tcp
-  password: blue2024
-  port: 443
-  server: 89.116.46.94
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
   name: '333,361,362,371,372,376,381,382,383|LT-85.206.165.36-0747 #1'

@@ -70,40 +70,6 @@ proxies:
   server: 13.213.67.37
   tfo: false
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 13,400|TG频道@mfbpn-0442-CN
-  network: ws
-  port: 23612
-  server: 12.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6a1f56d9-b3e3-3543-b7c0-853e3429fec3
-  ws-opts:
-    headers:
-      Host: 12.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 13,400|TG频道@mfbpn-0443-CN
-  network: ws
-  port: 23617
-  server: 17.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6a1f56d9-b3e3-3543-b7c0-853e3429fec3
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -312,6 +278,38 @@ proxies:
   server: sg4.lvuy.xyz
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 13,400|TG频道@mfbpn-0442-CN
+  network: ws
+  port: 23612
+  server: 12.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 28b022be-050c-3108-8fde-841a4eed2c83
+  ws-opts:
+    headers:
+      Host: 12.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 13,400|TG频道@mfbpn-0443-CN
+  network: ws
+  port: 23617
+  server: 17.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 28b022be-050c-3108-8fde-841a4eed2c83
+  ws-opts:
+    headers:
+      Host: 17.mamamajd.site
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 13|🇸🇬 新加坡 01 - V2Link VPN
   password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
@@ -478,7 +476,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   delay: 563
-  name: 15,17,43,322,401|TG频道@mfbpn-2349-SG
+  name: 15,17,43,322,401|TG频道@mfbpn-2546-SG
   password: amazonskr05
   port: 443
   server: 13.212.36.13
@@ -646,12 +644,13 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 15,22,24,226,362,383,541|🇸🇬SG-18.141.184.102-9353 | 14.372MB
+  name: 15,22,24,362,383,401,449,541|🇸🇬SG-18.141.184.102-9353 | 14.372MB
   password: amazonskr05
   port: 443
   server: 18.141.184.102
   tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 SG 34
@@ -688,7 +687,7 @@ proxies:
   client-fingerprint: chrome
   country: 🇺🇸US
   delay: 413
-  name: 15,17,43,322,401|TG频道@mfbpn-2348-SG
+  name: 15,17,43,322,401|TG频道@mfbpn-2545-SG
   password: amazonskr05
   port: 443
   server: 47.128.215.67
@@ -888,12 +887,13 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '15,24,362,383|🇸🇬SG-54.169.5.182-1089 #1'
+  name: 15,24,362,383,401,449|0|-https://t.me/MrXbin-4
   password: amazonskr05
   port: 443
   server: 54.169.5.182
   tfo: false
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 SG 64
@@ -958,22 +958,9 @@ proxies:
   server: 54.255.245.62
   tfo: false
   type: ss
-- name: '16,304|_1 #5'
-  network: ws
-  password: blue2024
-  port: 443
-  server: 104.26.10.85
-  skip-cert-verify: true
-  sni: ta.promote.icu
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ta.promote.icu
-    path: /
 - cipher: chacha20-ietf-poly1305
   delay: 2661
-  name: 17,43,192,322,401|TG频道@mfbpn-2347-NOWHERE
+  name: 17,43,192,322,401|TG频道@mfbpn-2544-NOWHERE
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54024
   server: s-g01.loveroise.com
@@ -1000,11 +987,22 @@ proxies:
     headers:
       Host: mysan2.jaquay22.workers.dev
     path: /
+- name: 24|TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087
+  network: ws
+  password: dns68
+  port: 2087
+  server: 206.238.237.1
+  sni: trojan.putata.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.putata.us.kg
+    path: /?ed
 - cipher: aes-256-cfb
-  name: 24|SS-TCP-NA 🇸🇬 SG-18.136.207.46:443
+  name: 24|SS-TCP-NA 🇸🇬 SG-54.169.221.38:443
   password: amazonskr05
   port: 443
-  server: 18.136.207.46
+  server: 54.169.221.38
   type: ss
 - cipher: aes-256-cfb
   name: 24|SS-TCP-NA 🇸🇬 SG-54.255.203.251:443
@@ -1013,16 +1011,28 @@ proxies:
   server: 54.255.203.251
   type: ss
 - cipher: aes-256-cfb
-  name: 24|SS-TCP-NA 🇸🇬 SG-175.41.187.222:443
+  name: 24|SS-TCP-NA 🇸🇬 SG-18.136.207.46:443
   password: amazonskr05
   port: 443
-  server: 175.41.187.222
+  server: 18.136.207.46
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 24|SS-TCP-NA 🇸🇬 SG-54.251.74.54:60211
   password: XnBdKnAJCF4a5KTuH5ufeW
   port: 60211
   server: 54.251.74.54
+  type: ss
+- cipher: aes-256-cfb
+  name: 24|SS-TCP-NA 🇸🇬 SG-175.41.187.222:443
+  password: amazonskr05
+  port: 443
+  server: 175.41.187.222
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 24|SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252
+  password: 6ZzA0VSgBIqHQD4WAQpxkL
+  port: 52252
+  server: 174.138.17.254
   type: ss
 - cipher: aes-256-cfb
   name: 24|SS-TCP-NA 🇸🇬 SG-18.143.139.72:443
@@ -1036,17 +1046,6 @@ proxies:
   port: 443
   server: 54.251.126.150
   type: ss
-- name: 24|TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087
-  network: ws
-  password: dns68
-  port: 2087
-  server: 206.238.237.1
-  sni: trojan.putata.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-    path: /?ed
 - cipher: chacha20-ietf-poly1305
   name: 25|新加坡01 | 1x SG
   password: 04767f30-d9ef-4da3-9795-811d1d7483d3
@@ -1343,8 +1342,8 @@ proxies:
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
-  name: '111,117,244,248,253,354,398,423,484,486,493,494,503,505,507,515,516,518,519,520,521,523,529,530,546,583|@Vip_Security
-    join us - 62
+  name: '111,117,244,248,254,354,398,423,484,486,493,494,503,505,507,515,516,518,519,520,521,523,529,530,546,583|@Vip_Security
+    join us - 61
 
     '
   network: tcp
@@ -3461,8 +3460,8 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 296|🔒🇸🇬 SG 168.138.163.13 ◈ ws:443 ◈ Oracle Corporation / Oracle Public Cloud
-    ◈ e87bc
+  name: '296,298|🔒🇸🇬 SG 168.138.163.13 ◈ ws:443 ◈ Oracle Corporation / Oracle Public
+    Cloud ◈ e87bc #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -3490,7 +3489,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 296|🇸🇬 SG 213.35.113.150 ◈ ws:80 ◈ Oracle Corporation ◈ f39ed
+  name: '296,298|🇸🇬 SG 213.35.113.150 ◈ ws:80 ◈ Oracle Corporation ◈ f39ed #1'
   network: ws
   port: '80'
   server: 213.35.113.150
@@ -3504,8 +3503,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 296|🇸🇬 SG 168.138.163.13 ◈ ws:80 ◈ Oracle Corporation / Oracle Public Cloud
-    ◈ fccca
+  name: '296,298|🇸🇬 SG 168.138.163.13 ◈ ws:80 ◈ Oracle Corporation / Oracle Public
+    Cloud ◈ fccca #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3519,15 +3518,170 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 296|🇸🇬 SG 168.138.163.13 ◈ ws:8080 ◈ Oracle Corporation / Oracle Public Cloud
-    ◈ 2e200
+  name: 296,298|🇸🇬 SG 168.138.163.13 ◈ ws:8080 ◈ Oracle Corporation / Oracle Public
+    Cloud ◈ fdaaa
   network: ws
   port: 8080
   server: speed.cloudflare.com
   servername: ''
   tls: false
   type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 298|🔒🇸🇬 SG 31.192.234.7 ◈ tcp:12954 ◈ Chelyabinsk-Signal ◈ 918e6
+  network: tcp
+  port: '12954'
+  server: 31.192.234.7
+  servername: 64.lwdh.us
+  tls: true
+  type: vmess
+  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
+- alterId: 0
+  cipher: auto
+  name: 298|🔒🇸🇬 SG 157.230.241.29 ◈ ws:443 ◈ DigitalOcean ◈ 5bc26
+  network: ws
+  port: '443'
+  server: 157.230.241.29
+  servername: sgdo.vipcasper.com
+  tls: true
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 157.230.241.29 ◈ ws:80 ◈ DigitalOcean ◈ 80762
+  network: ws
+  port: 80
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 298|💰🇸🇬 SG 157.230.241.29 ◈ ws:80 ◈ DigitalOcean ◈ 5889b
+  network: ws
+  port: 80
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 157.230.241.29 ◈ ws:8080 ◈ DigitalOcean ◈ 8d10e
+  network: ws
+  port: 8080
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: sgdo.vipcasper.com
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 298|💰🇸🇬 SG 157.230.241.29 ◈ ws:8080 ◈ DigitalOcean ◈ 13c12
+  network: ws
+  port: 8080
+  server: 157.230.241.29
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4dad8ee1-9a55-4674-9c5b-69b66f4ddcdc
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 168.138.163.13 ◈ ws:2052 ◈ Oracle Corporation / Oracle Public Cloud
+    ◈ b1b6f
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 168.138.163.13 ◈ ws:2082 ◈ Oracle Corporation / Oracle Public Cloud
+    ◈ fc42f
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
   uuid: 5db127bb-6a4b-4287-9a32-553485c51803
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 168.138.163.13 ◈ ws:2086 ◈ Oracle Corporation / Oracle Public Cloud
+    ◈ eb21d
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 168.138.163.13 ◈ ws:2095 ◈ Oracle Corporation / Oracle Public Cloud
+    ◈ cf92c
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5db127bb-6a4b-4287-9a32-553485c51803
+  ws-opts:
+    headers:
+      Host: sgcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 298|🇸🇬 SG 168.138.163.13 ◈ ws:8880 ◈ Oracle Corporation / Oracle Public Cloud
+    ◈ f0e96
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6fe014fe-d5b6-40ea-81d3-e8e457ab81f2
   ws-opts:
     headers:
       Host: sgcdn.fask511.cfd
@@ -4623,7 +4777,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 340|24-2050-SG
+  name: 340|24-2124-SG
   network: ws
   port: 23451
   server: westsg2-ddns.oraclenat.cc
@@ -4637,7 +4791,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 340|13-0792-SG
+  name: 340|13-0866-SG
   network: ws
   port: 30002
   server: xjpx6.12123.org
@@ -4651,7 +4805,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 340|13-0842-SG
+  name: 340|13-0916-SG
   network: ws
   port: 30002
   server: xjpx5.12123.org
@@ -5456,7 +5610,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 400|TG频道@mfbpn-2031-SG
+  name: 400|TG频道@mfbpn-2228-SG
   network: ws
   port: 9187
   server: 192.124.176.87
@@ -6095,20 +6249,6 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 472|🇸🇬 www.85la.com 新加坡 02_1
-  network: ws
-  port: 2052
-  server: 104.17.213.241
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7d417084-d308-4b35-96c8-99dfb2547ec2
-  ws-opts:
-    headers:
-      host: sg5.wish.ml
-    path: /
-- alterId: 0
-  cipher: auto
   name: 472|🇸🇬 www.85la.com 新加坡 03_1
   network: ws
   port: 2052
@@ -6428,7 +6568,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '546,583|@Vip_Security join us - 511
+  name: '546,583|@Vip_Security join us - 513
 
     '
   network: ws
