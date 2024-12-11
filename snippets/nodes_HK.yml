@@ -1,4 +1,11 @@
 proxies:
+- cipher: chacha20-ietf
+  country: HK
+  name: 4,98,101|SS-TCP-NA 🇸🇬 SG-103.36.91.23:8388
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰HK
   delay: 458
@@ -11,7 +18,8 @@ proxies:
   type: ssr
 - alterId: 0
   cipher: auto
-  name: '8,489,533,534,543,544,548,553,554,555,735,822|@Vip_Security join us - 471
+  name: '8,222,223,305,306,352,353,489,533,534,543,544,548,553,554,555,581,735,822|@Vip_Security
+    join us - 461
 
     '
   network: ws
@@ -19,8 +27,10 @@ proxies:
   server: yd2.ainivp.com
   servername: yd2.ainivp.com
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: 9204afcd-023e-781f-1abc-c12efccd1344
   ws-opts:
     headers:
@@ -825,22 +835,29 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 57,89,99,108,113,305,306,360,361,362,380,385,387,388,394,403,404,405,581,584,585,586,587,634,635,636,637,659|香港9|@ripaojiedian
+  name: '57,89,99,108,113,360,361,362,380,385,387,388,394,403,404,405,581,582,584,585,586,587|🇭🇰
+    14|香港9|@ripaojiedian #8'
   network: tcp
   port: '41490'
   server: 183.236.48.143
   servername: ''
   skip-cert-verify: true
+  skip-cert-vertify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-headers:
     Host: 183.236.48.143
+  ws-opts:
+    headers:
+      host: None
+    path: None
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: '57,88,108,220,385,574,660,683,685,694,695,708,718,720|🔒 VM-TCP-NA 🇭🇰 HK-34.92.66.193:30251
-    #9'
+  name: '57,88,108,205,212,220,380,385,391,394,574,660,683,685,694,695,706,708,717,718,720,721,749,750|HK2
+    563.2KB/s #5'
   network: tcp
   port: '30251'
   server: 34.92.66.193
@@ -864,22 +881,22 @@ proxies:
       Host: hk1.xv2ray.net
     path: /vmess
 - cipher: chacha20-ietf-poly1305
-  name: 81|🇭🇰 香港02-1C
-  password: 1841beb5-7451-4bfb-8e99-057e4a01f796
+  name: 81|🇭🇰 香港02-1D
+  password: 04377584-cecc-4f68-97e5-ca2472f2be25
   port: 20035
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 81,107|🇰 01-1A
-  password: 1df7461e-9d2d-4e33-8fba-55091da6fd91
+  name: 81|🇭🇰 香港01-1C
+  password: 153fb7cb-0106-4a4d-98f9-a7b9494ccdbf
   port: 34338
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '81,107|🇭🇰 香港03-1C #1'
-  password: 231ad809-d510-485a-8ab1-554626f1a15b
+  name: 81|🇭🇰 香港03-1E
+  password: 7bc773db-a70a-4e05-9dc5-4b3db1672012
   port: 20052
   server: gy.666666222.shop
   type: ss
@@ -963,8 +980,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '88,205,212,380,391,508,524,660,706,708,717,718,721,722,723,725,731,732|🔒
-    VM-TCP-NA 🇭🇰 HK-1.65.205.116:30251 #13'
+  name: '88,508,524,660,725,731,732|🔒 VM-TCP-NA 🇭🇰 HK-1.65.205.116:30251 #2'
   network: tcp
   port: '30251'
   server: 1.65.205.116
@@ -1139,7 +1155,7 @@ proxies:
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 89,93,99,311,359,404,448,462,635,658|🇭🇰 香港4|@ripaojiedian
+  name: 89,93,99,311,359,404,448,462,582,635,658|🇭🇰 香港4|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54002
   server: h-k02.loveroise.com
@@ -1148,12 +1164,13 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   delay: 2496
-  name: 89,94,99,311,359,404,462,635,658|🇭🇰 香港6|@ripaojiedian
+  name: 89,94,99,222,311,352,359,404,462,582,635,658|🇭🇰 香港6|@ripaojiedian
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54000
   server: h-k01.loveroise.com
   tfo: false
   type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 89,359,404,635,658|🇭🇰 香港8|@ripaojiedian
   network: ws
@@ -1583,57 +1600,57 @@ proxies:
   type: ssr
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港01 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0552-HK
+  password: Okszj6e6gVbXIejB
   port: 10031
   server: hk1.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港02 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0553-HK
+  password: Okszj6e6gVbXIejB
   port: 10032
   server: hk2.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港03 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0554-HK
+  password: Okszj6e6gVbXIejB
   port: 12345
   server: hk3.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港04 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0555-HK
+  password: Okszj6e6gVbXIejB
   port: 10033
   server: hk4.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港05 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0556-SE
+  password: Okszj6e6gVbXIejB
   port: 10034
   server: hk5.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港06 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0557-HK
+  password: Okszj6e6gVbXIejB
   port: 10035
   server: hk6.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港07 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0558-FI
+  password: Okszj6e6gVbXIejB
   port: 10072
   server: hk7.lvuy.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 90|🇭🇰 香港08 - Cyanmori
-  password: hJRTbknS8oyylv6x
+  name: 90,582|TG频道@mfbpn-0559-HK
+  password: Okszj6e6gVbXIejB
   port: 10074
   server: hk8.lvuy.xyz
   type: ss
@@ -2136,21 +2153,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-128-gcm
-  name: 96,99,103,534,555,749|🇺🇦UA乌克兰2
+  name: '96,99,103,534,555|🇭🇰HK-91.103.122.32-2858 #1'
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 38792
   server: lsjd.yunxiang8.mom
   skip-cert-verify: true
   tls: true
   type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 96,99,534,555,749|🇺UA
+- cipher: aes-128-gcm
+  name: '96,99,534,555|🇰HK-91.103.122.32-2854 #1'
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 43684
   server: lsjd.yunxiang8.mom
-  skip-cert-verify: true
-  tls: true
   type: ss
 - cipher: aes-128-gcm
   name: '96,99,534,555|🇭🇰HK-91.103.122.32-2860 #1'
@@ -2159,7 +2173,7 @@ proxies:
   server: lsjd.yunxiang8.mom
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '96,99,502,534,555|🇰HK-91.103.122.32-2853 #1'
+  name: 96,99,502,534,555,582|TG频道@mfbpn-0817-HK
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 48491
   server: lsjd.yunxiang8.mom
@@ -2224,15 +2238,18 @@ proxies:
   port: 40000
   server: 141.11.218.192
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 101|SS-TCP-NA 🇭🇰 HK-91.103.122.32:39781
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 101,749|HK
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
   port: 39781
   server: 91.103.122.32
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 64
   cipher: auto
-  name: '108|27|14|香港3|@ripaojiedian #3'
+  name: '108|27|14|香港3|@ripaojiedian #1'
   network: tcp
   port: '32193'
   server: 120.198.71.214
@@ -2425,6 +2442,19 @@ proxies:
   port: '443'
   server: 020.HK.AP.POP.BIGAIRPORT.NET
   tls: true
+  type: vmess
+  uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df
+  ws-opts:
+    headers:
+      Host: ''
+    path: ''
+- alterId: 1
+  cipher: auto
+  name: '108,109|香港 #15'
+  network: ws
+  port: '80'
+  server: 042.HK.AP.POP.BIGAIRPORT.NET
+  tls: false
   type: vmess
   uuid: 83c18473-68f5-4c6e-8f3b-728abd2f04df
   ws-opts:
@@ -2863,7 +2893,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '188,646,822|@Vip_Security join us - 472
+  name: '188,646,822|@Vip_Security join us - 462
 
     '
   network: ws
@@ -3203,15 +3233,17 @@ proxies:
   uuid: 9fcec31d-40aa-4f98-8c47-0296084fe3ff
 - alterId: 0
   cipher: auto
-  name: 259,800|🇭🇰 香港_121320012
+  name: 259|香港_121320012
   network: ws
-  port: 45631
+  port: '45631'
   server: 47.242.76.125
   servername: ''
   tls: false
   type: vmess
   uuid: f17d1a99-5b3a-43da-e59a-ad55cba85c27
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -3294,7 +3326,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '302,610|未命名 #107'
+  name: '302,610|未命名 #116'
   network: ws
   port: '80'
   server: 182.16.1.194
@@ -4167,7 +4199,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '413,422|@vpnclashfa - 84
+  name: '413,422|@vpnclashfa - 83
 
     '
   network: tcp
@@ -4334,8 +4366,8 @@ proxies:
     path: /hls/cctv5phd.m3u8
 - alterId: 0
   cipher: auto
-  name: 440|🔒🇭🇰 HK 210.0.158.219 ◈ ws:12909 ◈ HGC Global Communications Limited ◈
-    c8a83
+  name: '440,441|🔒🇭🇰 HK 210.0.158.219 ◈ ws:12909 ◈ HGC Global Communications Limited
+    ◈ c8a83 #1'
   network: ws
   port: '12909'
   server: 19.lwdh.us
@@ -4349,18 +4381,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '440,442,574,822,845|关注频道https://t.me/mftizi #2'
+  name: '440,441,442,574,581,582,822,845|关注频道https://t.me/mftizi #3'
   network: tcp
   port: '2902'
   server: 143.92.42.65
   servername: ''
+  skip-cert-vertify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
+  ws-opts:
+    headers:
+      host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /
 - alterId: 0
   cipher: auto
-  name: '440,442|🇭🇰 HK 103.85.25.134 ◈ tcp:55218 ◈ Starry Network Limited / Hongkong
-    Wen Jing Network Limited ◈ f83d1 #1'
+  name: '440,441,442|🇭🇰 HK 103.85.25.134 ◈ tcp:55218 ◈ Starry Network Limited / Hongkong
+    Wen Jing Network Limited ◈ f83d1 #2'
   network: tcp
   port: 55218
   server: 103.85.25.134
@@ -4370,8 +4408,8 @@ proxies:
   uuid: 3827a5c8-c031-46cf-848d-e890d0ead803
 - alterId: 0
   cipher: auto
-  name: '440,442|🇮🇩 ID 154.90.49.88 ◈ tcp:16398 ◈ Kaopu Cloud HK Limited / Lightnode
-    Limited ◈ f8b17 #1'
+  name: '440,441,442|🇮🇩 ID 154.90.49.88 ◈ tcp:16398 ◈ Kaopu Cloud HK Limited / Lightnode
+    Limited ◈ f8b17 #2'
   network: tcp
   port: '16398'
   server: 154.90.49.88
@@ -5006,7 +5044,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '489,533,534,543,544,548,553,554,555,570|[🏁]t.me/ConfigsHub #40'
+  name: '489,533,534,543,544,548,553,554,555,570|[🏁]t.me/ConfigsHub #39'
   network: ws
   port: '8300'
   server: hk3.grpc.stream
@@ -5103,7 +5141,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: 489,533,534,543,544,548,553,554,555,570,574,830|香港_1210014
+  name: 489,533,534,543,544,548,553,554,555,570,574,822,830|香港_1210014
   network: ws
   port: '30000'
   server: 27.124.10.146
@@ -5486,7 +5524,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '510,779,787|美国 CloudFlare节点 #1426'
+  name: '510,779,787|美国 CloudFlare节点 #2151'
   network: ws
   port: '8080'
   server: yh1.freeh1.xyz
@@ -5901,9 +5939,9 @@ proxies:
     path: /images
 - alterId: 2
   cipher: auto
-  name: '527,530,531|其他 62 #1'
+  name: 527,530,531,800|🇭🇰 mattkaydiary.com|中国香港别(HK)HongkongSARChina/HongKong_19
   network: ws
-  port: '443'
+  port: 443
   server: 426hk.fans8.xyz
   tls: true
   type: vmess
@@ -6433,7 +6471,9 @@ proxies:
   uuid: 0eb9d2fa-17d1-4276-af80-15323dc1dca5
 - alterId: 0
   cipher: auto
-  name: "558,559,594,610,641,676,822|@Vip_Security join us - 426\n #1"
+  name: '558,559,594,610,641,676,822|@Vip_Security join us - 413
+
+    '
   network: tcp
   port: '30862'
   server: 23.91.100.243
@@ -6531,6 +6571,373 @@ proxies:
   tls: false
   type: vmess
   uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
+- alterId: 0
+  cipher: auto
+  name: '581,582,822,845|关注电报https://t.me/mftizi #5'
+  network: tcp
+  port: '41510'
+  server: 45.94.68.210
+  servername: ''
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18e11bb1-2ecc-4700-902e-9a172b762bbd
+  ws-opts:
+    headers:
+      host: None
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '581,582,822,845|关注频道https://t.me/mftizi #4'
+  network: tcp
+  port: '47369'
+  server: 45.94.68.135
+  servername: ''
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 99fd4269-a32b-4b6b-99e3-81dee59271b1
+  ws-opts:
+    headers:
+      host: None
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '581,582,822,845|不定期抽奖https://t.me/mftizi #2'
+  network: tcp
+  port: '35448'
+  server: 45.94.68.144
+  servername: ''
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37a9e3d4-08b2-4a54-92ad-e9dce926657d
+  ws-opts:
+    headers:
+      host: None
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '581,582,822,845|不定期抽奖https://t.me/mftizi #3'
+  network: tcp
+  port: '34103'
+  server: 45.94.68.179
+  servername: ''
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f083427f-9d8b-4863-b4a5-fc15255547d2
+  ws-opts:
+    headers:
+      host: None
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '582|TG频道@mfbpn-0115-HK #1'
+  network: ws
+  port: 443
+  server: 219.76.13.180
+  skip-cert-vertify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
+  ws-opts:
+    headers:
+      host: clash6.ssr-free.xyz
+    path: /dongtaiwang.com
+- cipher: chacha20-ietf-poly1305
+  name: 582|TG频道@mfbpn-0248-HK
+  password: fb4f378f-a7f6-44f5-8e32-ec7f84b817fd
+  port: 50221
+  server: sg04.ssyhi.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 582|TG频道@mfbpn-0249-HK
+  password: fb4f378f-a7f6-44f5-8e32-ec7f84b817fd
+  port: 50239
+  server: se01.ssyhi.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 582|TG频道@mfbpn-0250-HK
+  password: ef72f9da-87ee-42d1-aced-3c1930dab000
+  port: 50205
+  server: hk06.ssyhi.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 582|TG频道@mfbpn-0251-HK
+  password: ef72f9da-87ee-42d1-aced-3c1930dab000
+  port: 50252
+  server: hk13.ssyhi.xyz
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0259-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24721
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0260-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24722
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0261-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24723
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0262-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24724
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0263-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24726
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0264-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 22211
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0265-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 22212
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0266-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 22213
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0269-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 23202
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0270-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24211
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0271-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24212
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0272-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24213
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0273-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24214
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0274-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 24216
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0275-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25202
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0276-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25204
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0277-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 25206
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0278-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29102
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0279-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29103
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0280-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29105
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0281-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29106
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0282-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29107
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0283-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29108
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0284-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29109
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0285-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29111
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0286-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29202
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0287-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29204
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0288-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29206
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0289-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29208
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0290-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29210
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0291-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29212
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0292-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29214
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0293-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29216
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0294-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29218
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0295-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29220
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0296-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29222
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0297-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29224
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0298-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29226
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0299-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29228
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0300-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29230
+  server: nnnnn.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0301-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29302
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0302-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29304
+  server: esat.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0303-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29401
+  server: sssssssss1.f1c.lol
+  type: ss
+- cipher: aes-128-gcm
+  name: 582|TG频道@mfbpn-0304-HK
+  password: 69037302-0050-43ae-abf3-f8e62740aff1
+  port: 29402
+  server: sssssssss1.f1c.lol
+  type: ss
 - alterId: 0
   cipher: auto
   name: '583,610|@VMESSIRAN سرور ۲۰ آذر #4'
@@ -7651,25 +8058,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '633,822|@Vip_Security join us - 477
-
-    '
-  network: ws
-  port: '12959'
-  server: z3.fragranceninja.com
-  servername: z3.fragranceninja.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: a32313ad-5e39-4f9a-9cad-512041790050
-  ws-opts:
-    headers:
-      Host: z3.fragranceninja.com
-    path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 633|🇭🇰 香港2
   network: ws
   port: 2086
@@ -7885,7 +8273,7 @@ proxies:
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
 - alterId: 3
   cipher: auto
-  name: '742,743|香港 #17'
+  name: '742,743|香港 #18'
   network: ws
   port: '443'
   server: hk178.mars6666.com
@@ -7899,7 +8287,7 @@ proxies:
     path: /ray
 - alterId: 3
   cipher: auto
-  name: '742,743|香港 #18'
+  name: '742,743|香港 #19'
   network: ws
   port: '443'
   server: 193.110.203.45
