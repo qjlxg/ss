@@ -1,21 +1,42 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '16,52,59,65,72,74,184,188,190,223,264,268,270,271,272,273,321,377|@Vip_Security
-    join us - 614
-
-    '
-  network: tcp
-  port: '38951'
+  http-opts:
+    headers:
+      Host:
+      - jp1.tiljkc.top
+    method: GET
+    path:
+    - /
+  name: '16,25,35,36,83,141,184,188,190,197,230,242,243,249,250,253,256,257,258,270,271,272,273,305,306,307|13,14|日本2|@ripaojiedian
+    #6'
+  network: http
+  port: '53892'
   server: jp1.tiljkc.top
+  servername: urydh.ljricbrd.top
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+- alterId: 0
+  cipher: auto
+  name: 16,25,35,36,52,71,74,83,141,184,188,190,197,230,242,243,249,250,253,256,257,258,264,268,270,271,272,273,305,306,307,321,380|美国_1214313
+  network: ws
+  port: '2086'
+  server: cdn1.bpcdn.cc
   servername: ''
-  skip-cert-verify: true
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 0d849bb5-8663-3958-ae0a-9918d4a95b5e
-  ws-headers:
-    Host: jp1.tiljkc.top
-  ws-path: /
+  udp: true
+  uuid: b2295415-b953-4959-8be0-88b358111e95
+  ws-opts:
+    headers:
+      Host: jpjhve0r3125kg1xmz.lovebaipiao.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '16,105,110,184,188,193,333,335,342,345,346,347,349,355|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.171:48898
@@ -44,43 +65,6 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - jp1.tiljkc.top
-    method: GET
-    path:
-    - /
-  name: '16,33,34,83,184,188,196,242,243,249,250,253,256,257,258,305,306,307|13,14|日本2|@ripaojiedian
-    #6'
-  network: http
-  port: '53892'
-  server: jp1.tiljkc.top
-  servername: urydh.ljricbrd.top
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
-- alterId: 0
-  cipher: auto
-  name: '16,33,34,83,184,188,196,242,243,249,250,253,256,257,258,264,268,305,306,307|13,14|日本3|@ripaojiedian
-    #8'
-  network: ws
-  port: '2086'
-  server: cdn1.bpcdn.cc
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b2295415-b953-4959-8be0-88b358111e95
-  ws-opts:
-    headers:
-      Host: jpjhve0r3125kg1xmz.lovebaipiao.com
-    path: /
 - cipher: aes-256-cfb
   name: 22,120,121,149,173,230,234,235,242,243,250,253,257,258,303,313,315,363,365|8J%2BHr%2FCfh7VKUC0xMy4yMzEuMTczLjYtMDc0NQ%3D%3D
   obfs: tls1.2_ticket_auth
@@ -94,35 +78,29 @@ proxies:
   server: jp-am48-6.eqnode.net
   type: ssr
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 22,23,25,27,33,34,64,65,67,223|🏳️_未知_11
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,27,64,65|🇦🇶NOWHERE-0.0.0.0-066
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54096
   server: j-p01.loveroise.com
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 22,23,25,27,33,34,65,67,223|🏳️_未知_12
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,27,65|🇦🇶NOWHERE-0.0.0.0-067
   password: 09833a6f-4d46-426e-87fe-7793a5489f84
   port: 54102
   server: j-p04.loveroise.com
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '22,23,25,27,65,223,243,258|🇳CN-219.135.227.209-1840 #1'
+  name: '22,23,27,65,243,258|🇳CN-219.135.227.209-1840 #1'
   password: LKX69P4C7CNLBQJ2
   port: 18016
   server: 219.135.227.209
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 22,23,27,31,32,35,36,37,38,47,48,63,66,233,243,246,258,360|🇰🇷KR-43.203.255.151-0346
+  name: 22,23,27,33,34,35,36,37,38,63,66,233,243,246,258,360|🇰🇷KR-43.203.255.151-0346
     | 27.222MB
   password: amazonskr05
   port: 443
@@ -130,28 +108,25 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '22,23,35,36,47,48,63,233,243,246,258|🇯🇵JP-149.22.87.240-0397 #1'
+  name: '22,23,35,36,63,233,243,246,258|🇯🇵JP-149.22.87.240-0397 #1'
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: '25,33,34,57,65,66,67,243,258|🇨🇳CN-219.135.227.209-1790 #1'
-  password: JT3JJY2B9WYM3ZFF
-  port: 18003
-  server: 219.135.227.209
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 25,33,34,37,38,65,66,243,258,360|🇸🇬SG-18.143.139.72-5025 | 15.434MB
+  name: '25,33,34,35,36,37,38,63,66,141,243,246,258|🇯🇵JP-54.178.84.59-1277 #1'
   password: amazonskr05
   port: 443
-  server: 18.143.139.72
+  server: 54.178.84.59
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '25,27,65,223,243,258|🇻🇳VN-160.19.78.75-1851 #1'
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
   udp: true
 - alterId: 0
@@ -165,22 +140,11 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '25,27,33,34,65,67,223,243,258|🇻🇳VN-160.19.78.75-1851 #1'
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- alterId: 0
   cipher: auto
-  name: 27,380|美国_1212704
+  name: 27|[VMess] 🇯🇵 _日本
   network: ws
-  port: '2082'
+  port: 2082
   server: 156.238.19.199
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -192,11 +156,10 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 27,380|英国_1212020
+  name: 27|[VMess] 🇯🇵 _日本 2
   network: ws
-  port: '2082'
+  port: 2082
   server: 91.193.58.5
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -208,7 +171,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 28,29,45,46,66|VM-WS-TLS 🇯🇵 JP-158.101.142.227:12344
+  name: 29,46,66|VM-WS-TLS 🇯🇵 JP-158.101.142.227:12344
   network: ws
   port: 12344
   server: 158.101.142.227
@@ -222,7 +185,7 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- name: 30,41,42,66|TR-WS-TLS 🇯🇵 JP-139.162.84.183:3306
+- name: 30,39,40,66|TR-WS-TLS 🇯🇵 JP-139.162.84.183:3306
   network: ws
   password: 7ac49a893e0bd10c
   port: 3306
@@ -235,18 +198,24 @@ proxies:
     headers:
       Host: vkvd127.mycdn.me
     path: /gateway/connect
-- cipher: aes-256-gcm
-  name: '33,34,243,258|🇨CN-219.135.227.209-1269 #1'
-  password: 364S7BOP8HTUCLZP
-  port: 18011
-  server: 219.135.227.209
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '31,32,35,36,37,38,66,67,361|未知42 #1'
+  password: 54d73e4b-054d-4148-bab6-22646f4431a9
+  port: 60033
+  server: 94.177.131.71
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '33,34,37,38,66,243,246,258|🇯🇵JP-54.178.84.59-1277 #1'
+  client-fingerprint: chrome
+  name: 33,34,35,36,37,38,61,63,65,66,233,243,246,258,360|🇯🇵JP-18.183.227.204-10723
+    | 28.725MB
   password: amazonskr05
   port: 443
-  server: 54.178.84.59
+  server: 18.183.227.204
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -254,16 +223,6 @@ proxies:
   password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
   port: 40003
   server: 194.105.83.3
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '33,34,37,38,66,361|未知42 #1'
-  password: 54d73e4b-054d-4148-bab6-22646f4431a9
-  port: 60033
-  server: 94.177.131.71
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -333,164 +292,65 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: 59|🇯🇵 www.85la.com 日本 02
+- name: 59|日本06
   network: tcp
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59|日本08
+  network: tcp
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59|日本07
+  network: tcp
+  password: 0028109a-37ed-4ded-b858-e566388a904c
   port: 20230
   server: jp007.421421.xyz
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: 59|🇯🇵 www.85la.com 日本 03_1
-  network: tcp
-  password: ypDt8RkT7J
-  port: 43118
-  server: 138.199.23.100
-  skip-cert-verify: true
-  sni: radtz.phooeyunfold.com
-  type: trojan
-  udp: true
-- name: 59|🇯🇵 www.85la.com 日本 05_1
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20990
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: 59,120,127,128,157,170,212,227,237,239,240,241,289,363,364,370,380|日本_1212001
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  ws-path: /
-- name: 59|🇯🇵JP-52.68.127.96-0857
+- name: 59,141|United Kingdom_None_trojan_1135
   network: tcp
   password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
   port: 443
   server: usla.mjt000.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: usla.mjt000.com
   type: trojan
   udp: true
-- name: 59,88|🇺🇸US(AzadNet.t.me)_291
+- name: 59,88,141|United Kingdom_None_trojan_1141
   network: tcp
-  password: 0cdc54e5-c8e1-4350-a7b2-047e5f4c02f9
+  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
   port: 443
   server: vn.mjt000.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: vn.mjt000.com
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_2
-  network: ws
-  port: 12109
-  server: 112.69.4.50
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_3
-  network: ws
-  port: 12344
-  server: 158.101.142.227
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_49
+  name: 59|日本-360.9KB/s_85_85
   network: ws
   port: 443
-  server: 146.56.153.6
+  server: 141.147.147.180
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_50
-  network: ws
-  port: 443
-  server: 146.56.43.53
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_56
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|二爷翻墙网 https://1808.free.hr_JP_57
-  network: ws
-  port: 443
-  server: 168.138.50.249
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59,229|TG:@hkaa0|_1
-  network: ws
-  port: 443
-  server: 92.38.178.93
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: 92.38.178.93
-    path: linkvws
 - alterId: 0
   cipher: auto
   name: 59|日本-54.5MB/s_90_90
@@ -507,7 +367,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '59,377|@Vip_Security join us - 62
+  name: '59,377|@Vip_Security join us - 65
 
     '
   network: tcp
@@ -925,6 +785,15 @@ proxies:
   tls: true
   type: vmess
   uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+- name: 59|🇯🇵 www.85la.com 日本 01
+  network: tcp
+  password: ypDt8RkT7J
+  port: 43118
+  server: 138.199.23.100
+  skip-cert-verify: true
+  sni: 138.199.23.100
+  type: trojan
+  udp: true
 - name: 59|🇯🇵 www.85la.com 日本 05
   network: ws
   password: 7ac49a893e0bd10c
@@ -940,6 +809,20 @@ proxies:
     path: /gateway/connect
 - alterId: 0
   cipher: auto
+  name: 59|🇯🇵 www.85la.com 日本 06_1
+  network: ws
+  port: 80
+  server: 3h-Philippines1.09vpn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3fd35fa2-a0c6-4f0c-8310-c3c03a268155
+  ws-opts:
+    headers:
+      host: 3h-Philippines1.09vpn.com
+    path: /vmess/
+- alterId: 0
+  cipher: auto
   name: 59|🇳🇬 www.85la.com 尼日利亚 01
   network: ws
   port: 443
@@ -952,6 +835,113 @@ proxies:
     headers:
       host: obdii.cfd
     path: /linkws
+- name: 59|🇯🇵 www.85la.com 日本 05_1
+  network: tcp
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20990
+  server: 146.56.168.56
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 59|日本 V2CROSS.COM_300
+  network: ws
+  port: 443
+  server: 146.56.43.53
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 59,229|TG:@hkaa0|_1
+  network: ws
+  port: 443
+  server: 92.38.178.93
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: 92.38.178.93
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 59|二爷翻墙网 https://1808.free.hr_JP_2
+  network: ws
+  port: 12109
+  server: 112.69.4.50
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 59|二爷翻墙网 https://1808.free.hr_JP_3
+  network: ws
+  port: 12344
+  server: 158.101.142.227
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 59|二爷翻墙网 https://1808.free.hr_JP_49
+  network: ws
+  port: 443
+  server: 146.56.153.6
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 59|二爷翻墙网 https://1808.free.hr_JP_56
+  network: ws
+  port: 443
+  server: 168.138.46.67
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 59|二爷翻墙网 https://1808.free.hr_JP_57
+  network: ws
+  port: 443
+  server: 168.138.50.249
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: 59|日本_由快嘴科技提供：kkzui.com134
@@ -1050,24 +1040,6 @@ proxies:
   server: 13.231.227.176
   tfo: false
   type: ss
-- name: 59|日本06
-  network: tcp
-  password: 0028109a-37ed-4ded-b858-e566388a904c
-  port: 20230
-  server: jp006.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: 59|日本08
-  network: tcp
-  password: 0028109a-37ed-4ded-b858-e566388a904c
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
 - cipher: aes-128-gcm
   name: 60|🇯🇵 Game 日本01-标准 - AyucLouD-Services
   password: ayucloud1
@@ -1838,14 +1810,6 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 61,64|🇯🇵 日本_4
-  password: amazonskr05
-  port: '443'
-  server: 52.196.152.62
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 61|🇯🇵 JP 41
   password: amazonskr05
   port: 443
@@ -2245,46 +2209,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- alterId: 0
-  cipher: auto
-  name: '71,74,268,321|JP_youtube@资源分享师_2 #2'
-  network: tcp
-  port: 48897
-  server: gg.youaremygod.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
-- alterId: 0
-  cipher: auto
-  name: '71,74,268,321|JP_youtube@资源分享师_3 #1'
-  network: tcp
-  port: 48898
-  server: gy.youaremygod.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
-- alterId: 0
-  cipher: auto
-  name: '74,268,321|JP_youtube@资源分享师_1 #2'
-  network: tcp
-  port: 48889
-  server: gy.youaremygod.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
-- alterId: 0
-  cipher: auto
-  name: '74,268,321|JP_youtube@资源分享师_4 #1'
-  network: tcp
-  port: 48888
-  server: gy.youaremygod.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
 - alterId: '0'
   cipher: auto
   name: 76|[🇯🇵]192.51.188.63:28494(26ae2217-084b-4821-afdb-5381d5494abd)
@@ -2368,7 +2292,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '76,128,149,173,230,237,242,243,249,250,253,256,257,258,281,363,364,365,377|@Vip_Security
-    join us - 240
+    join us - 242
 
     '
   network: ws
@@ -3760,7 +3684,7 @@ proxies:
     path: /chat
 - alterId: 0
   cipher: auto
-  name: 173,230,242,243,249,250,253,256,257,258,380|日本_1212009
+  name: 173,230,242,243,249,250,253,256,257,258,380|日本_1214010
   network: ws
   port: '443'
   server: 172.104.78.98
@@ -3835,7 +3759,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '173,230,242,243,249,250,253,256,257,258|🇯🇵JP-141.147.181.219-2590 #7'
+  name: '173,230,242,243,249,250,253,256,257,258|🇯🇵JP-141.147.181.219-2590 #8'
   network: ws
   port: 443
   server: 141.147.181.219
@@ -4201,7 +4125,8 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 212|🔒🇯🇵 JP 132.226.10.228 ◈ ws:443 ◈ Oracle Cloud (ap-tokyo-1) ◈ aff98
+  name: '212,214|🔒🇯🇵 JP 132.226.10.228 ◈ ws:443 ◈ Oracle Cloud (ap-tokyo-1) ◈ aff98
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -4215,7 +4140,8 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 212|🇯🇵 JP 132.226.10.228 ◈ ws:80 ◈ Oracle Cloud (ap-tokyo-1) ◈ ff940
+  name: '212,214|🇯🇵 JP 132.226.10.228 ◈ ws:80 ◈ Oracle Cloud (ap-tokyo-1) ◈ ff940
+    #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -4233,6 +4159,118 @@ proxies:
   network: ws
   port: '20277'
   server: jp-tokyo-oracle-a5a4f1.ip1.shop
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  ws-opts:
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:2052 ◈ Oracle Cloud (ap-tokyo-1) ◈ 87b50
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:2082 ◈ Oracle Cloud (ap-tokyo-1) ◈ dd3cb
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:2086 ◈ Oracle Cloud (ap-tokyo-1) ◈ be4dd
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:2095 ◈ Oracle Cloud (ap-tokyo-1) ◈ dd411
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6fe014fe-d5b6-40ea-81d3-e8e457ab81f2
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:8080 ◈ Oracle Cloud (ap-tokyo-1) ◈ a6f68
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 132.226.10.228 ◈ ws:8880 ◈ Oracle Cloud (ap-tokyo-1) ◈ cf70a
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f76a8afe-2788-40f4-9b1b-f35bf82dacf5
+  ws-opts:
+    headers:
+      Host: rbcdn.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 214|🇯🇵 JP 131.186.47.204 ◈ ws:20277 ◈ Oracle Cloud (ap-tokyo-1) ◈ 6b91a
+  network: ws
+  port: '20277'
+  server: 131.186.47.204
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ebace182-ad9a-4044-92fd-ad48adf52779
+  ws-opts:
+    headers:
+      Host: jp-tokyo-oracle-a5a4f1.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 214|💰🇯🇵 JP 131.186.47.204 ◈ ws:20277 ◈ Oracle Cloud (ap-tokyo-1) ◈ d9399
+  network: ws
+  port: '20277'
+  server: 131.186.47.204
   servername: ''
   tls: false
   type: vmess
@@ -4382,35 +4420,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-172.105.219.18-0722 #7'
-  network: ws
-  port: 443
-  server: 172.105.219.18
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 927094d3-d678-4763-8591-e240d0bcae87
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 230,237,242,243,249,250,253,256,257,258,363,380|日本_1212004
-  network: ws
-  port: '443'
-  server: suzhihan.eu.org
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0b873cff-11ab-4716-c41a-04f886135091
-  ws-opts:
-    headers:
-      Host: suzhihan.eu.org
-    path: /roewesu
-- alterId: 0
-  cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|日本_1212003
+  name: 230,242,243,249,250,253,256,257,258,380|日本_1214002
   network: ws
   port: '443'
   server: fullaccesstojapannetsubnode1.azurewebsites.net
@@ -4425,7 +4435,35 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-139.162.117.173-1307 #7'
+  name: 230,237,242,243,249,250,253,256,257,258,363,380|日本_1214003
+  network: ws
+  port: '443'
+  server: suzhihan.eu.org
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 0b873cff-11ab-4716-c41a-04f886135091
+  ws-opts:
+    headers:
+      Host: suzhihan.eu.org
+    path: /roewesu
+- alterId: 0
+  cipher: auto
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-172.105.219.18-0722 #8'
+  network: ws
+  port: 443
+  server: 172.105.219.18
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 927094d3-d678-4763-8591-e240d0bcae87
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-139.162.117.173-1307 #8'
   network: ws
   port: 443
   server: 139.162.117.173
@@ -4468,7 +4506,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-52.196.144.61-2291 #7'
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-52.196.144.61-2291 #8'
   network: ws
   port: 3331
   server: f1f3227.u1.glados-config.net
@@ -4483,7 +4521,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-35.72.161.88-2347 #7'
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-35.72.161.88-2347 #8'
   network: ws
   port: 22356
   server: 001.AP.POP.node-for-smallairport.win
@@ -4498,7 +4536,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-3.112.210.227-2594 #7'
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-3.112.210.227-2594 #8'
   network: ws
   port: 23245
   server: jp04.170203.xyz
@@ -4540,7 +4578,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|日本_1212011
+  name: 230,242,243,249,250,253,256,257,258,380|日本_1214012
   network: ws
   port: '443'
   server: 147.78.244.7
@@ -4555,7 +4593,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-124.156.225.184-5505 #7'
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-124.156.225.184-5505 #8'
   network: ws
   port: 443
   server: 124.156.225.184
@@ -4596,35 +4634,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: 230|🇯🇵JP-47.74.21.73-0023
-  network: ws
-  port: 443
-  server: 47.74.21.73
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
-  ws-opts:
-    headers:
-      Host: jp.sharecentre.online
-    path: /shirker
-- alterId: 0
-  cipher: auto
-  name: 230|🇯🇵JP-185.160.24.45-0022
-  network: ws
-  port: 80
-  server: 185.160.24.45
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 54ac298f-7cbf-400c-8dc2-520b03f030f1
-  ws-opts:
-    headers:
-      Host: shoutingtoutiao3.10010.com
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|日本_1212024
+  name: 230,242,243,249,250,253,256,257,258,380|日本_1214018
   network: ws
   port: '443'
   server: 131.186.57.111
@@ -4639,7 +4649,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,264,380|美国_1212895
+  name: 230,242,243,249,250,253,256,257,258,264,380|美国_1214548
   network: ws
   port: '443'
   server: 107.148.1.118
@@ -4654,7 +4664,7 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|美国_1212904
+  name: 230,242,243,249,250,253,256,257,258,380|美国_1214557
   network: ws
   port: '443'
   server: 172.234.94.163
@@ -4669,7 +4679,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-172.234.88.187-8059 #7'
+  name: '230,242,243,249,250,253,256,257,258|🇯🇵JP-172.234.88.187-8059 #8'
   network: ws
   port: 443
   server: 172.234.88.187
@@ -4744,7 +4754,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|日本_1212025
+  name: 230,242,243,249,250,253,256,257,258,380|日本_1214019
   network: ws
   port: '888'
   server: 103.168.155.26
@@ -4759,7 +4769,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 230,242,243,249,250,253,256,257,258,380|日本_1212026
+  name: 230,242,243,249,250,253,256,257,258,380|日本_1214020
   network: ws
   port: '888'
   server: 103.168.155.40
@@ -6674,7 +6684,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '363,377|@Vip_Security join us - 536
+  name: '363,377|@Vip_Security join us - 537
 
     '
   network: ws
