@@ -1,9 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '22,23,25,27,35,36,63,229,243,246,258|🇹LT-45.87.175.166-0282 #1'
+  name: '22,23,27,35,36,229,233,243,258|🇹LT-45.87.175.157-0288 #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: beesyar.org
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,31,32,37,38,66|SS-TCP-NA 🇱🇹 LT-45.87.175.178:8080
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.178
   type: ss
   udp: true
 - alterId: 0
@@ -82,27 +89,7 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- cipher: chacha20-ietf-poly1305
-  name: 31,32,37,38,66,229,360|LT-45.87.175.166-6040 | 23.568MB
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.166
-  type: ss
-  udp: true
-- name: 31,32,41,42,66|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 86.38.214.132
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
-- name: 31,32,41,42,66|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+- name: 30,39,40,66|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
   network: ws
   password: bpb-trojan
   port: 443
@@ -115,33 +102,40 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
-- alterId: 0
-  cipher: auto
-  name: 59,267|🔒 VM-WS-NA 🇺🇸 US-2.58.87.221:12269
+- cipher: chacha20-ietf-poly1305
+  name: "31,32,37,38,66,229|TG:@hkaa0|德国_4\r"
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+  udp: true
+- name: 31,32,43,66|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
   network: ws
-  port: '12269'
-  server: 2.58.87.221
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: db85ff0e-c33f-401d-c415-4c7cce135704
+  password: bpb-trojan
+  port: 443
+  server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59,111,212|🇺🇸 US 2.58.87.221 ◈ tcp:46628 ◈ Aiyun (HK) Network / ORG-AIYUN-RIPE
-    ◈ 07a58
-  network: tcp
-  port: '46628'
-  server: 2.58.87.221
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
+      Host: bpb.my79801.com
+    path: /tr?ed
+- cipher: chacha20-ietf-poly1305
+  name: 33,34,37,38,66,360|LT-45.87.175.157-3511 | 15.722MB
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.157
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 33,34,37,38,59,66,360|LT-45.87.175.171-6051 | 18.867MB
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.171
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 59,149|🇷🇺 RU 22 → tg@nicevpn123
@@ -171,7 +165,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '105,110,230|D-WEALTH-2386 #2'
+  name: '106,110,230|D-WEALTH-2386 #2'
   network: tcp
   port: '8881'
   server: 143.198.18.35
@@ -208,16 +202,6 @@ proxies:
   uuid: ba49ab05-78f8-4b0b-9400-1826cc2d3f75
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 230,242,250,253,257,303,315|8J%2BHqfCfh6pERS0xOC4xOTcuMjAyLjQyLTYxODY%3D
-  obfs: http_simple
-  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
-  password: YpX2opBbrfqJzzMs
-  port: '42833'
-  protocol: origin
-  protocol-param: ''
-  server: z0110.security-cloudfront-cdn.com
-  type: ssr
 - cipher: chacha20-ietf
   name: 230,242,250,253,257,315|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
   obfs: http_simple
@@ -250,7 +234,7 @@ proxies:
   type: ssr
 - alterId: 64
   cipher: auto
-  name: '230,242,243,249,250,253,256,257,258|LT-85.206.165.38-8624 #1'
+  name: '230,242,243,249,250,253,256,257,258|LT-85.206.165.38-8513 #1'
   network: ws
   port: 443
   server: 85.206.165.38
