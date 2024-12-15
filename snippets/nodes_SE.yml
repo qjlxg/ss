@@ -1,17 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '8,79|👉🆔 @v2ray_configs_pool📡🇸🇪Sweden #1'
+  name: 8|👉🆔 @v2ray_configs_pool📡🇸🇪Sweden
   network: httpupgrade
   port: '80'
   server: 185.146.173.76
   servername: ''
   tls: false
   type: vmess
-  uuid: bc6be9ba-be6e-48b4-a388-110851cc166c
+  uuid: 7ada0e68-1fdb-4d9e-8f2e-89c278ac8ae6
 - alterId: 0
   cipher: auto
-  name: '16,21,24,184,188,189,267,268,270,271,272,273|🇸🇪 瑞典 V2CROSS.COM #7'
+  name: '16,19,20,21,24,184,188,189,267,270,271,272,273|🇸🇪 瑞典 V2CROSS.COM #7'
   network: ws
   port: '80'
   server: 185.146.173.158
@@ -33,7 +33,7 @@ proxies:
   server: 121.127.46.147
   type: ss
   udp: true
-- name: 30,33,34,41,42,66|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
+- name: 31,32,33,34,41,42,66|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
   network: ws
   password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
   port: 443
@@ -46,20 +46,7 @@ proxies:
     headers:
       Host: de1.trojanvpn.xyz
     path: /
-- name: 30,39,40,66|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
-  network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
-  port: 443
-  server: 185.146.173.42
-  skip-cert-verify: false
-  sni: fr1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: fr1.trojanvpn.xyz
-    path: /
-- name: 31,32,43,66|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
+- name: 31,32,41,42,66|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
   network: ws
   password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
   port: 443
@@ -72,7 +59,20 @@ proxies:
     headers:
       Host: nl1.trojanvpn.xyz
     path: /
-- name: 31,32,41,42,66|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
+- name: 31,32,43,66|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
+  network: ws
+  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+  port: 443
+  server: 185.146.173.42
+  skip-cert-verify: false
+  sni: fr1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: fr1.trojanvpn.xyz
+    path: /
+- name: 31,32,43,66|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
   network: ws
   password: b697183d-288b-40ab-98ae-8e3eb85f371c
   port: 443
@@ -85,12 +85,27 @@ proxies:
     headers:
       Host: uk1.trojanvpn.xyz
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66,360|SE-46.246.98.155-3732 | 17.203MB
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 52|🇸🇪_瑞典
+  network: ws
+  port: '8443'
+  server: 185.146.173.95
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
+  ws-opts:
+    headers:
+      Host: jk.ylka.us.kg
+    path: /
+- name: 59|瑞典_由快嘴科技提供：kkzui.com97_1
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.53.223.92
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - name: 59|🇸🇪SE-16.170.122.186-0134
   network: tcp
@@ -268,15 +283,6 @@ proxies:
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     path: /linkws
-- name: 59|🇸🇪 www.85la.com 瑞典 03_1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.53.223.92
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - name: 59|🇸🇪 www.85la.com 瑞典 05_1
   network: tcp
   password: telegram-id-directvpn
@@ -370,8 +376,14 @@ proxies:
   server: host-059.crazyspeed.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 66,360|SE-46.246.98.155-3732 | 17.203MB
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
 - cipher: aes-256-cfb
-  name: '69,380,381|576O5Zu9XzEyMTQwMDE #1'
+  name: 69,380,381|576O5Zu9XzEyMTUwMDE
   obfs: http_simple
   obfs-param: ZG93bmxvYWQud2luZG93c3VwZGF0ZS5jb20
   password: Uk92CS
