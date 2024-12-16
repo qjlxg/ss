@@ -1,14 +1,14 @@
 proxies:
 - cipher: aes-256-cfb
   country: 🇪IE
-  name: 33,34,37,38,63,66,128,157,243,246,258,360,363|21|🇪IE_593
+  name: 33,34,37,38,66,128,157,243,258,363|21|🇪IE_593
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.133
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 33,34,35,36,37,38,66,128,149,157,243,258,360,363|21|_459
+  name: 33,34,35,36,37,38,63,66,128,149,157,243,246,258,363|21|_459
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.134
@@ -28,6 +28,39 @@ proxies:
   password: telegram-id-directvpn
   port: 22222
   server: 54.247.105.219
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 59|爱尔兰_由快嘴科技提供：kkzui.com140
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.35.99.192
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 59|爱尔兰_由快嘴科技提供：kkzui.com141
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 34.243.138.35
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 59|爱尔兰_由快嘴科技提供：kkzui.com176
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 79.125.78.127
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 59|🇮🇪 www.85la.com 爱尔兰 01
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 52.213.121.51
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -86,33 +119,19 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 59|🇮🇪 www.85la.com 爱尔兰 01
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 52.213.121.51
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: /
+  name: 59,236|qoli_915
+  network: grpc
+  port: '8443'
+  server: 85.159.229.88
+  servername: ''
   skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|爱尔兰+V2CROSS.COM_1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.35.99.192
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|爱尔兰+都柏林Amazon数据中心_1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 34.243.138.35
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - name: 59|爱尔兰+V2CROSS.COM_2
   network: tcp
   password: telegram-id-privatevpns
@@ -194,28 +213,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 59|爱尔兰+V2CROSS.COM_1_863
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 79.125.78.127
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: /
-  name: 59,236|qoli_915
-  network: grpc
-  port: '8443'
-  server: 85.159.229.88
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - name: 59|爱尔兰_由快嘴科技提供：kkzui.com96_1
   network: tcp
   password: telegram-id-privatevpns
@@ -229,7 +226,7 @@ proxies:
   password: Vdssf.mj/2Zr
   plugin: obfs
   plugin-opts:
-    host: a2d3f103993.download.windowsupdate.com
+    host: d26f5104029.download.windowsupdate.com
     mode: http
   port: 36201
   server: 231103level1.unclemanco.com
@@ -247,16 +244,16 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.189:15311
-  password: P24nCbYfJt
-  port: 15311
-  server: 45.131.248.189
-  type: ss
-- cipher: aes-256-gcm
   name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.228:13093
   password: YB9mU8w6UF
   port: 13093
   server: 45.131.248.228
+  type: ss
+- cipher: aes-256-gcm
+  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.189:15311
+  password: P24nCbYfJt
+  port: 15311
+  server: 45.131.248.189
   type: ss
 - alterId: 0
   cipher: auto
@@ -274,20 +271,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "66,132,133,138,350,355,377|@Vip_Security join us - 29\n #1"
-  network: ws
-  port: '47376'
-  server: 45.131.248.189
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c1d0c605-7c95-4652-ee11-111a890a4402
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   name: "66,128,132,133,138,230,242,243,249,250,253,256,257,258,278,350,355,377|@Vip_Security\
     \ join us - 41\n #1"
   network: ws
@@ -298,6 +281,20 @@ proxies:
   tls: false
   type: vmess
   uuid: ac027362-c988-4670-f78f-021b5be6f4e3
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: "66,132,133,138,350,355,377|@Vip_Security join us - 29\n #1"
+  network: ws
+  port: '47376'
+  server: 45.131.248.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c1d0c605-7c95-4652-ee11-111a890a4402
   ws-opts:
     headers:
       Host: ''
@@ -356,7 +353,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '173,243,258|🇮🇪IE-52.31.11.55-2128 #1'
+  name: '173,243,258|🇮🇪IE-54.216.179.102-1784 #1'
   obfs: http_simple
   obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
   password: YpX2opBbrfqJzzMs
@@ -387,7 +384,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '202,203,212,377|@Vip_Security join us - 574
+  name: '202,203,212,377|@Vip_Security join us - 575
 
     '
   network: grpc
@@ -397,6 +394,21 @@ proxies:
   tls: true
   type: vmess
   uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
+- alterId: 4
+  cipher: auto
+  name: '230,242,243,249,250,253,256,257,258|🇸US-54.146.248.82-5327 #1'
+  network: ws
+  port: 443
+  server: mycfwork.herokuapp.com
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 07a3a1e3-d52e-4acc-958e-c301681b5f09
+  ws-opts:
+    headers:
+      Host: mycfwork.herokuapp.com
+    path: /07a3a1e3-d52e-4acc-958e-c301681b5f09-vmess
 - alterId: 64
   cipher: auto
   name: '230,242,243,249,250,253,256,257,258|IE-185.108.128.60-0750 #1'
@@ -430,7 +442,7 @@ proxies:
   server: 52.169.50.64
   type: ss
 - cipher: aes-256-gcm
-  name: '243,258|🇪IE-146.70.48.53-1880 #1'
+  name: '243,258|🇮🇪IE-146.70.48.53-1536 #1'
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 146.70.48.53
