@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 8,9,212,230,242,243,249,250,253,256,257,258,264|法国 国际航空电讯集团公司(SITA)
+  name: '8,9,212,230,242,243,249,250,253,256,257,258,264|法国 国际航空电讯集团公司(SITA) #2'
   network: ws
   port: 443
   server: 57.129.28.69
@@ -16,7 +16,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: "8,377|@Vip_Security join us - 345\n #1"
+  name: '8,377|@Vip_Security join us - 345
+
+    '
   network: httpupgrade
   port: '80'
   server: 185.201.139.72
@@ -52,13 +54,10 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '16,106,110,132,133,138,184,188,194,202,325,326,330,335,342,344,346,347,349,355,377|@Vip_Security
-    join us - 99
-
-    '
+  name: '16,110,188,325,326,335,342,344|🔒 VM-TCP-NA 🇩🇪 DE-88.99.12.94:100 #7'
   network: tcp
   port: '100'
-  server: 78.47.131.252
+  server: 88.99.12.94
   servername: ''
   tls: false
   type: vmess
@@ -96,7 +95,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '16,22,23,63,83,110,163,164,184,188,203,230,231,236,242,243,244,245,246,249,250,251,252,253,256,257,258,377|@Vip_Security
-    join us - 575
+    join us - 579
 
     '
   network: ws
@@ -114,7 +113,7 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '22,23,35,36,39,40,66,157,233,243,258|🇪DE-150.241.95.63-6448 #1'
+  name: '22,23,33,34,37,38,66,157,233,243,258|🇪DE-150.241.95.63-6448 #1'
   password: MDtZ$d1lcz
   port: 12271
   server: 150.241.95.63
@@ -174,7 +173,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: 22,23,59,147,157,243,258,363|21|🇷🇺RU_657
+  name: 22,23,33,34,37,38,59,66,147,157,243,258,363|21|🇷🇺RU_657
   password: I1onhFIawC9IpNB2ZE73CK
   port: 52873
   server: 81.19.141.45
@@ -183,7 +182,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇩🇪 DE
-  name: 25,27,35,36,39,40,65,66,67,157,223,243,258,361|🇪DE 15.6KB/s
+  name: '25,27,33,34,35,36,37,38,65,66,67,157,223,243,258|🇩🇪DE-84.19.31.63-1442 #1'
   password: 2EtPqn6HYjUNcHohLfUpFQwnfjCCQ5mh1mJdEMCBucuWZ9P1udkRKHnVxuo55k1KXz2Fo6jrgt18W66opty1e4bm1jzfCfBb
   port: 50841
   server: 84.19.31.63
@@ -204,11 +203,24 @@ proxies:
     headers:
       Host: ta.promote.icu
     path: /?ed=2560
-- name: 31,32,35,36,43,66|TR-WS-TLS 🇩🇪 DE-89.116.46.33:443
+- name: 30,35,36,39,40,66|TR-WS-TLS 🇩🇪 DE-89.116.46.33:443
   network: ws
   password: NISHIKUITAN111
   port: 443
   server: 89.116.46.33
+  skip-cert-verify: false
+  sni: zb.ylks.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
+- name: 31,32,41,42,66|TR-WS-TLS 🇩🇪 DE-77.37.33.8:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 77.37.33.8
   skip-cert-verify: false
   sni: zb.ylks.xyz
   type: trojan
@@ -225,35 +237,17 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇩🇪 DE-167.172.170.30:80
-  password: qkq6X68SHTIQrMB5lVfVcW
-  port: 80
-  server: 167.172.170.30
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 33,34,37,38,66|SS-TCP-NA 🇩🇪 DE-185.121.134.149:1080
   password: MjuP-BdmL8gKFBlcG2MElg
   port: 1080
   server: 185.121.134.149
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '33,34,35,36,37,38,66,67,361|未知7 #1'
-  password: oJyi0e2r4em1pXTG274jzR
-  port: 23831
-  server: 207.154.193.100
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 33,34,37,38,66,88,149,157,243,258,363|21|🇷FR_537
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 217.182.198.219
+- cipher: rc4-md5
+  name: 33,34,37,38,66,233,360|🇩🇪DE-193.108.119.230-0072 | 27.161MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -264,32 +258,19 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  country: 🇩🇪DE
+  name: '33,34,37,38,66,157,243,258|🇩🇪DE-23.157.88.61-6350 #1'
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.157.88.61
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 33,34,37,38,66|SS-TCP-NA 🇩🇪 DE-23.88.54.248:443
-  password: dKdcdxB/R/gwdmI2ftlgkeAQpFKbI1jgq676hyvMi5w=
+  password: Yeud3qg58vv3mgu/SIW/2cIphtimMYsTHGBI1jAKF/A=
   port: 443
   server: 23.88.54.248
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇩🇪 DE-45.14.247.49:5555
-  password: l-CowVm4edcf2gp-WcJD1g
-  port: 5555
-  server: 45.14.247.49
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇩🇪 DE-5.175.137.127:56207
-  password: 2MeBqzmUpoBY2rL8o67XjtEqerF8MHJZE24rHCEsPYrG9jCxW1khi1EjGKUBJNiBA25zXjHEB9eujhvQVYURZNCqJe7g33Bk
-  port: 56207
-  server: 5.175.137.127
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 33,34,37,38,66,157,243,258,363|21|_20
-  password: a3GFYt36Sm82Vys9
-  port: 9000
-  server: 80.92.204.106
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -300,10 +281,9 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 33,34,37,38,63,66,157,233,243,246,258,360|🇩🇪DE-80.92.204.106-5159 | 24.246MB
-  password: ZpNDDKRu9MagNvaf
-  port: 9015
+  name: 33,34,37,38,63,66,157,243,246,258,360|🇩🇪DE-80.92.204.106-3672 | 11.179MB
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
   server: 80.92.204.106
   type: ss
   udp: true
@@ -319,6 +299,14 @@ proxies:
   name: 33,34,37,38,66,157,243,258,360|🇩🇪DE-80.92.204.106-3539 | 9.06MB
   password: XPtzA9sCug3SPR4c
   port: 9025
+  server: 80.92.204.106
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 33,34,37,38,63,66,157,243,246,258,360|🇩🇪DE-80.92.204.106-5134 | 6.502MB
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 80.92.204.106
   type: ss
   udp: true
@@ -340,30 +328,25 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇩🇪DE
-  name: 33,34,37,38,66,157,243,258,360,363|21|🇩🇪DE_527
-  password: Sn5B7jTqr76aCJT8
-  port: 9097
+  name: 33,34,37,38,66,157,243,258,360,363|21|🇩🇪DE_526
+  password: cp8pRSUAyLhTfVWH
+  port: 9064
   server: 80.92.204.106
   type: ss
   udp: true
-- name: 33,34,43,66|TR-WS-TLS 🇩🇪 DE-77.37.33.8:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 77.37.33.8
-  skip-cert-verify: false
-  sni: zb.ylks.xyz
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,39,40,66|SS-TCP-NA 🇩🇪 DE-167.172.170.30:80
+  password: qkq6X68SHTIQrMB5lVfVcW
+  port: 80
+  server: 167.172.170.30
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
-- cipher: rc4-md5
-  name: 35,36,37,38,66,233,360|🇩🇪DE-193.108.119.230-0072 | 27.161MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 35,36,39,40,66,88,149,157,243,258,363|21|🇷FR_537
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 217.182.198.219
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -373,34 +356,24 @@ proxies:
   server: 217.182.198.219
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇩🇪DE
-  name: '35,36,37,38,66,157,243,258|🇩🇪DE-23.157.88.61-6350 #1'
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.157.88.61
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,66|SS-TCP-NA 🇩🇪 DE-45.14.247.49:5555
+  password: l-CowVm4edcf2gp-WcJD1g
+  port: 5555
+  server: 45.14.247.49
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,39,40,66|SS-TCP-NA 🇩🇪 DE-5.175.137.127:56207
+  password: 2MeBqzmUpoBY2rL8o67XjtEqerF8MHJZE24rHCEsPYrG9jCxW1khi1EjGKUBJNiBA25zXjHEB9eujhvQVYURZNCqJe7g33Bk
+  port: 56207
+  server: 5.175.137.127
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 35,36,39,40,63,66,157,243,246,258,360|🇩🇪DE-80.92.204.106-3672 | 11.179MB
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 80.92.204.106
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 35,36,39,40,63,66,157,243,246,258,360|🇩🇪DE-80.92.204.106-5134 | 6.502MB
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 80.92.204.106
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇩🇪DE
-  name: 35,36,37,38,66,157,243,258,360,363|21|🇩🇪DE_526
-  password: cp8pRSUAyLhTfVWH
-  port: 9064
+  name: 35,36,39,40,66,157,243,258,363|21|_20
+  password: a3GFYt36Sm82Vys9
+  port: 9000
   server: 80.92.204.106
   type: ss
   udp: true
@@ -413,29 +386,19 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇩🇪DE
+  name: 35,36,37,38,66,157,243,258,360,363|21|🇩🇪DE_527
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 80.92.204.106
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
   name: 35,36,37,38,66,157,243,258,360,363|21|🇩🇪DE_528
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 80.92.204.106
   type: ss
-  udp: true
-- name: 59|🇩🇪DE-3.78.122.141-0494
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.78.122.141
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|🇩🇪DE-3.123.52.125-0724
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.123.52.125
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
   udp: true
 - name: 59|德国-4.34MB/s_71_71
   network: tcp
@@ -556,20 +519,24 @@ proxies:
   uuid: 9d655d30-cfad-4cda-82d6-9028ab41907d
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 59|德国 V2CROSS.COM_356
-  network: ws
-  port: 443
-  server: 194.76.18.197
+- name: 59|🇩🇪DE-3.78.122.141-0494
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.78.122.141
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 59|🇩🇪DE-3.123.52.125-0724
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.123.52.125
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -670,7 +637,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: "59,236,377|@Vip_Security join us - 354\n #1"
+  name: '59,236,377|@Vip_Security join us - 355
+
+    '
   network: tcp
   port: '12281'
   server: 193.108.119.112
@@ -688,6 +657,21 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 59,230,242,243,249,250,253,256,257,258,380|法国_1216083
+  network: ws
+  port: '443'
+  server: 57.129.24.124
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 59|🇩🇪 www.85la.com 德国 17_2
@@ -754,6 +738,20 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: 59|德国 V2CROSS.COM_356
+  network: ws
+  port: 443
+  server: 194.76.18.197
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
   name: 59|🇩🇪DE-57.129.24.125-7786 | 24.018MB
   network: ws
   port: 443
@@ -794,7 +792,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 60,268|TG频道@mfbpn-0469-CN
+  name: 60,268|TG频道@mfbpn-181-CN
   network: ws
   port: 23616
   server: 16.mamamajd.site
@@ -803,14 +801,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 24bb4e79-3885-3183-ac53-40687eb82036
+  uuid: a87cdd10-6479-316e-8b04-4203e25925c7
   ws-opts:
     headers:
       Host: 16.mamamajd.site
     path: /
 - alterId: 2
   cipher: auto
-  name: 60,268|TG频道@mfbpn-0470-CN
+  name: 60,268|TG频道@mfbpn-182-CN
   network: ws
   port: 23618
   server: 18.mamamajd.site
@@ -819,7 +817,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 24bb4e79-3885-3183-ac53-40687eb82036
+  uuid: a87cdd10-6479-316e-8b04-4203e25925c7
   ws-opts:
     headers:
       Host: 18.mamamajd.site
@@ -838,6 +836,13 @@ proxies:
   type: vmess
   udp: true
   uuid: bfc75171-c6e0-40f1-95d7-f05aed7c84b2
+- cipher: aes-256-cfb
+  country: 🇩🇪DE
+  name: 63,66,157,233,243,246,258,360|🇩🇪DE-80.92.204.106-5159 | 24.246MB
+  password: ZpNDDKRu9MagNvaf
+  port: 9015
+  server: 80.92.204.106
+  type: ss
 - cipher: aes-128-gcm
   name: 64|🇩🇪 德国_4
   password: dadk2jat*/?
@@ -854,12 +859,6 @@ proxies:
   password: CH1UNTDYpn/iAH8O1dMmv/Hs8c46PU9GXnHrGyt4SW0=
   port: 80
   server: 188.245.82.165
-  type: ss
-- cipher: aes-256-cfb
-  name: 66,360|🇩🇪DE-80.92.204.106-3192 | 11.563MB
-  password: f63gg8EruDnUrmz4
-  port: 9010
-  server: 80.92.204.106
   type: ss
 - alterId: '0'
   cipher: auto
@@ -1075,6 +1074,19 @@ proxies:
   port: 3389
   server: 142.202.51.58
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '106,132,133,138,184,194,202,330,335,342,346,347,349,355,377|@Vip_Security
+    join us - 99
+
+    '
+  network: tcp
+  port: '100'
+  server: 78.47.131.252
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dc2800af-d3b3-4979-9334-502d05519b50
 - alterId: 0
   cipher: auto
   name: 112|DE
@@ -1922,7 +1934,9 @@ proxies:
   uuid: 7cd92514-55a3-45cb-bd4a-7106f01300fa
 - alterId: 0
   cipher: auto
-  name: "132,133,138,285,349,355,377|@Vip_Security join us - 352\n #1"
+  name: '132,133,138,285,349,355,377|@Vip_Security join us - 353
+
+    '
   network: tcp
   port: '40804'
   server: 188.121.122.89
@@ -2160,7 +2174,7 @@ proxies:
     path: /shirker
 - alterId: 0
   cipher: auto
-  name: '151,174,230,242,243,249,250,253,256,257,258,370,380,381|美国_1216181 #1'
+  name: 151,174,230,242,243,249,250,253,256,257,258,370,380,381|美国_1217171
   network: ws
   port: '80'
   server: de-v.sshmax.xyz
@@ -2281,6 +2295,24 @@ proxies:
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   ws-opts:
+    path: /linde06.indiavideo.sbs/linkws
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 157,230,242,243,249,250,253,256,257,258,380|未知_1216703
+  network: ws
+  port: '8880'
+  server: 104.16.60.8
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: ''
     path: /linde06.indiavideo.sbs/linkws
 - cipher: aes-256-cfb
   name: '173,243,258|🇪DE-3.123.135.129-1793 #1'
@@ -2503,7 +2535,7 @@ proxies:
   uuid: c531658d-4e00-4470-b0f7-5c075f3e84c1
 - alterId: 0
   cipher: auto
-  name: '203,228,377|@Vip_Security join us - 647
+  name: '203,228,377|@Vip_Security join us - 651
 
     '
   network: ws
@@ -2519,7 +2551,7 @@ proxies:
     path: /dangerzone
 - alterId: 0
   cipher: auto
-  name: 203|DE🇩🇪 | De2.vmess.site.-80 | 105.85ms
+  name: 203|DE🇩🇪 | De2.vmess.site.-80 | 134.37ms
   network: ws
   port: '80'
   server: www.speedtest.net
@@ -2533,7 +2565,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 204|DE🇩🇪 | glweidf.cfd-443 | 121.23ms
+  name: 203,230,242,243,249,250,253,256,257,258,264,267,380|未知_1216760
+  network: ws
+  port: '443'
+  server: 104.19.32.0
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      Host: xmivideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 204|DE🇩🇪 | glweidf.cfd-443 | 68.67ms
   network: ws
   port: '443'
   server: 188.114.96.3
@@ -2545,20 +2592,6 @@ proxies:
     headers:
       Host: glweidf.cfd
     path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 204,264|🏁RELAY-172.67.74.4-0155
-  network: ws
-  port: 443
-  server: 172.67.74.4
-  servername: mikasa.yaemiko.cloudns.org
-  tls: true
-  type: vmess
-  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
-  ws-opts:
-    headers:
-      Host: mikasa.yaemiko.cloudns.org
-    path: /ivideos.sbs/linkws
 - alterId: 1
   cipher: auto
   name: 212|🔒🇩🇪 DE 139.162.133.46 ◈ ws:443 ◈ Akamai Technologies, Inc. / Linode ◈
@@ -4309,7 +4342,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 231|20-1182-DE
+  name: 231|20-1163-DE
   network: ws
   port: 443
   server: 57.129.24.141
@@ -4728,7 +4761,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 268|TG频道@mfbpn-0084-DE
+  name: 268|TG频道@mfbpn-084-DE
   network: ws
   port: 28164
   server: 165.227.175.88
@@ -4740,30 +4773,6 @@ proxies:
     headers:
       Host: None
     path: None
-- alterId: 0
-  cipher: auto
-  name: '268,377|@Vip_Security join us - 52
-
-    '
-  network: tcp
-  port: '15836'
-  server: 45.159.50.76
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e1218e34-80a3-4a65-8524-88ca51e79191
-- alterId: 0
-  cipher: auto
-  name: '268,377|@Vip_Security join us - 55
-
-    '
-  network: tcp
-  port: '30178'
-  server: 45.159.51.88
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a0dfa194-ce47-409f-b551-ff520181bfab
 - alterId: 0
   cipher: auto
   name: '278|(@VmessProtocol)برای خرید و اتصال دائمی جوین شو🇩🇪 #31'
@@ -6102,6 +6111,12 @@ proxies:
     headers:
       Host: ivideos.sbs
     path: /
+- cipher: aes-256-cfb
+  name: 360|🇩🇪DE-80.92.204.106-3192 | 11.563MB
+  password: f63gg8EruDnUrmz4
+  port: 9010
+  server: 80.92.204.106
+  type: ss
 - alterId: 0
   cipher: auto
   name: 363|5|🇩🇪_DE_德国
