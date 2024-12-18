@@ -14,37 +14,6 @@ proxies:
   server: 23.92.127.134
   type: ss
   udp: true
-- name: 59|爱尔兰-3.32MB/s_91_91
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.33.177.19
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|爱尔兰-3.95MB/s_390_390
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 54.247.105.219
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: /
-  name: 59,236|qoli_915
-  network: grpc
-  port: '8443'
-  server: 85.159.229.88
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - name: 59|🇮🇪 www.85la.com 爱尔兰 01
   network: tcp
   password: telegram-id-directvpn
@@ -104,6 +73,24 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 99.80.216.137
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 59|爱尔兰-3.32MB/s_91_91
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.33.177.19
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 59|爱尔兰-3.95MB/s_390_390
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 54.247.105.219
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -216,6 +203,19 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: /
+  name: 59,236|qoli_915
+  network: grpc
+  port: '8443'
+  server: 85.159.229.88
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - cipher: aes-128-gcm
   name: 60|🇮🇪 Web 爱尔兰I-原生 - AyucLouD-Services
   password: Vdssf.mj/2Zr
@@ -225,6 +225,7 @@ proxies:
     mode: http
   port: 36201
   server: 231103level1.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -238,34 +239,6 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.189:15311
-  password: P24nCbYfJt
-  port: 15311
-  server: 45.131.248.189
-  type: ss
-- cipher: aes-256-gcm
-  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.228:13093
-  password: YB9mU8w6UF
-  port: 13093
-  server: 45.131.248.228
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '66,132,133,138,350,355,377|@Vip_Security join us - 29
-
-    '
-  network: ws
-  port: '47376'
-  server: 45.131.248.189
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c1d0c605-7c95-4652-ee11-111a890a4402
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - alterId: 0
   cipher: auto
   name: '66,132,133,138,278,350,355,377|@Vip_Security join us - 26
@@ -300,16 +273,34 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: rc4-md5
-  name: 69|5Y-w5rm-IEhpTmV0
-  obfs: http_simple
-  obfs-param: MTBkZTMxNzQ2OC5taWNyb3NvZnQuY29t
-  password: 8ELIWb
-  port: '11536'
-  protocol: auth_aes128_sha1
-  protocol-param: MTc0Njg6aWlPMXY0
-  server: tw-hineta.saberperfect.win
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: '66,132,133,138,350,355,377|@Vip_Security join us - 29
+
+    '
+  network: ws
+  port: '47376'
+  server: 45.131.248.189
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c1d0c605-7c95-4652-ee11-111a890a4402
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-gcm
+  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.189:15311
+  password: P24nCbYfJt
+  port: 15311
+  server: 45.131.248.189
+  type: ss
+- cipher: aes-256-gcm
+  name: 66|SS-TCP-NA 🇮🇪 IE-45.131.248.228:13093
+  password: YB9mU8w6UF
+  port: 13093
+  server: 45.131.248.228
+  type: ss
 - name: 88|🇮🇪IE(AzadNet.t.me)_002
   network: tcp
   password: telegram-id-directvpn
@@ -403,9 +394,8 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '202,203,212,377|@Vip_Security join us - 574
-
-    '
+  name: 203,212|🇮🇪 IE 85.159.229.88 ◈ grpc:8443 ◈ Stark Industries/ Global Internet
+    ◈ 4bbe8
   network: grpc
   port: '8443'
   server: f2.maryam1900.com
