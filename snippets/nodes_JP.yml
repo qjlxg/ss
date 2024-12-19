@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '16,67,137,150,224,228,234,237,365,366,373,375,382,384,385,386,387,389,395,401,402|未知102
-    #6'
+  name: '16,67,137,150,224,228,234,365,366,373,375,382,384,385,386,387,389,395|🔒 VM-TCP-NA
+    🇯🇵 JP-13.112.49.171:48898 #16'
   network: tcp
   port: '48898'
   server: 13.112.49.171
@@ -13,8 +13,27 @@ proxies:
   uuid: c47c48c9-01d5-4d77-b7fc-0f5d86d59e54
 - alterId: 0
   cipher: auto
+  name: '16,30,66,90,99,150,228,243,365,367,376,382,384,417|@Vip_Security join us
+    - 63
+
+    '
+  network: ws
+  port: '80'
+  server: 89.187.28.126
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 18659a31-add9-4b9f-af57-77ffaf0396c9
+  ws-opts:
+    headers:
+      Host: ''
+    path: /vmess/#
+- alterId: 0
+  cipher: auto
   name: '16,137,150,224,228,234,365,367,369,373,376,383,384,385,386,387,390,396,413|@Vip_Security
-    join us - 347
+    join us - 29
 
     '
   network: ws
@@ -29,7 +48,7 @@ proxies:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
 - cipher: aes-256-cfb
-  name: '21,22,23,24,65,181,197,283,298,412|South Korea_Incheon_ss_1112 #1'
+  name: 21,22,23,24,65,197,283,298,412|South Korea_Incheon_ss_1112
   password: amazonskr05
   port: 443
   server: 43.203.243.93
@@ -38,7 +57,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '21,24,25,27,65,66,197,263,283,298|🇳VN-160.19.78.75-0906 #1'
+  name: '21,24,25,27,33,34,37,38,65,66,197,283,298|🇳VN-160.19.78.75-0906 #1'
   password: Nk9asglDzHzjktVzTkvhaA
   port: 443
   server: 160.19.78.75
@@ -54,7 +73,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 22,23,35,36,37,38,63,66,197,273,283,286,298,400|🇯🇵JP-149.22.87.241-2972 |
+  name: 22,23,33,34,37,38,63,66,197,273,283,286,298,400|🇯🇵JP-149.22.87.241-2972 |
     16.677MB
   password: shadowsocks
   port: 443
@@ -62,7 +81,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '27|[SS] 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian #4'
+  name: '27|[SS] 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian #2'
   password: amazonskr05
   port: 443
   server: 43.203.255.151
@@ -116,11 +135,31 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
+- name: 31,32,41,42,66|TR-WS-TLS 🇯🇵 JP-139.162.84.183:3306
+  network: ws
+  password: 7ac49a893e0bd10c
+  port: 3306
+  server: 139.162.84.183
+  skip-cert-verify: false
+  sni: vkvd127.mycdn.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vkvd127.mycdn.me
+    path: /gateway/connect
 - cipher: aes-256-cfb
   name: '33,34,37,38,66,197,283,298|🇯🇵JP-13.114.67.166-6247 #1'
   password: amazonskr05
   port: 443
   server: 13.114.67.166
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 33,34,37,38,66|SS-TCP-NA 🇯🇵 JP-194.105.83.3:40003
+  password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
+  port: 40003
+  server: 194.105.83.3
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -137,21 +176,8 @@ proxies:
   server: 94.177.131.71
   type: ss
   udp: true
-- name: 33,34,43,66|TR-WS-TLS 🇯🇵 JP-139.162.84.183:3306
-  network: ws
-  password: 7ac49a893e0bd10c
-  port: 3306
-  server: 139.162.84.183
-  skip-cert-verify: false
-  sni: vkvd127.mycdn.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vkvd127.mycdn.me
-    path: /gateway/connect
 - cipher: chacha20-ietf
-  name: '35,36,37,38,66,283,298|🇵JP-107.148.6.121-0516 #1'
+  name: '35,36,39,40,66,283,298|🇵JP-107.148.6.121-0516 #1'
   password: asd123456
   port: 8388
   server: 107.148.6.121
@@ -162,13 +188,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 18.181.152.92
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,66|SS-TCP-NA 🇯🇵 JP-194.105.83.3:40003
-  password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
-  port: 40003
-  server: 194.105.83.3
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -234,6 +253,60 @@ proxies:
     headers:
       Host: tls.98.node-for-bigairport.win
     path: /
+- name: 59|日本06
+  network: tcp
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59|日本08
+  network: tcp
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  port: 20230
+  server: jp008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59|日本07
+  network: tcp
+  password: 0028109a-37ed-4ded-b858-e566388a904c
+  port: 20230
+  server: jp007.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59,64|❓ 未知_3
+  network: tcp
+  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
+  port: '20230'
+  server: jp005.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 59,412|United States_None_trojan_1129
+  network: tcp
+  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
+  port: 443
+  server: usla.mjt000.com
+  skip-cert-verify: false
+  sni: usla.mjt000.com
+  type: trojan
+  udp: true
+- name: 59,128,412|United States_None_trojan_1133
+  network: tcp
+  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
+  port: 443
+  server: vn.mjt000.com
+  skip-cert-verify: false
+  sni: vn.mjt000.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 59|日本-360.9KB/s_85_85
@@ -262,20 +335,9 @@ proxies:
     headers:
       host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /obdii.cfd:443/linkws
-- name: 59,64|❓ 未知_3
-  network: tcp
-  password: d971ee7a-32d9-402a-8a4f-d2135d48a47b
-  port: '20230'
-  server: jp005.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '59,417|@Vip_Security join us - 57
-
-    '
+  name: "59,417|@Vip_Security join us - 33\n #1"
   network: tcp
   port: '23468'
   server: 47.74.8.202
@@ -294,7 +356,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: none
-  name: '59,304,417|@Vip_Security join us - 76
+  name: '59,304,417|@Vip_Security join us - 51
 
     '
   network: tcp
@@ -694,20 +756,6 @@ proxies:
   tls: true
   type: vmess
   uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
-- alterId: 0
-  cipher: auto
-  name: 59|日本 V2CROSS.COM_300
-  network: ws
-  port: 443
-  server: 146.56.43.53
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
 - name: 59|🇯🇵 www.85la.com 日本 01
   network: tcp
   password: ypDt8RkT7J
@@ -744,15 +792,20 @@ proxies:
     headers:
       host: 3h-Philippines1.09vpn.com
     path: /vmess/
-- name: 59|🇯🇵 www.85la.com 日本 02
-  network: tcp
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
-  port: 20230
-  server: jp007.421421.xyz
+- alterId: 0
+  cipher: auto
+  name: 59|🇳🇬 www.85la.com 尼日利亚 01
+  network: ws
+  port: 443
+  server: 2.189.59.7
   skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: obdii.cfd
+    path: /linkws
 - name: 59|🇯🇵 www.85la.com 日本 05_1
   network: tcp
   password: 061a01f1-704b-4712-8e12-6d3fc95a127d
@@ -760,24 +813,6 @@ proxies:
   server: 146.56.168.56
   skip-cert-verify: true
   sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59,181,412|United States_None_trojan_1129
-  network: tcp
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: usla.mjt000.com
-  skip-cert-verify: false
-  sni: usla.mjt000.com
-  type: trojan
-  udp: true
-- name: 59,128,181,412|United States_None_trojan_1133
-  network: tcp
-  password: 1ba48a0e-af2e-45fb-9e15-2b2d4134657c
-  port: 443
-  server: vn.mjt000.com
-  skip-cert-verify: false
-  sni: vn.mjt000.com
   type: trojan
   udp: true
 - alterId: 1
@@ -795,24 +830,20 @@ proxies:
     headers:
       Host: ''
     path: linkvws
-- name: 59|日本06
-  network: tcp
-  password: 0028109a-37ed-4ded-b858-e566388a904c
-  port: 20230
-  server: jp006.421421.xyz
+- alterId: 0
+  cipher: auto
+  name: 59|日本 V2CROSS.COM_300
+  network: ws
+  port: 443
+  server: 146.56.43.53
   skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: 59|日本08
-  network: tcp
-  password: 0028109a-37ed-4ded-b858-e566388a904c
-  port: 20230
-  server: jp008.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: 59|二爷翻墙网 https://1808.free.hr_JP_2
@@ -883,171 +914,6 @@ proxies:
     headers:
       host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本01-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9059
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本02-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9062
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本03-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 819
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本04-原生 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9021
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本05-原生 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 914
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本06-标准 - AyucLouD-Services
-  password: ayu1245
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 909
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本07-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 918
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本08-标准 - AyucLouD-Services
-  password: ay2dsd1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 811
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本09-专线 - AyucLouD-Services
-  password: fjlfjafl231303831
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 1313
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Game 日本10-标准 - AyucLouD-Services
-  password: ay21d1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 901
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Video 日本A-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 818
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Video 日本B-解锁 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 813
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Video 日本C-原生 - AyucLouD-Services
-  password: ay232sffssd1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 4321
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇯🇵 Web 日本I-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9051
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇳🇬 Web 尼日利亚I-原生 - AyucLouD-Services
-  password: aa2x2sa2/1a
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 10021
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 60|日本A🇯🇵 - 探索者
@@ -1430,6 +1296,171 @@ proxies:
   protocol-param: 133218:c9YG0G
   server: cnczu01.tangguo.pro
   type: ssr
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本01-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9059
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本02-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9062
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本03-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 819
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本04-原生 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9021
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本05-原生 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 914
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本06-标准 - AyucLouD-Services
+  password: ayu1245
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 909
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本07-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 918
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本08-标准 - AyucLouD-Services
+  password: ay2dsd1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 811
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本09-专线 - AyucLouD-Services
+  password: fjlfjafl231303831
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 1313
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Game 日本10-标准 - AyucLouD-Services
+  password: ay21d1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 901
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Video 日本A-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 818
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Video 日本B-解锁 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 813
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Video 日本C-原生 - AyucLouD-Services
+  password: ay232sffssd1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 4321
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇯🇵 Web 日本I-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9051
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇳🇬 Web 尼日利亚I-原生 - AyucLouD-Services
+  password: aa2x2sa2/1a
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 10021
+  server: 231103level1.unclemanco.com
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -2045,12 +2076,6 @@ proxies:
   port: '54098'
   server: j-p02.loveroise.com
   type: ss
-- cipher: aes-256-cfb
-  name: '65,283,298|🇵JP-3.113.31.223-0889 #1'
-  password: amazonskr05
-  port: 443
-  server: 3.113.31.223
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 66|SS-TCP-NA 🇯🇵 JP-52.195.175.184:443
   password: 3L2SnWqGiWuV8OpWqFZ0vJ
@@ -2238,7 +2263,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '76,168,189,213,270,277,282,283,289,290,293,296,297,298,321,403,404,405,417|@Vip_Security
-    join us - 225
+    join us - 173
 
     '
   network: ws
@@ -2348,6 +2373,34 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: 99|日本_1216001
+  network: ws
+  port: '443'
+  server: 43.207.78.212
+  servername: argo9.zjccc.nyc.mn
+  tls: true
+  type: vmess
+  uuid: f20e6bda-c007-4ff9-be3d-0aaf125bc63a
+  ws-opts:
+    headers:
+      Host: argo9.zjccc.nyc.mn
+    path: /serv00?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 99,276|qoli_914
+  network: ws
+  port: '80'
+  server: 3h-Philippines1.09vpn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3fd35fa2-a0c6-4f0c-8310-c3c03a268155
+  ws-opts:
+    headers:
+      Host: 3h-Philippines1.09vpn.com
+    path: /vmess/
 - alterId: 0
   cipher: auto
   name: '104,112,190|>🇯🇵 JP|Ns|1115|TG@FProxies| #7'
@@ -5016,15 +5069,6 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- name: 263|🇯🇵_日本_1
-  network: tcp
-  password: '!!str 3648425794742788096'
-  port: 443
-  server: fun-ostrich.treefrog761.one
-  skip-cert-verify: true
-  sni: fun-ostrich.treefrog761.one
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🇵JP
@@ -5723,6 +5767,12 @@ proxies:
   password: 233blog.com
   port: 443
   server: 20.210.122.21
+  type: ss
+- cipher: aes-256-cfb
+  name: '283,298|🇵JP-3.113.31.223-0889 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.113.31.223
   type: ss
 - cipher: aes-256-cfb
   name: '283,298|🇵JP-43.207.68.169-2564 #1'
@@ -7254,7 +7304,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '403,417|@Vip_Security join us - 522
+  name: '403,417|@Vip_Security join us - 409
 
     '
   network: ws

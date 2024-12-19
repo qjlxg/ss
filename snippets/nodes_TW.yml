@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 16,21,22,23,24,123,181,190,224,228,229,270,282,283,289,290,293,296,297,298,308,310,311,312,313,345,346,347,412|China_Guangzhou_vmess_1124
+  name: 16,21,22,23,24,123,190,224,228,229,270,282,283,289,290,293,296,297,298,308,310,311,312,313,345,346,347,412|China_Guangzhou_vmess_1124
   network: ws
   port: '27029'
   server: ccc-29.rabbitpro-in-3.com
@@ -18,7 +18,7 @@ proxies:
     path: /hls
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '22,23,33,34,37,38,66,67,401|TW #1'
+  name: 22,23,33,34,37,38,66,67|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.138
@@ -40,24 +40,17 @@ proxies:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.59:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.59
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.35.37:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.37
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-103.115.108.83:40020
+  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-103.115.108.83:40020
   password: F585FCDB-6351-48D4-82C1-599B5447A589
   port: 40020
   server: 103.115.108.83
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.60
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -68,17 +61,24 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
+  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.136
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
+  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.59:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.60
+  server: 60.249.28.59
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.35.37:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.37
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -111,38 +111,19 @@ proxies:
     headers:
       Host: tw02.hy2.one
     path: /af323d
-- alterId: 0
-  cipher: auto
-  name: 59|台湾省新竹市 中华电信_174
-  network: ws
-  port: 80
-  server: twriyfjhhhh1.hfhfb.homes
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
-  ws-opts:
-    headers:
-      host: app.dingtalk.com
-    path: /?ed
-- alterId: 0
-  cipher: auto
-  name: 59|台湾省桃园市 中华电信_570
-  network: ws
+- name: 59|🇹🇼TW-210.61.97.241-0847
+  network: tcp
+  password: ouo
   port: 81
   server: 210.61.97.241
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
+  sni: tr.koiok.us.kg
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: '59,66,89,97,114,165,172,173,178,187,215,270,276,282,283,289,290,293,296,297,298,304,315,390,395,405,409,417|@Vip_Security
-    join us - 124
+    join us - 75
 
     '
   network: ws
@@ -158,185 +139,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- name: 59|🇹🇼TW-210.61.97.241-0847
-  network: tcp
-  password: ouo
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: true
-  sni: tr.koiok.us.kg
-  type: trojan
-  udp: true
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 60,190,308|TG频道@mfbpn-0210-CN
+  name: 59|台湾省新竹市 中华电信_174
   network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  servername: ''
+  port: 80
+  server: twriyfjhhhh1.hfhfb.homes
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 4fa7bf30-213b-3e84-97e4-abe912f4aac6
+  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
   ws-opts:
     headers:
-      Host: 19.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 919
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾02-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 825
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾03-专线 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 834
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾04-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 908
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾05-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9040
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾06-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 835
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾07-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 905
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Game 台湾08-原生 - AyucLouD-Services
-  password: a12cloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 904
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Video 台湾A-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9048
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Video 台湾B-原生 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9022
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Video 台湾C-原生 - AyucLouD-Services
-  password: fsfal2
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 916
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Video 台湾D-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 926
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Video 台湾E-解锁 - AyucLouD-Services
-  password: ayds23sd1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 39004
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇹🇼 Web 台湾I-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: c45cc104122.download.windowsupdate.com
-    mode: http
-  port: 9047
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
+      host: app.dingtalk.com
+    path: /?ed
 - alterId: 0
   cipher: auto
   name: 60|🇹🇼 SVIP|台湾0A|2倍率 - 探索者
@@ -684,6 +500,176 @@ proxies:
   protocol-param: 133218:c9YG0G
   server: cnipsz00.tangguo.pro
   type: ssr
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 60,190,308|TG频道@mfbpn-210-CN
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5a51cf9c-7b41-3ad3-90af-1c3eb848ef4f
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 919
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾02-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 825
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾03-专线 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 834
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾04-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 908
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾05-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9040
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾06-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 835
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾07-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 905
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Game 台湾08-原生 - AyucLouD-Services
+  password: a12cloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 904
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Video 台湾A-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9048
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Video 台湾B-原生 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9022
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Video 台湾C-原生 - AyucLouD-Services
+  password: fsfal2
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 916
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Video 台湾D-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 926
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Video 台湾E-解锁 - AyucLouD-Services
+  password: ayds23sd1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 39004
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇹🇼 Web 台湾I-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: b8cb0104162.download.windowsupdate.com
+    mode: http
+  port: 9047
+  server: 231103level1.unclemanco.com
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
