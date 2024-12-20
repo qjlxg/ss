@@ -15,11 +15,29 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '35,36,37,38|[SS] SS-TCP-NA 🇮🇪 IE-13.79.98.64:55939 #3'
+  name: 35,36,37,38,66|SS-TCP-NA 🇮🇪 IE-13.79.98.64:55939
   password: 49JPbl6SMH1hDoskOR6irG
   port: 55939
   server: 13.79.98.64
   type: ss
+  udp: true
+- name: 59|爱尔兰-3.32MB/s_91_91
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.33.177.19
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 59|爱尔兰-3.95MB/s_390_390
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 54.247.105.219
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - name: 59|🇮🇪 www.85la.com 爱尔兰 01
   network: tcp
@@ -80,24 +98,6 @@ proxies:
   password: telegram-id-privatevpns
   port: 22222
   server: 99.80.216.137
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|爱尔兰-3.32MB/s_91_91
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 63.33.177.19
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|爱尔兰-3.95MB/s_390_390
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 54.247.105.219
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
@@ -245,6 +245,16 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
+- cipher: rc4-md5
+  name: 69|5Y-w5rm-IEhpTmV0
+  obfs: http_simple
+  obfs-param: MTBkZTMxNzQ2OC5taWNyb3NvZnQuY29t
+  password: 8ELIWb
+  port: '11536'
+  protocol: auth_aes128_sha1
+  protocol-param: MTc0Njg6aWlPMXY0
+  server: tw-hineta.saberperfect.win
+  type: ssr
 - name: 128|🇮🇪IE(AzadNet.t.me)_002
   network: tcp
   password: telegram-id-directvpn
@@ -440,7 +450,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '242,243,252,253,255,417|@Vip_Security join us - 451
+  name: '242,243,252,253,255,417|@Vip_Security join us - 472
 
     '
   network: grpc
