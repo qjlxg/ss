@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '9,16,59,89,90,114,121,122,137,150,210,224,228,229,242,252,253,254,255,304,417|@Vip_Security
-    join us - 288
+  name: '9,16,59,89,90,114,121,122,137,150,210,224,228,229,237,242,252,253,254,255,304,401,402,417|@Vip_Security
+    join us - 303
 
     '
   network: tcp
@@ -15,18 +15,21 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇭CH
-  name: '21,24,33,34,37,38,66,197,263,283,298|🇸US-138.124.60.136-0924 #1'
+  name: '21,24,33,34,37,38,65,66,181,197,263,283,298|🇸US-138.124.60.136-0924 #1'
   password: fMcrsQuZhCNiHBmXT80AhQ3mPK5alh/iLuDz4pILlYU=
   port: 44915
   server: 138.124.60.136
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 22,23,35,36,37,38,66,197,273,283,298,400|CH-156.146.62.161-3222 | 31.864MB
+  name: 22,23,35,36,39,40,66,197,273,283,298,400,401|未知75 9.6MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.161
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -40,7 +43,8 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: '22,23,35,36,37,38,63,66,67,197,273,283,286,298,401|未知21 1.3MB/s #1'
+  name: '22,23,33,34,35,36,37,38,63,66,67,197,273,283,286,298|🇨CH-156.146.62.163-0412
+    #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -50,7 +54,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 22,23,35,36,39,40,63,66,197,273,283,286,298,400|CH-156.146.62.164-3430 | 31.479MB
+  name: 22,23,33,34,37,38,63,66,197,273,283,286,298,400|CH-156.146.62.164-3430 | 31.479MB
   password: shadowsocks
   port: 443
   server: 156.146.62.164
@@ -63,7 +67,7 @@ proxies:
   server: 138.124.51.236
   type: ss
   udp: true
-- name: 31,32,41,42,66|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
+- name: 30,39,40,66|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -84,13 +88,6 @@ proxies:
   server: 23.166.88.5
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248
-  password: xZueg29STVQdc8hfO45EFm
-  port: 4248
-  server: 45.95.232.236
-  type: ss
-  udp: true
 - name: 33,34,43,66|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
   password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
@@ -105,7 +102,7 @@ proxies:
       Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
     path: /Telegram@V2ray_Alpha/?ed=2560
 - cipher: aes-256-gcm
-  name: 35,36,39,40,66|SS-TCP-NA 🇨🇭 CH-23.166.88.198:2375
+  name: 35,36,37,38,66|SS-TCP-NA 🇨🇭 CH-23.166.88.198:2375
   password: faBAoD54k87UJG7
   port: 2375
   server: 23.166.88.198
@@ -113,7 +110,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🏁 ZZ
-  name: '35,36,39,40,63,66,197,283,286,298|🇨🇭CH-23.166.88.198-0558 #1'
+  name: '35,36,37,38,63,66,197,283,286,298|🇨🇭CH-23.166.88.198-0558 #1'
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 23.166.88.198
@@ -121,15 +118,32 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🏁 ZZ
-  name: '35,36,37,38,66,197,283,298|CH-23.166.88.198-6308 #1'
+  name: '35,36,39,40,66,197,283,298|CH-23.166.88.198-6308 #1'
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 23.166.88.198
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,66|SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248
+  password: xZueg29STVQdc8hfO45EFm
+  port: 4248
+  server: 45.95.232.236
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,39,40,66,67|未知53
+  password: ifQ4CU2L4WpkJk8YqD6cHe
+  port: 19057
+  server: 91.103.253.151
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '51,417|@Vip_Security join us - 276
+  name: '51,417|@Vip_Security join us - 291
 
     '
   network: tcp
@@ -140,7 +154,7 @@ proxies:
   uuid: 6d0b94fc-3699-4231-aeda-641b196551d1
 - alterId: 0
   cipher: auto
-  name: '51,417|@Vip_Security join us - 37
+  name: '51,417|@Vip_Security join us - 40
 
     '
   network: tcp
@@ -159,10 +173,10 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 59|瑞士_由快嘴科技提供：kkzui.com197
+  name: 59|瑞士 苏黎世Oracle云计算数据中心_284
   network: ws
   port: 443
-  server: 141.148.203.6
+  server: 140.238.212.95
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -173,10 +187,10 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 59|瑞士 苏黎世Oracle云计算数据中心_284
+  name: 59|瑞士 Oracle Corporation_342
   network: ws
   port: 443
-  server: 140.238.212.95
+  server: 141.148.203.6
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -270,7 +284,7 @@ proxies:
   udp: true
 - alterId: 1
   cipher: auto
-  name: 270,282,283,289,293,296,297,298,304,307|🇨🇭CH-186.190.215.32-8072
+  name: 270,282,283,289,290,293,296,297,298,304,307|🇨🇭CH-186.190.215.32-8072
   network: ws
   port: 443
   server: 186.190.215.32
@@ -285,7 +299,7 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 270,282,283,289,293,296,297,298,304,307|🇨🇭CH-186.190.215.75-8171
+  name: 270,282,283,289,290,293,296,297,298,304,307|🇨🇭CH-186.190.215.75-8171
   network: ws
   port: 443
   server: 186.190.215.75
@@ -300,7 +314,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,293,296,297,298|🇭CH-140.238.212.95-8966 #1'
+  name: '270,282,283,289,290,293,296,297,298|🇭CH-140.238.212.95-8966 #1'
   network: ws
   port: 443
   server: 140.238.212.95
@@ -315,7 +329,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '270,282,283,289,293,296,297,298|🇨🇭CH-23.166.88.27-9081 #1'
+  name: '270,282,283,289,290,293,296,297,298|🇨🇭CH-23.166.88.27-9081 #1'
   network: ws
   port: 443
   server: 23.166.88.27
@@ -330,7 +344,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 270,282,283,289,293,296,297,298,304|@ShadowProxy66 🇨🇭
+  name: 270,282,283,289,290,293,296,297,298,304|@ShadowProxy66 🇨🇭
   network: ws
   port: '443'
   server: 186.190.215.149
