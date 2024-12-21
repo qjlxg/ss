@@ -1,13 +1,14 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 19,20,21,24,65,189,283,298,353|France_Gravelines_ss_1354
+  name: 19,20,21,24,57,65,189,283,298,353|France_Gravelines_ss_1354
   password: 7BcLdsO1WweoGD0X
   port: 40368
   server: 193.243.147.128
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 21,22,23,24,35,36,39,40,65,66,197,273,283,298,400,403|21|_34
+  name: 21,22,23,24,35,36,37,38,65,66,197,273,283,298,400,403|21|_34
   password: d3837224ed465f00
   port: 57456
   server: 45.144.48.63
@@ -30,17 +31,18 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇩🇪 DE
-  name: 22,23,27,33,34,37,38,59,66,116,197,273,283,298,323|[97]🇵🇱PL-92.118.205.228-37301
+  name: 22,23,27,35,36,37,38,59,66,116,197,273,283,298,323|[97]🇵🇱PL-92.118.205.228-37301
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 92.118.205.228
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 33,34,37,38,59,65,66,116,283,298,323|[97]🇵🇱PL-217.30.10.18-50111
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 217.30.10.18
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 33,34,37,38,66,128,189,197,283,298,353,403|21|🇱PL_624
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 51.77.53.200
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -51,7 +53,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 35,36,37,38,66,323|[97]🇵🇱PL-217.30.10.18-43026
+  name: 35,36,39,40,66,323|[97]🇵🇱PL-217.30.10.18-43026
   password: 9XwYyZsK8SNzQDtY
   port: 9059
   server: 217.30.10.18
@@ -74,14 +76,6 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 35,36,37,38,66,128,189,197,283,298,353,403|21|🇱PL_624
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   country: 🇱PL
   name: 35,36,37,38,66,128,197,267,283,298,403|21|🇱PL_617
   password: FoOiGlkAA9yPEGP
@@ -90,14 +84,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 35,36,39,40,66,189,197,283,298,353,403|21|_337
+  name: 35,36,37,38,66,189,197,283,298,353,403|21|_337
   password: KixLvKzwjekG00rm
   port: 8080
   server: 51.77.53.200
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 35,36,39,40,66,128,189,197,283,298,321,403|21|_340
+  name: 35,36,37,38,66,128,189,197,283,298,321,403|21|_340
   password: e4FCWrgpkji3QY
   port: 9102
   server: 51.77.53.200
@@ -137,7 +131,7 @@ proxies:
   uuid: 6bd68f20-a6ac-4225-c9e5-6bb2478f630f
 - alterId: 0
   cipher: auto
-  name: 59,90,99,276|qoli_927
+  name: 59,90,276|qoli_927
   network: tcp
   port: '44085'
   server: 128.204.223.115
@@ -160,6 +154,19 @@ proxies:
     headers:
       host: pl-a.yuji2022.eu.org
     path: /r8ykwif5rffiqJeJ49zLQtAUESmka7PbhWz3wiHs8cSeiRyZL
+- alterId: 0
+  cipher: auto
+  name: '59,89,270,282,283,289,290,293,296,297,298|🇫🇷FR-51.77.20.137-7396 #1'
+  network: ws
+  port: 443
+  server: 51.77.20.137
+  servername: tilebani.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: /linkvws
 - cipher: aes-256-cfb
   country: 🇵🇱PL
   name: '59,116,197,283,298|🇵🇱PL-217.30.10.18-7028 #1'
@@ -167,13 +174,6 @@ proxies:
   port: 9060
   server: 217.30.10.18
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 60|🇵🇱 波兰 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 19008
-  server: host-060.crazyspeed.xyz
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   name: 60|🇵🇱 Web 波兰I-原生 - AyucLouD-Services
   password: dajkdkjda&dja*/?
@@ -185,19 +185,11 @@ proxies:
   server: 231103levelx.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 65,197,283,298,323|[97]🇵🇱PL-217.30.10.18-41671
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇵🇱PL
-  name: 65,197,283,298,323|[97]🇵🇱PL-217.30.10.18-42888
-  password: wfLC2y7rzZyCmuyt
-  port: 9093
-  server: 217.30.10.18
+- cipher: chacha20-ietf-poly1305
+  name: 60|🇵🇱 波兰 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 19008
+  server: host-060.crazyspeed.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -206,13 +198,6 @@ proxies:
   port: 2927
   server: 95.164.35.90
   type: ss
-- cipher: aes-256-cfb
-  name: 66,283,298,323|[97]🇵🇱PL-217.30.10.18-42834
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
   name: 128,197,267,283,298,403|21|_84
@@ -762,6 +747,21 @@ proxies:
     path: /c986
 - alterId: 0
   cipher: auto
+  name: 252,253,254,255,270,282,283,289,290,293,296,297,298,304|0|-https://t.me/MrXbin-97
+  network: ws
+  port: 443
+  server: 146.59.55.50
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: o.metuji.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: '252,253,254,255|🇵🇱 PL warp ◈ ws:8880 ◈ 7571a #3'
   network: ws
   port: '8880'
@@ -849,7 +849,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 283,298,323,412|Poland_Warsaw_ss_113
+  name: 283,298,323|[97]🇵🇱PL-217.30.10.18-41760
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 217.30.10.18
@@ -961,6 +961,13 @@ proxies:
   name: 283,298,323|[97]🇵🇱PL-217.30.10.18-43313
   password: FG5ddLsMPbV5CutE
   port: 9050
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 283,298,323|[97]🇵🇱PL-217.30.10.18-42834
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
   server: 217.30.10.18
   type: ss
   udp: true

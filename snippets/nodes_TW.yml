@@ -13,35 +13,38 @@ proxies:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-103.115.108.83:40020
-  password: F585FCDB-6351-48D4-82C1-599B5447A589
-  port: 40020
-  server: 103.115.108.83
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.22.161.134
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
+  name: 33,34,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.136
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.28.59:2377
+  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-103.115.108.83:40020
+  password: F585FCDB-6351-48D4-82C1-599B5447A589
+  port: 40020
+  server: 103.115.108.83
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 211.22.161.134
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,39,40,66,401|TW
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.138
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.59:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.59
@@ -55,24 +58,10 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.35.37:2377
+  name: 35,36,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.35.37:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.35.37
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾01-1E
-  password: 9fc50803-fd6e-49eb-a56c-3dd991a8a179
-  port: 47564
-  server: gy.666666222.shop
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾 1-1F
-  password: e2a759e9-146f-434d-8466-5d541a55969b
-  port: 20032
-  server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
@@ -91,14 +80,19 @@ proxies:
     headers:
       Host: tw02.hy2.one
     path: /af323d
-- name: 59|🇹🇼TW-210.61.97.241-0847
-  network: tcp
-  password: ouo
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: true
-  sni: tr.koiok.us.kg
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇹🇼 台湾 1-1D
+  password: 28e4b029-0c00-4677-9b41-84a00a71dfe6
+  port: 20032
+  server: gy.666666222.shop
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 55|🇹🇼 台湾01-1G
+  password: 8091a52a-0181-4441-a54e-b8a4988c9420
+  port: 47564
+  server: gy.666666222.shop
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -116,8 +110,22 @@ proxies:
     path: /?ed
 - alterId: 0
   cipher: auto
+  name: 59|台湾省桃园市 中华电信_570
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
   name: '59,66,89,97,114,172,173,178,187,215,270,276,282,283,289,290,293,296,297,298,304,315,390,395,405,409,417|@Vip_Security
-    join us - 92
+    join us - 94
 
     '
   network: ws
@@ -133,6 +141,15 @@ proxies:
     headers:
       Host: ''
     path: /
+- name: 59|🇹🇼TW-210.61.97.241-0847
+  network: tcp
+  password: ouo
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: true
+  sni: tr.koiok.us.kg
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 60|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
   password: ayucloud1
@@ -637,7 +654,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 60,190,308|TG频道@mfbpn-1775-CN
+  name: 60,190,308|TG频道@mfbpn-2056-CN
   network: ws
   port: 23619
   server: 19.mamamajd.site
@@ -646,7 +663,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 97f7f617-e5d6-3657-a37b-bd11161a89e4
+  uuid: 12e535ff-21e4-39c1-b7b9-6069e32fbe25
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -1625,6 +1642,15 @@ proxies:
     headers:
       Host: twcdn2.fask511.cfd
     path: /?ed=512
+- alterId: 0
+  cipher: auto
+  name: '190|>🇹🇼 TW|Ls|1115|TG@FProxies| #2'
+  network: tcp
+  port: '20016'
+  server: i.needss.top
+  tls: false
+  type: vmess
+  uuid: b8ed922a-2d00-4bf8-96c6-c2c26c7d3053
 - alterId: 0
   cipher: auto
   name: 190|>🇹🇼 TW|Hs|0914|TG@FProxies|
