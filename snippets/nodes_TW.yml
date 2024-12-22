@@ -1,16 +1,29 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 22,23,39,40,66|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66,401|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 211.22.161.134
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 22,23,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.59:2377
+  name: 22,23,39,40,66|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.138
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66,401|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.59
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -18,6 +31,13 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.60
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.35.37:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.37
   type: ss
   udp: true
 - name: 27|[Trojan] 🇨🇳 14|台湾|@ripaojiedian
@@ -41,40 +61,16 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.136
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,66,67|TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾01-1G
-  password: c0baf75c-5694-467d-a469-4ba87c8896ca
-  port: 47564
+  name: 55|🇹🇼 台湾 1-1E
+  password: 0f950117-8a49-4045-9d66-989c06d74898
+  port: 20032
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾 1-1G
-  password: c0baf75c-5694-467d-a469-4ba87c8896ca
-  port: 20032
+  name: 55|🇹🇼 台湾01-1A
+  password: 7e7f72e3-73bc-42d6-bf89-078b622d3f00
+  port: 47564
   server: gy.666666222.shop
   type: ss
   udp: true
@@ -94,6 +90,34 @@ proxies:
     headers:
       Host: tw02.hy2.one
     path: /af323d
+- name: 59|🇹🇼TW-210.61.97.241-0847
+  network: tcp
+  password: ouo
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: true
+  sni: tr.koiok.us.kg
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '59,66,89,97,114,172,173,178,187,215,270,276,282,283,289,290,293,296,297,298,304,315,390,395,405,409,417|@Vip_Security
+    join us - 108
+
+    '
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 59|台湾省新竹市 中华电信_174
@@ -122,50 +146,6 @@ proxies:
     headers:
       host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
     path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: '59,66,89,97,114,172,173,178,187,215,270,276,282,283,289,290,293,296,297,298,304,315,390,395,405,409,417|@Vip_Security
-    join us - 107
-
-    '
-  network: ws
-  port: '31945'
-  server: 103.159.206.35
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 59|🇹🇼TW-210.61.97.241-0847
-  network: tcp
-  password: ouo
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: true
-  sni: tr.koiok.us.kg
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 60,308|TG频道@mfbpn-0477-CN
-  network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f72611f7-dfbb-3572-a00b-1f431e28ac5a
-  ws-opts:
-    headers:
-      Host: 19.mamamajd.site
-    path: /
 - alterId: 0
   cipher: auto
   name: 60|🇹🇼 SVIP|台湾0A|2倍率 - 探索者
@@ -514,15 +494,32 @@ proxies:
   server: cnipsz00.tangguo.pro
   type: ssr
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 60,308|TG频道@mfbpn-0213-CN
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c1e7362f-f07c-3239-b047-c591ad68fcc9
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
 - cipher: aes-128-gcm
   name: 60|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 919
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -530,10 +527,11 @@ proxies:
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 825
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -541,10 +539,11 @@ proxies:
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 834
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -552,10 +551,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 908
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -563,10 +563,11 @@ proxies:
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 9040
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -574,10 +575,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 835
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -585,10 +587,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 905
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -596,10 +599,11 @@ proxies:
   password: a12cloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 904
   server: 231103level3.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -607,10 +611,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 9048
   server: 231103level2.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -618,10 +623,11 @@ proxies:
   password: QHPy2u
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 9022
   server: 231103level2.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -629,10 +635,11 @@ proxies:
   password: fsfal2
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 916
   server: 231103level2.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -640,10 +647,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 926
   server: 231103level2.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -651,10 +659,11 @@ proxies:
   password: ayds23sd1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 39004
   server: 231103level2.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -662,10 +671,11 @@ proxies:
   password: ayucloud1
   plugin: obfs
   plugin-opts:
-    host: 4a03e104246.download.windowsupdate.com
+    host: 3577a104297.download.windowsupdate.com
     mode: http
   port: 9047
   server: 231103level1.unclemanco.com
+  tfo: true
   type: ss
   udp: true
 - alterId: 0
@@ -918,7 +928,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇯🇵JP-52.196.144.61-5054 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇯🇵JP-52.196.144.61-4940 #1'
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -933,7 +943,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.24-5055 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.24-4941 #1'
   network: ws
   port: 80
   server: 104.29.64.24
@@ -985,7 +995,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-220.130.80.179-5059 #1'
+  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-220.130.80.179-4945 #1'
   network: ws
   port: 443
   server: 220.130.80.179
@@ -1022,7 +1032,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-165.154.226.45-5061 #1'
+  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-165.154.226.45-4947 #1'
   network: ws
   port: 80
   server: 165.154.226.45
@@ -1035,7 +1045,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-5062 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4948 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1072,7 +1082,7 @@ proxies:
   uuid: 6d896dd9-21ff-3844-a72a-332507486049
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-165.154.253.35-5064 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-165.154.253.35-4950 #1'
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -1139,7 +1149,7 @@ proxies:
     path: /moontoday
 - alterId: 64
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-61.216.85.68-5069 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-61.216.85.68-4955 #1'
   network: ws
   port: 443
   server: 61.216.85.68
@@ -1154,7 +1164,7 @@ proxies:
     path: /path/243535322906
 - alterId: 2
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-114.37.209.177-5070 #1'
+  name: '160,270,282,283,289,290,293,296,297,298|🇼TW-114.37.209.177-4956 #1'
   network: ws
   port: 10001
   server: ddns2.airtcp.vip
@@ -1169,7 +1179,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇨🇦CA-104.247.81.52-5071 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇨🇦CA-104.247.81.52-4957 #1'
   network: ws
   port: 443
   server: tw.xlkjjs.top
@@ -1202,7 +1212,7 @@ proxies:
   uuid: ab42ea1f-8e2f-3fff-8a11-d124d62b849e
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-165.154.246.107-5072 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-165.154.246.107-4958 #1'
   network: ws
   port: 80
   server: 165.154.246.107
@@ -1217,7 +1227,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|RELAY-104.29.64.30-5073 #1'
+  name: '160,270,282,283,289,290,293,296,297,298|RELAY-104.29.64.30-4959 #1'
   network: ws
   port: 443
   server: 104.29.64.30
@@ -1245,7 +1255,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.36-5075 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.36-4961 #1'
   network: ws
   port: 443
   server: 104.29.64.36
@@ -1301,7 +1311,7 @@ proxies:
     path: /live
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-122.118.160.67-5079 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-122.118.160.67-4965 #1'
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -1316,7 +1326,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-61.224.88.191-5080 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🇹🇼TW-61.224.88.191-4966 #1'
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -1366,7 +1376,7 @@ proxies:
   uuid: 1bd772e1-ce31-4980-9cb7-a4d24873aa1b
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|RELAY-104.29.64.25-5083 #1'
+  name: '160,270,282,283,289,290,293,296,297,298|RELAY-104.29.64.25-4969 #1'
   network: ws
   port: 443
   server: 104.29.64.25
@@ -1381,7 +1391,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.5-5084 #8'
+  name: '160,270,282,283,289,290,293,296,297,298|🏁RELAY-104.29.64.5-4970 #1'
   network: ws
   port: 443
   server: 104.29.64.5
@@ -1500,7 +1510,7 @@ proxies:
   type: vmess
   uuid: 0913b1ac-1f6c-436b-99b4-a5d6e343d025
 - cipher: aes-256-cfb
-  name: '168,283,298|TW-61.220.130.70-9968 #1'
+  name: '168,283,298|TW-61.220.130.70-9854 #1'
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
@@ -1643,20 +1653,7 @@ proxies:
     path: /271e2dad
 - alterId: 0
   cipher: auto
-  name: '190|>🇸🇬 SG|Ms|1115|TG@FProxies| #3'
-  network: ws
-  port: '80'
-  server: 190.93.245.158
-  tls: false
-  type: vmess
-  uuid: 086fd76f-88f8-42a5-e7ae-d8053593aace
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '190|>🇹🇼 TW|Ls|1115|TG@FProxies| #3'
+  name: '190|>🇹🇼 TW|Ls|1115|TG@FProxies| #1'
   network: tcp
   port: '20016'
   server: i.needss.top
@@ -1676,7 +1673,7 @@ proxies:
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
 - alterId: 1
   cipher: auto
-  name: '213,270,282,283,289,290,293,296,297,298|🇹🇼TW-1.161.186.146-2019 #8'
+  name: '213,270,282,283,289,290,293,296,297,298|🇹🇼TW-1.161.186.146-1916 #1'
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -1820,7 +1817,7 @@ proxies:
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
 - alterId: 0
   cipher: auto
-  name: '214,270,282,283,289,290,293,296,297,298|🇼TW-111.250.124.48-2225 #1'
+  name: '214,270,282,283,289,290,293,296,297,298|🇼TW-111.250.124.48-2122 #1'
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -1854,8 +1851,8 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '252,253,255|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute
-    Limited ◈ 2f519 #2'
+  name: '252,253|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute
+    Limited ◈ 2f519 #1'
   network: ws
   port: '12945'
   server: 55.lwdh.us
@@ -1869,8 +1866,8 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '253,255|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute
-    Limited ◈ 1854d #1'
+  name: 253|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute Limited
+    ◈ 1854d
   network: ws
   port: '12945'
   server: 55.lwdh.us
@@ -1884,8 +1881,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,255|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute
-    Limited ◈ 6b762 #1'
+  name: 254|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute Limited
+    ◈ 6b762
   network: ws
   port: '12945'
   server: 154.40.60.172
@@ -1939,7 +1936,7 @@ proxies:
       Host: TW03-1-EI862.233cloud-node.com
     path: /v2ray/233yun.xyz
 - cipher: rc4-md5
-  name: '264,283,298|🇨🇳CN-111.6.86.119-8722 #1'
+  name: '264,283,298|🇨🇳CN-111.6.86.119-8608 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1950,7 +1947,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '264,283,298|🇨🇳CN-111.6.86.119-8724 #1'
+  name: '264,283,298|🇨🇳CN-111.6.86.119-8610 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1961,7 +1958,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '264,283,298|🇨🇳CN-111.6.86.119-8734 #1'
+  name: '264,283,298|🇨🇳CN-111.6.86.119-8620 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1972,7 +1969,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-cfb
-  name: '264,283,298|🇨🇳CN-14.29.124.168-4749 #1'
+  name: '264,283,298|🇨🇳CN-14.29.124.168-4635 #1'
   password: QazEdcTgb159@$*
   port: 24009
   server: 14.29.124.168
@@ -1996,7 +1993,7 @@ proxies:
     path: ?ed=2048
 - alterId: 0
   cipher: auto
-  name: '270,277,280,281,282,283,289,290,293,296,297,298|TW-61.222.202.140-2454 #1'
+  name: '270,277,280,281,282,283,289,290,293,296,297,298|TW-61.222.202.140-2340 #1'
   network: ws
   port: 33792
   server: 61.222.202.140
@@ -2009,7 +2006,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|🇼TW-211.72.35.110-4721 #1'
+  name: '270,282,283,289,290,293,296,297,298|🇼TW-211.72.35.110-4607 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -2024,7 +2021,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4722 #8'
+  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4608 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -2039,7 +2036,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4723 #8'
+  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4609 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -2054,7 +2051,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4724 #8'
+  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4610 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -2069,7 +2066,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4725 #8'
+  name: '270,282,283,289,290,293,296,297,298|🇹🇼TW-211.72.35.110-4611 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -2084,7 +2081,7 @@ proxies:
     path: /nishikata3
 - alterId: 64
   cipher: auto
-  name: '270,282,283,289,290,293,296,297,298|TW-103.177.33.19-9238 #1'
+  name: '270,282,283,289,290,293,296,297,298|TW-103.177.33.19-9130 #1'
   network: ws
   port: 30013
   server: 103.177.33.19
@@ -2161,7 +2158,7 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 308|TG频道@mfbpn-1232-TW
+  name: 308|TG频道@mfbpn-1069-TW
   network: ws
   port: 22223
   server: 36.226.243.107
