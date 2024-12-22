@@ -20,14 +20,11 @@ proxies:
   server: 60.249.28.136
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 22,23,37,38,66,67|TW
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.138
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -59,7 +56,7 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '35,36,37,38,66,401|TW #1'
+  name: '35,36,37,38,66,67,401|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.60
@@ -68,22 +65,22 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾 1-1B
-  password: 03e4a65b-2c05-45ad-b0a2-323fe4ef5c51
-  port: 20032
+  name: 55,68|🇼 台湾01-1A
+  password: 6e0659a6-0380-4026-aa1b-72ee17733453
+  port: 47564
   server: gy.666666222.shop
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 55|🇹🇼 台湾01-1A
-  password: c0ca1ca1-8ade-4e78-b28b-aa9c8cef85ee
-  port: 47564
+  name: '55,68|🇹🇼 台湾 1-1A #1'
+  password: 6e0659a6-0380-4026-aa1b-72ee17733453
+  port: 20032
   server: gy.666666222.shop
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 55,58,77,98,104,106,112,114,218,270,271,282,283,289,290,293,296,297,298,420|未知_1220116
+  name: 55,58,68,77,98,104,106,112,114,218,270,271,282,283,289,290,293,296,297,298,420|未知_1220116
   network: ws
   port: '80'
   server: cf.hy2.one
@@ -108,36 +105,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 59|台湾省新竹市 中华电信_174
-  network: ws
-  port: 80
-  server: twriyfjhhhh1.hfhfb.homes
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
-  ws-opts:
-    headers:
-      host: app.dingtalk.com
-    path: /?ed
-- alterId: 0
-  cipher: auto
-  name: 59|台湾省桃园市 中华电信_570
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
   name: '59,66,89,97,114,172,173,178,187,215,270,276,282,283,289,290,293,296,297,298,304,315,390,395,405,409,417|@Vip_Security
-    join us - 93
+    join us - 107
 
     '
   network: ws
@@ -152,6 +121,36 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 59|台湾省新竹市 中华电信_174
+  network: ws
+  port: 80
+  server: twriyfjhhhh1.hfhfb.homes
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
+  ws-opts:
+    headers:
+      host: app.dingtalk.com
+    path: /?ed
+- alterId: 2
+  cipher: auto
+  name: 60,308|TG频道@mfbpn-206-CN
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1a8e3524-1719-3d51-aeae-6675dbbd795d
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
     path: /
 - alterId: 0
   cipher: auto
@@ -501,22 +500,6 @@ proxies:
   server: cnipsz00.tangguo.pro
   type: ssr
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 60,308|TG频道@mfbpn-0480-CN
-  network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 78a46edc-a25d-3901-b3ac-63493d619190
-  ws-opts:
-    headers:
-      Host: 19.mamamajd.site
-    path: /
 - cipher: aes-128-gcm
   name: 60|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
   password: ayucloud1
@@ -863,7 +846,7 @@ proxies:
   uuid: 3dbfc6a1-413b-4d6e-a2eb-2b79d7ffb0f2
 - alterId: 0
   cipher: auto
-  name: '104,112|🇹🇼 台湾1 #1'
+  name: '104,112|🇹🇼 台湾1 #2'
   network: tcp
   port: '45078'
   server: haa.dashuai.cyou
