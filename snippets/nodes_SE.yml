@@ -1,47 +1,55 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: '28,29,43,44,87,141,223,309,324|SE-94.228.165.178-5981 #1'
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-  udp: true
-- name: 39,40,47,48,87|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
-  network: ws
-  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
-  port: 443
-  server: 185.146.173.32
-  skip-cert-verify: false
-  sni: de1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: de1.trojanvpn.xyz
-    path: /
-- name: 39,40,47,48,87|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
-  network: ws
-  password: b697183d-288b-40ab-98ae-8e3eb85f371c
-  port: 443
-  server: 185.146.173.69
-  skip-cert-verify: false
-  sni: uk1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: uk1.trojanvpn.xyz
-    path: /
 - cipher: aes-256-cfb
   country: 🇦🇫AF
-  name: 41,42,43,44,62,63,83,87,154,194,215,223,299,309,312,324,428|SE-121.127.46.147-3518
+  name: 28,29,45,46,62,63,83,87,154,194,215,223,299,309,312,324,428|SE-121.127.46.147-3518
     | 5.765MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇸🇪 SE
+  name: 28,29,43,44,83,87,223,309,312,324,428|SE-46.246.98.155-3443 | 7.973MB
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: '28,29,45,46,87,141,223,309,324|SE-94.228.165.178-5981 #1'
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+  udp: true
+- name: 39,40,45,46,87|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
+  network: ws
+  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
+  port: 443
+  server: 185.146.173.34
+  skip-cert-verify: false
+  sni: nl1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nl1.trojanvpn.xyz
+    path: /
+- name: 39,40,47,48,87|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
+  network: ws
+  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+  port: 443
+  server: 185.146.173.42
+  skip-cert-verify: false
+  sni: fr1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: fr1.trojanvpn.xyz
+    path: /
 - name: 41,42,49,87|TR-WS-TLS 🇸🇪 SE-185.146.173.158:443
   network: ws
   password: auto
@@ -55,32 +63,54 @@ proxies:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
     path: /Telegram@proxy_mtm/?ed=2560
-- name: 41,42,47,48,87|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
+- name: 41,42,49,87|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
   network: ws
-  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
+  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
   port: 443
-  server: 185.146.173.34
+  server: 185.146.173.32
   skip-cert-verify: false
-  sni: nl1.trojanvpn.xyz
+  sni: de1.trojanvpn.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: nl1.trojanvpn.xyz
+      Host: de1.trojanvpn.xyz
     path: /
-- name: 41,42,49,87|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
+- name: 41,42,49,87|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
   network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+  password: b697183d-288b-40ab-98ae-8e3eb85f371c
   port: 443
-  server: 185.146.173.42
+  server: 185.146.173.69
   skip-cert-verify: false
-  sni: fr1.trojanvpn.xyz
+  sni: uk1.trojanvpn.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: fr1.trojanvpn.xyz
+      Host: uk1.trojanvpn.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 79|瑞典_由快嘴科技提供：kkzui.com63
+  network: ws
+  port: 443
+  server: 185.146.173.59
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
+  ws-opts:
+    headers:
+      host: hms02.fxiaomi.sbs
+    path: /link
+- name: 79|瑞典-2.73MB/s
+  network: tcp
+  password: wkmY1R4EcP
+  port: 443
+  server: 70.34.205.1
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 79|瑞典-3.79MB/s
   network: tcp
   password: telegram-id-privatevpns
@@ -180,14 +210,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 79|瑞典-2.73MB/s
-  network: tcp
-  password: wkmY1R4EcP
-  port: 443
-  server: 70.34.205.1
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: 79|瑞典 V2CROSS.COM_4_574
@@ -234,19 +256,6 @@ proxies:
     headers:
       host: d396-flower-d396.megare7260.workers.dev
     path: /obdii.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: 79,215|SE 22 → tg@nicevpn123
-  network: ws
-  port: 443
-  server: 185.146.173.59
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    path: /linkws
 - name: 79|🇸🇪 www.85la.com 瑞典 03_1
   network: tcp
   password: telegram-id-privatevpns
@@ -376,72 +385,6 @@ proxies:
   server: host-059.crazyspeed.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇸🇪 SE
-  name: 83,87,223,309,312,324,428|SE-46.246.98.155-3443 | 7.973MB
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: '101,122|1773|🏁RELAY-104.21.83.108-8739 #4'
-  network: ws
-  port: '443'
-  server: apps.shopify.com
-  servername: restless-cherry-a0b5.yasinsky980.workers.dev
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: restless-cherry-a0b5.yasinsky980.workers.dev
-    path: /hms02.fxiaomi.sbs:443/link
-- alterId: 0
-  cipher: auto
-  name: 130|瑞典_1217001
-  network: ws
-  port: '443'
-  server: 185.146.173.185
-  servername: restless-cherry-a0b5.yasinsky980.workers.dev
-  tls: true
-  type: vmess
-  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
-  ws-opts:
-    headers:
-      Host: restless-cherry-a0b5.yasinsky980.workers.dev
-    path: /jk.ylka.us.kg:8443/
-- alterId: 0
-  cipher: auto
-  name: 130|瑞典_1217002
-  network: ws
-  port: '443'
-  server: accounts.shopify.com
-  servername: restless-cherry-a0b5.yasinsky980.workers.dev
-  tls: true
-  type: vmess
-  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
-  ws-opts:
-    headers:
-      Host: restless-cherry-a0b5.yasinsky980.workers.dev
-    path: /jk.ylka.us.kg:8443/
-- alterId: 0
-  cipher: auto
-  country: 🇪 SE
-  h2-opts: {}
-  http-opts: {}
-  name: 141| SE_458
-  network: ws
-  port: 443
-  server: 185.146.173.59
-  servername: hms02.fxiaomi.sbs
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-headers:
-    HOST: hms02.fxiaomi.sbs
-  ws-path: /link
 - name: 154|SE(AzadNet.t.me)_001
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -727,6 +670,19 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 215|SE 22 → tg@nicevpn123
+  network: ws
+  port: 443
+  server: 185.146.173.59
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    path: /linkws
 - name: 215|SE 25 → tg@nicevpn123
   network: ws
   password: dGKXcHgs3P
@@ -839,7 +795,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 239,296,303,308,309,316,319,323,324,369,382|8J%2BHuPCfh6pTRS0xMy40OS43Ny4xMjYtNjE4NA%3D%3D
+  name: 239,303,309,316,319,323,324,369,382|8J%2BHuPCfh6pTRS0xMy40OS43Ny4xMjYtNjE4NA%3D%3D
   obfs: http_simple
   obfs-param: ''
   password: YpX2opBbrfqJzzMs
@@ -895,20 +851,6 @@ proxies:
     headers:
       Host: sourceforge.net
     path: /websocket
-- alterId: '0'
-  cipher: auto
-  name: '296,308,309,315,316,319,322,323,324,327,328|github.com/mehdimoghaddam-cell_753
-    #1'
-  network: ws
-  port: '25289'
-  server: 13.50.153.230
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fe2bd77d-312e-4ac0-defe-afdb279528a0
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 303,347|MOHSEN-🇸🇪-SE_6
@@ -949,26 +891,25 @@ proxies:
   tls: false
   type: vmess
   uuid: 2bb47c4c-f1be-437a-948e-cc097473513f
+- alterId: '0'
+  cipher: auto
+  name: '309,315,316,319,322,323,324,327,328|github.com/mehdimoghaddam-cell_753 #1'
+  network: ws
+  port: '25289'
+  server: 13.50.153.230
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fe2bd77d-312e-4ac0-defe-afdb279528a0
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: '309,324|SE-13.49.241.14-4540 #1'
   password: pydQILh06AvJ
   port: 27092
   server: 13.49.241.14
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 333|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.158:80
-  network: ws
-  port: 80
-  server: 185.146.173.158
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: d396-flower-d396.megare7260.workers.dev
-    path: /obdii.cfd/linkws
 - alterId: 0
   cipher: auto
   name: 347|MOHSEN-undefined_1

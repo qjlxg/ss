@@ -1,17 +1,20 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 28,29,43,44,62,83,87,215,223,309,312,324,428,431|21|_146
+  name: 28,29,43,44,62,83,87,141,215,223,309,312,324,428,431|21|_146
   password: qYEN5HX4JKeVCdEC
   port: 9039
   server: 195.238.126.84
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '28,29,31,43,44,79,85,87,223,289,309,324|🇱🇹LT-45.87.175.157-1543 #1'
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: 28,29,31,43,44,62,79,85,87,223,289,309,324,429|DE国 122.5KB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.157
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -24,7 +27,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 28,29,31,43,44,79,85,87,140,223,289,309,324,428|LT-45.87.175.171-3559 | 11.661MB
+  name: 28,29,31,43,44,79,85,87,223,289,309,324,428|LT-45.87.175.171-3559 | 11.661MB
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.171
@@ -38,22 +41,23 @@ proxies:
   server: 45.87.175.178
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 28,29,33,43,44,63,83,87,223,295,299,309,312,324,428|LT-45.87.175.192-5761
-    | 1.265MB
+  name: '28,29,33,43,44,63,83,87,223,295,299,309,312,324,428,429|未知142 #1'
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.192
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '33,121,131,135|立陶宛_Telegram@kxswa #1'
+  name: 33|[VMess] 🇱🇹 _立陶宛
   network: ws
-  port: '2082'
+  port: 2082
   server: 185.148.105.154
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -65,11 +69,10 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '33,131,135|立陶宛_Telegram@kxswa (2) #1'
+  name: 33|[VMess] 🇱🇹 立陶宛 V2CROSS.COM
   network: ws
-  port: '2082'
+  port: 2082
   server: 185.148.107.11
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -96,11 +99,10 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 33,121|🏁RELAY-89.116.250.94-0319
+  name: 33|[VMess] 🇱🇹 _立陶宛 4
   network: ws
-  port: '2082'
+  port: 2082
   server: 89.116.250.94
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -112,11 +114,10 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '33,121,131,135,191|@Hope_Net-join-us-on-Telegram #352'
+  name: 33|[VMess] 🇱🇹 _立陶宛 5
   network: ws
-  port: '2082'
+  port: 2082
   server: 185.148.106.140
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -126,7 +127,7 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: 41,42,49,87|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+- name: 39,40,45,46,87|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
   network: ws
   password: bpb-trojan
   port: 443
@@ -154,35 +155,7 @@ proxies:
     path: /hms02.fxiaomi.sbs/link
 - alterId: 0
   cipher: auto
-  name: 120,130,296,308,315,316,319,322,323,448|立陶宛_1222005
-  network: ws
-  port: '8443'
-  server: 89.117.112.235
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
-  ws-opts:
-    headers:
-      Host: jk.ylka.us.kg
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 130|立陶宛_1217006
-  network: ws
-  port: '443'
-  server: 89.116.250.131
-  servername: restless-cherry-a0b5.yasinsky980.workers.dev
-  tls: true
-  type: vmess
-  uuid: 8241ddc8-b5c5-4778-9635-331700c6ff48
-  ws-opts:
-    headers:
-      Host: restless-cherry-a0b5.yasinsky980.workers.dev
-    path: /jk.ylka.us.kg:8443/
-- alterId: 0
-  cipher: auto
-  name: '163,176,296|D-WEALTH-2386 #2'
+  name: 176|D-WEALTH-2386
   network: tcp
   port: '8881'
   server: 143.198.18.35
@@ -206,39 +179,18 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
-- cipher: aes-256-cfb
-  name: 296,308,316,319,323,382|8J%2BHrvCfh6pJRS0xOC4yMDIuMTcuMTU1LTYxODc%3D
-  obfs: http_simple
-  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
-  password: YpX2opBbrfqJzzMs
-  port: '42833'
-  protocol: origin
-  protocol-param: ''
-  server: z0116.security-cloudfront-cdn.com
-  type: ssr
-- cipher: aes-256-cfb
-  name: 296,308,316,319,323,382|8J%2BHrvCfh7NJTi0xMy4yMzQuMjE3LjEyLTYzNjg%3D
-  obfs: http_simple
-  obfs-param: PT09PQ%3D%3D
-  password: YpX2opBbrfqJzzMs
-  port: '42833'
-  protocol: origin
-  protocol-param: PT09PQ%3D%3D
-  server: z0114.security-cloudfront-cdn.com
-  type: ssr
-- cipher: chacha20-ietf
-  name: 296,308,316,319,323,382|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
-  obfs: http_simple
-  obfs-param: ZTVhYjA2MTgxLm1pY3Jvc29mdC5jb20%3D
-  password: zztw9jk7gu
-  port: '32986'
-  protocol: auth_aes128_sha1
-  protocol-param: NjE4MTptOW9ESWM%3D
-  server: 36.156.222.25
-  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 305,306,307|其他 560
+  network: tcp
+  port: '6565'
+  server: 181.214.147.202
+  tls: false
+  type: vmess
+  uuid: 82fd7d74-8055-41a0-9f5d-9a56ef302563
 - alterId: 64
   cipher: auto
-  name: '296,308,309,315,316,319,322,323,324|LT-85.206.165.36-0783 #1'
+  name: '309,315,316,319,322,323,324|LT-85.206.165.36-0783 #1'
   network: ws
   port: 443
   server: 85.206.165.36
@@ -249,29 +201,9 @@ proxies:
   uuid: ba49ab05-78f8-4b0b-9400-1826cc2d3f75
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 296,308,316,319,323,382|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTc3
-  obfs: http_simple
-  obfs-param: V1dXLllPVU5FRUQuV0lO
-  password: sEscPBiAD9K$&@79
-  port: '11708'
-  protocol: origin
-  protocol-param: V1dXLllPVU5FRUQuV0lO
-  server: 94.102.57.163
-  type: ssr
-- cipher: aes-256-cfb
-  name: 296,308,309,316,319,323,324,382|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTk5
-  obfs: http_simple
-  obfs-param: ''
-  password: sEscPBiAD9K$&@79
-  port: '11708'
-  protocol: origin
-  protocol-param: ''
-  server: 94.102.57.163
-  type: ssr
 - alterId: 64
   cipher: auto
-  name: '296,308,309,315,316,319,322,323,324|LT-85.206.165.38-9708 #1'
+  name: '309,315,316,319,322,323,324|LT-85.206.165.38-9708 #1'
   network: ws
   port: 443
   server: 85.206.165.38
@@ -286,7 +218,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 296,308,309,315,316,319,322,323,324,330|立陶宛 v2rayfree.eu.org
+  name: 309,315,316,319,322,323,324,330|立陶宛 v2rayfree.eu.org
   network: ws
   port: 443
   server: 85.206.165.35
@@ -299,15 +231,46 @@ proxies:
     headers:
       Host: www.83322971.xyz
     path: /path/173403330828
-- alterId: 0
-  cipher: auto
-  name: 305,306,307|其他 560
-  network: tcp
-  port: '6565'
-  server: 181.214.147.202
-  tls: false
-  type: vmess
-  uuid: 82fd7d74-8055-41a0-9f5d-9a56ef302563
+- cipher: aes-256-cfb
+  name: 316,319,323,382|8J%2BHrvCfh6pJRS0xOC4yMDIuMTcuMTU1LTYxODc%3D
+  obfs: http_simple
+  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
+  password: YpX2opBbrfqJzzMs
+  port: '42833'
+  protocol: origin
+  protocol-param: ''
+  server: z0116.security-cloudfront-cdn.com
+  type: ssr
+- cipher: aes-256-cfb
+  name: 316,319,323,382|8J%2BHrvCfh7NJTi0xMy4yMzQuMjE3LjEyLTYzNjg%3D
+  obfs: http_simple
+  obfs-param: PT09PQ%3D%3D
+  password: YpX2opBbrfqJzzMs
+  port: '42833'
+  protocol: origin
+  protocol-param: PT09PQ%3D%3D
+  server: z0114.security-cloudfront-cdn.com
+  type: ssr
+- cipher: chacha20-ietf
+  name: 316,319,323,382|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
+  obfs: http_simple
+  obfs-param: ZTVhYjA2MTgxLm1pY3Jvc29mdC5jb20%3D
+  password: zztw9jk7gu
+  port: '32986'
+  protocol: auth_aes128_sha1
+  protocol-param: NjE4MTptOW9ESWM%3D
+  server: 36.156.222.25
+  type: ssr
+- cipher: aes-256-cfb
+  name: 316,319,323,382|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTc3
+  obfs: http_simple
+  obfs-param: V1dXLllPVU5FRUQuV0lO
+  password: sEscPBiAD9K$&@79
+  port: '11708'
+  protocol: origin
+  protocol-param: V1dXLllPVU5FRUQuV0lO
+  server: 94.102.57.163
+  type: ssr
 - alterId: 64
   cipher: auto
   name: 330|🇱🇹LT-85.206.165.38-0189
