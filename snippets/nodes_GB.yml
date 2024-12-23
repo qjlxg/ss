@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 16,25,52,71,224,228,230,270,282,283,289,290,293,296,297,298,308,310,311,312,313,420|英国_1222033
+  name: 16,25,71,74,224,228,230,270,282,283,289,290,293,296,297,298,308,310,311,312,313,361,420|英国_1222033
   network: ws
   port: '443'
   server: 158.180.228.226
@@ -33,7 +33,7 @@ proxies:
     path: /path/240811062813
 - alterId: 1
   cipher: auto
-  name: 16,59,128,137,150,224,228,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,411|🇬🇧GB-172.99.190.50-6058
+  name: 16,128,137,150,224,228,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,411|🇬🇧GB-172.99.190.50-6058
   network: ws
   port: 443
   server: 172.99.190.50
@@ -48,7 +48,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: '16,59,89,137,150,224,228,270,282,283,284,285,289,290,291,292,293,296,297,298,304,307,411|🇬🇧GB-172.99.190.206-6046
+  name: '16,89,137,150,224,228,270,282,283,284,285,289,290,291,292,293,296,297,298,304,307,411|🇬🇧GB-172.99.190.206-6046
     #16'
   network: ws
   port: 443
@@ -64,7 +64,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 16,59,89,128,137,150,224,228,252,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,304,411|🇬🇧GB-149.7.16.73-6025
+  name: 16,89,128,137,150,165,224,228,252,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,304,411|🇬🇧GB-149.7.16.73-6025
   network: ws
   port: 443
   server: 149.7.16.73
@@ -79,7 +79,7 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: '16,59,89,137,150,224,228,270,282,283,284,285,289,290,291,292,293,296,297,298,304,411|🇬🇧GB-149.7.16.194-6044
+  name: '16,89,137,150,224,228,270,282,283,284,285,289,290,291,292,293,296,297,298,304,411|🇬🇧GB-149.7.16.194-6044
     #18'
   network: ws
   port: 443
@@ -95,7 +95,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 16,59,89,128,137,150,224,228,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,304,307,411|🇬🇧GB-149.7.16.174-6052
+  name: 16,89,128,137,150,224,228,253,254,255,270,282,283,284,285,289,290,291,292,293,296,297,298,304,307,411|🇬🇧GB-149.7.16.174-6052
   network: ws
   port: 443
   server: 149.7.16.174
@@ -123,12 +123,15 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: '22,23,37,38,66,197,269,283,298|🇬🇧GB-107.181.155.244-5962 #1'
+  name: 22,23,37,38,66,197,269,283,298,401|未知83 41.1KB/s
   password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
   port: 55330
   server: 107.181.155.244
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -148,18 +151,29 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
+  country: 🏁 ZZ
+  name: 22,23,37,38,63,66,197,273,283,286,298,400|🇬🇧GB-141.98.101.180-3415 | 16.991MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.180
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   name: 22,23,37,38,63,66,273,283,286,298,400|🇬🇧GB-141.98.101.182-3407 | 14.849MB
   password: shadowsocks
   port: 443
   server: 141.98.101.182
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 22,23,37,38,66,128,189,197,283,298,321,403|21|🇷FR_564
+  name: 22,23,37,38,66,128,189,197,283,298,321,401,403|21|🇷FR_564
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -177,8 +191,8 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 22,23,25,37,38,63,65,66,181,197,273,283,286,298,323,400,412|United Kingdom_Canary
-    Wharf_ss_1129
+  name: 22,23,25,37,38,63,65,66,197,273,283,286,298,323,400,412|United Kingdom_Canary
+    Wharf_ss_111
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
@@ -186,22 +200,22 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 22,23,25,39,40,63,65,66,181,197,273,283,286,298,323,400,412|Ukraine_None_ss_114
+  name: 22,23,25,37,38,63,65,66,197,273,283,286,298,323,400,412|Ukraine_None_ss_1132
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 169.150.210.233
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '22,23,37,38|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-18.135.77.113:443 #3'
-  password: mps3FwmDjLrWaOVg
+  name: '22,23,37,38|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-18.170.134.191:443 #3'
+  password: W74XFALLLuw6m5IA
   port: 443
-  server: 18.135.77.113
+  server: 18.170.134.191
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: 22,23,39,40,66,197,283,298,400|🇬🇧GB-185.5.38.111-5409 | 6.148MB
+  name: 22,23,37,38,66,197,283,298,400|🇬🇧GB-185.5.38.111-5409 | 6.148MB
   password: 2GxGsDp6h9ZN2UvHrMMKxgJqwrX5GUJ65dQZu6Ji9VE5k7kTQu5T1FSDkci9xgP3wxbe25mRxUF33BskcbHwt6t8U2hTYtV4
   port: 55988
   server: 185.5.38.111
@@ -209,22 +223,14 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇬🇧GB
-  name: '22,23,37,38,66,197,283,298|🇬🇧GB-193.38.136.143-6419 #1'
-  password: 41868567kcLzmwWY5q7RJ
-  port: 8652
-  server: 193.38.136.143
+  name: '22,23,37,38,66,197,283,298|🇧GB-193.38.136.149-0482 #1'
+  password: 4180441OS33nY3f2WpxyU
+  port: 8353
+  server: 193.38.136.149
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 22,23,25,37,38,59,63,65,66,181,197,263,273,283,286,298,400,403,412|United
-    Kingdom_London_ss_1126
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 22,23,27,37,38,59,63,66,197,273,275,283,286,298,400,403|21|_27
+  name: 22,23,27,37,38,63,66,197,273,275,283,286,298,400,403|21|_27
   password: shadowsocks
   port: 443
   server: 212.102.53.194
@@ -239,21 +245,28 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 22,23,37,38,59,63,66,128,168,197,273,275,283,286,298,400,403|21|_05
+  name: 22,23,37,38,63,66,168,197,273,283,286,298,400,403|21|_418
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.196
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 22,23,37,38,63,66,128,168,197,273,275,283,286,298,400,403|21|_05
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 22,23,37,38,63,66,168,197,273,275,283,286,298,400,403|21|_419
+  name: 22,23,39,40,63,66,168,197,273,275,283,286,298,400,403|21|_419
   password: shadowsocks
   port: 443
   server: 212.102.53.78
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 22,23,37,38,63,66,197,273,283,286,298,321,400,403|21|_406
+  name: 22,23,39,40,63,66,197,273,283,286,298,321,400,403|21|_406
   password: shadowsocks
   port: 443
   server: 212.102.53.79
@@ -266,11 +279,18 @@ proxies:
   server: 212.102.53.80
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,23,37,38,66|SS-TCP-NA 🇬🇧 GB-35.179.56.146:443
-  password: W74XFALLLuw6m5IA
+- cipher: aes-128-gcm
+  name: 22,23,39,40,63,66,197,273,275,283,286,298,400,403|21|_417
+  password: shadowsocks
   port: 443
-  server: 35.179.56.146
+  server: 212.102.53.81
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66|SS-TCP-NA 🇬🇧 GB-3.9.6.191:443
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 3.9.6.191
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -288,8 +308,16 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  country: 🇷🇺 RU
+  name: 22,23,37,38,63,66,197,273,283,286,298,400|🇬🇧GB-89.185.84.185-5487 | 19.225MB
+  password: aXuV8k5a4NFmkphgr5NTlL
+  port: 52338
+  server: 89.185.84.185
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: '25,65,197,263,283,298|🇵JP-194.105.83.3-0955 #1'
+  name: '25,65,197,283,298|🇵JP-194.105.83.3-0955 #1'
   password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6
   port: 40003
   server: soonjp.soon.guru
@@ -404,7 +432,7 @@ proxies:
     headers:
       Host: www.12268626.xyz
     path: /
-- name: 33,34,39,40,66|TR-WS-NA 🇬🇧 GB-77.75.199.86:443
+- name: 33,34,41,42,66|TR-WS-NA 🇬🇧 GB-77.75.199.86:443
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -417,7 +445,7 @@ proxies:
     headers:
       Host: za.ylks.xyz
     path: //
-- name: 35,36,41,42,66|TR-WS-TLS 🇬🇧 GB-31.22.116.123:443
+- name: 33,34,39,40,66|TR-WS-TLS 🇬🇧 GB-31.22.116.123:443
   network: ws
   password: NISHIKUITAN111
   port: 443
@@ -430,36 +458,6 @@ proxies:
     headers:
       Host: zb.ylks.xyz
     path: /
-- cipher: aes-128-gcm
-  country: 🏁 ZZ
-  name: 39,40,63,66,197,273,283,286,298,400|🇬🇧GB-141.98.101.180-3415 | 16.991MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.180
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇬🇧GB
-  name: '39,40,66,197,283,298|🇧GB-193.38.136.149-0482 #1'
-  password: 4180441OS33nY3f2WpxyU
-  port: 8353
-  server: 193.38.136.149
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 39,40,63,66,168,197,273,283,286,298,400,403|21|_418
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 39,40,59,63,66,197,273,275,283,286,298,400,403|21|_417
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 39,40,63,66,128,189,197,283,286,298,400,403|21|_442
   password: f8f7aCzcPKbsF8p3
@@ -497,691 +495,19 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2664
-  name: '58,73,190,218,270,271,282,283,289,290,293,296,297,298,308,360|191babc5-VMess_WS
-    #37'
+  name: 58,72,190,218,270,271,282,283,289,290,293,296,297,298,308|TG频道@mfbpn-1428-RELAY
   network: ws
-  port: '8443'
+  port: 8443
   server: 94.247.142.198
-  servername: lax1.ibgfw.top
+  servername: ''
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 59|英国-3.37MB/s
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49905
-  server: e4c1bc175d6f9a37ba43483b3d008728.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: de1.bilibili.com
-  type: trojan
-  udp: true
-- name: 59|英国-2.51MB/s
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 49905
-  server: eeaa7ed9a53f5bb5260e79cd2bbd9823.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: de1.bilibili.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 59,63,128,187,189,273,283,286,298,400|🇬🇧GB-3.11.51.230-0076 | 39.37MB
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a2.samanehha.co
-  type: ss
-  udp: true
-- name: 59|英国-1.84MB/s
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 41143
-  server: f46b3f65e076124c635c50538527e26d.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: 59|英国-4.97MB/s_2
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 47249
-  server: 8dab945f6519cada5b92a0149679c88d.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- name: 59|英国-4.24MB/s
-  network: tcp
-  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-  port: 47249
-  server: d0d104f4fa78cb0e2726e085b1ef4ed4.v1.cac.node-is.green
-  skip-cert-verify: true
-  sni: ca1.bilibili.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 59|英国-1.91MB/s
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 13.43.22.99
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '59,63,64,128,189,269,273,283,286,298|🇧GB-18.133.94.61-0530 #1'
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: series-a1.samanehha.co
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇨🇦 CA
-  h2-opts: {}
-  http-opts: {}
-  name: 59,197|🇨🇦 CA_319_2@318
-  network: ws
-  port: 443
-  server: 68.168.31.196
-  servername: 68.168.31.196
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 68.168.31.196
-  ws-path: /linkvws
-- cipher: chacha20-ietf-poly1305
-  name: '59,63,128,187,189,273,283,286,298|🇬🇧GB-18.133.94.61-0448 #1'
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.varzesh360.co
-  type: ss
-  udp: true
-- name: 59|英国-33.9MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.168.25.133
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 59,63,197,273,283,286,298,403|21|_07
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
-- name: 59|英国-179.4KB/s
-  network: tcp
-  password: 419298f0-bf0c-11ef-bc6c-1239d0255272
-  port: 443
-  server: 51.38.65.155
-  skip-cert-verify: true
-  sni: speedtest.net
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸 US
-  h2-opts: {}
-  http-opts: {}
-  name: 59,197|🇺🇸 US_665_2@664
-  network: ws
-  port: 443
-  server: 149.7.16.188
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-path: /linkvws
-- name: 59|英国-365.5KB/s_508_508
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.8.248.241
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: 59|英国-2.79MB/s_1_741_741
-  network: ws
-  port: 443
-  server: 172.99.190.228
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: 172.99.190.228
-    path: linkvws
-- name: 59|英国+社会保险安全部_2
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.3.210
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+伦敦Amazon数据中心_1
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.11.103.187
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+伦敦Amazon数据中心_2
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.179.190.208
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+伦敦Amazon数据中心_4_262
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.101.96
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+社会保险安全部_274
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.44.137.61
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59|英国 Level3通信股份有限公司_382
-  network: ws
-  port: 443
-  server: 217.163.76.147
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- name: 59|英国+伦敦Amazon数据中心_1_605
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.10.216.93
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+伦敦Amazon数据中心_2_612
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.179.254.202
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|英国+伦敦Amazon数据中心_3_615
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.197.9
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|🇬🇧 www.85la.com 英国 03
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.222.154
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 06_1
-  network: ws
-  port: 2052
-  server: 141.144.204.126
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 113ade9e-cef2-428e-a1e6-803b7eb27a10
-  ws-opts:
-    path: /index?ed=2048
-- name: 59|🇬🇧 www.85la.com 英国 20
-  network: tcp
-  password: O7Iz39gyjV
-  port: 1935
-  server: x1uk-amazon.devefun.net
-  skip-cert-verify: true
-  sni: x1uk-amazon.devefun.net
-  type: trojan
-  udp: true
-- name: 59|🇬🇧 www.85la.com 英国 02
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.176.77.120
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59,276|qoli_965
-  network: ws
-  port: '15112'
-  server: 5.39.254.196
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- name: 59|🇬🇧 www.85la.com 英国 13
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.24.57.1
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 17_1
-  network: ws
-  port: 443
-  server: 104.21.120.235
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 18
-  network: ws
-  port: 443
-  server: 162.159.152.49
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 19
-  network: ws
-  port: 443
-  server: 162.159.136.60
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '59|🇬🇧 www.85la.com 英国 20 #1'
-  network: ws
-  port: 443
-  server: 104.22.15.82
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 21_1
-  network: ws
-  port: 443
-  server: 104.20.111.73
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 22
-  network: ws
-  port: 443
-  server: 104.20.43.152
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 23
-  network: ws
-  port: 443
-  server: 104.20.173.91
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 24
-  network: ws
-  port: 443
-  server: 104.19.185.248
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 25
-  network: ws
-  port: 443
-  server: 104.20.241.146
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 26
-  network: ws
-  port: 443
-  server: 162.159.133.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 27
-  network: ws
-  port: 443
-  server: 104.22.60.103
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 28
-  network: ws
-  port: 443
-  server: 162.159.142.42
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 29
-  network: ws
-  port: 443
-  server: 162.159.140.3
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 30
-  network: ws
-  port: 443
-  server: 104.20.29.211
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 31
-  network: ws
-  port: 443
-  server: 104.20.143.224
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇬🇧 www.85la.com 英国 32
-  network: ws
-  port: 443
-  server: 104.22.57.38
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
-  ws-opts:
-    headers:
-      host: f.ylks.xyz
-    path: /
-- name: 59|🇬🇧 www.85la.com 英国 33
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.43.159.126
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 59|🇬🇧 www.85la.com 英国 34
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 18.169.254.65
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59,270,282,283,289,290,293,296,297,298,420|法国_1222092
-  network: ws
-  port: '443'
-  server: 51.77.20.132
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- name: 59|🇬🇧 www.85la.com 英国 06_2
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.49.48
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59,270,282,283,289,290,293,296,297,298,420|法国_1222119
-  network: ws
-  port: '443'
-  server: 146.59.55.50
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '59,89,128,252,253,254,255|🔒🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks
-    ◈ 56915 #3'
-  network: ws
-  port: '443'
-  server: 68.168.31.242
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- name: 59|🇬🇧 www.85la.com 英国 17_2
-  network: tcp
-  password: 984e400bf5d541b7b0815913fe0c432a
-  port: 443
-  server: 172.99.190.180
-  skip-cert-verify: true
-  sni: bangladeshipatri.com
-  type: trojan
-  udp: true
-- name: 59|🇬🇧 www.85la.com 英国 36
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.9.128.85
-  skip-cert-verify: true
-  sni: 3.9.128.85
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59|英国_由快嘴科技提供：kkzui.com70
-  network: ws
-  port: 443
-  server: 185.221.219.107
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: 185.221.219.107
-    path: linkvws
-- alterId: 2
-  cipher: auto
-  name: 60,308|TG频道@mfbpn-0502-CN
-  network: ws
-  port: 23605
-  server: 5.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ebd346b-a0ba-3ca8-bdf1-3e61311e9524
-  ws-opts:
-    headers:
-      Host: 5.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 60,308|TG频道@mfbpn-0503-CN
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4ebd346b-a0ba-3ca8-bdf1-3e61311e9524
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  name: 60|🇬🇧 Web 英国I-标准 - AyucLouD-Services
-  password: fs23l/
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 2688
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   name: 60|🇬🇧 v2ray 英国伦敦节点VIP 349 - 紫云VPN服务商
@@ -1240,6 +566,49 @@ proxies:
   server: host-044.crazyspeed.xyz
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 60,308|TG频道@mfbpn-0497-CN
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f5003512-53bd-3559-9754-e8f09b25c7ce
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 60,308|TG频道@mfbpn-0498-CN
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f5003512-53bd-3559-9754-e8f09b25c7ce
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- cipher: aes-128-gcm
+  name: 60|🇬🇧 Web 英国I-标准 - AyucLouD-Services
+  password: fs23l/
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 2688
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1254,12 +623,11 @@ proxies:
   type: vmess
   udp: true
   uuid: bfc75171-c6e0-40f1-95d7-f05aed7c84b2
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺 RU
-  name: 63,66,197,273,283,286,298,400|🇬🇧GB-89.185.84.185-5487 | 19.225MB
-  password: aXuV8k5a4NFmkphgr5NTlL
-  port: 52338
-  server: 89.185.84.185
+- cipher: aes-128-gcm
+  name: 63,197,273,283,286,298,403|21|_07
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
   type: ss
 - cipher: aes-128-gcm
   country: 🇧GB
@@ -1296,6 +664,27 @@ proxies:
     headers:
       Host: ''
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: '63,64,128,189,269,273,283,286,298|🇧GB-18.133.94.61-0530 #1'
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '63,128,187,189,273,283,286,298|🇬🇧GB-18.133.94.61-0448 #1'
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.varzesh360.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 63,128,187,189,273,283,286,298,400|🇬🇧GB-3.11.51.230-0076 | 39.37MB
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 63,270,282,283,286,289,290,293,296,297,298,420|英国_1222014
@@ -1367,35 +756,24 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 66|SS-TCP-NA 🇬🇧 GB-18.133.94.61:443
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 18.133.94.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 66|SS-TCP-NA 🇬🇧 GB-13.43.174.199:443
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 66,401|未知30
   password: W74XFALLLuw6m5IA
   port: 443
-  server: 13.43.174.199
+  server: 18.135.77.113
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 66|SS-TCP-NA 🇬🇧 GB-35.179.56.146:443
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 35.179.56.146
   type: ss
 - alterId: 0
   cipher: auto
-  name: '71,74,190,361|GB_youtube@资源分享师_8 #1'
-  network: ws
-  port: 23158
-  server: 5.39.254.196
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '71,74,308,361|GB_youtube@资源分享师_3 #1'
+  name: '72,74,308,361|GB_youtube@资源分享师_5 #2'
   network: ws
   port: 23158
   server: 5.39.254.196
@@ -1406,6 +784,20 @@ proxies:
   ws-opts:
     headers:
       Host: 5.39.254.196
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '72,74,190,361|GB_youtube@资源分享师_1 #1'
+  network: ws
+  port: 23158
+  server: 5.39.254.196
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1423,7 +815,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '77,83,96,98,101,102,105,106,111,165,242,417|@Vip_Security join us - 66
+  name: '77,83,96,98,101,102,105,106,111,165,242,417|@Vip_Security join us - 68
 
     '
   network: tcp
@@ -1445,12 +837,22 @@ proxies:
   uuid: b831381d-6324-4d53-ad4f-8cda48b30812
 - alterId: 0
   cipher: auto
-  name: '77,83,96,98,101,102,105,106,165,417|@Vip_Security join us - 65
+  name: '77,83,96,98,101,102,105,106,165,417|@Vip_Security join us - 67
 
     '
   network: tcp
   port: '80'
   server: 57.155.30.204
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30812
+- alterId: 0
+  cipher: auto
+  name: 77,83,96,98,101,102,105,106,111|英国_1218044
+  network: tcp
+  port: '80'
+  server: 57.155.30.207
   servername: ''
   tls: false
   type: vmess
@@ -1524,6 +926,22 @@ proxies:
     headers:
       Host: 172.99.190.50
     path: linkvws
+- alterId: 0
+  cipher: auto
+  name: '89,128,252,253,254,255|🔒🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks
+    ◈ 56915 #3'
+  network: ws
+  port: '443'
+  server: 68.168.31.242
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 89,128|🏳️UN(AzadNet.t.me)_015
@@ -1806,7 +1224,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '132,133,242,304,417|@Vip_Security join us - 71
+  name: '132,133,242,304,417|@Vip_Security join us - 73
 
     '
   network: ws
@@ -2777,6 +2195,13 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  country: 🇬🇧GB
+  name: '197,283,298|🇬🇧GB-193.38.136.143-6419 #1'
+  password: 41868567kcLzmwWY5q7RJ
+  port: 8652
+  server: 193.38.136.143
+  type: ss
 - country: 🇬🇧GB
   name: 197|🇬🇧GB_12_7@11
   network: tcp
@@ -3207,7 +2632,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '252,253,254,255,270,282,283,289,290,293,296,297,298,304|0|--38 #2'
+  name: '252,253,254,255,270,282,283,289,290,293,296,297,298,304|0|--38 #3'
   network: ws
   port: 443
   server: 149.7.16.102
@@ -4755,19 +4180,6 @@ proxies:
   port: 8929
   server: 51.103.232.91
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '263,270,282,283,289,290,293,296,297,298|🇮IT-158.180.228.226-5874 #1'
-  network: ws
-  port: 443
-  server: 158.180.228.226
-  servername: beyonddsz.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: "269|TG:@hkaa0|英国_3\r"
   password: W74XFALLLuw6m5IA
@@ -5103,7 +4515,7 @@ proxies:
   uuid: 81594e2a-a2a1-4190-9a62-dc389f829807
 - alterId: 0
   cipher: auto
-  name: 271|20-1046-GB
+  name: 271|20-1039-GB
   network: ws
   port: 443
   server: 149.7.16.73
@@ -5117,7 +4529,7 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: 271|20-1047-GB
+  name: 271|20-1040-GB
   network: ws
   port: 443
   server: 149.7.16.194
@@ -5131,7 +4543,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 271|20-1048-GB
+  name: 271|20-1041-GB
   network: ws
   port: 443
   server: 149.7.16.174
@@ -5422,7 +4834,7 @@ proxies:
     path: /path/070410072720
 - alterId: 0
   cipher: auto
-  name: 308|TG频道@mfbpn-1360-GB
+  name: 308|TG频道@mfbpn-1254-GB
   network: ws
   port: 23158
   server: 5.39.254.196
@@ -5551,7 +4963,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '324|🇬🇧_GB_英国 #1'
+  name: 324|🇬🇧_GB_英国
   network: ws
   port: 2095
   server: amstdhebb.76898102.xyz
@@ -5564,7 +4976,7 @@ proxies:
     path: /funsdfrh
 - alterId: 0
   cipher: auto
-  name: '324|🇬🇧_GB_英国 #2'
+  name: '324|🇬🇧_GB_英国 #1'
   network: ws
   port: 2052
   server: 66.ddzdd.top
@@ -5577,7 +4989,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '324|🇬🇧_GB_英国 #3'
+  name: '324|🇬🇧_GB_英国 #2'
   network: ws
   port: 2052
   server: 55.ddzdd.top

@@ -15,27 +15,11 @@ proxies:
     path: /bby
 - alterId: 0
   cipher: auto
-  name: '16,31,32,66,150,228,376,382,386,387,390,395|🔒 VM-WS-NA 🇸🇬 SG-192.124.176.87:16712
-    #8'
-  network: ws
-  port: '16712'
-  server: 192.124.176.87
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9da45e9d-17f4-4989-a68a-f81438de75a4
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   country: 🇬 SG
   h2-opts: {}
   http-opts: {}
   name: '16,90,137,150,197,224,228,235,276,304,325,375,382,385,386,387,389,395,403,417|@Vip_Security
-    join us - 50
+    join us - 53
 
     '
   network: tcp
@@ -47,12 +31,22 @@ proxies:
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
   ws-path: /
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: aes-256-gcm
   country: 🇭🇰 HK
-  name: '22,23,37,38,66,197,283,298|SG-103.36.91.23-5884 #1'
+  name: '22,23,37,38,66,197,283,298,401|未知14 #1'
   password: asd123456
   port: 8388
   server: 103.36.91.23
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 22,23,37,38,63,66,273,283,286,298,323,400|🇸🇬SG-128.199.172.224-3661 | 18.076MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.199.172.224
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -64,20 +58,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,23,37,38,66|SS-TCP-NA 🇸🇬 SG-157.245.204.218:50570
-  password: 5t3nxKYKzAuahYoSrfusUG
-  port: 50570
-  server: 157.245.204.218
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 22,23,37,38,66|SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252
-  password: 8GL6EuISWB3H8qKvLApJMv
-  port: 52252
-  server: 174.138.17.254
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
   name: '22,23,37,38,66,197,283,298|🇬SG-18.141.231.184-6364 #1'
@@ -87,18 +67,25 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 22,23,25,37,38,57,66|SS-TCP-NA 🇸🇬 SG-194.124.34.105:8583
-  password: 41809088A4xdFZ7sXBNhk
-  port: 8583
-  server: 194.124.34.105
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   name: 22,23,37,38,66|SS-TCP-NA 🇸🇬 SG-202.162.109.169:8388
   password: asd123456
   port: 8388
   server: 202.162.109.169
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 22,23,37,38,66|SS-TCP-NA 🇸🇬 SG-213.218.228.241:40005
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  port: 40005
+  server: 213.218.228.241
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇸🇬SG
+  name: '22,23,37,38,63,66,197,283,286,298|🇬SG-217.197.160.225-6454 #1'
+  password: 4186370j1ebs50UqyHfXU
+  port: 8436
+  server: 217.197.160.225
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -115,19 +102,9 @@ proxies:
   server: 45.158.59.74
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '22,23,37,38,66,67,401|未知102 #1'
-  password: ba8d6492-f3f5-4376-aa88-1c3bda57a6d9
-  port: 58226
-  server: 45.158.59.74
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '22,23,39,40,66,197,273,283,298|🇬SG-52.77.239.64-6363 #1'
+  name: '22,23,37,38,66,197,273,283,298|🇬SG-52.77.239.64-6363 #1'
   password: amazonskr05
   port: 443
   server: 52.77.239.64
@@ -141,16 +118,22 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
+  name: 22,23,37,38,63,66,273,283,286,298,323,400|🇸🇬SG-68.183.227.236-3794 | 18.379MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+  udp: true
+- cipher: rc4-md5
   country: 🇸🇬SG
-  name: 22,23,39,40,63,66,197,273,283,286,298,400|🇸🇬SG-68.183.227.45-3753 | 18.383MB
+  name: 22,23,37,38,63,66,197,273,283,286,298,400|🇸🇬SG-68.183.227.45-3753 | 18.383MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.45
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '22,23,25,39,40,63,65,181,197,283,286,298,323,412|Singapore_Singapore_ss_111
-    #1'
+  name: 22,23,25,37,38,63,65,66,197,283,286,298,323|[97]🇸🇬SG-68.183.227.4-53063
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 68.183.227.4
@@ -196,33 +179,28 @@ proxies:
     headers:
       Host: trojan.putata.us.kg
     path: /?ed
-- cipher: rc4-md5
-  name: 39,40,63,66,273,283,286,298,323,400|🇸🇬SG-128.199.172.224-3661 | 18.076MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.199.172.224
+- cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,66|SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252
+  password: 8GL6EuISWB3H8qKvLApJMv
+  port: 52252
+  server: 174.138.17.254
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 39,40,66|SS-TCP-NA 🇸🇬 SG-213.218.228.241:40005
-  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
-  port: 40005
-  server: 213.218.228.241
+  name: 39,40,66|SS-TCP-NA 🇸🇬 SG-157.245.204.218:50570
+  password: 5t3nxKYKzAuahYoSrfusUG
+  port: 50570
+  server: 157.245.204.218
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇸🇬SG
-  name: '39,40,63,66,197,283,286,298|🇬SG-217.197.160.225-6454 #1'
-  password: 4186370j1ebs50UqyHfXU
-  port: 8436
-  server: 217.197.160.225
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 39,40,63,66,273,283,286,298,323,400|🇸🇬SG-68.183.227.236-3794 | 18.379MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 39,40,66,67|未知102
+  password: ba8d6492-f3f5-4376-aa88-1c3bda57a6d9
+  port: 58226
+  server: 45.158.59.74
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - alterId: 0
@@ -242,7 +220,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 55,58,68,77,98,104,106,112,114,218,270,271,282,283,289,290,293,296,297,298,420|未知_1222156
+  name: 55,77,98,104,106,112,114,270,271,282,283,289,290,293,296,297,298,420|未知_1222156
   network: ws
   port: '2052'
   server: cf.hy2.one
@@ -256,9 +234,9 @@ proxies:
     headers:
       Host: sg0002.hy-2.top
     path: /0
-- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+- auth: 607dabeb-9c96-4964-8896-e11a916855e6
   name: 55|🇸🇬 新加坡-1
-  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  password: 607dabeb-9c96-4964-8896-e11a916855e6
   port: 30001
   server: oracle-amd-singapore1.lanmaoyun.icu
   skip-cert-verify: true
@@ -267,275 +245,35 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '58,59,77,83,96,98,101,102,105,106,111,218|新加坡 002 #1'
-  network: tcp
-  port: 80
-  server: 57.155.30.207
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30812
-  ws-headers:
-    Host: 57.155.30.207
-- alterId: 0
-  cipher: auto
   delay: 1526
-  name: '58,73,190,218,270,271,282,283,289,290,293,296,297,298,308,360|191babc5-VMess_WS
-    #51'
+  name: 58,72,190,218,270,271,282,283,289,290,293,296,297,298,308|TG频道@mfbpn-1432-RELAY
   network: ws
-  port: '8443'
+  port: 8443
   server: 45.8.211.125
-  servername: lax1.ibgfw.top
+  servername: ''
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
-- name: 59|新加坡-4.10MB/s_84_84
-  network: tcp
-  password: eb0c0b71-20d5-43b3-8c44-3e63e3fdd1a6
-  port: 3333
-  server: 8.219.178.68
-  skip-cert-verify: true
-  sni: alisg.yuwenle.vip
-  type: trojan
-  udp: true
-- name: 59|新加坡-333.9KB/s_2_630_630
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: easy-mako.opossum872.cfd
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 59|🇸🇬SG-68.183.228.104-0997
-  network: tcp
-  port: 443
-  server: suddaehihub.sudda.store
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ad2cea64-7ce8-46eb-b898-5b3a0937416f
-- name: 59|新加坡+亚马逊(Amazon)公司数据中心_255
-  network: tcp
-  password: ac590e89-ba43-49a1-a8b2-38ec70dc7907
-  port: 20230
-  server: sg005.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 59,273|🏁RELAY-104.21.1.32-6032
+  name: 58,218,271|24-1772-SG
   network: ws
-  port: 443
-  server: 3.clarity168.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  ws-opts:
-    headers:
-      host: 3.clarity168.com
-    path: /tk
-- name: 59|🇸🇬 www.85la.com 新加坡 02_2
-  network: tcp
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
-  port: 20230
-  server: sg007.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59|🇸🇬 www.85la.com 新加坡 03_2
-  network: ws
-  port: 23451
-  server: westsg2-ddns.oraclenat.cc
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 72219927-c114-420f-b563-3c8ce0e451c6
-  ws-opts:
-    headers:
-      host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59,276|qoli_987
-  network: ws
-  port: '4900'
-  server: 103.136.68.92
+  port: 47928
+  server: 103.106.229.29
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 70807812-a322-4ad3-90b7-22dd5969c49e
+  udp: true
+  uuid: c1b539db-9fe3-4daa-aa78-70b32ae6256b
   ws-opts:
     headers:
-      Host: ''
-    path: /
-- name: 59|🇸🇬 www.85la.com 新加坡 29
-  network: tcp
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg008.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 59,321|MOHSEN-🇺🇸-US_187
-  network: ws
-  port: 443
-  server: visa.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: d05d144a-71a9-4720-8c4e-565257953069
-  ws-opts:
-    headers:
-      host: woiden.739256.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|🇸🇬 www.85la.com 新加坡 38_2
-  network: ws
-  port: 23451
-  server: 140.245.60.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b2b0701-4113-4153-9977-7fb3407d5022
-  ws-opts:
-    headers:
-      host: westsg2-ddns.oraclenat.cc
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 59|新加坡_由快嘴科技提供：kkzui.com123
-  network: ws
-  port: 443
-  server: 139.162.40.74
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: 139.162.40.74
-    path: linkvws
-- alterId: 0
-  cipher: auto
-  name: 59|新加坡_由快嘴科技提供：kkzui.com124
-  network: ws
-  port: 443
-  server: sg25.jnstore.biz.id
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-  ws-opts:
-    headers:
-      host: sg25.jnstore.biz.id
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 59|🇸🇬SG-206.238.236.36-7862 | 25.022MB
-  network: ws
-  port: 2052
-  server: 206.238.236.36
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    path: /
-- name: 59|新加坡06|流媒体
-  network: tcp
-  password: 0028109a-37ed-4ded-b858-e566388a904c
-  port: 20230
-  server: sg006.421421.xyz
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Game 新加坡01-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9060
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Game 新加坡02-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9037
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Game 新加坡03-标准 - AyucLouD-Services
-  password: ayuc211
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 902
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Video 新加坡A-解锁 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9038
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Video 新加坡B-标准 - AyucLouD-Services
-  password: dajkdkjda&dja*/?
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 19999
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇸🇬 Web 新加坡I-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 6879
-  server: 231103level1.unclemanco.com
-  type: ss
-  udp: true
+      Host: tms.dingtalk.com
+    path: /wada12222
 - alterId: 0
   cipher: auto
   name: 60|VIP|新加坡🇸🇬02-5Gbps - 探索者
@@ -783,7 +521,7 @@ proxies:
     path: /hls/us8.m3u8
 - alterId: 2
   cipher: auto
-  name: 60,190,308|TG频道@mfbpn-0495-CN
+  name: 60,190,308|TG频道@mfbpn-0490-CN
   network: ws
   port: 23612
   server: 12.mamamajd.site
@@ -792,14 +530,14 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4ebd346b-a0ba-3ca8-bdf1-3e61311e9524
+  uuid: f5003512-53bd-3559-9754-e8f09b25c7ce
   ws-opts:
     headers:
       Host: 12.mamamajd.site
     path: /
 - alterId: 2
   cipher: auto
-  name: 60,308|TG频道@mfbpn-0496-CN
+  name: 60,308|TG频道@mfbpn-0491-CN
   network: ws
   port: 23617
   server: 17.mamamajd.site
@@ -808,11 +546,77 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4ebd346b-a0ba-3ca8-bdf1-3e61311e9524
+  uuid: f5003512-53bd-3559-9754-e8f09b25c7ce
   ws-opts:
     headers:
       Host: 17.mamamajd.site
     path: /
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Game 新加坡01-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9060
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Game 新加坡02-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9037
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Game 新加坡03-标准 - AyucLouD-Services
+  password: ayuc211
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 902
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Video 新加坡A-解锁 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9038
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Video 新加坡B-标准 - AyucLouD-Services
+  password: dajkdkjda&dja*/?
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 19999
+  server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇸🇬 Web 新加坡I-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 6879
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1395,21 +1199,23 @@ proxies:
   server: 231103level3.unclemanco.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 66|SS-TCP-NA 🇸🇬 SG-54.251.126.150:443
-  password: 2y0tJ02XWp5AsdeMBgsZXx
-  port: 443
-  server: 54.251.126.150
-  type: ss
 - cipher: aes-256-gcm
   name: 66|SS-TCP-NA 🇸🇬 SG-54.169.63.80:443
   password: amazonskr05
   port: 443
   server: 54.169.63.80
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 66|SS-TCP-NA 🇸🇬 SG-54.251.126.150:443
+  password: 2y0tJ02XWp5AsdeMBgsZXx
+  port: 443
+  server: 54.251.126.150
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '66,390,395|🔒 VM-WS-NA 🇸🇬 SG-47.129.235.134:40000 #1'
+  name: '66,390,395,417|@Vip_Security join us - 47
+
+    '
   network: ws
   port: '40000'
   server: 47.129.235.134
@@ -1423,7 +1229,7 @@ proxies:
     path: /bby
 - alterId: 0
   cipher: auto
-  name: '66,83,96,106,184,390,395,417|@Vip_Security join us - 301
+  name: '66,83,96,106,184,390,395,417|@Vip_Security join us - 303
 
     '
   network: ws
@@ -1582,14 +1388,14 @@ proxies:
   uuid: a1a14d0c-65de-4b3f-b493-2b0c89778c70
 - alterId: 0
   cipher: auto
-  name: 83,96,271|22-1265-RELAY
+  name: 83,96,271|22-1282-RELAY
   network: ws
   port: 443
   server: visa.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 83529da2-cdc4-41f3-bf48-8a66d4002f4f
+  uuid: de301a02-abef-4912-af3d-c1b07f2b5910
   ws-opts:
     headers:
       Host: xjp.daluquan.top
@@ -2333,7 +2139,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '165,189,270,282,283,289,290,293,296,297,298,403,405|未命名 #183'
+  name: '165,189,270,282,283,289,290,293,296,297,298,403,405|未命名 #182'
   network: ws
   port: 80
   server: 159.223.94.156
@@ -2404,7 +2210,7 @@ proxies:
     path: /path/080712342310
 - alterId: 0
   cipher: auto
-  name: '165,417|@Vip_Security join us - 237
+  name: '165,417|@Vip_Security join us - 239
 
     '
   network: tcp
@@ -3163,6 +2969,19 @@ proxies:
     headers:
       Host: sg02.05e57c23-bae7-41a0-aeef-8e75566fc3dd.genshinimpact.cyou
     path: /
+- alterId: 0
+  cipher: auto
+  name: '190|>🇸🇬 SG|Ls|1115|TG@FProxies| #1'
+  network: ws
+  port: '443'
+  server: sg25.jnstore.biz.id
+  tls: true
+  type: vmess
+  uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0
+  ws-opts:
+    headers:
+      Host: sg25.jnstore.biz.id
+    path: /vmess
 - alterId: 0
   cipher: auto
   name: 190|新加坡-002
@@ -4396,14 +4215,6 @@ proxies:
   port: '9025'
   server: 103.172.116.103
   type: ss
-- name: 263|🇸🇬_新加坡
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: connectwithemployers.online
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🇬SG
@@ -5161,21 +4972,21 @@ proxies:
     path: /graphql
 - alterId: 0
   cipher: auto
-  name: 271|22-1262-SG
+  name: 271|22-1178-SG
   network: ws
   port: 23451
   server: westsg2-ddns.oraclenat.cc
   servername: ''
   tls: false
   type: vmess
-  uuid: de301a02-abef-4912-af3d-c1b07f2b5910
+  uuid: df6fec8a-3d19-4370-b9ca-6261d190b357
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - alterId: 0
   cipher: auto
-  name: 271|13-0542-SG
+  name: 271|13-0577-SG
   network: ws
   port: 30002
   server: xjpx6.12123.org
@@ -5189,7 +5000,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 271|13-0592-SG
+  name: 271|13-0627-SG
   network: ws
   port: 30002
   server: xjpx5.12123.org
@@ -5201,20 +5012,6 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /12123.org
-- alterId: 0
-  cipher: auto
-  name: 271|24-1749-SG
-  network: ws
-  port: 47928
-  server: 103.106.229.29
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c1b539db-9fe3-4daa-aa78-70b32ae6256b
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
 - alterId: 0
   cipher: auto
   name: 274|🇸🇬 _SG_新加坡
@@ -6492,7 +6289,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '403,417|@Vip_Security join us - 464
+  name: '403,417|@Vip_Security join us - 467
 
     '
   network: ws

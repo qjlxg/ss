@@ -1,38 +1,25 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 16,52,181,190,224,228,230,263,304,310,311,312,313,345,346,347,412|United Kingdom_None_vmess_1158
+  name: 16,58,65,71,137,150,190,218,224,228,230,235,308,310,311,312,313,345,346,347,365,366,375,382,384,385,386,387,389,395,412,417,421|英国_1223003
   network: tcp
   port: '35384'
   server: 45.94.68.206
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+  ws-headers:
+    Host: 45.94.68.206
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: '16,30,31,32,66,150,228,365,367,369,376,383,384|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002
-    #13'
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '16,31,32,66,150,203,204,228|🔒 VM-WS-NA 🇰🇷 KR-140.238.31.105:23451 #2'
+  name: '16,31,32,66,137,150,224,228,235,376,382,385,386,387,390,395|🔒 VM-WS-NA 🇰🇷
+    KR-129.154.211.136:23451 #12'
   network: ws
   port: '23451'
-  server: 140.238.31.105
-  servername: ''
+  server: 129.154.211.136
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -44,20 +31,24 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '16,59,89,137,150,224,228,235,276,375,382,385,386,387,389,395|🔒 VM-TCP-NA
-    🇰🇷 KR-146.56.112.110:8888 #12'
-  network: tcp
-  port: '8888'
-  server: 146.56.112.110
-  servername: ''
-  skip-cert-verify: true
-  tls: false
+  name: '16,29,46,66,137,150,224,228,235,376,383,385,386,387,390,396,402|未知23 #5'
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: cc2.1808.site
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  udp: true
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: '16,137,150,224,228,235,365,367,369,376,383,384,385,386,387,390,396,413|@Vip_Security
-    join us - 390
+    join us - 15
 
     '
   network: ws
@@ -71,34 +62,23 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
-- cipher: chacha20-ietf-poly1305
-  name: 19,20,25,65,189|🇨🇳 CN 25 → tg@nicevpn123
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 20005
-  server: service.ouluyun9803.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 19,20,25,65,189|🇨🇳 CN 503 → tg@nicevpn123
-  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-  port: 26667
-  server: service.ouluyun9803.com
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: '16,89,137,150,224,228,235,276,375,382,385,386,387,389,395|🔒 VM-TCP-NA 🇰🇷
+    KR-146.56.112.110:8888 #12'
+  network: tcp
+  port: '8888'
+  server: 146.56.112.110
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 22,23,39,40,63,66,197,283,286,298,400|🇰🇷KR-3.36.65.244-0117 | 18.445MB
+  name: 22,23,37,38,63,66,197,283,286,298,400|🇰🇷KR-3.36.65.244-0117 | 18.445MB
   password: amazonskr05
   port: 443
   server: 3.36.65.244
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 22,23,37,38,63,66,197,283,286,298,400|🇰🇷KR-43.200.1.13-0552 | 8.011MB
-  password: amazonskr05
-  port: 443
-  server: 43.200.1.13
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -110,17 +90,17 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 22,23,37,38,65,66,197,283,298,400,412|South Korea_Incheon_ss_1133
+  name: 22,23,37,38,66,197,283,298,400|🇰🇷KR-43.203.141.93-0095 | 16.971MB
   password: amazonskr05
   port: 443
   server: 43.203.141.93
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 22,23,25,37,38,66,181,197,283,298,412|South Korea_Incheon_ss_1121
+  name: 22,23,39,40,66,283,298,400|🇰🇷KR-52.79.52.119-3650 | 10.546MB
   password: amazonskr05
   port: 443
-  server: 52.79.248.193
+  server: 52.79.52.119
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -148,23 +128,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '29,46,137,224,235,376,383,385,386,387,390,396|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002
-    #18'
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
-- alterId: 0
-  cipher: auto
   name: 30|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-132.145.92.18:23451
   network: ws
   port: 23451
@@ -178,18 +141,35 @@ proxies:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
+- alterId: 0
+  cipher: auto
+  name: '30,31,32,365,367,369,376,383,384|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #13'
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
 - cipher: aes-256-cfb
-  name: 39,40,66|SS-TCP-NA 🇰🇷 KR-43.203.122.162:443
+  name: 35,36,37,38,66|SS-TCP-NA 🇰🇷 KR-43.203.122.162:443
   password: amazonskr05
   port: 443
   server: 43.203.122.162
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 39,40,66,283,298,400|🇰🇷KR-52.79.52.119-3650 | 10.546MB
+  country: 🇺🇸US
+  name: 39,40,63,66,197,283,286,298,400,412|South Korea_Incheon_ss_1134
   password: amazonskr05
   port: 443
-  server: 52.79.52.119
+  server: 43.200.1.13
   type: ss
   udp: true
 - alterId: 0
@@ -208,459 +188,48 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- auth: 3d16e013-0d5d-49a7-b458-d45f1fa7eb5b
-  name: 55,68|🇷 韩国-2
-  password: 3d16e013-0d5d-49a7-b458-d45f1fa7eb5b
-  port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+- auth: 607dabeb-9c96-4964-8896-e11a916855e6
   name: 55|🇰🇷 韩国-1
-  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  password: 607dabeb-9c96-4964-8896-e11a916855e6
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+- auth: 607dabeb-9c96-4964-8896-e11a916855e6
   name: 55|🇰🇷 韩国-首尔
-  password: cda04dcf-a38a-472b-ba6a-9f26cbffe342
+  password: 607dabeb-9c96-4964-8896-e11a916855e6
   port: 30001
   server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- name: 59|韩国-2.04MB/s
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 146.56.158.235
+- auth: 607dabeb-9c96-4964-8896-e11a916855e6
+  name: 55|🇰🇷 韩国-2
+  password: 607dabeb-9c96-4964-8896-e11a916855e6
+  port: 30001
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
-  sni: gevent.gmarket.co.kr
-  type: trojan
-  udp: true
-- name: 59|韩国-791.4KB/s
-  network: tcp
-  password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-  port: 443
-  server: 146.56.140.99
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: "59,269|TG:@hkaa0|澳大利亚_2\r"
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20983
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|韩国-1.48MB/s_803_803
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20980
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: "59,269|TG:@hkaa0|澳大利亚_3\r"
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20982
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: "59,269|TG:@hkaa0|澳大利亚_4\r"
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20987
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|韩国-267.9KB/s_207_207
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20990
-  server: 146.56.151.232
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|韩国-1.35MB/s_638_638
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: enabling-filly.opossum872.cfd
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 59|韩国-892.2KB/s_705_705
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20985
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: "59,269|TG:@hkaa0|大利_1\r"
-  network: tcp
-  password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
-  port: 20992
-  server: ent1.imyourdaddy.top
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷KR-129.154.208.231-0319
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21112
-  server: 129.154.208.231
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷KR-129.154.208.231-0697
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 129.154.208.231
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
-  name: 59|韩国 V2CROSS.COM_302
+  name: 58,218,271|24-1794-KR
   network: ws
-  port: 30017
-  server: 61.84.74.108
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|韩国 阿里云_322
-  network: ws
-  port: 443
-  server: 149.129.8.215
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 59|韩国 V2CROSS.COM_2_800
-  network: ws
-  port: 50000
-  server: 39.123.114.106
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- name: 59|🇰🇷 www.85la.com 韩国 03
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 58249
-  server: 140.238.25.132
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 02_1
-  network: tcp
-  password: xjN4xcuPGg
-  port: 45101
-  server: a.522226.xyz
-  skip-cert-verify: true
-  sni: a.522226.xyz
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 03_1
-  network: tcp
-  password: xjN4xcuPGg
-  port: 45101
-  server: 144.24.88.133
-  skip-cert-verify: true
-  sni: a.522226.xyz
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 04
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21005
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 05_1
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20983
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 06_1
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20980
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 07_1
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 09
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21101
-  server: 146.56.168.56
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 05_2
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20980
-  server: 152.70.245.233
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 07_2
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21005
-  server: 152.70.245.233
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 06_2
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 10004
-  server: 152.70.245.233
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 59|🇰🇷 www.85la.com 韩国 08
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 152.70.245.233
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 60,190,308|TG频道@mfbpn-0504-CN
-  network: ws
-  port: 23611
-  server: 11.mamamajd.site
+  port: 40471
+  server: 131.186.16.245
   servername: ''
-  skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 4ebd346b-a0ba-3ca8-bdf1-3e61311e9524
+  uuid: c1b539db-9fe3-4daa-aa78-70b32ae6256b
   ws-opts:
     headers:
-      Host: 11.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国01-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 803
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国02-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 806
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国03-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 913
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国04-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 817
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国05-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9030
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国06-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 920
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国07-标准 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9035
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国08-通用 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 917
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国09-标准 - AyucLouD-Services
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9019
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国10-原生 - AyucLouD-Services
-  password: ayucew2
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 9001
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国11-国际 - AyucLouD-Services
-  password: ayuclsaa
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 807
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国12-原生 - AyucLouD-Services
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 810
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Game 韩国13-标准 - AyucLouD-Services
-  password: ayucl243113
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 921
-  server: 231103level3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 60|🇰🇷 Video 韩国A-标准 - AyucLouD-Services
-  password: wedsa
-  plugin: obfs
-  plugin-opts:
-    host: 5f115104319.download.windowsupdate.com
-    mode: http
-  port: 804
-  server: 231103level2.unclemanco.com
-  type: ss
-  udp: true
+      Host: tms.dingtalk.com
+    path: /wada12222
 - cipher: chacha20-ietf-poly1305
   name: 60|🇰🇷 韩国01 - Cyanmori
   password: hJRTbknS8oyylv6x
@@ -708,6 +277,176 @@ proxies:
   password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
   port: 21010
   server: host-030.crazyspeed.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 60,190,308|TG频道@mfbpn-0499-CN
+  network: ws
+  port: 23611
+  server: 11.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f5003512-53bd-3559-9754-e8f09b25c7ce
+  ws-opts:
+    headers:
+      Host: 11.mamamajd.site
+    path: /
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国01-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 803
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国02-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 806
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国03-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 913
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国04-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 817
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国05-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9030
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国06-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 920
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国07-标准 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9035
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国08-通用 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 917
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国09-标准 - AyucLouD-Services
+  password: ayucloud1
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9019
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国10-原生 - AyucLouD-Services
+  password: ayucew2
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 9001
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国11-国际 - AyucLouD-Services
+  password: ayuclsaa
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 807
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国12-原生 - AyucLouD-Services
+  password: QHPy2u
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 810
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Game 韩国13-标准 - AyucLouD-Services
+  password: ayucl243113
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 921
+  server: 231103level3.unclemanco.com
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 60|🇰🇷 Video 韩国A-标准 - AyucLouD-Services
+  password: wedsa
+  plugin: obfs
+  plugin-opts:
+    host: 03a00104329.download.windowsupdate.com
+    mode: http
+  port: 804
+  server: 231103level2.unclemanco.com
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -1053,13 +792,6 @@ proxies:
   server: 231103level3.unclemanco.com
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 65,197,283,298,412|South Korea_Incheon_ss_112
-  password: amazonskr05
-  port: 443
-  server: 3.34.255.220
-  type: ss
 - alterId: '0'
   cipher: auto
   name: 76|[🇰🇷]kr06.wxfz.ml:35212(5ab3f1a4-0793-4f2a-f14a-d427105aa99a)
@@ -1243,20 +975,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '137,224,235,376,382,385,386,387,390,395|🔒 VM-WS-NA 🇰🇷 KR-130.162.128.96:23451
-    #9'
-  network: ws
-  port: '23451'
-  server: 130.162.128.96
-  tls: false
-  type: vmess
-  uuid: 4fb84dd5-af44-464c-99c4-f1fe589652cf
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
 - alterId: 0
   cipher: auto
   name: 157,160,189,270,277,282,283,289,290,293,296,297,298,300,318,403,404,405|🇰🇷KR-152.67.218.38-0747
@@ -1826,7 +1544,7 @@ proxies:
       Host: p.xiaolong.world
     path: /b6d317eb90?ed=2048
 - cipher: aes-256-cfb
-  name: 197,283,298,412|South Korea_Incheon_ss_115
+  name: 197,283,298,412|South Korea_Incheon_ss_1125
   password: amazonskr05
   port: 443
   server: 3.35.206.24
@@ -1838,6 +1556,27 @@ proxies:
   port: 443
   server: 3.38.212.48
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '197,283,298|KR-3.34.255.220-0912 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.34.255.220
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: '203,204|🇰🇷KR-140.238.31.105-0033 #1'
+  network: ws
+  port: 23451
+  server: 140.238.31.105
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4fb84dd5-af44-464c-99c4-f1fe589652cf
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
 - name: 213|🇰🇷_KR_韩国_1@0
   network: tcp
   password: cd27884b-c5af-34ec-b75f-8248077818fe
@@ -2915,7 +2654,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '270,282,283,289,290,293,296,297,298,318,329,405,417|@Vip_Security join us
-    - 224
+    - 226
 
     '
   network: ws
@@ -3254,7 +2993,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 271|13-0513-KR
+  name: 271|08-0443-KR
+  network: ws
+  port: 23451
+  server: seoul-1ddns.aboutanime.eu.org
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dead1127-9328-4ff3-88d1-c20c617cf012
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 271|13-0548-KR
   network: ws
   port: 30002
   server: ch1.12123.org
@@ -3268,7 +3021,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 271|13-0516-KR
+  name: 271|13-0551-KR
   network: ws
   port: 30000
   server: cc111.12123.org
@@ -3282,7 +3035,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 271|13-0533-KR
+  name: 271|13-0568-KR
   network: ws
   port: 30000
   server: cc112.12123.org
@@ -3296,7 +3049,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 271|13-0570-KR
+  name: 271|13-0605-KR
   network: ws
   port: 30002
   server: shouer2112.12123.org
@@ -3308,34 +3061,6 @@ proxies:
     headers:
       Host: www.baidu.com
     path: /12123.org
-- alterId: 0
-  cipher: auto
-  name: 271|22-1186-KR
-  network: ws
-  port: 40470
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 57795265-6d6c-4aa4-92ef-b4ae0c0f957e
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: 271|24-1771-KR
-  network: ws
-  port: 40471
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c1b539db-9fe3-4daa-aa78-70b32ae6256b
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
 - cipher: aes-256-cfb
   name: '275,283,298|🇷KR-3.36.118.190-5356 #1'
   password: amazonskr05
