@@ -1,21 +1,25 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '20,86,88,112,115,236,246,276,283,287,289,299,387,389,390,391,392,428,429,432,454,513,518,524|英国_1224004
+  name: '20,86,88,96,112,115,236,246,276,283,287,289,299,387,389,390,391,392,428,429,432,454,513,518,524|英国_1224004
     #1'
   network: tcp
   port: '35384'
   server: 45.94.68.206
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: b3e95701-dbd0-4a2f-a701-6ec815fb5ad2
+  ws-headers:
+    Host: 45.94.68.206
+  ws-path: /
 - alterId: 0
   cipher: auto
   country: 🏁 ZZ
   h2-opts: {}
   http-opts: {}
-  name: '20,77,87,131,191,204,253,283,287,294,354,470,477,484,490|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.110:8888
+  name: '20,87,131,191,204,253,283,287,294,354,470,477,484,490|🔒 VM-TCP-NA 🇰🇷 KR-146.56.112.110:8888
     #9'
   network: tcp
   port: '8888'
@@ -28,25 +32,8 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 20,191,204,283,287,294,340,360,361,367,368,372,375,376,377,460,462,471,477,479,485,490,523|韩国_1224007
-  network: ws
-  port: '40471'
-  server: 131.186.16.245
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '20,135,191,204,283,287,294,460,462,464,471,478,479,485,491,514|@Vip_Security
-    join us - 9
-
-    '
+  name: "20,135,191,204,283,287,294,460,462,464,471,478,479,485,491,514|@Vip_Security\
+    \ join us - 328\n #1"
   network: ws
   port: 50035
   server: 175.203.204.222
@@ -60,21 +47,35 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '20,40,100,191,204,283,287,294,460,462,464,471,478,479|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002
-    #13'
+  name: 20,191,204,283,287,294,340,360,367,368,372,375,376,460,462,471,477,479,485,490,523|韩国_1224007
+  network: ws
+  port: '40471'
+  server: 131.186.16.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: '20,38,41,42,57,204,287,460,462,464,471,478,479,485,491|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002
+    #19'
   network: ws
   port: '30002'
   server: 211.220.16.114
-  servername: obdii.cfd
+  servername: cc2.1808.site
   skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
   ws-opts:
     headers:
-      Host: obdii.cfd
-    path: /linkws
+      Host: cc2.1808.site
+    path: /hgqqvws
 - cipher: chacha20-ietf-poly1305
   name: '25,26|[SS] 🇰🇷 韩国 01 | 1x KR #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -98,8 +99,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 28,29,31,32,47,48,49,77,85,87,94,96,97,100,170,253,274,361,364,371,377,513|South
-    Korea_Incheon_ss_1110
+  name: 28,29,31,32,47,48,49,85,87,94,96,97,100,170,236,253,274,361,364,371,377,497,513|South
+    Korea_Incheon_ss_118
   password: amazonskr05
   port: 443
   server: 3.35.206.24
@@ -108,51 +109,53 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 28,29,48,49,67,77,87,100,253,361,377,497|🇰🇷KR-3.36.65.244-3225 | 16.741MB
+  name: '28,29,48,49,67,68,87,100,253,347,361,377|🇷KR-3.36.65.244-5447 #1'
   password: amazonskr05
   port: 443
   server: 3.36.65.244
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   country: 🇺🇸US
-  name: '28,29,31,32,50,51,77,85,87,96,100,170,253,361,377|KR-43.200.1.13-0518 #1'
+  name: '28,29,48,49,87,100,253,361,377|🇷KR-43.200.1.13-1402 #1'
   password: amazonskr05
   port: 443
   server: 43.200.1.13
-  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '28,29,50,51,67,77,87,100,253,361,377|🇷KR-43.202.1.19-5569 #1'
+  name: '28,29,50,51,67,68,87,100,253,347,361,377|🇷KR-43.202.1.19-5561 #1'
   password: amazonskr05
   port: 443
   server: 43.202.1.19
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 28,29,50,51,100|SS-TCP-NA 🇰🇷 KR-43.203.122.162:443
+  password: amazonskr05
+  port: 443
+  server: 43.203.122.162
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 28,29,31,32,48,49,68,77,85,87,96,100,253,347,361,377,497|🇰🇷KR-43.203.243.93-0090
-    | 14.535MB
+  name: '28,29,48,49,67,87,94,100,170,253,361,364,371,377|🇷KR-43.203.141.93-0555 #1'
+  password: amazonskr05
+  port: 443
+  server: 43.203.141.93
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 28,29,31,32,47,48,49,85,87,96,100,170,253,361,377,513|South Korea_Incheon_ss_1111
   password: amazonskr05
   port: 443
   server: 43.203.243.93
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: 28,29,47,48,49,77,87,97,100,170,236,253,274,361,377,497,513|South Korea_Incheon_ss_1116
-  password: amazonskr05
-  port: 443
-  server: 52.79.248.193
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 28,29,50,51,77,87,100|SS-TCP-NA 🇰🇷 KR-52.79.52.119:443
+  name: 28,29,48,49,87,100|SS-TCP-NA 🇰🇷 KR-52.79.52.119:443
   password: amazonskr05
   port: 443
   server: 52.79.52.119
@@ -160,8 +163,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  country: 🇯🇵JP
-  name: 31,32,77,85,88,96,97,99,170,236,274,299,361,377,513|Japan_Tokyo_ss_1139
+  name: '31,32,85,88,96,97,99,170,236,274,299,361,377,513|Japan_Tokyo_ss_1135 #1'
   password: amazonskr05
   port: 443
   server: 52.194.212.235
@@ -193,22 +195,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '38,41,42,57,471,478,485,491|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #15'
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
-- alterId: 0
-  cipher: auto
   name: 40|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-132.145.92.18:23451
   network: ws
   port: 23451
@@ -222,6 +208,23 @@ proxies:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
+- alterId: 0
+  cipher: auto
+  name: '40,100,191,283,294,460,462,464,471,478,479|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002
+    #17'
+  network: ws
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 41,42,100|VM-WS-NA 🇰🇷 KR-131.186.16.245:40471
@@ -238,18 +241,11 @@ proxies:
       Host: tms.dingtalk.com
     path: /
 - cipher: aes-256-cfb
-  name: 50,51,100|SS-TCP-NA 🇰🇷 KR-43.203.122.162:443
+  country: 🇰🇷KR
+  name: '45,46,48,49,87,100,253,361,377|🇷KR-3.38.212.48-1388 #1'
   password: amazonskr05
   port: 443
-  server: 43.203.122.162
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: '50,51,67,87,94,100,253,361,364,371,377|🇷KR-43.203.141.93-5624 #1'
-  password: amazonskr05
-  port: 443
-  server: 43.203.141.93
+  server: 3.38.212.48
   type: ss
   udp: true
 - alterId: 0
@@ -270,7 +266,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 64|13-0618-KR
+  name: 64|13-0593-KR
   network: ws
   port: 30002
   server: ch1.12123.org
@@ -285,7 +281,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 64|13-0621-KR
+  name: 64|13-0596-KR
   network: ws
   port: 30000
   server: cc111.12123.org
@@ -300,7 +296,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: '64,342|13-0638-KR #1'
+  name: '64,342|13-0613-KR #1'
   network: ws
   port: 30000
   server: cc112.12123.org
@@ -316,7 +312,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 64|13-0675-KR
+  name: 64|13-0650-KR
   network: ws
   port: 30002
   server: shouer2112.12123.org
@@ -329,68 +325,32 @@ proxies:
     headers:
       Host: shouer2112.12123.org
     path: /12123.org
-- alterId: 0
-  cipher: auto
-  country: 🇨🇾CY
-  h2-opts: {}
-  http-opts: {}
-  name: 77,87,253|Relay_🇨🇾CY-🇺🇸US_42 | 1.91Mb_0@37
-  network: ws
-  port: 443
-  server: www.csgo.com
-  servername: kr.cfyyds.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
-  ws-opts:
-    headers:
-      HOST: kr.cfyyds.filegear-sg.me
-    path: /rongseven?ed=2048
-- auth: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
-  name: 81|🇰🇷 韩国-2
-  password: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
-  port: 30001
-  server: oracle-arm-chuncheon2.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
-- auth: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
+- auth: 7136b46c-17da-46ca-809b-944cb5af1076
   name: 81|🇰🇷 韩国-1
-  password: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
+  password: 7136b46c-17da-46ca-809b-944cb5af1076
   port: 30001
   server: oracle-arm-chuncheon1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- auth: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
+- auth: 7136b46c-17da-46ca-809b-944cb5af1076
   name: 81|🇰🇷 韩国-首尔
-  password: 82ec4144-ec82-4a69-9e4d-75762ccc7aa3
+  password: 7136b46c-17da-46ca-809b-944cb5af1076
   port: 30001
   server: oracle-arm-seoul1.lanmaoyun.icu
   skip-cert-verify: true
   sni: korea.nodes.lanmaoyun.icu
   type: hysteria2
   udp: true
-- name: 87|🇰🇷KR-129.154.208.231-0319
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 21112
-  server: 129.154.208.231
+- auth: 7136b46c-17da-46ca-809b-944cb5af1076
+  name: 81|🇰🇷 韩国-2
+  password: 7136b46c-17da-46ca-809b-944cb5af1076
+  port: 30001
+  server: oracle-arm-chuncheon2.lanmaoyun.icu
   skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
-  udp: true
-- name: 87|🇰🇷KR-129.154.208.231-0697
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 129.154.208.231
-  skip-cert-verify: true
-  sni: sale.alibaba.com
-  type: trojan
+  sni: korea.nodes.lanmaoyun.icu
+  type: hysteria2
   udp: true
 - name: "87,339|TG:@hkaa0|大利_1\r"
   network: tcp
@@ -401,6 +361,62 @@ proxies:
   sni: sale.alibaba.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 87|韩国 V2CROSS.COM_1_645
+  network: ws
+  port: 30017
+  server: 61.84.74.108
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 87|韩国 阿里云_322
+  network: ws
+  port: 443
+  server: 149.129.8.215
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 87,445|韩国-2.47MB/s_88_88
+  network: ws
+  port: 30001
+  server: 121.143.196.49
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 87|韩国 V2CROSS.COM_2_800
+  network: ws
+  port: 50000
+  server: 39.123.114.106
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /obdii.cfd:443/linkws
 - name: "87,339|TG:@hkaa0|澳大利亚_2\r"
   network: tcp
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
@@ -455,6 +471,37 @@ proxies:
   sni: sale.alibaba.com
   type: trojan
   udp: true
+- name: 87|韩国-2.04MB/s_2
+  network: tcp
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20982
+  server: 146.56.158.235
+  skip-cert-verify: true
+  sni: gevent.gmarket.co.kr
+  type: trojan
+  udp: true
+- name: 87|韩国-791.4KB/s
+  network: tcp
+  password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+  port: 443
+  server: 146.56.140.99
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 87,445|韩国-235.4KB/s_30_30
+  network: ws
+  port: 46271
+  server: kr.huafei888.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
+  ws-opts:
+    headers:
+      host: kr.huafei888.site
+    path: /
 - name: "87,339|TG:@hkaa0|澳大利亚_3\r"
   network: tcp
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
@@ -473,6 +520,14 @@ proxies:
   sni: sale.alibaba.com
   type: trojan
   udp: true
+- name: 87|韩国-1.35MB/s_638_638
+  network: tcp
+  password: '!!str 3690911436885991424'
+  port: 443
+  server: enabling-filly.opossum872.cfd
+  skip-cert-verify: true
+  type: trojan
+  udp: true
 - name: 87|韩国-892.2KB/s_705_705
   network: tcp
   password: 64f33df2-4f9d-4cf3-bb69-b82b08cf149a
@@ -482,111 +537,6 @@ proxies:
   sni: sale.alibaba.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 87|韩国 阿里云_322
-  network: ws
-  port: 443
-  server: 149.129.8.215
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- name: 87|韩国-2.04MB/s_2
-  network: tcp
-  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
-  port: 20982
-  server: 146.56.158.235
-  skip-cert-verify: true
-  sni: gevent.gmarket.co.kr
-  type: trojan
-  udp: true
-- name: 87|韩国-791.4KB/s
-  network: tcp
-  password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
-  port: 443
-  server: 146.56.140.99
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 87|韩国-1.35MB/s_638_638
-  network: tcp
-  password: '!!str 3690911436885991424'
-  port: 443
-  server: enabling-filly.opossum872.cfd
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 87|韩国-3.11MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.201.31.40
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-1.60MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.202.55.184
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-1.56MB/s_2
-  password: amazonskr05
-  port: 443
-  server: 3.36.126.174
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-2.72MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.193.1
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-2.04MB/s_1
-  password: amazonskr05
-  port: 443
-  server: 54.180.232.93
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-573.4KB/s_2
-  password: amazonskr05
-  port: 443
-  server: 43.203.219.196
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-1.74MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.182.255
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-136.2KB/s
-  password: amazonskr05
-  port: 443
-  server: 13.125.90.251
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-1.00MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.180.229.222
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-1.47MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.38.100.128
-  type: ss
-- cipher: aes-256-cfb
-  name: 87|韩国-3.52MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.203.198.1
-  type: ss
 - name: 87|🇰🇷 www.85la.com 韩国 03
   network: tcp
   password: 061a01f1-704b-4712-8e12-6d3fc95a127d
@@ -695,71 +645,90 @@ proxies:
   sni: sale.alibaba.com
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国01 - Cyanmori
-  password: hJRTbknS8oyylv6x
-  port: 10047
-  server: kr1.lvuy.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国02 - Cyanmori
-  password: hJRTbknS8oyylv6x
-  port: 10048
-  server: kr2.lvuy.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国 01 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21006
-  server: host-026.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国 02 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21007
-  server: host-027.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国 03 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21008
-  server: host-028.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国 04 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21009
-  server: host-029.crazyspeed.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 89|🇰🇷 韩国 05 - V2Link VPN
-  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
-  port: 21010
-  server: host-030.crazyspeed.xyz
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 89,246,387|TG频道@mfbpn-0503-CN
-  network: ws
-  port: 23611
-  server: 11.mamamajd.site
-  servername: ''
+- name: 87|🇰🇷KR-129.154.208.231-0319
+  network: tcp
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 21112
+  server: 129.154.208.231
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: sale.alibaba.com
+  type: trojan
   udp: true
-  uuid: b0f8da10-9343-35c8-87f7-62bfda56d2da
-  ws-opts:
-    headers:
-      Host: 11.mamamajd.site
-    path: /
+- name: 87|🇰🇷KR-129.154.208.231-0697
+  network: tcp
+  password: 061a01f1-704b-4712-8e12-6d3fc95a127d
+  port: 20982
+  server: 129.154.208.231
+  skip-cert-verify: true
+  sni: sale.alibaba.com
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 87|韩国-3.11MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.201.31.40
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-1.60MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.202.55.184
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-1.56MB/s_2
+  password: amazonskr05
+  port: 443
+  server: 3.36.126.174
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-2.72MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.193.1
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-2.04MB/s_1
+  password: amazonskr05
+  port: 443
+  server: 54.180.232.93
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-573.4KB/s_2
+  password: amazonskr05
+  port: 443
+  server: 43.203.219.196
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-1.74MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.182.255
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-136.2KB/s
+  password: amazonskr05
+  port: 443
+  server: 13.125.90.251
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-1.00MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.180.229.222
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-1.47MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.100.128
+  type: ss
+- cipher: aes-256-cfb
+  name: 87|韩国-3.52MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.203.198.1
+  type: ss
 - cipher: aes-128-gcm
   name: 89|🇰🇷 Game 韩国01-标准 - AyucLouD-Services
   password: QHPy2u
@@ -912,6 +881,71 @@ proxies:
     mode: http
   port: 804
   server: 231103level2.unclemanco.com
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 89,246,387|TG频道@mfbpn-0513-CN
+  network: ws
+  port: 23611
+  server: 11.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5d46a0d6-0da5-3b06-b425-72603cba8594
+  ws-opts:
+    headers:
+      Host: 11.mamamajd.site
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国01 - Cyanmori
+  password: hJRTbknS8oyylv6x
+  port: 10047
+  server: kr1.lvuy.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国02 - Cyanmori
+  password: hJRTbknS8oyylv6x
+  port: 10048
+  server: kr2.lvuy.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国 01 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21006
+  server: host-026.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国 02 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21007
+  server: host-027.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国 03 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21008
+  server: host-028.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国 04 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21009
+  server: host-029.crazyspeed.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 89|🇰🇷 韩国 05 - V2Link VPN
+  password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
+  port: 21010
+  server: host-030.crazyspeed.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -1311,7 +1345,7 @@ proxies:
   uuid: a1a14d0c-65de-4b3f-b493-2b0c89778c70
 - alterId: 0
   cipher: auto
-  name: 135,342|11-0557-KR
+  name: 135,226,342|11-0532-KR
   network: ws
   port: 23451
   server: seoul-1ddns.aboutanime.eu.org
@@ -1529,37 +1563,36 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '223,361,377|🇷KR-43.202.49.222-10129 #1'
+  name: '223,361,377|🇷KR-43.202.49.222-10122 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '223,361,377|🇷KR-43.201.108.109-10130 #1'
+  name: '223,361,377|🇷KR-43.201.108.109-10123 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '223,361,377|🇷KR-125.141.26.5-10728 #1'
+  name: '223,361,377|🇷KR-125.141.26.5-10721 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
   type: ss
 - alterId: 0
   cipher: auto
-  name: 226,497|🇰🇷KR-129.154.211.136-0030 | 16.968MB
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 239|b492c83eb1284eba96f80a474da6ee17_@_🇷[openproxylist.com] vmess-KR
   network: ws
   port: 23451
-  server: 129.154.211.136
-  servername: null
-  skip-cert-verify: false
+  server: seoul-1ddns.aboutanime.eu.org
   tls: false
   type: vmess
-  uuid: 4fb84dd5-af44-464c-99c4-f1fe589652cf
+  udp: false
+  uuid: 2abe4c96-8542-48c5-b19d-9eec92586680
   ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
     path: /
 - alterId: 0
   cipher: auto
@@ -1888,6 +1921,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 246|>🇰🇷 KR|Ls|1115|TG@FProxies|
+  network: ws
+  port: '22444'
+  server: gy.xiyunchen.cn
+  tls: false
+  type: vmess
+  uuid: 9ce1bcc2-f720-4ac2-8073-814705a16d31
+  ws-opts:
+    headers:
+      Host: gy.xiyunchen.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '246|>🇰🇷 KR|Ls|1115|TG@FProxies| #1'
   network: tcp
   port: '20021'
   server: i.needss.top
@@ -1907,19 +1953,6 @@ proxies:
     headers:
       Host: p.xiaolong.world
     path: /b6d317eb90?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '246|>🇰🇷 KR|Ls|1115|TG@FProxies| #1'
-  network: ws
-  port: '22444'
-  server: gy.xiyunchen.cn
-  tls: false
-  type: vmess
-  uuid: 9ce1bcc2-f720-4ac2-8073-814705a16d31
-  ws-opts:
-    headers:
-      Host: gy.xiyunchen.cn
-    path: /
 - alterId: 64
   cipher: auto
   name: 270,340,360,361,367,368,372,375,376,377,523|韩国_1224009
@@ -2033,7 +2066,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '270,340,360,361,367,368,372,375,376,377|KR-131.186.24.103-2105 #1'
+  name: '270,340,360,361,367,368,372,375,376,377|KR-131.186.24.103-2109 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -2082,7 +2115,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '270,361,377|🇷KR-43.201.48.212-2262 #1'
+  name: '270,361,377|🇷KR-43.201.48.212-2266 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -2910,9 +2943,25 @@ proxies:
   ws-headers:
     HOST: p3.chigua.tk
   ws-path: /vmess
+- alterId: 1
+  cipher: auto
+  name: '340,360,361,367,368,372,375,376,377,511|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+    #3'
+  network: ws
+  port: '8888'
+  server: 54.180.96.67
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  ws-opts:
+    headers:
+      Host: 54.180.96.67
+    path: /
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-52.78.213.224-1871 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-52.78.213.224-1875 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -2955,7 +3004,7 @@ proxies:
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-161.129.34.102-2331 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-161.129.34.102-2323 #1'
   network: ws
   port: 443
   server: 161.129.34.102
@@ -3028,7 +3077,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '340,360,361,367,368,372,375,376,377,397,409,506,518|@Vip_Security join us
-    - 231
+    - 225
 
     '
   network: ws
@@ -3043,25 +3092,9 @@ proxies:
     headers:
       Host: 152.67.218.38
     path: /
-- alterId: 1
-  cipher: auto
-  name: '340,360,361,367,368,372,375,376,377,511|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-    #3'
-  network: ws
-  port: '8888'
-  server: 54.180.96.67
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
-  ws-opts:
-    headers:
-      Host: 54.180.96.67
-    path: /
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-130.162.141.104-1011 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-130.162.141.104-1001 #1'
   network: ws
   port: 443
   server: 130.162.141.104
@@ -3104,7 +3137,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-54.180.114.77-7450 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-54.180.114.77-7442 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -3117,7 +3150,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-211.177.40.235-8822 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-211.177.40.235-8814 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -3130,7 +3163,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-1.238.102.214-8823 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-1.238.102.214-8815 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -3158,7 +3191,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇰🇷KR-138.2.123.70-9156 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇰🇷KR-138.2.123.70-9140 #1'
   network: ws
   port: 443
   server: 138.2.123.70
@@ -3173,7 +3206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '340,360,361,367,368,372,375,376,377|🇷KR-152.70.232.151-9159 #1'
+  name: '340,360,361,367,368,372,375,376,377|🇷KR-152.70.232.151-9143 #1'
   network: ws
   port: 443
   server: 152.70.232.151
@@ -3397,7 +3430,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '342|13-0618-KR #1'
+  name: '342|13-0593-KR #1'
   network: ws
   port: 30002
   server: ch1.12123.org
@@ -3411,7 +3444,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: '342|13-0621-KR #1'
+  name: '342|13-0596-KR #1'
   network: ws
   port: 30000
   server: cc111.12123.org
@@ -3425,7 +3458,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: '342|13-0675-KR #1'
+  name: '342|13-0650-KR #1'
   network: ws
   port: 30002
   server: shouer2112.12123.org
@@ -3439,7 +3472,7 @@ proxies:
     path: /12123.org
 - alterId: 0
   cipher: auto
-  name: 342|24-1933-KR
+  name: 342|24-1880-KR
   network: ws
   port: 40472
   server: 131.186.16.245
@@ -3452,7 +3485,7 @@ proxies:
       Host: tms.dingtalk.com
     path: /wada12222
 - cipher: aes-256-cfb
-  name: '353,361,377|🇷KR-3.36.118.190-5268 #1'
+  name: '353,361,377|🇷KR-3.36.118.190-5260 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -3555,19 +3588,19 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-gcm
-  name: '361,377|🇰🇷KR-141.164.39.146-2336 #1'
+  name: '361,377|🇰🇷KR-141.164.39.146-2328 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '361,377|🇷KR-158.247.205.87-2363 #1'
+  name: '361,377|🇷KR-158.247.205.87-2355 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '361,377|🇷KR-158.247.205.87-2364 #1'
+  name: '361,377|🇷KR-158.247.205.87-2356 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -3610,7 +3643,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '361,377|🇰🇷KR-146.56.133.140-9670 #1'
+  name: '361,377|🇰🇷KR-146.56.133.140-9654 #1'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -3664,6 +3697,56 @@ proxies:
     headers:
       Host: www.68567991.xyz
     path: /path/180401120101
+- alterId: 0
+  cipher: auto
+  name: '387,501|33|欧洲(油管:破解资源君) #4'
+  network: tcp
+  port: '57446'
+  server: 43.200.2.24
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3dbf21cd-5391-48d7-f857-795156aea28d
+- alterId: 0
+  cipher: auto
+  name: 387,501|33|韩国(油管:破解资源君)
+  network: ws
+  port: '42517'
+  server: 13.125.24.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    headers:
+      Host: 13.125.24.112
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '387,501|33|韩国(油管:破解资源君) #1'
+  network: ws
+  port: '49517'
+  server: 13.125.24.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    headers:
+      Host: 13.125.24.112
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '387,518|@Vip_Security join us - 22
+
+    '
+  network: tcp
+  port: '22330'
+  server: 45.141.136.221
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2f64c9d5-e349-4579-9d01-b8eab4340230
 - alterId: 64
   cipher: auto
   name: 388|🇰🇷 github.com/freefq - 韩国BGP.NET数据中心 27
@@ -4180,34 +4263,6 @@ proxies:
     headers:
       Host: aliorg.filegear-sg.me
     path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 501|33|韩国(油管:破解资源君)
-  network: ws
-  port: '42517'
-  server: 13.125.24.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    headers:
-      Host: 13.125.24.112
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '501|33|韩国(油管:破解资源君) #1'
-  network: ws
-  port: '49517'
-  server: 13.125.24.112
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    headers:
-      Host: 13.125.24.112
-    path: /
 - alterId: 0
   cipher: auto
   name: 501,502|KR 2|openitr
