@@ -1,6 +1,6 @@
 proxies:
 - cipher: aes-256-cfb
-  name: 28,29,48,49,68,94,100,159,245,253,347,361,364,371,377,501|21|_146
+  name: 28,29,48,49,67,68,77,94,100,159,245,253,347,361,364,371,377,501|21|_146
   password: qYEN5HX4JKeVCdEC
   port: 9039
   server: 195.238.126.84
@@ -8,44 +8,47 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '28,29,48,49,67,68,87,94,100,159,253,347,361,364,371,377|🇹LT-45.87.175.157-1174
+  name: '28,29,48,49,68,77,87,94,100,159,253,347,361,364,371,377|🇹LT-45.87.175.157-1174
     #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.157
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '28,29,48,49,67,68,94,100,159,253,347,361,364,371,377|🇱🇹LT-45.87.175.178-1175
-    #2'
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: '28,29,48,49,68,76,77,87,94,100,103,158,159,253,347,361,364,371,377|🇱🇹LT-45.87.175.171-1520
+    #1'
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.171
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 28,29,48,49,67,68,77,94,100,159,253,347,361,364,371,377,499|未知146 3.3MB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.178
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '28,29,34,48,49,67,68,94,100,159,253,339,347,361,364,371,377|🇱🇹LT-45.87.175.192-1177
+  name: '28,29,34,48,49,67,68,94,100,253,339,347,361,364,371,377|🇱🇹LT-45.87.175.192-1177
     #2'
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.192
   type: ss
   udp: true
-- name: 28,29,54,100|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 86.38.214.132
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - alterId: 0
   cipher: auto
   name: '34,139,149,153|立陶宛_Telegram@kxswa #1'
@@ -111,7 +114,7 @@ proxies:
     path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '34,139,149,153|立陶宛_Telegram@kxswa (1) #1'
+  name: '34,139,149,153,220|@Hope_Net-join-us-on-Telegram #334'
   network: ws
   port: '2082'
   server: 185.148.106.140
@@ -125,7 +128,20 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: 45,46,54,100|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+- name: 43,44,52,53,100|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
+- name: 43,44,52,53,100|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
   network: ws
   password: bpb-trojan
   port: 443
@@ -139,35 +155,22 @@ proxies:
       Host: bpb.my79801.com
     path: /tr?ed
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇱🇹 LT
-  name: 50,51,67,68,76,87,94,96,100,103,158,159,253,347,361,364,371,377,499|DE 18.1MB/s
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-  port: 8080
-  server: 45.87.175.171
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: ss
-  udp: true
-- alterId: 0
   cipher: auto
-  delay: 1024
-  name: 84,86,276,305,340,360,361,367,368,372,375,376,377,518,523|美国_1224324
+  country: 🇱🇹LT
+  h2-opts: {}
+  http-opts: {}
+  name: '87,253,340,360,361,367,368,372,375,376,377,445|立陶宛_由快嘴科技提供：kkzui.com160 #1'
   network: ws
-  port: '8443'
+  port: 8443
   server: 89.116.161.240
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  servername: lax1.ibgfw.top
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  udp: true
   uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
-      Host: lax1.ibgfw.top
+      host: lax1.ibgfw.top
     path: /xrenvws
 - alterId: 0
   cipher: auto

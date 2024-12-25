@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 28,29,48,49,67,68,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.161-3400
+  name: 28,29,48,49,67,68,77,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.161-3400
     | 28.601MB
   password: shadowsocks
   port: 443
@@ -10,30 +10,38 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 28,29,48,49,67,68,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.163-3392
+  name: 28,29,48,49,67,68,77,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.162-3440
+    | 29.236MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 28,29,48,49,67,68,77,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.163-3392
     | 28.601MB
   password: shadowsocks
   port: 443
   server: 156.146.62.163
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 28,29,48,49,67,68,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.164-3451
-    | 28.829MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '28,29,48,49,100,103,499|未知87 #1'
+  name: 28,29,48,49,100,103|未知87
   password: iO3NH8MXZl8Dg9mtTrqMWQ
   port: 5555
   server: 195.15.215.198
   skip-cert-verify: true
   tls: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '28,29,48,49,100,159,253,361,377|CH-23.166.88.198-6243 #1'
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 23.166.88.198
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -46,8 +54,8 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇳🇴 NO
-  name: '31,32,50,51,68,83,87,91,96,100,103,104,105,106,159,253,329,332,347,361,377,499|未知40
-    2.6MB/s #1'
+  name: '31,32,50,51,68,77,87,91,96,100,103,104,105,106,159,253,329,332,347,361,377|CH-138.124.119.47-0734
+    #1'
   password: VMlmCg+MECr9UYNx6KlrGUOwfX0Z/YhqOq0DSumajLM=
   port: 31801
   server: 138.124.119.47
@@ -62,20 +70,7 @@ proxies:
   server: 138.124.51.236
   type: ss
   udp: true
-- name: 43,44,52,53,100|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  skip-cert-verify: false
-  sni: zb.ylks.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
-- name: 45,46,54,100|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+- name: 43,44,52,53,100|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
   password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
   port: 443
@@ -88,21 +83,26 @@ proxies:
     headers:
       Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
     path: /Telegram@V2ray_Alpha/?ed=2560
+- name: 45,46,54,100|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.18.250.112
+  skip-cert-verify: false
+  sni: zb.ylks.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 50,51,67,68,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.162-3440
-    | 29.236MB
+  name: 50,51,67,68,77,87,94,100,159,170,253,347,361,364,371,377,497|CH-156.146.62.164-3451
+    | 28.829MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.162
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '50,51,100,159,253,361,377|CH-23.166.88.198-6243 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 23.166.88.198
+  server: 156.146.62.164
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -122,7 +122,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '62,518|@Vip_Security join us - 316
+  name: '62,518|@Vip_Security join us - 310
 
     '
   network: tcp
@@ -133,7 +133,7 @@ proxies:
   uuid: 6d0b94fc-3699-4231-aeda-641b196551d1
 - alterId: 0
   cipher: auto
-  name: '62,518|@Vip_Security join us - 42
+  name: '62,518|@Vip_Security join us - 44
 
     '
   network: tcp
@@ -150,46 +150,6 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: "87,131,132,135,156,267,304,317,318,319,320,383,445,518|@Vip_Security join\
-    \ us - 330\n #1"
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 87|瑞士 苏黎世Oracle云计算数据中心_284
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 87|瑞士 Oracle Corporation_342
-  network: ws
-  port: 443
-  server: 141.148.203.6
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /obdii.cfd:443/linkws
 - alterId: 64
   cipher: auto
   name: '149,151,153|71|CH😈github.com/Ruk1ng001_431941033 #2'
@@ -389,7 +349,7 @@ proxies:
   uuid: 47b43bb4-2768-431c-b704-edee85e2a48d
 - alterId: 0
   cipher: auto
-  name: '404|🇨🇭_CH_瑞士 #1'
+  name: '404|🇨🇭_CH_瑞士 #4'
   network: ws
   port: 443
   server: b2.wuxianliulianng.xyz
