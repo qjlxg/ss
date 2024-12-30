@@ -1,25 +1,45 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: '21,22,73,74,325,343,359|IE-13.79.98.64-5363 #1'
+  client-fingerprint: chrome
+  name: '21,22,73,74,75,325,343,359|IE-13.79.98.64-5363 #1'
   password: 49JPbl6SMH1hDoskOR6irG
   port: 55939
   server: 13.79.98.64
+  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: 🇪IE
-  name: 26,27,46,47,65,95,115,178,208,343,359,484|21|🇪IE_593
+  name: 26,27,46,47,95,178,208,343,359,484|21|🇪IE_593
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.133
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 48,49,95,115,178,200,208,343,359,484|21|_459
+  name: 48,49,95,178,200,208,343,359,484|21|_459
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 23.92.127.134
   type: ss
+  udp: true
+- country: 🇮🇪IE
+  name: 75|🇮🇪IE_215
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.214.131.130
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇮🇪IE
+  name: 75|🇮🇪IE_216
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 54.77.155.56
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - cipher: aes-128-gcm
   name: 84|🇮🇪 Web 爱尔兰I-原生 - AyucLouD-Services
@@ -132,19 +152,6 @@ proxies:
   sni: trj.rollingnext.co.uk
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  grpc-opts:
-    grpc-service-name: ''
-  name: 265,284,290,298|🇮🇪 IE 85.159.229.88 ◈ grpc:8443 ◈ Stark Industries/ Global
-    Internet ◈ 4bbe8
-  network: grpc
-  port: '8443'
-  server: f2.maryam1900.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: afe57557-df24-43e5-9cea-5d2acc2cad08
 - alterId: 0
   cipher: auto
   name: '321,342,343,349,350,354,357,358,359,494|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
