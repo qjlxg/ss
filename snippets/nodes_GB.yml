@@ -65,7 +65,7 @@ proxies:
     path: /ylks
 - alterId: 0
   cipher: auto
-  name: '18,29,30,61,244,246,371,372,373,374|🇬🇧 _英国 #70'
+  name: '18,29,30,61,78,244,246,371,372,373,374|🇬🇧 _英国 #70'
   network: ws
   port: '443'
   server: 51.21.48.77
@@ -97,12 +97,13 @@ proxies:
     path: /ylks
 - alterId: 0
   cipher: auto
-  name: '18,29,30,61,244,246,371,372,373,374|🇬🇧 _英国 #72'
+  name: '18,29,30,61,79,244,246,371,372,373,374|🇬🇧 _英国 #72'
   network: ws
   port: '443'
   server: 193.123.177.69
   servername: ''
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
   udp: true
@@ -159,22 +160,6 @@ proxies:
     headers:
       Host: nl.zhuk.us.kg
     path: /ylks
-- alterId: 0
-  cipher: auto
-  name: '18,29,30,61,244,246,371,372,373,374|🇬🇧 _英国 #76'
-  network: ws
-  port: '443'
-  server: 193.123.178.131
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      Host: nl.zhuk.us.kg
-    path: /ylks
 - alterId: 64
   cipher: auto
   name: 18,159,244,252,321,342,343,349,350,354,357,358,359,365,461,468,474,512|英国_1230047
@@ -192,7 +177,7 @@ proxies:
     path: /path/240811062813
 - alterId: 1
   cipher: auto
-  name: 18,159,244,265,321,342,343,344,345,349,350,351,352,354,357,358,359,365,495|🇬🇧GB-149.7.16.194-6073
+  name: 18,82,159,211,244,265,321,342,343,344,345,349,350,351,352,354,357,358,359,365,495|🇬🇧GB-149.7.16.194-6073
   network: ws
   port: 443
   server: 149.7.16.194
@@ -207,7 +192,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 18,132,159,244,265,298,321,342,343,344,345,349,350,351,352,354,357,358,359,365,495|🇬🇧GB-149.7.16.73-6065
+  name: 18,132,159,244,265,298,300,321,342,343,344,345,349,350,351,352,354,357,358,359,365,495|🇬🇧GB-149.7.16.73-6065
   network: ws
   port: 443
   server: 149.7.16.73
@@ -222,7 +207,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 18,132,159,244,265,321,342,343,344,345,349,350,351,352,354,357,358,359,365,368,495|🇬🇧GB-149.7.16.174-6084
+  name: 18,82,132,159,211,244,265,300,321,342,343,344,345,349,350,351,352,354,357,358,359,365,368,495|🇬🇧GB-149.7.16.174-6084
   network: ws
   port: 443
   server: 149.7.16.174
@@ -237,7 +222,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 18,132,159,244,298,321,342,343,344,345,349,350,351,352,354,357,358,359,495|🇬🇧GB-149.7.16.188-6083
+  name: 18,132,159,244,298,300,321,342,343,344,345,349,350,351,352,354,357,358,359,495|🇬🇧GB-149.7.16.188-6083
   network: ws
   port: 443
   server: 149.7.16.188
@@ -252,7 +237,7 @@ proxies:
     path: /linkvws
 - alterId: 1
   cipher: auto
-  name: 18,132,159,244,265,321,342,343,344,345,349,350,351,352,354,357,358,359,495|🇬🇧GB-172.99.190.50-6066
+  name: 18,82,132,159,244,265,300,321,342,343,344,345,349,350,351,352,354,357,358,359,495|🇬🇧GB-172.99.190.50-6066
   network: ws
   port: 443
   server: 172.99.190.50
@@ -272,55 +257,71 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: '26,27,46,47,95,115,208,320,343,359|🇧GB-107.181.155.244-5781 #1'
-  password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
-  port: 55330
-  server: 107.181.155.244
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 26,27,46,47,75,95,115,132,208,343,359,484|21|_101
-  password: Y6R9pAtvxxzmGC
-  port: 8888
-  server: 145.239.6.202
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 26,27,46,47,65,66,73,75,89,95,115,125,178,208,329,343,346,353,359,480,484|21|_418
+- alterId: 0
+  cipher: aes-128-gcm
+  country: 🏁 ZZ
+  name: 26,27,46,47,65,66,73,82,89,95,125,208,329,343,346,353,359,480,482|未知110 13.8MB/s
   password: shadowsocks
   port: 443
-  server: 212.102.53.196
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 26,27,46,47,95|SS-TCP-NA 🇬🇧 GB-3.9.143.52:443
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 3.9.143.52
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 26,27,46,47,75,95,98,115,178,200,208,343,359,383,482,484|21|_376
-  password: KixLvKzwjekG00rm
-  port: 8080
-  server: 51.68.206.229
+  server: 141.98.101.180
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 26,27,46,47,75,95,115,132,200,208,343,359,383,484|21|🇷FR_564
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 26,27,46,47,75,95,115,132,208,343,359,484|21|_100
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 26,27,46,47,75,95,115,132,200,208,343,359,484|21|_374
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: 26,27,46,47,75,89,95,115,125,208,343,346,353,359,480|🇬🇧GB-185.5.38.111-5568
+    | 7.067MB
+  password: 2GxGsDp6h9ZN2UvHrMMKxgJqwrX5GUJ65dQZu6Ji9VE5k7kTQu5T1FSDkci9xgP3wxbe25mRxUF33BskcbHwt6t8U2hTYtV4
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 26,27,46,47,65,66,89,95,115,125,132,200,208,329,343,346,353,359,480,484|21|_442
+  name: 26,27,46,47,65,66,75,89,95,115,125,132,200,208,329,343,346,353,359,480,484|21|_442
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 77.72.5.113
   type: ss
   udp: true
+- name: 26,27,52,95|TR-WS-NA 🇬🇧 GB-77.75.199.86:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 77.75.199.86
+  skip-cert-verify: true
+  sni: za.ylks.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
+    path: //
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇴NO
-  name: '29,30,46,47,74,75,95,99,100,115,208,313,325,343,359|NO-51.13.35.115-1121
+  name: '29,30,46,47,74,75,91,95,99,100,115,208,313,325,343,359|NO-51.13.35.115-1121
     #1'
   password: SK8DG4IJFnDwuhy35hOWUj
   port: 20760
@@ -417,19 +418,6 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: 41,42,50,51,95|TR-WS-NA 🇬🇧 GB-77.75.199.86:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 77.75.199.86
-  skip-cert-verify: true
-  sni: za.ylks.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: //
 - alterId: 64
   cipher: auto
   name: 41,42,95|VM-WS-TLS 🇬🇧 GB-51.89.78.48:30008
@@ -460,26 +448,39 @@ proxies:
       Host: zb.ylks.xyz
     path: /
 - cipher: aes-128-gcm
+  country: 🇬🇧 GB
+  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|🇬🇧GB-141.98.101.178-3192
+    | 12.961MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 46,47,65,66,73,75,95,208,329,343,359,480|🇬🇧GB-141.98.101.179-3428 | 14.098MB
+  name: 46,47,65,66,73,75,82,95,208,329,343,359,480|🇬🇧GB-141.98.101.179-3428 | 14.098MB
   password: shadowsocks
   port: 443
   server: 141.98.101.179
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 46,47,95,115,208,343,359,484|21|🇷FR_543
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 145.239.6.202
+- alterId: 0
+  cipher: aes-128-gcm
+  country: 🏁 ZZ
+  name: 46,47,65,66,73,82,89,95,98,125,208,329,343,346,353,359,480|🇬🇧GB-141.98.101.182-3252
+    | 17.072MB
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.182
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 46,47,75,95,115,132,200,208,343,359,383,484|21|🇷FR_564
-  password: pKEW8JPByTVTLtM
-  port: 4444
+  name: 46,47,75,95,115,208,343,359,484|21|🇷FR_544
+  password: Y6R9pAtvxxzmGC
+  port: 3389
   server: 145.239.6.202
   type: ss
   udp: true
@@ -491,9 +492,9 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 46,47,75,95,115,132,208,343,359,484|21|_100
-  password: TEzjfAYq2IjtuoS
-  port: 6679
+  name: 46,47,75,95,115,132,200,208,343,359,484|21|_373
+  password: XKFKl2rULjIp74
+  port: 8008
   server: 145.239.6.202
   type: ss
   udp: true
@@ -506,101 +507,84 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 46,47,95,115,132,200,208,343,359,484|21|_374
-  password: PCnnH6SQSnfoS27
-  port: 8090
+  country: 🇫🇷FR
+  name: 46,47,75,95,115,208,343,359,484|21|🇫🇷FR_539
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 145.239.6.202
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: 46,47,75,89,95,115,125,208,343,346,353,359,480|🇬🇧GB-185.5.38.111-5568 | 7.067MB
-  password: 2GxGsDp6h9ZN2UvHrMMKxgJqwrX5GUJ65dQZu6Ji9VE5k7kTQu5T1FSDkci9xgP3wxbe25mRxUF33BskcbHwt6t8U2hTYtV4
-  port: 55988
-  server: 185.5.38.111
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 46,47,75,95,115,132,208,343,359,482,484|21|_101
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇬🇧GB
-  name: '46,47,75,95,208,343,359|GB-193.38.136.137-6418 #1'
-  password: 4230161T38A0WzaL1SuVL
-  port: 8030
-  server: 193.38.136.137
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-18.169.221.36:443 #1'
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 18.169.221.36
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 46,47,95|SS-TCP-NA 🇬🇧 GB-18.169.75.95:443
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 18.169.75.95
   type: ss
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 46,47,65,66,73,89,95,98,115,125,178,208,329,335,343,346,353,359,480,482,484|21|_419
+  name: 46,47,65,66,82,89,95,115,125,208,329,343,346,353,359,480,482,484|21|_415
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
+  server: 212.102.53.193
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 46,47,65,66,73,75,89,95,115,125,208,329,343,346,353,359,383,480,484|21|_406
+  name: 46,47,65,66,73,75,82,89,95,115,125,178,208,329,343,346,353,359,480,484|21|_418
   password: shadowsocks
   port: 443
-  server: 212.102.53.79
+  server: 212.102.53.196
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 46,47,65,66,73,75,89,95,115,125,208,329,335,343,346,353,359,480,484|21|_417
+  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,335,343,346,353,359,480,484|21|_417
   password: shadowsocks
   port: 443
   server: 212.102.53.81
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-3.10.137.189:443 #1'
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 3.10.137.189
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: 48,49,65,66,73,75,89,95,115,125,208,329,343,346,353,359,480|🇬🇧GB-141.98.101.178-3192
-    | 12.961MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🏁 ZZ
-  name: 48,49,65,66,73,75,89,95,125,208,329,343,346,353,359,480|🇬🇧GB-141.98.101.180-3539
-    | 14.196MB
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.180
-  type: ss
-  udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  country: 🏁 ZZ
-  name: '48,49,65,66,73,75,89,95,98,125,208,329,343,346,353,359,480,482|未知72 14.9MB/s
-    #1'
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.182
+  cipher: aes-256-gcm
+  name: 46,47,75,95,98,115,178,200,208,343,359,383,484|21|_376
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 51.68.206.229
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 48,49,75,95,115,208,343,359,484|21|🇷FR_544
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 145.239.6.202
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: '48,49,75,95,115,208,320,343,359|🇧GB-107.181.155.244-5781 #1'
+  password: rtR4YX74vwqRJu9MGH3e1N3CQdGMWCUFkyLisijiFuvhkU9McV5TpygfkernJ4UQe63JtcDQkrQ9HfchzqQz1kLCnTRor8jg
+  port: 55330
+  server: 107.181.155.244
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 48,49,75,95,115,132,200,208,343,359,484|21|_373
-  password: XKFKl2rULjIp74
-  port: 8008
+  country: 🇫🇷FR
+  name: 48,49,75,95,115,208,343,359,484|21|🇷FR_543
+  password: Y6R9pAtvxxzmGC
+  port: 3306
   server: 145.239.6.202
   type: ss
   udp: true
@@ -611,39 +595,36 @@ proxies:
   server: 145.239.6.202
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🇫🇷FR
-  name: 48,49,95,115,208,343,359,484|21|🇫🇷FR_539
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 145.239.6.202
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 48,49,75,95,115,132,208,343,359,484|21|_102
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 48,49,75,95,115,132,208,343,359,482,484|21|_102
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 145.239.6.202
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 48,49,66,89,95,125,329,343,346,353,359,385,480|🇬🇧GB-146.70.61.18-3457 | 20.05MB
+  name: 48,49,65,66,75,82,89,95,125,329,343,346,353,359,385,480|🇬🇧GB-146.70.61.18-3457
+    | 20.05MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 48,49,65,66,75,89,95,115,125,208,329,343,346,353,359,480,484|21|_415
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
+- cipher: aes-256-gcm
+  country: 🇬🇧GB
+  name: '48,49,95,208,343,359|GB-193.38.136.137-6418 #1'
+  password: 4230161T38A0WzaL1SuVL
+  port: 8030
+  server: 193.38.136.137
   type: ss
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 48,49,65,66,73,75,89,95,98,115,125,208,329,343,346,353,359,480,482,484|21|🇧GB_584
+  name: 48,49,65,66,73,75,82,89,95,98,115,125,208,329,343,346,353,359,480,484|21|🇧GB_584
   password: shadowsocks
   port: 443
   server: 212.102.53.195
@@ -652,7 +633,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 48,49,65,66,73,89,95,115,125,132,178,208,329,335,343,346,353,359,480,484|21|_05
+  name: 48,49,65,66,73,75,82,89,95,115,125,132,178,208,329,335,343,346,353,359,480,484|21|_05
   password: shadowsocks
   port: 443
   server: 212.102.53.197
@@ -660,7 +641,27 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
-  name: 48,49,65,66,73,75,89,95,98,115,125,178,208,329,343,346,353,359,480,482,484|21|_416
+  name: 48,49,65,66,73,82,89,95,98,115,125,178,208,329,335,343,346,353,359,480,484|21|_419
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.78
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 48,49,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,383,480,482,484|21|_406
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.79
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 48,49,65,66,73,75,82,89,95,98,115,125,178,208,329,343,346,353,359,480,484|21|_416
   password: shadowsocks
   port: 443
   server: 212.102.53.80
@@ -670,7 +671,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: 48,49,65,66,75,95,115,208,329,343,359,484|21|🇷🇺RU_658
+  name: 48,49,66,95,115,208,329,343,359,484|21|🇷🇺RU_658
   password: CaNG1aNlH0QJRkdsWVzW63
   port: 12575
   server: 89.185.84.185
@@ -703,70 +704,72 @@ proxies:
     headers:
       Host: uk1.xv2ray.net
     path: /vmess
-- cipher: chacha20-ietf-poly1305
-  country: 🇺 RU
-  name: '65,75,115,343,359|🇬🇧GB-89.185.84.185-1206 #1'
-  password: aXuV8k5a4NFmkphgr5NTlL
-  port: 52338
-  server: 89.185.84.185
+- cipher: aes-128-gcm
+  name: 65,66,75,82,89,115,125,208,329,343,346,353,359,480,484|21|_07
+  password: shadowsocks
+  port: 443
+  server: uk-dc1.yangon.club
   type: ss
+- cipher: aes-128-gcm
+  country: 🇧GB
+  name: 65,66,73,75,82,89,115,125,208,329,343,346,353,359,484|21|GB_583
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.198
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 65,66,73,89,125,132,198,200,254,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-0054
+  country: 🇬🇧GB
+  name: 65,66,73,75,82,89,125,132,161,198,200,254,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-0054
     | 23.674MB
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.samanehha.co
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 65,66,73,89,90,99,100,125,132,200,320,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-0055
+  name: 65,66,73,82,89,90,99,100,125,132,200,320,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-0055
     | 24.225MB
   password: W74XFALLLuw6m5IA
   port: 443
   server: series-a1.samanehha.co
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 65,66,89,115,125,208,329,343,346,353,359,480,484|21|_07
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 65,66,73,89,91,99,100,125,132,198,200,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-3173
+  country: 🇬🇧GB
+  name: 65,66,73,75,82,89,99,100,125,132,198,200,329,343,346,353,359,480|🇬🇧GB-18.135.25.251-3173
     | 20.349MB
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
   type: ss
   udp: true
-- cipher: rc4-md5
+- alterId: '0'
+  cipher: auto
   client-fingerprint: chrome
-  country: 🏁 ZZ
-  name: 65,74,75,80,86,91,92,208,310,343,359,385|[97]🇬🇧GB-169.150.210.233-0196
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇧GB
-  name: 65,66,73,75,89,115,125,208,329,343,346,353,359,484|21|GB_583
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-  udp: true
+  name: 69,87,305,313|🇬🇧_英国_24
+  network: ws
+  port: '443'
+  server: 193.123.178.131
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      host: nl.zhuk.us.kg
+    path: /ylks
 - cipher: aes-256-gcm
-  name: 73,115,132,200,208,343,359,484|21|_375
+  name: 73,75,82,115,132,200,208,343,359,484|21|_375
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 51.68.206.229
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 73|🇬🇧  英国 05
+  name: 73,82|🇬🇧 www.85la.com 英国 31_1
   password: faBAoD54k87UJG7
   port: 2375
   server: 51.68.206.229
@@ -774,7 +777,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
-  name: '73,115,208,343,359|🇪EC-185.47.253.227-5679 #1'
+  name: '73,75,82,115,208,343,359|🇪EC-185.47.253.227-5679 #1'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.253.227
@@ -786,6 +789,40 @@ proxies:
   port: 443
   server: 13.43.220.196
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: 75|Relay_🇬🇧GB-🇬🇧GB_106
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 35.177.253.194
+  type: ss
+- country: 🇬🇧GB
+  name: 75,208|🇬🇧GB_19_7@18
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.175.105.81
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 75|🇬🇧GB_109
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.135.126.154
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇬🇧GB
+  name: 75|🇬🇧GB_366
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.177.39.1
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - cipher: aes-128-gcm
   country: 🇬🇧GB
@@ -823,6 +860,31 @@ proxies:
   port: 55988
   server: mx2.drawnrisha.one
   type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '75,115,208,343,359|PR-185.47.255.22-5676 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.255.22
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧GB
+  h2-opts: {}
+  http-opts: {}
+  name: 75,82,132|🏳️UN(AzadNet.t.me)_011
+  network: ws
+  port: 443
+  server: 149.7.16.33
+  servername: vk.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: vk.com
+    path: /linkvws
 - alterId: 0
   cipher: auto
   country: 🇬🇧GB
@@ -843,34 +905,54 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: 75,132|🏳️UN(AzadNet.t.me)_011
+  name: 81,89,321,342,343,346,349,350,353,354,357,358,359,480|🇫🇷FR-57.128.184.119-0146
+    | 24.471MB
   network: ws
   port: 443
-  server: 149.7.16.33
-  servername: vk.com
-  skip-cert-verify: true
+  server: 57.128.184.119
+  servername: ''
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      host: vk.com
-    path: /linkvws
-- country: 🇬🇧GB
-  name: 75,208|🇬🇧GB_82_4@81
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.133.34.26
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  delay: 1481
-  name: 75,233|英国 004
+      Host: 57.128.184.119
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 81,89,321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-149.7.16.194-0141
+    | 24.73MB
+  network: ws
+  port: 443
+  server: 149.7.16.194
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.194
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 81,89,321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-149.7.16.73-0154
+    | 24.777MB
+  network: ws
+  port: 443
+  server: 149.7.16.73
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: 149.7.16.73
+    path: /
+- delay: 1481
+  name: '81,233|英国 004 #1'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -878,48 +960,727 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- alterId: 2
+- name: 82|Relay_🇬🇧GB-🇬🇧GB_123 |31.77Mb
+  network: tcp
+  password: 669d0ac7b5b64ebbb1abb75d5d540a5c
+  port: 443
+  server: bangladeshipatri.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 82|🔒 TR-TCP-TLS 🇬🇧 GB-172.99.190.180:443
+  network: tcp
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: 172.99.190.180
+  skip-cert-verify: true
+  sni: bangladeshipatri.com
+  type: trojan
+  udp: true
+- name: 82|🇬🇧+www.85la.com+英国+82
+  network: tcp
+  password: xjN4xcuPGg
+  port: 45101
+  server: 144.24.88.133
+  skip-cert-verify: true
+  sni: a.522226.xyz
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: auto
-  name: 84,369|TG频道@mfbpn-0465-CN
+  name: 82|🇬🇧 www.85la.com 英国 66
   network: ws
-  port: 23605
-  server: 5.mamamajd.site
-  servername: ''
+  port: 23158
+  server: 5.39.254.196
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 08e6a5e8-c58a-3978-879d-de0e14f70097
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts:
-    headers:
-      Host: 5.mamamajd.site
-    path: /
-- alterId: 2
+    path: ''
+- alterId: 0
   cipher: auto
-  name: 84,369|TG频道@mfbpn-0466-CN
+  name: 82|🇬🇧 www.85la.com 英国 67
   network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  servername: ''
+  port: 443
+  server: hms19.best-tizi.top
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  udp: true
-  uuid: 08e6a5e8-c58a-3978-879d-de0e14f70097
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
-- cipher: aes-128-gcm
-  name: 84|🇬🇧 Web 英国I-标准 - AyucLouD-Services
-  password: fs23l/
-  plugin: obfs
-  plugin-opts:
-    host: bd4a7104694.download.windowsupdate.com
-    mode: http
-  port: 2688
-  server: 231103level1.unclemanco.com
+    path: ''
+- name: 82|🇬🇧 www.85la.com 英国 108
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.177.34.84
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国-3.61MB/s
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49905
+  server: e4c1bc175d6f9a37ba43483b3d008728.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: de1.bilibili.com
+  type: trojan
+  udp: true
+- name: 82|英国-2.51MB/s
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 49905
+  server: eeaa7ed9a53f5bb5260e79cd2bbd9823.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: de1.bilibili.com
+  type: trojan
+  udp: true
+- name: 82|英国-4.97MB/s_1
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 41143
+  server: f46b3f65e076124c635c50538527e26d.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
+  udp: true
+- name: 82|英国-4.24MB/s
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 47249
+  server: d0d104f4fa78cb0e2726e085b1ef4ed4.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: ca1.bilibili.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 82|英国-1.91MB/s
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 13.43.22.99
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 82,132,300,321,342,343,349,350,354,357,358,359,512|美国_1230282
+  network: ws
+  port: '443'
+  server: 68.168.31.196
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- name: 82|英国-33.9MB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.168.25.133
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国-179.4KB/s
+  network: tcp
+  password: 419298f0-bf0c-11ef-bc6c-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: speedtest.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸 US
+  h2-opts: {}
+  http-opts: {}
+  name: 82,115,208|🇺🇸 US_632_0@631
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-path: /linkvws
+- name: 82|英国-365.5KB/s_508_508
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.8.248.241
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国-3.65MB/s
+  network: tcp
+  password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
+  port: 45181
+  server: abf4a13f063dfe2373df11fe8b9ba0b4.v1.cac.node-is.green
+  skip-cert-verify: true
+  sni: de1.bilibili.com
+  type: trojan
+  udp: true
+- alterId: 1
+  cipher: auto
+  name: 82|英国-36.7MB/s_745_745
+  network: ws
+  port: 443
+  server: 172.99.190.228
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: 172.99.190.228
+    path: linkvws
+- name: 82|英国+社会保险安全部_2
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.24.3.210
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_1
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.11.103.187
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_2
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.179.190.208
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_4_262
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.56.101.96
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+社会保险安全部_274
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.137.61
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_1_605
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.10.216.93
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_2_612
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.179.254.202
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国+伦敦Amazon数据中心_3_615
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.197.9
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇬🇧+www.85la.com+英国+01_1
+  network: tcp
+  password: 2add6241-8fe8-3922-8347-da25e8ced601
+  port: 50018
+  server: 125.88.149.205
+  skip-cert-verify: true
+  sni: v2london.aaaa.gay
+  type: trojan
+  udp: true
+- name: 82|🇬🇧 www.85la.com 英国 03
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.56.222.154
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇬🇧 www.85la.com 英国 20
+  network: tcp
+  password: O7Iz39gyjV
+  port: 1935
+  server: x1uk-amazon.devefun.net
+  skip-cert-verify: true
+  sni: x1uk-amazon.devefun.net
+  type: trojan
+  udp: true
+- name: 82|🇬🇧 www.85la.com 英国 02
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 35.176.77.120
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 82,336|qoli_965
+  network: ws
+  port: '15112'
+  server: 5.39.254.196
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- name: 82|🇬🇧 www.85la.com 英国 13
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.24.57.1
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 17_1
+  network: ws
+  port: 443
+  server: 104.21.120.235
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 18
+  network: ws
+  port: 443
+  server: 162.159.152.49
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 19
+  network: ws
+  port: 443
+  server: 162.159.136.60
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '82|🇬🇧 www.85la.com 英国 20 #1'
+  network: ws
+  port: 443
+  server: 104.22.15.82
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 21_1
+  network: ws
+  port: 443
+  server: 104.20.111.73
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 22
+  network: ws
+  port: 443
+  server: 104.20.43.152
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 23
+  network: ws
+  port: 443
+  server: 104.20.173.91
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 24
+  network: ws
+  port: 443
+  server: 104.19.185.248
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 25
+  network: ws
+  port: 443
+  server: 104.20.241.146
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 26
+  network: ws
+  port: 443
+  server: 162.159.133.224
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 27
+  network: ws
+  port: 443
+  server: 104.22.60.103
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 28
+  network: ws
+  port: 443
+  server: 162.159.142.42
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 29
+  network: ws
+  port: 443
+  server: 162.159.140.3
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 30
+  network: ws
+  port: 443
+  server: 104.20.29.211
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 31
+  network: ws
+  port: 443
+  server: 104.20.143.224
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇬🇧 www.85la.com 英国 32
+  network: ws
+  port: 443
+  server: 104.22.57.38
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: af6eedf5-f2b4-447f-8b93-5fca33af06f8
+  ws-opts:
+    headers:
+      host: f.ylks.xyz
+    path: /
+- name: 82|🇬🇧 www.85la.com 英国 33
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.43.159.126
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇬🇧 www.85la.com 英国 34
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.169.254.65
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 82,321,342,343,349,350,354,357,358,359,512|法国_1230097
+  network: ws
+  port: '443'
+  server: 51.77.20.132
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- name: 82|🇬🇧 www.85la.com 英国 06_2
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.49.48
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 82,321,342,343,349,350,354,357,358,359,512|法国_1230124
+  network: ws
+  port: '443'
+  server: 146.59.55.50
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 82,321,342,343,349,350,354,357,358,359,365,368|🇬🇧GB-172.99.190.206-8105
+  network: ws
+  port: 443
+  server: 172.99.190.206
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- name: 82|🇬🇧 www.85la.com 英国 36
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.128.85
+  skip-cert-verify: true
+  sni: 3.9.128.85
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 82|🇬🇧 www.85la.com 英国 28_1
+  password: 4180441OS33nY3f2WpxyU
+  port: 8353
+  server: 193.38.136.149
+  type: ss
+- name: 82|英国-724.4KB/s
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.179.23.7
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|英国_由快嘴科技提供：kkzui.com11
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.56.219.23
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 82|英国_由快嘴科技提供;kkzui.com96
+  network: ws
+  port: 443
+  server: 158.180.228.226
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 82|英国_由快嘴科技提供：kkzui.com70
+  network: ws
+  port: 443
+  server: 185.221.219.107
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: 185.221.219.107
+    path: linkvws
+- name: 82|🇬🇧 www.85la.com 英国 92
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.168.97.20
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇬🇧_105
+  network: tcp
+  password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157
+  port: 443
+  server: jgwld2.gaox.ml
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: 82|英国 A
+  password: 88430607-f080-4816-b2e5-1a47e193a057
+  port: 634
+  server: neweur.upperlay.xyz
+  type: ss
+- cipher: aes-128-gcm
+  name: 82|英国 B
+  password: 88430607-f080-4816-b2e5-1a47e193a057
+  port: 635
+  server: neweur.upperlay.xyz
+  type: ss
+- name: 82|🇬🇧 英国_Telegram@kxswa 2
+  network: tcp
+  password: vZNEhATSDRAi
+  port: 12047
+  server: 13.40.176.73
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '82|🇬🇧_GB_英国 #1'
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.24.25.64
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🔒TR-TCP-TLS🇬🇧GB-3.9.40.73:22222
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.9.40.73
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - alterId: 2
   cipher: auto
@@ -979,6 +1740,49 @@ proxies:
   server: host-044.crazyspeed.xyz
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 84,369|TG频道@mfbpn-239-CN
+  network: ws
+  port: 23605
+  server: 5.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b3c2dae-5aa3-3afc-8e62-df205a09921c
+  ws-opts:
+    headers:
+      Host: 5.mamamajd.site
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 84,369|TG频道@mfbpn-240-CN
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b3c2dae-5aa3-3afc-8e62-df205a09921c
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- cipher: aes-128-gcm
+  name: 84|🇬🇧 Web 英国I-标准 - AyucLouD-Services
+  password: fs23l/
+  plugin: obfs
+  plugin-opts:
+    host: bd4a7104694.download.windowsupdate.com
+    mode: http
+  port: 2688
+  server: 231103level1.unclemanco.com
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1025,7 +1829,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 89,321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-172.99.190.50-0160
+  name: 89,233,321,342,343,346,349,350,353,354,357,358,359,369,480|🇬🇧GB-172.99.190.50-0160
     | 25.773MB
   network: ws
   port: 443
@@ -1039,38 +1843,6 @@ proxies:
     headers:
       Host: 172.99.190.50
     path: /
-- alterId: 0
-  cipher: auto
-  name: 89,233,321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-149.7.16.194-0141
-    | 24.73MB
-  network: ws
-  port: 443
-  server: 149.7.16.194
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 149.7.16.194
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 89,233,321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-149.7.16.73-0154
-    | 24.777MB
-  network: ws
-  port: 443
-  server: 149.7.16.73
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: 149.7.16.73
-    path: /
 - cipher: aes-128-gcm
   name: 90|🇬🇧 英国
   password: fs23l/
@@ -1082,26 +1854,206 @@ proxies:
   server: 231103level1.unclemanco.com
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 95|SS-TCP-NA 🇬🇧 GB-18.134.110.47:443
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 18.134.110.47
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 95|SS-TCP-NA 🇬🇧 GB-35.176.85.246:443
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: 35.176.85.246
-  type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '95,98,482|未知126 #1'
-  password: s#W0tqg%@N
-  port: 23022
-  server: 109.120.186.9
+  cipher: auto
+  name: 91|🇬🇧GB-35.179.187.249-127
+  network: ws
+  port: 443
+  server: 35.179.187.249
   skip-cert-verify: true
   tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-35.178.235.225-128
+  network: ws
+  port: 443
+  server: 35.178.235.225
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-18.130.42.26-129
+  network: ws
+  port: 443
+  server: 18.130.42.26
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-18.130.76.39-138
+  network: ws
+  port: 443
+  server: 18.130.76.39
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-150.230.113.43-141
+  network: ws
+  port: 443
+  server: 150.230.113.43
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-141.147.100.133-145
+  network: ws
+  port: 443
+  server: 141.147.100.133
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-141.147.71.90-146
+  network: ws
+  port: 443
+  server: 141.147.71.90
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-141.147.110.164-147
+  network: ws
+  port: 443
+  server: 141.147.110.164
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-193.123.177.69-153
+  network: ws
+  port: 443
+  server: 193.123.177.69
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-130.162.163.237-155
+  network: ws
+  port: 443
+  server: 130.162.163.237
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-193.123.179.220-156
+  network: ws
+  port: 443
+  server: 193.123.179.220
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-141.147.95.9-159
+  network: ws
+  port: 443
+  server: 141.147.95.9
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-130.162.186.247-160
+  network: ws
+  port: 443
+  server: 130.162.186.247
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-84.8.149.150-166
+  network: ws
+  port: 443
+  server: 84.8.149.150
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 91|🇬🇧GB-193.123.178.131-174
+  network: ws
+  port: 443
+  server: 193.123.178.131
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-headers:
+    Host: nl.zhuk.us.kg
+  ws-path: /ylks
+- cipher: chacha20-ietf-poly1305
+  name: 95|SS-TCP-NA 🇬🇧 GB-3.10.137.189:443
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 3.10.137.189
   type: ss
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧 GB
@@ -1110,13 +2062,23 @@ proxies:
   port: 990
   server: 185.126.239.250
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   country: 🇬🇧 GB
-  name: '115,208,343,359|PR-185.47.255.22-5676 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
-  type: ss
+  h2-opts: {}
+  http-opts: {}
+  name: 115,208|🇬🇧 GB_394_0@393
+  network: ws
+  port: 443
+  server: 158.180.228.226
+  servername: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-headers:
+    HOST: beyonddsz.cfd
+  ws-path: /linkws
 - alterId: 1
   cipher: auto
   name: 124,125,321,342,343,346,349,350,353,354,357,358,359,512|英国_1230013
@@ -1313,7 +2275,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 137,138,265,323,365,495|🇬🇧GB-172.99.190.50-1451
+  name: 137,138,323,365,495|🇬🇧GB-172.99.190.50-1451
   network: ws
   port: 443
   server: 172.99.190.50
@@ -1383,7 +2345,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 137,138,265,323,365,495|🇬🇧GB-149.7.16.188-1458
+  name: 137,138,211,265,323,365,495|🇬🇧GB-149.7.16.188-1458
   network: ws
   port: 443
   server: 149.7.16.188
@@ -2182,23 +3144,6 @@ proxies:
     headers:
       Host: uk-1.sharecentre.online
     path: /shirker
-- alterId: 0
-  cipher: auto
-  country: 🇬🇧 GB
-  h2-opts: {}
-  http-opts: {}
-  name: 208|🇬🇧 GB_394_0@393
-  network: ws
-  port: 443
-  server: 158.180.228.226
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-headers:
-    HOST: beyonddsz.cfd
-  ws-path: /linkws
 - country: 🇬🇧GB
   name: 208|🇬🇧GB_81_4@80
   network: tcp
@@ -2209,23 +3154,35 @@ proxies:
   type: trojan
   udp: true
 - country: 🇬🇧GB
-  name: 208|disney_netflix_GB_4@82
+  name: 208|🇬🇧GB_82_4@81
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.133.34.26
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  country: 🇬🇧GB
+  name: '208,482|未知62 #2'
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 35.179.14.78
+  skip-cert-verify: true
   sni: trojan.burgerip.co.uk
+  tls: true
   type: trojan
   udp: true
-- country: 🇬🇧GB
-  name: 208|🇬🇧GB_19_7@18
+- alterId: 0
+  cipher: auto
+  name: 211|Mgvpnsale-tcp-Mgvpnsale-100GB Free
   network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.175.105.81
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+  port: 443
+  server: fars.mglinux.ir
+  tls: false
+  type: vmess
+  uuid: cc4babbd-2cc7-4788-8c4a-ced9b2143ed5
 - alterId: 0
   cipher: auto
   name: 223,321,332,342,343,349,350,354,357,358,359,369,370,381,512|亚美尼亚_1230003
@@ -2427,16 +3384,6 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 265|GB🇬🇧 | 139.162.245.129-8880 | 79.67ms
-  network: kcp
-  port: '8880'
-  server: 139.162.245.129
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5bc989b6-6ffd-4f3f-df44-97a48d5bf9fb
-- alterId: 0
-  cipher: auto
   name: '265,379,424,426|🇺🇲 United States 176 #3'
   network: ws
   port: '80'
@@ -2449,16 +3396,6 @@ proxies:
     headers:
       Host: ee1.xv2ray.net
     path: /vmess
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 265|GB🇬🇧 | 54.38.214.156-8080 | 81.47ms
-  network: tcp
-  port: '8080'
-  server: 54.38.214.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 41bf26d7-8734-5ac2-8bba-76a724aaacbd
 - alterId: 0
   cipher: auto
   name: '265,424,426|🇺🇲 United States 268 #1'
@@ -2473,6 +3410,26 @@ proxies:
     headers:
       Host: ee1.xv2ray.net
     path: /vmess
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 265|GB🇬🇧 | 54.38.214.156-8080 | 150.63ms
+  network: tcp
+  port: '8080'
+  server: 54.38.214.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 41bf26d7-8734-5ac2-8bba-76a724aaacbd
+- alterId: 0
+  cipher: auto
+  name: 265|GB🇬🇧 | 139.162.245.129-8880 | 146.11ms
+  network: kcp
+  port: '8880'
+  server: 139.162.245.129
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5bc989b6-6ffd-4f3f-df44-97a48d5bf9fb
 - alterId: 0
   cipher: auto
   name: 290|RELAY🚩 | aboutus.CPIFORpERsIa.UK-443 | 2.24ms
@@ -2844,7 +3801,8 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 57b1c
+  name: '298,300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 57b1c
+    #1'
   network: ws
   port: '443'
   server: 172.236.12.27
@@ -2858,7 +3816,8 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 667fd
+  name: '298,300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 667fd
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -2872,7 +3831,8 @@ proxies:
     path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 37961
+  name: '298,300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 37961
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -2886,7 +3846,8 @@ proxies:
     path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ c0f63
+  name: '298,300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ c0f63
+    #1'
   network: ws
   port: '443'
   server: speed.cloudflare.com
@@ -2900,7 +3861,8 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.56 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 1be60
+  name: '298,300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 1be60
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -2914,7 +3876,8 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.12.56 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ b668c
+  name: '298,300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ b668c
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -2928,7 +3891,8 @@ proxies:
     path: /afrhms16v.bestxray.buzz:443/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.30.142 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 52cb1
+  name: '298,300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 52cb1
+    #1'
   network: ws
   port: '443'
   server: speed.cloudflare.com
@@ -2942,7 +3906,8 @@ proxies:
     path: /linkws/linja05.hwcar.sbs
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.30.151 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 76eb5
+  name: '298,300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:443 ◈ Akamai Technologies, Inc. ◈ 76eb5
+    #1'
   network: ws
   port: 443
   server: speed.cloudflare.com
@@ -2956,7 +3921,8 @@ proxies:
     path: /jahfkjha.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 5cd51
+  name: '298,300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 5cd51
+    #1'
   network: ws
   port: 2096
   server: speed.cloudflare.com
@@ -2970,7 +3936,8 @@ proxies:
     path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.236.20.110 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ c0fe7
+  name: '298,300|🔒🇬🇧 GB 172.236.20.110 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ c0fe7
+    #1'
   network: ws
   port: 8443
   server: speed.cloudflare.com
@@ -2984,7 +3951,7 @@ proxies:
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 172.99.190.50 ◈ ws:443 ◈ GTHost ◈ 6845f
+  name: '298,300|💰💥🇬🇧 GB 172.99.190.50 ◈ ws:443 ◈ GTHost ◈ 6845f #1'
   network: ws
   port: 443
   server: 172.99.190.50
@@ -2998,7 +3965,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 172.99.190.209 ◈ ws:443 ◈ GTHost ◈ bd51f
+  name: '298,300|🔒🇬🇧 GB 172.99.190.209 ◈ ws:443 ◈ GTHost ◈ bd51f #1'
   network: ws
   port: '443'
   server: 172.99.190.209
@@ -3012,7 +3979,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 68.168.31.196 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ 92f09
+  name: '298,300|💰💥🇬🇧 GB 68.168.31.196 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ 92f09 #1'
   network: ws
   port: '443'
   server: 68.168.31.196
@@ -3026,7 +3993,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 68.168.31.196 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ c33d6
+  name: '298,300|🔒🇬🇧 GB 68.168.31.196 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ c33d6 #1'
   network: ws
   port: '443'
   server: 68.168.31.196
@@ -3040,7 +4007,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ baf76
+  name: '298,300|💰💥🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ baf76 #1'
   network: ws
   port: '443'
   server: 68.168.31.242
@@ -3054,7 +4021,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 2b823
+  name: '298,300|💰💥🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 2b823 #1'
   network: ws
   port: 443
   server: 149.7.16.33
@@ -3068,7 +4035,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ c17ae
+  name: '298,300|🔒🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ c17ae #1'
   network: ws
   port: '443'
   server: 149.7.16.33
@@ -3082,7 +4049,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 149.7.16.75 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ d8b47
+  name: '298,300|💰💥🇬🇧 GB 149.7.16.75 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ d8b47 #1'
   network: ws
   port: '443'
   server: 149.7.16.75
@@ -3096,7 +4063,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '298,321,342,343,349,350,354,357,358,359,365|0|--38 #5'
+  name: '298,300,321,342,343,349,350,354,357,358,359,365|0|--38 #3'
   network: ws
   port: 443
   server: 149.7.16.102
@@ -3111,7 +4078,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.172 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ cce20
+  name: '298,300|🔒🇬🇧 GB 149.7.16.172 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ cce20 #1'
   network: ws
   port: '443'
   server: 149.7.16.172
@@ -3125,7 +4092,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 149.7.16.174 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 24aa0
+  name: '298,300|💰💥🇬🇧 GB 149.7.16.174 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 24aa0 #1'
   network: ws
   port: '443'
   server: 149.7.16.174
@@ -3139,11 +4106,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.174 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 3d68c
+  name: 298,300|🔒🇬🇧 GB 149.7.16.174 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 1560d
   network: ws
   port: '443'
   server: 149.7.16.174
-  servername: google.com
+  servername: janett.click
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
@@ -3153,7 +4120,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.188 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ e633f
+  name: '298,300|🔒🇬🇧 GB 149.7.16.188 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ e633f #1'
   network: ws
   port: '443'
   server: 149.7.16.188
@@ -3167,7 +4134,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|💰💥🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 63ee9
+  name: '298,300|💰💥🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 63ee9 #1'
   network: ws
   port: '443'
   server: 149.7.16.248
@@ -3181,7 +4148,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: aes-128-gcm
-  name: 298|💰💥🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ b0021
+  name: '298,300|💰💥🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ b0021 #1'
   network: ws
   port: '443'
   server: 149.7.16.248
@@ -3195,7 +4162,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ cd5a0
+  name: '298,300|🔒🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ cd5a0 #1'
   network: ws
   port: '443'
   server: 149.7.16.248
@@ -3209,7 +4176,7 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ ac577
+  name: '298,300|🔒🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ ac577 #1'
   network: ws
   port: '443'
   server: speed.cloudflare.com
@@ -3223,7 +4190,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🔒🇬🇧 GB 57.128.184.127 ◈ ws:443 ◈ OVH Ltd ◈ f9c07
+  name: '298,300|🔒🇬🇧 GB 57.128.184.127 ◈ ws:443 ◈ OVH Ltd ◈ f9c07 #1'
   network: ws
   port: '443'
   server: 162.159.195.169
@@ -3237,7 +4204,7 @@ proxies:
     path: /a.baradiha.com/linkvws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.12.27 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ ad134
+  name: '298,300|🇬🇧 GB 172.236.12.27 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ ad134 #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3251,7 +4218,7 @@ proxies:
     path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.12.27 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ b8e60
+  name: '298,300|🇬🇧 GB 172.236.12.27 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ b8e60 #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3265,7 +4232,7 @@ proxies:
     path: /jahfkjha.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.12.56 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ 5cea6
+  name: '298,300|🇬🇧 GB 172.236.12.56 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ 5cea6 #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3279,7 +4246,7 @@ proxies:
     path: /afrhms16v.bestxray.buzz/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.12.56 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ 86c14
+  name: '298,300|🇬🇧 GB 172.236.12.56 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ 86c14 #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3293,7 +4260,8 @@ proxies:
     path: /afrhms16v.bestxray.buzz:443/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.20.110 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ c546a
+  name: '298,300|🇬🇧 GB 172.236.20.110 ◈ ws:80 ◈ Akamai Technologies, Inc. ◈ c546a
+    #1'
   network: ws
   port: 80
   server: speed.cloudflare.com
@@ -3307,7 +4275,8 @@ proxies:
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.30.151 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ 3fbd0
+  name: '298,300|🇬🇧 GB 172.236.30.151 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ 3fbd0
+    #1'
   network: ws
   port: 8080
   server: speed.cloudflare.com
@@ -3321,7 +4290,8 @@ proxies:
     path: /jahfkjha.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 172.236.20.110 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 65162
+  name: '298,300|🇬🇧 GB 172.236.20.110 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 65162
+    #1'
   network: ws
   port: 8880
   server: speed.cloudflare.com
@@ -3335,7 +4305,7 @@ proxies:
     path: /glweidf.cfd/linkws
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 62.112.221.194 ◈ ws:80 ◈ G-Core Labs S.A. / GCL ◈ 15416
+  name: '298,300|🇬🇧 GB 62.112.221.194 ◈ ws:80 ◈ G-Core Labs S.A. / GCL ◈ 15416 #1'
   network: ws
   port: '80'
   server: 62.112.221.194
@@ -3349,7 +4319,7 @@ proxies:
     path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
 - alterId: 0
   cipher: auto
-  name: 298|🇬🇧 GB 62.112.221.194 ◈ ws:80 ◈ G-Core Labs S.A. / GCL ◈ be575
+  name: '298,300|🇬🇧 GB 62.112.221.194 ◈ ws:80 ◈ G-Core Labs S.A. / GCL ◈ be575 #1'
   network: ws
   port: '80'
   server: speed.cloudflare.com
@@ -3361,155 +4331,1160 @@ proxies:
     headers:
       Host: 50907082685942059876387799824779.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou
     path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ 7eceb
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: r-wispy-meadow-9221.fosoka9932.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ 74e85
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: late-wave-1d0a.lesijo3430.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ 839a9
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: vcp3.dehel15354.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ ed96d
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: llow-disk-4b7b.bigapax481.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ 5bcfd
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: yelan.eula.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: yelan.eula.cloudns.org
+    path: /linkws/linja05.hwcar.sbs
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.20.110 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ 867d9
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: worker-noisy-paper-fa00.hetoj18200.workers.dev
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2053 ◈ Akamai Technologies, Inc. ◈ b726a
+  network: ws
+  port: 2053
+  server: speed.cloudflare.com
+  servername: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ b58c0
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: r-wispy-meadow-9221.fosoka9932.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ bc08b
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: late-wave-1d0a.lesijo3430.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ 0c95d
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: vcp3.dehel15354.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ 39c7c
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: llow-disk-4b7b.bigapax481.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ 6f56b
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: yelan.eula.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: yelan.eula.cloudns.org
+    path: /linkws/linja05.hwcar.sbs
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.20.110 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ 1cb9c
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: worker-noisy-paper-fa00.hetoj18200.workers.dev
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2083 ◈ Akamai Technologies, Inc. ◈ 77c64
+  network: ws
+  port: 2083
+  server: speed.cloudflare.com
+  servername: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ c5aaa
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: r-wispy-meadow-9221.fosoka9932.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ f2b34
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: late-wave-1d0a.lesijo3430.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ 0d7d7
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: llow-disk-4b7b.bigapax481.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ f288d
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: vcp3.dehel15354.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ b3749
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: yelan.eula.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: yelan.eula.cloudns.org
+    path: /linkws/linja05.hwcar.sbs
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.20.110 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ 90bd9
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: worker-noisy-paper-fa00.hetoj18200.workers.dev
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2087 ◈ Akamai Technologies, Inc. ◈ d4c80
+  network: ws
+  port: 2087
+  server: speed.cloudflare.com
+  servername: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 2f1e5
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: r-wispy-meadow-9221.fosoka9932.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 94323
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: late-wave-1d0a.lesijo3430.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ acee8
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: vcp3.dehel15354.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ fbe4d
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: llow-disk-4b7b.bigapax481.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 8fcfa
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: yelan.eula.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: yelan.eula.cloudns.org
+    path: /linkws/linja05.hwcar.sbs
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.20.110 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 330a3
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: worker-noisy-paper-fa00.hetoj18200.workers.dev
+  tls: true
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:2096 ◈ Akamai Technologies, Inc. ◈ 39278
+  network: ws
+  port: 2096
+  server: speed.cloudflare.com
+  servername: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ 40d75
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: late-wave-1d0a.lesijo3430.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.27 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ a753b
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: r-wispy-meadow-9221.fosoka9932.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ 0c17e
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: vcp3.dehel15354.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.12.56 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ c2704
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: llow-disk-4b7b.bigapax481.workers.dev
+  tls: true
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.142 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ 61d51
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: yelan.eula.cloudns.org
+  tls: true
+  type: vmess
+  uuid: 39cec18f-a439-427c-9a4e-aeb6fcdf6f53
+  ws-opts:
+    headers:
+      Host: yelan.eula.cloudns.org
+    path: /linkws/linja05.hwcar.sbs
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 172.236.30.151 ◈ ws:8443 ◈ Akamai Technologies, Inc. ◈ c9d44
+  network: ws
+  port: 8443
+  server: speed.cloudflare.com
+  servername: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+  tls: true
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 68.168.31.196 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ d59b0
+  network: ws
+  port: '443'
+  server: 68.168.31.196
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nicoler.lol
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ e4080
+  network: ws
+  port: 443
+  server: 68.168.31.242
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nicoler.lol
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ c0bd1
+  network: ws
+  port: 443
+  server: 68.168.31.242
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nicola.pics
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 68.168.31.242 ◈ ws:443 ◈ GTHost / OBJX Networks ◈ 28e7d
+  network: ws
+  port: '443'
+  server: 68.168.31.242
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: irene.lat
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.33 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 1ff64
+  network: ws
+  port: '443'
+  server: 149.7.16.33
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: f.khilei.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 149.7.16.73 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 1d148
+  network: ws
+  port: '443'
+  server: 149.7.16.73
+  servername: janett.click
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: janett.click
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.75 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ c4e52
+  network: ws
+  port: '443'
+  server: 149.7.16.75
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kristin.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 149.7.16.75 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 5873e
+  network: ws
+  port: '443'
+  server: 149.7.16.75
+  servername: google.com
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: google.com
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.75 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ e37b9
+  network: ws
+  port: '443'
+  server: 149.7.16.75
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.102 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 66596
+  network: ws
+  port: '443'
+  server: 149.7.16.102
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: maureen.autos
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|🔒🇬🇧 GB 149.7.16.174 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ 81d6f
+  network: ws
+  port: '443'
+  server: 149.7.16.174
+  servername: meroiy.icu
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.188 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ f4dd0
+  network: ws
+  port: 443
+  server: 149.7.16.188
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: muriel.makeup
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|💰💥🇬🇧 GB 149.7.16.248 ◈ ws:443 ◈ GTHost / PSINet, Inc. ◈ d4a60
+  network: ws
+  port: '443'
+  server: 149.7.16.248
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: telegram.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ 47b57
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ 381d7
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ 0f16b
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ 5e48c
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ aa0a6
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.30.151 ◈ ws:2052 ◈ Akamai Technologies, Inc. ◈ 01aba
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ 4eba2
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ 7ad18
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ f53ca
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ fe572
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ 3e639
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.30.151 ◈ ws:2082 ◈ Akamai Technologies, Inc. ◈ 3201e
+  network: ws
+  port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ ad97d
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ daca9
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ 83818
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ b202f
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ 4898e
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.30.151 ◈ ws:2086 ◈ Akamai Technologies, Inc. ◈ da909
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ 29525
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ dda74
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ 2dacf
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ 80838
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ 2a4cb
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.30.151 ◈ ws:2095 ◈ Akamai Technologies, Inc. ◈ 9a667
+  network: ws
+  port: 2095
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ 8b8ba
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ f0c4c
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ 984bf
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ d878b
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:8080 ◈ Akamai Technologies, Inc. ◈ 9080c
+  network: ws
+  port: 8080
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 2d5da
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: late-wave-1d0a.lesijo3430.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.27 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 60002
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: r-wispy-meadow-9221.fosoka9932.workers.dev
+    path: /jahfkjha.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 2a252
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: vcp3.dehel15354.workers.dev
+    path: /afrhms16v.bestxray.buzz:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.12.56 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ bf26f
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  ws-opts:
+    headers:
+      Host: llow-disk-4b7b.bigapax481.workers.dev
+    path: /afrhms16v.bestxray.buzz/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.20.110 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 3bdc3
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
+  ws-opts:
+    headers:
+      Host: worker-noisy-paper-fa00.hetoj18200.workers.dev
+    path: /glweidf.cfd/linkws
+- alterId: 0
+  cipher: auto
+  name: 300|🇬🇧 GB 172.236.30.151 ◈ ws:8880 ◈ Akamai Technologies, Inc. ◈ 1f98c
+  network: ws
+  port: 8880
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
+  ws-opts:
+    headers:
+      Host: adu-tsw-thcdof-enprese-twithir-itableb-welsyndro-eibssma-absorp.autoimmune5.workers.dev
+    path: /jahfkjha.cfd:443/linkws
 - cipher: chacha20-ietf-poly1305
   name: 306|YouTube面具人哈乐_英国_2
   password: 76ZehNxtyrhe4tLmDYfHsq
   port: 8929
   server: 51.103.232.91
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_1
-  network: ws
-  port: '443'
-  server: 51.20.161.26
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_3
-  network: ws
-  port: '443'
-  server: 35.179.187.249
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_4
-  network: ws
-  port: '443'
-  server: 35.178.235.225
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_9
-  network: ws
-  port: '443'
-  server: 51.20.99.157
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_10
-  network: ws
-  port: '443'
-  server: 51.21.48.77
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_18
-  network: ws
-  port: '443'
-  server: 141.144.199.94
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_19
-  network: ws
-  port: '443'
-  server: 193.123.177.69
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_20
-  network: ws
-  port: '443'
-  server: 193.123.179.220
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_22
-  network: ws
-  port: '443'
-  server: 158.180.14.149
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_23
-  network: ws
-  port: '443'
-  server: 84.8.149.150
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
-- alterId: '0'
-  cipher: auto
-  name: 313|🇬🇧_英国_24
-  network: ws
-  port: '443'
-  server: 193.123.178.131
-  tls: true
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
 - cipher: chacha20-ietf-poly1305
   name: "320|TG:@hkaa0|英国_3\r"
   password: W74XFALLLuw6m5IA
@@ -3638,21 +5613,6 @@ proxies:
   uuid: 0f95cb36-4f7d-45be-b44d-d7a4f221ad49
   ws-opts:
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 321,342,343,349,350,354,357,358,359,365,368|🇬🇧GB-172.99.190.206-8105
-  network: ws
-  port: 443
-  server: 172.99.190.206
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 321,342,343,346,349,350,353,354,357,358,359,480|🇬🇧GB-149.7.16.188-0167 | 19.622MB
@@ -3846,7 +5806,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359,365|[🏁]t.me/ConfigsHub #21'
+  name: '321,342,343,349,350,354,357,358,359,365|[🏁]t.me/ConfigsHub #16'
   network: ws
   port: '20292'
   server: 8.211.192.102
@@ -4063,6 +6023,12 @@ proxies:
   password: G!yBwPWH3Vao
   port: 809
   server: 78.129.253.9
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '343,359|🇬🇧GB-89.185.84.185-1206 #1'
+  password: aXuV8k5a4NFmkphgr5NTlL
+  port: 52338
+  server: 89.185.84.185
   type: ss
 - cipher: aes-256-gcm
   name: '343,359|🇧GB-185.108.105.129-1425 #1'
@@ -4317,7 +6283,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '386|🇬🇧_GB_英国 #2'
+  name: '386|🇬🇧_GB_英国 #3'
   network: ws
   port: 2095
   server: amstdhebb.76898102.xyz
@@ -4330,7 +6296,7 @@ proxies:
     path: /funsdfrh
 - alterId: 0
   cipher: auto
-  name: '386|🇬🇧_GB_英国 #3'
+  name: '386|🇬🇧_GB_英国 #4'
   network: ws
   port: 2052
   server: 66.ddzdd.top
@@ -4343,7 +6309,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '386|🇬🇧_GB_英国 #4'
+  name: '386|🇬🇧_GB_英国 #5'
   network: ws
   port: 2052
   server: 55.ddzdd.top
