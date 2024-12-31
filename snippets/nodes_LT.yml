@@ -1,59 +1,60 @@
 proxies:
+- cipher: aes-256-cfb
+  name: 15,115,156,170,171,200,227,241,272,321,332,335,342,343,344,345,350,351,352,354,358,359,406,420,423,484,486,489|8J%2BHr%2FCfh7VKUC0xMy4yMzEuMTczLjYtMDc0NQ%3D%3D
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: '8081'
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: 26,27,46,47,65,66,89,95,115,125,200,208,329,343,346,353,359,480,484|21|_146
+  password: qYEN5HX4JKeVCdEC
+  port: 9039
+  server: 195.238.126.84
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '26,27,32,46,47,75,89,115,125,208,343,346,353,359|🇹LT-45.87.175.154-0324 #1'
-  password: 4a2rfixophdjffa8KVA4Aa
+  name: '26,27,29,30,32,45,46,47,75,80,95,115,125,208,231,313,343,359|🇱🇹LT-45.87.175.154-2213
+    #1'
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.154
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 26,27,46,47,66,75,115,208,329,343,359,480|LT-45.87.175.164-3312 | 19.241MB
+  name: 26,27,46,47,65,66,95,115,208,329,343,359,480|LT-45.87.175.164-3313 | 19.878MB
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.164
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 26,27,46,47,208,343,359,480|LT-45.87.175.171-5932 | 17.394MB
+  name: '26,27,46,47,65,66,73,95,98,115,208,329,343,359,482|未知68 14.2MB/s #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.171
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 26,27,46,47,65,73,75,89,115,125,208,343,346,353,359,480|LT-45.87.175.178-3250
-    | 23.027MB
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
   server: 45.87.175.178
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 26,27,32,46,47,75,89,115,125,208,320,343,346,353,359,480|LT-45.87.175.181-5895
-    | 19.056MB
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: '26,27,46,47,65,66,73,95,115,208,329,343,359|🇹LT-45.87.175.199-5695 #1'
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.181
+  server: 45.87.175.199
   type: ss
   udp: true
-- name: '26,27,52|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.132:443 #2'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 86.38.214.132
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - alterId: 0
   cipher: auto
   name: 32|[VMess] 🇱🇹 _立陶宛
@@ -129,7 +130,20 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: '43,44,50,51|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #3'
+- name: 43,44,50,51,95|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
+- name: 43,44,50,51,95|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
   network: ws
   password: bpb-trojan
   port: 443
@@ -142,27 +156,19 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
-- cipher: aes-256-cfb
-  name: 48,49,66,75,89,115,125,200,208,329,343,346,353,359,480,484|21|_146
-  password: qYEN5HX4JKeVCdEC
-  port: 9039
-  server: 195.238.126.84
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: 48,49,89,125,208,320,343,346,353,359,480|LT-45.87.175.166-3339 | 24.069MB
+  country: 🇱🇹 LT
+  name: '46,47,65,95,115,320,343,359|🇹LT-45.87.175.166-1113 #1'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.166
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 48,49,65,73,75,115,208,343,359,480|LT-45.87.175.199-3346 | 17.402MB
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: 46,47,95|SS-TCP-NA 🇱🇹 LT-45.87.175.171:8080
+  password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
-  server: 45.87.175.199
+  server: 45.87.175.171
   type: ss
   udp: true
 - alterId: 0
@@ -191,16 +197,6 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
-- cipher: aes-256-cfb
-  name: 272,321,342,350,354,358,423|8J%2BHrvCfh6pJRS0xOC4yMDIuMTcuMTU1LTYxODc%3D
-  obfs: http_simple
-  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
-  password: YpX2opBbrfqJzzMs
-  port: '42833'
-  protocol: origin
-  protocol-param: ''
-  server: z0116.security-cloudfront-cdn.com
-  type: ssr
 - cipher: chacha20-ietf
   name: 272,321,342,350,354,358,423|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
   obfs: http_simple
@@ -233,7 +229,7 @@ proxies:
   type: ssr
 - alterId: 64
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|LT-85.206.165.36-0810 #1'
+  name: '321,342,343,349,350,354,357,358,359|LT-85.206.165.36-0806 #1'
   network: ws
   port: 443
   server: 85.206.165.36
@@ -246,7 +242,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|LT-85.206.165.38-9266 #1'
+  name: '321,342,343,349,350,354,357,358,359|LT-85.206.165.38-9307 #1'
   network: ws
   port: 443
   server: 85.206.165.38
