@@ -1,9 +1,23 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 3|🔒 VM-WS-TLS 🇨🇦 CA-172.105.13.246:443
+  network: ws
+  port: '443'
+  server: 172.105.13.246
+  servername: adenc36v.xtooltech.cfd
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
   grpc-opts:
     grpc-service-name: ''
-  name: '10,211,266,267,507|@Vip_Security join us - 59
+  name: '10,211,507|@Vip_Security join us - 59
 
     '
   network: grpc
@@ -15,9 +29,7 @@ proxies:
   uuid: 55d1bdb3-170b-420e-a07d-b08bac0c6cff
 - alterId: 0
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: '18,29,30,61,75,108,244,246,321,342,343,349,350,354,357,358,359,369,371,372,373,374|🇨🇦
+  name: '18,29,30,108,244,246,321,342,343,349,350,354,357,358,359,369,371,372,373,374|🇨🇦
     _加拿大 #6'
   network: ws
   port: '443'
@@ -34,8 +46,8 @@ proxies:
     path: /ylks
 - alterId: 0
   cipher: auto
-  name: '18,41,42,95,159,201,244,252,460,468,473|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.167:28527
-    #6'
+  name: '18,41,42,78,95,159,201,244,252,460,468|🔒 VM-WS-NA 🇨🇦 CA-141.195.112.167:28527
+    #5'
   network: ws
   port: '28527'
   server: 141.195.112.167
@@ -104,50 +116,35 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 29,30,75,108,321,342,343,349,350,354,357,358,359,369,512|加拿大_0102017
-  network: ws
-  port: '443'
-  server: 35.182.7.190
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      Host: nl.zhuk.us.kg
-    path: /ylks
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: '29,30,48,49,65,89,95,208,343,346,353,359|🇺🇸US-64.74.163.130-1557 #2'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.130
+- cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '26,27,46,47,75,95,208,343,359|🇦CA-158.51.123.253-6634 #1'
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 158.51.123.253
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 29,30,75,321,342,343,349,350,354,357,358,359,495,512|加拿大_0102015
-  network: ws
-  port: '443'
-  server: 140.238.158.238
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: '26,27,46,47,95,208,343,359|🇦CA-185.213.20.227-6655 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.20.227
+  type: ss
   udp: true
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+- name: 26,27,52,95|TR-WS-TLS 🇨🇦 CA-23.227.38.208:2053
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 2053
+  server: 23.227.38.208
+  skip-cert-verify: false
+  sni: bPB-V.pageS.dEV
+  type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: nl.zhuk.us.kg
-    path: /ylks
+      Host: bPB-V.pageS.dEV
+    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
   name: 32|[VMess] 🇨🇦 加拿大 V2CROSS.COM
@@ -205,34 +202,13 @@ proxies:
   uuid: 1ded1ec9-7557-4c15-aaac-758bedea64fd
   ws-opts:
     path: /
-- name: 43,44,50,51,95|TR-WS-TLS 🇨🇦 CA-23.227.38.208:2053
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 2053
-  server: 23.227.38.208
-  skip-cert-verify: false
-  sni: bPB-V.pageS.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bPB-V.pageS.dEV
-    path: /Telegram@V2ray_Alpha/?ed=2560
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 46,47,65,66,73,75,89,95,125,208,329,343,346,353,359,480|🇨🇦CA-149.22.95.183-3725
+  name: 46,47,65,66,75,89,95,125,208,329,343,346,353,359,480|🇨🇦CA-149.22.95.183-3725
     | 54.753MB
   password: shadowsocks
   port: 443
   server: 149.22.95.183
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '46,47,73,95,208,343,359|🇦CA-158.51.123.253-6634 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 158.51.123.253
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -240,14 +216,6 @@ proxies:
   password: nlVqIVyKwWoDsD7dVYT9Y0
   port: 65305
   server: 81.19.140.31
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '48,49,95,208,343,359|🇦CA-185.213.20.227-6655 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.213.20.227
   type: ss
   udp: true
 - alterId: 0
@@ -280,29 +248,22 @@ proxies:
     path: /racevpn
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
-  name: 65,73,115,132,208,343,359,484|21|🇨🇦CA_511
+  name: 65,75,115,132,208,343,359,484|21|🇨🇦CA_511
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  country: 🇨🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: '66,68,73,75,329|🇨🇦CA-172.105.13.246-8667 #2'
+  name: '66,68,329|🇨🇦CA-172.105.13.246-8667 #2'
   network: ws
   port: 443
   server: denc36.xtooltech.cfd
-  servername: adenc36v.xtooltech.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
   uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  version: '2'
   ws-opts:
     headers:
       host: adenc36v.xtooltech.cfd
@@ -313,7 +274,7 @@ proxies:
   country: 🇨🇦CA
   h2-opts: {}
   http-opts: {}
-  name: '66,68,208,313,321,329,342,343,349,350,354,357,358,359|🇦CA-35.182.188.214-6356
+  name: '66,68,208,321,329,342,343,349,350,354,357,358,359|🇦CA-35.182.188.214-6356
     #1'
   network: ws
   port: 443
@@ -325,56 +286,6 @@ proxies:
   uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
   ws-opts:
     path: /ylks
-- alterId: 0
-  cipher: auto
-  name: 73|🇨🇦  加拿大 17
-  network: ws
-  port: 80
-  server: 193.203.203.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 59db4f71-1328-56be-aa15-51261e8536e1
-  version: '2'
-  ws-opts:
-    path: /vmess#t-me-Serversiran11?ed=2048
-- alterId: 0
-  cipher: auto
-  country: 🇨🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: 75,132|🇺🇸US(AzadNet.t.me)_440
-  network: ws
-  port: 443
-  server: 134.195.198.147
-  servername: inna.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: inna.cfd
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  country: 🇨🇦CA
-  h2-opts: {}
-  http-opts: {}
-  name: 75,132|🇺🇸US(AzadNet.t.me)_436
-  network: ws
-  port: 443
-  server: 172.111.36.108
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      host: irene.lat
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 79,86,161,311,340,341|其他 68
@@ -393,128 +304,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81,89,233,321,342,343,346,349,350,353,354,357,358,359,369,512|加拿大_0102004
+  name: '81,223,233,328,369,489|🇺🇸_US_美国 #333'
   network: ws
-  port: '443'
-  server: 134.195.198.147
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: inna.cfd
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 81,233,321,342,343,349,350,354,357,358,359,369,512|未知_0102110
-  network: ws
-  port: '2095'
-  server: 104.16.60.8
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-  ws-opts:
-    headers:
-      Host: worker-mute-bar-1719.nifotok993.workers.dev
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 81,233,321,342,343,349,350,354,357,358,359,369|TG频道@mfbpn-0839-FR
-  network: ws
-  port: 443
-  server: irhms03.dongfeng.cfd
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fa5b55cd-cafc-4de0-a4c8-722e02a9f58e
-  ws-opts:
-    headers:
-      Host: hms03.dongfeng.cfd
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 81,233,321,342,343,349,350,354,357,358,359,369,512|美国_0102093
-  network: ws
-  port: '443'
-  server: ip.sb
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9fc77e5c-7621-403d-8bd2-959eaa1167e8
-  ws-opts:
-    headers:
-      Host: 00.orangelightyo.us.kg
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 81,233,265,268,269,272,284,321,342,343,349,350,354,357,358,359,369,507,512|未知_0102111
-  network: ws
-  port: '2096'
-  server: 104.18.79.53
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 27dbf6c4-5727-45a6-b54c-142995ff4ad7
-  ws-opts:
-    headers:
-      Host: kus.htg8866.us.kg
-    path: /465YRTS2AQTEW
-- alterId: 0
-  cipher: auto
-  name: 81,233,321,342,343,349,350,354,357,358,359,369,512|未知_0102112
-  network: ws
-  port: '8443'
-  server: www.visa.com.sg
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 27dbf6c4-5727-45a6-b54c-142995ff4ad7
-  ws-opts:
-    headers:
-      Host: kus.htg8866.us.kg
-    path: /465YRTS2AQTEW
-- alterId: 0
-  cipher: auto
-  name: 81,201,233,265,336,369|TG频道@mfbpn-0849-RELAY
-  network: ws
-  port: 80
-  server: 162.159.136.98
+  port: 8080
+  server: 162.159.1.33
   servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
   ws-opts:
     headers:
-      Host: rn2.hostmjj.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 81,233,321,342,343,349,350,354,357,358,359,369,512|加拿大_0102003
-  network: ws
-  port: '443'
-  server: 35.182.188.214
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-  ws-opts:
-    headers:
-      Host: nl.zhuk.us.kg
-    path: /
+      Host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - cipher: aes-128-gcm
   name: 84|🇨🇦 Web 加拿大I-标准 - AyucLouD-Services
   password: ayucloud1
@@ -533,21 +334,6 @@ proxies:
   server: host-041.crazyspeed.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '89,321,342,343,346,349,350,353,354,357,358,359|🇨CA-172.105.13.246-0382 #1'
-  network: ws
-  port: 443
-  server: denc36.xtooltech.cfd
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /
 - alterId: 0
   cipher: auto
   name: 89,321,342,343,346,349,350,353,354,357,358,359,512|未知_0102080
@@ -577,6 +363,21 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 89,321,342,343,346,349,350,353,354,357,358,359,512|加拿大_0102004
+  network: ws
+  port: '443'
+  server: 134.195.198.147
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
     path: /
 - cipher: aes-128-gcm
   name: 90|🇨🇦 加拿大
@@ -615,6 +416,21 @@ proxies:
   ws-headers:
     Host: nl.zhuk.us.kg
   ws-path: /ylks
+- alterId: 0
+  cipher: auto
+  name: 108,321,342,343,349,350,354,357,358,359,369,512|加拿大_0102017
+  network: ws
+  port: '443'
+  server: 35.182.7.190
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
 - alterId: '0'
   cipher: auto
   name: 114|[🇨🇦]23.227.38.39:443(4612618c-24cd-4379-9924-cfdf3d61fa5a)
@@ -957,7 +773,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 137,138,369|TG频道@mfbpn-0341-RELAY
+  name: 137,138,369|TG频道@mfbpn-0294-RELAY
   network: ws
   port: 2086
   server: 104.26.8.156
@@ -1170,7 +986,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '137,138,140,265,369,484,507|@Vip_Security join us - 147
+  name: '137,138,140,265,369,484,507|@Vip_Security join us - 149
 
     '
   network: ws
@@ -1355,7 +1171,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 137,138,369|TG频道@mfbpn-0344-RELAY
+  name: 137,138,369|TG频道@mfbpn-0297-RELAY
   network: ws
   port: 2086
   server: 104.19.21.63
@@ -1505,7 +1321,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 137,138,265,365|🏁RELAY-104.21.46.121-2762
+  name: 137,138,365|🏁RELAY-104.21.46.121-2762
   network: ws
   port: 443
   server: 104.21.46.121
@@ -1545,7 +1361,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: '137,138,507|@Vip_Security join us - 278
+  name: '137,138,507|@Vip_Security join us - 285
 
     '
   network: ws
@@ -1561,7 +1377,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 137,138,265|RELAY🚩 | 7whrapid-river-a083.sisay70779.workers.dev-443 | 26.97ms
+  name: 137,138,265|RELAY🚩 | 7whrapid-river-a083.sisay70779.workers.dev-443 | 46.84ms
   network: ws
   port: '443'
   server: 104.18.206.97
@@ -1615,7 +1431,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,198,290|The Netherlands #2'
+  name: '137,138,198,265,290|The Netherlands #2'
   network: ws
   port: '443'
   server: 188.114.96.1
@@ -1692,7 +1508,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '137,138,265,266,267|US🇺🇸 | 73012792103530616183052842717949.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou-80
-    | 16.87ms #1'
+    | 22.89ms #1'
   network: ws
   port: '80'
   server: 104.26.15.148
@@ -1748,7 +1564,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 137,138,160,198,265|DE🇩🇪 | linde06.indiavideo.sbs-443 | 99.05ms
+  name: 137,138,160,198,265|DE🇩🇪 | linde06.indiavideo.sbs-443 | 114.04ms
   network: ws
   port: '443'
   server: 172.67.170.13
@@ -1779,7 +1595,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,265,365,507|@Vip_Security join us - 234
+  name: '137,138,265,365,507|@Vip_Security join us - 240
 
     '
   network: ws
@@ -1795,7 +1611,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,290,291,507|@Vip_Security join us - 130
+  name: '137,138,290,291,507|@Vip_Security join us - 133
 
     '
   network: ws
@@ -1827,13 +1643,14 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,181,198,200,229,265,272,290,336,493,507|@Vip_Security join us - 584
+  name: '137,138,181,198,200,229,265,266,267,272,290,336,493,507|@Vip_Security join
+    us - 593
 
     '
   network: ws
   port: '443'
   server: linde06.indiavideo.sbs
-  servername: linde06.indiavideo.sbs
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1845,7 +1662,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,365,507|@Vip_Security join us - 133
+  name: '137,138,365,507|@Vip_Security join us - 136
 
     '
   network: ws
@@ -1861,7 +1678,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 137,138,265|RELAY🚩 | subhk.osafari599.workers.dev-8880 | 20.15ms
+  name: 137,138,265|RELAY🚩 | subhk.osafari599.workers.dev-8880 | 21.36ms
   network: ws
   port: '8880'
   server: 104.16.68.38
@@ -1875,7 +1692,7 @@ proxies:
     path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,507|@Vip_Security join us - 484
+  name: '137,138,507|@Vip_Security join us - 492
 
     '
   network: ws
@@ -1972,7 +1789,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 137,138,198,265|RELAY🚩 | green-morning-ce19.mehdipost667.workers.dev-443 |
-    21.72ms
+    22.08ms
   network: ws
   port: '443'
   server: 172.66.213.38
@@ -2072,7 +1889,7 @@ proxies:
     path: /gwdef.sbs:443/linkws
 - alterId: 0
   cipher: auto
-  name: 137,138,265|RELAY🚩 | green-morning-ce19.mehdipost667.workers.dev-443 | 2.49ms
+  name: 137,138,265|RELAY🚩 | green-morning-ce19.mehdipost667.workers.dev-443 | 3.38ms
   network: ws
   port: '443'
   server: 162.159.1.94
@@ -2127,7 +1944,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '137,138,507|@Vip_Security join us - 476
+  name: '137,138,507|@Vip_Security join us - 484
 
     '
   network: ws
@@ -3452,9 +3269,10 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 170,321,342,343,349,350,354,357,358,359,438,513|加拿大_1231001
+  name: 170,321,342,343,349,350,354,357,358,359,438|github.com/freefq - 美国CloudFlare公司CDN节点
+    12
   network: ws
-  port: '80'
+  port: 80
   server: shopify.com
   servername: ''
   skip-cert-verify: false
@@ -3689,7 +3507,7 @@ proxies:
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - cipher: aes-128-cfb
-  name: 191,413,496|Canada_Montreal_ssr_1161
+  name: 191|Canada_Montreal_ssr_1145
   obfs: http_post
   password: $$Turb0VPN$$
   port: 443
@@ -4712,7 +4530,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: '223,290,291,365,507|@Vip_Security join us - 131
+  name: '223,290,291,365,507|@Vip_Security join us - 134
 
     '
   network: ws
@@ -5179,22 +4997,24 @@ proxies:
     Host: ca3-245f9361a74onogs.mybestjj.com
   ws-path: /
 - alterId: 0
-  cipher: auto
-  name: 265|CA🇨🇦 | adenc36v.xtooltech.cfd-443 | 28.33ms
+  cipher: none
+  name: '265,266,267,507|@Vip_Security join us - 291
+
+    '
   network: ws
-  port: '443'
-  server: 172.236.192.193
-  servername: adenc36v.xtooltech.cfd
-  tls: true
+  port: '80'
+  server: 193.203.203.99
+  servername: ''
+  tls: false
   type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  uuid: 59db4f71-1328-56be-aa15-51261e8536e1
   ws-opts:
     headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws#@alpha_v2ray_fazayi,@,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
+      Host: zula.ir
+    path: /vmess#t-me-Serversiran11?ed=2048
 - alterId: 0
   cipher: auto
-  name: 265|CA🇨🇦 | adenc36v.xtooltech.cfd-443 | 21.21ms
+  name: 265|CA🇨🇦 | adenc36v.xtooltech.cfd-443 | 47.53ms
   network: ws
   port: '443'
   server: denc36.xtooltech.cfd
@@ -5206,6 +5026,20 @@ proxies:
     headers:
       Host: adenc36v.xtooltech.cfd
     path: /linkws#@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
+- alterId: 0
+  cipher: auto
+  name: 265|CA🇨🇦 | adenc36v.xtooltech.cfd-443 | 34.78ms
+  network: ws
+  port: '443'
+  server: 172.236.192.193
+  servername: adenc36v.xtooltech.cfd
+  tls: true
+  type: vmess
+  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
+  ws-opts:
+    headers:
+      Host: adenc36v.xtooltech.cfd
+    path: /linkws#@alpha_v2ray_fazayi,@,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
 - alterId: 0
   cipher: auto
   name: 290|Canada
@@ -5557,6 +5391,21 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 321,342,343,349,350,354,357,358,359,495,512|加拿大_0102015
+  network: ws
+  port: '443'
+  server: 140.238.158.238
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
   name: 321,342,343,349,350,354,357,358,359,370|🇨🇦 github.com/freefq - 加拿大魁北克省博阿努瓦OVH数据中心
     12
   network: ws
@@ -5629,6 +5478,21 @@ proxies:
   ws-opts:
     headers:
       Host: uk.xlkjjs.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 321,342,343,349,350,354,357,358,359,512|加拿大_0102003
+  network: ws
+  port: '443'
+  server: 35.182.188.214
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: nl.zhuk.us.kg
     path: /
 - alterId: 0
   cipher: auto
@@ -7912,6 +7776,19 @@ proxies:
     headers:
       Host: nomore.hideip.tk
     path: /
+- alterId: 1
+  cipher: auto
+  name: 338,339|🇺🇸 _US_美国_wmt10.26_179
+  network: ws
+  port: '443'
+  server: 104.16.67.38
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: alvvin.click
+    path: linkvws
 - alterId: 0
   cipher: auto
   name: 338,340,341|其他 331
@@ -9235,20 +9112,6 @@ proxies:
     headers:
       Host: ''
     path: /ray
-- alterId: 0
-  cipher: auto
-  name: '442,444,446,461,462|🔒 VM-WS-TLS 🇨🇦 CA-172.105.13.246:443 #4'
-  network: ws
-  port: '443'
-  server: 172.105.13.246
-  servername: adenc36v.xtooltech.cfd
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    headers:
-      Host: adenc36v.xtooltech.cfd
-    path: /linkws
 - alterId: 64
   cipher: auto
   name: 476|_CA__182
