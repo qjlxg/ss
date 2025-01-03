@@ -87,53 +87,47 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
-- cipher: aes-256-cfb
-  name: 46,47,65,66,75,95,115,200,208,329,343,359,484|21|_146
-  password: qYEN5HX4JKeVCdEC
-  port: 9039
-  server: 195.238.126.84
-  type: ss
+- name: 43,44,50,51,95|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 89.116.250.94
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '46,47,65,66,74,75,86,95,115,208,310,329,343,359|LT-45.87.175.171-0747 #1'
+  name: '46,47,66,74,75,86,95,208,310,329,343,359|LT-45.87.175.171-0747 #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 46,47,65,66,75,89,95,115,125,208,329,343,346,353,359,480|LT-45.87.175.178-3341
-    | 33.08MB
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: 46,47,66,75,89,95,115,125,191,208,329,343,346,353,359,413,480,482|未知85 325.2KB/s
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.178
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇱🇹 LT
-  name: 48,49,74,75,78,80,86,95,115,125,208,310,320,343,359,496|Lithuania_None_ss_1119
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.166
-  tfo: false
+- cipher: aes-256-cfb
+  name: 48,49,66,95,200,208,329,343,359,484|21|_146
+  password: qYEN5HX4JKeVCdEC
+  port: 9039
+  server: 195.238.126.84
   type: ss
   udp: true
-- name: 95|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 89.116.250.94
-  sni: bpb.my79801.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - alterId: 0
   cipher: auto
   name: '159,321|D-WEALTH-2386 #1'
@@ -159,13 +153,6 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
-- cipher: aes-256-cfb
-  name: 208,343,359,385|[97]🇵🇱PL-217.30.10.18-43234
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - cipher: chacha20-ietf
   name: 272,321,342,350,354,358,423|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
   obfs: http_simple
