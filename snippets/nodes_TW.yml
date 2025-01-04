@@ -31,7 +31,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 29,30,75,83,94,191,231,256,413|13| |@ripaojiedian
+  name: 29,30,75,83,94,191,231,256,413,496|China_Guangzhou_ss_1133
   password: cfc6f3f75f5ef7b2665c
   plugin: obfs
   plugin-opts:
@@ -57,15 +57,6 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.22.161.134
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
   name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
@@ -75,10 +66,10 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377
+  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.137
+  server: 60.249.28.136
   tfo: false
   type: ss
   udp: true
@@ -88,15 +79,6 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.138
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.60
   tfo: false
   type: ss
   udp: true
@@ -128,17 +110,38 @@ proxies:
   server: 103.115.108.83
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
+  name: 48,49,74,95,482|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.136
+  server: 211.22.161.134
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.137
   tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 62|04-0202-TW
+  client-fingerprint: chrome
+  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.60
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 62|04-0165-TW
   password: 290e70d6-4904-4e3c-8bd8-fbd8e95a6a0f
   port: 10001
   server: tw.cooc.icu
@@ -168,7 +171,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '74,75,91,343,359|🇨🇳CN-58.63.247.116-0847 #1'
+  name: '74,91,343,359|🇨🇳CN-58.63.247.116-0847 #1'
   password: b74518fb49bd645e6ce7
   port: 45915
   server: console.03.aliyun.aq.kunlunaqs.com
@@ -176,7 +179,7 @@ proxies:
   type: ss
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '74,75|🇹🇼 台湾|@ripaojiedian #1'
+  name: 74|🇹🇼 台湾|@ripaojiedian
   password: b74518fb49bd645e6ce7
   plugin: obfs
   plugin-opts:
@@ -186,6 +189,13 @@ proxies:
   server: console.03.aliyun.aq.kunlunaqs.com
   tfo: false
   type: ss
+- name: '82,304|❓ 未知_1 #1'
+  password: 338b9800-fb4d-4934-8425-388f6d4342f5
+  port: '33751'
+  server: tw4.akebi.cc
+  skip-cert-verify: false
+  sni: tw04.akebi.cc
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 82|🇨🇳 www.85la.com 台湾 06
@@ -206,22 +216,6 @@ proxies:
   port: 36918
   server: tw.ssrxray.click
   type: ss
-- name: 82|台湾-125.4KB/s
-  network: tcp
-  password: 1a668915-d98f-4440-8bac-2c51d508f811
-  port: 30337
-  server: 1.170.227.135
-  skip-cert-verify: true
-  sni: ddns.200566.xyz
-  type: trojan
-  udp: true
-- name: '82,304|❓ 未知_1 #1'
-  password: 338b9800-fb4d-4934-8425-388f6d4342f5
-  port: '33751'
-  server: tw4.akebi.cc
-  skip-cert-verify: false
-  sni: tw04.akebi.cc
-  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 82|台湾省新竹市 中华电信_174
@@ -233,9 +227,19 @@ proxies:
   type: vmess
   uuid: 2744bc46-8b19-40a5-9733-5bc819fa9553
   ws-opts:
-    headers:
-      host: app.dingtalk.com
-    path: /?ed
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 82|台湾省桃园市 中华电信_570
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    path: ''
 - name: 82|台湾-2.11MB/s_1
   network: tcp
   password: 3e769264-67e5-44cc-98bc-4d0a6ba1febb
@@ -254,10 +258,16 @@ proxies:
   sni: tr.koiok.us.kg
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  name: 82|台湾
+  password: 88430607-f080-4816-b2e5-1a47e193a057
+  port: 571
+  server: cntwlayer1.labexit.xyz
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '82,95,182,183,188,198,229,271,321,336,342,343,349,350,354,357,358,359,365,376,473,489,493,507|@Vip_Security
-    join us - 96
+  name: '82,95,182,183,188,198,229,321,336,342,343,349,350,354,357,358,359,365,376,473,489,493,507|@Vip_Security
+    join us - 101
 
     '
   network: ws
@@ -273,12 +283,15 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-128-gcm
-  name: 82|台湾
-  password: 88430607-f080-4816-b2e5-1a47e193a057
-  port: 571
-  server: cntwlayer1.labexit.xyz
-  type: ss
+- name: 82|台湾-125.4KB/s
+  network: tcp
+  password: 1a668915-d98f-4440-8bac-2c51d508f811
+  port: 30337
+  server: 1.170.227.135
+  skip-cert-verify: true
+  sni: ddns.200566.xyz
+  type: trojan
+  udp: true
 - cipher: aes-128-gcm
   name: 84|🇹🇼 Game 台湾01-标准 - AyucLouD-Services
   password: ayucloud1
@@ -444,7 +457,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 43297dad-fc2e-304a-9476-3e78e4562384
+  uuid: 791348df-8c3c-31b0-8483-2da7dfeedba2
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -941,7 +954,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 16
   cipher: auto
-  name: 133,134,513|台湾_0103012
+  name: 133,134,513|台湾_0104004
   network: ws
   port: '10053'
   server: 45.43.59.150
@@ -982,7 +995,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇯🇵JP-52.196.144.61-5038 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇯🇵JP-52.196.144.61-5038 #1'
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -997,7 +1010,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.24-5039 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.24-5039 #1'
   network: ws
   port: 80
   server: 104.29.64.24
@@ -1049,7 +1062,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇼TW-220.130.80.179-5043 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇼TW-220.130.80.179-5043 #1'
   network: ws
   port: 443
   server: 220.130.80.179
@@ -1086,7 +1099,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇼TW-165.154.226.45-5045 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇼TW-165.154.226.45-5045 #1'
   network: ws
   port: 80
   server: 165.154.226.45
@@ -1099,7 +1112,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-5046 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-5046 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1136,7 +1149,7 @@ proxies:
   uuid: 6d896dd9-21ff-3844-a72a-332507486049
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-165.154.253.35-5048 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-165.154.253.35-5048 #1'
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -1203,7 +1216,7 @@ proxies:
     path: /moontoday
 - alterId: 64
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-61.216.85.68-5053 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-61.216.85.68-5053 #1'
   network: ws
   port: 443
   server: 61.216.85.68
@@ -1218,7 +1231,7 @@ proxies:
     path: /path/243535322906
 - alterId: 2
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇼TW-114.37.209.177-5054 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇼TW-114.37.209.177-5054 #1'
   network: ws
   port: 10001
   server: ddns2.airtcp.vip
@@ -1233,7 +1246,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇨🇦CA-104.247.81.52-5055 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇨🇦CA-104.247.81.52-5055 #1'
   network: ws
   port: 443
   server: tw.xlkjjs.top
@@ -1266,7 +1279,7 @@ proxies:
   uuid: ab42ea1f-8e2f-3fff-8a11-d124d62b849e
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-165.154.246.107-5056 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-165.154.246.107-5056 #1'
   network: ws
   port: 80
   server: 165.154.246.107
@@ -1281,7 +1294,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|RELAY-104.29.64.30-5057 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|RELAY-104.29.64.30-5057 #1'
   network: ws
   port: 443
   server: 104.29.64.30
@@ -1309,7 +1322,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.36-5059 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.36-5059 #1'
   network: ws
   port: 443
   server: 104.29.64.36
@@ -1337,7 +1350,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🏁RELAY-172.67.68.56-5061 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🏁RELAY-172.67.68.56-5061 #1'
   network: ws
   port: 443
   server: tw02.nttkk.com
@@ -1365,7 +1378,7 @@ proxies:
     path: /live
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-122.118.161.209-5063 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-122.118.161.209-5063 #1'
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -1380,7 +1393,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🇹🇼TW-61.224.77.47-5064 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🇹🇼TW-61.224.77.47-5064 #1'
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -1430,7 +1443,7 @@ proxies:
   uuid: 1bd772e1-ce31-4980-9cb7-a4d24873aa1b
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|RELAY-104.29.64.25-5067 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|RELAY-104.29.64.25-5067 #1'
   network: ws
   port: 443
   server: 104.29.64.25
@@ -1445,7 +1458,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '170,271,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.5-5068 #1'
+  name: '170,321,342,343,349,350,354,357,358,359|🏁RELAY-104.29.64.5-5068 #1'
   network: ws
   port: 443
   server: 104.29.64.5
@@ -1487,7 +1500,7 @@ proxies:
   http-opts:
     path:
     - /
-  name: 171,271,321,342,343,349,350,354,357,358,359,381|1.47|TWyoutube资源分享师156
+  name: 171,321,342,343,349,350,354,357,358,359,381|1.47|TWyoutube资源分享师156
   network: http
   port: '20715'
   server: 45.121.51.103
@@ -1753,7 +1766,7 @@ proxies:
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
 - alterId: 1
   cipher: auto
-  name: '227,271,321,342,343,349,350,354,357,358,359|TW-1.161.186.146-1977 #1'
+  name: '227,321,342,343,349,350,354,357,358,359|TW-1.161.186.146-1977 #1'
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -1897,7 +1910,7 @@ proxies:
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
 - alterId: 0
   cipher: auto
-  name: '228,271,321,342,343,349,350,354,357,358,359|🇼TW-111.250.109.151-2183 #1'
+  name: '228,321,342,343,349,350,354,357,358,359|🇼TW-111.250.109.151-2183 #1'
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -1955,144 +1968,6 @@ proxies:
   server: ly.yingwuyun.cyou
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '271,321,332,342,343,349,350,354,357,358,359,494|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-    #62'
-  network: ws
-  port: '80'
-  server: 165.154.246.71
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
-  ws-opts:
-    headers:
-      Host: 165.154.246.71
-    path: ?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '271,321,337,340,341,342,343,349,350,354,357,358,359|TW-61.222.202.140-2438
-    #1'
-  network: ws
-  port: 33792
-  server: 61.222.202.140
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|🇼TW-211.72.35.110-4705 #1'
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woideneu7.jsworld.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 2eb30779-2e8c-4b89-e6bd-a0ec760ca506
-  ws-opts:
-    headers:
-      Host: woideneu7.jsworld.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4706 #1'
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: euserv1.aifx.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 3953ce0d-25df-4427-8371-a8ac26cc36fe
-  ws-opts:
-    headers:
-      Host: euserv1.aifx.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4707 #1'
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woideneu4.jsworld.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: cb6448e3-08e1-413d-bc17-d3b0dba9aae9
-  ws-opts:
-    headers:
-      Host: woideneu4.jsworld.eu.org
-    path: /nishikata
-- alterId: 0
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4708 #1'
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: haxeu7.jsworld.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: dfd1d80f-caf0-4b11-e0bb-733a2710a07a
-  ws-opts:
-    headers:
-      Host: haxeu7.jsworld.eu.org
-    path: /nishikata3
-- alterId: 0
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4709 #1'
-  network: ws
-  port: 443
-  server: 211.72.35.110
-  servername: woidenca1.jsworld.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: e87f326f-55ac-487f-a3d1-57c592bb663a
-  ws-opts:
-    headers:
-      Host: woidenca1.jsworld.eu.org
-    path: /nishikata3
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - tw2.sdklkd.org
-    method: GET
-    path:
-    - /
-  name: 271,321,342,343,349,350,354,357,358,359,365|13,14|台湾|@ripaojiedian
-  network: http
-  port: '1443'
-  server: tw2.sdklkd.org
-  servername: tw2.sdklkd.org
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
-- alterId: 64
-  cipher: auto
-  name: '271,321,342,343,349,350,354,357,358,359|TW-103.177.33.19-9077 #1'
-  network: ws
-  port: 30013
-  server: 103.177.33.19
-  servername: www.35709620.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.35709620.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 290|Taiwan
@@ -2260,6 +2135,143 @@ proxies:
   server: 14.29.124.168
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '321,332,342,343,349,350,354,357,358,359,494|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+    #62'
+  network: ws
+  port: '80'
+  server: 165.154.246.71
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 13581ae8-65c9-4fbe-9c78-77fac9ca503a
+  ws-opts:
+    headers:
+      Host: 165.154.246.71
+    path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '321,337,340,341,342,343,349,350,354,357,358,359|TW-61.222.202.140-2438 #1'
+  network: ws
+  port: 33792
+  server: 61.222.202.140
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e55cd182-01b0-4fb7-a510-363701a491c5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|🇼TW-211.72.35.110-4705 #1'
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 2eb30779-2e8c-4b89-e6bd-a0ec760ca506
+  ws-opts:
+    headers:
+      Host: woideneu7.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4706 #1'
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: euserv1.aifx.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 3953ce0d-25df-4427-8371-a8ac26cc36fe
+  ws-opts:
+    headers:
+      Host: euserv1.aifx.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4707 #1'
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woideneu4.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: cb6448e3-08e1-413d-bc17-d3b0dba9aae9
+  ws-opts:
+    headers:
+      Host: woideneu4.jsworld.eu.org
+    path: /nishikata
+- alterId: 0
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4708 #1'
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: haxeu7.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: dfd1d80f-caf0-4b11-e0bb-733a2710a07a
+  ws-opts:
+    headers:
+      Host: haxeu7.jsworld.eu.org
+    path: /nishikata3
+- alterId: 0
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|🇹🇼TW-211.72.35.110-4709 #1'
+  network: ws
+  port: 443
+  server: 211.72.35.110
+  servername: woidenca1.jsworld.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: e87f326f-55ac-487f-a3d1-57c592bb663a
+  ws-opts:
+    headers:
+      Host: woidenca1.jsworld.eu.org
+    path: /nishikata3
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - tw2.sdklkd.org
+    method: GET
+    path:
+    - /
+  name: 321,342,343,349,350,354,357,358,359,365|13,14|台湾|@ripaojiedian
+  network: http
+  port: '1443'
+  server: tw2.sdklkd.org
+  servername: tw2.sdklkd.org
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
+- alterId: 64
+  cipher: auto
+  name: '321,342,343,349,350,354,357,358,359|TW-103.177.33.19-9077 #1'
+  network: ws
+  port: 30013
+  server: 103.177.33.19
+  servername: www.35709620.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.35709620.xyz
+    path: /
 - alterId: 2
   cipher: auto
   name: 337|🇨🇳 台湾_0315408
