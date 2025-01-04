@@ -1,15 +1,17 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 15,124,156,170,171,200,208,227,241,272,321,332,335,342,343,344,345,350,351,352,354,358,359,406,420,423,484,486,489,495|8J%2BHr%2FCfh7VKUC01NC4yNDkuMjIyLjIyOS0yMDk2
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: eAokbaDN6
-  port: '8081'
-  protocol: origin
-  protocol-param: ''
-  server: jp-am48-6.eqnode.net
-  type: ssr
+- name: 26,27,52,95|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
 - alterId: 0
   cipher: auto
   name: 32|[VMess] 🇱🇹 _立陶宛
@@ -98,8 +100,28 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇱🇹 LT
+  name: '46,47,65,66,74,75,95,115,208,325,329,343,359|🇱🇹LT-45.87.175.171-1126 #1'
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  port: 8080
+  server: 45.87.175.171
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇱🇹 LT
+  name: '46,47,65,75,80,82,86,95,115,125,208,310,343,359|LT-45.87.175.178-0696 #1'
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.178
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 46,47,75,89,95,125,200,208,343,346,353,359,480,484|21|_146
+  name: 48,49,65,66,75,95,200,208,329,343,359,484|21|_146
   password: qYEN5HX4JKeVCdEC
   port: 9039
   server: 195.238.126.84
@@ -108,36 +130,28 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '46,47,74,75,86,95,208,320,343,359|LT-45.87.175.166-0758 #1'
+  name: '48,49,65,66,74,75,82,95,115,208,320,325,329,343,359|🇹LT-45.87.175.166-5470
+    #1'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.166
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇱🇹 LT
-  name: 46,47,74,75,86,89,95,125,208,343,346,353,359,480|LT-45.87.175.171-6242 | 8.061MB
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.171
-  tfo: false
-  type: ss
-  udp: true
-- name: 52,95|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+- alterId: 0
+  cipher: auto
+  name: 82|立陶宛_由快嘴科技提供：kkzui.com160
   network: ws
-  password: bpb-trojan
-  port: 443
-  server: 86.38.214.132
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
+  port: 8443
+  server: 89.116.161.240
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
   ws-opts:
     headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
+      host: lax1.ibgfw.top
+    path: /xrenvws
 - alterId: 0
   cipher: auto
   name: '159,321|D-WEALTH-2386 #1'
@@ -163,18 +177,32 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
+  name: 265|LT🇱🇹 | de125.behify.tech-443 | 239.34ms
+  network: ws
+  port: '443'
+  server: 172.64.87.52
+  servername: de125.behify.tech
+  tls: true
+  type: vmess
+  uuid: c0f969f3-b2bb-47e0-a387-4078dc816ffc
+  ws-opts:
+    headers:
+      Host: de125.behify.tech
+    path: /aqpDnYYhh94vStqXqnr2hT1plaep
 - cipher: aes-256-cfb
-  name: 272,321,342,350,354,358,423|8J%2BHrvCfh6pJRS0xOC4yMDIuMTcuMTU1LTYxODc%3D
+  name: 271,272,321,342,350,354,358,423|8J%2BHrvCfh7NJTi0xMy4yMzQuMjE3LjEyLTYzNjg%3D
   obfs: http_simple
-  obfs-param: d3d3Lm1pY3Jvc29mdC5jb20jVXNlci1BZ2VudDpNb3ppbGxhLzUuMChpUGhvbmU7Q1BVaVBob25lT1MxMV80XzFsaWtlTWFjT1NYKUFwcGxlV2ViS2l0LzYwMi40LjYoS0hUTUwsbGlrZUdlY2tvKVZlcnNpb24vMTAuME1vYmlsZS8xNEQyN01pY3JvTWVzc2VuZ2VyLzYuNS4xM0FjY2VwdDovQ29ubmVjdGlvbjprZWVwLWFsaXZl
+  obfs-param: PT09PQ%3D%3D
   password: YpX2opBbrfqJzzMs
   port: '42833'
   protocol: origin
-  protocol-param: ''
-  server: z0116.security-cloudfront-cdn.com
+  protocol-param: PT09PQ%3D%3D
+  server: z0114.security-cloudfront-cdn.com
   type: ssr
 - cipher: chacha20-ietf
-  name: 272,321,342,350,354,358,423|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
+  name: 271,272,321,342,350,354,358,423|8J%2BHqPCfh7NDTi0zNi4xNTYuMjIyLjI1LTY2ODA%3D
   obfs: http_simple
   obfs-param: ZTVhYjA2MTgxLm1pY3Jvc29mdC5jb20%3D
   password: zztw9jk7gu
@@ -183,29 +211,9 @@ proxies:
   protocol-param: NjE4MTptOW9ESWM%3D
   server: 36.156.222.25
   type: ssr
-- cipher: aes-256-cfb
-  name: 272,321,342,350,354,358,423|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTc3
-  obfs: http_simple
-  obfs-param: V1dXLllPVU5FRUQuV0lO
-  password: sEscPBiAD9K$&@79
-  port: '11708'
-  protocol: origin
-  protocol-param: V1dXLllPVU5FRUQuV0lO
-  server: 94.102.57.163
-  type: ssr
-- cipher: aes-256-cfb
-  name: 272,321,342,343,350,354,358,359,423|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTk5
-  obfs: http_simple
-  obfs-param: ''
-  password: sEscPBiAD9K$&@79
-  port: '11708'
-  protocol: origin
-  protocol-param: ''
-  server: 94.102.57.163
-  type: ssr
 - alterId: 64
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|🇹LT-85.206.165.36-0809 #1'
+  name: '271,321,342,343,349,350,354,357,358,359|🇹LT-85.206.165.36-0750 #1'
   network: ws
   port: 443
   server: 85.206.165.36
@@ -216,9 +224,40 @@ proxies:
   uuid: ba49ab05-78f8-4b0b-9400-1826cc2d3f75
   ws-opts:
     path: /
+- cipher: aes-192-ctr
+  name: '271,272,321,342,350,354,358|8J%2BHuvCfh7hVUy0xNzIuMjM1LjUwLjkxLTYyMDc%3D
+    #7'
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: JUBXCP
+  port: '19155'
+  protocol: auth_sha1_v4
+  protocol-param: ''
+  server: us.linode.rbqis.me
+  type: ssr
+- cipher: aes-256-cfb
+  name: 271,272,321,342,350,354,358,423|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTc3
+  obfs: http_simple
+  obfs-param: V1dXLllPVU5FRUQuV0lO
+  password: sEscPBiAD9K$&@79
+  port: '11708'
+  protocol: origin
+  protocol-param: V1dXLllPVU5FRUQuV0lO
+  server: 94.102.57.163
+  type: ssr
+- cipher: aes-256-cfb
+  name: 271,272,321,342,343,350,354,358,359,423|8J%2BHs%2FCfh7FOTC05NC4xMDIuNTcuMTYzLTE3NTk5
+  obfs: http_simple
+  obfs-param: ''
+  password: sEscPBiAD9K$&@79
+  port: '11708'
+  protocol: origin
+  protocol-param: ''
+  server: 94.102.57.163
+  type: ssr
 - alterId: 64
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|LT-85.206.165.38-9334 #1'
+  name: '271,321,342,343,349,350,354,357,358,359|🇹LT-85.206.165.38-9398 #1'
   network: ws
   port: 443
   server: 85.206.165.38
@@ -233,7 +272,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: 321,342,343,349,350,354,357,358,359,365|立陶宛 v2rayfree.eu.org
+  name: 271,321,342,343,349,350,354,357,358,359,365|立陶宛 v2rayfree.eu.org
   network: ws
   port: 443
   server: 85.206.165.35
@@ -255,6 +294,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 82fd7d74-8055-41a0-9f5d-9a56ef302563
+- alterId: 0
+  cipher: auto
+  name: 343,359,365|🇯🇵JP-43.207.203.216-0177
+  network: ws
+  port: 80
+  server: jp02.zeatyler.online
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4c8e9532-979d-4c3c-b16c-828ab7f85c01
+  ws-opts:
+    headers:
+      Host: jp02.zeatyler.online
+    path: /
 - alterId: 64
   cipher: auto
   name: 365|🇱🇹LT-85.206.165.38-0189
