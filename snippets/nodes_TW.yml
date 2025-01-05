@@ -22,7 +22,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '29,30,80,125,231,343,359|🇳CN-58.63.247.116-0865 #1'
+  name: '29,30,75,80,125,231,343,359|🇳CN-58.63.247.116-0865 #1'
   password: cfc6f3f75f5ef7b2665c
   port: 45916
   server: console.03.aliyun.aq.kunlunaqs.com
@@ -31,7 +31,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 29,30,83,94,191,231,256,413,496|China_Guangzhou_ss_1136
+  name: 29,30,75,83,94,191,231,256,413,496|China_Guangzhou_ss_1166
   password: cfc6f3f75f5ef7b2665c
   plugin: obfs
   plugin-opts:
@@ -62,16 +62,13 @@ proxies:
   server: 103.115.108.83
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 46,47,74,95,98|TW
+  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 211.22.161.134
-  skip-cert-verify: true
   tfo: false
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -141,7 +138,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 62|04-0190-TW
+  name: 62|04-0189-TW
   password: 290e70d6-4904-4e3c-8bd8-fbd8e95a6a0f
   port: 10001
   server: tw.cooc.icu
@@ -183,20 +180,12 @@ proxies:
   server: console.03.aliyun.aq.kunlunaqs.com
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 82|🇨🇳 www.85la.com 台湾 06
-  network: ws
-  port: 2052
-  server: yx.sulink.one
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 09880c13-dc81-4f29-9313-6ef07c6df56a
-  ws-opts:
-    headers:
-      host: tw02.xn--io0a7iw0ab67b.xyz
-    path: /
+- cipher: aes-256-gcm
+  name: 82|🇨🇳 www.85la.com 台湾 01
+  password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ7
+  port: 36918
+  server: tw.ssrxray.click
+  type: ss
 - name: 82|台湾-125.4KB/s
   network: tcp
   password: 1a668915-d98f-4440-8bac-2c51d508f811
@@ -213,12 +202,20 @@ proxies:
   skip-cert-verify: false
   sni: tw04.akebi.cc
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 82|🇨🇳 www.85la.com 台湾 01
-  password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ7
-  port: 36918
-  server: tw.ssrxray.click
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 82|🇨🇳 www.85la.com 台湾 06
+  network: ws
+  port: 2052
+  server: yx.sulink.one
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 09880c13-dc81-4f29-9313-6ef07c6df56a
+  ws-opts:
+    headers:
+      host: tw02.xn--io0a7iw0ab67b.xyz
+    path: /
 - name: 82|台湾-2.11MB/s_1
   network: tcp
   password: 3e769264-67e5-44cc-98bc-4d0a6ba1febb
