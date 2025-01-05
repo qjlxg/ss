@@ -1,5 +1,5 @@
 proxies:
-- name: 26,27,52,95|TR-WS-TLS 🇸🇪 SE-185.146.173.158:443
+- name: '43,44,50,51|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443 #3'
   network: ws
   password: auto
   port: 443
@@ -11,8 +11,21 @@ proxies:
   ws-opts:
     headers:
       Host: esetsecuritylicense.bwnsmv.workers.dev
-    path: /Telegram@proxy_mtm/?ed=2560
-- name: 26,27,50,51,95|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
+    path: /Telegram@proxy
+- name: 43,44,50,51,95|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
+  network: ws
+  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
+  port: 443
+  server: 185.146.173.32
+  skip-cert-verify: false
+  sni: de1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: de1.trojanvpn.xyz
+    path: /
+- name: 43,44,50,51,95|TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
   network: ws
   password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
   port: 443
@@ -25,7 +38,20 @@ proxies:
     headers:
       Host: nl1.trojanvpn.xyz
     path: /
-- name: 26,27,52,95|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
+- name: 43,44,50,51,95|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
+  network: ws
+  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+  port: 443
+  server: 185.146.173.42
+  skip-cert-verify: false
+  sni: fr1.trojanvpn.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: fr1.trojanvpn.xyz
+    path: /
+- name: 43,44,48,49,95|TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
   network: ws
   password: b697183d-288b-40ab-98ae-8e3eb85f371c
   port: 443
@@ -40,8 +66,8 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇦🇫AF
-  name: 46,47,65,66,75,89,95,125,132,178,200,208,329,343,346,353,359,480|SE-121.127.46.147-3596
-    | 17.584MB
+  name: 46,47,65,66,75,89,95,125,132,178,200,208,329,343,346,353,359,480|SE-121.127.46.147-3981
+    | 7.612MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 121.127.46.147
@@ -49,48 +75,55 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: '46,47,65,75,95,115,208,343,359|🇪SE-94.228.165.178-1151 #1'
+  name: '48,49,95,208,343,359|SE-94.228.165.178-5667 #1'
   password: afKAHp1VfRWZu91LIi9o0D
   port: 58176
   server: 94.228.165.178
   type: ss
   udp: true
-- name: 52,95|TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
-  network: ws
-  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
-  port: 443
-  server: 185.146.173.32
-  skip-cert-verify: false
-  sni: de1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: de1.trojanvpn.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇸🇪 SE
-  name: 75,82,115,208,343,359,480|SE-46.246.98.155-6643 | 16.971MB
+  name: 66,82,89,95,208,329,343,346,353,359,482|未知152 638.6KB/s
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
   server: 46.246.98.155
+  skip-cert-verify: true
+  tls: true
   type: ss
 - country: 🇸🇪SE
-  name: 75|🇸🇪SE_602
+  name: 75|🇸🇪SE_96
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 16.171.105.47
+  server: 13.50.185.104
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: 🇸🇪SE
-  name: 75|🇸🇪SE_603
+  name: 75|🇸🇪SE_269
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
   server: 16.171.88.103
   sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 www.85la.com 瑞典 02
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.125.112
+  skip-cert-verify: true
+  sni: 13.50.125.112
+  type: trojan
+  udp: true
+- name: 82|瑞典-2.73MB/s
+  network: tcp
+  password: wkmY1R4EcP
+  port: 443
+  server: 70.34.205.1
+  skip-cert-verify: true
   type: trojan
   udp: true
 - name: 82|瑞典-3.79MB/s
@@ -100,14 +133,6 @@ proxies:
   server: 13.50.211.85
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 82|瑞典-2.73MB/s
-  network: tcp
-  password: wkmY1R4EcP
-  port: 443
-  server: 70.34.205.1
-  skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
@@ -121,18 +146,7 @@ proxies:
   type: vmess
   uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
   ws-opts:
-    headers:
-      host: hms02.fxiaomi.sbs
-    path: /link
-- name: 82|🇸🇪 www.85la.com 瑞典 02
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.50.125.112
-  skip-cert-verify: true
-  sni: 13.50.125.112
-  type: trojan
-  udp: true
+    path: ''
 - name: 82|瑞典-3.54MB/s
   network: tcp
   password: telegram-id-privatevpns
@@ -142,52 +156,16 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|瑞典-57.8MB/s_29_29
+- name: 82|瑞典-4.06MB/s
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.50.229.219
+  server: 13.50.254.223
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|瑞典-3.41MB/s_79_79
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 13.48.83.146
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 82|瑞典-3.69MB/s_106_106
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.49.7.121
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 82|瑞典-3.44MB/s_108_108
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 16.171.204.132
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 82|瑞典-3.50MB/s_113_113
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 16.170.80.93
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- name: 82|瑞典-3.28MB/s_175_175
+- name: 82|🇸🇪 瑞典-3.28MB/s_175_175
   network: tcp
   password: wkmY1R4EcP
   port: 443
@@ -196,7 +174,52 @@ proxies:
   sni: myket.io
   type: trojan
   udp: true
-- name: 82|瑞典-94.8MB/s_375_375
+- name: 82|🇸🇪 瑞典-3.69MB/s_106_106
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.49.7.121
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 瑞典-3.44MB/s_108_108
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.204.132
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 瑞典-57.8MB/s_29_29
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.229.219
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 瑞典-3.41MB/s_79_79
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 13.48.83.146
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 瑞典-3.50MB/s_113_113
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 16.170.80.93
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 82|🇸🇪 瑞典-94.8MB/s_375_375
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -205,7 +228,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|瑞典-258.5KB/s_748_748
+- name: 82|🇸🇪 瑞典-258.5KB/s_748_748
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -214,7 +237,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|瑞典-713.6KB/s_931_931
+- name: 82|🇸🇪 瑞典-52.4MB/s_942_942
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -223,7 +246,7 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|瑞典-51.6MB/s_990_990
+- name: 82|🇸🇪 瑞典-51.6MB/s_990_990
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
@@ -232,52 +255,6 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 82|瑞典 V2CROSS.COM_4_574
-  network: ws
-  port: 80
-  server: 185.146.173.59
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      host: freevpn878.hamidimorteza680.workers.dev
-    path: /glweidf.cfd/linkws
-- alterId: 0
-  cipher: auto
-  country: SE
-  h2-opts: {}
-  http-opts: {}
-  name: 82,420|Sweden_None_vmess_1143
-  network: ws
-  port: 80
-  server: Back.MsV2ray.online
-  servername: d396-flower-d396.megare7260.workers.dev
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      HOST: d396-flower-d396.megare7260.workers.dev
-    path: /obdii.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: 82|瑞典 V2CROSS.COM_2_330
-  network: ws
-  port: 80
-  server: 185.146.173.158
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      host: d396-flower-d396.megare7260.workers.dev
-    path: /obdii.cfd/linkws
 - name: 82|🔒 TR-WS-TLS 🇸🇪 SE-185.146.173.158:443
   network: ws
   password: auto@185.146.173.158:443?security=tls&sni=esetsecuritylicense.bwnsmv.workers.dev&type=ws&host=esetsecuritylicense.bwnsmv.workers.dev&path=/Telegram
@@ -304,6 +281,24 @@ proxies:
     headers:
       host: esetsecuritylicense.bwnsmv.workers.dev
     path: /Telegram@auto@185.146.173.158:443
+- alterId: 0
+  cipher: auto
+  country: SE
+  h2-opts: {}
+  http-opts: {}
+  name: 82,420|Sweden_None_vmess_1143
+  network: ws
+  port: 80
+  server: Back.MsV2ray.online
+  servername: d396-flower-d396.megare7260.workers.dev
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      HOST: d396-flower-d396.megare7260.workers.dev
+    path: /obdii.cfd/linkws
 - cipher: chacha20-ietf-poly1305
   name: 84|🇸🇪 瑞典 - V2Link VPN
   password: 90cfc577-6d59-4bf8-b2e4-9f7f842d5c8e
@@ -325,17 +320,17 @@ proxies:
   ws-headers:
     Host: nl.zhuk.us.kg
   ws-path: /ylks
-- name: 95|TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
+- name: 95|TR-WS-TLS 🇸🇪 SE-185.146.173.158:443
   network: ws
-  password: 542f66d8-6b06-4340-a829-76d23db7ca80
+  password: auto
   port: 443
-  server: 185.146.173.42
-  sni: fr1.trojanvpn.xyz
+  server: 185.146.173.158
+  sni: esetsecuritylicense.bwnsmv.workers.dev
   type: trojan
   ws-opts:
     headers:
-      Host: fr1.trojanvpn.xyz
-    path: /
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+    path: /Telegram@proxy_mtm/?ed=2560
 - name: 132|SE(AzadNet.t.me)_001
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -407,25 +402,25 @@ proxies:
       Host: 94.131.98.104
     path: /vmess
 - cipher: aes-256-cfb
-  name: '178,343,359|🇸SE-37.19.222.214-9806 #1'
+  name: '178,343,359|🇸SE-37.19.222.214-9657 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-cfb
-  name: '178,343,359|🇪SE-37.19.222.213-9807 #1'
+  name: '178,343,359|🇪SE-37.19.222.213-9658 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: '178,343,359|🇸🇪SE-37.19.222.212-9808 #1'
+  name: '178,343,359|🇸🇪SE-37.19.222.212-9659 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.212
   type: ss
 - cipher: aes-256-cfb
-  name: '178,343,359|🇸🇪SE-37.19.222.211-9809 #1'
+  name: '178,343,359|🇸🇪SE-37.19.222.211-9660 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
@@ -871,7 +866,7 @@ proxies:
   type: vmess
   uuid: 2bb47c4c-f1be-437a-948e-cc097473513f
 - cipher: chacha20-ietf-poly1305
-  name: '343,359|SE-13.49.241.14-4449 #1'
+  name: '343,359|SE-13.49.241.14-4300 #1'
   password: pydQILh06AvJ
   port: 27092
   server: 13.49.241.14
