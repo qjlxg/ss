@@ -1,9 +1,22 @@
 proxies:
-- name: 26,27,50,51,95|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+- name: 26,27,52,95|TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
   network: ws
   password: bpb-trojan
   port: 443
   server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
+- name: 26,27,52,95|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 89.116.250.94
   skip-cert-verify: false
   sni: bpb.my79801.com
   type: trojan
@@ -87,24 +100,11 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
-- name: 43,44,48,49,95|TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 89.116.250.94
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '46,47,66,74,75,82,89,95,208,320,329,343,346,353,359|🇱🇹LT-45.87.175.166-1134
-    #1'
+  name: '46,47,65,66,74,82,89,95,115,208,320,329,343,346,353,359|🇱🇹LT-45.87.175.166-1134
+    #2'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.166
@@ -114,7 +114,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: '46,47,66,74,75,89,95,208,329,343,346,353,359|🇱🇹LT-45.87.175.171-1135 #1'
+  name: '46,47,66,74,89,95,208,329,343,346,353,359|🇱🇹LT-45.87.175.171-1135 #1'
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.171
@@ -123,7 +123,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 46,47,65,66,75,82,89,95,125,208,325,329,343,346,353,359,480|LT-45.87.175.178-6040
+  name: 46,47,65,66,75,82,89,95,115,125,208,325,329,343,346,353,359,480|LT-45.87.175.178-6040
     | 18.574MB
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -133,7 +133,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇱🇹 LT
-  name: 46,47,65,66,74,75,82,89,95,101,125,208,329,343,346,353,359,480|LT-45.87.175.199-0672
+  name: 46,47,66,74,75,82,89,95,101,115,125,208,329,343,346,353,359,480|LT-45.87.175.199-0672
     | 7.269MB
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -142,34 +142,10 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 48,49,66,89,95,125,200,208,329,343,346,353,359,484|21|_146
+  name: 48,49,65,66,75,89,95,115,125,200,208,329,343,346,353,359,484|21|_146
   password: qYEN5HX4JKeVCdEC
   port: 9039
   server: 195.238.126.84
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇵🇱PL
-  name: 75,82,208,343,359,385|[97]🇵🇱PL-217.30.10.18-43800
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇵🇱PL
-  name: 75,82,92,208,343,359,385|[97]🇵🇱PL-217.30.10.18-43798
-  password: S7KwUu7yBy58S3Ga
-  port: 9042
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇵🇱 PL
-  name: 75,82,343,359,385|[97]🇵🇱PL-217.30.10.18-43494
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 217.30.10.18
   type: ss
   udp: true
 - alterId: 0
@@ -211,13 +187,6 @@ proxies:
     headers:
       Host: ''
     path: /cctv13/hd.m3u8/
-- cipher: aes-256-cfb
-  name: 208,343,359,385|[97]🇵🇱PL-217.30.10.18-42130
-  password: p9z5BVADH2YFs3MN
-  port: 9040
-  server: 217.30.10.18
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: 265|LT🇱🇹 | de125.behify.tech-443 | 239.34ms
