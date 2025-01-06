@@ -35,7 +35,7 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '29,30,75,80,343,359|🇨🇳CN-58.63.247.116-0854 #1'
+  name: '29,30,75,343,359|🇨🇳CN-58.63.247.116-0854 #1'
   password: cfc6f3f75f5ef7b2665c
   port: 45916
   server: console.03.aliyun.aq.kunlunaqs.com
@@ -44,7 +44,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: '29,30,75|🇹🇼 台湾|@ripaojiedian #2'
+  name: '29,30,75|🇹🇼 台湾|@ripaojiedian #1'
   password: cfc6f3f75f5ef7b2665c
   plugin: obfs
   plugin-opts:
@@ -68,13 +68,6 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: aes-256-cfb
-  name: '46,47,65,66,75,89,95,125,208,329,343,346,353,359|TW-185.189.160.98-0472 #1'
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
@@ -93,12 +86,24 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
+  name: '46,47,74,95,482|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.138
+  server: 60.249.28.136
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 46,47,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.137
   tfo: false
   type: ss
   udp: true
@@ -112,42 +117,40 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.2:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.2
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.39
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.3:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.35.3
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.136
-  tfo: false
+- cipher: aes-256-cfb
+  name: '48,49,65,66,75,89,95,125,208,329,343,346,353,359|TW-185.189.160.98-0472 #1'
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377
+  name: 48,49,74,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.137
+  server: 60.249.28.138
   tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.35.2:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.2
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.39
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -194,7 +197,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 75,80|13|🇹🇼 台湾2|@ripaojiedian
+  name: 75|🇹🇼 14|台湾2|@ripaojiedian
   network: ws
   password: ouo
   port: 26547
@@ -206,13 +209,6 @@ proxies:
     headers:
       Host: tr.koxok.us.kg
     path: /?ed=2560
-- name: '82,304|❓ 未知_1 #1'
-  password: 338b9800-fb4d-4934-8425-388f6d4342f5
-  port: '33751'
-  server: tw4.akebi.cc
-  skip-cert-verify: false
-  sni: tw04.akebi.cc
-  type: hysteria2
 - cipher: aes-256-cfb
   name: 82|TW,Taipei
   password: amazonskr05
@@ -234,6 +230,13 @@ proxies:
   port: 36918
   server: tw.ssrxray.click
   type: ss
+- name: '82,304|❓ 未知_1 #1'
+  password: 338b9800-fb4d-4934-8425-388f6d4342f5
+  port: '33751'
+  server: tw4.akebi.cc
+  skip-cert-verify: false
+  sni: tw04.akebi.cc
+  type: hysteria2
 - alterId: 0
   cipher: auto
   name: 82|🇨🇳 www.85la.com 台湾 06
@@ -419,7 +422,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 84,369|TG频道@mfbpn-0430-CN
+  name: 84,369|TG频道@mfbpn-0201-CN
   network: ws
   port: 23619
   server: 19.mamamajd.site
@@ -428,7 +431,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 5e763b8a-2c19-336e-b310-9a7629d8fa2e
+  uuid: 936a6692-309b-3cae-9386-dc6bead1ed20
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -853,7 +856,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '95,182,183,188,198,229,321,336,342,343,349,350,354,357,358,359,365,376,473,489,493,507|@Vip_Security
-    join us - 103
+    join us - 107
 
     '
   network: ws
@@ -944,7 +947,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 16
   cipher: auto
-  name: 133,134,513|台湾_0105004
+  name: '133,134,513|台湾_0106004 #1'
   network: ws
   port: '10053'
   server: 45.43.59.150
