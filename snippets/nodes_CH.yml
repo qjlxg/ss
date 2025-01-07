@@ -1,12 +1,18 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 32|[SS] 🇨🇭 _瑞士
-  password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
-  port: 59923
-  server: 138.124.51.236
-  type: ss
+- name: 26,27,52,95|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.18.250.112
+  skip-cert-verify: false
+  sni: zb.ylks.xyz
+  type: trojan
   udp: true
-- name: 44,50,51,95|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
+- name: 26,27,52,95|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
   password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
   port: 443
@@ -19,46 +25,17 @@ proxies:
     headers:
       Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
     path: /Telegram@V2ray_Alpha/?ed=2560
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|CH-156.146.62.163-3479
-    | 30.87MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480,482|未知113 2.2MB/s
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '46,47,75,95,208,343,359|🇭CH-23.166.88.198-6523 #1'
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 23.166.88.198
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '46,47,75,95,208,343,359|🇭CH-23.166.88.198-6162 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 23.166.88.198
+- cipher: chacha20-ietf-poly1305
+  name: 32|[SS] 🇨🇭 _瑞士
+  password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
+  port: 59923
+  server: 138.124.51.236
   type: ss
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 48,49,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|CH-156.146.62.161-4114
-    | 30.957MB
+  name: 46,47,65,66,73,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.161-3856
+    | 10.287MB
   password: shadowsocks
   port: 443
   server: 156.146.62.161
@@ -67,7 +44,8 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 48,49,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480,482|未知110 3.3MB/s
+  name: 46,47,65,66,73,82,89,95,98,125,208,329,343,346,353,359,480|CH-156.146.62.162-3795
+    | 9.855MB
   password: shadowsocks
   port: 443
   server: 156.146.62.162
@@ -76,17 +54,53 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 48,49,95|SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555
+  name: 46,47,95|SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555
   password: SnIDqY432GgGnHg6ZgnSwA
   port: 5555
   server: 195.15.215.198
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 48,49,95|SS-TCP-NA 🇨🇭 CH-23.166.88.5:3389
+  name: 46,47,95|SS-TCP-NA 🇨🇭 CH-23.166.88.198:4444
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 23.166.88.198
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '46,47,95,208,343,359|🇭CH-23.166.88.198-6322 #1'
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 23.166.88.198
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 46,47,95|SS-TCP-NA 🇨🇭 CH-23.166.88.5:3389
   password: Y6R9pAtvxxzmGC
   port: 3389
   server: 23.166.88.5
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 48,49,65,66,73,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.163-3744
+    | 11.05MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 48,49,65,66,73,82,89,95,98,125,208,329,343,346,353,359,480|CH-156.146.62.164-3998
+    | 10.02MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -103,22 +117,9 @@ proxies:
   server: 91.103.253.151
   type: ss
   udp: true
-- name: 50,51,95|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  skip-cert-verify: false
-  sni: zb.ylks.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
 - alterId: 0
   cipher: auto
-  name: '60,507|@Vip_Security join us - 301
+  name: '60,507|@Vip_Security join us - 299
 
     '
   network: tcp
@@ -138,61 +139,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '73,75,82,133,134,224,265,266,267,272,298,365,507|@Vip_Security join us -
-    315
-
-    '
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  version: '2'
+- cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '66,208,329,343,359|CH-23.166.88.198-6681 #1'
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.166.88.198
+  type: ss
 - cipher: aes-256-cfb
-  name: 79,86,161,311|🇨_CH_
+  name: 79,86,311|🇨_CH_
   password: asdKkaskJKfnsa
   port: 80
   server: 84.17.53.163
   tfo: false
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 82|瑞士_由快嘴科技提供：kkzui.com67
-  network: ws
-  port: 443
-  server: 141.148.237.208
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  ws-opts:
-    headers:
-      host: beyonddbc.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 82|瑞士_由快嘴科技提供：kkzui.com71
-  network: ws
-  port: 443
-  server: 141.148.232.36
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 8d90c129-4156-4d6c-9115-24df25f26a02
-  ws-opts:
-    headers:
-      host: beyonddbc.sbs
-    path: /linkws
 - name: 82|🇨🇭 瑞士_Telegram@kxswa
   network: tcp
   password: 55319b01-5d85-48a2-a40a-0b3fc1985755
@@ -203,34 +164,14 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: auto
-  name: 82|瑞士 苏黎世Oracle云计算数据中心_284
-  network: ws
-  port: 443
-  server: 140.238.212.95
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 82|瑞士 Oracle Corporation_342
-  network: ws
-  port: 443
-  server: 141.148.203.6
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    path: ''
-- cipher: aes-256-gcm
-  name: 95|SS-TCP-NA 🇨🇭 CH-23.166.88.198:4444
-  password: pKEW8JPByTVTLtM
-  port: 4444
+  cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '95,208,343,359,482|未知63 #1'
+  password: faBAoD54k87UJG7
+  port: 2375
   server: 23.166.88.198
+  skip-cert-verify: true
+  tls: true
   type: ss
 - alterId: 0
   cipher: auto
@@ -271,12 +212,38 @@ proxies:
       host: v2node8.bipbupvpn.com
     path: /AAA
 - cipher: aes-128-cfb
-  name: '178,200,343,359|🇨CH-156.146.62.160-4532 #1'
+  name: '178,200,343,359|🇨CH-156.146.62.160-4692 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 201|o瑞士111
+  network: ws
+  port: '2082'
+  server: cf1.yunduanjc.top
+  tls: false
+  type: vmess
+  uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
+  ws-opts:
+    headers:
+      Host: oners.yunduanjc.top
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 201|o瑞士222
+  network: ws
+  port: '2082'
+  server: cf2.yunduanjc.top
+  tls: false
+  type: vmess
+  uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
+  ws-opts:
+    headers:
+      Host: oners.yunduanjc.top
+    path: /?ed=2048
 - alterId: 64
   cipher: auto
   name: 201,323,369,507,512|美国_0106146
@@ -291,32 +258,6 @@ proxies:
     headers:
       Host: www.27306103.xyz
     path: /path/1735984102656
-- alterId: 0
-  cipher: auto
-  name: 201|o瑞士222
-  network: ws
-  port: '2082'
-  server: cf2.yunduanjc.top
-  tls: false
-  type: vmess
-  uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
-  ws-opts:
-    headers:
-      Host: oners.yunduanjc.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 201|o瑞士111
-  network: ws
-  port: '2082'
-  server: cf1.yunduanjc.top
-  tls: false
-  type: vmess
-  uuid: 592cd3d1-b236-4b16-bc9f-3dcbfcd6de30
-  ws-opts:
-    headers:
-      Host: oners.yunduanjc.top
-    path: /?ed=2048
 - alterId: 0
   cipher: none
   name: '265,484|41|@Vip_Security join us - 405 '
@@ -427,7 +368,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|🇨🇭CH-23.166.88.27-9069 #1'
+  name: '321,342,343,349,350,354,357,358,359|🇨🇭CH-23.166.88.27-9230 #1'
   network: ws
   port: 443
   server: 23.166.88.27
