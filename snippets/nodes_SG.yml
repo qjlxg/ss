@@ -20,7 +20,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 26,27,50,51,95|TR-WS-TLS 🇸🇬 SG-154.194.12.78:443
+- name: 26,27,52,95|TR-WS-TLS 🇸🇬 SG-154.194.12.78:443
   network: ws
   password: blue2024
   port: 443
@@ -33,9 +33,22 @@ proxies:
     headers:
       Host: b.promote.icu
     path: /?ed
+- name: 26,27,50,51,95|TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087
+  network: ws
+  password: dns68
+  port: 2087
+  server: 206.238.237.1
+  skip-cert-verify: false
+  sni: trojan.putata.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.putata.us.kg
+    path: /?ed
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: '29,30,62,80,231,343,359|🇨🇳CN-223.113.53.141-0845 #1'
+  name: '29,30,62,75,80,231,343,359|🇨🇳CN-223.113.53.141-0845 #1'
   password: ba9d2c35-523c-459e-b288-b7103d106d29
   port: 30003
   server: gdgs.tarioblink.me
@@ -44,7 +57,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '29,30,48,49,80,82,208,231,343,359|🇸🇬SG-13.212.194.118-0848 #1'
+  country: 🇸🇬SG
+  name: '29,30,46,47,75,80,82,95,208,231,343,359|🇸🇬SG-13.212.194.118-0848 #1'
   password: amazonskr05
   port: 443
   server: 13.212.194.118
@@ -66,15 +80,6 @@ proxies:
   server: 128.199.172.224
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 46,47,85,95|SS-TCP-NA 🇸🇬 SG-13.212.204.100:443
-  password: amazonskr05
-  port: 443
-  server: 13.212.204.100
-  tfo: false
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 46,47,95|SS-TCP-NA 🇸🇬 SG-154.196.244.16:16006
   password: Y0UT8KXX2R9M5XYA
@@ -89,11 +94,28 @@ proxies:
   server: 157.245.204.218
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '46,47,95,482|未知23 #1'
   password: BzZTmphVccYTpHXy1ynVxD
   port: 52252
   server: 174.138.17.254
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 46,47,95|SS-TCP-NA 🇸🇬 SG-188.166.226.136:47042
+  password: H8JAsMkMmYkphjH4fWcZYm
+  port: 47042
+  server: 188.166.226.136
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 46,47,95|SS-TCP-NA 🇸🇬 SG-54.179.78.99:443
+  password: amazonskr05
+  port: 443
+  server: 54.179.78.99
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -104,14 +126,25 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  client-fingerprint: chrome
-  country: 🇸🇬SG
-  name: 46,47,65,66,74,82,89,95,125,208,329,343,346,353,359,480|🇸🇬SG-68.183.227.45-0303
-    | 25.676MB
+  name: 46,47,95,385,480|🇸🇬SG-68.183.227.236-3545 | 24.473MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 68.183.227.45
-  tfo: false
+  server: 68.183.227.236
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 46,47,65,66,89,95,125,329,343,346,353,359,385,480|🇸🇬SG-68.183.227.4-3573 |
+    26.096MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 46,47,95,385,480|🇸🇬SG-68.183.235.122-3797 | 25.195MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.235.122
   type: ss
   udp: true
 - cipher: chacha20-ietf
@@ -121,48 +154,26 @@ proxies:
   server: 107.148.37.70
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 48,49,95|SS-TCP-NA 🇸🇬 SG-188.166.226.136:47042
-  password: H8JAsMkMmYkphjH4fWcZYm
-  port: 47042
-  server: 188.166.226.136
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 48,49,85,95|SS-TCP-NA 🇸🇬 SG-13.212.204.100:443
+  password: amazonskr05
+  port: 443
+  server: 13.212.204.100
+  tfo: false
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 48,49,95,385,480|🇸🇬SG-68.183.227.236-3545 | 24.473MB
+  client-fingerprint: chrome
+  country: 🇸🇬SG
+  name: 48,49,65,66,74,75,82,89,95,125,191,208,329,343,346,353,359,413,480|🇸🇬SG-68.183.227.45-0303
+    | 25.676MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 68.183.227.236
+  server: 68.183.227.45
+  tfo: false
   type: ss
   udp: true
-- cipher: rc4-md5
-  name: 48,49,65,66,89,95,125,329,343,346,353,359,385,480|🇸🇬SG-68.183.227.4-3573 |
-    26.096MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  name: 48,49,95,385,480|🇸🇬SG-68.183.235.122-3797 | 25.195MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.235.122
-  type: ss
-  udp: true
-- name: 52,95|TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087
-  network: ws
-  password: dns68
-  port: 2087
-  server: 206.238.237.1
-  skip-cert-verify: false
-  sni: trojan.putata.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-    path: /?ed
 - alterId: 0
   cipher: auto
   name: 55|[VMess] 🇸🇬 VM-WS-NA 🇸🇬 SG-54.255.177.57:40000
@@ -180,7 +191,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 62,76,103,323|24-1738-SG
+  name: 62,76,103,323|24-1770-SG
   network: ws
   port: 23451
   server: westsg2-ddns.oraclenat.cc
@@ -195,31 +206,14 @@ proxies:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - cipher: chacha20-ietf
-  name: '65,82,304|🇸🇬 新加坡_1 #1'
+  name: '65,75,82,304|🇸🇬 新加坡_1 #1'
   password: asd123456
   port: '8388'
   server: 103.36.90.195
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: '69,87,194,305,321,342,343,349,350,354,357,358,359|🇸🇬SG-8.219.254.97-5863
-    #1'
-  network: ws
-  port: 443
-  server: 8.219.254.97
-  servername: beyonddsz.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: false
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    path: /linkws
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 74,99,100,296|🇸🇬新加坡03|流媒体|专线1-569
+  name: 74,82,99,100,296|🇸🇬新加坡03|流媒体|专线1-569
   password: 4ee193ca-4030-4de3-b4a7-b15d5c171563
   port: 18759
   server: zx1.1010520.xyz
@@ -229,7 +223,7 @@ proxies:
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   country: 🇭🇰HK
-  name: 74,92,208,343,359,385|1,2,185|_388
+  name: '74,92,191,208,343,359,385,413|0|-https://t.me/MrXbin-23 #1'
   password: asd123456
   port: 8388
   server: 103.36.91.32
@@ -244,33 +238,72 @@ proxies:
   server: 13.215.51.127
   tfo: false
   type: ss
-- auth: 5fb83d42-4530-4136-8b9e-2fd800441108
-  name: '76,103|🇸🇬 新加坡-1-1A #1'
-  password: 5fb83d42-4530-4136-8b9e-2fd800441108
-  port: 30001
-  server: oracle-amd-singapore1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: main.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '76,103,201,323|24-1837-RELAY #1'
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 75,101,115,208|🇸🇬 SG_442_0@441
   network: ws
-  port: 8080
-  server: go.daluquan.top
+  port: 443
+  server: 8.219.254.97
+  servername: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-headers:
+    HOST: beyonddsz.cfd
+  ws-path: /linkws
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 75|🇸🇬SG_94
+  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  port: 8099
+  server: 139.162.41.174
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 75|🇸🇬SG_93
+  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
+  port: 8099
+  server: 139.162.5.19
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '75,82,208,313,343,359|🏁RELAY-104.18.21.219-6366 #1'
+  network: ws
+  port: 80
+  server: 104.18.21.219
+  servername: ovh.reonolimits.my.id
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3a18edb8-80c1-4cba-b912-4f10513da259
+  ws-opts:
+    path: /vmessws
+- alterId: 0
+  cipher: auto
+  name: 76,103,323|24-1834-RELAY
+  network: ws
+  port: 2052
+  server: cf.hy2.one
   servername: ''
   tls: false
   type: vmess
   udp: true
-  uuid: 56f1c6b5-1c59-4372-bfb5-6ad5b0d1d409
+  uuid: 9b924ebc-6124-4337-91ae-ae378f476e9f
   ws-opts:
     headers:
-      Host: de-new01.daluquan.top
-    path: /
+      Host: sg0002.hy-2.top
+    path: /0
 - alterId: 0
   cipher: auto
-  name: 76,103,323|24-1798-RELAY
+  name: 76,103,323|24-1830-RELAY
   network: ws
   port: 443
   server: visa.com
@@ -284,40 +317,57 @@ proxies:
     headers:
       Host: xjp.daluquan.top
     path: /
-- auth: 97d2b658-c1e7-4abb-bce8-6c4ab6abc2ba
+- auth: 3db35d85-c4fc-4054-bbfe-19ca45b6396e
+  name: '76,103|🇬 联通 加坡 02-1A #1'
+  password: 3db35d85-c4fc-4054-bbfe-19ca45b6396e
+  port: 31102
+  server: cucc.abyssvpn.com
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- auth: 7d45abfd-44fc-46c6-90f8-8d83eb4434a7
   name: '76,103|🇬 新加坡07 #1'
-  password: 97d2b658-c1e7-4abb-bce8-6c4ab6abc2ba
+  password: 7d45abfd-44fc-46c6-90f8-8d83eb4434a7
   port: 32052
   server: sg07v6.sulink.one
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 76,103,323|24-1802-RELAY
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  servername: ''
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9b924ebc-6124-4337-91ae-ae378f476e9f
-  ws-opts:
-    headers:
-      Host: sg0002.hy-2.top
-    path: /0
-- auth: 97d2b658-c1e7-4abb-bce8-6c4ab6abc2ba
-  name: '76,103|🇬 新加坡03奈非 #1'
-  password: 97d2b658-c1e7-4abb-bce8-6c4ab6abc2ba
+- auth: 7d45abfd-44fc-46c6-90f8-8d83eb4434a7
+  name: '76,103|🇸🇬 新加坡03奈非 #1'
+  password: 7d45abfd-44fc-46c6-90f8-8d83eb4434a7
   port: 22052
   server: sg03v6.sulink.one
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
   udp: true
-- name: 82,313,413,496|Singapore_None_trojan_1171
+- alterId: 0
+  cipher: auto
+  name: '76,103,201,323|24-1869-RELAY #1'
+  network: ws
+  port: 8080
+  server: go.daluquan.top
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56f1c6b5-1c59-4372-bfb5-6ad5b0d1d409
+  ws-opts:
+    headers:
+      Host: de-new01.daluquan.top
+    path: /
+- auth: e184f0ae-04df-45a9-a147-b3c0b846827e
+  name: '76,103|🇬 新加坡-1 #1'
+  password: e184f0ae-04df-45a9-a147-b3c0b846827e
+  port: 30001
+  server: oracle-amd-singapore1.lanmaoyun.icu
+  skip-cert-verify: true
+  sni: main.nodes.lanmaoyun.icu
+  type: hysteria2
+  udp: true
+- name: 82,191,313,413|13,14|新加坡3|@ripaojiedian
   network: tcp
   password: '!!str 3723507166611775488'
   port: 443
@@ -326,7 +376,7 @@ proxies:
   sni: major-reindeer.boa152.lol
   type: trojan
   udp: true
-- name: 82|新加坡_由快嘴科技提供：kkzui.com110
+- name: 82|新加坡_由快嘴科技提供：kkzui.com60
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -335,6 +385,12 @@ proxies:
   sni: connectwithemployers.online
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  name: 82|SG,Singapore
+  password: amazonskr05
+  port: 443
+  server: 54.254.226.170
+  type: ss
 - name: 82|新加坡-14.0MB/s
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
@@ -344,27 +400,6 @@ proxies:
   sni: connectwithemployers.online
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 82,321,342,343,349,350,354,357,358,359,512|新加坡_0106022
-  network: ws
-  port: '443'
-  server: 8.222.180.229
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkws
-- cipher: aes-256-cfb
-  name: 82|SG,Singapore
-  password: amazonskr05
-  port: 443
-  server: 54.254.226.170
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 82|新加坡-84.8MB/s
   password: RYqeHYa0aQYW7i4TOhzyoT/NwwRhNRjhiobMOn4GNDo=
@@ -377,7 +412,7 @@ proxies:
   port: 40138
   server: 159.223.93.233
   type: ss
-- name: 82|🇸🇬 www.85la.com 新加坡 01
+- name: 82|🇸🇬+www.85la.com+新加坡+03_1
   network: tcp
   password: '!!str 3648425794742788096'
   port: 443
@@ -386,25 +421,98 @@ proxies:
   sni: amusing-jaybird.treefrog761.one
   type: trojan
   udp: true
-- name: 82|🇸🇬 www.85la.com 新加坡 02
+- alterId: 0
+  cipher: auto
+  name: '82,320|TG:@hkaa0|美国_86 #1'
+  network: ws
+  port: 8080
+  server: de-new01.daluquan.top
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 25bb1d6d-68e6-41a3-85e8-b280ac3f39eb
+  ws-opts:
+    headers:
+      host: de-new01.daluquan.top
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: '82,211,336,365,387,467,473,484,507|@Vip_Security join us - 46
+
+    '
   network: tcp
-  password: b44da489-fc70-4fd0-8997-a83b51f59267
+  port: '57614'
+  server: 5.34.176.111
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 82|🇸🇬 www.85la.com 新加坡 31
+  network: ws
+  port: 443
+  server: 172.64.80.1
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
+  ws-opts:
+    headers:
+      host: 3.clarity168.com
+    path: /tk
+- alterId: 0
+  cipher: auto
+  name: 82|🇸🇬 www.85la.com 新加坡 32
+  network: ws
+  port: 2052
+  server: cf.hy2.one
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a2eda63e-fceb-4377-aad3-1b2eb67addde
+  ws-opts:
+    headers:
+      host: sg0002.hy-2.top
+    path: /0
+- name: 82|🇸🇬+www.85la.com+新加坡+02_2
+  network: tcp
+  password: 5c7dbef8-0fb5-4e88-bb84-24cafeb73f8d
+  port: 20230
+  server: 3.0.103.251
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 82|🇸🇬+www.85la.com+新加坡+05
+  network: tcp
+  password: 0bfa2050-b165-4156-859c-70f36d300dce
   port: 20230
   server: sg007.421421.xyz
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
   udp: true
-- name: 82|🇸🇬 www.85la.com 新加坡 04
-  network: tcp
-  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
-  port: 20230
-  server: sg006.421421.xyz
+- alterId: 0
+  cipher: auto
+  name: 82|🇸🇬 www.85la.com 新加坡 08
+  network: ws
+  port: 47929
+  server: 103.106.229.29
   skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- name: 82|🇸🇬 www.85la.com 新加坡 05_1
+  tls: false
+  type: vmess
+  uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2
+  ws-opts:
+    headers:
+      host: tms.dingtalk.com
+    path: /wada12222
+- name: 82|🇸🇬+www.85la.com+新加坡+02_3
   network: tcp
   password: 0bfa2050-b165-4156-859c-70f36d300dce
   port: 20230
@@ -413,23 +521,20 @@ proxies:
   sni: 421421.xyz
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 82|🇸🇬 www.85la.com 新加坡 12_1
-  network: ws
-  port: 8080
-  server: de-new01.daluquan.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 08a2fd13-f07b-4566-8f73-15be823141f1
-  ws-opts:
-    path: ''
-- name: 82|🇸🇬 www.85la.com 新加坡 32
+- name: 82|🇸🇬+www.85la.com+新加坡+04_1
   network: tcp
   password: 0bfa2050-b165-4156-859c-70f36d300dce
   port: 20230
   server: sg008.421421.xyz
+  skip-cert-verify: true
+  sni: 421421.xyz
+  type: trojan
+  udp: true
+- name: 82|🇸🇬+www.85la.com+新加坡+04_2
+  network: tcp
+  password: 5a81db08-7af3-49a4-b089-b7a5b2c24c38
+  port: 20230
+  server: sg006.421421.xyz
   skip-cert-verify: true
   sni: 421421.xyz
   type: trojan
@@ -445,7 +550,7 @@ proxies:
   type: vmess
   uuid: 800e95d5-43f8-4988-a0d3-9ddcbb1de7f7
   ws-opts:
-    path: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 82|🇸🇬 www.85la.com 新加坡 44
@@ -457,45 +562,18 @@ proxies:
   type: vmess
   uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
   ws-opts:
-    path: ''
-- name: 82|🇸🇬 www.85la.com 新加坡 08_1
-  network: tcp
-  password: 5c7dbef8-0fb5-4e88-bb84-24cafeb73f8d
-  port: 20230
-  server: 3.0.103.251
-  skip-cert-verify: true
-  sni: 421421.xyz
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 82|🇸🇬 www.85la.com 新加坡 09_1
-  network: ws
-  port: 443
-  server: 172.64.80.1
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 48f837fa-12d0-498d-b5f6-94f9979736a4
-  ws-opts:
-    path: ''
-- alterId: 0
-  cipher: auto
-  name: 82|🇸🇬 www.85la.com 新加坡 08_2
-  network: ws
-  port: 47929
-  server: 103.106.229.29
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 63ab66f1-4d71-424e-8f2d-f4fb90fc92a2
-  ws-opts:
-    path: ''
+    path: /
 - cipher: aes-256-cfb
   name: 82,91|🇸🇬SG-13.215.250.79-050
   password: amazonskr05
   port: 443
   server: 13.215.250.79
+  type: ss
+- cipher: aes-256-gcm
+  name: 82|🇸🇬 www.85la.com 新加坡 04
+  password: 4186370j1ebs50UqyHfXU
+  port: 8436
+  server: 217.197.160.225
   type: ss
 - name: 82|🇸🇬 新加坡_Telegram@kxswa
   network: tcp
@@ -505,23 +583,6 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  country: 🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: '82,182,183,188,211,336,365,387,467,473,484,507|@Vip_Security join us - 46
-
-    '
-  network: tcp
-  port: '57614'
-  server: 5.34.176.111
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
-  ws-path: /
 - name: 82|🇸🇬 www.85la.com 新加坡 12
   network: tcp
   password: '!!str 3648425794742788096'
@@ -531,35 +592,6 @@ proxies:
   sni: amusing-jaybird.treefrog761.one
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 82|🇸🇬 www.85la.com 新加坡 32_1
-  network: ws
-  port: 2052
-  server: cf.hy2.one
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a2eda63e-fceb-4377-aad3-1b2eb67addde
-  ws-opts:
-    headers:
-      host: sg0002.hy-2.top
-    path: /0
-- alterId: 0
-  cipher: auto
-  name: 82,321,342,343,349,350,354,357,358,359,512|新加坡_0106023
-  network: ws
-  port: '443'
-  server: 8.219.209.8
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkws
 - name: 82|新加坡-4.10MB/s_84_84
   network: tcp
   password: eb0c0b71-20d5-43b3-8c44-3e63e3fdd1a6
@@ -607,25 +639,11 @@ proxies:
   port: 571
   server: aisalayer-b.upperlay.xyz
   type: ss
-- cipher: aes-256-gcm
-  name: 82|🇸🇬+www.85la.com+新加坡+04
-  password: 4186370j1ebs50UqyHfXU
-  port: 8436
-  server: 217.197.160.225
-  type: ss
 - cipher: aes-256-cfb
   name: 83,256,343,359,484|4|_SG_
   password: amazonskr05
   port: 443
   server: 54.179.87.28
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 83,94,125,256,343,359,413,496|Japan_Tokyo_ss_1175
-  password: amazonskr05
-  port: 443
-  server: 52.196.112.58
-  tfo: false
   type: ss
 - alterId: 2
   cipher: auto
@@ -638,7 +656,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 4eb9ba00-8dff-3b87-88af-db60646d1ff8
+  uuid: ede215fd-84b1-3963-a8c8-b2f23560bbbc
   ws-opts:
     headers:
       Host: 17.mamamajd.site
@@ -1642,6 +1660,40 @@ proxies:
   uuid: d58f81a7-083a-4ff2-e50a-7078c58bbccf
 - alterId: 0
   cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 115,208|🇸🇬 SG_439_0@438
+  network: ws
+  port: 443
+  server: 8.219.209.8
+  servername: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-headers:
+    HOST: beyonddsz.cfd
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
+  country: 🇸🇬 SG
+  h2-opts: {}
+  http-opts: {}
+  name: 115,208|🇸🇬 SG_440_0@439
+  network: ws
+  port: 443
+  server: 8.222.180.229
+  servername: beyonddsz.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-headers:
+    HOST: beyonddsz.cfd
+  ws-path: /linkws
+- alterId: 0
+  cipher: auto
   name: 117|SG_youtube@资源分享师_38
   network: ws
   port: '443'
@@ -1688,20 +1740,6 @@ proxies:
   port: 18814
   server: 159.65.129.128
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '133,134|新加坡_010309161 L4 #1'
-  network: ws
-  port: '443'
-  server: 8.222.159.245
-  servername: beyonddsz.cfd
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: beyonddsz.cfd
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: 162|SG
@@ -2593,20 +2631,6 @@ proxies:
     headers:
       Host: m.licdn.com
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 194|bbea27d6021e4f4285c81f143a5b97ba_@_🇸🇬[openproxylist.com] vmess-SG
-  network: ws
-  port: 47930
-  server: 103.106.229.29
-  tls: false
-  type: vmess
-  udp: false
-  uuid: ec7dd23d-d03b-4262-9793-def9c849a01d
-  ws-opts:
-    path: /wada12222
 - cipher: aes-256-cfb
   name: 200|🇸🇬 SG 10 → tg@nicevpn123
   password: amazonskr05
@@ -3139,40 +3163,6 @@ proxies:
     headers:
       Host: sg-gcore.sharecentre.online
     path: /shirker
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 208|🇸🇬 SG_439_0@438
-  network: ws
-  port: 443
-  server: 8.219.209.8
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-headers:
-    HOST: beyonddsz.cfd
-  ws-path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇸🇬 SG
-  h2-opts: {}
-  http-opts: {}
-  name: 208|🇸🇬 SG_440_0@439
-  network: ws
-  port: 443
-  server: 8.222.180.229
-  servername: beyonddsz.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-headers:
-    HOST: beyonddsz.cfd
-  ws-path: /linkws
 - cipher: aes-256-cfb
   name: '223,343,359|🇬SG-13.213.46.196-5440 #1'
   password: amazonskr05
@@ -4627,21 +4617,6 @@ proxies:
     path: /cctv13/hd.m3u8
 - alterId: 0
   cipher: auto
-  name: 321,342,343,349,350,354,357,358,359,512|新加坡_0106024
-  network: ws
-  port: '443'
-  server: 8.222.161.29
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkws
-- alterId: 0
-  cipher: auto
   name: '321,342,343,349,350,354,357,358,359,484|32|🇪🇺 欧洲(油管:破解资源君2.0) #2'
   network: ws
   port: '80'
@@ -4932,7 +4907,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 323|24-1791-SG
+  name: 323|24-1823-SG
   network: ws
   port: 47935
   server: 103.106.229.29
@@ -6320,7 +6295,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '484,507|@Vip_Security join us - 462
+  name: '484,507|@Vip_Security join us - 468
 
     '
   network: ws
