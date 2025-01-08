@@ -1,18 +1,5 @@
 proxies:
-- name: 26,27,52,95|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  skip-cert-verify: false
-  sni: zb.ylks.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
-- name: 26,27,50,51,95|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+- name: 26,27,52,95|TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
   network: ws
   password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
   port: 443
@@ -25,6 +12,19 @@ proxies:
     headers:
       Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
     path: /Telegram@V2ray_Alpha/?ed=2560
+- name: 26,27,52,95|TR-WS-TLS 🇨🇭 CH-51.107.8.47:8443
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 51.107.8.47
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /?ed
 - cipher: chacha20-ietf-poly1305
   name: 32|[SS] 🇨🇭 _瑞士
   password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
@@ -32,46 +32,37 @@ proxies:
   server: 138.124.51.236
   type: ss
   udp: true
+- name: 43,44,50,51,95|TR-WS-TLS 🇨🇭 CH-185.18.250.112:443
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 185.18.250.112
+  skip-cert-verify: false
+  sni: zb.ylks.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: zb.ylks.xyz
+    path: /
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|CH-156.146.62.161-3863
-    | 30.233MB
+  name: 46,47,65,66,73,75,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.163-4053
+    | 12.309MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.161
+  server: 156.146.62.163
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|CH-156.146.62.162-3802
-    | 29.917MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 46,47,65,66,73,75,82,89,95,115,125,208,329,343,346,353,359,480|CH-156.146.62.164-4005
-    | 30.316MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 46,47,73,95,98|未知41
+- cipher: chacha20-ietf-poly1305
+  name: 46,47,73,82,95|SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555
   password: SnIDqY432GgGnHg6ZgnSwA
   port: 5555
   server: 195.15.215.198
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: 46,47,75,95|SS-TCP-NA 🇨🇭 CH-23.166.88.198:2375
+  name: 46,47,95|SS-TCP-NA 🇨🇭 CH-23.166.88.198:2375
   password: faBAoD54k87UJG7
   port: 2375
   server: 23.166.88.198
@@ -84,9 +75,16 @@ proxies:
   server: 23.166.88.198
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 46,47,95|SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248
+  password: xZueg29STVQdc8hfO45EFm
+  port: 4248
+  server: 45.95.232.236
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '46,47,95,482|未知18 #1'
+  name: 46,47,95,98|未知18
   password: DZNpz5faOPldaiOiry8237
   port: 19057
   server: 91.103.253.151
@@ -96,38 +94,42 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 48,49,65,66,73,75,82,89,95,115,208,329,343,346,353,359,480|CH-156.146.62.163-3751
-    | 29.713MB
+  name: 48,49,65,66,73,75,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.161-3444
+    | 12.08MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.163
+  server: 156.146.62.161
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 48,49,65,66,73,75,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.162-3659
+    | 11.82MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 48,49,65,66,73,82,89,95,125,208,329,343,346,353,359,480|CH-156.146.62.164-3413
+    | 12.131MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.164
   type: ss
   udp: true
 - cipher: aes-256-gcm
   country: 🏁 ZZ
-  name: '48,49,95,115,208,343,359|CH-23.166.88.198-6105 #1'
+  name: '48,49,89,95,208,343,346,353,359|CH-23.166.88.198-6138 #1'
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 23.166.88.198
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 48,49,73,95|SS-TCP-NA 🇨🇭 CH-23.166.88.5:3389
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.166.88.5
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 48,49,95|SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248
-  password: xZueg29STVQdc8hfO45EFm
-  port: 4248
-  server: 45.95.232.236
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '60,507|@Vip_Security join us - 283
+  name: '60,507|@Vip_Security join us - 290
 
     '
   network: tcp
@@ -148,13 +150,41 @@ proxies:
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
 - cipher: aes-256-cfb
-  name: 79,86,161,311|🇨_CH_
+  name: 79,86,311|🇨_CH_
   password: asdKkaskJKfnsa
   port: 80
   server: 84.17.53.163
   tfo: false
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 82|瑞士_由快嘴科技提供：kkzui.com35
+  network: ws
+  port: 443
+  server: 141.148.187.195
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      host: nl.zhuk.us.kg
+    path: /ylks
+- alterId: 0
+  cipher: auto
+  name: '82,201|>🇳🇱 NL|Ls|0104|TG@FProxies| #7'
+  network: ws
+  port: '443'
+  server: 141.148.220.141
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /ylks
 - alterId: 0
   cipher: auto
   name: 82|瑞士_由快嘴科技提供：kkzui.com67
@@ -231,7 +261,7 @@ proxies:
       host: v2node8.bipbupvpn.com
     path: /AAA
 - cipher: aes-128-cfb
-  name: '178,200,343,359|🇨CH-156.146.62.160-4451 #1'
+  name: '178,200,343,359|🇨CH-156.146.62.160-4484 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -387,7 +417,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '321,342,343,349,350,354,357,358,359|🇨🇭CH-23.166.88.27-8906 #8'
+  name: '321,342,343,349,350,354,357,358,359|🇨🇭CH-23.166.88.27-8942 #8'
   network: ws
   port: 443
   server: 23.166.88.27
