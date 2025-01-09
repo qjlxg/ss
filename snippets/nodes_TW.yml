@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 18,83,110,201,244,246,256,365,369,371,372,373,374,410,411,413,414,436,496|Hong
-    Kong_None_vmess_1173
+  name: 18,83,110,191,201,244,246,256,365,369,371,372,373,374,410,411,414,436,496|Hong
+    Kong_None_vmess_1146
   network: tcp
   port: '47436'
   server: 103.224.80.116
@@ -11,27 +11,27 @@ proxies:
   type: vmess
   uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
 - cipher: chacha20-ietf-poly1305
-  name: '23,24|[SS] 🇨🇳 台湾 01 | 1x TW #1'
-  password: 010c711e-43db-4e95-88f8-20de04384718
-  port: 36241
+  name: 23,24,304|🇹🇼 台湾_15
+  password: 3902f461-893a-4a6b-a303-0d6791900817
+  port: '36241'
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '23,24|[SS] 🇨🇳 台湾 02 | 1x TW #1'
-  password: 010c711e-43db-4e95-88f8-20de04384718
-  port: 36243
+  name: 23,24,304|🇹🇼 台湾_13
+  password: 3902f461-893a-4a6b-a303-0d6791900817
+  port: '36243'
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '23,24|[SS] 🇨🇳 台湾 03 | 1x TW #1'
-  password: 010c711e-43db-4e95-88f8-20de04384718
-  port: 36245
+  name: 23,24,304|🇹🇼 台湾_14
+  password: 3902f461-893a-4a6b-a303-0d6791900817
+  port: '36245'
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '29,30|[Trojan] 🇨🇳 台湾省 彼得巧科技企业社 #1'
+- name: '25,28,29,30|[Trojan] 15|TW_speednode_0107 #1'
   network: ws
   password: SSorg
   port: 443
@@ -44,6 +44,19 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.me
     path: '%2F'
+- name: 26,27,50,51,95|TR-WS-TLS 🇹🇼 TW-103.137.63.3:443
+  network: ws
+  password: SSorg
+  port: 443
+  server: 103.137.63.3
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /?ed
 - name: 32|[Trojan] 🇨🇳 14|台湾|@ripaojiedian
   network: ws
   password: ouo
@@ -57,18 +70,11 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- cipher: aes-256-cfb
-  name: '46,47,75,89,95,208,343,346,353,359|TW-185.189.160.98-6220 #1'
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
+  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.134
+  server: 211.22.161.135
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -79,31 +85,27 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.2:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.35.2
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.39
+- cipher: aes-256-cfb
+  name: '48,49,65,75,89,95,208,343,346,353,359|TW-185.189.160.98-6220 #1'
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '48,49,95,482|TW #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.135
+  server: 211.22.161.134
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -113,21 +115,22 @@ proxies:
   server: 60.249.28.136
   type: ss
   udp: true
-- name: 52,95|TR-WS-TLS 🇹🇼 TW-103.137.63.3:443
-  network: ws
-  password: SSorg
-  port: 443
-  server: 103.137.63.3
-  skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ssjj.esslh.filegear-sg.me
-    path: /?ed
 - cipher: chacha20-ietf-poly1305
-  name: 62|04-0157-TW
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.138
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.39
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 62|04-0127-TW
   password: 290e70d6-4904-4e3c-8bd8-fbd8e95a6a0f
   port: 10001
   server: tw.cooc.icu
@@ -159,7 +162,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 76,103,323|24-2172-RELAY
+  name: 76,103,323|24-2105-RELAY
   network: ws
   port: 2052
   server: yx.sulink.one
@@ -190,16 +193,14 @@ proxies:
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
-  name: '80,102,161,231,413,496,510|TW_speednode_0107 #1'
+  name: '80,102,191,231,496,510|TW_speednode_0107 #1'
   network: ws
   password: SSorg
   port: 443
   server: 103.137.63.3
   skip-cert-verify: false
   sni: ssjj.esslh.filegear-sg.me
-  tfo: false
   type: trojan
-  udp: true
   ws-opts:
     headers:
       Host: ssjj.esslh.filegear-sg.me
@@ -219,13 +220,6 @@ proxies:
   sni: ddns.200566.xyz
   type: trojan
   udp: true
-- name: '82,304|❓ 未知_1 #1'
-  password: 338b9800-fb4d-4934-8425-388f6d4342f5
-  port: '33751'
-  server: tw4.akebi.cc
-  skip-cert-verify: false
-  sni: tw04.akebi.cc
-  type: hysteria2
 - cipher: aes-256-cfb
   name: 82|TW,Taipei
   password: amazonskr05
@@ -246,6 +240,13 @@ proxies:
     headers:
       host: tw02.xn--io0a7iw0ab67b.xyz
     path: /
+- name: 82|🇹🇼台湾｜05｜原生IP-2.0
+  password: 338b9800-fb4d-4934-8425-388f6d4342f5
+  port: 33751
+  server: tw4.akebi.cc
+  skip-cert-verify: false
+  sni: tw04.akebi.cc
+  type: hysteria2
 - name: 82|台湾-2.11MB/s_1
   network: tcp
   password: 3e769264-67e5-44cc-98bc-4d0a6ba1febb
@@ -420,7 +421,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 52fe8219-9f53-3311-ae64-650aaeca9f0a
+  uuid: d49abb42-e16f-3747-bc6f-0546102f9b27
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -845,7 +846,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '95,182,183,188,198,229,321,336,342,343,349,350,354,357,358,359,365,376,473,489,493,507|@Vip_Security
-    join us - 100
+    join us - 99
 
     '
   network: ws
@@ -936,7 +937,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 16
   cipher: auto
-  name: 133,134,513|台湾_0108004
+  name: 133,134,513|台湾_0109004
   network: ws
   port: '10053'
   server: 45.43.59.150
@@ -1968,34 +1969,19 @@ proxies:
   type: hysteria2
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 296|🇨🇳台湾04|流媒体|专线2-569
-  password: 962849d1-a452-4b6c-b1a8-282d4d36e01a
-  port: 28865
+  name: '296,304|❓ 未知_46 #1'
+  password: 4ee193ca-4030-4de3-b4a7-b15d5c171563
+  port: '28865'
   server: zx2.1010520.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 296|🇨🇳台湾05|流媒体|专线3-569
-  password: 962849d1-a452-4b6c-b1a8-282d4d36e01a
-  port: 28865
+  name: '296,304|❓ 未知_20 #1'
+  password: 4ee193ca-4030-4de3-b4a7-b15d5c171563
+  port: '28865'
   server: zx3.1010520.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 298|🔒🇹🇼 TW 154.40.60.172 ◈ ws:12945 ◈ Polonetwork Limited / Nearoute Limited
-    ◈ 2f519
-  network: ws
-  port: '12945'
-  server: 55.lwdh.us
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 8259cb1c-dd6c-4739-9c88-af550d977525
-  ws-opts:
-    headers:
-      Host: ''
-    path: ''
 - alterId: 2
   cipher: auto
   name: 303,384|🇹🇼 TW_1345 | 5.84Mb
@@ -2022,18 +2008,138 @@ proxies:
     headers:
       Host: TW03-1-EI862.233cloud-node.com
     path: /v2ray/233yun.xyz
-- cipher: chacha20-ietf-poly1305
+- auth: 4229bb96-999e-4058-8a36-247f4863ea95
+  down: '200'
   name: '304|🇹🇼 台湾_1 #1'
-  password: d9ad3deb-7638-4c95-b44a-1f786b0a31fd
-  port: '30002'
-  server: 171.111.216.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
+  password: 4229bb96-999e-4058-8a36-247f4863ea95
+  port: '48395'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  down: '200'
+  name: '304|🇹🇼 台湾_2 #1'
+  password: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  port: '48118'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 4229bb96-999e-4058-8a36-247f4863ea95
+  down: '200'
   name: '304|🇹🇼 台湾_3 #1'
-  password: d9ad3deb-7638-4c95-b44a-1f786b0a31fd
-  port: '30002'
-  server: 223.113.53.141
-  type: ss
+  password: 4229bb96-999e-4058-8a36-247f4863ea95
+  port: '48306'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  down: '200'
+  name: '304|🇹🇼 台湾_4 #1'
+  password: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  port: '48713'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: b9be8c69-3c6d-406f-986f-19d61f46980b
+  down: '200'
+  name: '304|🇹🇼 台湾_5 #1'
+  password: b9be8c69-3c6d-406f-986f-19d61f46980b
+  port: '48825'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  down: '200'
+  name: 304|🇹🇼 台湾_6
+  password: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  port: '48919'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: b9be8c69-3c6d-406f-986f-19d61f46980b
+  down: '200'
+  name: 304|🇹🇼 台湾_7
+  password: b9be8c69-3c6d-406f-986f-19d61f46980b
+  port: '48741'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: b9be8c69-3c6d-406f-986f-19d61f46980b
+  down: '200'
+  name: 304|🇹🇼 台湾_8
+  password: b9be8c69-3c6d-406f-986f-19d61f46980b
+  port: '48455'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 4229bb96-999e-4058-8a36-247f4863ea95
+  down: '200'
+  name: 304|🇹🇼 台湾_9
+  password: 4229bb96-999e-4058-8a36-247f4863ea95
+  port: '48358'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 4229bb96-999e-4058-8a36-247f4863ea95
+  down: '200'
+  name: 304|🇹🇼 台湾_10
+  password: 4229bb96-999e-4058-8a36-247f4863ea95
+  port: '48325'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  down: '200'
+  name: 304|🇹🇼 台湾_11
+  password: 511c09f9-3fd6-476e-9b15-d2a4c13e7a1f
+  port: '48940'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
+- auth: b9be8c69-3c6d-406f-986f-19d61f46980b
+  down: '200'
+  name: 304|🇹🇼 台湾_12
+  password: b9be8c69-3c6d-406f-986f-19d61f46980b
+  port: '48635'
+  ports: 48001-48999
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+  up: '200'
 - cipher: rc4-md5
   name: '314,343,359|🇨🇳CN-111.6.86.119-8456 #1'
   password: Paofu
