@@ -1,9 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 18,29,30,75,159,216,217,244,246,321,342,343,344,345,349,350,351,352,354,357,358,359,365,371,372,373,374,512|加拿大_0110017
+  name: 18,29,30,159,216,217,244,246,321,342,343,344,345,349,350,351,352,354,357,358,359,365,371,372,373,374,512|加拿大_0110017
   network: ws
   port: '31005'
   server: 142.171.24.42
@@ -107,6 +105,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 26,27,95|TR-WS-TLS 🇨🇦 CA-23.227.38.208:2053
+  network: ws
+  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  port: 2053
+  server: 23.227.38.208
+  skip-cert-verify: false
+  sni: bPB-V.pageS.dEV
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bPB-V.pageS.dEV
+    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
   name: 32|[VMess] 🇨🇦 加拿大 V2CROSS.COM
@@ -164,15 +175,12 @@ proxies:
   uuid: 1ded1ec9-7557-4c15-aaac-758bedea64fd
   ws-opts:
     path: /
-- alterId: 0
-  cipher: aes-128-gcm
-  name: '46,47,65,66,73,82,89,95,98,125,329,343,346,353,359,480,482|未知58 98.3MB/s
-    #1'
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  skip-cert-verify: true
-  tls: true
+- cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: '46,47,73,75,82,95,208,343,359|🇦CA-158.51.123.253-6501 #1'
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 158.51.123.253
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -182,19 +190,21 @@ proxies:
   server: 185.213.20.227
   type: ss
   udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 48,49,65,66,73,82,89,95,98,125,329,343,346,353,359,480,482|未知2 104.6MB/s
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 46,47,95,480|🇨🇦CA-79.127.200.162-3439 | 62.516MB
+  name: 48,49,95,480|🇨🇦CA-79.127.200.162-3439 | 62.516MB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 79.127.200.162
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '48,49,73,75,82,95,208,343,359|🇦CA-158.51.123.253-6501 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 158.51.123.253
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -281,18 +291,9 @@ proxies:
   udp: true
   uuid: c2ab4538-dfdc-4bd8-8ff5-28d00c80880f
   version: '2'
-- name: '73,82|🇨🇦+www.85la.com+加拿大+06 #1'
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.223.127.19
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
-  name: '73,300,301|🇺🇸 US 74.48.159.226 ◈ ws:38848 ◈ Multacom Corporation / TELUS
+  name: '73,82,300,301|🇺🇸 US 74.48.159.226 ◈ ws:38848 ◈ Multacom Corporation / TELUS
     Communications Inc ◈ bf6c8 #1'
   network: ws
   port: '38848'
@@ -308,6 +309,22 @@ proxies:
     headers:
       Host: ''
     path: /6c8e5a1b
+- alterId: 0
+  cipher: auto
+  name: 73|🇨🇦  加拿大 07
+  network: ws
+  port: 80
+  server: us-21.hihu.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 06678f50-ca7f-11ef-b837-205c6d5f5d78
+  version: '2'
+  ws-opts:
+    headers:
+      host: mtn.zm
+    path: /vixuk2fg
 - alterId: 0
   cipher: auto
   country: 🇨🇦CA
@@ -400,7 +417,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 79,82,86,161,311,340,341|其他 68
+  name: 79,86,161,311,340,341|其他 68
   network: ws
   port: '80'
   server: 108.181.10.17
@@ -416,7 +433,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 81,233,369|TG频道@mfbpn-0494-RELAY
+  name: 81,233,369|TG频道@mfbpn-0490-RELAY
   network: ws
   port: 2052
   server: 198.41.209.70
@@ -432,7 +449,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 2495
-  name: 81,233,369|TG频道@mfbpn-1845-RELAY
+  name: 81,233,369|TG频道@mfbpn-1835-RELAY
   network: ws
   port: 2095
   server: 104.16.155.10
@@ -447,7 +464,7 @@ proxies:
     path: /dabai.in104.20.27.115
 - alterId: 0
   cipher: auto
-  name: 81,233,369|TG频道@mfbpn-0527-RELAY
+  name: 81,233,369|TG频道@mfbpn-0523-RELAY
   network: ws
   port: 8880
   server: s1.cn-db.top
@@ -461,7 +478,7 @@ proxies:
     path: /dabai.in172.67.97.168
 - alterId: 0
   cipher: auto
-  name: 81,233,369|TG频道@mfbpn-0529-RELAY
+  name: 81,233,369|TG频道@mfbpn-0525-RELAY
   network: ws
   port: 8080
   server: vip4.pmy666.xyz
@@ -500,66 +517,22 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '82,315,343,359|🇺🇸US-38.114.114.69-8184 #1'
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 38.114.114.69
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 82|🇨🇦 www.85la.com 加拿大 05_1
-  network: ws
-  port: 443
-  server: denc36.xtooltech.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: b321fd5d-e6ec-4293-a644-164e3885f52e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 82|🇨🇦 www.85la.com 加拿大 06_1
-  network: ws
-  port: 80
-  server: 193.203.203.99
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 59db4f71-1328-56be-aa15-51261e8536e1
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '82,182,183,188,336,365,467,473,484,507|@Vip_Security join us - 299
-
-    '
+- name: 82|www.85la.com+🇨🇦+加拿大_5
   network: tcp
-  port: '22324'
-  server: 23.154.136.47
-  servername: ''
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.222.130.218
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: 82|🇨🇦+www.85la.com+加拿大+06
-  network: tcp
-  password: b0b861c2c85346a389b9e95769c3cba4
-  port: 443
-  server: 134.195.196.138
-  skip-cert-verify: true
-  sni: avianrecruit.com
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: 82|🇨🇦+www.85la.com+加拿大+07
+- name: 82|🇨🇦+www.85la.com+加拿大+06
   network: tcp
-  password: 4aec4e7f8cf8454ea4613659822e1a61
-  port: 443
-  server: avianrecruit.com
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.223.127.19
   skip-cert-verify: true
-  sni: avianrecruit.com
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - alterId: 0
@@ -604,33 +577,6 @@ proxies:
     headers:
       host: nl.zhuk.us.kg
     path: /ylks
-- name: 82|🇨🇦+www.85la.com+加拿大+02
-  network: tcp
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: neutral-magpie.treefrog761.one
-  skip-cert-verify: true
-  sni: neutral-magpie.treefrog761.one
-  type: trojan
-  udp: true
-- name: 82|🇨🇦+www.85la.com+加拿大+03
-  network: tcp
-  password: '!!str 3723507166611775488'
-  port: 443
-  server: 15.223.141.195
-  skip-cert-verify: true
-  sni: neutral-magpie.treefrog761.one
-  type: trojan
-  udp: true
-- name: 82|www.85la.com+🇨🇦+加拿大_5
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.222.130.218
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - name: 82|🇨🇦+www.85la.com+加拿大+01_1
   network: tcp
   password: 2add6241-8fe8-3922-8347-da25e8ced601
@@ -642,26 +588,65 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 82|🇨🇦 www.85la.com 加拿大 07
+  name: 82|🇨🇦 www.85la.com 加拿大 07_1
   network: ws
-  port: 38848
-  server: 74.48.159.226
+  port: 80
+  server: 193.203.203.99
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 20fed645-619c-4ca1-c00e-743ea8a3b51f
+  uuid: 59db4f71-1328-56be-aa15-51261e8536e1
   ws-opts:
-    path: /
+    path: /vmess#t-me-Serversiran11?ed=2048
+- name: 82|🇨🇦+www.85la.com+加拿大+01_2
+  network: tcp
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: 134.195.196.138
+  skip-cert-verify: true
+  sni: avianrecruit.com
+  type: trojan
+  udp: true
+- name: 82|🇨🇦+www.85la.com+加拿大+03
+  network: tcp
+  password: 2cba4104747d49d18319e5ade1b93ab5
+  port: 443
+  server: avianrecruit.com
+  skip-cert-verify: true
+  sni: avianrecruit.com
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 82|🇨🇦 www.85la.com 加拿大 08
+  name: '82,182,183,188,336,365,467,473,484,507|@Vip_Security join us - 309
+
+    '
   network: tcp
-  port: 80
-  server: 51.79.27.204
+  port: '22324'
+  server: 23.154.136.47
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 97244a00-16ba-43ce-9e6b-f6002290e485
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- name: 82|🇨🇦+www.85la.com+加拿大+02
+  network: tcp
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: neutral-magpie.treefrog761.one
+  skip-cert-verify: true
+  sni: neutral-magpie.treefrog761.one
+  type: trojan
+  udp: true
+- name: 82|🇨🇦+www.85la.com+加拿大+03_1
+  network: tcp
+  password: '!!str 3723507166611775488'
+  port: 443
+  server: 15.223.141.195
+  skip-cert-verify: true
+  sni: neutral-magpie.treefrog761.one
+  type: trojan
+  udp: true
 - name: 82|🇨🇦 加拿大_Telegram@kxswa
   network: tcp
   password: ngtr7J1nDmgu
@@ -701,6 +686,16 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 82|🇨🇦 www.85la.com 加拿大 08
+  network: tcp
+  port: 80
+  server: 51.79.27.204
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 97244a00-16ba-43ce-9e6b-f6002290e485
 - cipher: aes-128-gcm
   name: 84|🇨🇦 Web 加拿大I-标准 - AyucLouD-Services
   password: ayucloud1
@@ -812,17 +807,6 @@ proxies:
   ws-headers:
     Host: nl.zhuk.us.kg
   ws-path: /ylks
-- name: 95|TR-WS-TLS 🇨🇦 CA-23.227.38.208:2053
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 2053
-  server: 23.227.38.208
-  sni: bPB-V.pageS.dEV
-  type: trojan
-  ws-opts:
-    headers:
-      Host: bPB-V.pageS.dEV
-    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: '0'
   cipher: auto
   name: 114|[🇨🇦]23.227.38.39:443(4612618c-24cd-4379-9924-cfdf3d61fa5a)
@@ -1376,7 +1360,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '137,138,140,265,484,507|@Vip_Security join us - 127
+  name: '137,138,140,265,484,507|@Vip_Security join us - 128
 
     '
   network: ws
@@ -1978,7 +1962,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,265,365,507|@Vip_Security join us - 216
+  name: '137,138,265,365,507|@Vip_Security join us - 222
 
     '
   network: ws
@@ -1994,7 +1978,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,290,291,507|@Vip_Security join us - 110
+  name: '137,138,290,291,507|@Vip_Security join us - 111
 
     '
   network: ws
@@ -2026,7 +2010,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,365,507|@Vip_Security join us - 114
+  name: '137,138,365,507|@Vip_Security join us - 115
 
     '
   network: ws
@@ -2056,7 +2040,7 @@ proxies:
     path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '137,138,507|@Vip_Security join us - 457
+  name: '137,138,507|@Vip_Security join us - 469
 
     '
   network: ws
@@ -2294,7 +2278,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '137,138,507|@Vip_Security join us - 449
+  name: '137,138,507|@Vip_Security join us - 461
 
     '
   network: ws
@@ -2585,6 +2569,28 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
+  name: '138,201,256,484|4,17,18|🇺🇸_US_美国->🇨🇦_CA_加拿大 #32'
+  network: ws
+  port: 2086
+  server: 104.19.47.32
+  sni: ip14.freegradely.xyz
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '138,201,256,484|4,17,18|🇺🇸_US_美国->🇨🇦_CA_加拿大 #31'
+  network: ws
+  port: 2086
+  server: 104.19.46.39
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
   name: '138|加拿大_多伦多 #187'
   network: ws
   port: 2082
@@ -2609,6 +2615,17 @@ proxies:
   network: ws
   port: 2086
   server: 172.67.71.187
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '138,201,256,484|4,17,18|🇺🇸_US_美国 #27'
+  network: ws
+  port: 2086
+  server: 104.20.25.146
+  sni: ip14.freegradely.xyz
   tls: false
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
@@ -4871,7 +4888,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: '223,290,291,365,507|@Vip_Security join us - 113
+  name: '223,290,291,365,507|@Vip_Security join us - 114
 
     '
   network: ws

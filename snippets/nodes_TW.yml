@@ -46,7 +46,7 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- name: 43,44,48,49,95|TR-WS-TLS 🇹🇼 TW-103.137.63.3:443
+- name: 43,44,50,51,95|TR-WS-TLS 🇹🇼 TW-103.137.63.3:443
   network: ws
   password: SSorg
   port: 443
@@ -59,19 +59,21 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.me
     path: /?ed
-- cipher: aes-256-cfb
-  name: 46,47,65,66,75,89,95,125,208,329,343,346,353,359,480|🇨🇳TW-185.189.160.98-3317
-    | 20.182MB
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 46,47,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 211.22.161.134
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: '46,47,95,98|TW #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 211.22.161.135
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -89,22 +91,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
+  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.60
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 46,47,95|SS-TCP-NA 🇹🇼 TW-60.249.35.2:2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.2
+  server: 60.249.28.138
   type: ss
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '46,47,95,98,482|TW2 #1'
+  name: 46,47,95,98|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.35.39
@@ -112,21 +107,26 @@ proxies:
   tls: true
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '48,49,95,98,482|TW #2'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 211.22.161.135
-  skip-cert-verify: true
-  tls: true
+- cipher: aes-256-cfb
+  name: 48,49,65,66,75,89,95,125,208,329,343,346,353,359,480|🇨🇳TW-185.189.160.98-3317
+    | 20.182MB
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.138
+  server: 60.249.28.60
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-60.249.35.2:2377
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.2
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -136,6 +136,23 @@ proxies:
   server: tw.cooc.icu
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '75|netflix_TW #1'
+  network: ws
+  port: 2086
+  server: 104.17.221.248
+  servername: 100-48-202-143.s1.db-link01.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      HOST: 100-48-202-143.s1.db-link01.top
+    path: /dabai.in104.17.154.223
 - auth: 45c59bff-39c6-4780-a14f-6021732086a3
   name: '76,103|🇼 台湾2-1A #1'
   password: 45c59bff-39c6-4780-a14f-6021732086a3
@@ -162,7 +179,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 76,103,323|24-2303-RELAY
+  name: 76,103,323|24-2314-RELAY
   network: ws
   port: 80
   server: cf.hy2.one
@@ -186,7 +203,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 76,103,323|24-2332-RELAY
+  name: 76,103,323|24-2343-RELAY
   network: ws
   port: 2052
   server: yx.sulink.one
@@ -208,7 +225,7 @@ proxies:
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
-  name: '80,102,191,231,413,496,510|TW_speednode_0107 #1'
+  name: '80,102,191,231,413,510|TW_speednode_0107 #1'
   network: ws
   password: SSorg
   port: 443
@@ -220,13 +237,6 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.me
     path: /
-- name: 82|🇹🇼台湾｜05｜原生IP-2.0
-  password: 338b9800-fb4d-4934-8425-388f6d4342f5
-  port: 33751
-  server: tw4.akebi.cc
-  skip-cert-verify: false
-  sni: tw04.akebi.cc
-  type: hysteria2
 - cipher: aes-256-gcm
   name: 82|台湾-141.0KB/s
   password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ
@@ -271,9 +281,16 @@ proxies:
   sni: ddns.200566.xyz
   type: trojan
   udp: true
+- name: 82|🇹🇼台湾｜05｜原生IP-2.0
+  password: 338b9800-fb4d-4934-8425-388f6d4342f5
+  port: 33751
+  server: tw4.akebi.cc
+  skip-cert-verify: false
+  sni: tw04.akebi.cc
+  type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 83,94,191,256,413,496|Hong Kong_None_ssr_1125
+  name: 83,94,191,256,413|13| 台湾2|@ripaojiedian
   obfs: http_simple
   obfs-param: download.microsoft.com
   password: HUAHE
@@ -447,7 +464,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: df111d12-00e1-3e04-a157-04dc6b4bcc17
+  uuid: 09690789-de84-318f-a609-3c2ebc03485b
   ws-opts:
     headers:
       Host: 19.mamamajd.site
@@ -872,7 +889,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '95,182,183,188,198,229,321,336,342,343,349,350,354,357,358,359,365,376,473,489,493,507|@Vip_Security
-    join us - 97
+    join us - 98
 
     '
   network: ws
@@ -963,7 +980,7 @@ proxies:
     path: /AUIKN8AU
 - alterId: 16
   cipher: auto
-  name: 133,134,513|台湾_0109004
+  name: '133,134,513|台湾_0110004 #1'
   network: ws
   port: '10053'
   server: 45.43.59.150
