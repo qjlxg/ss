@@ -1,7 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 18,83,110,201,244,246,256,369,371,372,373,374,410,411,414,436,496|Hong Kong_None_vmess_1143
+  name: 18,83,110,201,244,246,256,369,371,372,373,374,410,411,413,414,436,496|Hong
+    Kong_None_vmess_1147
   network: tcp
   port: '47436'
   server: 103.224.80.116
@@ -70,7 +71,8 @@ proxies:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: aes-256-cfb
-  name: '46,47,66,75,89,95,125,208,329,343,346,353,359|🇹TW-185.189.160.98-0523 #1'
+  name: '46,47,65,66,75,89,95,125,208,329,343,346,353,359|🇹TW-185.189.160.98-0523
+    #1'
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
@@ -99,7 +101,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: '46,47,95,482|TW #2'
+  name: '46,47,95,98,482|TW #2'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.138
@@ -114,14 +116,11 @@ proxies:
   server: 60.249.35.2
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: '48,49,95,98|TW #1'
+- cipher: chacha20-ietf-poly1305
+  name: 48,49,95|SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 211.22.161.134
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -138,33 +137,74 @@ proxies:
   server: tw.cooc.icu
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 75|disney_TW
+  network: ws
+  port: 2052
+  server: 198.41.209.70
+  servername: 100-102-247-92.s1.db-link02.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      HOST: 100-102-247-92.s1.db-link02.top
+    path: /dabai.in104.25.175.137
+- auth: 45c59bff-39c6-4780-a14f-6021732086a3
+  name: '76,103|🇼 台湾2-1A #1'
+  password: 45c59bff-39c6-4780-a14f-6021732086a3
+  port: 48058
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
+- auth: 45c59bff-39c6-4780-a14f-6021732086a3
+  name: '76,103|🇹🇼 台湾1-1A #1'
+  password: 45c59bff-39c6-4780-a14f-6021732086a3
+  port: 48810
+  server: yukuai-tw.jiumaojiu.org
+  skip-cert-verify: false
+  type: hysteria2
+  udp: true
 - auth: 45c59bff-39c6-4780-a14f-6021732086a3
   name: '76,103|🇼 台湾3 #1'
   password: 45c59bff-39c6-4780-a14f-6021732086a3
-  port: 48184
-  server: yukuai-tw.jiumaojiu.org
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 45c59bff-39c6-4780-a14f-6021732086a3
-  name: '76,103|🇹🇼 台湾2-1A #1'
-  password: 45c59bff-39c6-4780-a14f-6021732086a3
-  port: 48573
-  server: yukuai-tw.jiumaojiu.org
-  skip-cert-verify: false
-  type: hysteria2
-  udp: true
-- auth: 45c59bff-39c6-4780-a14f-6021732086a3
-  name: '76,103|🇼 台湾4 #1'
-  password: 45c59bff-39c6-4780-a14f-6021732086a3
-  port: 48630
+  port: 48368
   server: yukuai-tw.jiumaojiu.org
   skip-cert-verify: false
   type: hysteria2
   udp: true
 - alterId: 0
   cipher: auto
-  name: 76,103,323|24-2179-RELAY
+  name: 76,103,323|24-2169-RELAY
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  servername: ''
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 37549828-ab22-43c4-862d-ad0210bdd111
+  ws-opts:
+    headers:
+      Host: tw02.hy2.one
+    path: /af323d
+- auth: 0f95b855-5ffe-41a8-aede-2760fda893b9
+  name: '76,103|🇼 台湾-02-奈非 #1'
+  password: 0f95b855-5ffe-41a8-aede-2760fda893b9
+  port: 30001
+  server: tw02v6.sulian.life
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 76,103,323|24-2163-RELAY
   network: ws
   port: 2052
   server: yx.sulink.one
@@ -178,24 +218,15 @@ proxies:
       Host: tw02.xn--io0a7iw0ab67b.xyz
     path: /
 - auth: 45c59bff-39c6-4780-a14f-6021732086a3
-  name: '76,103|🇼 台湾1-1A #1'
+  name: '76,103|🇹🇼 台湾4 #1'
   password: 45c59bff-39c6-4780-a14f-6021732086a3
-  port: 48424
+  port: 48482
   server: yukuai-tw.jiumaojiu.org
   skip-cert-verify: false
   type: hysteria2
   udp: true
-- auth: 0cc2a80d-791f-4dba-b626-d33745a9c5e5
-  name: '76,103|🇼 台湾-02-奈非 #1'
-  password: 0cc2a80d-791f-4dba-b626-d33745a9c5e5
-  port: 30001
-  server: tw02v6.sulian.life
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - client-fingerprint: chrome
-  name: '80,102,231,496,510|TW_speednode_0107 #1'
+  name: '80,102,231,413,496,510|TW_speednode_0107 #1'
   network: ws
   password: SSorg
   port: 443
@@ -206,20 +237,6 @@ proxies:
   ws-opts:
     headers:
       Host: ssjj.esslh.filegear-sg.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 82|🇨🇳 www.85la.com 台湾 06
-  network: ws
-  port: 2052
-  server: yx.sulink.one
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 09880c13-dc81-4f29-9313-6ef07c6df56a
-  ws-opts:
-    headers:
-      host: tw02.xn--io0a7iw0ab67b.xyz
     path: /
 - cipher: aes-256-gcm
   name: 82|台湾-141.0KB/s
@@ -242,6 +259,20 @@ proxies:
   port: 443
   server: 54.151.194.129
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 82|🇨🇳 www.85la.com 台湾 06
+  network: ws
+  port: 2052
+  server: yx.sulink.one
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 09880c13-dc81-4f29-9313-6ef07c6df56a
+  ws-opts:
+    headers:
+      host: tw02.xn--io0a7iw0ab67b.xyz
+    path: /
 - name: 82|🇹🇼台湾｜05｜原生IP-2.0
   password: 338b9800-fb4d-4934-8425-388f6d4342f5
   port: 33751
