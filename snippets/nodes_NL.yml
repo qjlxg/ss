@@ -28,11 +28,11 @@ proxies:
   uuid: d898ce79-9048-4349-a539-d51d6c5a30c2
 - alterId: 0
   cipher: auto
-  country: 🇺🇸US
+  country: 🇸 US
   h2-opts: {}
   http-opts: {}
-  name: '18,75,159,244,253,443,453,460,462,467,473|🔒 VM-TCP-NA 🇳🇱 NL-181.41.194.58:26138
-    #9'
+  name: '18,75,115,159,244,253,453,460,467,473|🔒 VM-TCP-NA 🇳🇱 NL-181.41.194.58:26138
+    #7'
   network: tcp
   port: '26138'
   server: 181.41.194.58
@@ -41,6 +41,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 9b64b832-a438-48e3-807b-5ef83d8fdaae
+  ws-path: /
 - alterId: 64
   cipher: auto
   name: '18,159,244,253,444,446,462|🔒 VM-WS-TLS 🇳🇱 NL-45.199.138.226:41003 #6'
@@ -325,7 +326,8 @@ proxies:
 - alterId: 0
   cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 46,47,65,66,73,75,82,89,91,95,125,208,329,343,346,353,359,480,482|未知132 1.1MB/s
+  name: '46,47,65,66,73,75,82,89,91,95,98,125,208,329,343,346,353,359,480,482|未知132
+    1.1MB/s #1'
   password: shadowsocks
   port: 443
   server: 149.34.244.68
@@ -335,7 +337,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 46,47,66,73,75,82,89,95,125,208,329,343,346,353,359,385,480|🇳🇱NL-149.34.244.77-3633
+  name: 46,47,65,66,73,82,89,95,125,208,329,343,346,353,359,385,480|🇳🇱NL-149.34.244.77-3633
     | 8.012MB
   password: shadowsocks
   port: 443
@@ -359,7 +361,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱NL
-  name: 46,47,73,82,95,208,343,359,480,484|21|🇳🇱NL_610
+  name: 46,47,73,82,95,115,208,343,359,480,484|21|🇳🇱NL_610
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.251
@@ -404,7 +406,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 48,49,66,73,75,79,82,89,91,95,125,208,329,343,346,353,359,480|🇳🇱NL-149.34.244.82-3860
+  name: 48,49,65,66,73,75,79,82,89,91,95,125,208,329,343,346,353,359,480|🇳🇱NL-149.34.244.82-3860
     | 29.633MB
   password: shadowsocks
   port: 443
@@ -414,23 +416,20 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇪🇸ES
-  name: 48,49,73,75,82,89,95,125,208,343,346,353,359,480|🇳🇱NL-150.241.102.95-3306
+  name: 48,49,65,73,75,82,89,95,125,208,343,346,353,359,480|🇳🇱NL-150.241.102.95-3306
     | 7.165MB
   password: jYOarwzEbrfvpq5HEeK2Fz
   port: 21771
   server: 150.241.102.95
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 48,49,66,73,82,89,95,98,115,125,208,329,343,346,353,359,480|🇳🇱NL-5.35.47.122-6772
+  name: 48,49,66,73,82,89,95,115,125,208,329,343,346,353,359,480|🇳🇱NL-5.35.47.122-6772
     | 3.97MB
   password: CLphyEMQT8nbG8EImX0A2D
   port: 45635
   server: 5.35.47.122
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -440,15 +439,12 @@ proxies:
   server: 82.115.5.141
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   country: 🇦 UA
-  name: 48,49,95,98,484|21| UA_666
+  name: 48,49,95,484|21| UA_666
   password: HYiwc3632CfpTMLn754Bxt
   port: 13402
   server: 89.110.70.175
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - name: 52,95|TR-WS-TLS 🇳🇱 NL-5.10.245.62:443
@@ -466,7 +462,7 @@ proxies:
     path: /?ed
 - alterId: 0
   cipher: auto
-  name: 73,82|美国-2.27MB/s_1
+  name: 73,82|荷兰_由快嘴科技提供：kkzui.com82
   network: ws
   port: 443
   server: gs09.guoshi1520.com
@@ -482,7 +478,9 @@ proxies:
     path: /681e76bc
 - alterId: 0
   cipher: auto
-  name: '73,82,321,342,343,349,350,354,357,358,359|🇫🇷FR-45.145.167.103-5768 #1'
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '73,82,194,321,342,343,349,350,354,357,358,359|🇫🇷FR-45.145.167.103-5768 #1'
   network: ws
   port: 443
   server: 45.145.167.103
@@ -490,7 +488,7 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vmess
-  udp: true
+  udp: false
   uuid: 425c5e6e-30a0-4984-8a13-ee6f72053162
   version: '2'
   ws-opts:
@@ -503,7 +501,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 73,82,89,125,208,343,346,353,359,484|21|_41
+  name: 73,82,89,115,125,208,343,346,353,359,484|21|_41
   password: d3837224ed465f00
   port: 57456
   server: war.ssvpnapp.win
@@ -511,7 +509,9 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '73,82,298,299,301|🔒🇫🇷 FR 45.145.167.103 ◈ ws:443 ◈ Feelb Sarl / HMS ◈ 6e77c
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: '73,194,298,299,301|🔒🇫🇷 FR 45.145.167.103 ◈ ws:443 ◈ Feelb Sarl / HMS ◈ 6e77c
     #2'
   network: ws
   port: '443'
@@ -520,7 +520,7 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: vmess
-  udp: true
+  udp: false
   uuid: 425c5e6e-30a0-4984-8a13-ee6f72053162
   version: '2'
   ws-opts:
@@ -547,7 +547,7 @@ proxies:
     path: /vmess/
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '73,82,95,208,304,343,359|NL-213.109.147.242-6177 #1'
+  name: '73,75,82,95,208,304,310,343,359|NL-213.109.147.242-6177 #1'
   password: VpKABcOpNNA0l5G2AVOmw8
   port: 62685
   server: 213.109.147.242
@@ -573,10 +573,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: '73,75,82,198,200,300,301|🇳🇱 NL warp ◈ ws:80 ◈ c1a9b #1'
+  name: '73,82,198,200,300,301|🇳🇱 NL warp ◈ ws:80 ◈ c1a9b #1'
   network: ws
   port: 80
   server: 95.179.128.114
@@ -593,10 +590,7 @@ proxies:
     path: /Av8czorIlYicU6D349brWUw6a
 - alterId: 0
   cipher: chacha20-poly1305
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: 73,75,82,133,134,301|🇳🇱 NL warp ◈ ws:80 ◈ e2a8c
+  name: 73,133,134,301|🇳🇱 NL warp ◈ ws:80 ◈ e2a8c
   network: ws
   port: 80
   server: hdfy8d1.cpi2hidd.eu.org
@@ -646,10 +640,7 @@ proxies:
     path: /auth
 - alterId: 0
   cipher: chacha20-poly1305
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: 73,75,82,301|🇳🇱 NL warp ◈ ws:80 ◈ a6e0a
+  name: 73,82,301|🇳🇱 NL warp ◈ ws:80 ◈ a6e0a
   network: ws
   port: '80'
   server: hdfy8d1.cpionline.co
@@ -669,7 +660,7 @@ proxies:
   country: 🇫🇷FR
   h2-opts: {}
   http-opts: {}
-  name: 73,75,82|www.85la.com 🇺🇸 美国_6
+  name: 73,75|Relay_🇫🇷FR-🇺🇸US_395
   network: ws
   port: 443
   server: hms19.best-tizi.top
@@ -681,6 +672,8 @@ proxies:
   uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
   version: '2'
   ws-opts:
+    headers:
+      HOST: hms19.best-tizi.top
     path: /linkws
 - alterId: 0
   cipher: auto
@@ -718,73 +711,41 @@ proxies:
     headers:
       HOST: hms26.xpengmotors.sbs
     path: /linkws
-- alterId: 0
-  cipher: auto
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: '75,132,298,299,300,301|🔒🇳🇱 NL warp ◈ ws:443 ◈ 11c5b #3'
-  network: ws
-  port: '443'
-  server: 95.179.186.161
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /WgCmp8pxRWBtLTlTL
-- alterId: 0
-  cipher: chacha20-poly1305
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: '75,298,299,301|🔒🇳🇱 NL warp ◈ ws:443 ◈ 1b3aa #2'
-  network: ws
+- name: 82|NL_69
+  network: tcp
+  password: f8df13a0-2272-11ed-92f8-1239d0255272
   port: 443
-  server: hdfy8d1.cpi1.eu.org
-  servername: ''
+  server: th1-trojan.bonds.id
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /Av8czorIlYicU6D349brWUw6a
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 82|荷兰-2.16MB/s_1
+  name: 82|🇳🇱 www.85la.com 荷兰 03_1
   network: ws
-  port: 8080
-  server: 45.131.7.95
+  port: 80
+  server: hdfy8d1.cpi2hidd.eu.org
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 2a4fa40f-97f4-4ea9-b959-b148c4197d15
+  uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1
   ws-opts:
-    headers:
-      host: luodi.davesuen.store
-    path: /
+    path: ''
 - alterId: 0
   cipher: auto
-  name: 82|荷兰_由快嘴科技提供：kkzui.com119
+  name: 82|🇳🇱 www.85la.com 荷兰 05_1
   network: ws
-  port: 443
-  server: 132.226.31.178
+  port: 2052
+  server: 141.144.204.126
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+  uuid: 113ade9e-cef2-428e-a1e6-803b7eb27a10
   ws-opts:
-    headers:
-      host: nl.zhuk.us.kg
-    path: /ylks
+    path: ''
 - alterId: 0
   cipher: auto
-  name: 82|🇳🇱 www.85la.com 荷兰 02
+  name: 82|🇳🇱 www.85la.com 荷兰 02_1
   network: ws
   port: 443
   server: 51.20.161.26
@@ -892,21 +853,18 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '82,507|@Vip_Security join us - 352
-
-    '
+  name: 82|荷兰-2.16MB/s
   network: ws
-  port: '443'
-  server: xcf024.facai2024.com
-  servername: ''
+  port: 8080
+  server: 45.131.7.95
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 939e72f2-3567-4712-c560-3eb999ff2a82
+  uuid: 2a4fa40f-97f4-4ea9-b959-b148c4197d15
   ws-opts:
     headers:
-      Host: ''
-    path: /939e72f2
+      host: luodi.davesuen.store
+    path: /
 - alterId: 0
   cipher: auto
   name: 82|荷兰_由快嘴科技提供：kkzui.com2
@@ -1019,14 +977,6 @@ proxies:
     headers:
       host: luodi.davesuen.store
     path: /2a4fa40f
-- name: 82|NL
-  network: tcp
-  password: f8df13a0-2272-11ed-92f8-1239d0255272
-  port: 443
-  server: th1-trojan.bonds.id
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
   name: 84|🇳🇱 v2ray 阿姆斯特丹节点VIP 170 - 紫云VPN服务商
@@ -1205,7 +1155,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '95,211|t.me/V2safe #1'
+  name: 95|VM-WS-NONE 🇳🇱 NL-154.211.2.124:19208
   network: ws
   port: 19208
   server: 154.211.2.124
@@ -1213,8 +1163,6 @@ proxies:
   type: vmess
   uuid: 7eb47a07-62f1-4bc1-cd64-20721795e923
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1237,7 +1185,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '132,160,211,467,473|🔒 VM-TCP-NA 🇹🇷 TR-45.154.156.178:32648 #1'
+  name: '132,160,467,473|🔒 VM-TCP-NA 🇹🇷 TR-45.154.156.178:32648 #1'
   network: tcp
   port: '32648'
   server: 45.154.156.178
@@ -1263,6 +1211,21 @@ proxies:
     path: /zBLPou
 - alterId: 0
   cipher: auto
+  name: '132,298,299,300,301|🔒🇳🇱 NL warp ◈ ws:443 ◈ 11c5b #3'
+  network: ws
+  port: '443'
+  server: 95.179.186.161
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /WgCmp8pxRWBtLTlTL
+- alterId: 0
+  cipher: auto
   name: 133,134,200,484,485|NL 2|openitr
   network: ws
   port: '80'
@@ -1277,20 +1240,6 @@ proxies:
     headers:
       Host: hdfy8d1.cpionline.co
     path: /Av8czorIlYicU6D349brWUw6a
-- alterId: 0
-  cipher: auto
-  name: '133,134|The Netherlands #5'
-  network: ws
-  port: '443'
-  server: 188.114.96.3
-  servername: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  tls: true
-  type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-    path: /azumase.ren
 - alterId: 0
   cipher: auto
   name: '137,138|荷兰_阿姆斯特丹 #2'
@@ -1332,7 +1281,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '162|NL #1'
+  name: 162|NL
   network: ws
   port: '8080'
   server: 178.128.243.133
@@ -1346,7 +1295,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #2'
+  name: '162|NL #1'
   network: ws
   port: '8080'
   server: 142.93.225.205
@@ -1360,7 +1309,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #3'
+  name: '162|NL #2'
   network: ws
   port: '8080'
   server: 165.232.85.234
@@ -1374,7 +1323,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #4'
+  name: '162|NL #3'
   network: ws
   port: '8080'
   server: 164.92.157.232
@@ -1388,7 +1337,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #5'
+  name: '162|NL #4'
   network: ws
   port: '8080'
   server: 109.104.153.141
@@ -1402,7 +1351,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #6'
+  name: '162|NL #5'
   network: ws
   port: '8080'
   server: 188.166.2.136
@@ -1416,7 +1365,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #7'
+  name: '162|NL #6'
   network: ws
   port: '8080'
   server: 109.104.153.95
@@ -1430,7 +1379,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #8'
+  name: '162|NL #7'
   network: ws
   port: '13337'
   server: 104.248.84.184
@@ -1444,7 +1393,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #9'
+  name: '162|NL #8'
   network: ws
   port: '8080'
   server: 188.166.90.212
@@ -1458,7 +1407,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '162|NL #10'
+  name: '162|NL #9'
   network: ws
   port: '8080'
   server: 142.93.225.75
@@ -1961,7 +1910,7 @@ proxies:
     path: /path/1690282577532
 - alterId: 64
   cipher: auto
-  name: '178,321,342,343,349,350,354,357,358,359,386|🇳🇱_NL_荷兰 #6'
+  name: '178,321,342,343,349,350,354,357,358,359,386|🇳🇱_NL_荷兰 #7'
   network: ws
   port: 443
   server: 154.85.1.128
@@ -2291,43 +2240,6 @@ proxies:
   uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09
 - alterId: 0
   cipher: auto
-  name: 211,290|🆔oneclickvpnkeys 🔓 VM-WS-N/A 🆥🆥  18ms
-  network: ws
-  port: '80'
-  server: www.speedtest.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9
-  ws-opts:
-    headers:
-      Host: nlch.blueberrynetwork.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '211,467,473|🔒 VM-TCP-NA 🇳🇱 NL-24.144.77.93:898 #1'
-  network: tcp
-  port: '898'
-  server: 24.144.77.93
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df2efa4d-c275-410b-afdf-aae2d70777cc
-- alterId: 0
-  cipher: auto
-  name: 223|🇳🇱NL-185.107.56.193-056_1@56
-  network: ws
-  port: 443
-  server: cloudflare.xrenblog.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 6c175d1a-a57f-4881-a471-173eb139694b
-  ws-headers:
-    Host: ipv6.xrenblog.com
-  ws-path: /xrenblog/
-- alterId: 0
-  cipher: auto
   name: 223|🇳🇱 荷兰【付费推荐：https://jdyvip.link/】14_8@4
   network: ws
   port: 443
@@ -2544,7 +2456,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '265,507|@Vip_Security join us - 350
+  name: '265,507|@Vip_Security join us - 322
 
     '
   network: ws
@@ -2716,6 +2628,20 @@ proxies:
   ws-opts:
     headers:
       Host: vk.com
+    path: /Av8czorIlYicU6D349brWUw6a
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '298,299,301|🔒🇳🇱 NL warp ◈ ws:443 ◈ 1b3aa #2'
+  network: ws
+  port: 443
+  server: hdfy8d1.cpi1.eu.org
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: a6292090-afe1-4640-97a7-4f1d1d877cf1
+  ws-opts:
+    headers:
+      Host: ''
     path: /Av8czorIlYicU6D349brWUw6a
 - alterId: 0
   cipher: chacha20-poly1305
@@ -4483,16 +4409,6 @@ proxies:
   port: 9006
   server: 213.183.59.211
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 365|[🇳🇱]t.me/ConfigsHub
-  network: tcp
-  port: '26138'
-  server: vfl.alisaz-88.ir
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9b64b832-a438-48e3-807b-5ef83d8fdaae
 - alterId: 64
   cipher: auto
   name: 365|🇳🇱NL-45.58.152.115-0112
@@ -5168,7 +5084,7 @@ proxies:
     path: /footers
 - alterId: 0
   cipher: auto
-  name: '386|🇳🇱_NL_荷兰 #1'
+  name: '386|🇳🇱_NL_荷兰 #2'
   network: ws
   port: 80
   server: 188.114.97.245
@@ -5181,7 +5097,7 @@ proxies:
     path: /blue06
 - alterId: 0
   cipher: auto
-  name: '386|🇳🇱_NL_荷兰 #2'
+  name: '386|🇳🇱_NL_荷兰 #3'
   network: ws
   port: 8080
   server: 188.114.99.145
@@ -5194,7 +5110,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '386|🇳🇱_NL_荷兰 #3'
+  name: '386|🇳🇱_NL_荷兰 #4'
   network: ws
   port: 8080
   server: 188.114.97.115
@@ -5220,7 +5136,7 @@ proxies:
     path: /blue
 - alterId: 0
   cipher: auto
-  name: '386|🇳🇱_NL_荷兰 #5'
+  name: '386|🇳🇱_NL_荷兰 #6'
   network: ws
   port: 8080
   server: 188.114.99.11
@@ -5233,7 +5149,7 @@ proxies:
     path: /blue03
 - alterId: 0
   cipher: auto
-  name: '386|🇳🇱_NL_荷兰 #7'
+  name: '386|🇳🇱_NL_荷兰 #8'
   network: ws
   port: 2082
   server: 188.114.98.108
@@ -5354,6 +5270,16 @@ proxies:
     headers:
       Host: ''
     path: /path/051111230910
+- alterId: 0
+  cipher: auto
+  name: '467,473|🔒 VM-TCP-NA 🇳🇱 NL-24.144.77.93:898 #1'
+  network: tcp
+  port: '898'
+  server: 24.144.77.93
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df2efa4d-c275-410b-afdf-aae2d70777cc
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
   name: 484|21| NL_606
