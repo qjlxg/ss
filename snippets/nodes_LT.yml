@@ -1,28 +1,14 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 16,134,166,180,181,210,218,237,251,282,331,342,345,352,353,360,364,368,369,416,430,433,494,496,499,505|8J%2BHr%2FCfh7VKUC0xOC4xODMuMjQ1LjE0OS0yMDgw
-  obfs: tls1.2_ticket_auth
+- cipher: aes-128-cfb
+  name: 16,166,218,251,331,352,353,354,355,360,361,362,364,368,369,522|6Zi/5aGe5ouc55aGXzAxMTIwMDE
+  obfs: http_post
   obfs-param: ''
-  password: eAokbaDN6
-  port: '8081'
-  protocol: origin
+  password: $$Turb0VPN$$
+  port: '443'
+  protocol: auth_aes128_md5
   protocol-param: ''
-  server: jp-am48-6.eqnode.net
+  server: ssca.irundns.net
   type: ssr
-  udp: true
-- name: '27,28,51,52|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.132:443 #3'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 86.38.214.132
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - alterId: 0
   cipher: auto
   name: 33|[VMess] 🇱🇹 _立陶宛
@@ -98,8 +84,15 @@ proxies:
     headers:
       Host: ip18.6929198.xyz
     path: /github.com/Alvin9999
+- cipher: aes-256-cfb
+  name: 47,48,69,210,218,353,356,363,369,494|21|_146
+  password: qYEN5HX4JKeVCdEC
+  port: 9039
+  server: 195.238.126.84
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '47,48,353,369|🇹LT-45.87.175.164-1161 #1'
+  name: '47,48,69,353,369|🇹LT-45.87.175.164-1161 #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.164
@@ -107,7 +100,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '47,48,69,218,353,369|🇱🇹LT-45.87.175.171-1165 #1'
+  name: '47,48,70,218,339,353,369|🇱🇹LT-45.87.175.171-1165 #1'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
@@ -115,27 +108,33 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '47,48,69,81,218,353,369|🇱🇹LT-45.87.175.199-1169 #1'
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.199
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 49,50,210,218,353,356,363,369,494|21|_146
-  password: qYEN5HX4JKeVCdEC
-  port: 9039
-  server: 195.238.126.84
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇱🇹 LT
-  name: 49,50,69,70,81,218,339,353,356,363,369,490|LT-45.87.175.178-0389 | 22.113MB
+  name: 47,48,69,70,81,218,339,353,356,363,369,490|LT-45.87.175.178-0389 | 22.113MB
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.178
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: '47,48,69,81,218,353,369|🇱🇹LT-45.87.175.199-1169 #2'
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.199
+  type: ss
+  udp: true
+- name: 53|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 86.38.214.132
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
 - name: 53|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.186:443
   network: ws
   password: SSorg
@@ -162,6 +161,17 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
+- cipher: aes-256-cfb
+  name: 134,180,181,210,218,237,282,331,342,345,352,353,360,364,368,369,416,430,433,494,496,499,505|8J%2BHr%2FCfh7VKUC0xOC4xODMuMjQ1LjE0OS0yMDgw
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: eAokbaDN6
+  port: '8081'
+  protocol: origin
+  protocol-param: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  udp: true
 - alterId: 0
   cipher: auto
   name: '169,331|D-WEALTH-2386 #1'

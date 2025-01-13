@@ -1,17 +1,30 @@
 proxies:
-- name: '27,28,51,52|[Trojan] TR-WS-TLS 🇨🇭 CH-185.18.250.112:443 #3'
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 185.18.250.112
-  skip-cert-verify: false
-  sni: zb.ylks.xyz
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: '19,81,143,144,169,234,254,263,275,276,277,282,308,309,310,311,375,453,463,470,517|@Vip_Security
+    join us - 285
+
+    '
+  network: tcp
+  port: '22324'
+  server: 23.166.88.183
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  ws-opts:
-    headers:
-      Host: zb.ylks.xyz
-    path: /
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  version: '2'
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  country: 🇨🇭 CH
+  name: '30,31,49,50,171,218,314,320,353,369|🇨CH-195.15.254.25-0730 #1'
+  password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=
+  port: 54748
+  server: 195.15.254.25
+  tfo: false
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 33|[SS] 🇨🇭 _瑞士
   password: 3Vkbowf0PLHJkVMmPFjcA7i/j0ABb6EbYtbe/Xrwuds=
@@ -21,7 +34,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 47,48,69,70,135,218,339,353,356,363,369,490|CH-156.146.62.162-3715 | 22.106MB
+  name: 47,48,69,70,81,135,218,339,353,356,363,369,490|CH-156.146.62.162-3715 | 22.106MB
   password: shadowsocks
   port: 443
   server: 156.146.62.162
@@ -29,15 +42,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 47,48,69,70,135,218,339,353,356,363,369,490|CH-156.146.62.163-3657 | 22.012MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.163
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 47,48,69,70,135,218,339,353,356,363,369,490|CH-156.146.62.164-3874 | 21.827MB
+  name: 47,48,69,70,81,135,218,339,353,356,363,369,490|CH-156.146.62.164-3874 | 21.827MB
   password: shadowsocks
   port: 443
   server: 156.146.62.164
@@ -61,16 +66,9 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 47,48,81|🇺🇸  美国 272
+  name: 47,48,81|🇺🇸 美国_151
   password: faBAoD54k87UJG7
   port: 2375
-  server: 23.166.88.198
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 47,48,81|🇺🇸  美国 152
-  password: pKEW8JPByTVTLtM
-  port: 4444
   server: 23.166.88.198
   type: ss
   udp: true
@@ -89,21 +87,27 @@ proxies:
   server: 45.95.232.236
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '47,48|[SS] SS-TCP-NA 🇨🇭 CH-91.103.253.151:19057 #1'
+  password: DZNpz5faOPldaiOiry8237
+  port: 19057
+  server: 91.103.253.151
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 49,50,69,70,135,218,339,353,356,363,369,490|CH-156.146.62.161-3461 | 21.987MB
+  name: 49,50,69,70,81,135,218,339,353,356,363,369,490|CH-156.146.62.161-3461 | 21.987MB
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  country: 🇨🇭 CH
-  name: '49,50,218,314,320,353,369|🇨CH-195.15.254.25-0730 #1'
-  password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=
-  port: 54748
-  server: 195.15.254.25
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: 49,50,69,70,81,135,218,339,353,356,363,369,490|CH-156.146.62.163-3657 | 22.012MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.163
   type: ss
   udp: true
 - alterId: 0
@@ -116,6 +120,13 @@ proxies:
   tls: true
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 49,50,81|🇺🇸 美国_95
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 23.166.88.198
+  type: ss
+  udp: true
 - alterId: 0
   cipher: aes-256-gcm
   name: 49,50,492|未知42 1.3MB/s
@@ -126,29 +137,9 @@ proxies:
   tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] SS-TCP-NA 🇨🇭 CH-91.103.253.151:19057 #1'
-  password: DZNpz5faOPldaiOiry8237
-  port: 19057
-  server: 91.103.253.151
-  type: ss
-  udp: true
-- name: 53|[Trojan] TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
-  network: ws
-  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
-  port: 443
-  server: 185.18.250.117
-  skip-cert-verify: false
-  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
-  name: '61,517|@Vip_Security join us - 266
+  name: '61,517|@Vip_Security join us - 272
 
     '
   network: tcp
@@ -168,6 +159,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 597d19df-de7f-4d27-ec94-a80ab3cb9626
+- alterId: 0
+  cipher: auto
+  name: 81|🇨🇭 瑞士_20
+  network: ws
+  port: 23451
+  server: seoul-1ddns.aboutanime.eu.org
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88f19b8e-7b45-446f-a095-fbddf6e6f772
+  version: '2'
+  ws-opts:
+    headers:
+      host: ''
+    path: /
 - cipher: aes-256-cfb
   name: 171,321|🇨_CH_
   password: asdKkaskJKfnsa
@@ -223,7 +231,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 211,333,379|TG频道@mfbpn-1390-US
+  name: 211,333,379|TG频道@mfbpn-1383-US
   network: ws
   port: 31004
   server: 199.188.105.57

@@ -2,7 +2,7 @@ proxies:
 - alterId: 64
   cipher: auto
   name: '19,64,201,211,254,256,266,323,379,381,382,383,384,420,421,423,424,506,517|@Vip_Security
-    join us - 129
+    join us - 130
 
     '
   network: tcp
@@ -14,26 +14,42 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: '19,201,254,256,379,381,382,383,384,517|@Vip_Security join us - 223
+  name: '19,201,211,254,256,266,379,381,382,383,384,420,421,423,424,506,517|@Vip_Security
+    join us - 228
 
     '
   network: tcp
-  port: '51704'
+  port: '53002'
   server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 1
   cipher: auto
-  name: 19,119,201,254,256,379,381,382,383,384,446,477,483,517,523|美国_0112004
-  network: tcp
-  port: '23782'
-  server: 38.147.189.188
+  name: '19,45,169,254,263,470,483|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.84:60234 #5'
+  network: ws
+  port: '60234'
+  server: 183.179.210.84
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 6ba78aee-1390-4bbe-9fca-a07c736948cd
+  udp: true
+  uuid: c4d65354-5321-3036-a611-6c42e88b7251
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '19,169,254,263,453,463,470,477,483|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.132:3503 #8'
+  network: tcp
+  port: '3503'
+  server: 185.14.47.132
+  tls: false
+  type: vmess
+  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - alterId: 0
   cipher: auto
   country: 🇭🇰HK
@@ -51,22 +67,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: '19,45,169,254,263,470,483|🔒 VM-WS-NA 🇭🇰 HK-183.179.210.84:60234 #5'
-  network: ws
-  port: '60234'
-  server: 183.179.210.84
+  name: '19,143,144,169,254,263,275,453,463,470,477,483,517|@Vip_Security join us
+    - 186
+
+    '
+  network: tcp
+  port: '8888'
+  server: 154.83.88.106
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
-  uuid: c4d65354-5321-3036-a611-6c42e88b7251
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
 - alterId: 0
   cipher: auto
   country: 🇭🇰HK
@@ -86,19 +99,6 @@ proxies:
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
-  name: '19,143,144,169,254,263,275,453,463,470,477,483,517|@Vip_Security join us
-    - 183
-
-    '
-  network: tcp
-  port: '8888'
-  server: 154.83.88.106
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7c97b618-741d-49f9-82c2-169a197d28c9
-- alterId: 0
-  cipher: auto
   name: '19,169,254,263,275,453,463,470,477,483|🔒 VM-TCP-NA 🇭🇰 HK-18.167.120.158:15074
     #8'
   network: tcp
@@ -107,15 +107,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 0
-  cipher: auto
-  name: '19,169,254,263,453,463,470,477,483|🔒 VM-TCP-NA 🇭🇰 HK-185.14.47.132:3503 #8'
-  network: tcp
-  port: '3503'
-  server: 185.14.47.132
-  tls: false
-  type: vmess
-  uuid: fa678492-65dd-3df0-800d-11f138b868ab
 - cipher: chacha20-ietf-poly1305
   name: '24,25|[SS] 🇭🇰 香港 02 | 1x HK #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -130,6 +121,19 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: '27,28,39,51,52|[Trojan] 🇭🇰 TR-WS-NA 🇭🇰 HK-18.162.246.4:18443 #4'
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: ''
 - name: '27,28,51,52|[Trojan] 🇭🇰 TR-WS-TLS 🇭🇰 HK-103.148.72.147:1443 #3'
   network: ws
   password: SSorg
@@ -143,23 +147,6 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed
-- cipher: chacha20-ietf-poly1305
-  name: '30,31,201,353,369|🇰HK-185.242.235.236-0860 #1'
-  password: Gjg2ojDksj45yDPZCiHai4mkxAhAeBpP82RS94fYPoQ=
-  port: 44320
-  server: wxh111.icu
-  tfo: false
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: '30,31,201,314,353,369|🇳CN-183.232.229.164-0861 #1'
-  password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb
-  port: 11001
-  server: 183.232.229.164
-  tfo: false
-  type: ss
-  udp: true
 - name: 33|[Trojan] 🇭🇰 14|香港8|@ripaojiedian
   network: ws
   password: ouo
@@ -173,19 +160,6 @@ proxies:
     headers:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
-- name: '39,53|[Trojan] 🇭🇰 TR-WS-NA 🇭🇰 HK-18.162.246.4:18443 #1'
-  network: ws
-  password: ouo
-  port: 18443
-  server: 18.162.246.4
-  skip-cert-verify: false
-  sni: tr.koiok.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tr.koiok.us.kg
-    path: ''
 - cipher: aes-128-gcm
   name: '47,48|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-103.17.99.54:4001 #1'
   password: 89b90001-4206-4871-a99d-1744d48f215b
@@ -193,17 +167,9 @@ proxies:
   server: 103.17.99.54
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇭🇰HK
-  name: '47,48,218,353,369|🇰HK-112.213.102.228-6161 #1'
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 47,48,69,70,81,135,218,339,353,356,363,369,490|🇭🇰HK-141.98.234.93-3681 | 17.006MB
+  name: 47,48,69,81,135,218,353,356,363,369,490|🇭🇰HK-141.98.234.93-3681 | 17.006MB
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
@@ -231,16 +197,24 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '47,48|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-91.103.122.32:43684 #1'
+  name: '47,48|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-91.103.122.32:43683 #1'
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
-  port: 43684
+  port: 43683
   server: 91.103.122.32
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇭🇰HK
+  name: '49,50,218,353,369|🇰HK-112.213.102.228-6161 #1'
+  password: qwerREWQ@@
+  port: 4231
+  server: 112.213.102.228
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
-  name: '49,50|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-91.103.122.32:43683 #1'
+  name: '49,50|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-91.103.122.32:43684 #1'
   password: bd12f79e-3209-4970-83cd-5e1f3526ff51
-  port: 43683
+  port: 43684
   server: 91.103.122.32
   type: ss
   udp: true
@@ -267,7 +241,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '66,211,333|07-0346-HK #1'
+  name: 66,211,333|07-191-HK
   network: ws
   port: 443
   server: hk3.sdwan.day
@@ -321,18 +295,6 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 84|🇰 中国-香港-005-1A
-  network: ws
-  port: 55899
-  server: 212.192.12.70
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 33111301-e7f8-4799-b91f-137b7bc2b5d0
-  ws-opts:
-    path: /
 - auth: 651f3f18-471f-4be0-a02a-c3c43fb1ce31
   name: 84|🇰 中国-香港-HY-002-1I
   obfs: salamander
@@ -778,7 +740,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '151,430,517|@Vip_Security join us - 320
+  name: '151,430,517|@Vip_Security join us - 327
 
     '
   network: ws
@@ -2030,18 +1992,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 64
-  cipher: auto
-  name: '211,266,379,420,421,423,424,506,517|@Vip_Security join us - 225
-
-    '
-  network: tcp
-  port: '53002'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: '211|中国-香港-005 #1'
@@ -2066,7 +2016,19 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - alterId: 64
   cipher: auto
-  name: '211,379,517|@Vip_Security join us - 128
+  name: '211,379,517|@Vip_Security join us - 230
+
+    '
+  network: tcp
+  port: '56601'
+  server: 183.236.51.23
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: '211,379,517|@Vip_Security join us - 129
 
     '
   network: tcp
@@ -2746,14 +2708,6 @@ proxies:
       Host: 0107hk.fans8.xyz
     path: /v2ray
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 241,266,353,369,423,506|China_Guangzhou_ss_1142
-  password: NFYDVXE3DMWI2M3W
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
   name: 247|VIP1.香港5
   password: f7126755-abb2-42ce-8c7b-a3c0dc111825
   port: 47015
@@ -2805,7 +2759,7 @@ proxies:
   uuid: a83fccdb-eeec-4dab-a8c9-a105acbd89e5
 - alterId: 0
   cipher: auto
-  name: '275,276,277,517|@Vip_Security join us - 558
+  name: '275,276,277,517|@Vip_Security join us - 569
 
     '
   network: tcp
@@ -2872,7 +2826,7 @@ proxies:
   uuid: eb713638-ec89-49e5-8358-b00a472f788e
 - alterId: 0
   cipher: auto
-  name: '275,276,277,517|@Vip_Security join us - 557
+  name: '275,276,277,517|@Vip_Security join us - 568
 
     '
   network: tcp
@@ -2894,7 +2848,7 @@ proxies:
   uuid: b0b4209c-5d5b-4499-a0ac-b96906ffa7e8
 - alterId: 0
   cipher: auto
-  name: '275,276,277,517|@Vip_Security join us - 556
+  name: '275,276,277,517|@Vip_Security join us - 567
 
     '
   network: tcp
@@ -3592,7 +3546,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 333|16-1094-HK
+  name: 333|16-543-HK
   network: ws
   port: 80
   server: 47.238.137.136
@@ -3606,7 +3560,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 333|16-1219-HK
+  name: 333|16-668-HK
   network: ws
   port: 80
   server: 8.218.213.13
@@ -4817,6 +4771,20 @@ proxies:
   uuid: 37a9e3d4-08b2-4a54-92ad-e9dce926657d
 - alterId: 0
   cipher: auto
+  name: 379|TG频道@mfbpn-0847-HK
+  network: ws
+  port: 55899
+  server: 212.192.12.70
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d
+  ws-opts:
+    headers:
+      Host: None
+    path: /
+- alterId: 0
+  cipher: auto
   name: '380,401|@VMESSIRAN سرور ۲۰ آذر #4'
   network: ws
   port: '443'
@@ -4871,7 +4839,7 @@ proxies:
     path: /biteb
 - alterId: 0
   cipher: auto
-  name: '389,401,426,448,517|@Vip_Security join us - 276
+  name: '389,401,426,448,517|@Vip_Security join us - 282
 
     '
   network: tcp
@@ -5951,13 +5919,6 @@ proxies:
   ws-headers:
     Host: vn3.thanhhaivpn.name.vn
   ws-path: /
-- name: '423,506|China_None_trojan_1139 #1'
-  network: tcp
-  password: vzhXXZVw
-  port: 48544
-  server: 36.150.215.220
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: '426|香港(油管:破解资源君2.0) #3'

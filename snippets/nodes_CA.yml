@@ -15,11 +15,37 @@ proxies:
     headers:
       Host: ''
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 19,169,254,275,308,309,310,311,331,352,353,354,355,359,360,361,362,364,367,368,369,375,505,522|加拿大_0112030
+  network: ws
+  port: '443'
+  server: 134.195.198.147
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: inna.cfd
+    path: /linkvws
 - cipher: chacha20-ietf-poly1305
   name: '24,25|[SS] 🇨🇦 加拿大 01 | 1x CA #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
   port: 36441
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🏁 ZZ
+  name: '30,31,47,48,135,201,218,241,266,320,323,353,369,423,506|United States_Ashburn_ss_1130
+    #1'
+  password: faBAoD54k87UJG7
+  port: 2376
+  server: 23.154.136.247
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -79,11 +105,18 @@ proxies:
   uuid: 1ded1ec9-7557-4c15-aaac-758bedea64fd
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: 47,48,81|🇺🇸  美国 132
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 158.51.123.253
+- cipher: aes-128-gcm
+  name: 47,48,69,70,81,135,339,353,356,363,369,490|🇨🇦CA-149.22.95.183-3843 | 65.991MB
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '47,48|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-185.213.20.227:989 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.20.227
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -93,9 +126,23 @@ proxies:
   server: 79.127.200.162
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 47,48,81|🇨🇿 捷克_3
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 49,50,81|🇺🇸 美国_93
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 158.51.123.253
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: 47,48,81,492|未知54 2.6MB/s
+  name: 49,50,81,492|未知54 2.6MB/s
   password: nlVqIVyKwWoDsD7dVYT9Y0
   port: 65305
   server: 81.19.140.31
@@ -103,40 +150,6 @@ proxies:
   tls: true
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 49,50,69,70,135,339,353,356,363,369,490|🇨🇦CA-149.22.95.183-3843 | 65.991MB
-  password: shadowsocks
-  port: 443
-  server: 149.22.95.183
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '49,50|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-185.213.20.227:989 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.20.227
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-79.127.233.170:990 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  type: ss
-  udp: true
-- name: 53|[Trojan] 🇨🇦 TR-WS-TLS 🇨🇦 CA-23.227.38.208:2053
-  network: ws
-  password: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  port: 2053
-  server: 23.227.38.208
-  skip-cert-verify: false
-  sni: bPB-V.pageS.dEV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bPB-V.pageS.dEV
-    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
   name: '61,434,436|ConfigV2RayNG #20'
@@ -166,8 +179,15 @@ proxies:
       Host: ''
     path: /racevpn
 - cipher: chacha20-ietf-poly1305
+  country: 🇮🇹IT
+  name: '69,70,218,339,353,369|CA-185.213.20.227-6370 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.20.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
-  name: 69,81,135,142,218,353,356,363,369,494|21|🇨🇦CA_511
+  name: 69,70,81,135,142,218,339,353,356,363,369,494|21|🇨🇦CA_511
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
@@ -209,28 +229,6 @@ proxies:
     headers:
       Host: ''
     path: /6c8e5a1b
-- alterId: 0
-  cipher: auto
-  name: 81,211,243|美国 046
-  network: tcp
-  port: 23654
-  server: 142.171.71.114
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c2ab4538-dfdc-4bd8-8ff5-28d00c80880f
-  version: '2'
-- name: 81|🇨🇦  加拿大 08
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 15.223.164.31
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - auth: 2dbf46e8-1b20-4c7d-9cf4-5360c3ab5099
   name: 84|🇦 加拿大-多伦多-HY-001-1H
   obfs: salamander
@@ -1395,7 +1393,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '147,148,275,375,517|@Vip_Security join us - 200
+  name: '147,148,275,375,517|@Vip_Security join us - 203
 
     '
   network: ws
@@ -1473,7 +1471,7 @@ proxies:
     path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '147,148,517|@Vip_Security join us - 440
+  name: '147,148,517|@Vip_Security join us - 451
 
     '
   network: ws
@@ -1711,7 +1709,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '147,148,517|@Vip_Security join us - 431
+  name: '147,148,517|@Vip_Security join us - 442
 
     '
   network: ws
@@ -4831,21 +4829,6 @@ proxies:
     headers:
       Host: te.wordclass.top
     path: /vmessprotocol-vmessprotocol-vmessprotocol-vmessprotocol
-- alterId: 0
-  cipher: auto
-  name: 243,331,333,352,353,354,355,359,360,361,362,364,367,368,369,379,505|🏁RELAY-104.16.155.10-0806
-  network: ws
-  port: 8880
-  server: s1.cn-db.top
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-1-101-250.s1.cn-db.top
-    path: /dabai.in172.67.97.168
 - name: '243,353,369|🏁RELAY-104.19.4.237-0798 #1'
   network: ws
   password: SSorg
@@ -4872,6 +4855,21 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  name: 243,331,352,353,359,360,364,367,368,369,375,379,505,522|未知_0112130
+  network: ws
+  port: '2052'
+  server: 104.16.155.10
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      Host: 100-41-36-35.s2.db-link01.top
+    path: /dabai.in172.67.71.198
 - alterId: 0
   cipher: auto
   name: 243,331,352,353,359,360,364,367,368,369,379,522|未知_0112133
@@ -5255,19 +5253,6 @@ proxies:
   skip-cert-verify: true
   sni: du.wish.ml
   type: hysteria2
-- alterId: '64'
-  cipher: auto
-  name: '323|🇨🇦_加拿大 #1'
-  network: ws
-  port: '36002'
-  server: 142.171.106.180
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      host: www.46340825.xyz
-    path: /path/1736675571410
 - cipher: rc4-md5
   name: '324,353,369|🇨🇳CN-111.6.86.119-8297 #1'
   password: Paofu
@@ -5406,7 +5391,8 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '331,352,353,356,359,360,363,364,367,368,369|🇦CA-134.195.198.147-1206 #1'
+  name: '331,333,352,353,356,359,360,363,364,367,368,369|🇦CA-134.195.198.147-1206
+    #1'
   network: ws
   port: 443
   server: 134.195.198.147

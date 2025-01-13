@@ -1,19 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: '19,45,169,254|🔒 VM-WS-NA 🇸🇬 SG-140.245.39.116:23452 #2'
-  network: ws
-  port: '23452'
-  server: 140.245.39.116
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: '24,25|[SS] 🇸🇬 新加坡 01 | 1x SG #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -35,18 +20,31 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '27,28,51,52|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.48.115:2087 #3'
+- name: '27,28,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-154.194.12.78:443 #3'
   network: ws
-  password: SSorg
-  port: 2087
-  server: 27.50.48.115
+  password: blue2024
+  port: 443
+  server: 154.194.12.78
   skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
+  sni: b.promote.icu
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: sstjj.esslh.filegear-sg.me
+      Host: b.promote.icu
+    path: /?ed
+- name: '27,28,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087 #3'
+  network: ws
+  password: dns68
+  port: 2087
+  server: 206.238.237.1
+  skip-cert-verify: false
+  sni: trojan.putata.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: trojan.putata.us.kg
     path: /?ed
 - name: '27,28,51,52|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.48.126:2083 #3'
   network: ws
@@ -61,25 +59,37 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.me
     path: /?ed
-- client-fingerprint: chrome
-  name: 27,28,51,52,314|🇹🇼 台湾_3
+- name: '27,28,51,52|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.48.239:8443 #3'
   network: ws
   password: SSorg
-  port: 443
-  server: 8.210.171.28
-  skip-cert-verify: true
-  sni: sstjj.esslh.filegear-sg.me
+  port: 8443
+  server: 27.50.48.239
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: ssjj.esslh.filegear-sg.me
+    path: /?ed
 - name: '27,28,51,52|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-92.243.74.23:2096 #3'
   network: ws
   password: SSorg
   port: 2096
   server: 92.243.74.23
+  skip-cert-verify: false
+  sni: ssjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ssjj.esslh.filegear-sg.me
+    path: /?ed
+- name: '27,28,51,52|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-92.243.75.49:2087 #3'
+  network: ws
+  password: SSorg
+  port: 2087
+  server: 92.243.75.49
   skip-cert-verify: false
   sni: ssjj.esslh.filegear-sg.me
   type: trojan
@@ -101,11 +111,21 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: '%2F'
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 30,31,201,241,266,353,369,423,506|China_Guangzhou_ss_1154
+  password: FAJT26PIM7CB71OZ
+  port: 16003
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: '30,31,47,48,201,353,369|🇵JP-52.195.182.124-0869 #1'
+  client-fingerprint: chrome
+  name: 30,31,69,135,201,241,266,353,369,423,506|South Korea_Incheon_ss_1157
   password: amazonskr05
   port: 443
-  server: 52.195.182.124
+  server: 52.79.248.198
   tfo: false
   type: ss
   udp: true
@@ -116,61 +136,22 @@ proxies:
   server: 52.194.222.57
   type: ss
   udp: true
-- name: '45,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-206.238.237.1:2087 #2'
-  network: ws
-  password: dns68
-  port: 2087
-  server: 206.238.237.1
-  skip-cert-verify: false
-  sni: trojan.putata.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: trojan.putata.us.kg
-    path: /?ed
-- name: '45,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.49.251:2083 #2'
-  network: ws
-  password: SSorg
-  port: 2083
-  server: 27.50.49.251
-  skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ssjj.esslh.filegear-sg.me
-    path: /?ed
-- name: '45,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-92.243.74.115:443 #2'
-  network: ws
-  password: SSorg
-  port: 443
-  server: 92.243.74.115
-  skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ssjj.esslh.filegear-sg.me
-    path: /?ed
-- name: '45,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-92.243.75.49:2087 #2'
+- name: '45,49,50|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.48.115:2087 #2'
   network: ws
   password: SSorg
   port: 2087
-  server: 92.243.75.49
+  server: 27.50.48.115
   skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
+  sni: sstjj.esslh.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: ssjj.esslh.filegear-sg.me
+      Host: sstjj.esslh.filegear-sg.me
     path: /?ed
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 47,48,314|🇸🇬 新加坡_8
+  name: '47,48,314|🇸🇬 新加坡_8 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.106.229.219
@@ -181,22 +162,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 13.212.204.100
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 47,48,69,218,353,369,490|🇸🇬SG-13.229.216.218-3818 | 17.797MB
-  password: amazonskr05
-  port: 443
-  server: 13.229.216.218
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: '47,48,69,70,135,218,339,353,356,363,369|🇸🇬SG-13.250.107.170-0455 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.250.107.170
   type: ss
   udp: true
 - alterId: 0
@@ -210,34 +175,17 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '47,48,218,353,369|🇸🇬SG-156.244.9.92-0890 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 156.244.9.92
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '47,48|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-157.245.204.218:50570 #1'
-  password: 5t3nxKYKzAuahYoSrfusUG
-  port: 50570
-  server: 157.245.204.218
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: '47,48|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-174.138.17.254:52252 #1'
   password: QtcqBDyUPOYBOwKuKPiplw
   port: 52252
   server: 174.138.17.254
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 47,48,135,201,218,241,353,369,423,506|Singapore_Singapore_ss_1128
-  password: amazonskr05
-  port: 443
-  server: 47.129.162.86
-  tfo: false
+- cipher: chacha20-ietf-poly1305
+  name: '47,48|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-188.166.226.136:47042 #1'
+  password: H8JAsMkMmYkphjH4fWcZYm
+  port: 47042
+  server: 188.166.226.136
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -273,25 +221,50 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: 47,48,395,490|🇸🇬SG-68.183.235.122-3946 | 18.241MB
+  country: 🇸🇬SG
+  name: 49,50,69,70,135,218,339,353,356,363,369,395,490|🇸🇬SG-128.199.172.224-3971
+    | 18.336MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 68.183.235.122
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-188.166.226.136:47042 #1'
-  password: H8JAsMkMmYkphjH4fWcZYm
-  port: 47042
-  server: 188.166.226.136
+  server: 128.199.172.224
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '49,50,218,353,356,363,369|🇬SG-54.169.58.78-0456 #1'
+  name: '49,50,69,70,135,218,339,353,356,363,369|🇸🇬SG-13.250.107.170-0455 #2'
+  password: amazonskr05
+  port: 443
+  server: 13.250.107.170
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '49,50|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-157.245.204.218:50570 #1'
+  password: 5t3nxKYKzAuahYoSrfusUG
+  port: 50570
+  server: 157.245.204.218
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '49,50,70,218,339,353,356,363,369|🇬SG-54.169.58.78-0456 #1'
   password: amazonskr05
   port: 443
   server: 54.169.58.78
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  country: 🇸🇬SG
+  name: 49,50,69,70,135,218,339,353,356,363,369,395,490|🇸🇬SG-68.183.227.4-3597 | 17.912MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 49,50,395,490|🇸🇬SG-68.183.235.122-3946 | 18.241MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.235.122
   type: ss
   udp: true
 - name: 53|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-43.156.53.68:443
@@ -307,6 +280,20 @@ proxies:
     headers:
       Host: ssjj.esslh.filegear-sg.me
     path: /?ed
+- client-fingerprint: chrome
+  name: 53,314|🇹🇼 台湾_3
+  network: ws
+  password: SSorg
+  port: 443
+  server: 8.210.171.28
+  skip-cert-verify: true
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   cipher: auto
   name: 56|[VMess] 🇸🇬 VM-WS-NA 🇸🇬 SG-54.255.177.57:40000
@@ -338,28 +325,26 @@ proxies:
     path: /images
 - alterId: 0
   cipher: auto
-  name: 66,171,333|24-2122-SG
+  name: 66,333|16-666-SG
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
   servername: ''
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: c8c34f55-f44e-4df4-a586-fe6602eb7796
+  uuid: 9d1c7744-f06a-43a5-8b8c-8bec72391f8c
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - alterId: 0
   cipher: auto
-  name: '66,333|06-0321-SG #1'
+  name: 66|06-0321-SG
   network: ws
   port: 23451
   server: westsg2-ddns.oraclenat.cc
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -369,7 +354,14 @@ proxies:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
-- name: 81|🇸🇬  新加坡 03
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: 70,218,339,353,369,490|🇸🇬SG-13.229.216.218-3818 | 17.797MB
+  password: amazonskr05
+  port: 443
+  server: 13.229.216.218
+  type: ss
+- name: 81|🇸🇬 新加坡_1
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -378,7 +370,7 @@ proxies:
   sni: connectwithemployers.online
   type: trojan
   udp: true
-- name: 81|🇸🇬  新加坡 02
+- name: 81|🇸🇬 新加坡_2
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -387,9 +379,35 @@ proxies:
   sni: connectwithemployers.online
   type: trojan
   udp: true
+- name: 81|🇸🇬 新加坡_6
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: connectwithemployers.online
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 81|🇸🇬 新加坡_8
+  network: tcp
+  password: '!!str 3753679206639476736'
+  port: 443
+  server: 52.77.42.69
+  skip-cert-verify: false
+  sni: choice-condor.treefrog761.one
+  type: trojan
+  udp: true
+- name: 81|🇸🇬 新加坡_9
+  network: tcp
+  password: '!!str 3753679206639476736'
+  port: 443
+  server: choice-condor.treefrog761.one
+  skip-cert-verify: true
+  sni: choice-condor.treefrog761.one
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 84,333|24-2072-RELAY
+  name: 84,333|16-684-RELAY
   network: ws
   port: 443
   server: visa.com
@@ -398,7 +416,7 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 56f1c6b5-1c59-4372-bfb5-6ad5b0d1d409
+  uuid: cb1b7d6e-3fb9-41c1-93ff-10887530c3d3
   ws-opts:
     headers:
       Host: xjp.daluquan.top
@@ -487,12 +505,10 @@ proxies:
       Host: de.twittei.me
     path: /ikun
 - cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 135,241,353,369,395,506|Singapore_None_ss_1126
+  name: 135,353,369,395,423,506|Singapore_None_ss_1126
   password: asd123456
   port: 8388
   server: 103.36.91.32
-  tfo: false
   type: ss
   udp: true
 - name: 142|🇸SG(AzadNet.t.me)_001
@@ -1437,7 +1453,7 @@ proxies:
   uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
   ws-opts:
     path: /
-- name: 201,423,506|Singapore_None_trojan_1152
+- name: 201,323,423,506|Singapore_None_trojan_1152
   network: tcp
   password: '!!str 3723507166611775488'
   port: 443
@@ -1445,6 +1461,20 @@ proxies:
   skip-cert-verify: false
   sni: major-reindeer.boa152.lol
   type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 201,241,423,506,520|SG_speednode_0015
+  network: ws
+  password: SSorg
+  port: 443
+  server: 206.238.236.134
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /
 - alterId: 0
   cipher: auto
   name: 203|🔒 VM-WS-TLS 🌏 SG-138.2.104.13:22239 📡 PING-175.53-MS
@@ -2521,22 +2551,6 @@ proxies:
     headers:
       Host: ''
     path: ''
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 241,266,353,369,423,506|China_Guangzhou_ss_1153
-  password: 6KYL3YM7UAOAE94Q
-  port: 16016
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 241,266,353,369,423,506|China_Guangzhou_ss_1154
-  password: FAJT26PIM7CB71OZ
-  port: 16003
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - name: '243,353,369|🇬SG-13.250.38.94-0794 #1'
   network: ws
   password: SSorg
@@ -2873,7 +2887,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 314|🇸🇬 新加坡_9
+  name: '314|🇸🇬 新加坡_9 #1'
   password: a2c25d38-44dc-4b53-9377-9f98bd8d7e2b
   port: 30003
   server: 171.111.216.155
@@ -3745,7 +3759,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 333|16-0888-SG
+  name: 333|16-337-SG
   network: ws
   port: 80
   server: 122.248.224.109
@@ -3759,7 +3773,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 333|16-1207-SG
+  name: 333|16-656-SG
   network: ws
   port: 80
   server: 47.245.87.58
@@ -3773,7 +3787,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 333|16-1211-SG
+  name: 333|16-660-SG
   network: ws
   port: 80
   server: 54.169.136.28
@@ -4481,7 +4495,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '379,517|@Vip_Security join us - 160
+  name: '379,517|@Vip_Security join us - 162
 
     '
   network: tcp
@@ -4491,20 +4505,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00
-- alterId: 0
-  cipher: auto
-  name: 379|TG频道@mfbpn-0891-SG
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
-  ws-opts:
-    headers:
-      Host: None
-    path: /
 - alterId: 0
   cipher: auto
   name: '380|🇸🇬 _SG_新加坡 #4'
@@ -5193,7 +5193,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '494,517|@Vip_Security join us - 434
+  name: '494,517|@Vip_Security join us - 445
 
     '
   network: ws
