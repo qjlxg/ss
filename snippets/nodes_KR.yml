@@ -1,6 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #5'
+  network: ws
+  port: 40471
+  server: 131.186.16.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
   name: '19,143,228,237|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #3'
   network: ws
   port: 50035
@@ -15,33 +29,19 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '19,143,228,237,428,444,457|🔒 VM-WS-NA 🇰🇷 KR-193.122.97.134:23451 #8'
+  name: '19,45,143,228,237,428,444,457|🔒 VM-WS-NA 🇰🇷 KR-193.122.97.134:23451 #6'
   network: ws
   port: '23451'
   server: 193.122.97.134
+  skip-cert-verify: false
   tls: false
   type: vmess
+  udp: true
   uuid: 4a2771e1-d31f-4590-812d-be880ba87997
   ws-opts:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
-- alterId: 0
-  cipher: auto
-  name: '19,37,56,143,228,237|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #3'
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: cc2.1808.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #5'
@@ -58,18 +58,20 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #5'
+  name: '19,39,143,228,237,428,430|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #5'
   network: ws
-  port: 40471
-  server: 131.186.16.245
-  servername: ''
-  tls: false
+  port: '30002'
+  server: 211.220.16.114
+  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
+      Host: obdii.cfd
+    path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: '24,25|[SS] 🇰🇷 韩国 01 | 1x KR #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -91,22 +93,9 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: '27,28,51,52|[Trojan] 🇰🇷 TR-WS-TLS 🇰🇷 KR-52.231.97.210:2053 #3'
-  network: ws
-  password: SSorg
-  port: 2053
-  server: 52.231.97.210
-  skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 30,31,175,215,240,288,327,343,397|13| |@ripaojiedian
+  name: 30,31,109,215,240,288,327,343,397,412,480|South Korea_None_ss_1120
   password: qwerREWQ@@
   port: 58368
   server: p199.panda003.net
@@ -115,7 +104,8 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 30,31,47,48,69,109,175,215,240,327,330,337,343,397|13|🇰🇷 韩国特殊|@ripaojiedian
+  country: 🇯🇵JP
+  name: 30,31,47,48,83,109,215,240,327,330,337,343,397,412,464,480|Japan_Tokyo_ss_1129
   password: amazonskr05
   port: 443
   server: 18.183.98.103
@@ -131,7 +121,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '37,39,43,44,45,56,58|[VMess] 🇰🇷 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #6'
+  name: '37,39,43,45,56,58|[VMess] 🇰🇷 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #5'
   network: ws
   port: 50035
   server: 175.203.204.222
@@ -145,6 +135,22 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
+- alterId: 0
+  cipher: auto
+  name: '37,45,56|[VMess] 🇰🇷 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #3'
+  network: ws
+  port: 30002
+  server: 211.220.16.114
+  servername: cc2.1808.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
 - alterId: 0
   cipher: auto
   name: 39|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-132.145.92.18:23451
@@ -162,23 +168,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '39,44,45,428,430|🔒 VM-WS-TLS 🇰🇷 KR-211.220.16.114:30002 #5'
-  network: ws
-  port: '30002'
-  server: 211.220.16.114
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: '43,44,45|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #2'
+  name: '43,45|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #1'
   network: ws
   port: 40471
   server: 131.186.16.245
@@ -193,10 +183,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '44,45|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #1'
+  name: 45,255|🇰🇷KR-131.186.16.245-1270
   network: ws
   port: 40474
   server: 131.186.16.245
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -206,48 +197,36 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '44,45|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-131.186.21.13:23451 #1'
-  network: ws
-  port: 23451
-  server: 131.186.21.13
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: '47,48,81,99,192,327,343|KR-154.90.63.193-5901 #1'
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 47,48,83|🇺🇸US_647
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
+  port: 989
+  server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '47,48|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-218.234.149.9:2105 #1'
+  country: 🇰🇷 KR
+  name: 47,48,83|🇰🇷 KR_97
   password: qwerREWQ@@
   port: 2105
   server: 218.234.149.9
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '47,48,69,109,327,330,337,343|🇷KR-52.79.247.162-0461 #1'
+  country: 🇰🇷KR
+  name: '47,48,83,109,327,330,337,343|KR-52.79.247.162-0522 #1'
   password: amazonskr05
   port: 443
   server: 52.79.247.162
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '49,50|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-154.90.63.177:989 #1'
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: '49,50,81,83,99,192,327,343|KR-154.90.63.193-5841 #1'
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
+  port: 990
+  server: 154.90.63.193
   type: ss
   udp: true
 - alterId: 0
@@ -266,6 +245,12 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
+- cipher: aes-256-cfb
+  name: '70,83,313|🇰🇷KR-3.35.17.138-0871 #1'
+  password: amazonskr05
+  port: 443
+  server: 3.35.17.138
+  type: ss
 - alterId: 0
   cipher: auto
   name: 81|🇰🇷 韩国_1
@@ -292,6 +277,213 @@ proxies:
   sni: yournextcareerstep.online
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,412,488|KR_speednode_0034
+  password: qwerREWQ@@
+  port: 46283
+  server: 27.255.82.134
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,397,412,488|KR_speednode_0029
+  password: amazonskr05
+  port: 443
+  server: 13.125.199.174
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,397,412,488|KR_speednode_0035
+  password: qwerREWQ@@
+  port: 30956
+  server: 210.217.18.69
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,397,412,488|KR_speednode_0023
+  password: qwerREWQ@@
+  port: 41951
+  server: 203.234.238.147
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,397,412,488|KR_speednode_0028
+  password: amazonskr05
+  port: 443
+  server: 54.180.9.243
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 83,215,397,412,488|KR_speednode_0033
+  password: qwerREWQ@@
+  port: 61891
+  server: 27.255.82.135
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_333
+  password: qwerREWQ@@
+  port: 3582
+  server: p233.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_338
+  password: qwerREWQ@@
+  port: 10113
+  server: p240.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_342
+  password: qwerREWQ@@
+  port: 7855
+  server: p238.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_336
+  password: qwerREWQ@@
+  port: 47913
+  server: p228.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '83|disney_KR #1'
+  password: qwerREWQ@@
+  port: 43104
+  server: p221.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_329
+  password: qwerREWQ@@
+  port: 41951
+  server: p225.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_327
+  password: qwerREWQ@@
+  port: 21238
+  server: p230.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_328
+  password: qwerREWQ@@
+  port: 15041
+  server: p239.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_326
+  password: qwerREWQ@@
+  port: 61238
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_331
+  password: qwerREWQ@@
+  port: 25776
+  server: p237.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_341
+  password: qwerREWQ@@
+  port: 59686
+  server: p232.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_335
+  password: qwerREWQ@@
+  port: 22081
+  server: p110.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_324
+  password: qwerREWQ@@
+  port: 8704
+  server: p229.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_339
+  password: qwerREWQ@@
+  port: 30956
+  server: p241.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_332
+  password: qwerREWQ@@
+  port: 27973
+  server: p196.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_323
+  password: qwerREWQ@@
+  port: 28290
+  server: p220.panda001.net
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: 🇨🇾CY
+  h2-opts: {}
+  http-opts: {}
+  name: 83,192|Relay_🇨🇾CY-🇺🇸US_44 | 2.26Mb_5@43
+  network: ws
+  port: 443
+  server: www.csgo.com
+  servername: kr.cfyyds.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
+  ws-opts:
+    headers:
+      HOST: kr.cfyyds.filegear-sg.me
+    path: /rongseven?ed=2048
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_325
+  password: qwerREWQ@@
+  port: 6072
+  server: p226.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_330
+  password: qwerREWQ@@
+  port: 64186
+  server: p222.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_340
+  password: qwerREWQ@@
+  port: 38471
+  server: p235.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 83|Relay_🇰🇷KR-🇰🇷KR_343
+  password: qwerREWQ@@
+  port: 38370
+  server: p236.panda004.net
+  type: ss
 - alterId: 0
   cipher: auto
   name: '84|🇰🇷 韩国-01 #7'
@@ -374,20 +566,6 @@ proxies:
     headers:
       Host: cr4.biger.club
     path: /
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: '109,192,327,343|🇰🇷KR-43.203.122.162-0470 #1'
-  password: amazonskr05
-  port: 443
-  server: 43.203.122.162
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 109,192,327,343,464|🇰🇷KR-52.79.73.137-3373 | 18.924MB
-  password: amazonskr05
-  port: 443
-  server: 52.79.73.137
-  type: ss
 - name: 116|KR(AzadNet.t.me)_001
   network: tcp
   password: your_password
@@ -431,7 +609,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 151,154,184,305,321,326,327,333,334,338,341,342,343,345,363,468,469,473|🇰🇷KR-152.67.218.38-0747
+  name: 151,154,184,255,305,321,326,327,333,334,338,341,342,343,345,363,468,469,473|🇰🇷KR-152.67.218.38-0747
   network: ws
   port: 443
   server: 152.67.218.38
@@ -504,19 +682,19 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '162,327,343|🇷KR-43.202.49.222-9626 #1'
+  name: '162,327,343|🇷KR-43.202.49.222-9567 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '162,327,343|🇷KR-43.201.108.109-9627 #1'
+  name: '162,327,343|🇷KR-43.201.108.109-9568 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '162,327,343|🇷KR-125.141.26.5-10225 #1'
+  name: '162,327,343|🇷KR-125.141.26.5-10166 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
@@ -845,15 +1023,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 185|⚡️专线|韩国03解锁|倍率1
-  network: tcp
-  port: '16254'
-  server: zfd-krv2.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 0
-  cipher: auto
   name: 185|⚡️标准|韩国04解锁|倍率1
   network: tcp
   port: '16255'
@@ -863,9 +1032,27 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - alterId: 0
   cipher: auto
+  name: 185|⚡️专线|韩国02解锁|倍率1
+  network: tcp
+  port: '16253'
+  server: zfd-krv2.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- alterId: 0
+  cipher: auto
   name: 185|⚡️标准|韩国02解锁|倍率1
   network: tcp
   port: '16253'
+  server: zfd-krv1.01byx31qzn.download
+  tls: false
+  type: vmess
+  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
+- alterId: 0
+  cipher: auto
+  name: 185|⚡️标准|韩国01解锁|倍率1
+  network: tcp
+  port: '16252'
   server: zfd-krv1.01byx31qzn.download
   tls: false
   type: vmess
@@ -881,9 +1068,9 @@ proxies:
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - alterId: 0
   cipher: auto
-  name: 185|⚡️专线|韩国02解锁|倍率1
+  name: 185|⚡️专线|韩国03解锁|倍率1
   network: tcp
-  port: '16253'
+  port: '16254'
   server: zfd-krv2.01byx31qzn.download
   tls: false
   type: vmess
@@ -906,18 +1093,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
-- alterId: 0
-  cipher: auto
-  name: 185|⚡️标准|韩国01解锁|倍率1
-  network: tcp
-  port: '16252'
-  server: zfd-krv1.01byx31qzn.download
-  tls: false
-  type: vmess
-  uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - alterId: 64
   cipher: auto
-  name: 211,305,326,327,333,334,338,341,342,343,490|韩国_0112006
+  name: 211,255,305,326,327,333,334,338,341,342,343,490|韩国_0112006
   network: ws
   port: '443'
   server: 27.124.8.141
@@ -1015,7 +1193,7 @@ proxies:
   uuid: 1825df02-d587-41fc-a50a-82500d46c6f2
 - alterId: 0
   cipher: auto
-  name: 211,239,305,321,326,327,333,334,338,341,342,343,365|0.46|KR2
+  name: 211,239,255,305,321,326,327,333,334,338,341,342,343,365|0.46|KR2
   network: ws
   port: 80
   server: 152.69.230.170
@@ -1028,7 +1206,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '211,305,326,327,333,334,338,341,342,343|KR-131.186.24.103-2191 #1'
+  name: '211,255,305,326,327,333,334,338,341,342,343|KR-131.186.24.103-2163 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -1077,7 +1255,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '211,327,343|🇷KR-43.201.48.212-2348 #1'
+  name: '211,327,343|🇷KR-43.201.48.212-2320 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -1268,6 +1446,520 @@ proxies:
   port: 443
   server: 43.201.31.131
   type: ss
+- alterId: 1
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343,478|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+    #3'
+  network: ws
+  port: '8888'
+  server: 54.180.96.67
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
+  ws-opts:
+    headers:
+      Host: 54.180.96.67
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-52.78.213.224-1929 #1'
+  network: ws
+  port: 80
+  server: 52.78.213.224
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112007
+  network: ws
+  port: '443'
+  server: fullaccesstokoreannetsubnode1.azurewebsites.net
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
+  ws-opts:
+    headers:
+      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
+    path: /ws
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112008
+  network: ws
+  port: '443'
+  server: kr-arm2.018999.xyz
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e98fc1a0-9c52-4091-91a5-c159b0aa274e
+  ws-opts:
+    headers:
+      Host: kr-arm2.018999.xyz
+    path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-161.129.34.102-2374 #1'
+  network: ws
+  port: 443
+  server: 161.129.34.102
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    headers:
+      Host: 161.129.34.102
+    path: /
+- alterId: '0'
+  cipher: auto
+  country: 🇸US
+  h2-opts: {}
+  http-opts:
+    path:
+    - /
+  name: '255,298,305,326,327,333,334,338,341,342,343,345|🌼@filternet0142🌼کانال،آموزشی،ما،در،تلگرام🇰🇷
+    #7'
+  network: http
+  port: '46842'
+  server: 150.230.249.15
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4530b5ee-ced4-4e64-9285-1867fc5df7f8
+- alterId: '0'
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343,345|🌼@filternet0142🌼کانال،آموزشی،ما،در،تلگرام🇰🇷
+    #8'
+  network: ws
+  port: '10020'
+  server: 152.70.252.218
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fb91e1d7-440e-4470-b0a0-a791e5c32dc8
+  ws-opts:
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343,346,347|🇺🇸US_497_1 #1'
+  network: ws
+  port: '443'
+  server: 161.129.34.102
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ec736482-173e-3eff-9114-b49df8056e7d
+  ws-opts:
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,344|KR_FreeNode.me_18_2
+  network: ws
+  port: '49517'
+  server: 13.125.24.112
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    headers:
+      host: 13.125.24.112
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,344|KR_FreeNode.me_8_2
+  network: ws
+  port: '42517'
+  server: 13.125.24.112
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    headers:
+      host: 13.125.24.112
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,363,375,473|🇰🇷KR-152.67.218.38-0746
+  network: ws
+  port: 443
+  server: 152.67.218.38
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  ws-opts:
+    headers:
+      Host: 152.67.218.38
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-130.162.141.104-1008 #1'
+  network: ws
+  port: 443
+  server: 130.162.141.104
+  servername: ''
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
+  ws-opts:
+    path: /reffs7y26g0ua
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112003
+  network: ws
+  port: '443'
+  server: 146.56.162.25
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  ws-opts:
+    headers:
+      Host: lg30.cfcdn3.xyz
+    path: /ray
+- alterId: 0
+  cipher: auto
+  name: 255,305,321,326,327,333,334,338,341,342,343,400,422|github.com/freefq - 日本  48
+  network: ws
+  port: 27675
+  server: 146.56.40.117
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-54.180.114.77-6887 #1'
+  network: ws
+  port: 42517
+  server: 54.180.114.77
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-211.177.40.235-8259 #1'
+  network: ws
+  port: 30001
+  server: 211.177.40.235
+  servername: p3.chigua.tk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343|🇷KR-1.238.102.214-8260 #1'
+  network: ws
+  port: 30001
+  server: 1.238.102.214
+  servername: p3.chigua.tk
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
+  ws-opts:
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349,352|🔒 VM-WS-TLS 🇰🇷 KR-211.248.216.119:17443
+  network: ws
+  port: 17443
+  server: 211.248.216.119
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112011
+  network: ws
+  port: '443'
+  server: 138.2.123.70
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '255,305,326,327,333,334,338,341,342,343,349|0|--29 #3'
+  network: ws
+  port: 18050
+  server: 119.195.219.150
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112012
+  network: ws
+  port: '443'
+  server: 152.70.232.151
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.180.92.50-1384
+  network: ws
+  port: 46271
+  server: kr.huafei888.site
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
+  ws-opts:
+    headers:
+      Host: kr.huafei888.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349,352|🔒 VM-WS-NA 🇰🇷 KR-158.180.91.206:46271
+  network: ws
+  port: '46271'
+  server: 158.180.91.206
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
+  ws-opts:
+    headers:
+      Host: kr.huafei888.site
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-54.180.108.75-4452
+  network: ws
+  port: 80
+  server: 54.180.108.75
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-54.180.102.106-4451
+  network: ws
+  port: 80
+  server: 54.180.102.106
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,333,334,338,341,342,349,490|韩国_0112013
+  network: ws
+  port: '2083'
+  server: 146.56.133.140
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
+  ws-opts:
+    headers:
+      Host: tg.dns68.9669.link
+    path: /TG@dns68维护
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|📳16@oneclickvpnkeys
+  network: ws
+  port: '60999'
+  server: 210.87.195.254
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
+  ws-opts:
+    headers:
+      Host: tg.dns68.9669.link
+    path: /TG@dns68维护
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.247.240.219-3522
+  network: ws
+  port: 80
+  server: 158.247.240.219
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4400260c-f088-4748-af5c-cacce1156de0
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-141.164.48.71-3520
+  network: ws
+  port: 80
+  server: 141.164.48.71
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-52.78.156.107-3521
+  network: ws
+  port: 80
+  server: 52.78.156.107
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-3.38.179.76-3509
+  network: ws
+  port: 80
+  server: 3.38.179.76
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-43.201.48.75-3507
+  network: ws
+  port: 80
+  server: 43.201.48.75
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-3.35.133.176-3510
+  network: ws
+  port: 80
+  server: 3.35.133.176
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.247.254.135-3511
+  network: ws
+  port: 80
+  server: 158.247.254.135
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 255,305,326,327,333,334,338,341,342,343,490|韩国_0112014
+  network: ws
+  port: '443'
+  server: 61.97.244.79
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e8b77ebd-d651-4847-b7b2-e3f7c762832a
+  ws-opts:
+    headers:
+      Host: www.68567991.xyz
+    path: /
 - alterId: 0
   cipher: auto
   name: 275|KR🇰🇷 | amd2.720208.xyz-8080 | 220.14ms
@@ -1563,517 +2255,20 @@ proxies:
   ws-path: /vmess
 - alterId: 0
   cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-130.162.141.104-1009 #1'
-  network: ws
-  port: 443
-  server: 130.162.141.104
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10
-  ws-opts:
-    path: /reffs7y26g0ua
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112003
-  network: ws
-  port: '443'
-  server: 146.56.162.25
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  ws-opts:
-    headers:
-      Host: lg30.cfcdn3.xyz
-    path: /ray
-- alterId: 1
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343,478|这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-    #3'
-  network: ws
-  port: '8888'
-  server: 54.180.96.67
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89
-  ws-opts:
-    headers:
-      Host: 54.180.96.67
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-52.78.213.224-1957 #1'
-  network: ws
-  port: 80
-  server: 52.78.213.224
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 6f442823-6b73-4b31-f1f5-aa1e907b051e
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112007
-  network: ws
-  port: '443'
-  server: fullaccesstokoreannetsubnode1.azurewebsites.net
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  ws-opts:
-    headers:
-      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
-    path: /ws
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112008
-  network: ws
-  port: '443'
-  server: kr-arm2.018999.xyz
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e98fc1a0-9c52-4091-91a5-c159b0aa274e
-  ws-opts:
-    headers:
-      Host: kr-arm2.018999.xyz
-    path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-161.129.34.102-2434 #1'
-  network: ws
-  port: 443
-  server: 161.129.34.102
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ec736482-173e-3eff-9114-b49df8056e7d
-  ws-opts:
-    headers:
-      Host: 161.129.34.102
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343,345|🌼@filternet0142🌼کانال،آموزشی،ما،در،تلگرام🇰🇷
-    #8'
-  network: ws
-  port: '10020'
-  server: 152.70.252.218
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fb91e1d7-440e-4470-b0a0-a791e5c32dc8
-  ws-opts:
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343,346,347|🇺🇸US_497_1 #1'
-  network: ws
-  port: '443'
-  server: 161.129.34.102
-  servername: ''
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ec736482-173e-3eff-9114-b49df8056e7d
-  ws-opts:
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,344|KR_FreeNode.me_18_2
-  network: ws
-  port: '49517'
-  server: 13.125.24.112
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    headers:
-      host: 13.125.24.112
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,344|KR_FreeNode.me_8_2
-  network: ws
-  port: '42517'
-  server: 13.125.24.112
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    headers:
-      host: 13.125.24.112
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,363,375,473|🇰🇷KR-152.67.218.38-0746
-  network: ws
-  port: 443
-  server: 152.67.218.38
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
-  ws-opts:
-    headers:
-      Host: 152.67.218.38
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,321,326,327,333,334,338,341,342,343,400,422|github.com/freefq - 日本  48
-  network: ws
-  port: 27675
-  server: 146.56.40.117
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-54.180.114.77-6947 #1'
-  network: ws
-  port: 42517
-  server: 54.180.114.77
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-211.177.40.235-8319 #1'
-  network: ws
-  port: 30001
-  server: 211.177.40.235
-  servername: p3.chigua.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343|🇷KR-1.238.102.214-8320 #1'
-  network: ws
-  port: 30001
-  server: 1.238.102.214
-  servername: p3.chigua.tk
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: ffffffff-ffff-ffff-ffff-ffffffffffff
-  ws-opts:
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349,352|🔒 VM-WS-TLS 🇰🇷 KR-211.248.216.119:17443
-  network: ws
-  port: 17443
-  server: 211.248.216.119
-  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112011
-  network: ws
-  port: '443'
-  server: 138.2.123.70
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '305,326,327,333,334,338,341,342,343,349|0|--29 #2'
-  network: ws
-  port: 18050
-  server: 119.195.219.150
-  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112012
-  network: ws
-  port: '443'
-  server: 152.70.232.151
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.180.92.50-1384
-  network: ws
-  port: 46271
-  server: kr.huafei888.site
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
-  ws-opts:
-    headers:
-      Host: kr.huafei888.site
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349,352|🔒 VM-WS-NA 🇰🇷 KR-158.180.91.206:46271
-  network: ws
-  port: '46271'
-  server: 158.180.91.206
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: f99bfe05-e351-47df-e752-ac0aaea976dc
-  ws-opts:
-    headers:
-      Host: kr.huafei888.site
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-54.180.108.75-4452
-  network: ws
-  port: 80
-  server: 54.180.108.75
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-54.180.102.106-4451
-  network: ws
-  port: 80
-  server: 54.180.102.106
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,333,334,338,341,342,349,490|韩国_0112013
-  network: ws
-  port: '2083'
-  server: 146.56.133.140
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
-  ws-opts:
-    headers:
-      Host: tg.dns68.9669.link
-    path: /TG@dns68维护
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|📳16@oneclickvpnkeys
-  network: ws
-  port: '60999'
-  server: 210.87.195.254
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e8c6eb94-0c48-49de-c3eb-e305a26d1074
-  ws-opts:
-    headers:
-      Host: tg.dns68.9669.link
-    path: /TG@dns68维护
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.247.240.219-3522
-  network: ws
-  port: 80
-  server: 158.247.240.219
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4400260c-f088-4748-af5c-cacce1156de0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-141.164.48.71-3520
-  network: ws
-  port: 80
-  server: 141.164.48.71
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-52.78.156.107-3521
-  network: ws
-  port: 80
-  server: 52.78.156.107
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-3.38.179.76-3509
-  network: ws
-  port: 80
-  server: 3.38.179.76
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-43.201.48.75-3507
-  network: ws
-  port: 80
-  server: 43.201.48.75
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-3.35.133.176-3510
-  network: ws
-  port: 80
-  server: 3.35.133.176
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,349|🇰🇷KR-158.247.254.135-3511
-  network: ws
-  port: 80
-  server: 158.247.254.135
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 64
-  cipher: auto
-  name: 305,326,327,333,334,338,341,342,343,490|韩国_0112014
-  network: ws
-  port: '443'
-  server: 61.97.244.79
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e8b77ebd-d651-4847-b7b2-e3f7c762832a
-  ws-opts:
-    headers:
-      Host: www.68567991.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 307|17-773-KR
+  name: 307|17-728-KR
   network: ws
   port: 43153
   server: 132.226.20.31
   servername: ''
   tls: false
   type: vmess
-  uuid: ec7bac4a-29e0-4590-9bfa-72f279d65892
+  uuid: 8ce12007-8685-4cb1-baee-fbcee164330e
   ws-opts:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
 - cipher: aes-256-cfb
-  name: '319,327,343|🇷KR-3.36.118.190-5371 #1'
+  name: '319,327,343|🇷KR-3.36.118.190-5311 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -2175,26 +2370,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: '327,343|🇷KR-3.35.17.138-0871 #1'
-  password: amazonskr05
-  port: 443
-  server: 3.35.17.138
-  type: ss
 - cipher: aes-256-gcm
-  name: '327,343|🇰🇷KR-141.164.39.146-2439 #1'
+  name: '327,343|🇰🇷KR-141.164.39.146-2379 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '327,343|🇷KR-158.247.205.87-2466 #1'
+  name: '327,343|🇷KR-158.247.205.87-2406 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '327,343|🇷KR-158.247.205.87-2467 #1'
+  name: '327,343|🇷KR-158.247.205.87-2407 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -2237,7 +2426,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '327,343|🇰🇷KR-146.56.133.140-9191 #8'
+  name: '327,343|🇰🇷KR-146.56.133.140-9135 #8'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -2293,7 +2482,7 @@ proxies:
     path: /path/180401120101
 - alterId: 0
   cipher: auto
-  name: 353|TG频道@mfbpn-0113-KR
+  name: 353|TG频道@mfbpn-0106-KR
   network: ws
   port: 80
   server: 152.69.230.170
