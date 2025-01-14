@@ -21,29 +21,26 @@ proxies:
     path: /
 - cipher: aes-128-gcm
   country: 🇺🇸 US
+  name: 47,48,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.161-3933 | 33.066MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
   name: 47,48,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.162-3545 | 33.184MB
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
+- cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 47,48,69,70,81,109,192,313,327,330,337,343,464,466|未知119 7.3MB/s
+  name: 47,48,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.163-3491 | 32.953MB
   password: shadowsocks
   port: 443
   server: 156.146.62.163
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 47,48,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.164-3499 | 32.892MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.164
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -53,38 +50,38 @@ proxies:
   server: 178.209.50.206
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
+  name: 47,48,81|🇺🇸 美国_151
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 23.166.88.198
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   country: 🏁 ZZ
-  name: 47,48,192,327,343,466|未知109 1.8MB/s
+  name: '47,48,192,327,343|CH-23.166.88.198-6030 #1'
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 23.166.88.198
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🏁 ZZ
+  name: 47,48,81,109,192,327,330,337,343,466|未知51
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 23.166.88.221
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  country: 🏁 ZZ
-  name: '47,48,81,109,192,327,330,337,343|🇭CH-23.166.88.221-0518 #1'
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 23.166.88.221
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '47,48|[SS] SS-TCP-NA 🇨🇭 CH-23.166.88.5:3389 #1'
-  password: Y6R9pAtvxxzmGC
-  port: 3389
-  server: 23.166.88.5
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 49,50,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.161-3933 | 33.066MB
+  name: 49,50,69,70,81,109,192,313,327,330,337,343,464|CH-156.146.62.164-3499 | 32.892MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.161
+  server: 156.146.62.164
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -94,18 +91,21 @@ proxies:
   server: 195.15.215.198
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 49,50,81|🇺🇸 美国_151
-  password: faBAoD54k87UJG7
-  port: 2375
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 49,50,81,466|未知134 316.0KB/s
+  password: pKEW8JPByTVTLtM
+  port: 4444
   server: 23.166.88.198
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '49,50|[SS] SS-TCP-NA 🇨🇭 CH-23.166.88.198:2376 #1'
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 23.166.88.198
+  name: '49,50|[SS] SS-TCP-NA 🇨🇭 CH-23.166.88.5:3389 #1'
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.166.88.5
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -122,9 +122,22 @@ proxies:
   server: 91.103.253.151
   type: ss
   udp: true
+- name: 53|[Trojan] TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+  network: ws
+  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
+  port: 443
+  server: 185.18.250.117
+  skip-cert-verify: false
+  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+    path: /Telegram@V2ray_Alpha/?ed=2560
 - alterId: 0
   cipher: auto
-  name: '61,485|@Vip_Security join us - 262
+  name: '61,485|@Vip_Security join us - 261
 
     '
   network: tcp
@@ -216,7 +229,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 185,307,353|TG频道@mfbpn-1096-US
+  name: 185,307,353|TG频道@mfbpn-1094-US
   network: ws
   port: 31004
   server: 199.188.105.57

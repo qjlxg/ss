@@ -1,10 +1,28 @@
 proxies:
 - cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: '22,23,192,327,343|🇺🇸US-167.88.63.21-6319 #1'
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 167.88.63.21
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   country: 🇺🇸US
   name: 22,23,26,29,145,192,327,343,412|🇪 瑞典 V2CROSS.COM 2
   password: kDWvXYZoTBcGkC4
   port: 8881
+  server: 167.88.63.21
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 26,29,47,48,145,192,327,343,412|瑞 V2CROSS.COM
+  password: cdBIDV42DCwnfIN
+  port: 8118
   server: 167.88.63.21
   tfo: false
   type: ss
@@ -19,17 +37,20 @@ proxies:
   tfo: false
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🇺🇸US
-  name: 26,29,49,50,145,192,327,343,412|瑞 V2CROSS.COM
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 167.88.63.21
-  tfo: false
-  type: ss
+- name: '27,28,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-16.16.45.85:8443 #3'
+  network: ws
+  password: SSorg
+  port: 8443
+  server: 16.16.45.85
+  skip-cert-verify: false
+  sni: sstjj.esslh.filegear-sg.me
+  type: trojan
   udp: true
-- name: '27,28,53|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443 #2'
+  ws-opts:
+    headers:
+      Host: sstjj.esslh.filegear-sg.me
+    path: /?ed
+- name: '27,28,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443 #3'
   network: ws
   password: auto
   port: 443
@@ -55,33 +76,7 @@ proxies:
     headers:
       Host: nl1.trojanvpn.xyz
     path: /
-- name: '44,45,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-16.16.45.85:8443 #3'
-  network: ws
-  password: SSorg
-  port: 8443
-  server: 16.16.45.85
-  skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed
-- name: '44,45,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.32:443 #3'
-  network: ws
-  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
-  port: 443
-  server: 185.146.173.32
-  skip-cert-verify: false
-  sni: de1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: de1.trojanvpn.xyz
-    path: /
-- name: '44,45,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.42:443 #3'
+- name: '27,28,51,52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.42:443 #3'
   network: ws
   password: 542f66d8-6b06-4340-a829-76d23db7ca80
   port: 443
@@ -94,25 +89,24 @@ proxies:
     headers:
       Host: fr1.trojanvpn.xyz
     path: /
-- name: '44,45,49,50|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.69:443 #3'
+- name: '44,45,49,50|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.32:443 #3'
   network: ws
-  password: b697183d-288b-40ab-98ae-8e3eb85f371c
+  password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
   port: 443
-  server: 185.146.173.69
+  server: 185.146.173.32
   skip-cert-verify: false
-  sni: uk1.trojanvpn.xyz
+  sni: de1.trojanvpn.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: uk1.trojanvpn.xyz
+      Host: de1.trojanvpn.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  country: 🇸🇪 SE
-  name: 47,48,69,70,81,109,192,313,327,330,337,343,464|SE-46.246.98.155-3554 | 31.048MB
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
+  name: '47,48|[SS] SS-TCP-NA 🇸🇪 SE-45.82.13.248:13839 #1'
+  password: TOfiZvlmjQAhyQ4HR3B3L5
+  port: 13839
+  server: 45.82.13.248
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -132,11 +126,15 @@ proxies:
   server: 121.127.46.147
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] SS-TCP-NA 🇸🇪 SE-45.82.13.248:13839 #1'
-  password: TOfiZvlmjQAhyQ4HR3B3L5
-  port: 13839
-  server: 45.82.13.248
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇸🇪 SE
+  name: 69,70,81,109,192,313,327,330,337,343,464,466|未知105 13.4MB/s
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 116|SE(AzadNet.t.me)_001

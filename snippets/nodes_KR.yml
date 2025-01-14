@@ -1,6 +1,33 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-130.162.144.90:23451 #5'
+  network: ws
+  port: '23451'
+  server: 130.162.144.90
+  tls: false
+  type: vmess
+  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #5'
+  network: ws
+  port: 40474
+  server: 131.186.16.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
+- alterId: 0
+  cipher: auto
   name: '19,143,228,237|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #3'
   network: ws
   port: 50035
@@ -27,35 +54,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '19,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #5'
-  network: ws
-  port: 40474
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fb05a8fb-d3ad-4e3f-8676-d5a59d66b5e0
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
-  name: '19,44,45,143,228,237,444,457|🔒 VM-WS-NA 🇰🇷 KR-146.56.137.160:23451 #5'
-  network: ws
-  port: '23451'
-  server: 146.56.137.160
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: '24,25|[SS] 🇰🇷 韩国 01 | 1x KR #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -79,26 +77,13 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 26,29,109,175,192,215,240,327,343,397,412,480,488|JP_speednode_0019
+  name: 26,29,109,175,192,215,240,327,343,397,412,488|JP_speednode_0019
   password: amazonskr05
   port: 443
   server: 18.183.217.250
   tfo: false
   type: ss
   udp: true
-- name: '27,28,51,52|[Trojan] 🇰🇷 TR-WS-TLS 🇰🇷 KR-52.231.97.210:2053 #3'
-  network: ws
-  password: SSorg
-  port: 2053
-  server: 52.231.97.210
-  skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed
 - cipher: aes-256-cfb
   name: '33|[SS] 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian #2'
   password: amazonskr05
@@ -199,13 +184,21 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- cipher: aes-256-cfb
-  name: 47,48,109,327,343,480,488|KR_speednode_0032
-  password: amazonskr05
-  port: 443
-  server: 13.124.195.238
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '44,45|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-146.56.137.160:23451 #1'
+  network: ws
+  port: 23451
+  server: 146.56.137.160
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
+  ws-opts:
+    headers:
+      Host: seoul-1ddns.aboutanime.eu.org
+    path: /
 - cipher: aes-256-cfb
   name: '47,48|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-154.90.63.177:989 #1'
   password: f8f7aCzcPKbsF8p3
@@ -222,20 +215,19 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: 49,50,109,327,343,488|KR_speednode_0032
+  password: amazonskr05
+  port: 443
+  server: 13.124.195.238
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: '47,48,82,192,327,343|🇰🇷KR-168.126.234.233-0848 #1'
+  name: 49,50,82,192,327,343,397|0|-https://t.me/MrXbin-9
   password: qwerREWQ@@
   port: 40915
   server: 168.126.234.233
   tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 47,48,109,192,327,343,397,480,488|KR_speednode_0031
-  password: qwerREWQ@@
-  port: 7855
-  server: 221.150.109.21
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -293,13 +285,15 @@ proxies:
     headers:
       host: kr4g2.jeiaz.ink
     path: /
-- name: 81|🇰🇷 韩国_2
+- alterId: 0
+  name: 81,466|未知66 189.7KB/s
   network: tcp
   password: e8105dfd24414268b6c7652c63731097
   port: 443
   server: 132.145.94.80
   skip-cert-verify: true
   sni: yournextcareerstep.online
+  tls: true
   type: trojan
   udp: true
 - alterId: 0
@@ -328,15 +322,6 @@ proxies:
     headers:
       Host: ''
     path: /hello
-- auth: aa07acfe-8b45-4541-9d92-08a3201c35f5
-  name: 85|🇷 韩国-1
-  password: aa07acfe-8b45-4541-9d92-08a3201c35f5
-  port: 30001
-  server: oracle-arm-chuncheon1.lanmaoyun.icu
-  skip-cert-verify: true
-  sni: korea.nodes.lanmaoyun.icu
-  type: hysteria2
-  udp: true
 - alterId: '0'
   cipher: auto
   name: 98|[🇰🇷]kr06.wxfz.ml:35212(5ab3f1a4-0793-4f2a-f14a-d427105aa99a)
@@ -393,13 +378,6 @@ proxies:
     headers:
       Host: cr4.biger.club
     path: /
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 109,192,327,343,397,480,488|KR_speednode_0026
-  password: qwerREWQ@@
-  port: 17725
-  server: 125.141.31.100
-  type: ss
 - name: 116|KR(AzadNet.t.me)_001
   network: tcp
   password: your_password
@@ -2223,7 +2201,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 307|17-772-KR
+  name: 307|17-815-KR
   network: ws
   port: 43153
   server: 132.226.20.31
@@ -2362,13 +2340,6 @@ proxies:
     headers:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: aes-256-cfb
-  name: 327,343,397,488|KR_speednode_0028
-  password: amazonskr05
-  port: 443
-  server: 54.180.9.243
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 327,343,488|KR_speednode_0024
   password: qwerREWQ@@
