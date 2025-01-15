@@ -34,17 +34,20 @@ proxies:
       Host: tr.koiok.us.kg
     path: '%2F%3Fed%3D2560'
 - cipher: aes-256-cfb
-  name: 47,48,70,109,192,313,327,343,464,480|Taiwan_Taipei_ss_114
+  name: 47,48,70,83,109,192,313,327,343,464|🇨🇳TW-185.189.160.98-3613 | 15.234MB
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '47,48|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.134:2377 #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 47,48,466|TW2
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 211.22.161.134
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -54,18 +57,21 @@ proxies:
   server: 60.249.28.136
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '47,48|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377 #1'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 47,48,466|TW
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.137
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '47,48|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377 #1'
+  name: '47,48|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.35.39
+  server: 60.249.28.138
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -77,7 +83,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇭🇰HK
-  name: '49,50,192,327,343|TW-154.223.20.79-6078 #1'
+  name: '49,50,83,192,327,343|TW-154.223.20.79-6078 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
@@ -91,29 +97,36 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-223.165.4.173:990 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '49,50|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 49,50,466|TW
+  name: '49,50|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 60.249.28.60
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '49,50|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.35.39:2377 #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.35.39
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 83|disney_TW
+  network: ws
+  port: 80
+  server: 104.17.213.241
+  servername: 100-49-141-209.s1.db-link02.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
+  ws-opts:
+    headers:
+      HOST: 100-49-141-209.s1.db-link02.top
+    path: /dabai.in104.17.169.115
 - alterId: 0
   cipher: auto
   name: 84|🇹🇼 TW.台湾.A - 𝘾𝙤𝙠𝙚𝘾𝙡𝙤𝙪𝙙
@@ -873,7 +886,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '166,167,172,182,213,305,320,326,327,333,334,338,341,342,343,349,360,457,473,477,485|@Vip_Security
-    join us - 89
+    join us - 88
 
     '
   network: ws
@@ -1719,9 +1732,9 @@ proxies:
     path: /ray
 - alterId: 64
   cipher: auto
-  name: 349,352|🔒 VM-WS-TLS 🇹🇼 TW-103.177.33.19:30013
+  name: 349|🇹🇼TW-103.177.33.19-2573
   network: ws
-  port: '30013'
+  port: 30013
   server: 103.177.33.19
   servername: www.35709620.xyz
   tls: true
