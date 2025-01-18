@@ -1,13 +1,94 @@
 proxies:
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   country: 🇺🇸US
-  name: 21,22,82|🇺🇸US_1301
+  name: 28,46,47,144,191,326,342,411|V2CROSS.COM
   password: cdBIDV42DCwnfIN
-  port: 8119
+  port: 8118
   server: 167.88.63.21
+  tfo: false
   type: ss
   udp: true
-- name: '26,27,50,51|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.32:443 #3'
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 28,46,47,144,191,326,342,411|🇸🇪 瑞典 V2CROSS.COM 3
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 167.88.63.21
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  name: 28,144,191,326,342,411|🇪 瑞典 V2CROSS.COM 2
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 167.88.63.21
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] SS-TCP-NA 🇸🇪 SE-45.82.13.248:13839 #1'
+  password: TOfiZvlmjQAhyQ4HR3B3L5
+  port: 13839
+  server: 45.82.13.248
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇸🇪 SE
+  name: '46,47,68,69,80,98,191,312,326,329,336,342|🇪SE-46.246.98.155-5847 #1'
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: '46,47,68,69,80,98,191,312,326,342|🇸SE-94.228.165.178-5840 #1'
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇦🇫AF
+  name: 48,49,68,69,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3393
+    | 25.81MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '48,49|[SS] SS-TCP-NA 🇸🇪 SE-2.248.236.211:55551 #1'
+  password: UNJXwrcb3vkdQbR6P5VGHA
+  port: 55551
+  server: 2.248.236.211
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 48,49,463|SE-46.246.93.24-3269 | 21.638MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.246.93.24
+  type: ss
+  udp: true
+- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443
+  network: ws
+  password: auto
+  port: 443
+  server: 185.146.173.158
+  skip-cert-verify: false
+  sni: esetsecuritylicense.bwnsmv.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+    path: /Telegram@proxy_mtm/?ed=2560
+- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.32:443
   network: ws
   password: 5495ebe2-dc52-4cb4-8f25-2a13877183e6
   port: 443
@@ -20,7 +101,7 @@ proxies:
     headers:
       Host: de1.trojanvpn.xyz
     path: /
-- name: '26,27,48,49|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.42:443 #3'
+- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.42:443
   network: ws
   password: 542f66d8-6b06-4340-a829-76d23db7ca80
   port: 443
@@ -33,7 +114,7 @@ proxies:
     headers:
       Host: fr1.trojanvpn.xyz
     path: /
-- name: '26,27,48,49|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.69:443 #3'
+- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.69:443
   network: ws
   password: b697183d-288b-40ab-98ae-8e3eb85f371c
   port: 443
@@ -46,121 +127,13 @@ proxies:
     headers:
       Host: uk1.trojanvpn.xyz
     path: /
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🏁 ZZ
-  name: 28,82,191,326,342,411|🇪 瑞典 V2CROSS.COM 2
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 167.88.63.21
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🏁 ZZ
-  name: 28,46,47,82,191,326,342,411|🇸🇪 瑞典 V2CROSS.COM 3
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 167.88.63.21
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  country: 🏁 ZZ
-  name: 28,48,49,82,191,326,342,411|V2CROSS.COM
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 167.88.63.21
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] SS-TCP-NA 🇸🇪 SE-213.66.171.18:55551 #1'
-  password: UNJXwrcb3vkdQbR6P5VGHA
-  port: 55551
-  server: 213.66.171.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] SS-TCP-NA 🇸🇪 SE-45.82.13.248:13839 #1'
-  password: TOfiZvlmjQAhyQ4HR3B3L5
-  port: 13839
-  server: 45.82.13.248
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 46,47,463|SE-46.246.93.24-3285 | 23.515MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.246.93.24
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: 46,47,68,80,82,108,191,326,342,463|SE-94.228.165.178-3152 | 5.497MB
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇦🇫AF
-  name: 48,49,68,69,82,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3409
-    | 17.527MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-  udp: true
-- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-16.16.45.85:8443
-  network: ws
-  password: SSorg
-  port: 8443
-  server: 16.16.45.85
-  skip-cert-verify: false
-  sni: sstjj.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: sstjj.esslh.filegear-sg.me
-    path: /?ed
-- name: 52|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.34:443
-  network: ws
-  password: aee423ce-e4b0-4555-b5b7-486dd0284fd2
-  port: 443
-  server: 185.146.173.34
-  skip-cert-verify: false
-  sni: nl1.trojanvpn.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: nl1.trojanvpn.xyz
-    path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇸🇪 SE
-  name: 68,80,82,191,326,342,463|SE-46.246.98.155-3397 | 12.987MB
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇸🇪SE
-  name: '69,82,108,191,312,326,342|🇪SE-213.66.171.18-0425 #1'
+  name: '69,191,312,326,329,336,342|🇪SE-2.248.236.211-6263 #1'
   password: UNJXwrcb3vkdQbR6P5VGHA
   port: 55551
   server: homa.cybsecguru.com
   type: ss
-- country: 🇸🇪SE
-  name: 82|🇸🇪SE_938
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.50.123.136
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - name: 115|SE(AzadNet.t.me)_001
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -168,6 +141,13 @@ proxies:
   server: jp2.twincloud.xyz
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 115,183,326,342,343|Aloha+Greece+🇬🇷+Thessaloniki_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.102
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -232,25 +212,25 @@ proxies:
       Host: 94.131.98.104
     path: /vmess
 - cipher: aes-256-cfb
-  name: '161,326,342|🇸SE-37.19.222.214-9474 #1'
+  name: '161,326,342|🇸SE-37.19.222.214-9614 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.214
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇪SE-37.19.222.213-9475 #1'
+  name: '161,326,342|🇪SE-37.19.222.213-9615 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.213
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇸🇪SE-37.19.222.212-9476 #1'
+  name: '161,326,342|🇸🇪SE-37.19.222.212-9616 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.212
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇸🇪SE-37.19.222.211-9477 #1'
+  name: '161,326,342|🇸🇪SE-37.19.222.211-9617 #1'
   password: asdKkaskJKfnsa
   port: 443
   server: 37.19.222.211
@@ -588,29 +568,20 @@ proxies:
   type: vmess
   uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768
 - country: 🇸🇪SE
-  name: 191|🇸🇪SE_38_7@37
+  name: 191|netflix_SE_4@33
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 16.171.186.21
+  server: 13.50.159.227
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
 - country: 🇸🇪SE
-  name: 191|netflix_SE_7@38
+  name: 191|netflix_SE_4@34
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.61.68.35
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇸🇪SE
-  name: 191|netflix_SE_7@39
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.61.123.168
+  server: 13.51.7.82
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -723,7 +694,7 @@ proxies:
   type: vmess
   uuid: 2bb47c4c-f1be-437a-948e-cc097473513f
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|SE-13.49.241.14-4361 #1'
+  name: '326,342|SE-13.49.241.14-4525 #1'
   password: pydQILh06AvJ
   port: 27092
   server: 13.49.241.14
