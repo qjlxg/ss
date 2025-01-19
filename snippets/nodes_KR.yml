@@ -1,20 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,142,227,427,429|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #4'
-  network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
-- alterId: 0
-  cipher: auto
   name: '18,142,227,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #4'
   network: ws
   port: 40471
@@ -27,6 +13,20 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: '18,142,227,427,429|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #4'
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: '18,142,227,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #4'
@@ -43,13 +43,13 @@ proxies:
     path: /wada12222
 - alterId: 0
   cipher: auto
-  name: '18,142,227|🔒 VM-WS-NA 🇰🇷 KR-146.56.146.127:23451 #2'
+  name: '18,142,227,443,456|🔒 VM-WS-NA 🇰🇷 KR-217.142.138.43:23451 #4'
   network: ws
   port: '23451'
-  server: 146.56.146.127
+  server: 217.142.138.43
   tls: false
   type: vmess
-  uuid: 7eb08b9e-6f0b-4f54-b3f2-30fe440369c6
+  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
   ws-opts:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
@@ -109,7 +109,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇰🇷KR
-  name: 28,108,174,191,214,239,326,342,396,411,479|South Korea_Seocho_ss_1140
+  name: 28,82,108,174,191,214,239,326,342,396,411,479|South Korea_Seocho_ss_1139
   password: qwerREWQ@@
   port: 15041
   server: p239.panda004.net
@@ -118,7 +118,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 28,174,214,239,326,342,396,411,479|Singapore_Singapore_ss_1148
+  name: 28,174,214,239,326,342,411,479|Singapore_Singapore_ss_1147
   password: amazonskr05
   port: 443
   server: 13.212.31.129
@@ -210,7 +210,8 @@ proxies:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
 - cipher: aes-256-cfb
-  name: '46,47,191,326,342|🇰🇷KR-125.141.31.74-0811 #1'
+  country: 🇰🇷KR
+  name: 46,47,82,174,191,326,342,411|0|-https://t.me/MrXbin-52
   password: qwerREWQ@@
   port: 28290
   server: 125.141.31.74
@@ -218,21 +219,25 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '46,47,191,326,342|🇰🇷KR-13.125.16.220-6162 #1'
+  name: '46,47,82,191,326,342|🇰🇷KR-13.125.16.220-6162 #1'
   password: amazonskr05
   port: 443
   server: 13.125.16.220
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 46,47,191,326,342,396|0|-https://t.me/MrXbin-26
+  client-fingerprint: chrome
+  name: '46,47,82,174,191,214,326,342,396,411,479|South Korea_Seongbuk-gu_ss_1119
+    #1'
   password: qwerREWQ@@
   port: 58989
   server: 168.126.234.232
+  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-210.217.18.70:15041 #1'
+  country: 🇰🇷KR
+  name: 46,47,82|🇰🇷KR_967
   password: qwerREWQ@@
   port: 15041
   server: 210.217.18.70
@@ -247,7 +252,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 46,47,174,191,214,326,342,396,411|0|-https://t.me/MrXbin-35
+  name: '46,47,82,174,191,214,326,342,396,411,479|South Korea_Gimpo-si_ss_1114 #1'
   password: qwerREWQ@@
   port: 27973
   server: 221.168.44.72
@@ -264,36 +269,43 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '46,47,191,326,342|🇰🇷KR-3.36.87.189-6297 #1'
+  name: '46,47,82,191,326,342|🇰🇷KR-3.36.87.189-6297 #1'
   password: amazonskr05
   port: 443
   server: 3.36.87.189
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-125.141.26.14:8704 #1'
+  country: 🇰🇷KR
+  name: 48,49,82|🇰🇷KR_968
   password: qwerREWQ@@
   port: 8704
   server: 125.141.26.14
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  client-fingerprint: chrome
   country: 🇰🇷KR
-  name: 48,49,69,191,312,326,342,396|0|-https://t.me/MrXbin-12
+  name: 48,49,69,82,191,214,312,326,342,396,479|South Korea_Seongnam-si_ss_119
   password: qwerREWQ@@
   port: 17725
   server: 125.141.31.100
+  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 48,49,326,342,396|0|-https://t.me/MrXbin-1
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 48,49,82,174,214,326,342,396,411,479|South Korea_Seongnam-si_ss_111
   password: qwerREWQ@@
   port: 43104
   server: 125.141.31.103
+  tfo: false
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-154.90.63.177:989 #1'
+  country: 🇺🇸US
+  name: 48,49,82|🇺🇸US_1564
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -309,7 +321,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '48,49,191,326,342|🇷KR-221.150.109.89-6158 #1'
+  name: '48,49,82,191,326,342|🇷KR-221.150.109.89-6158 #1'
   password: qwerREWQ@@
   port: 61238
   server: 221.150.109.89
@@ -344,13 +356,17 @@ proxies:
   server: 52.79.247.162
   type: ss
 - cipher: aes-256-cfb
-  name: 69,312,326,342,396|0|-https://t.me/MrXbin-8
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 69,82,174,214,312,326,342,396,411,479|South Korea_Songpa-gu_ss_115
   password: qwerREWQ@@
   port: 61238
   server: p231.panda004.net
+  tfo: false
   type: ss
 - cipher: aes-256-cfb
-  name: '69,312|🇰🇷KR-211.201.169.70-0520 #1'
+  country: 🇰🇷KR
+  name: '69,82,312|🇰🇷KR-211.201.169.70-0520 #1'
   password: qwerREWQ@@
   port: 22081
   server: p110.panda001.net
@@ -381,6 +397,145 @@ proxies:
   sni: yournextcareerstep.online
   type: trojan
   udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 82,174,191,326,342,396,411,487|KR_speednode_0037
+  password: qwerREWQ@@
+  port: 37041
+  server: 121.170.203.147
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '82,191,326,342|🇷KR-61.255.174.173-6294 #1'
+  password: qwerREWQ@@
+  port: 31956
+  server: 61.255.174.173
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 82,174,191,214,326,342,396,411,479,487|KR_speednode_0038
+  password: qwerREWQ@@
+  port: 34847
+  server: 218.50.149.114
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '82,191,326,342|🇰🇷KR-221.139.79.39-6289 #1'
+  password: qwerREWQ@@
+  port: 16065
+  server: 221.139.79.39
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '82,191,326,342|🇰🇷KR-221.139.79.57-6298 #1'
+  password: qwerREWQ@@
+  port: 52963
+  server: 221.139.79.57
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '82,191,326,342|🇷KR-125.141.26.14-6250 #1'
+  password: qwerREWQ@@
+  port: 8704
+  server: p229.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 82|Relay_🇰🇷KR-🇰🇷KR_981
+  password: qwerREWQ@@
+  port: 28290
+  server: p220.panda001.net
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: '82,191,326,342|🇷KR-221.139.79.20-6287 #1'
+  password: qwerREWQ@@
+  port: 51199
+  server: 221.139.79.20
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 82,174,214,326,342,396,411,479|South Korea_Seongnam-si_ss_1110
+  password: qwerREWQ@@
+  port: 43104
+  server: p221.panda001.net
+  tfo: false
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  country: 🇰🇷KR
+  name: 82,174,191,214,326,342,396,411,479,487|KR_speednode_0039
+  password: qwerREWQ@@
+  port: 28902
+  server: 218.38.103.150
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇰🇷KR
+  h2-opts: {}
+  http-opts: {}
+  name: 82|Relay_🇰🇷KR-🇰🇷KR_989
+  network: ws
+  port: 34112
+  server: kr02.kaoyan.de
+  servername: kr02.kaoyan.de
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0e2a9721-8832-4aa8-9a18-52749b153f68
+  ws-opts:
+    headers:
+      HOST: kr02.kaoyan.de
+    path: /test/blank
+- country: 🇺🇸US
+  name: 82|disney_KR
+  network: ws
+  password: yaml777
+  port: 443
+  server: 172.67.207.57
+  sni: yaml7.ggff.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: yaml7.ggff.net
+    path: /
+- country: 🇺🇸US
+  fingerprint: random
+  name: '82|disney_KR #1'
+  network: ws
+  password: takaz?cuswo-r?_ojuMit@i=rAcrETl&lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8
+  port: 8443
+  server: 172.67.5.14
+  sni: quiz.vidio.com.vidio.us.kg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: quiz.vidio.com.vidio.us.kg
+    path: /pyip=s10.serv00.com:15661
+- country: 🇺🇸US
+  name: '82|disney_KR #2'
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: true
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 - alterId: 0
   cipher: auto
   name: '83|🇰🇷 韩国-01 #7'
@@ -596,48 +751,11 @@ proxies:
   port: 2003
   server: 125.141.26.5
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: 174,191,214,326,342,411,487|KR_speednode_0037
-  password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: '174,191,214,326,342,411|0|-https://t.me/MrXbin-28 #1'
-  password: qwerREWQ@@
-  port: 5412
-  server: 27.255.82.23
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 174,191,214,326,342,396,411|0|-https://t.me/MrXbin-39
-  password: qwerREWQ@@
-  port: 31066
-  server: 218.237.185.230
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: 174,191,214,326,342,396,411,487|KR_speednode_0038
-  password: qwerREWQ@@
-  port: 34847
-  server: 218.50.149.114
-  tfo: false
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   fingerprint: ''
-  name: 177|4f42b91ddc954ecf8b788b55ece17585_@_👉🆔@v2ray_configs_pool📡🇰🇷South Korea
+  name: 177|a73469b758f14c138d4186f9a7ecbf1d_@_👉🆔@v2ray_configs_pool📡🇰🇷South Korea
   network: ws
   port: 30002
   server: si.1808.site
@@ -986,42 +1104,6 @@ proxies:
     headers:
       Host: kr02.kaoyan.de
     path: /test/blank
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '191,326,342|🇷KR-221.139.79.20-6287 #1'
-  password: qwerREWQ@@
-  port: 51199
-  server: 221.139.79.20
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '191,326,342|🇰🇷KR-221.139.79.39-6289 #1'
-  password: qwerREWQ@@
-  port: 16065
-  server: 221.139.79.39
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '191,326,342|🇷KR-61.255.174.173-6294 #1'
-  password: qwerREWQ@@
-  port: 31956
-  server: 61.255.174.173
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 191,326,342,396,487|KR_speednode_0039
-  password: qwerREWQ@@
-  port: 28902
-  server: 218.38.103.150
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '191,326,342|🇰🇷KR-221.139.79.57-6298 #1'
-  password: qwerREWQ@@
-  port: 52963
-  server: 221.139.79.57
-  type: ss
 - alterId: 64
   cipher: auto
   name: 210,304,325,326,332,333,337,340,341,342,489|韩国_0118002
@@ -2134,13 +2216,6 @@ proxies:
       Host: ''
     path: /
 - cipher: aes-256-cfb
-  name: 326,342,396|0|-https://t.me/MrXbin-13
-  password: qwerREWQ@@
-  port: 43104
-  server: p221.panda001.net
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: '326,342|🇰🇷KR-203.234.238.140-0818 #1'
   password: qwerREWQ@@
   port: 6072
@@ -2440,6 +2515,13 @@ proxies:
   ws-headers:
     Host: cn2.soow.win
   ws-path: /video
+- cipher: aes-256-cfb
+  name: 396|13|🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.112.254.144
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   country: ' KR'
@@ -2486,19 +2568,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '443,456|🔒 VM-WS-NA 🇰🇷 KR-152.70.233.245:23451 #1'
-  network: ws
-  port: '23451'
-  server: 152.70.233.245
-  tls: false
-  type: vmess
-  uuid: 4a2771e1-d31f-4590-812d-be880ba87997
-  ws-opts:
-    headers:
-      Host: seoul-1ddns.aboutanime.eu.org
     path: /
 - cipher: aes-256-cfb
   name: 464|TG频道@mfbpn-韩国2
