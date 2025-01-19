@@ -102,7 +102,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '46,47,68,69,80,82,98,191,312,326,342|🇱🇹LT-45.87.175.178-1100 #1'
+  name: '46,47,68,69,80,98,191,312,326,342|🇱🇹LT-45.87.175.178-1100 #1'
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.178
@@ -110,32 +110,25 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '46,47,68,69,80,82,98,191,312,326,342|🇱🇹LT-45.87.175.199-1103 #1'
+  name: '46,47,68,69,80,191,312,326,342|🇱🇹LT-45.87.175.199-1103 #1'
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.199
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 48,49,68,69,82,98,183,191,312,326,342,467|21|_146
-  password: qYEN5HX4JKeVCdEC
-  port: 9039
-  server: 195.238.126.84
-  type: ss
-  udp: true
-- name: '50,51|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.186:443 #1'
+- name: '50,51|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #1'
   network: ws
-  password: SSorg
+  password: bpb-trojan
   port: 443
-  server: 86.38.214.186
+  server: 89.116.250.94
   skip-cert-verify: false
-  sni: ssjj.esslh.filegear-sg.me
+  sni: bpb.my79801.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: ssjj.esslh.filegear-sg.me
-    path: /?ed
+      Host: bpb.my79801.com
+    path: /tr?ed
 - name: 52|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.132:443
   network: ws
   password: bpb-trojan
@@ -149,19 +142,26 @@ proxies:
     headers:
       Host: bpb.my79801.com
     path: /tr?ed
-- name: 52|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443
+- name: 52|[Trojan] TR-WS-TLS 🇱🇹 LT-86.38.214.186:443
   network: ws
-  password: bpb-trojan
+  password: SSorg
   port: 443
-  server: 89.116.250.94
+  server: 86.38.214.186
   skip-cert-verify: false
-  sni: bpb.my79801.com
+  sni: ssjj.esslh.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
+      Host: ssjj.esslh.filegear-sg.me
+    path: /?ed
+- cipher: aes-256-cfb
+  name: 68,69,183,191,312,326,342,467|21|_146
+  password: qYEN5HX4JKeVCdEC
+  port: 9039
+  server: 195.238.126.84
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: '142,304|D-WEALTH-2386 #1'
@@ -241,15 +241,6 @@ proxies:
   protocol-param: ''
   server: 94.102.57.163
   type: ssr
-- name: 296|🇱🇹_立陶宛
-  network: tcp
-  password: Aimer
-  port: 443
-  server: 86.38.214.186
-  skip-cert-verify: true
-  sni: amepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
 - alterId: 64
   cipher: auto
   name: '304,325,326,332,333,337,340,341,342|LT-85.206.165.36-0767 #1'
