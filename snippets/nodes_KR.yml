@@ -2,12 +2,12 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '18,28,63,92,174,184,214,227,228,239,304,306,325,326,332,333,337,340,341,342,348,352,354,355,356,357,393,394,396,397,411,419|CN_youtube@资源分享师  _4
+  name: '18,28,92,174,184,214,227,228,239,304,306,325,326,332,333,337,340,341,342,348,352,354,355,356,357,393,394,396,397,411,419,479|China_None_vmess_1157
     #1'
   network: ws
-  port: 40396
+  port: '40396'
   server: sd3.forlive.live
-  servername: tms.dingtalk.com
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -18,20 +18,6 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '18,142,227,427,429|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #4'
-  network: ws
-  port: 50035
-  server: 175.203.204.222
-  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
-    path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
   name: '18,142,227,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #4'
@@ -60,6 +46,20 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /wada12222
+- alterId: 0
+  cipher: auto
+  name: '18,142,227,427,429|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #4'
+  network: ws
+  port: 50035
+  server: 175.203.204.222
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /obdii.cfd:443/linkws
 - cipher: chacha20-ietf-poly1305
   name: '23,24|[SS] 🇰🇷 韩国 01 | 1x KR #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
@@ -115,7 +115,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇰🇷KR
-  name: 28,108,174,191,214,239,326,342,396,411|0,13|🇷 |@ripaojiedian
+  name: 28,108,174,191,214,239,326,342,396,411,479|South Korea_Seongnam-si_ss_1132
   password: qwerREWQ@@
   port: 43104
   server: p221.panda001.net
@@ -124,7 +124,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 28,174,214,239,326,342,396,411,463|🇯🇵JP-3.112.254.144-9241 | 32.831MB
+  name: 28,174,214,239,326,342,396,411,463,479|Japan_Tokyo_ss_1166
   password: amazonskr05
   port: 443
   server: 3.112.254.144
@@ -217,32 +217,24 @@ proxies:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 46,47,69,108,191,312,326,342,396,487|KR_speednode_0049
-  password: qwerREWQ@@
-  port: 28290
-  server: 125.141.31.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 46,47,108,191,326,342,396|0|-https://t.me/MrXbin-30
-  password: amazonskr05
-  port: 443
-  server: 13.125.6.123
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: '46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-154.90.63.177:989 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 46,47,69,191,312,326,329,336,342,463|🇰🇷KR-221.150.109.89-3577 | 17.823MB
+  password: qwerREWQ@@
+  port: 61238
+  server: 221.150.109.89
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: 46,47,80,191,326,342,465|未知11 118.2KB/s
+  name: 48,49,80,98,191,326,342,465|未知11 118.2KB/s
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.90.63.193
@@ -250,49 +242,19 @@ proxies:
   tls: true
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-61.111.247.242:40032 #1'
-  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
-  port: 40032
-  server: 61.111.247.242
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 48,49,108,191,326,342,396|0|-https://t.me/MrXbin-38
-  password: qwerREWQ@@
-  port: 43104
-  server: 125.141.31.103
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 48,49,69,191,312,326,329,336,342,463|🇰🇷KR-221.150.109.89-3577 | 17.823MB
-  password: qwerREWQ@@
-  port: 61238
-  server: 221.150.109.89
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 48,49,191,326,342,396|0|-https://t.me/MrXbin-10
-  password: qwerREWQ@@
-  port: 27973
-  server: 221.168.44.72
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '48,49,108,191,326,342|🇷KR-27.255.82.23-0805 #1'
+  name: 48,49,108,174,191,326,342,396,411|0|-https://t.me/MrXbin-3
   password: qwerREWQ@@
   port: 5412
   server: 27.255.82.23
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 48,49,191,326,329,336,342,396,487|KR_speednode_0046
-  password: amazonskr05
-  port: 443
-  server: 3.36.116.141
+- cipher: chacha20-ietf-poly1305
+  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-61.111.247.242:40032 #1'
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  port: 40032
+  server: 61.111.247.242
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -321,7 +283,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '65,306|12-288-KR #1'
+  name: '65,306|12-279-KR #1'
   network: ws
   port: 23451
   server: seoul-1ddns.aboutanime.eu.org
@@ -450,6 +412,20 @@ proxies:
   uuid: 58781eee-baba-6666-baba-2ca0ada6568b
 - alterId: 0
   cipher: auto
+  country: 🇷 KR
+  h2-opts: {}
+  http-opts: {}
+  name: 98| KR_319
+  network: tcp
+  port: 15074
+  server: 15074.kuaiyin02.top
+  servername: 15074.kuaiyin02.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 100|🇰🇷KR韩国(youtube阿伟科技)
   network: ws
   port: '2087'
@@ -462,20 +438,6 @@ proxies:
     headers:
       Host: cr4.biger.club
     path: /
-- cipher: aes-256-cfb
-  name: 108,191,326,342,396|0|-https://t.me/MrXbin-31
-  password: qwerREWQ@@
-  port: 31066
-  server: 218.237.185.230
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 108,191,326,342,396|0|-https://t.me/MrXbin-33
-  password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
-  type: ss
-  udp: true
 - name: 115|KR(AzadNet.t.me)_001
   network: tcp
   password: your_password
@@ -1984,7 +1946,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 306|16-518-KR
+  name: 306|16-288-KR
   network: ws
   port: 43155
   server: 132.226.20.31

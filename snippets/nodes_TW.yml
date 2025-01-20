@@ -63,24 +63,17 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377 #1'
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.136
+  server: 211.22.161.135
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.60
+  server: 60.249.28.137
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -98,22 +91,29 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
+  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.135
+  server: 60.249.28.136
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377 #1'
+  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.137
+  server: 60.249.28.138
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.60
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '65,184,306|07-188-TW #1'
+  name: '65,184,306|07-171-TW #1'
   network: ws
   port: 85
   server: recvhwashhry.461553.best
@@ -129,7 +129,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '65,184,306|07-189-TW #1'
+  name: '65,184,306|07-172-TW #1'
   network: ws
   port: 85
   server: tsadfhyifgk.461553.best
@@ -172,36 +172,50 @@ proxies:
   uuid: 016e7fc3-6672-4f33-9fe0-1e2e1c87cede
 - alterId: 0
   cipher: auto
-  name: 85|台湾2
-  network: tcp
-  port: '45077'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: d65ca173-6e3d-434b-aae6-33f52bbc9674
-- alterId: 0
-  cipher: auto
-  name: '85,306|17-615-RELAY #1'
-  network: ws
-  port: 2052
-  server: yx.sulink.one
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 69bb3dba-3dab-4b21-a489-f56321fd4007
-  ws-opts:
-    headers:
-      Host: tw02.xn--io0a7iw0ab67b.xyz
-    path: /
-- alterId: 0
-  cipher: auto
   name: 85|台湾1
   network: tcp
   port: '45078'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: d65ca173-6e3d-434b-aae6-33f52bbc9674
+  uuid: cf87ac96-3213-4e78-a807-cf605b1a21e5
+- alterId: 0
+  cipher: auto
+  name: 85,306|17-739-RELAY
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2f370afe-8fae-4396-834a-d5870e35af9a
+  ws-opts:
+    headers:
+      Host: tw02.hy2.one
+    path: /af323d
+- alterId: 0
+  cipher: auto
+  name: '85,306|17-695-RELAY #1'
+  network: ws
+  port: 2052
+  server: yx.sulink.one
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 13e68902-cd99-4c70-af86-4c6ae8eb794a
+  ws-opts:
+    headers:
+      Host: tw02.xn--io0a7iw0ab67b.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 85|台湾2
+  network: tcp
+  port: '45077'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: cf87ac96-3213-4e78-a807-cf605b1a21e5
 - alterId: '0'
   cipher: auto
   name: 97|[🇹🇼]103.131.189.212:56967(8110ebd2-5ab8-4dfc-8776-94bc377c6be6)
@@ -1756,7 +1770,7 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1392-TW
+  name: 352|TG频道@mfbpn-1415-TW
   network: ws
   port: 85
   server: recvhwashhry.461553.best
@@ -1770,7 +1784,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1393-TW
+  name: 352|TG频道@mfbpn-1416-TW
   network: ws
   port: 85
   server: tsadfhyifgk.461553.best
