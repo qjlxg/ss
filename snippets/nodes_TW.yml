@@ -49,18 +49,17 @@ proxies:
     path: '%2F%3Fed%3D2560'
 - cipher: aes-256-cfb
   country: 🇭🇰HK
-  name: 46,47,82|🇭🇰HK_866
+  name: 46,47,82|🇭🇰HK_880
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🏁 ZZ
-  name: '46,47,69,82,191,312,326,342|TW-185.189.160.98-6029 #1'
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 211.22.161.135
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -71,10 +70,10 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.60
+  server: 60.249.28.138
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -82,6 +81,14 @@ proxies:
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
   server: 61.216.165.233
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 48,49,69,82,191,312,326,342,463|🇨🇳TW-185.189.160.98-3239 | 17.126MB
+  password: qwerREWQ@@
+  port: 64759
+  server: 185.189.160.98
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -92,34 +99,20 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
+  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.135
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.136:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.136
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
+  server: 60.249.28.60
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '65,184,306|07-171-TW #1'
+  name: '65,184,306,326,342|🇼TW-1.162.166.130-6199 #1'
   network: ws
   port: 85
   server: recvhwashhry.461553.best
-  servername: ''
-  skip-cert-verify: true
+  servername: recvhwashhry.461553.best
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -130,12 +123,12 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 65,184,306|07-172-TW
+  name: '65,184,306,326,342|🇼TW-1.162.166.130-6198 #1'
   network: ws
   port: 85
   server: tsadfhyifgk.461553.best
-  servername: ''
-  skip-cert-verify: true
+  servername: tsadfhyifgk.461553.best
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -146,8 +139,8 @@ proxies:
     path: /?ed=1024
 - cipher: chacha20-ietf-poly1305
   country: 🇹🇼TW
-  name: 82|Relay_🇹🇼TW-🇹🇼TW_1106
-  password: a86c339c-51c1-4b86-8483-0d7f6b3da0ea
+  name: 82|Relay_🇹🇼TW-🇹🇼TW_1214
+  password: 3b4e0277-49a1-4b79-89a4-42a99666639d
   port: 30443
   server: tw1.ydso.xyz
   type: ss
@@ -158,33 +151,16 @@ proxies:
   http-opts: {}
   name: 82|disney_TW
   network: ws
-  port: 2095
-  server: s1.cn-db.top
-  servername: 100-139-204-73.s1.cn-db.top
+  port: 80
+  server: 104.16.155.10
+  servername: 100-49-141-209.s1.db-link02.top
   skip-cert-verify: true
   type: vmess
   uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
   ws-opts:
     headers:
-      HOST: 100-139-204-73.s1.cn-db.top
-    path: /dabai.in104.25.132.97
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '82|disney_TW #1'
-  network: ws
-  port: 2086
-  server: 104.17.221.248
-  servername: 100-48-202-143.s1.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      HOST: 100-48-202-143.s1.db-link01.top
-    path: /dabai.in104.17.154.223
+      HOST: 100-49-141-209.s1.db-link02.top
+    path: /dabai.in104.17.169.115
 - alterId: 0
   cipher: auto
   name: 83|🇹🇼 TW.台湾.A - 𝘾𝙤𝙠𝙚𝘾𝙡𝙤𝙪𝙙
@@ -220,35 +196,7 @@ proxies:
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: cf87ac96-3213-4e78-a807-cf605b1a21e5
-- alterId: 0
-  cipher: auto
-  name: 85,306|17-584-RELAY
-  network: ws
-  port: 80
-  server: cf.hy2.one
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 12acd7fe-a16e-489e-bf29-50e4a2294754
-  ws-opts:
-    headers:
-      Host: tw02.hy2.one
-    path: /af323d
-- alterId: 0
-  cipher: auto
-  name: 85,306|17-637-RELAY
-  network: ws
-  port: 2052
-  server: yx.sulink.one
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ec4f069d-f7df-4252-9f51-f4b743e563a9
-  ws-opts:
-    headers:
-      Host: tw02.xn--io0a7iw0ab67b.xyz
-    path: /
+  uuid: 54dd5313-546b-4640-a969-f69c5677d816
 - alterId: 0
   cipher: auto
   name: 85|台湾2
@@ -257,7 +205,35 @@ proxies:
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: cf87ac96-3213-4e78-a807-cf605b1a21e5
+  uuid: 54dd5313-546b-4640-a969-f69c5677d816
+- alterId: 0
+  cipher: auto
+  name: 85,306|17-792-RELAY
+  network: ws
+  port: 2052
+  server: yx.sulink.one
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48558b5f-0457-462e-b29f-975936b8ec96
+  ws-opts:
+    headers:
+      Host: tw02.xn--io0a7iw0ab67b.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '85,306|17-661-RELAY #1'
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0fdcd0bc-2cb1-4e9b-8f44-4db14c012bc0
+  ws-opts:
+    headers:
+      Host: tw02.hy2.one
+    path: /af323d
 - alterId: '0'
   cipher: auto
   name: 97|[🇹🇼]103.131.189.212:56967(8110ebd2-5ab8-4dfc-8776-94bc377c6be6)
@@ -374,7 +350,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇯🇵JP-52.196.144.61-4984 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇯🇵JP-52.196.144.61-4990 #1'
   network: ws
   port: 3331
   server: f1f3227.v1.glados-config.net
@@ -389,7 +365,7 @@ proxies:
     path: /s/f1f3227.fm.apple.com:111548
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🏁RELAY-104.29.64.24-4985 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🏁RELAY-104.29.64.24-4991 #1'
   network: ws
   port: 80
   server: 104.29.64.24
@@ -441,7 +417,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇼TW-220.130.80.179-4989 #1'
+  name: '153,304,325,326,332,333,337,340,341,342|🇼TW-220.130.80.179-4995 #1'
   network: ws
   port: 443
   server: 220.130.80.179
@@ -478,7 +454,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇼TW-165.154.226.45-4991 #1'
+  name: '153,304,325,326,332,333,337,340,341,342|🇼TW-165.154.226.45-4997 #1'
   network: ws
   port: 80
   server: 165.154.226.45
@@ -491,7 +467,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4992 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4998 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -528,7 +504,7 @@ proxies:
   uuid: 6d896dd9-21ff-3844-a72a-332507486049
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-165.154.253.35-4994 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-165.154.253.35-5000 #1'
   network: ws
   port: 443
   server: tw-1.qwqjsq.top
@@ -595,7 +571,7 @@ proxies:
     path: /moontoday
 - alterId: 64
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-61.216.85.68-4999 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-61.216.85.68-5005 #1'
   network: ws
   port: 443
   server: 61.216.85.68
@@ -610,7 +586,7 @@ proxies:
     path: /path/243535322906
 - alterId: 2
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-114.37.209.177-5000 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇼TW-114.37.209.177-5006 #1'
   network: ws
   port: 10001
   server: ddns2.airtcp.vip
@@ -625,7 +601,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇨🇦CA-104.247.81.52-5001 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇨🇦CA-104.247.81.52-5007 #1'
   network: ws
   port: 443
   server: tw.xlkjjs.top
@@ -658,7 +634,7 @@ proxies:
   uuid: ab42ea1f-8e2f-3fff-8a11-d124d62b849e
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-165.154.246.107-5002 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-165.154.246.107-5008 #1'
   network: ws
   port: 80
   server: 165.154.246.107
@@ -673,7 +649,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.30-5003 #1'
+  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.30-5009 #1'
   network: ws
   port: 443
   server: 104.29.64.30
@@ -701,7 +677,7 @@ proxies:
     path: /adobe
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.36-5005 #1'
+  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.36-5011 #1'
   network: ws
   port: 443
   server: 104.29.64.36
@@ -757,7 +733,7 @@ proxies:
     path: /live
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-122.118.158.180-5009 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-122.118.158.180-5015 #1'
   network: ws
   port: 11463
   server: tw4.594888.xyz
@@ -772,7 +748,7 @@ proxies:
     path: /v2ray
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-61.224.93.129-5010 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🇹🇼TW-61.224.93.129-5016 #1'
   network: ws
   port: 25551
   server: tw3.594888.xyz
@@ -822,7 +798,7 @@ proxies:
   uuid: 1bd772e1-ce31-4980-9cb7-a4d24873aa1b
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.25-5013 #1'
+  name: '153,304,325,326,332,333,337,340,341,342|RELAY-104.29.64.25-5019 #1'
   network: ws
   port: 443
   server: 104.29.64.25
@@ -837,7 +813,7 @@ proxies:
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '153,304,325,326,332,333,337,340,341,342|🏁RELAY-104.29.64.5-5014 #8'
+  name: '153,304,325,326,332,333,337,340,341,342|🏁RELAY-104.29.64.5-5020 #1'
   network: ws
   port: 443
   server: 104.29.64.5
@@ -956,7 +932,7 @@ proxies:
   type: vmess
   uuid: 0913b1ac-1f6c-436b-99b4-a5d6e343d025
 - cipher: aes-256-cfb
-  name: '161,326,342|TW-61.220.130.70-9414 #1'
+  name: '161,326,342|TW-61.220.130.70-9304 #1'
   password: qwerREWQ@@
   port: 50701
   server: 61.220.130.70
@@ -1086,29 +1062,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 184|台湾-优化
-  network: ws
-  port: '16616'
-  server: yes.mojcn.com
-  tls: false
-  type: vmess
-  uuid: 5a58ed65-116c-4ec7-b98f-a775a27efded
-  ws-opts:
-    headers:
-      Host: 842dd9282f7bc61a31eba320d6305eed.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 184|台湾-优化2-GPT
   network: ws
   port: '16616'
   server: m.cnmjin.net
   tls: false
   type: vmess
-  uuid: 5a58ed65-116c-4ec7-b98f-a775a27efded
+  uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca
   ws-opts:
     headers:
-      Host: 842dd9282f7bc61a31eba320d6305eed.mobgslb.tbcache.com
+      Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com
     path: /
 - alterId: 0
   cipher: auto
@@ -1118,10 +1081,140 @@ proxies:
   server: t.cnmjcn.cyou
   tls: false
   type: vmess
-  uuid: 5a58ed65-116c-4ec7-b98f-a775a27efded
+  uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca
   ws-opts:
     headers:
-      Host: 842dd9282f7bc61a31eba320d6305eed.mobgslb.tbcache.com
+      Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化2-GPT #1'
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74
+  ws-opts:
+    headers:
+      Host: 29ccb95fee6e7a522c0b433acceeb3cf.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 184|台湾-优化
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化3 #1'
+  network: ws
+  port: '16616'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3
+  ws-opts:
+    headers:
+      Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化 #1'
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3
+  ws-opts:
+    headers:
+      Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化2-GPT #2'
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3
+  ws-opts:
+    headers:
+      Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化 #2'
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca
+  ws-opts:
+    headers:
+      Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化 #3'
+  network: ws
+  port: '16616'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74
+  ws-opts:
+    headers:
+      Host: 29ccb95fee6e7a522c0b433acceeb3cf.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化3 #2'
+  network: ws
+  port: '16616'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74
+  ws-opts:
+    headers:
+      Host: 29ccb95fee6e7a522c0b433acceeb3cf.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化2-GPT #3'
+  network: ws
+  port: '16616'
+  server: m.cnmjin.net
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '184|台湾-优化3 #3'
+  network: ws
+  port: '16616'
+  server: t.cnmjcn.cyou
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
     path: /
 - alterId: 1
   cipher: auto
@@ -1136,7 +1229,7 @@ proxies:
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
 - alterId: 1
   cipher: auto
-  name: '210,304,325,326,332,333,337,340,341,342|🇹🇼TW-1.161.186.146-1912 #8'
+  name: '210,304,325,326,332,333,337,340,341,342|TW-1.161.186.146-1939 #1'
   network: ws
   port: 64443
   server: 1.161.186.146
@@ -1280,7 +1373,7 @@ proxies:
   uuid: 077f1ef4-b2bd-37cb-900d-728cd84493b0
 - alterId: 0
   cipher: auto
-  name: '211,304,325,326,332,333,337,340,341,342|🇼TW-111.250.119.13-2118 #1'
+  name: '211,304,325,326,332,333,337,340,341,342|🇼TW-111.250.119.13-2145 #1'
   network: ws
   port: 45215
   server: 012.AP.POP.node-for-smallairport.win
@@ -1544,7 +1637,7 @@ proxies:
       Host: sstjj.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - cipher: rc4-md5
-  name: '297,326,342|🇨🇳CN-111.6.86.119-8164 #1'
+  name: '297,326,342|🇨🇳CN-111.6.86.119-8053 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1555,7 +1648,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '297,326,342|🇨🇳CN-111.6.86.119-8166 #1'
+  name: '297,326,342|🇨🇳CN-111.6.86.119-8055 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1566,7 +1659,7 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  name: '297,326,342|🇨🇳CN-111.6.86.119-8176 #1'
+  name: '297,326,342|🇨🇳CN-111.6.86.119-8065 #1'
   password: Paofu
   plugin: obfs
   plugin-opts:
@@ -1577,7 +1670,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-cfb
-  name: '297,326,342|🇨🇳CN-14.29.124.168-4679 #1'
+  name: '297,326,342|🇨🇳CN-14.29.124.168-4685 #1'
   password: QazEdcTgb159@$*
   port: 24009
   server: 14.29.124.168
@@ -1601,7 +1694,8 @@ proxies:
     path: ?ed=2048
 - alterId: 0
   cipher: auto
-  name: '304,320,323,324,325,326,332,333,337,340,341,342|TW-61.222.202.140-2384 #1'
+  name: '304,320,323,324,325,326,332,333,337,340,341,342|🇹🇼TW-61.222.202.140-2390
+    #1'
   network: ws
   port: 33792
   server: 61.222.202.140
@@ -1614,7 +1708,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|🇼TW-211.72.35.110-4651 #1'
+  name: '304,325,326,332,333,337,340,341,342|🇼TW-211.72.35.110-4657 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1629,7 +1723,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4652 #8'
+  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4658 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1644,7 +1738,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4653 #8'
+  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4659 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1659,7 +1753,7 @@ proxies:
     path: /nishikata
 - alterId: 0
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4654 #8'
+  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4660 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1674,7 +1768,7 @@ proxies:
     path: /nishikata3
 - alterId: 0
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4655 #8'
+  name: '304,325,326,332,333,337,340,341,342|🇹🇼TW-211.72.35.110-4661 #1'
   network: ws
   port: 443
   server: 211.72.35.110
@@ -1707,7 +1801,7 @@ proxies:
   uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
 - alterId: 64
   cipher: auto
-  name: '304,325,326,332,333,337,340,341,342|TW-103.177.33.19-8759 #1'
+  name: '304,325,326,332,333,337,340,341,342|TW-103.177.33.19-8648 #1'
   network: ws
   port: 30013
   server: 103.177.33.19
@@ -1784,7 +1878,245 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1530-TW
+  name: 352|TG频道@mfbpn-1272-TW
+  network: ws
+  port: 25768
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1273-TW
+  network: ws
+  port: 25769
+  server: pppasdfjetyj.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1275-TW
+  network: ws
+  port: 25768
+  server: nsdfryucvvr.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1277-TW
+  network: ws
+  port: 25766
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1278-TW
+  network: ws
+  port: 25768
+  server: pppasdfjetyj.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1280-TW
+  network: ws
+  port: 25769
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1281-TW
+  network: ws
+  port: 25765
+  server: nsdfryucvvr.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1283-TW
+  network: ws
+  port: 25768
+  server: recvhwashhry.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1285-TW
+  network: ws
+  port: 25769
+  server: recvhwashhry.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1288-TW
+  network: ws
+  port: 25770
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1291-TW
+  network: ws
+  port: 25773
+  server: recvhwashhry.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1299-TW
+  network: ws
+  port: 25770
+  server: pppasdfjetyj.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1300-TW
+  network: ws
+  port: 25765
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1301-TW
+  network: ws
+  port: 25765
+  server: recvhwashhry.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1308-TW
+  network: ws
+  port: 25765
+  server: pppasdfjetyj.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1309-TW
+  network: ws
+  port: 25772
+  server: tsadfhyifgk.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1364-TW
+  network: ws
+  port: 25766
+  server: pppasdfjetyj.461553.best
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 48ce30d2-ea1b-48f5-a469-3446bf41ae1f
+  ws-opts:
+    headers:
+      Host: None
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-1472-TW
   network: ws
   port: 85
   server: recvhwashhry.461553.best
@@ -1798,7 +2130,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1531-TW
+  name: 352|TG频道@mfbpn-1473-TW
   network: ws
   port: 85
   server: tsadfhyifgk.461553.best
