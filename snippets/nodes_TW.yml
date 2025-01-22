@@ -70,10 +70,31 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377 #1'
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 60.249.28.137
+  server: 211.22.161.135
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-223.165.4.173:989 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 223.165.4.173
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.138
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  port: 2377
+  server: 60.249.28.60
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -84,24 +105,10 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-211.22.161.135:2377 #1'
+  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.137:2377 #1'
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   port: 2377
-  server: 211.22.161.135
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.138:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.138
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-60.249.28.60:2377 #1'
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.28.60
+  server: 60.249.28.137
   type: ss
   udp: true
 - alterId: 0
@@ -138,32 +145,46 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 85|台湾2
-  network: tcp
-  port: '45077'
-  server: xdd.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 282586ba-de46-44ad-b8b8-17de690b646c
-- alterId: 0
-  cipher: auto
   name: 85|台湾1
   network: tcp
   port: '45078'
   server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 282586ba-de46-44ad-b8b8-17de690b646c
+  uuid: 8f4a4484-0247-450b-b535-fefc92ad8106
 - alterId: 0
   cipher: auto
-  name: 85,306|17-564-RELAY
+  name: 85|台湾2
+  network: tcp
+  port: '45077'
+  server: xdd.dashuai.cyou
+  tls: false
+  type: vmess
+  uuid: 8f4a4484-0247-450b-b535-fefc92ad8106
+- alterId: 0
+  cipher: auto
+  name: 85,306|17-632-RELAY
+  network: ws
+  port: 80
+  server: cf.hy2.one
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1cc39fc7-b77b-401a-b901-609f1ab639aa
+  ws-opts:
+    headers:
+      Host: tw02.hy2.one
+    path: /af323d
+- alterId: 0
+  cipher: auto
+  name: 85,306|17-534-RELAY
   network: ws
   port: 2052
   server: yx.sulink.one
   servername: ''
   tls: false
   type: vmess
-  uuid: 93c73666-9edf-4884-937f-2cbe9818df8f
+  uuid: 205a30dc-dce4-4e35-85ce-bef40c1b4b98
   ws-opts:
     headers:
       Host: tw02.xn--io0a7iw0ab67b.xyz
@@ -896,6 +917,20 @@ proxies:
   ws-opts:
     headers:
       Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 177|93113e34c2e94fe997699e9faa385b8f_@_👉🆔 @v2ray_configs_pool📡Taiwan
+  network: ws
+  port: 2166
+  server: 141.11.87.39
+  tls: false
+  type: vmess
+  udp: false
+  uuid: 82667668-4bfd-4906-ab31-c2745d0de78e
+  ws-opts:
     path: /
 - alterId: 0
   cipher: auto
@@ -1656,7 +1691,7 @@ proxies:
     path: /path/351212081517
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0889-TW
+  name: 352|TG频道@mfbpn-0888-TW
   network: ws
   port: 25768
   server: tsadfhyifgk.461553.best
@@ -1670,7 +1705,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0890-TW
+  name: 352|TG频道@mfbpn-0889-TW
   network: ws
   port: 25769
   server: pppasdfjetyj.461553.best
@@ -1684,7 +1719,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0892-TW
+  name: 352|TG频道@mfbpn-0891-TW
   network: ws
   port: 25768
   server: nsdfryucvvr.461553.best
@@ -1698,7 +1733,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0894-TW
+  name: 352|TG频道@mfbpn-0893-TW
   network: ws
   port: 25766
   server: tsadfhyifgk.461553.best
@@ -1712,7 +1747,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0895-TW
+  name: 352|TG频道@mfbpn-0894-TW
   network: ws
   port: 25768
   server: pppasdfjetyj.461553.best
@@ -1726,7 +1761,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0897-TW
+  name: 352|TG频道@mfbpn-0896-TW
   network: ws
   port: 25769
   server: tsadfhyifgk.461553.best
@@ -1740,7 +1775,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0898-TW
+  name: 352|TG频道@mfbpn-0897-TW
   network: ws
   port: 25765
   server: nsdfryucvvr.461553.best
@@ -1754,7 +1789,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0900-TW
+  name: 352|TG频道@mfbpn-0899-TW
   network: ws
   port: 25768
   server: recvhwashhry.461553.best
@@ -1768,7 +1803,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0902-TW
+  name: 352|TG频道@mfbpn-0901-TW
   network: ws
   port: 25769
   server: recvhwashhry.461553.best
@@ -1782,7 +1817,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0905-TW
+  name: 352|TG频道@mfbpn-0904-TW
   network: ws
   port: 25770
   server: tsadfhyifgk.461553.best
@@ -1796,7 +1831,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0908-TW
+  name: 352|TG频道@mfbpn-0907-TW
   network: ws
   port: 25773
   server: recvhwashhry.461553.best
@@ -1810,7 +1845,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0916-TW
+  name: 352|TG频道@mfbpn-0915-TW
   network: ws
   port: 25770
   server: pppasdfjetyj.461553.best
@@ -1824,7 +1859,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0917-TW
+  name: 352|TG频道@mfbpn-0916-TW
   network: ws
   port: 25765
   server: tsadfhyifgk.461553.best
@@ -1838,7 +1873,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0918-TW
+  name: 352|TG频道@mfbpn-0917-TW
   network: ws
   port: 25765
   server: recvhwashhry.461553.best
@@ -1852,7 +1887,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0925-TW
+  name: 352|TG频道@mfbpn-0924-TW
   network: ws
   port: 25765
   server: pppasdfjetyj.461553.best
@@ -1866,7 +1901,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0926-TW
+  name: 352|TG频道@mfbpn-0925-TW
   network: ws
   port: 25772
   server: tsadfhyifgk.461553.best
@@ -1880,7 +1915,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0981-TW
+  name: 352|TG频道@mfbpn-0980-TW
   network: ws
   port: 25766
   server: pppasdfjetyj.461553.best
@@ -1894,7 +1929,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1083-TW
+  name: 352|TG频道@mfbpn-1082-TW
   network: ws
   port: 85
   server: recvhwashhry.461553.best
@@ -1908,7 +1943,7 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1084-TW
+  name: 352|TG频道@mfbpn-1083-TW
   network: ws
   port: 85
   server: tsadfhyifgk.461553.best

@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '18,80,116,117,142,207,227,248,249,250,255,281,282,283,284,348,426,436,443,450,456,484|@Vip_Security
-    join us - 283
+    join us - 284
 
     '
   network: tcp
@@ -17,18 +17,17 @@ proxies:
   version: '2'
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: 21,22,48,49,81,191,308,326,329,336,342,463,487|CH_speednode_0003
+  name: 21,22,46,47,81,191,308,326,329,336,342,463,487|CH_speednode_0003
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '25,28,144|[SS] 🇨🇭 瑞士 V2CROSS.COM #2'
+  name: '25,28|[SS] 🇨🇭 瑞士 V2CROSS.COM #1'
   password: G5fwx94KIdimEx81lFstQu
   port: 17889
   server: dyn.usa.outlinekeys.net
-  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -38,22 +37,38 @@ proxies:
   server: 138.124.51.236
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 46,47,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3727 |
-    33.943MB
+  name: 46,47,68,69,80,98,108,191,312,326,329,336,342,463,465|未知128 14.4MB/s
   password: shadowsocks
   port: 443
-  server: 156.146.62.161
+  server: 156.146.62.163
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 46,47,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.162-3881 |
-    33.405MB
+  name: 46,47,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.164-3409 |
+    33.824MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.162
+  server: 156.146.62.164
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 46,47,463|CH-178.209.50.206-3826 | 30.257MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 178.209.50.206
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555 #1'
+  password: H-n8gYOR4DNT__Gmv7PcvA
+  port: 5555
+  server: 195.15.215.198
   type: ss
   udp: true
 - alterId: 0
@@ -81,56 +96,40 @@ proxies:
   server: 91.103.253.151
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
+- cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 48,49,68,69,80,98,108,191,312,326,329,336,342,463,465|未知128 14.4MB/s
+  name: 48,49,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3727 |
+    33.943MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.163
-  skip-cert-verify: true
-  tls: true
+  server: 156.146.62.161
   type: ss
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 48,49,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.164-3409 |
-    33.824MB
+  name: 48,49,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.162-3881 |
+    33.405MB
   password: shadowsocks
   port: 443
-  server: 156.146.62.164
+  server: 156.146.62.162
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 48,49,463|CH-178.209.50.206-3826 | 30.257MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 178.209.50.206
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '48,49|[SS] SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555 #1'
-  password: H-n8gYOR4DNT__Gmv7PcvA
-  port: 5555
-  server: 195.15.215.198
-  type: ss
-  udp: true
-- name: 52|[Trojan] TR-WS-TLS 🇨🇭 CH-185.18.250.117:443
+- name: '50,51|[Trojan] TR-WS-TLS 🇨🇭 CH-185.18.250.112:443 #1'
   network: ws
-  password: 1e9aadae-ca17-4f75-b0a0-7de5e3858cfb
+  password: NISHIKUITAN111
   port: 443
-  server: 185.18.250.117
+  server: 185.18.250.112
   skip-cert-verify: false
-  sni: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
+  sni: zb.ylks.xyz
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: xN----PMcNAAC0DKn0Rb71nDa.PAges.Dev
-    path: /Telegram@V2ray_Alpha/?ed=2560
+      Host: zb.ylks.xyz
+    path: /
 - alterId: 0
   cipher: auto
-  name: '60,484|@Vip_Security join us - 264
+  name: '60,484|@Vip_Security join us - 265
 
     '
   network: tcp
@@ -141,7 +140,7 @@ proxies:
   uuid: 6d0b94fc-3699-4231-aeda-641b196551d1
 - alterId: 0
   cipher: auto
-  name: '60,484|@Vip_Security join us - 36
+  name: '60,484|@Vip_Security join us - 37
 
     '
   network: tcp
@@ -219,6 +218,14 @@ proxies:
   password: shadowsocks
   port: 443
   server: 156.146.62.160
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇨🇭 CH
+  name: 191,326,342,487|DK_speednode_0097
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.186.79.53
   type: ss
   udp: true
 - alterId: 0
@@ -368,7 +375,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-1136-CH
+  name: 352|TG频道@mfbpn-1135-CH
   network: ws
   port: 8443
   server: 140.238.218.65

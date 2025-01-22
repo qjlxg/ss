@@ -1,20 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,142,227,427,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #6'
-  network: ws
-  port: 40471
-  server: 131.186.16.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /wada12222
-- alterId: 0
-  cipher: auto
   name: '18,142,227,427,429|🔒 VM-WS-TLS 🇰🇷 KR-175.203.204.222:50035 #4'
   network: ws
   port: 50035
@@ -27,6 +13,20 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /obdii.cfd:443/linkws
+- alterId: 0
+  cipher: auto
+  name: '18,142,227,427,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #5'
+  network: ws
+  port: 40471
+  server: 131.186.16.245
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a4141a2c-ca33-4237-add0-220a204e4ac3
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /wada12222
 - alterId: 0
   cipher: auto
   name: '18,142,227,443,456|🔒 VM-WS-NA 🇰🇷 KR-131.186.16.245:40474 #4'
@@ -72,7 +72,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇰🇷KR
-  name: 25,28,48,49,191,239,326,342,396,411,479|South Korea_Incheon_ss_1143
+  name: 25,28,46,47,174,191,239,326,342,396,479|South Korea_Incheon_ss_1119
   password: amazonskr05
   port: 443
   server: 3.39.223.233
@@ -194,11 +194,15 @@ proxies:
     headers:
       Host: seoul-1ddns.aboutanime.eu.org
     path: /
-- cipher: aes-256-cfb
-  name: 46,47,463|🇰🇷KR-154.90.63.177-3902 | 14.293MB
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: 46,47,80,98,191,326,342,465|未知11 118.2KB/s
   password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
+  port: 990
+  server: 154.90.63.193
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -209,17 +213,10 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-218.237.185.230:31066 #1'
+  name: 46,47,174,396|0|-https://t.me/MrXbin-9
   password: qwerREWQ@@
-  port: 31066
-  server: 218.237.185.230
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-61.111.247.242:40032 #1'
-  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
-  port: 40032
-  server: 61.111.247.242
+  port: 27973
+  server: 221.168.44.72
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -230,22 +227,18 @@ proxies:
   server: 13.209.81.49
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 48,49,80,98,191,326,342,465|未知11 118.2KB/s
+- cipher: aes-256-cfb
+  name: 48,49,463|🇰🇷KR-154.90.63.177-3902 | 14.293MB
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
-  skip-cert-verify: true
-  tls: true
+  port: 989
+  server: 154.90.63.177
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-221.168.44.72:27973 #1'
+  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-218.237.185.230:31066 #1'
   password: qwerREWQ@@
-  port: 27973
-  server: 221.168.44.72
+  port: 31066
+  server: 218.237.185.230
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -254,6 +247,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 54.180.157.70
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '48,49|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-61.111.247.242:40032 #1'
+  password: 29fefcc3-9ae1-4e01-a1d0-534fc1671121
+  port: 40032
+  server: 61.111.247.242
   type: ss
   udp: true
 - alterId: 0
@@ -274,7 +274,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 65|16-408-KR
+  name: 65|16-352-KR
   network: ws
   port: 43155
   server: 132.226.20.31
@@ -323,32 +323,6 @@ proxies:
   sni: yournextcareerstep.online
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '83|🇰🇷 韩国-02 #7'
-  network: ws
-  port: '8443'
-  server: 43.201.82.41
-  tls: false
-  type: vmess
-  uuid: b4f50365-568a-444f-916b-31afbfdc1262
-  ws-opts:
-    headers:
-      Host: ''
-    path: /hello
-- alterId: 0
-  cipher: auto
-  name: '83|🇰🇷 韩国-01 #7'
-  network: ws
-  port: '8443'
-  server: 13.125.243.141
-  tls: false
-  type: vmess
-  uuid: b4f50365-568a-444f-916b-31afbfdc1262
-  ws-opts:
-    headers:
-      Host: ''
-    path: /hello
 - alterId: '0'
   cipher: auto
   name: 97|[🇰🇷]kr06.wxfz.ml:35212(5ab3f1a4-0793-4f2a-f14a-d427105aa99a)
@@ -407,15 +381,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 108,191,326,342,396,479|South Korea_Uijeongbu-si_ss_1116
-  password: qwerREWQ@@
-  port: 37041
-  server: 121.170.203.147
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 108,191,326,342,479|South Korea_Gimpo-si_ss_1119
+  name: '108,174,191,326,342|🇰🇷KR-221.168.44.72-0862 #1'
   password: qwerREWQ@@
   port: 27973
   server: p196.panda001.net
@@ -557,7 +523,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '165,166,171,304,325,326,332,333,337,340,341,342,480|@Vip_Security join us
-    - 321
+    - 322
 
     '
   network: ws
@@ -938,11 +904,12 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '191,326,342|🇰🇷KR-218.50.149.114-6233 #1'
+  name: 191,326,342,396|0|-https://t.me/MrXbin-3
   password: qwerREWQ@@
   port: 34847
   server: 218.50.149.114
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
   name: '191,326,342|🇰🇷KR-43.201.249.92-6260 #1'
@@ -1946,7 +1913,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 306|16-407-KR
+  name: 306|16-351-KR
   network: ws
   port: 43155
   server: 132.226.20.31
