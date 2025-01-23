@@ -1,17 +1,4 @@
 proxies:
-- name: '31,32,33,34,46,47|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #3'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 89.116.250.94
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - cipher: aes-256-cfb
   name: 33,34,46,47,82,108,326,329,336,342,463|LT-192.36.61.59-3443 | 19.795MB
   password: f8f7aCzcPKbsF8p3
@@ -20,7 +7,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 33,34,35,36,46,47,52,68,69,82,183,191,312,326,342,467|21|_146
+  name: 33,34,35,36,46,47,52,68,69,183,191,312,326,342,467|21|_146
   password: qYEN5HX4JKeVCdEC
   port: 9039
   server: 195.238.126.84
@@ -46,13 +33,26 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 33,34,35,36,46,47,52,68,69,80,82,98,108,191,312,326,329,336,342,463|LT-45.87.175.178-5705
+  name: 33,34,35,36,46,47,52,68,69,80,108,191,312,326,329,336,342,463|LT-45.87.175.178-5705
     | 28.991MB
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.178
   type: ss
   udp: true
+- name: '33,34,48,49|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #3'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 89.116.250.94
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
 - cipher: chacha20-ietf-poly1305
   name: 68,80|🇩🇪 德国_29
   password: cvII85TrW6n0OGyfpHVS1u
@@ -60,13 +60,6 @@ proxies:
   server: 45.87.175.199
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇲🇽MX
-  name: '82,191,326,342|🇽MX-147.78.1.27-6180 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 147.78.1.27
-  type: ss
 - alterId: 0
   cipher: auto
   name: '88,129,133,142,304|D-WEALTH-2386 #4'
