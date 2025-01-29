@@ -1,25 +1,8 @@
 proxies:
 - alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  h2-opts: {}
-  http-opts: {}
-  name: '18,80,82,116,117,129,135,142,207,223,227,232,248,249,250,255,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456|🔒
-    VM-TCP-NA 🇨🇭 CH-23.166.88.183:22324 #17'
-  network: tcp
-  port: '22324'
-  server: 23.166.88.183
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  version: '2'
-- alterId: 0
   cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 35,36,37,38,39,40,46,47,68,69,80,82,98,108,191,312,326,329,336,342,465|未知128
+  country: 🇨🇭CH
+  name: 25,28,37,38,39,40,46,47,68,69,80,98,108,191,296,312,326,329,336,342,465|未知128
     14.4MB/s
   password: shadowsocks
   port: 443
@@ -29,16 +12,34 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 35,36,39,40,46,47,68,69,80,82,98,108,191,312,326,329,336,342,463|CH-156.146.62.164-3219
+  country: 🇨🇭CH
+  name: 25,28,37,38,39,40,46,47,68,69,80,98,108,191,296,312,326,329,336,342,463|CH-156.146.62.164-3219
     | 33.988MB
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  country: 🇨🇭CH
+  name: '25,28,37,38,39,40,46,47,68,69,80,98,108,191,296,312,326,329,336,342|🇭CH-156.146.62.162-0417
+    #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇨🇭CH
+  name: 37,38,39,40,46,47,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
+    | 32.887MB
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.161
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555 #3'
+  name: '37,38,46,47|[SS] SS-TCP-NA 🇨🇭 CH-195.15.215.198:5555 #3'
   password: ni1SHMZ6SfEAXgYiB1CqOw
   port: 5555
   server: 195.15.215.198
@@ -46,29 +47,11 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: '35,36,39,40,46,47,68,69,81,82,108,191,308,312,326,329,336,342|🇨CH-84.17.53.160-0470
+  name: '37,38,39,40,46,47,68,69,81,108,191,312,326,329,336,342|🇨CH-84.17.53.160-0432
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: 37,38,39,40,46,47,68,69,80,82,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
-    | 32.887MB
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.161
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: '37,38,39,40,46,47,68,69,80,82,98,108,191,312,326,329,336,342|🇭CH-156.146.62.162-0474
-    #1'
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -117,6 +100,14 @@ proxies:
     headers:
       host: ''
     path: /
+- cipher: aes-256-cfb
+  name: 144,294|🇨_CH_
+  password: asdKkaskJKfnsa
+  port: 80
+  server: 84.17.53.163
+  tfo: false
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 160|瑞士_121320001
@@ -156,7 +147,7 @@ proxies:
       host: v2node8.bipbupvpn.com
     path: /AAA
 - cipher: aes-128-cfb
-  name: '161,183,326,342|🇨CH-156.146.62.160-4440 #1'
+  name: '161,183,326,342|🇨CH-156.146.62.160-4462 #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.160
@@ -164,20 +155,21 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: 184|中国 - 自贡 - PEG TECH INC - 1
+  name: 184,306,352|TG频道@mfbpn-1131-US
   network: ws
-  port: '38005'
-  server: 107.148.203.97
-  tls: true
+  port: 31004
+  server: 199.188.105.60
+  servername: ''
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: ''
+      Host: www.46554484.xyz
     path: /path/1737714427104
 - alterId: 64
   cipher: auto
-  name: 184,306,352|TG频道@mfbpn-1114-US
+  name: 184,306,352|TG频道@mfbpn-1133-US
   network: ws
   port: 38003
   server: 38.11.49.40
@@ -191,17 +183,16 @@ proxies:
     path: /path/1737712571525
 - alterId: 64
   cipher: auto
-  name: 184,306,352|TG频道@mfbpn-1112-US
+  name: 184|中国 - 自贡 - PEG TECH INC - 1
   network: ws
-  port: 31004
-  server: 199.188.105.60
-  servername: ''
-  tls: false
+  port: '38005'
+  server: 107.148.203.97
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: www.46554484.xyz
+      Host: ''
     path: /path/1737714427104
 - alterId: 0
   cipher: none
@@ -276,7 +267,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇨🇭CH-23.166.88.27-8720 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇨🇭CH-23.166.88.27-8866 #1'
   network: ws
   port: 443
   server: 23.166.88.27
@@ -342,13 +333,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 294|🇨_CH_
-  password: asdKkaskJKfnsa
-  port: 80
-  server: 84.17.53.163
-  type: ss
-- cipher: aes-256-cfb
-  name: '326,342|CH-185.126.116.125-0168 #1'
+  name: '326,342|CH-185.126.116.125-0175 #1'
   password: aLpQtfEZe445QyHk
   port: 9098
   server: 185.126.116.125
