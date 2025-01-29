@@ -26,15 +26,6 @@ proxies:
   server: 52.17.140.225
   sni: trojan.burgerip.co.uk
   type: trojan
-- country: 🇮🇪IE
-  name: 82,191|🇮🇪IE_181_2@180
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 3.248.69.0
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
 - name: 115|🇮🇪IE(AzadNet.t.me)_002
   network: tcp
   password: telegram-id-directvpn
@@ -93,6 +84,15 @@ proxies:
   type: ss
   udp: true
 - country: 🇮🇪IE
+  name: 191|🇮🇪IE_181_2@180
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.248.69.0
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇮🇪IE
   name: 191|netflix_IE_4@18
   network: tcp
   password: telegram-id-privatevpns
@@ -111,7 +111,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '210,326,342|🇮IE-54.171.248.96-1799 #1'
+  name: '210,326,342|🇮IE-54.228.87.63-1915 #1'
   obfs: http_simple
   obfs-param: www.microsoft.com#User-Agent:Mozilla/5.0(iPhone;CPUiPhoneOS11_4_1likeMacOSX)AppleWebKit/602.4.6(KHTML,likeGecko)Version/10.0Mobile/14D27MicroMessenger/6.5.13Accept:/Connection:keep-alive
   password: YpX2opBbrfqJzzMs
@@ -189,17 +189,39 @@ proxies:
       Host: ie-ls03.nb1.fr
     path: /clientarea
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|IE-52.169.50.64-0160 #1'
+  name: '326,342|🇪IE-52.169.50.64-0160 #1'
   password: jjxXMDnfbChUWPL1QM02fM
   port: 16141
   server: 52.169.50.64
   type: ss
+- alterId: 0
+  cipher: auto
+  name: '326,342|🇪IE-95.164.44.78-1515 #1'
+  network: ws
+  port: 80
+  server: 95.164.44.78
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 38535031-ccc3-4a94-bd54-c68806486406
+  ws-opts:
+    path: /vmess
 - cipher: aes-256-gcm
-  name: '326,342|IE-146.70.48.53-1524 #1'
+  name: '326,342|🇮🇪IE-146.70.48.53-1640 #1'
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 146.70.48.53
   type: ss
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '352,374|@VMESSIRAN سرور ۱۰ بهمن #9'
+  network: tcp
+  port: '11111'
+  server: 34.240.43.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7cb72883-9635-46eb-8531-8d697927ff04
 - alterId: 0
   cipher: auto
   name: 362|@V2ray_NG🇮🇪
