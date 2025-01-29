@@ -1,7 +1,20 @@
 proxies:
+- name: '35,36,48,49|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443 #3'
+  network: ws
+  password: auto
+  port: 443
+  server: 185.146.173.158
+  skip-cert-verify: false
+  sni: esetsecuritylicense.bwnsmv.workers.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.bwnsmv.workers.dev
+    path: /Telegram-@V2ray_Alpha/?ed=2560
 - cipher: aes-256-cfb
   country: 🇦🇫AF
-  name: 37,38,39,40,46,47,68,69,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
+  name: 37,38,39,40,46,47,68,69,82,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
     | 35.251MB
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -17,7 +30,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇸🇪 SE
-  name: '37,38,39,40,46,47,68,69,80,98,191,312,326,329,336,342|SE-46.246.98.155-5838
+  name: '37,38,39,40,46,47,69,80,82,98,191,312,326,329,336,342|SE-46.246.98.155-5838
     #1'
   password: UDcjYQ6Z6AIWxViZpqyOmO
   port: 44013
@@ -26,12 +39,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: '37,38,39,40,46,47,69,80,98,108,191,312,326,329,336,342|🇪SE-94.228.165.178-0514
+  name: '37,38,39,40,46,47,69,80,82,108,191,312,326,329,336,342|🇪SE-94.228.165.178-0514
     #1'
   password: afKAHp1VfRWZu91LIi9o0D
   port: 58176
   server: 94.228.165.178
   type: ss
+  udp: true
+- country: 🇸🇪SE
+  name: 82|🇸🇪SE_875
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 16.171.190.9
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - name: 115|SE(AzadNet.t.me)_001
   network: tcp
@@ -40,13 +62,6 @@ proxies:
   server: jp2.twincloud.xyz
   skip-cert-verify: true
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 115,183,326,342,343|Aloha+Greece+🇬🇷+Thessaloniki_2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.102
-  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -62,14 +77,6 @@ proxies:
     headers:
       host: jahfkjha.cfd
     path: /linkws
-- cipher: aes-256-cfb
-  country: 🇬🇷GR
-  name: '115,183,191,326,342|🇬GR-192.71.166.100-6075 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: 115,183,467|21|_437
   password: f8f7aCzcPKbsF8p3
