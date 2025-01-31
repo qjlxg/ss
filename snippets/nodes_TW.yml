@@ -35,14 +35,6 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇭🇰HK
-  name: '37,38,46,47,82,191,326,342|TW-154.223.20.79-6172 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '39,40,46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-1.162.178.104:30443 #3'
   password: ec9849a4-6bdd-4f5d-a8ed-a04690e4bf65
@@ -51,8 +43,16 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  country: 🇭🇰HK
+  name: '39,40,46,47,82,191,326,342|TW-154.223.20.79-6172 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: 39,40,46,47,82,108,191,326,342,463|🇨🇳TW-185.189.160.98-3166 | 18.035MB
+  name: 39,40,46,47,68,82,108,191,326,342,463|🇨🇳TW-185.189.160.98-3166 | 18.035MB
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
@@ -67,7 +67,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 65|07-0182-TW
+  name: 65|07-0176-TW
   password: ae19b38a-a89f-4934-9b97-82cbd816ca33
   port: 30443
   server: 1.162.171.159
@@ -1388,7 +1388,37 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '281,282,283,284|🇹🇼 TW 111.243.79.140 ◈ ws:8080 ◈ Chunghwa Telecom Co., Ltd.
+  name: '281,282,283,284|🔒🇹🇼 TW 1.162.137.216 ◈ ws:443 ◈ Chunghwa Telecom Co., Ltd.
+    ◈ 3420a #3'
+  network: ws
+  port: 443
+  server: speed.cloudflare.com
+  servername: twcdn26.fask511.cfd
+  tls: true
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: twcdn26.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '281,282,283,284|🇹🇼 TW 1.162.137.216 ◈ ws:80 ◈ Chunghwa Telecom Co., Ltd.
+    ◈ e525c #3'
+  network: ws
+  port: 80
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: twcdn26.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '281,282,283,284|🇹🇼 TW 1.162.191.165 ◈ ws:8080 ◈ Chunghwa Telecom Co., Ltd.
     ◈ 3ff41 #3'
   network: ws
   port: 8080
@@ -1403,10 +1433,55 @@ proxies:
     path: /?ed=1024
 - alterId: 0
   cipher: auto
-  name: '282,283,284|🇹🇼 TW 111.243.79.140 ◈ ws:2082 ◈ Chunghwa Telecom Co., Ltd. ◈
+  name: '282,283,284|🇹🇼 TW 1.162.137.216 ◈ ws:2052 ◈ Chunghwa Telecom Co., Ltd. ◈
+    15a1d #2'
+  network: ws
+  port: 2052
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: twcdn26.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '282,283,284|🇹🇼 TW 1.162.137.216 ◈ ws:2082 ◈ Chunghwa Telecom Co., Ltd. ◈
     36995 #2'
   network: ws
   port: 2082
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: twcdn26.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '282,283,284|🇹🇼 TW 1.162.137.216 ◈ ws:2086 ◈ Chunghwa Telecom Co., Ltd. ◈
+    8a2fd #2'
+  network: ws
+  port: 2086
+  server: speed.cloudflare.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: twcdn26.fask511.cfd
+    path: /?ed=1024
+- alterId: 0
+  cipher: auto
+  name: '282,283,284|🇹🇼 TW 1.162.137.216 ◈ ws:2095 ◈ Chunghwa Telecom Co., Ltd. ◈
+    787a5 #2'
+  network: ws
+  port: 2095
   server: speed.cloudflare.com
   servername: ''
   tls: false
