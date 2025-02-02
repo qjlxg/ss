@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,34,37,38,142,223,227,233,425,427,429,437,444,445|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
-    #14'
+  name: '18,34,137,142,223,227,233,425,427,429,434,437,444,445,446|🔒 VM-WS-TLS 🇰🇷
+    KR-220.123.48.124:30002 #15'
   network: ws
   port: '30002'
   server: 220.123.48.124
@@ -33,7 +33,7 @@ proxies:
     path: /?ed=1024
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '21,22,39,40,46,47,82,191,326,342|🇯🇵JP-43.206.253.217-0816 #1'
+  name: '21,22,39,40,46,47,68,82,191,326,342|🇯🇵JP-43.206.253.217-0816 #2'
   password: amazonskr05
   port: 443
   server: 43.206.253.217
@@ -41,7 +41,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '21,22,37,38,46,47,82,191,326,342|SG-13.229.117.61-6046 #1'
+  name: '21,22,39,40,46,47,82,191,326,342|SG-13.229.117.61-6046 #1'
   password: amazonskr05
   port: 443
   server: 13.229.117.61
@@ -71,8 +71,8 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇰🇷KR
-  name: '25,28,39,40,41,42,46,47,54,55,82,108,191,239,326,342|🇷KR-3.34.182.113-2404
-    #1'
+  name: 25,28,39,40,41,42,46,47,54,55,68,82,108,174,191,214,239,326,342,396,411,479|South
+    Korea_Incheon_ss_1142
   password: amazonskr05
   port: 443
   server: 3.34.182.113
@@ -112,7 +112,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '32,52,136,434,437,444,446,447,448,451,457|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
+  name: '32,37,38,52,54,55,437,444,447,448,451,457|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
     #19'
   network: ws
   port: '30002'
@@ -127,14 +127,6 @@ proxies:
     headers:
       Host: cc2.1808.site
     path: /hgqqvws
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 37,38,46,47,82,487|speednode_0051
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-  udp: true
 - name: '37,38,48,49|[Trojan] 🇰🇷 TR-WS-NA 🇰🇷 KR-132.226.171.151:40274 #3'
   network: ws
   password: ouo
@@ -149,7 +141,15 @@ proxies:
       Host: tr.koxok.us.kg
     path: ''
 - cipher: aes-256-cfb
-  name: '39,40,46,47,82,191,326,342|🇷KR-3.36.115.19-6178 #1'
+  country: 🇰🇷KR
+  name: 39,40,46,47,82,487|speednode_0051
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '39,40,46,47,68,191,326,342|🇷KR-3.36.115.19-6178 #1'
   password: amazonskr05
   port: 443
   server: 3.36.115.19
@@ -157,7 +157,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '39,40,46,47,82,108,191,326,329,336,342|🇷KR-3.39.223.233-0517 #1'
+  name: '39,40,46,47,68,82,108,191,326,329,336,342|🇷KR-3.39.223.233-0517 #1'
   password: amazonskr05
   port: 443
   server: 3.39.223.233
@@ -173,18 +173,18 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '39,40,46,47,68,82,191,326,342|🇷KR-43.203.203.14-6067 #1'
+  name: '39,40,46,47,82,191,326,342|🇷KR-43.203.203.14-6067 #1'
   password: amazonskr05
   port: 443
   server: 43.203.203.14
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 39,40,41,42,46,47,54,55,69,82,108,191,312,326,329,336,342,487|speednode_0032
+  name: 39,40,41,42,45,46,47,54,55,69,82,108,191,214,312,326,329,336,342,479,487|speednode_0032
   password: amazonskr05
   port: 443
   server: 52.78.107.95
+  tfo: false
   type: ss
   udp: true
 - alterId: 0
@@ -245,49 +245,14 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '82|disney_netflix_KR #10'
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40032
-  server: kr.fastsoonlink.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: '82,191,326,342|🇳CN-123.88.148.44-6159 #1'
   password: d4eeaa7b-43c6-49dc-8020-7389bba4d033
   port: 39206
   server: hzhz1.sssyun.xyz
   type: ss
-- cipher: aes-128-gcm
-  country: 🇨🇳CN
-  name: '82,191,326,342|🇨🇳CN-183.214.197.179-6189 #1'
-  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
-  port: 11789
-  server: pj.shakalaka.xyz
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '82,191,326,342|🇷KR-154.90.63.177-6213 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
 - country: 🏁ZZ
   fingerprint: random
-  name: '82|disney_netflix_KR #13'
-  network: ws
-  password: takaz?cuswo-r?_ojuMit@i=rAcrETl&lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8
-  port: 8443
-  server: 104.22.5.240
-  sni: quiz.vidio.com.vidio.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: quiz.vidio.com.vidio.us.kg
-    path: /pyip=s10.serv00.com:15661
-- country: 🏁ZZ
-  fingerprint: random
-  name: '82|disney_netflix_KR #14'
+  name: 82|netflix_KR
   network: ws
   password: takaz?cuswo-r?_ojuMit@i=rAcrETl&lb1fro?L1uP=@me=*NlWEbrlsP#t@d_8
   port: 8443
@@ -810,6 +775,13 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  country: 🇨🇳CN
+  name: '191,326,342|🇨🇳CN-183.214.197.179-6189 #1'
+  password: a3c29dd3-d366-4fc2-9efa-ec0c81519b75
+  port: 11789
+  server: pj.shakalaka.xyz
+  type: ss
 - alterId: 64
   cipher: auto
   name: 210,254,304,325,326,332,333,337,340,341,342,489|韩国_0202021
@@ -1800,43 +1772,34 @@ proxies:
   port: 58368
   server: p199.panda003.net
   type: ss
-- name: 296|🇰🇷_韩国_2
+- name: 296|🇰🇷_韩国_1
   network: tcp
   password: Aimer
-  port: 35534
-  server: 140.238.29.94
+  port: 50000
+  server: 211.227.87.99
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_4
   network: tcp
   password: Aimer
   port: 50000
-  server: 14.51.32.22
+  server: 218.152.197.93
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
+  sni: ngepy.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_6
   network: tcp
   password: Aimer
-  port: 50000
-  server: 121.180.184.145
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_10
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 121.137.62.90
+  port: 16039
+  server: 115.23.249.80
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_11
+- name: 296|🇰🇷_韩国_7
   network: tcp
   password: Aimer
   port: 12550
@@ -1845,16 +1808,16 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_12
+- name: 296|🇰🇷_韩国_10
   network: tcp
   password: Aimer
-  port: 18077
-  server: 59.22.103.99
+  port: 50000
+  server: 220.72.106.250
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_16
+- name: 296|🇰🇷_韩国_12
   network: tcp
   password: Aimer
   port: 10093
@@ -1863,16 +1826,7 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_17
-  network: tcp
-  password: Aimer
-  port: 10022
-  server: 121.186.173.204
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_18
+- name: 296|🇰🇷_韩国_13
   network: tcp
   password: Aimer
   port: 20202
@@ -1881,22 +1835,40 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_22
+- name: 296|🇰🇷_韩国_14
+  network: tcp
+  password: Aimer
+  port: 18017
+  server: 210.100.215.99
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_16
   network: tcp
   password: Aimer
   port: 50000
-  server: 168.126.66.181
+  server: 14.51.32.22
   skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_18
+  network: tcp
+  password: Aimer
+  port: 35534
+  server: 140.238.29.94
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_23
   network: tcp
   password: Aimer
-  port: 50000
-  server: 218.152.197.93
+  port: 50004
+  server: 112.162.68.10
   skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_24
@@ -1908,88 +1880,34 @@ proxies:
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- name: 296|🇰🇷_韩国_25
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 168.126.66.181
+  skip-cert-verify: true
+  sni: ngepy.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 296|🇰🇷_韩国_27
   network: tcp
   password: Aimer
-  port: 21285
-  server: 183.103.167.69
+  port: 50000
+  server: 211.252.12.227
   skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_28
   network: tcp
   password: Aimer
-  port: 18017
-  server: 210.100.215.99
+  port: 50000
+  server: 119.194.117.229
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
+  sni: ngepx.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_29
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 59.30.229.122
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_30
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 218.151.99.167
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_31
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 220.78.106.96
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_32
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 220.74.106.40
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_35
-  network: tcp
-  password: Aimer
-  port: 50004
-  server: 112.162.68.10
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_36
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 218.154.47.250
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_39
-  network: tcp
-  password: Aimer
-  port: 21236
-  server: 175.215.45.201
-  skip-cert-verify: true
-  sni: ngepy.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_41
   network: tcp
   password: Aimer
   port: 50000
@@ -1998,7 +1916,16 @@ proxies:
   sni: ngepy.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_43
+- name: 296|🇰🇷_韩国_31
+  network: tcp
+  password: Aimer
+  port: 18077
+  server: 59.22.103.99
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_34
   network: tcp
   password: Aimer
   port: 35531
@@ -2007,38 +1934,20 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_44
+- name: 296|🇰🇷_韩国_35
   network: tcp
   password: Aimer
   port: 50000
-  server: 211.227.87.99
+  server: 59.30.229.122
   skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
+  sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_45
-  network: tcp
-  password: Aimer
-  port: 20900
-  server: 218.158.251.112
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_46
+- name: 296|🇰🇷_韩国_38
   network: tcp
   password: Aimer
   port: 16064
   server: 118.45.113.48
-  skip-cert-verify: true
-  sni: ngepx.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_47
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 119.194.117.229
   skip-cert-verify: true
   sni: ngepx.ambercc.filegear-sg.me
   type: trojan
@@ -2578,6 +2487,12 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.201.249.92
+  type: ss
+- cipher: aes-256-cfb
+  name: 463|🇰🇷KR-3.34.189.113-0276 | 12.56MB
+  password: amazonskr05
+  port: 443
+  server: 3.34.189.113
   type: ss
 - cipher: aes-256-cfb
   name: 464|TG频道@mfbpn-韩国2
