@@ -1,16 +1,14 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,37,38,54,55,137,142,223,227,233,248,434,437,443,446,447,448,451,456|🔒
-    VM-WS-NA 🇸🇪 SE-185.146.173.91:2052 #13'
+  name: '18,142,227,248,437,443,447,448,451,456|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.91:2052
+    #8'
   network: ws
   port: '2052'
   server: 185.146.173.91
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: 6e88465e-a2ac-57d3-bbaf-f72e4439bd75
   ws-opts:
     headers:
@@ -25,7 +23,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '21,22,39,40,46,47|[SS] SS-TCP-NA 🇸🇪 SE-46.246.98.130:8388 #3'
+  name: '21,22,39,40,48,49|[SS] SS-TCP-NA 🇸🇪 SE-46.246.98.130:8388 #3'
   password: xg58DFW7vp4z0Czr
   port: 8388
   server: 46.246.98.130
@@ -54,36 +52,44 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '39,40,48,49|[SS] SS-TCP-NA 🇸🇪 SE-46.246.93.24:989 #3'
+  name: '39,40,46,47|[SS] SS-TCP-NA 🇸🇪 SE-46.246.93.24:989 #3'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.246.93.24
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇸🇪 SE
-  name: '39,40,41,42,48,49,54,55,68,69,80,82,98,108,191,312,326,329,336,342|🇪SE-46.246.98.155-0477
-    #1'
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: '39,40,41,42,46,47,54,55,68,69,80,82,98,191,312,326,342|🇸SE-94.228.165.178-5650
+  name: '39,40,41,42,46,47,54,55,69,80,98,191,312,326,342|🇸SE-94.228.165.178-5650
     #1'
   password: afKAHp1VfRWZu91LIi9o0D
   port: 58176
   server: 94.228.165.178
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇸🇪 SE
+  name: '41,42,54,55,69,80,108,191,312,326,329,336,342|🇪SE-46.246.98.155-0477 #1'
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+  udp: true
 - country: 🇸🇪SE
-  name: 82|🇸🇪SE_1290
+  name: 82|🇸🇪SE_1158
   network: tcp
   password: telegram-id-privatevpns
   port: 22222
-  server: 13.61.41.220
+  server: 13.61.103.214
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- country: 🇸🇪SE
+  name: 82|🇸🇪SE_1156
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.50.154.206
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -532,7 +538,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 210,254,255,304,320,325,326,333,337,341,342,365,389,406|8J%2BHuPCfh6pTRS0xMy40OS43Ny4xMjYtNjE4NA%3D%3D
+  name: 210,255,304,320,325,326,333,337,341,342,365,389,406|8J%2BHuPCfh6pTRS0xMy40OS43Ny4xMjYtNjE4NA%3D%3D
   obfs: http_simple
   obfs-param: ''
   password: YpX2opBbrfqJzzMs
@@ -586,20 +592,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 26a271cd-9d3b-4620-8897-b4addd05b8a9
-- alterId: '0'
-  cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342,345,346|github.com/mehdimoghaddam-cell_753
-    #1'
-  network: ws
-  port: '25289'
-  server: 13.50.153.230
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: fe2bd77d-312e-4ac0-defe-afdb279528a0
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: '281,282,283,284|🔒🇸🇪 SE 176.124.202.137 ◈ ws:443 ◈ Aeza International ◈ a5d02
@@ -690,6 +682,20 @@ proxies:
     headers:
       Host: se.899994.xyz
     path: /index
+- alterId: '0'
+  cipher: auto
+  name: '304,325,326,332,333,337,340,341,342,345,346|github.com/mehdimoghaddam-cell_753
+    #1'
+  network: ws
+  port: '25289'
+  server: 13.50.153.230
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fe2bd77d-312e-4ac0-defe-afdb279528a0
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 320,366|MOHSEN-🇸🇪-SE_6
