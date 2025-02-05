@@ -1,19 +1,30 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,223,227,230,434,437,444,446,447,448,451,457|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
-    #20'
+  name: '18,31,32,54,55,142,227,425,427,429,437,444,445|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
+    #15'
   network: ws
   port: '30002'
   server: 220.123.48.124
-  servername: cc2.1808.site
+  servername: obdii.cfd
+  skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '18,223,227,232,239,393,397|0|🇰🇷2 |  3.8MB/s #5'
+  network: tcp
+  port: 33436
+  server: cmeiguo4.mmods.site
+  tls: false
+  type: vmess
+  uuid: 87db8a11-c697-3c85-8369-84554fa9f83e
 - cipher: chacha20-ietf-poly1305
   name: 21,22,30|[SS] _中国 4
   password: d4eeaa7b-43c6-49dc-8020-7389bba4d033
@@ -51,7 +62,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 25,28,33,34,35,36,46,47,108,174,191,239,326,342,396,411,479|Singapore_Singapore_ss_1130
+  name: 25,28,35,36,46,47,68,108,174,191,239,326,342,396,479|Singapore_Singapore_ss_1131
   password: amazonskr05
   port: 443
   server: 18.143.78.171
@@ -89,23 +100,14 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '31,32,54,55,129,134,142,425,427,429,437,444,445|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
-    #15'
-  network: ws
-  port: '30002'
-  server: 220.123.48.124
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸 US
+  name: '33,34,39,40,41,42,46,47,80,191,326,342|KR-154.90.63.193-5773 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 154.90.63.193
+  type: ss
   udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
 - cipher: chacha20-ietf-poly1305
   name: '33,34,46,47|[SS] 🇰🇷 SS-TCP-NA 🇰🇷 KR-43.202.96.177:443 #3'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
@@ -113,26 +115,9 @@ proxies:
   server: 43.202.96.177
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇰🇷 KR
-  name: '33,34,35,36,37,38,46,47,68,69,98,108,191,312,326,329,336,342|🇷KR-52.78.41.246-0499
-    #1'
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 52.78.41.246
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: '35,36,39,40,41,42,46,47,80,98,191,326,342|KR-154.90.63.193-5812 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 154.90.63.193
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: 35,36,39,40,46,47,108,191,326,342,487|speednode_0010
+  name: 35,36,39,40,46,47,191,326,342,487|speednode_0010
   password: amazonskr05
   port: 443
   server: 43.201.102.200
@@ -140,7 +125,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸US
-  name: '37,38,68,69,191,312,326,342|🇷KR-43.202.96.177-6059 #1'
+  name: '37,38,53,69,108,191,312,326,329,336,342|🇷KR-43.202.96.177-0535 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: south-korea-2.keenvpn.me
@@ -148,7 +133,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇰🇷 KR
-  name: '37,38,41,42,68,69,98,108,191,312,326,329,336,342|🇷KR-52.78.41.246-0498 #1'
+  name: '37,38,41,42,53,68,108,191,326,329,336,342|🇷KR-52.78.41.246-0532 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: south-korea-3.keenvpn.me
@@ -156,7 +141,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '39,40,191,326,342|🇷KR-154.90.62.168-6193 #1'
+  name: '39,40,191,326,342|🇷KR-154.90.62.168-6154 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -171,7 +156,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '39,40,191,326,342|🇷KR-43.203.203.14-6057 #1'
+  name: '39,40,191,326,342|🇷KR-43.203.203.14-6018 #1'
   password: amazonskr05
   port: 443
   server: 43.203.203.14
@@ -333,6 +318,21 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
+  name: '129,134,223,230,434,437,444,446,447,448,451,457|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002
+    #20'
+  network: ws
+  port: '30002'
+  server: 220.123.48.124
+  servername: cc2.1808.site
+  tls: true
+  type: vmess
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
+- alterId: 0
+  cipher: auto
   name: 150,153,183,254,304,320,325,326,332,333,337,340,341,342,344,362,467,468,472|🇰🇷KR-152.67.218.38-0747
   network: ws
   port: 443
@@ -406,30 +406,48 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-43.202.49.222-9563 #1'
+  name: '161,326,342|🇷KR-43.202.49.222-9523 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-43.201.108.109-9564 #1'
+  name: '161,326,342|🇷KR-43.201.108.109-9524 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-125.141.26.5-10162 #1'
+  name: '161,326,342|🇷KR-125.141.26.5-10122 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
   type: ss
-- name: '174,396,411,479|South Korea_Incheon_trojan_1137 #1'
+- cipher: aes-256-cfb
+  name: 174,487|speednode_0007
+  password: amazonskr05
+  port: 443
+  server: 43.203.206.63
+  type: ss
+- cipher: aes-256-cfb
+  name: 174,396,487|speednode_0002
+  password: amazonskr05
+  port: 443
+  server: 52.78.178.243
+  type: ss
+- cipher: aes-256-cfb
+  name: 174,487|speednode_0004
+  password: amazonskr05
+  port: 443
+  server: 13.125.215.15
+  type: ss
+- name: '174,396,479|South Korea_Incheon_trojan_1138 #1'
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
   server: useful-jennet.shiner427.skin
   type: trojan
-- name: 174,396,411,479|South Korea_Incheon_trojan_1138
+- name: 174,396,479|South Korea_Incheon_trojan_1139
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
@@ -759,7 +777,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '191,326,342|🇰🇷KR-154.90.63.177-6192 #1'
+  name: '191,326,342|🇷KR-154.90.63.177-6153 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
@@ -877,7 +895,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '210,254,304,325,326,332,333,337,340,341,342|KR-131.186.24.103-2161 #1'
+  name: '210,254,304,325,326,332,333,337,340,341,342|KR-131.186.24.103-2130 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -926,7 +944,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '210,326,342|🇷KR-43.201.48.212-2318 #1'
+  name: '210,326,342|🇷KR-43.201.48.212-2287 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -942,7 +960,7 @@ proxies:
   uuid: 0ff592be-108b-4918-c1c2-ca73cf710700
 - alterId: 0
   cipher: auto
-  name: 211,304,325,332,333,337,340,341,489|韩国_0204001
+  name: 211,489|韩国_0204001
   network: ws
   port: '443'
   server: kr-arm1.018999.xyz
@@ -1110,7 +1128,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.78.213.224-1927 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.78.213.224-1896 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -1153,7 +1171,7 @@ proxies:
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-161.129.34.102-2371 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-161.129.34.102-2332 #1'
   network: ws
   port: 443
   server: 161.129.34.102
@@ -1257,7 +1275,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-130.162.141.104-0943 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-130.162.141.104-0934 #1'
   network: ws
   port: 443
   server: 130.162.141.104
@@ -1300,7 +1318,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-54.180.114.77-6876 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-54.180.114.77-6837 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -1313,7 +1331,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-211.177.40.235-8248 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-211.177.40.235-8209 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -1326,7 +1344,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-1.238.102.214-8249 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-1.238.102.214-8210 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -1533,7 +1551,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,326,342|🇰🇷KR-3.38.179.76-9197 #1'
+  name: 254,304,325,326,332,333,337,340,341,342,348|🇰🇷KR-3.38.179.76-3509
   network: ws
   port: 80
   server: 3.38.179.76
@@ -1543,6 +1561,8 @@ proxies:
   type: vmess
   uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -2211,8 +2231,21 @@ proxies:
   ws-headers:
     HOST: p3.chigua.tk
   ws-path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '304,325,326,332,333,337,340,341,342|KR-13.124.2.247-0004 #1'
+  network: ws
+  port: 1234
+  server: 13.124.2.247
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8220bfee-84c6-40e3-d628-9e1c2c1cc8bd
+  ws-opts:
+    path: /bb
 - cipher: aes-256-cfb
-  name: '318,326,342|🇷KR-3.36.118.190-5308 #1'
+  name: '318,326,342|🇷KR-3.36.118.190-5269 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -2314,32 +2347,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: '326,342|KR-13.124.2.247-0004 #1'
-  network: ws
-  port: 1234
-  server: 13.124.2.247
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 8220bfee-84c6-40e3-d628-9e1c2c1cc8bd
-  ws-opts:
-    path: /bb
 - cipher: aes-256-gcm
-  name: '326,342|🇰🇷KR-141.164.39.146-2376 #1'
+  name: '326,342|🇰🇷KR-141.164.39.146-2337 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇷KR-158.247.205.87-2403 #1'
+  name: '326,342|🇷KR-158.247.205.87-2364 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇷KR-158.247.205.87-2404 #1'
+  name: '326,342|🇷KR-158.247.205.87-2365 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -2382,7 +2403,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '326,342|🇰🇷KR-146.56.133.140-9181 #1'
+  name: '326,342|🇰🇷KR-146.56.133.140-9141 #8'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -2424,18 +2445,18 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0008-KR
+  name: 352|TG频道@mfbpn-0096-KR
   network: ws
-  port: 1234
-  server: 13.124.2.247
+  port: 80
+  server: 152.69.230.170
   servername: ''
   tls: false
   type: vmess
-  uuid: 8220bfee-84c6-40e3-d628-9e1c2c1cc8bd
+  uuid: 6aa24ded-5f15-48c7-8cba-3e2a159d6b77
   ws-opts:
     headers:
       Host: None
-    path: /bb
+    path: /
 - alterId: 64
   cipher: auto
   name: 353|🇰🇷 github.com/freefq - 韩国BGP.NET数据中心 27
