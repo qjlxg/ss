@@ -1,28 +1,36 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,108,326,329,336,342|🇬🇧GB-64.176.184.129-0561
-    #2'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,312,326,329,336,342,465|未知99
+    1.8MB/s
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 64.176.184.129
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🏁 ZZ
-  name: '21,22,33,34,35,36,39,40,46,47,68,69,82,108,191,287,308,312,326,329,336,342|🇧GB-62.100.205.48-0407
+  name: '21,22,35,36,37,38,39,40,46,47,53,68,69,108,191,287,308,312,326,329,336,342|🇬🇧GB-62.100.205.48-0473
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: '21,22,35,36,39,40,46,47,108,191,326,342|🇫🇷FR-51.15.15.82-0506 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.15.82
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: '21,22,191,304,325,326,332,333,337,340,341,342|🇪DE-185.121.134.12-5972 #1'
+  name: '21,22,304,325,332,333,337,340,341|🇩🇪DE-185.121.134.12-5972 #6'
   network: ws
   port: 20306
   server: 185.121.134.12
@@ -33,6 +41,8 @@ proxies:
   udp: true
   uuid: 5b5ca157-e908-4678-97ee-c5338923cb95
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - cipher: chacha20-ietf-poly1305
   name: '23,24|[SS] 🇬🇧 英国住宅IP 01 | 1x UK #1'
@@ -54,48 +64,58 @@ proxies:
   uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
   ws-opts:
     path: /
-- alterId: 0
-  cipher: aes-128-gcm
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 30,33,34,37,38,41,42,46,47,54,55,68,69,80,82,98,108,115,161,191,287,312,318,326,329,336,342,463,465,467|21|_05
+  country: 🇬🇧GB
+  name: 30,35,36,37,38,41,42,46,47,53,54,55,68,69,80,108,115,161,191,287,312,318,326,329,336,342,463,467|21|_05
   password: shadowsocks
   port: 443
   server: 212.102.53.197
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 30,37,38,41,42,54,55,69,80,82,98,108,191,287,312,326,329,336,342,467|21|_07
+  country: 🇬🇧GB
+  name: 30,37,38,41,42,53,54,55,68,69,80,108,191,287,312,326,329,336,342,467|21|_07
   password: shadowsocks
   port: 443
   server: uk-dc1.yangon.club
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '33,34,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-172.166.11.121:443 #3'
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: 172.166.11.121
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '33,34,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-45.140.167.94:1443 #3'
+  password: N2VhNDQ2
+  port: 1443
+  server: 45.140.167.94
+  type: ss
+  udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  country: 🇺🇸 US
-  name: 33,34,39,40,46,47,82,98,191,303,326,342,465|未知114 292.0KB/s
-  password: frsa5DFzRANYPs5yMexsVUrC7d6NY8pvBRFn4g1WkF4R71Y5a6E6qYp3SxP2EaUh2yXsAKbTAm7SmL5qk5xMGoDRjH5F8BBU
-  port: 55330
-  server: 107.181.155.244
+  name: 33,34,35,36,46,47,465|未知42 3.3MB/s
+  password: N2VhNDQ2
+  port: 8388
+  server: 45.140.167.94
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  country: 🏁 ZZ
-  name: 33,34,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,108,191,312,326,329,336,342,463|🇬🇧GB-141.98.101.179-3189
-    | 33.066MB
-  password: shadowsocks
+- cipher: chacha20-ietf-poly1305
+  name: '33,34,39,40,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-89.185.84.185:443 #5'
+  password: xqXBK5MT0LJoU7cSsavKcn
   port: 443
-  server: 141.98.101.179
+  server: 89.185.84.185
   type: ss
   udp: true
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 33,34,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,108,191,312,326,329,336,342,463|🇬🇧GB-141.98.101.180-3175
+  name: 35,36,39,40,41,42,46,47,54,55,68,69,80,108,191,312,326,342,463|🇬🇧GB-141.98.101.180-3175
     | 32.948MB
   password: shadowsocks
   port: 443
@@ -104,7 +124,7 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🏁 ZZ
-  name: 33,34,37,38,41,42,46,47,53,54,55,68,69,80,82,108,191,312,326,329,336,342,463|🇬🇧GB-141.98.101.182-3240
+  name: 35,36,41,42,46,47,54,55,68,80,108,191,326,342,463|🇬🇧GB-141.98.101.182-3240
     | 27.681MB
   password: shadowsocks
   port: 443
@@ -112,107 +132,34 @@ proxies:
   type: ss
   udp: true
 - cipher: rc4-md5
-  country: 🇬🇧GB
-  name: 33,34,35,36,39,40,41,42,46,47,54,55,68,69,82,108,191,312,326,329,336,342,463|🇬🇧GB-146.70.61.18-0269
+  country: 🏁 ZZ
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇬🇧GB-146.70.61.18-0269
     | 34.634MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 146.70.61.18
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: '33,34,35,36,46,47,82,98,191,326,342|🇬🇧GB-185.5.38.111-5673 #1'
-  password: BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa
-  port: 55988
-  server: 185.5.38.111
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 33,34,37,38,41,42,46,47,54,55,68,69,80,82,98,108,191,312,318,326,329,336,342,463,467|21|_27
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.194
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🏁 ZZ
-  name: 33,34,37,38,39,40,41,42,46,47,54,55,68,69,80,82,98,108,161,191,312,326,329,336,342,463,467|21|_418
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.196
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  country: 🇧GB
-  name: 33,34,37,38,41,42,46,47,54,55,68,69,80,82,98,108,191,312,326,329,336,342,467|21|GB_583
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.198
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 33,34,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,98,108,161,191,312,326,329,336,342,463,467|21|_416
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.80
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 33,34,37,38,39,40,41,42,46,47,54,55,68,69,80,82,98,108,191,312,318,326,329,336,342,463,467|21|_417
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.81
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '33,34,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-4.158.212.97:443 #3'
-  password: u17T3BvpYaaiuW2c
-  port: 443
-  server: 4.158.212.97
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '33,34,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-45.140.167.94:8388 #3'
-  password: N2VhNDQ2
-  port: 8388
-  server: 45.140.167.94
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '33,34,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-85.210.145.34:443 #3'
-  password: W74XFALLLuw6m5IA
-  port: 443
-  server: 85.210.145.34
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '33,34,39,40,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-89.185.84.185:443 #5'
-  password: EAncjuZY5JvauKskjsv0rr
-  port: 443
-  server: 89.185.84.185
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,69,80,108,115,181,183,237,312,326,329,336,342|🇧GB-85.210.145.34-0442
-    #1'
-  password: mps3FwmDjLrWaOVg
-  port: 443
-  server: series-a2.samanehha.co
-  type: ss
-  udp: true
 - cipher: rc4-md5
   country: 🇺🇸US
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,82,108,191,312,326,329,336,342,463|🇬🇧GB-169.150.210.233-0270
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇬🇧GB-169.150.210.233-0270
     | 37.075MB
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 169.150.210.233
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '35,36,46,47,191,326,342|🇬🇧GB-185.5.38.111-5765 #1'
+  password: 2EmWRS1TkS3TkxKApnrihb3aHjDSXRvT1T1K9U2Bruxrnp5A8zmpTxwwTNje6BkVqmn9BgRF6pq8qoRHCfZdcah7BLbjrpT1
+  port: 55988
+  server: 185.5.38.111
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
-  name: 35,36,37,38,41,42,46,47,54,55,68,69,80,82,98,108,191,312,326,329,336,342,463,467|21|_415
+  country: 🇬🇧GB
+  name: 35,36,37,38,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,463,467|21|_415
   password: shadowsocks
   port: 443
   server: 212.102.53.193
@@ -220,27 +167,39 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇬🇧GB
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,82,98,108,191,312,326,329,336,342,463,467|21|🇧GB_584
+  name: 35,36,37,38,41,42,46,47,53,54,55,68,69,80,108,191,312,318,326,329,336,342,463,467|21|_27
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.194
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇬🇧GB
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,463,467|21|🇧GB_584
   password: shadowsocks
   port: 443
   server: 212.102.53.195
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,82,98,108,161,191,312,318,326,329,336,342,463,465,467|21|_419
+- cipher: aes-128-gcm
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,161,191,312,326,329,336,342,463,467|21|_418
   password: shadowsocks
   port: 443
-  server: 212.102.53.78
-  skip-cert-verify: true
-  tls: true
+  server: 212.102.53.196
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,82,98,108,191,312,326,329,336,342,366,463,467|21|_406
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,366,463,467|21|_406
   password: shadowsocks
   port: 443
   server: 212.102.53.79
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,318,326,329,336,342,463,467|21|_417
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.81
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -248,13 +207,6 @@ proxies:
   password: W74XFALLLuw6m5IA
   port: 443
   server: 35.176.197.229
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-45.140.167.94:1443 #3'
-  password: N2VhNDQ2
-  port: 1443
-  server: 45.140.167.94
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -271,10 +223,16 @@ proxies:
   server: 78.129.140.11
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,46,47|[SS] 🇬🇧 SS-TCP-NA 🇬🇧 GB-85.210.19.91:443 #3'
+  password: u17T3BvpYaaiuW2c
+  port: 443
+  server: 85.210.19.91
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
-  country: 🇬🇧 GB
-  name: '37,38,39,40,41,42,53,54,55,68,69,80,82,98,108,191,312,326,329,336,342|🇬🇧GB-141.98.101.178-0502
-    #2'
+  country: 🇬🇧GB
+  name: '39,40,41,42,54,55,68,69,80,108,191,312,326,342|🇧GB-141.98.101.178-0444 #1'
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -282,14 +240,14 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇫🇷FR
-  name: 39,40,82,98,191,326,342,467|21|🇷FR_543
+  name: 39,40,191,326,342,467|21|🇷FR_543
   password: Y6R9pAtvxxzmGC
   port: 3306
   server: 145.239.6.202
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 39,40,82,98,115,191,326,342,467|21|_100
+  name: 39,40,115,191,326,342,467|21|_100
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 145.239.6.202
@@ -310,16 +268,14 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '41,42,54,55,69,80,115,183,303,312,326,329,336,342|🇧GB-85.210.145.34-1168
-    #1'
+  name: '41,42,54,55,68,69,80,108,115,183,303,312,326,342|🇧GB-4.158.114.132-0380 #1'
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a1.samanehha.co
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '41,42,54,55,68,69,80,115,181,183,312,326,329,336,342|🇧GB-85.210.145.34-1167
-    #1'
+  name: '41,42,54,55,68,69,80,108,115,181,183,312,326,342|🇧GB-4.158.114.132-0376 #1'
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
@@ -369,6 +325,13 @@ proxies:
       Host: uk1.xv2ray.net
     path: /vmess
 - cipher: chacha20-ietf-poly1305
+  name: '68,69,80,108,115,181,183,237,312,326,342|🇧GB-4.158.114.132-0378 #1'
+  password: mps3FwmDjLrWaOVg
+  port: 443
+  server: series-a2.samanehha.co
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 80,463|NO-51.13.182.236-3182 | 34.382MB
   password: M7x1mGNOwhPiRB9jSxZJNy
   port: 6870
@@ -409,84 +372,13 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: 82|🇬🇧GB_308
-  network: ws
-  port: 20310
-  server: 185.121.134.12
-  skip-cert-verify: true
-  type: vmess
-  uuid: fc6646fc-aa55-487b-8dce-e9ecd025deeb
-  ws-opts: {}
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 82,161|🆔@LuxyNet💎❖❖GB❖441
-  password: shadowsocks
-  port: 443
-  server: ak1784.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-  type: ss
-- cipher: aes-128-gcm
-  country: 🇬🇧GB
-  name: 82|Relay_🇬🇧GB-🇬🇧GB_59
-  password: shadowsocks
-  port: 443
-  server: ak1793.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
-  type: ss
-- alterId: 64
-  cipher: auto
-  country: 🇷🇸RS
-  h2-opts: {}
-  http-opts: {}
-  name: 82,161,176|🔒 VM-TCP-NA 🌍 RS-37.120.193.102:52920 📡 PING-162.45-MS
+  name: 85|英国1
   network: tcp
-  port: '52920'
-  server: 37.120.193.102
-  servername: ''
-  skip-cert-verify: true
+  port: '45066'
+  server: haa.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 57170ff0-7180-4664-8f61-8debdda345f7
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: '82,98,191,326,342|RU-185.126.239.250-5676 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.126.239.250
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: '82,98,191,326,342|EC-185.47.253.227-5675 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: '82,98,191,326,342|🇧GB-185.5.38.111-5671 #1'
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: 82|🇬🇧GB_1046
-  network: ws
-  port: 23451
-  server: 158.180.48.19
-  servername: us-new03.daluquan.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 6651ab66-c7a5-4113-bec7-41f814de537f
-  ws-opts:
-    headers:
-      HOST: us-new03.daluquan.top
-    path: /itdog?ed=2560
+  uuid: 85863dab-496e-442d-8631-895c662f9877
 - alterId: 0
   cipher: auto
   name: 85|英国2
@@ -495,16 +387,7 @@ proxies:
   server: xdd.dashuai.cyou
   tls: false
   type: vmess
-  uuid: 9d293147-0f42-4f69-84f0-d8416978b727
-- alterId: 0
-  cipher: auto
-  name: 85|英国1
-  network: tcp
-  port: '45066'
-  server: haa.dashuai.cyou
-  tls: false
-  type: vmess
-  uuid: 9d293147-0f42-4f69-84f0-d8416978b727
+  uuid: 85863dab-496e-442d-8631-895c662f9877
 - name: 115|GB(AzadNet.t.me)_001
   network: tcp
   password: your_password
@@ -596,6 +479,59 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
+- cipher: aes-256-gcm
+  name: 115,183,191,326,342,467|21|_375
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.68.206.229
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇫🇷FR
+  name: 115,183,191,326,342,366,467|21|🇷FR_564
+  password: pKEW8JPByTVTLtM
+  port: 4444
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 115,191,326,342,467|21|_103
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 115,191,326,342,467|21|_102
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 115,191,326,342,467|21|_101
+  password: Y6R9pAtvxxzmGC
+  port: 8888
+  server: 145.239.6.202
+  type: ss
+- cipher: aes-256-gcm
+  name: 115,183,191,326,342,467|21|_373
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 115,183,191,326,342,467|21|_374
+  password: PCnnH6SQSnfoS27
+  port: 8090
+  server: 145.239.6.202
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 115,191,326,342,467|21|_98
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 145.239.6.202
+  type: ss
 - name: 115|🇧GB(AzadNet.t.me)_022
   network: tcp
   password: aea19280-8d7d-11ee-ae44-1239d0255272
@@ -1005,7 +941,7 @@ proxies:
     path: ''
 - alterId: 4
   cipher: auto
-  name: '153,254,304,325,326,332,333,337,340,341,342|🇧GB-146.70.46.68-5064 #1'
+  name: '153,254,304,325,326,332,333,337,340,341,342|🇧GB-146.70.46.68-4966 #1'
   network: ws
   port: 443
   server: 146.70.46.68
@@ -1032,6 +968,16 @@ proxies:
     headers:
       Host: uk-manchester.eiw2eemo.com
     path: /ws
+- alterId: 0
+  cipher: auto
+  name: '160,212,348,467,468,476|PP|TG频道内随机时间更新订阅地址 #45'
+  network: tcp
+  port: 22324
+  server: 172.99.190.12
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 160|英国_121320019
@@ -1144,6 +1090,12 @@ proxies:
   sni: telewebion.com
   type: trojan
   udp: true
+- cipher: aes-128-gcm
+  name: 161|🆔@LuxyNet💎❖❖GB❖441
+  password: shadowsocks
+  port: 443
+  server: ak1784.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
+  type: ss
 - cipher: aes-256-gcm
   name: 161,183|🇺🇸 US 215 → tg@nicevpn123
   password: KixLvKzwjekG00rm
@@ -1160,7 +1112,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '161,254,304,325,326,332,333,337,340,341,342|🇧GB-8.208.30.41-9395 #1'
+  name: '161,254,304,325,326,332,333,337,340,341,342|🇧GB-8.208.30.41-9333 #1'
   network: ws
   port: 443
   server: 8.208.30.41
@@ -1171,11 +1123,18 @@ proxies:
   uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b
   ws-opts:
     path: /swoole
+- cipher: aes-256-gcm
+  name: 161,183,191,326,342,366,467|21|_376
+  password: KixLvKzwjekG00rm
+  port: 8080
+  server: 51.68.206.229
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 161,254,304,325,326,332,333,337,340,341,342,489|法国_0204122
+  name: '161,254,304,325,326,332,333,337,340,341,342|🇫🇷FR-51.38.82.132-9375 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 51.38.82.132
   servername: ''
   skip-cert-verify: false
@@ -1183,8 +1142,6 @@ proxies:
   type: vmess
   uuid: aca76f27-cda3-47f7-af79-7873034fd3bc
   ws-opts:
-    headers:
-      Host: ''
     path: /vmess
 - name: 161,366|MOHSEN-🇬🇧-GB_21
   network: tcp
@@ -1315,6 +1272,13 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 183|🇬🇧 GB 2 → tg@nicevpn123
+  password: G!yBwPWH3Vao
+  port: 812
+  server: 185.172.113.182
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 183|🇬🇧 GB 20 → tg@nicevpn123
   password: yCoZBIVH3JIqeUXNdive9B
   port: 45844
@@ -1393,6 +1357,20 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 183|🇬🇧 GB 39 → tg@nicevpn123
+  password: G!yBwPWH3Vao
+  port: 810
+  server: 185.172.113.182
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 183|🇬🇧 GB 4 → tg@nicevpn123
+  password: G!yBwPWH3Vao
+  port: 809
+  server: 185.172.113.182
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 183|🇬🇧 GB 42 → tg@nicevpn123
   password: mTypilmjidrr6dQYaOGHf7
   port: 46130
@@ -1435,6 +1413,13 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 183|🇬🇧 GB 6 → tg@nicevpn123
+  password: G!yBwPWH3Vao
+  port: 806
+  server: 185.172.113.182
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 183|🇬🇧 GB 8 → tg@nicevpn123
   password: IJl7gbeZxeXZzZGcKFMaHA
   port: 33910
@@ -1448,6 +1433,32 @@ proxies:
   server: 141.11.189.205
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 184|英国-优化-GPT
+  network: ws
+  port: '16645'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 184|过滤掉3条线路
+  network: ws
+  port: '16617'
+  server: yes.mojcn.com
+  tls: false
+  type: vmess
+  uuid: da91214e-b022-4f61-a724-01c538170e62
+  ws-opts:
+    headers:
+      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 184|英国-优化3
@@ -1467,19 +1478,6 @@ proxies:
   network: ws
   port: '16645'
   server: m.cnmjin.net
-  tls: false
-  type: vmess
-  uuid: da91214e-b022-4f61-a724-01c538170e62
-  ws-opts:
-    headers:
-      Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 184|英国-优化-GPT
-  network: ws
-  port: '16645'
-  server: yes.mojcn.com
   tls: false
   type: vmess
   uuid: da91214e-b022-4f61-a724-01c538170e62
@@ -1557,24 +1555,27 @@ proxies:
     headers:
       Host: uk-1.sharecentre.online
     path: /shirker
-- country: 🇬🇧GB
-  name: 191|🇬🇧GB_03_7@2
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.132.181.180
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇬🇧GB
-  name: 191|🇬🇧GB_04_7@3
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 52.56.111.70
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '191,326,342|🇬🇧GB-185.5.38.111-5766 #1'
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  port: 55988
+  server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '191,326,342|🇪EC-185.47.253.227-5767 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '191,326,342|RU-185.126.239.250-5768 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.126.239.250
+  type: ss
 - alterId: 0
   cipher: auto
   name: 194|Mgvpnsale-tcp-Mgvpnsale-100GB Free
@@ -1586,13 +1587,14 @@ proxies:
   uuid: cc4babbd-2cc7-4788-8c4a-ced9b2143ed5
 - alterId: 0
   cipher: auto
-  name: 206,254,304,315,325,326,332,333,337,340,341,342,353,364,489|亚美尼亚_0204004
+  name: 206,254,304,315,325,326,332,333,337,340,341,342,353,364|1.49| httpsgithubcomAlvin9999newpacwiki
+    clash ip1 洛杉矶39CDN
   network: ws
-  port: '443'
+  port: 443
   server: 185.162.228.230
   servername: ''
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
   ws-opts:
@@ -1607,7 +1609,7 @@ proxies:
   type: ss
 - alterId: 64
   cipher: auto
-  name: '210,254,304,325,326,332,333,337,340,341,342|🇩🇪DE-87.254.31.23-1829 #8'
+  name: '210,254,304,325,326,332,333,337,340,341,342|🇩🇪DE-87.254.31.23-1730 #1'
   network: ws
   port: 41647
   server: 87.254.31.23
@@ -1671,7 +1673,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '210,326,342|🇧GB-3.10.20.47-2235 #1'
+  name: '210,326,342|🇧GB-3.10.20.47-2136 #1'
   password: G!yBwPWH3Vao
   port: 806
   server: 3.10.20.47
@@ -1859,11 +1861,11 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204037
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-5.83.221.31-1749 #1'
   network: ws
-  port: '30023'
+  port: 30023
   server: v01.gutingting.com
-  servername: ''
+  servername: gz.fastcloud.club
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1874,11 +1876,11 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204038
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-5.83.221.31-1750 #1'
   network: ws
-  port: '30015'
+  port: 30015
   server: v02.gutingting.com
-  servername: ''
+  servername: gz.fastcloud.club
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1889,11 +1891,11 @@ proxies:
     path: /aceamedv
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204045
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-5.83.221.31-1803 #1'
   network: ws
-  port: '30041'
+  port: 30041
   server: v02.gutingting.com
-  servername: ''
+  servername: sh01.fastcloud.club
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -1919,9 +1921,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204048
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-51.75.160.126-4295 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 51.75.160.126
   servername: ''
   skip-cert-verify: false
@@ -1929,12 +1931,10 @@ proxies:
   type: vmess
   uuid: b739a204-ea0d-428b-bbf5-a632ec05edcf
   ws-opts:
-    headers:
-      Host: ''
     path: /vmess
 - alterId: 4
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-165.227.231.254-5292 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-165.227.231.254-5194 #1'
   network: ws
   port: 8080
   server: 165.227.231.254
@@ -1961,7 +1961,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.194-8410 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.194-8347 #1'
   network: ws
   port: 443
   server: 149.7.16.194
@@ -2016,22 +2016,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204066
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-149.7.16.73-8355 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 149.7.16.73
   servername: ''
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      Host: ''
     path: /
 - alterId: 64
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-83.142.225.59-0781 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-83.142.225.59-0728 #1'
   network: ws
   port: 443
   server: 83.142.225.59
@@ -2044,7 +2042,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-51.89.138.147-0651 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-51.89.138.147-0597 #1'
   network: ws
   port: 80
   server: 51.89.138.147
@@ -2057,37 +2055,33 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204063
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-198.244.148.214-8188 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 198.244.148.214
-  servername: ''
+  servername: goodfamily19.site
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4
   ws-opts:
-    headers:
-      Host: ''
     path: /wmzmvws
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204064
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-198.244.148.214-8190 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 198.244.148.214
-  servername: ''
+  servername: lg30.cfcdn3.xyz
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
   ws-opts:
-    headers:
-      Host: ''
     path: /ray
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-172.99.190.50-8394 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-172.99.190.50-8331 #1'
   network: ws
   port: 443
   server: 172.99.190.50
@@ -2102,7 +2096,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-68.168.31.196-8273 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-68.168.31.196-8227 #1'
   network: ws
   port: 443
   server: 68.168.31.196
@@ -2117,7 +2111,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-68.168.31.242-8388 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-68.168.31.242-8325 #1'
   network: ws
   port: 443
   server: 68.168.31.242
@@ -2132,7 +2126,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.248-8335 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.248-8273 #1'
   network: ws
   port: 443
   server: 149.7.16.248
@@ -2147,13 +2141,13 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204065
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-172.99.190.209-8330 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 172.99.190.209
   servername: ''
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
@@ -2162,7 +2156,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.188-8396 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-149.7.16.188-8333 #1'
   network: ws
   port: 443
   server: 149.7.16.188
@@ -2192,7 +2186,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342,348|0|--38 #3'
+  name: '254,304,325,326,332,333,337,340,341,342,348|0|--38 #2'
   network: ws
   port: 443
   server: 149.7.16.102
@@ -2207,13 +2201,13 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,489|英国_0204067
+  name: '254,304,325,326,332,333,337,340,341,342|GB-217.163.76.147-8555 #1'
   network: ws
-  port: '443'
+  port: 443
   server: 217.163.76.147
   servername: ''
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
@@ -2222,7 +2216,7 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-38.114.120.211-8653 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-38.114.120.211-8590 #1'
   network: ws
   port: 443
   server: 38.114.120.211
@@ -2252,13 +2246,13 @@ proxies:
     path: /
 - alterId: 1
   cipher: auto
-  name: 254,304,325,326,332,333,337,340,341,342,348,489|英国_0204068
+  name: '254,304,325,326,332,333,337,340,341,342,348|@ShadowProxy66 🇬🇧 #1'
   network: ws
   port: '443'
   server: 172.99.190.228
-  servername: ''
+  servername: 172.99.190.228
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
@@ -2267,7 +2261,7 @@ proxies:
     path: linkvws
 - alterId: 64
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-51.89.122.175-8836 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-51.89.122.175-8773 #1'
   network: ws
   port: 30000
   server: 51.89.122.175
@@ -2280,7 +2274,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-51.89.2.48-8850 #8'
+  name: '254,304,325,326,332,333,337,340,341,342|🇬🇧GB-51.89.2.48-8787 #1'
   network: ws
   port: 30000
   server: 51.89.2.48
@@ -2295,7 +2289,7 @@ proxies:
     path: /
 - alterId: 64
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-83.142.225.59-9086 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇧GB-83.142.225.59-9023 #1'
   network: ws
   port: 30000
   server: 83.142.225.59
@@ -2737,8 +2731,8 @@ proxies:
   protocol-param: ''
   server: 62.100.205.48
   type: ssr
-- name: 296|🇬🇧_英国
-  network: ws
+- name: 296|🇬🇧_英国_8
+  network: tcp
   password: Aimer
   port: 2053
   server: 194.164.35.192
@@ -2746,23 +2740,6 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      host: ngepz.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: '296|🇬🇧_英国 #2'
-  network: ws
-  password: Aimer
-  port: 443
-  server: 51.44.86.78
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ngepz.ambercc.filegear-sg.me
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: "303|TG:@hkaa0|英国_3\r"
   password: W74XFALLLuw6m5IA
@@ -2865,37 +2842,37 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-0581 #1'
+  name: '326,342|🇧GB-78.129.253.9-0527 #1'
   password: G!yBwPWH3Vao
   port: 809
   server: 78.129.253.9
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇧GB-185.108.105.129-1519 #1'
+  name: '326,342|🇧GB-185.108.105.129-1420 #1'
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 185.108.105.129
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇧GB-86.106.136.125-1521 #1'
+  name: '326,342|🇧GB-86.106.136.125-1422 #1'
   password: WCuz7yrfZSCQQXSNrtGPz2HT
   port: 50168
   server: 86.106.136.125
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇬🇧GB-167.99.192.30-1558 #1'
+  name: '326,342|🇬🇧GB-167.99.192.30-1459 #1'
   password: HGBdOKdcIer5
   port: 3567
   server: 167.99.192.30
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-4397 #1'
+  name: '326,342|🇧GB-78.129.253.9-4299 #1'
   password: G!yBwPWH3Vao
   port: 810
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-4398 #1'
+  name: '326,342|🇧GB-78.129.253.9-4300 #1'
   password: G!yBwPWH3Vao
   port: 811
   server: 78.129.253.9
@@ -2907,19 +2884,19 @@ proxies:
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-4409 #1'
+  name: '326,342|🇧GB-78.129.253.9-4311 #1'
   password: G!yBwPWH3Vao
   port: 805
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-4410 #1'
+  name: '326,342|🇧GB-78.129.253.9-4312 #1'
   password: G!yBwPWH3Vao
   port: 808
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇧GB-78.129.253.9-4420 #1'
+  name: '326,342|🇧GB-78.129.253.9-4322 #1'
   password: G!yBwPWH3Vao
   port: 807
   server: 78.129.253.9
@@ -2931,7 +2908,7 @@ proxies:
   server: 78.129.253.9
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '326,342|🇬🇧GB-178.62.16.161-4641 #1'
+  name: '326,342|🇬🇧GB-178.62.16.161-4543 #1'
   password: Ultr@r00t_2017
   port: 811
   server: 178.62.16.161
