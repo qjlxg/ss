@@ -1,14 +1,13 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,25,28,144,223,227,228,304,325,326,332,333,337,340,341,342,354,355,356,357|🇯🇵
+  name: '18,25,28,223,227,228,304,325,326,332,333,337,340,341,342,354,355,356,357|🇯🇵
     日本 东京Amazon数据中心 #8'
   network: ws
   port: '33443'
   server: tls.19.node-for-bigairport.win
   servername: ''
   skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   udp: true
@@ -19,7 +18,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 18,92,174,184,223,227,228,232,233,239,352,354,355,356,357,393,394,397,419,479|Japan_Tokyo_vmess_1147
+  name: 18,92,174,184,223,227,228,232,239,352,354,355,356,357,393,394,396,397,419,479|Japan_Tokyo_vmess_1138
   network: tcp
   port: '39131'
   server: 45.159.51.161
@@ -29,7 +28,7 @@ proxies:
   uuid: 2abcabf6-d7bf-48eb-aed2-07f090b7008a
 - alterId: 0
   cipher: auto
-  name: 18,92,174,184,223,227,228,232,233,239,352,354,355,356,357,393,394,397,419,479|China_None_vmess_1148
+  name: 18,92,174,184,223,227,228,232,239,352,354,355,356,357,393,394,396,397,419,479|China_None_vmess_1139
   network: tcp
   port: '60717'
   server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
@@ -39,38 +38,22 @@ proxies:
   uuid: a173d4cd-4056-41dd-87a3-91c884e472fa
 - alterId: 0
   cipher: auto
-  name: '18,129,134,142,223,227,230,248,249,250,434,436,443,446,447,448,450,456|🔒
-    VM-TCP-NA 🇯🇵 JP-13.112.49.171:48897 #14'
+  name: '18,129,134,142,223,227,230,232,248,249,250,434,436,443,446,447,448,450,456,465,466|未知73
+    #5'
   network: tcp
   port: '48897'
   server: 13.112.49.171
   servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 3374de7b-61ca-4ef4-ae94-ad0e0e759db0
 - alterId: 0
   cipher: auto
-  name: '18,31,32,129,134,142,223,227,230,434,437,443,446,447,448,451,456|🔒 VM-WS-NA
-    🇯🇵 JP-156.246.94.94:433 #14'
-  network: ws
-  port: '433'
-  server: 156.246.94.94
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
   country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 18,80,129,134,142,153,160,161,165,166,171,191,194,207,223,227,230,249,250,255,300,320,322,323,324,374,434,436,443,446,447,448,450,456,467,468,477,484,489|日本_0206001
+  name: 18,80,129,134,142,153,160,161,165,166,171,191,194,207,223,227,230,232,249,250,255,281,282,283,284,300,320,322,323,324,374,434,436,443,446,447,448,450,456,465,466,467,468,477,484,489|日本_0206001
   network: tcp
   port: '1069'
   server: 152.69.197.60
@@ -82,22 +65,6 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
   version: '2'
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: '18,31,32,54,55,129,134,142,223,227,230,434,437,443,446,447,448,451,456|🔒
-    VM-WS-NA 🇯🇵 JP-150.230.61.110:23451 #14'
-  network: ws
-  port: '23451'
-  server: 150.230.61.110
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 39973186-8925-492a-8bce-13b0a1a93f59
-  ws-opts:
-    headers:
-      Host: 1-osaka-p.aboutanime.eu.org
-    path: /
 - cipher: aes-256-cfb
   name: '21,22,39,40,41,42|[SS] 🇯🇵 0,13|🇯🇵 日本特殊|@ripaojiedian #3'
   password: amazonskr05
@@ -105,11 +72,14 @@ proxies:
   server: 13.215.205.85
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: '21,22,30,35,36,41,42,46,47|[SS] 🇯🇵 SS-TCP-NA 🇯🇵 JP-156.231.104.15:18005 #3'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 21,22,30,35,36,41,42,46,47,465|未知101
   password: H0P889CX07EQNGNV
   port: 18005
   server: 156.231.104.15
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -121,7 +91,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: '21,22,191,326,342|🇵JP-18.183.142.200-5472 #1'
+  name: '21,22,68,191,326,342|🇵JP-18.183.142.200-5472 #1'
   password: amazonskr05
   port: 443
   server: 18.183.142.200
@@ -142,15 +112,15 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '23,24,41,42|[SS] 0|🇫🇷1 |  1.1MB/s #1'
-  password: ff196c3c-afb6-470b-bb90-8ce701224db1
+  name: 23,24,35,36,41,42,45,479|China_Guangzhou_ss_113
+  password: fe197ce2-2b1c-466d-b89e-a3cd986712ac
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 25,28,35,36,174,239,326,342,479|China_None_ss_1129
+  name: 25,28,35,36,174,239,326,342,396,479|China_None_ss_1122
   password: b2e5c36c-257c-4a11-ae20-4fb99d44606a
   port: 12012
   server: mdss-jp.04z3susick.download
@@ -159,7 +129,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 25,28,37,38,108,174,239,326,342,479|Singapore_Singapore_ss_1141
+  name: '25,28,35,36,108,174,239,326,342,396,479|Singapore_Singapore_ss_1132 #1'
   password: amazonskr05
   port: 443
   server: 47.129.38.168
@@ -167,19 +137,34 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: 35,36,191,326,342,465|🇵JP 76.0KB/s
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  cipher: aes-256-gcm
+  name: 33,34,35,36,46,47,465|未知116
+  password: D54PK5XJB9DYCJSR
+  port: 18003
+  server: 156.231.104.13
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
+  name: '33,34,37,38,46,47,53,69,312,329,336|🇯🇵JP-18.181.167.251-5981 | 19.737MB #1'
+  password: amazonskr05
+  port: 443
+  server: 18.181.167.251
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: 35,36,46,47,191,326,342,479|Japan_Tokyo_ss_118
+  name: '33,34,37,38,46,47,53,68,69,191,312,326,329,336,342|🇵JP-54.250.238.74-6111
+    #1'
+  password: amazonskr05
+  port: 443
+  server: 54.250.238.74
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇯🇵JP
+  name: '35,36,46,47,68,191,326,342|🇵JP-13.231.129.236-2206 #1'
   password: amazonskr05
   port: 443
   server: 13.231.129.236
@@ -210,21 +195,20 @@ proxies:
   server: 156.231.104.12
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: '35,36,46,47|[SS] 🇯🇵 SS-TCP-NA 🇯🇵 JP-156.231.104.23:18013 #3'
+  password: EJ3GOLPLAAUX9WCY
+  port: 18013
+  server: 156.231.104.23
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: '35,36,37,38,46,47,53,68,69,191,312,326,329,336,342|🇯🇵JP-18.179.118.124-0440
+  name: '35,36,37,38,46,47,53,69,191,312,326,329,336,342|🇯🇵JP-18.179.118.124-0440
     #1'
   password: amazonskr05
   port: 443
   server: 18.179.118.124
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '35,36,37,38,46,47,53,68,69,312,329,336|🇯🇵JP-18.181.167.251-5981 | 19.737MB
-    #1'
-  password: amazonskr05
-  port: 443
-  server: 18.181.167.251
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -244,7 +228,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '35,36,37,38,46,47,53,69,108,191,312,326,329,336,342|🇵JP-43.207.76.121-0439
+  name: '35,36,37,38,46,47,53,68,69,108,191,312,326,329,336,342|🇵JP-43.207.76.121-0439
     #1'
   password: amazonskr05
   port: 443
@@ -268,16 +252,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: '35,36,37,38,46,47,53,68,69,191,312,326,329,336,342|🇵JP-54.250.238.74-6111
-    #1'
-  password: amazonskr05
-  port: 443
-  server: 54.250.238.74
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: '35,36,37,38,46,47,53,108,191,326,329,336,342|🇯🇵JP-54.65.35.246-0438 #1'
+  name: '35,36,37,38,46,47,53,68,108,191,326,329,336,342|🇯🇵JP-54.65.35.246-0438 #1'
   password: amazonskr05
   port: 443
   server: 54.65.35.246
@@ -307,7 +282,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '39,40,41,42|[SS] 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian #7'
+  name: '39,40,41,42|[SS] 🇰🇷 13|🇰🇷 韩国特殊|@ripaojiedian #5'
   password: amazonskr05
   port: 443
   server: 43.206.239.0
@@ -366,7 +341,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 65,306|11-0331-JP
+  name: '65,306|11-0337-JP #1'
   network: ws
   port: 23451
   server: 1-osaka-p.aboutanime.eu.org
@@ -379,19 +354,6 @@ proxies:
   ws-opts:
     headers:
       Host: 1-osaka-p.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 65|16-0574-JP
-  network: ws
-  port: 80
-  server: 54.199.121.245
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a36cf530-3fa3-43a0-bb45-8a40ae498c79
-  ws-opts:
     path: /
 - cipher: aes-256-cfb
   country: 🇯🇵JP
@@ -545,7 +507,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '97,161,183,210,254,304,320,325,326,332,333,337,340,341,342,366,467,468,472,484|@Vip_Security
-    join us - 190
+    join us - 186
 
     '
   network: ws
@@ -1824,7 +1786,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: 191,326,342,487|speednode_0001
+  name: 191,326,342,396,487|speednode_0001
   password: amazonskr05
   port: 443
   server: 54.249.170.37
@@ -1893,7 +1855,7 @@ proxies:
     path: /cctv13/vmess_jpcf
 - alterId: 0
   cipher: auto
-  name: '206,274,403,484|@Vip_Security join us - 409
+  name: '206,274,403,484|@Vip_Security join us - 411
 
     '
   network: ws
@@ -3075,7 +3037,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇵JP-13.230.171.213-9091 #1'
+  name: 254,304,325,326,332,333,337,340,341,342,348|🇯🇵JP-13.230.171.213-3523
   network: ws
   port: 80
   server: 13.230.171.213
@@ -3085,6 +3047,8 @@ proxies:
   type: vmess
   uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - down: 1000
   name: 277|日本1🇯🇵
@@ -3563,34 +3527,6 @@ proxies:
   ws-opts:
     headers:
       Host: tls.12.node-for-bigairport.win
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 306|16-1002-JP
-  network: ws
-  port: 80
-  server: 54.199.121.245
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3c40b090-25b2-4985-8b62-4788ff740eb5
-  ws-opts:
-    headers:
-      Host: apple.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 306|16-1312-JP
-  network: ws
-  port: 80
-  server: 13.231.141.124
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a36cf530-3fa3-43a0-bb45-8a40ae498c79
-  ws-opts:
-    headers:
-      Host: apple.com
     path: /
 - alterId: 0
   cipher: auto
@@ -4127,7 +4063,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: none
-  name: '348,484|@Vip_Security join us - 55
+  name: '348,484|@Vip_Security join us - 54
 
     '
   network: tcp
@@ -4223,7 +4159,7 @@ proxies:
     path: /je5x3pBN1vez3NQudNkB
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0022-JP
+  name: 352|TG频道@mfbpn-022-JP
   network: ws
   port: 80
   server: 138.2.39.67
@@ -4237,7 +4173,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-0054-JP
+  name: 352|TG频道@mfbpn-054-JP
   network: ws
   port: 80
   server: 140.83.86.129
@@ -4245,20 +4181,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645b
-  ws-opts:
-    headers:
-      Host: None
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 352|TG频道@mfbpn-0674-JP
-  network: ws
-  port: 33443
-  server: tls.19.node-for-bigairport.win
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
   ws-opts:
     headers:
       Host: None

@@ -21,17 +21,25 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 25,28,35,36,45,65,84,174|China_None_ss_113
-  password: 8afea9fa-67e0-4ff1-8aa5-712601f2903f
+  name: 25,28,65,84|04-1A
+  password: 2e857e45-48f5-480e-8f72-05605de887f6
   port: 28864
   server: tw-04.douyucdn.top
   type: ss
   udp: true
 - cipher: aes-128-gcm
-  name: '25,28,35,36,45,174,326,342,479|China_None_ss_1118 #1'
+  name: '25,28,326,342|🇨🇳CN-183.236.51.6-2211 #1'
   password: abbd5857-d4ca-41ac-96ac-7e3b8ad4f0c6
   port: 12031
   server: mdss-tw.04z3susick.download
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼 TW
+  name: '33,34,46,47,191,326,342|🇹TW-2.58.241.42-5823 #1'
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: 2.58.241.42
   type: ss
   udp: true
 - name: '33,34,48,49|[Trojan] 🇨🇳 TR-WS-TLS 🇹🇼 TW-103.137.63.3:443 #3'
@@ -47,11 +55,14 @@ proxies:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
     path: ''
-- cipher: aes-128-gcm
-  name: '35,36,46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-1.170.218.238:30332 #3'
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 35,36,46,47,465|TW 537.1KB/s
   password: 79739832-b888-415a-a454-8b53911c944a
   port: 30332
   server: 1.170.218.238
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -61,17 +72,6 @@ proxies:
   password: qwerREWQ@@
   port: 64759
   server: 185.189.160.98
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  country: 🇹🇼 TW
-  name: 35,36,46,47,191,326,342,465|TW
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: 2.58.241.42
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
