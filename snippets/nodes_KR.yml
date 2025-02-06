@@ -1,4 +1,21 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: '18,31,32,129,134,142,223,227,230,434,437,444,446,447,448,451,457|🔒 VM-WS-TLS
+    🇰🇷 KR-220.123.48.124:30002 #20'
+  network: ws
+  port: '30002'
+  server: 220.123.48.124
+  servername: cc2.1808.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
+  ws-opts:
+    headers:
+      Host: cc2.1808.site
+    path: /hgqqvws
 - cipher: chacha20-ietf-poly1305
   name: 21,22,30|[SS] _中国 4
   password: d4eeaa7b-43c6-49dc-8020-7389bba4d033
@@ -8,7 +25,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: 21,22,25,28,35,36,46,47,191,326,342,487|speednode_0002
+  name: 21,22,33,34,46,47,68,191,326,329,336,342,487|speednode_0002
   password: amazonskr05
   port: 443
   server: 52.78.178.243
@@ -22,7 +39,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '23,24,41,42|[SS] 0|🇰🇷1 |  1.2MB/s #1'
+  name: 23,24,41|[SS] 0|🇰🇷1 |  1.2MB/s
   password: ff196c3c-afb6-470b-bb90-8ce701224db1
   port: 36311
   server: free.2weradf.xyz
@@ -43,34 +60,14 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 25,28,174,191,326,342,487|speednode_0009
-  password: amazonskr05
-  port: 443
-  server: 52.79.249.199
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 25,28,35,36,108,174,239,326,342,396,479|South Korea_Incheon_ss_1114
+  name: 25,28,35,36,108,174,239,326,342,396,411,479|South Korea_Incheon_ss_1127
   password: amazonskr05
   port: 443
   server: 3.35.138.163
   tfo: false
   type: ss
   udp: true
-- name: '25,28,35,36|[Trojan] 🇰🇷 KR韩国4 #1'
-  network: ws
-  password: Aimer
-  port: 16443
-  server: 220.94.7.86
-  skip-cert-verify: false
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ngepz.ambercc.filegear-sg.me
-    path: ''
 - alterId: 0
   cipher: auto
   name: '27,44|[VMess] 🇰🇷 VM-WS-NA 🇰🇷 KR-131.186.16.245:40471 #1'
@@ -102,51 +99,40 @@ proxies:
     headers:
       Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: '31,32,437,444,447,448,451,457|🔒 VM-WS-TLS 🇰🇷 KR-220.123.48.124:30002 #20'
-  network: ws
-  port: '30002'
-  server: 220.123.48.124
-  servername: cc2.1808.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d3d8b781-f30d-4902-8eb0-58b1ca936bec
-  ws-opts:
-    headers:
-      Host: cc2.1808.site
-    path: /hgqqvws
 - cipher: aes-256-cfb
-  country: 🇺🇸US
-  name: 33,34,39,40,46,47,191,326,342,487|speednode_0010
-  password: amazonskr05
-  port: 443
-  server: 43.201.102.200
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: 35,36,45,108,191,326,342,479,487|speednode_0004
-  password: amazonskr05
-  port: 443
-  server: 13.125.215.15
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 35,36,45,46,47,479|South Korea_None_ss_1110
+  name: '33,34,46,47,326,329,336,342|🇰🇷KR-13.124.222.109-0766 #1'
   password: amazonskr05
   port: 443
   server: 13.124.222.109
   type: ss
   udp: true
+- name: '35,36,326,342|🇷KR-220.94.7.86-1255 #1'
+  network: ws
+  password: Aimer
+  port: 16443
+  server: 220.94.7.86
+  skip-cert-verify: false
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ngepz.ambercc.filegear-sg.me
+    path: ''
 - cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: '35,36,39,40,41,42,46,47,80,191,326,342|KR-154.90.63.193-5833 #1'
+  name: '35,36,39,40,41,46,47,80,98,191,326,342|🇰KR-154.90.63.193-5845 #1'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.90.63.193
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  name: 35,36,39,40,46,47,191,326,342,487|speednode_0010
+  password: amazonskr05
+  port: 443
+  server: 43.201.102.200
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -158,7 +144,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '35,36,46,47,191,326,342|🇷KR-43.203.240.158-5479 #1'
+  name: '35,36,46,47,68,69,191,312,326,329,336,342|🇷KR-43.203.240.158-5491 #1'
   password: amazonskr05
   port: 443
   server: 43.203.240.158
@@ -180,14 +166,14 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇰🇷KR
-  name: '39,40,191,326,342|🇰🇷KR-43.203.203.14-5482 #1'
+  name: '39,40,191,326,342|🇰🇷KR-43.203.203.14-5494 #1'
   password: amazonskr05
   port: 443
   server: 43.203.203.14
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '41,42,326,342|🇷KR-52.78.41.246-0495 #1'
+  name: 41|[SS] 0|🇰🇷2 |  2.3MB/s
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: south-korea-3.keenvpn.me
@@ -226,21 +212,50 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '69,108,191,312,326,342|🇷KR-43.202.96.177-0442 #1'
+  name: '68,69,191,312,326,329,336,342|🇷KR-43.202.96.177-6066 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: south-korea-2.keenvpn.me
   type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 68,69,191,312,326,342,487|speednode_0004
+  password: amazonskr05
+  port: 443
+  server: 13.125.215.15
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇰🇷KR
+  name: 68,69,191,312,326,329,336,342,396|0|🇷1 |  9.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.34.123.239
+  type: ss
+- cipher: aes-256-cfb
+  name: 68,69,191,312,326,342,487|speednode_0009
+  password: amazonskr05
+  port: 443
+  server: 52.79.249.199
+  type: ss
+- cipher: aes-256-cfb
+  name: 69,191,312,326,329,336,342,487|speednode_0008
+  password: amazonskr05
+  port: 443
+  server: 3.35.133.189
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '72,465|未知85 #4'
+  fingerprint: ''
+  name: 72,177|4dff7ba4e53f4225b8585ce14a80c694_@_@Hope_Net-join-us-on-Telegram
   network: ws
   port: 30002
   server: 220.123.48.124
+  servername: obdii.cfd
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: false
   uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
   ws-opts:
     headers:
@@ -444,24 +459,24 @@ proxies:
   server: hg.fhxy.cf
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-43.202.49.222-9461 #1'
+  name: '161,326,342|🇷KR-43.202.49.222-9472 #1'
   password: doub.io
   port: 2333
   server: 43.202.49.222
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-43.201.108.109-9462 #1'
+  name: '161,326,342|🇷KR-43.201.108.109-9473 #1'
   password: amazonskr05
   port: 443
   server: 43.201.108.109
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇷KR-125.141.26.5-10060 #1'
+  name: '161,326,342|🇷KR-125.141.26.5-10071 #1'
   password: qwerREWQ@@
   port: 2003
   server: 125.141.26.5
   type: ss
-- name: 174,396,479|South Korea_Incheon_trojan_1140
+- name: 174,396,411,479|South Korea_Incheon_trojan_1136
   network: tcp
   password: '!!str 65086520307764900'
   port: 443
@@ -789,16 +804,9 @@ proxies:
   server: 13.125.19.50
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇰🇷KR
-  name: '191,326,342|🇰🇷KR-3.34.123.239-5481 #1'
-  password: amazonskr05
-  port: 443
-  server: 3.34.123.239
-  type: ss
 - alterId: 64
   cipher: auto
-  name: '210,254,304,325,326,332,333,337,340,341,342|🇷KR-27.124.8.141-1665 #1'
+  name: '210,254,304,325,326,332,333,337,340,341,342|🇷KR-27.124.8.141-1684 #1'
   network: ws
   port: 443
   server: 27.124.8.141
@@ -898,7 +906,7 @@ proxies:
   network: ws
   port: 80
   server: 152.69.230.170
-  servername: 152.69.230.170
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -907,7 +915,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '210,254,304,325,326,332,333,337,340,341,342|KR-131.186.24.103-2031 #1'
+  name: '210,254,304,325,326,332,333,337,340,341,342|KR-131.186.24.103-2050 #1'
   network: ws
   port: 443
   server: 131.186.24.103
@@ -956,7 +964,7 @@ proxies:
       host: kr-arm2.018999.xyz
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - cipher: aes-256-cfb
-  name: '210,326,342|🇷KR-43.201.48.212-2188 #1'
+  name: '210,326,342|🇷KR-43.201.48.212-2207 #1'
   password: amazonskr05
   port: 443
   server: 43.201.48.212
@@ -1139,7 +1147,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.78.213.224-1797 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.78.213.224-1816 #1'
   network: ws
   port: 80
   server: 52.78.213.224
@@ -1152,7 +1160,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.231.200.179-2039 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.231.200.179-2058 #1'
   network: ws
   port: 443
   server: fullaccesstokoreannetsubnode1.azurewebsites.net
@@ -1167,7 +1175,7 @@ proxies:
     path: /ws
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-146.56.47.1-2160 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-146.56.47.1-2179 #1'
   network: ws
   port: 443
   server: kr-arm2.018999.xyz
@@ -1182,7 +1190,7 @@ proxies:
     path: /e98fc1a0-9c52-4091-91a5-c159b0aa274e
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-161.129.34.102-2234 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-161.129.34.102-2246 #1'
   network: ws
   port: 443
   server: 161.129.34.102
@@ -1286,7 +1294,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-130.162.141.104-0890 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-130.162.141.104-0886 #1'
   network: ws
   port: 443
   server: 130.162.141.104
@@ -1299,7 +1307,7 @@ proxies:
     path: /reffs7y26g0ua
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-146.56.162.25-0835 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-146.56.162.25-0831 #1'
   network: ws
   port: 443
   server: 146.56.162.25
@@ -1329,7 +1337,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-54.180.114.77-6774 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-54.180.114.77-6786 #1'
   network: ws
   port: 42517
   server: 54.180.114.77
@@ -1342,7 +1350,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-211.177.40.235-8146 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-211.177.40.235-8158 #1'
   network: ws
   port: 30001
   server: 211.177.40.235
@@ -1355,7 +1363,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-1.238.102.214-8147 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-1.238.102.214-8159 #1'
   network: ws
   port: 30001
   server: 1.238.102.214
@@ -1383,7 +1391,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇰🇷KR-138.2.123.70-8567 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇰🇷KR-138.2.123.70-8579 #8'
   network: ws
   port: 443
   server: 138.2.123.70
@@ -1413,7 +1421,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-152.70.232.151-8570 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-152.70.232.151-8582 #1'
   network: ws
   port: 443
   server: 152.70.232.151
@@ -1547,7 +1555,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇷KR-52.78.156.107-9092 #1'
+  name: 254,304,325,326,332,333,337,340,341,342,348|🇰🇷KR-52.78.156.107-3521
   network: ws
   port: 80
   server: 52.78.156.107
@@ -1557,10 +1565,12 @@ proxies:
   type: vmess
   uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇰🇷KR-3.38.179.76-9094 #1'
+  name: 254,304,325,326,332,333,337,340,341,342,348|🇰🇷KR-3.38.179.76-3509
   network: ws
   port: 80
   server: 3.38.179.76
@@ -1570,19 +1580,22 @@ proxies:
   type: vmess
   uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,326,342|🇷KR-43.201.48.75-9095 #1'
+  name: 254,348|🇰🇷KR-43.201.48.75-3507
   network: ws
   port: 80
   server: 43.201.48.75
   servername: ''
-  skip-cert-verify: false
   tls: false
   type: vmess
   uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650
   ws-opts:
+    headers:
+      Host: ''
     path: /
 - alterId: 0
   cipher: auto
@@ -1640,41 +1653,18 @@ proxies:
     headers:
       Host: amd2.720208.xyz
     path: /?ed=2048
-- name: 279|🇰🇷韩国01|流媒体|Udp-569
-  password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa
-  port: 1001
-  server: kr.1010520.xyz
-  skip-cert-verify: false
-  sni: kr.1010520.xyz
-  type: hysteria2
-  udp: true
-- name: 279|🇰🇷韩国02|流媒体|Udp-569
-  password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa
-  port: 1002
-  server: kr.1010520.xyz
-  skip-cert-verify: false
-  sni: kr.1010520.xyz
-  type: hysteria2
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 279|🇰🇷韩国03|流媒体|专线1-569
-  password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa
-  port: 18119
-  server: zx1.1010520.xyz
+- cipher: aes-128-gcm
+  name: 277|韩国・01
+  password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49
+  port: 15821
+  server: kr-01.baiducdn.icu
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 279|🇰🇷韩国04|流媒体|专线2-569
-  password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa
-  port: 18119
-  server: zx2.1010520.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 279|🇰🇷韩国05|流媒体|专线3-569
-  password: 75f1d0c9-9d5b-4885-8b82-fb668402a3aa
-  port: 18119
-  server: zx3.1010520.xyz
+- cipher: aes-128-gcm
+  name: 277|韩国・02
+  password: 46064d96-2a22-4fd3-b5b5-18cf8fa81a49
+  port: 15822
+  server: kr-02.baiducdn.icu
   type: ss
   udp: true
 - alterId: 2
@@ -1774,97 +1764,16 @@ proxies:
   port: 58368
   server: p199.panda003.net
   type: ss
-- name: 296|🇰🇷_韩国_7
+- name: 296|🇰🇷_韩国_2
   network: tcp
   password: Aimer
-  port: 35531
-  server: 59.0.201.231
+  port: 12578
+  server: 14.38.83.195
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
 - name: 296|🇰🇷_韩国_8
-  network: tcp
-  password: Aimer
-  port: 10033
-  server: 119.198.67.48
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_11
-  network: tcp
-  password: Aimer
-  port: 19222
-  server: 175.201.220.169
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_12
-  network: tcp
-  password: Aimer
-  port: 38520
-  server: 121.144.225.213
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_16
-  network: tcp
-  password: Aimer
-  port: 12462
-  server: 59.22.140.62
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_17
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 125.128.227.141
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_21
-  network: tcp
-  password: Aimer
-  port: 50000
-  server: 221.149.132.232
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_24
-  network: tcp
-  password: Aimer
-  port: 12462
-  server: 220.117.126.46
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_25
-  network: tcp
-  password: Aimer
-  port: 29798
-  server: 119.202.158.65
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_28
-  network: tcp
-  password: Aimer
-  port: 14524
-  server: 211.199.65.186
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_29
   network: tcp
   password: Aimer
   port: 50000
@@ -1873,25 +1782,61 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_30
+- name: 296|🇰🇷_韩国_11
   network: tcp
   password: Aimer
-  port: 12101
-  server: 14.41.85.118
+  port: 10083
+  server: 220.94.139.69
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_32
+- name: 296|🇰🇷_韩国_12
   network: tcp
   password: Aimer
-  port: 17100
-  server: 210.222.30.180
+  port: 18245
+  server: 121.137.2.55
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_33
+- name: 296|🇰🇷_韩国_13
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 211.57.90.42
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_14
+  network: tcp
+  password: Aimer
+  port: 12462
+  server: 220.117.126.46
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_15
+  network: tcp
+  password: Aimer
+  port: 50003
+  server: 175.215.175.175
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_18
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 221.165.64.92
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_19
   network: tcp
   password: Aimer
   port: 50000
@@ -1900,7 +1845,61 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_34
+- name: 296|🇰🇷_韩国_21
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 125.128.227.141
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_23
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 121.181.209.121
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_24
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 175.208.140.189
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_26
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 221.149.132.232
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_28
+  network: tcp
+  password: Aimer
+  port: 11112
+  server: 14.56.139.220
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_30
+  network: tcp
+  password: Aimer
+  port: 35531
+  server: 59.0.201.231
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_31
   network: tcp
   password: Aimer
   port: 50000
@@ -1909,16 +1908,16 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_36
+- name: 296|🇰🇷_韩国_32
   network: tcp
   password: Aimer
-  port: 50000
-  server: 211.252.12.227
+  port: 10033
+  server: 119.198.67.48
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- name: 296|🇰🇷_韩国_37
+- name: 296|🇰🇷_韩国_34
   network: tcp
   password: Aimer
   port: 16992
@@ -1927,31 +1926,83 @@ proxies:
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
+- name: 296|🇰🇷_韩国_35
+  network: tcp
+  password: Aimer
+  port: 12452
+  server: 121.132.58.142
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_36
+  network: tcp
+  password: Aimer
+  port: 12462
+  server: 59.22.140.62
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_37
+  network: tcp
+  password: Aimer
+  port: 14524
+  server: 211.199.65.186
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
 - name: 296|🇰🇷_韩国_38
   network: tcp
   password: Aimer
-  port: 50000
-  server: 112.170.255.67
+  port: 29798
+  server: 119.202.158.65
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
   udp: true
-- alterId: 0
-  name: 296,465|🇰🇷KR韩国4
-  network: ws
-  password: Aimer
-  port: 16443
-  server: 220.94.7.86
-  skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- name: 296|🇰🇷_韩国_41
+- name: 296|🇰🇷_韩国_39
   network: tcp
   password: Aimer
-  port: 12150
-  server: 125.130.105.60
+  port: 38520
+  server: 121.144.225.213
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_40
+  network: tcp
+  password: Aimer
+  port: 12101
+  server: 14.41.85.118
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_44
+  network: tcp
+  password: Aimer
+  port: 19222
+  server: 175.201.220.169
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_45
+  network: tcp
+  password: Aimer
+  port: 50000
+  server: 121.137.62.90
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇰🇷_韩国_46
+  network: tcp
+  password: Aimer
+  port: 17100
+  server: 210.222.30.180
   skip-cert-verify: true
   sni: ngepz.ambercc.filegear-sg.me
   type: trojan
@@ -2018,20 +2069,51 @@ proxies:
   ws-path: /vmess
 - alterId: 0
   cipher: auto
-  name: '304,325,332,333,337,340,341|🇰🇷KR-13.124.2.247-0004 #6'
+  name: '304,325,326,332,333,337,340,341,342|🇰🇷KR-59.24.3.174-0033 #8'
   network: ws
-  port: 1234
-  server: 13.124.2.247
+  port: 16637
+  server: m.lwvzmdu.cn
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 8220bfee-84c6-40e3-d628-9e1c2c1cc8bd
+  uuid: d6eb1026-91a9-453d-aefe-5048303dd951
   ws-opts:
     headers:
-      Host: ''
-    path: /bb
+      Host: m.lwvzmdu.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '304,325,326,332,333,337,340,341,342|🇰🇷KR-59.24.3.174-0008 #8'
+  network: ws
+  port: 16616
+  server: m.lwvzmdu.cn
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d6eb1026-91a9-453d-aefe-5048303dd951
+  ws-opts:
+    headers:
+      Host: m.lwvzmdu.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '304,325,326,332,333,337,340,341,342|🇰🇷KR-59.24.3.174-0007 #8'
+  network: ws
+  port: 16620
+  server: m.lwvzmdu.cn
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d6eb1026-91a9-453d-aefe-5048303dd951
+  ws-opts:
+    headers:
+      Host: m.lwvzmdu.cn
+    path: /
 - cipher: aes-256-cfb
-  name: '318,326,342|🇷KR-3.36.118.190-5171 #1'
+  name: '318,326,342|🇷KR-3.36.118.190-5183 #1'
   password: amazonskr05
   port: 443
   server: 3.36.118.190
@@ -2133,38 +2215,20 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-256-cfb
-  name: '326,342|🇷KR-52.78.197.177-0777 #1'
-  password: amazonskr05
-  port: 443
-  server: 52.78.197.177
-  type: ss
-- name: '326,342|🇷KR-210.222.30.180-1238 #1'
-  network: ws
-  password: Aimer
-  port: 17100
-  server: 210.222.30.180
-  skip-cert-verify: false
-  sni: ngepz.ambercc.filegear-sg.me
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ngepz.ambercc.filegear-sg.me
-    path: ''
 - cipher: aes-256-gcm
-  name: '326,342|🇰🇷KR-141.164.39.146-2239 #1'
+  name: '326,342|🇰🇷KR-141.164.39.146-2251 #1'
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 141.164.39.146
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇷KR-158.247.205.87-2266 #1'
+  name: '326,342|🇷KR-158.247.205.87-2278 #1'
   password: Y6R9pAtvxxzmGC
   port: 5601
   server: 158.247.205.87
   type: ss
 - cipher: aes-256-gcm
-  name: '326,342|🇷KR-158.247.205.87-2267 #1'
+  name: '326,342|🇷KR-158.247.205.87-2279 #1'
   password: pKEW8JPByTVTLtM
   port: 443
   server: 158.247.205.87
@@ -2207,7 +2271,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '326,342|🇰🇷KR-146.56.133.140-9078 #1'
+  name: '326,342|🇰🇷KR-146.56.133.140-9090 #8'
   network: ws
   port: 2083
   server: 146.56.133.140
@@ -2249,7 +2313,7 @@ proxies:
     path: /obdii.cfd:443/linkws
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-096-KR
+  name: 352|TG频道@mfbpn-0191-KR
   network: ws
   port: 80
   server: 152.69.230.170
