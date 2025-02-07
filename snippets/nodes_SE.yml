@@ -1,8 +1,56 @@
 proxies:
+- cipher: aes-256-cfb
+  country: 🇦🇫AF
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
+    | 35.251MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇸🇪 SE
+  name: '21,22,37,38,41,42,53,54,55,69,80,191,312,326,342|🇪SE-46.246.98.155-5717 #1'
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇮🇷 IR
+  name: '21,22,35,36,37,38,46,47,53,69,191,312,326,342|🇸SE-62.60.151.134-5645 #1'
+  password: vkQP4Fe2dFEA1rdWx0lAjH
+  port: 60758
+  server: 62.60.151.134
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,80,191,326,342|🇪SE-94.228.165.178-5714
+    #1'
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '35,36,46,47|[SS] SS-TCP-NA 🇸🇪 SE-46.246.93.24:989 #3'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.246.93.24
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '39,40|[SS] SS-TCP-NA 🇸🇪 SE-46.246.98.130:8388 #1'
+  password: xg58DFW7vp4z0Czr
+  port: 8388
+  server: 46.246.98.130
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 18,33,34,52,54,55,129,134,142,194,223,227,231,248|DE🇩🇪 | De1.vmess.site.-2052
-    | 108.11ms
+  name: '52,54,55,194,248,437,443,447,448,451,456|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.91:2052
+    #5'
   network: ws
   port: '2052'
   server: 185.146.173.91
@@ -16,67 +64,6 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
-- cipher: aes-256-cfb
-  country: 🇦🇫AF
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
-    | 35.251MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '35,36,46,47|[SS] SS-TCP-NA 🇸🇪 SE-46.246.93.24:989 #3'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.246.93.24
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇷🇺RU
-  name: '35,36,37,38,39,40,41,42,46,47,53,54,55,80,82,98,191,326,342|🇪SE-94.228.165.178-5714
-    #1'
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇸🇪 SE
-  name: '37,38,41,42,53,54,55,68,69,80,82,191,312,326,342|🇪SE-46.246.98.155-5717 #1'
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '39,40|[SS] SS-TCP-NA 🇸🇪 SE-46.246.98.130:8388 #1'
-  password: xg58DFW7vp4z0Czr
-  port: 8388
-  server: 46.246.98.130
-  type: ss
-  udp: true
-- country: 🇸🇪SE
-  name: 82|🇸🇪SE_410
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.21.91.17
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- alterId: 0
-  country: 🇸🇪SE
-  name: 82,465|未知127
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 51.20.100.246
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - name: 115|SE(AzadNet.t.me)_001
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -84,6 +71,13 @@ proxies:
   server: jp2.twincloud.xyz
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 115,183,326,342,343|Aloha+Greece+🇬🇷+Thessaloniki_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.102
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -99,6 +93,14 @@ proxies:
     headers:
       host: jahfkjha.cfd
     path: /linkws
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: '115,183,191,326,342|GR-192.71.166.100-6279 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 115,183,467|21|_437
   password: f8f7aCzcPKbsF8p3

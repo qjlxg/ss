@@ -1,5 +1,12 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: '21,22,25,28|[SS] 0|🇹🇼1 |  1.1MB/s #1'
+  password: 43af8cd1-b378-490e-bccf-f04628bc8db4
+  port: 41004
+  server: vip.baima360.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: '23,24|[SS] 🇨🇳 台湾 01 | 1x TW #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
   port: 36241
@@ -7,7 +14,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 23,24,396|0|1 |  5.5MB/s
+  name: 23,24,37,38,45,479|China_Guangzhou_ss_112
   password: 7d19195d-7a87-4496-973d-9b5becd71031
   port: 36243
   server: free.2weradf.xyz
@@ -18,13 +25,6 @@ proxies:
   password: 010c711e-43db-4e95-88f8-20de04384718
   port: 36245
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 25,28,37,38,45,411|0|1 |  1.1MB/s
-  password: 43af8cd1-b378-490e-bccf-f04628bc8db4
-  port: 41004
-  server: vip.baima360.com
   type: ss
   udp: true
 - name: '33,34,48,49|[Trojan] 🇨🇳 TR-WS-TLS 🇹🇼 TW-103.137.63.3:443 #3'
@@ -40,9 +40,16 @@ proxies:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
     path: ''
+- cipher: aes-128-gcm
+  name: '35,36,46,47|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-1.170.218.238:30332 #3'
+  password: 79739832-b888-415a-a454-8b53911c944a
+  port: 30332
+  server: 1.170.218.238
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🇹🇼TW
-  name: 35,36,39,40,46,47,82,108,191,326,329,336,342,463|🇨🇳TW-185.189.160.98-3166
+  name: 35,36,39,40,46,47,68,108,191,326,329,336,342,463|🇨🇳TW-185.189.160.98-3166
     | 18.035MB
   password: qwerREWQ@@
   port: 64759
@@ -51,7 +58,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇹🇼 TW
-  name: '35,36,46,47,82,98,191,326,342|🇹TW-2.58.241.42-5719 #1'
+  name: '35,36,46,47,191,326,342|🇹TW-2.58.241.42-5719 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
@@ -65,34 +72,12 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇭🇰HK
-  name: 39,40,82|🇭🇰HK_1159
+  name: '39,40|[SS] 🇨🇳 SS-TCP-NA 🇹🇼 TW-154.223.20.79:989 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: '82|disney_netflix_TW #1'
-  password: 2e87aa0f-c524-4f98-ad30-1d1017a0d3c5
-  port: 30002
-  server: gdgs.tarioblink.me
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: '82,191,326,342|🇹🇼TW-1.162.168.216-1344 #1'
-  password: 25bb46e8-d80f-4b48-9272-7129e88366b2
-  port: 30443
-  server: tw1.ydso.xyz
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇹🇼TW
-  name: '82,191,326,342|TW-2.58.241.42-5982 #1'
-  password: 2afbc97400ca71c8f3306f9843a6e1c2
-  port: 443
-  server: taiwan-2.keenvpn.me
-  type: ss
 - alterId: 0
   cipher: auto
   name: 85|台湾2
@@ -184,13 +169,6 @@ proxies:
     headers:
       host: oplg1.cfcdn2.xyz
     path: /AUIKN8AU
-- cipher: aes-128-gcm
-  country: 🇼 TW
-  name: 98|🇼 TW_396
-  password: 79739832-b888-415a-a454-8b53911c944a
-  port: 30332
-  server: vps.200566.xyz
-  type: ss
 - alterId: 16
   cipher: auto
   name: '116,117|台湾_010309115 M45 #1'
@@ -994,6 +972,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cb7001c7-e495-41ac-b942-f25f60523414
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: '191,326,342|TW-2.58.241.42-5982 #1'
+  password: 2afbc97400ca71c8f3306f9843a6e1c2
+  port: 443
+  server: taiwan-2.keenvpn.me
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇹🇼TW
+  name: '191,326,342|🇹🇼TW-1.162.168.216-1344 #1'
+  password: 25bb46e8-d80f-4b48-9272-7129e88366b2
+  port: 30443
+  server: tw1.ydso.xyz
+  type: ss
 - alterId: 1
   cipher: auto
   name: '210,254,304,325,326,332,333,337,340,341,342|🇹🇼TW-1.161.186.146-1861 #8'

@@ -34,27 +34,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '18,21,22,25,28,41,42,54,55,107,108,199,200,223,227,228,248,254,304,325,326,329,332,333,336,337,340,341,342,354,355,356,357,463,478|🏁RELAY-104.16.155.10-0242
+  name: '18,21,22,25,28,41,42,54,55,107,108,144,199,200,223,227,228,248,254,304,325,326,329,332,333,336,337,340,341,342,352,354,355,356,357,463,478|🏁RELAY-104.16.155.10-0242
     #3'
   network: ws
   port: 80
   server: 104.16.155.10
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e6543319-0574-42ac-b778-1c4325d626f5
-  ws-opts:
-    headers:
-      Host: chunchuan.kejixiaoqi666.store
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 18,21,22,25,28,41,42,54,55,107,108,144,199,200,223,227,228,304,319,325,326,329,332,333,336,337,340,341,342,352,354,355,356,357,463,478|🏁RELAY-198.41.209.70-1231
-  network: ws
-  port: 80
-  server: 198.41.209.70
   servername: ''
   skip-cert-verify: false
   tfo: false
@@ -68,20 +52,82 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '18,32,33,34,129,134,142,223,227,231|🔒 VM-WS-NA 🇸🇬 SG-140.245.43.84:23452
-    #6'
+  name: 18,21,22,25,28,41,42,54,55,107,108,199,200,223,227,228,304,319,325,326,329,332,333,336,337,340,341,342,354,355,356,357,463,478|🏁RELAY-198.41.209.70-1231
   network: ws
-  port: '23452'
-  server: 140.245.43.84
+  port: 80
+  server: 198.41.209.70
+  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    headers:
+      Host: chunchuan.kejixiaoqi666.store
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '18,129,134,142,223,227,231,434,437,443,446,447,448,451,456|🔒 VM-WS-NA 🇸🇬
+    SG-140.245.40.139:23452 #14'
+  network: ws
+  port: '23452'
+  server: 140.245.40.139
+  tls: false
+  type: vmess
   uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
+- cipher: aes-256-cfb
+  name: '21,22,25,28|[SS] 0|🇸🇬1 |  10.9MB/s #1'
+  password: amazonskr05
+  port: 443
+  server: 54.179.0.37
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '21,22,25,28,35,36,46,47,68,191,326,342|🇬SG-13.229.229.102-5975 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.229.102
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '21,22,25,28,35,36,46,47,68,191,326,342|🇬SG-18.136.211.144-5972 #1'
+  password: amazonskr05
+  port: 443
+  server: 18.136.211.144
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '21,22,25,28,35,36,46,47,68,108,191,326,329,336,342|🇸🇬SG-18.141.24.255-0543
+    #2'
+  password: amazonskr05
+  port: 443
+  server: 18.141.24.255
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '21,22,25,28,108,326,342|🇬SG-13.250.99.8-0854 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.250.99.8
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 21,22,25,28,37,38,108,174,239,326,342,479|China_None_ss_1132
+  password: UEC9F1QB458GMQEK
+  port: 16010
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: '21,22,30,35,36,39,40,41,42,46,47|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-154.196.244.22:16012
     #5'
@@ -90,22 +136,12 @@ proxies:
   server: 154.196.244.22
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 21,22,30,35,36,39,40,41,42,46,47,465|未知64
+- cipher: aes-256-gcm
+  name: '21,22,30,35,36,39,40,41,42,46,47|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-154.196.244.13:16003
+    #5'
   password: 5OC1DLZMW4HTN4SU
   port: 16003
   server: 154.196.244.13
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇨🇳CN
-  name: 21,22,30,41,42,82|Relay_🇨🇳CN-🇸🇬SG_326
-  password: 3FB23A19-9424-40C7-9139-3540228283FA
-  port: 40005
-  server: 103.216.253.197
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -118,39 +154,154 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇮🇳IN
-  name: '21,22,35,36,37,38,46,47,53,68,69,82,108,191,287,312,326,329,336,342|SG-103.106.229.219-0523
+  name: '21,22,35,36,37,38,46,47,53,68,69,108,191,287,312,326,329,336,342|SG-103.106.229.219-0523
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.106.229.219
   type: ss
   udp: true
+- cipher: rc4-md5
+  country: 🏁 ZZ
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇸🇬SG-128.199.172.224-3377
+    | 29.667MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.199.172.224
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: '21,22,35,36,46,47,82,191,326,342|🇬SG-13.212.249.95-6229 #1'
+  name: '21,22,35,36,46,47,191,326,342|🇬SG-13.212.249.95-6229 #1'
   password: amazonskr05
   port: 443
   server: 13.212.249.95
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '21,22,39,40|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-47.128.217.182:443 #1'
-  password: amazonskr05
-  port: 443
-  server: 47.128.217.182
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: 21,22,35,36,41,42,46,47,54,55,82,108,191,326,329,336,342,465|未知58 475.1KB/s
+  name: '21,22,35,36,41,42,46,47,54,55,68,108,191,326,329,336,342|🇸🇬SG-64.176.85.73-0563
+    #2'
   password: oXGp1+ihlfKg826H
   port: 1866
   server: 64.176.85.73
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
+- cipher: rc4-md5
+  country: 🏁 ZZ
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.236-3228
+    | 29.344MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.236
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  country: 🏁 ZZ
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.4-3315
+    | 29.836MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  country: 🏁 ZZ
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.45-3183
+    | 28.2MB
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '21,22,69,71,304,312,325,326,332,333,337,340,341,342|RELAY-104.16.155.10-5337
+    #1'
+  network: ws
+  port: 80
+  server: 104.16.155.10
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '21,22,69,71,191,304,312,325,326,332,333,337,340,341,342|🏁RELAY-104.17.213.241-6054
+    #8'
+  network: ws
+  port: 80
+  server: 104.17.213.241
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '21,22,191,304,325,326,332,333,337,340,341,342|🏁RELAY-104.17.221.248-6057
+    #8'
+  network: ws
+  port: 80
+  server: 104.17.221.248
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '21,22,69,71,304,312,325,326,332,333,337,340,341,342|🏁RELAY-104.19.48.236-5338
+    #8'
+  network: ws
+  port: 80
+  server: 104.19.48.236
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🏁ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: '21,22,69,71,191,304,312,325,326,332,333,337,340,341,342|🏁RELAY-198.41.209.70-6095
+    #8'
+  network: ws
+  port: 80
+  server: 198.41.209.70
+  servername: chunchuan.kejixiaoqi666.store
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e6543319-0574-42ac-b778-1c4325d626f5
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: '23,24,41,42|[SS] 0|🇸🇬1 |  3.1MB/s #1'
   password: ff196c3c-afb6-470b-bb90-8ce701224db1
@@ -172,67 +323,7 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 25,28,37,38,45,82,411|0|1 |  10.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.179.0.37
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 25,28,35,36,37,38,45,46,47,68,82,191,326,342,411|0|🇸🇬2 |  4.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.229.229.102
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 255
-  name: 25,28,35,36,37,38,45,46,47,68,82,191,326,342,411|0|🇬3 |  6.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.136.211.144
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 25,28,35,36,37,38,45,46,47,68,82,108,191,326,329,336,342,411|0|🇸🇬4 |  2.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.141.24.255
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 25,28,37,38,45,82,108,326,342,411,479|Singapore_Singapore_ss_1110
-  password: amazonskr05
-  port: 443
-  server: 13.250.99.8
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 25,28,37,38,108,239,326,342,396,411,479|China_None_ss_1132
-  password: UEC9F1QB458GMQEK
-  port: 16010
-  server: w72tapyb.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  country: 🇰🇷KR
-  name: 25,28,35,36,37,38,46,47,53,82,108,239,326,342,396,411,479|South Korea_None_ss_1115
-  password: amazonskr05
-  port: 443
-  server: 13.125.94.61
-  tfo: false
-  type: ss
-  udp: true
-- name: '33,34,48,49|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.49.166:8443 #3'
+- name: '33,34,37,38,48,49|[Trojan] 🇸🇬 TR-WS-TLS 🇸🇬 SG-27.50.49.166:8443 #3'
   network: ws
   password: Aimer
   port: 8443
@@ -258,18 +349,26 @@ proxies:
     headers:
       Host: ngepx.ambercc.filegear-sg.me
     path: ''
-- cipher: rc4-md5
-  country: 🏁 ZZ
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342,463|🇸🇬SG-128.199.172.224-3377
-    | 29.667MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.199.172.224
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '33,34,484|@Vip_Security join us - 175
+
+    '
+  network: ws
+  port: '23452'
+  server: 140.245.34.135
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
+  ws-opts:
+    headers:
+      Host: westsg2-ddns.oraclenat.cc
+    path: /
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 35,36,46,47,108,191,326,342,479,487|speednode_0006
+  name: 35,36,46,47,68,108,191,326,342,487|speednode_0006
   password: amazonskr05
   port: 443
   server: 13.212.113.186
@@ -277,7 +376,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '35,36,46,47,82,108,191,326,329,336,342|🇬SG-13.250.112.201-0537 #1'
+  name: '35,36,46,47,108,191,326,329,336,342|🇬SG-13.250.112.201-0537 #1'
   password: amazonskr05
   port: 443
   server: 13.250.112.201
@@ -291,8 +390,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇮🇷IR
-  name: 35,36,39,40,46,47,82|🇮🇷IR_1181
+  name: '35,36,39,40,46,47|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-188.253.5.199:40005 #5'
   password: 3FB23A19-9424-40C7-9139-3540228283FA
   port: 40005
   server: 188.253.5.199
@@ -300,7 +398,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '35,36,46,47,82,191,326,342|🇸SG-52.74.90.75-6165 #1'
+  name: '35,36,46,47,191,326,342|🇸SG-52.74.90.75-6165 #1'
   password: amazonskr05
   port: 443
   server: 52.74.90.75
@@ -308,7 +406,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '35,36,46,47,69,82,108,191,312,326,329,336,342|🇸🇬SG-54.255.245.79-0540 #1'
+  name: '35,36,46,47,69,108,191,312,326,329,336,342|🇸🇬SG-54.255.245.79-0540 #1'
   password: amazonskr05
   port: 443
   server: 54.255.245.79
@@ -321,31 +419,18 @@ proxies:
   server: 68.183.190.16
   type: ss
   udp: true
-- cipher: rc4-md5
-  country: 🏁 ZZ
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.236-3228
-    | 29.344MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
+- cipher: aes-256-cfb
+  name: '39,40,41,42|[SS] 🇯🇵 0,13|🇯🇵 日本特殊|@ripaojiedian #1'
+  password: amazonskr05
+  port: 443
+  server: 13.215.205.85
   type: ss
   udp: true
-- cipher: rc4-md5
-  country: 🏁 ZZ
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.45-3183
-    | 28.2MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.45
-  type: ss
-  udp: true
-- cipher: rc4-md5
-  country: 🏁 ZZ
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342,463|🇸🇬SG-68.183.227.4-3315
-    | 29.836MB
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.4
+- cipher: aes-256-cfb
+  name: '39,40|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-13.229.117.61:443 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.117.61
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -385,10 +470,17 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: 39,40,69,82,191,312,326,342,479|Singapore_Singapore_ss_1116
+  name: '39,40,69,191,312,326,342|🇸🇬SG-18.141.177.51-0860 #1'
   password: amazonskr05
   port: 443
   server: 18.141.177.51
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '39,40|[SS] 🇸🇬 SS-TCP-NA 🇸🇬 SG-47.128.217.182:443 #1'
+  password: amazonskr05
+  port: 443
+  server: 47.128.217.182
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -451,7 +543,7 @@ proxies:
     path: /images
 - alterId: 0
   cipher: auto
-  name: 65,85,306|17-2153-SG
+  name: 65,85,306|17-1902-SG
   network: ws
   port: 23452
   server: westsg2-ddns.oraclenat.cc
@@ -460,42 +552,35 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: e0375875-9029-487f-8114-cc52fd52e934
+  uuid: cd468d68-85f6-4d31-9efe-61fea1d4c8e4
   ws-opts:
     headers:
       Host: westsg2-ddns.oraclenat.cc
     path: /
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '68,82,191,326,342|🇸🇬SG-13.229.128.74-1355 #2'
+  name: '68,191,326,342|🇸🇬SG-18.143.78.171-5979 #2'
   password: amazonskr05
   port: 443
-  server: 13.229.128.74
+  server: 18.143.78.171
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '68,82,191,326,342|🇬SG-47.129.207.193-6167 #1'
-  password: amazonskr05
-  port: 443
-  server: 47.129.207.193
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: '68,82,191,326,342|🇸🇬SG-52.77.240.71-6168 #2'
+  name: '68,191,326,342|🇸🇬SG-52.77.240.71-6168 #2'
   password: amazonskr05
   port: 443
   server: 52.77.240.71
   type: ss
 - cipher: aes-256-cfb
   country: 🇸🇬SG
-  name: '68,82,191,326,342|🇸🇬SG-13.229.199.138-5973 #2'
+  name: '68,191,326,342|🇬SG-13.250.47.75-5969 #1'
   password: amazonskr05
   port: 443
-  server: 13.229.199.138
+  server: 13.250.47.75
   type: ss
 - cipher: aes-256-cfb
   country: 🇺🇸US
-  name: '69,82,108,191,312,326,342,479|Singapore_Singapore_ss_1111 #1'
+  name: '69,108,191,312,326,342|🇸🇬SG-47.129.255.141-0855 #1'
   password: amazonskr05
   port: 443
   server: 47.129.255.141
@@ -503,7 +588,37 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 72|🇸🇬SG | 🟢 | vmess | @Hope_Net | 4
+  name: 72|🇸🇬SG | 🟢 | vmess | @Hope_Net | 0
+  network: ws
+  port: 23452
+  server: 140.245.34.135
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
+  ws-opts:
+    headers:
+      host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 72|🇸🇬SG | 🟢 | vmess | @Hope_Net | 1
+  network: ws
+  port: 23452
+  server: 140.245.43.84
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
+  ws-opts:
+    headers:
+      host: westsg2-ddns.oraclenat.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 72|🇸🇬SG | 🟢 | vmess | @Hope_Net | 7
   network: ws
   port: 23452
   server: 140.245.58.215
@@ -559,27 +674,6 @@ proxies:
   sni: choice-condor.treefrog761.one
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: '82,191,326,342|🇬SG-13.250.47.75-5969 #1'
-  password: amazonskr05
-  port: 443
-  server: 13.250.47.75
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 82|🇸🇬SG_94
-  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
-  port: 8099
-  server: 139.162.41.174
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇸🇬SG
-  name: 82|🇸🇬SG_93
-  password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D
-  port: 8099
-  server: 139.162.5.19
-  type: ss
 - alterId: 0
   cipher: auto
   name: 85|新加坡NO.1
@@ -741,7 +835,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '116,117,248,249,250,484|@Vip_Security join us - 89
+  name: '116,117,248,249,250,484|@Vip_Security join us - 94
 
     '
   network: ws
@@ -1673,20 +1767,6 @@ proxies:
     headers:
       Host: m.licdn.com
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 177|465cefb9faa444de829b3c765ac33e29_@_🇸🇬[openproxylist.com] vmess-SG
-  network: ws
-  port: 23452
-  server: westsg2-ddns.oraclenat.cc
-  tls: false
-  type: vmess
-  udp: false
-  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
-  ws-opts:
-    path: /
 - cipher: aes-256-cfb
   name: 183|🇸🇬 SG 10 → tg@nicevpn123
   password: amazonskr05
@@ -2067,6 +2147,20 @@ proxies:
     headers:
       Host: sg-gcore.sharecentre.online
     path: /shirker
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '191,326,342|🇸🇬SG-13.229.128.74-1355 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.128.74
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '191,326,342|🇸🇬SG-13.229.199.138-5973 #1'
+  password: amazonskr05
+  port: 443
+  server: 13.229.199.138
+  type: ss
 - cipher: chacha20-ietf
   country: 🇸🇬SG
   name: '191,326,342|🇸🇬SG-202.162.109.169-5974 #1'
@@ -2080,6 +2174,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 54.254.191.196
+  type: ss
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  name: '191,326,342|🇬SG-47.129.207.193-6167 #1'
+  password: amazonskr05
+  port: 443
+  server: 47.129.207.193
   type: ss
 - cipher: aes-256-cfb
   name: '206,326,342|🇬SG-13.213.46.196-5274 #1'
@@ -3565,6 +3666,20 @@ proxies:
   up: 1000
 - alterId: 0
   cipher: auto
+  name: 281,282,283,284,319|q_065
+  network: ws
+  port: '443'
+  server: 38.181.86.10
+  servername: sg2cf.cowvpn.org
+  tls: true
+  type: vmess
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  ws-opts:
+    headers:
+      Host: sg2cf.cowvpn.org
+    path: /cctv13/vmess_sg2cf
+- alterId: 0
+  cipher: auto
   name: '281,282,283,284|🔒🇸🇬 SG 38.181.86.10 ◈ ws:443 ◈ Stacks Inc ◈ 97151 #3'
   network: ws
   port: '443'
@@ -4538,7 +4653,7 @@ proxies:
     path: /RushTeam_Srilanka_Unlimited
 - alterId: 64
   cipher: auto
-  name: '351,352,484|@Vip_Security join us - 230
+  name: '351,352,484|@Vip_Security join us - 236
 
     '
   network: tcp
@@ -4550,7 +4665,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: '351,484|@Vip_Security join us - 175
+  name: '351,352,484|@Vip_Security join us - 182
 
     '
   network: tcp
@@ -5109,24 +5224,17 @@ proxies:
     headers:
       Host: namava.ir
     path: /JAGOANSSH/
-- alterId: 0
-  cipher: auto
-  name: '434,437,443,446,447,448,451,456|🔒 VM-WS-NA 🇸🇬 SG-217.142.191.10:23452 #7'
-  network: ws
-  port: '23452'
-  server: 217.142.191.10
-  tls: false
-  type: vmess
-  uuid: a8c12d0d-76f9-4b78-a030-3776944a01e8
-  ws-opts:
-    headers:
-      Host: westsg2-ddns.oraclenat.cc
-    path: /
 - cipher: aes-256-cfb
   name: 463|🇸🇬SG-47.129.158.52-4545 | 26.499MB
   password: amazonskr05
   port: 443
   server: 47.129.158.52
+  type: ss
+- cipher: chacha20-ietf
+  name: 463|🇸🇬SG-107.148.37.70-3896 | 13.886MB
+  password: asd123456
+  port: 8388
+  server: 107.148.37.70
   type: ss
 - cipher: aes-256-cfb
   name: 464|TG频道@mfbpn-新加坡2 2
@@ -5261,7 +5369,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '467,484|@Vip_Security join us - 453
+  name: '467,484|@Vip_Security join us - 465
 
     '
   network: ws

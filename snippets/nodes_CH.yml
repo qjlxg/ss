@@ -4,7 +4,7 @@ proxies:
   country: 🏁 ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18,80,82,116,117,129,134,142,191,194,207,223,227,231,248,249,250,255,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456|🔒
+  name: '18,80,116,117,129,134,142,191,194,207,223,227,231,248,249,250,255,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456|🔒
     VM-TCP-NA 🇨🇭 CH-23.166.88.183:22324 #17'
   network: tcp
   port: '22324'
@@ -19,18 +19,27 @@ proxies:
   ws-path: /
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
     | 32.887MB
   password: shadowsocks
   port: 443
   server: 156.146.62.161
   type: ss
   udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸 US
+  name: '21,22,37,38,39,40,41,42,53,54,55,68,69,80,108,191,312,326,329,336,342|🇭CH-156.146.62.162-0504
+    #1'
+  password: shadowsocks
+  port: 443
+  server: 156.146.62.162
+  type: ss
+  udp: true
 - alterId: 0
   cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,98,108,191,312,326,329,336,342,465|未知16
-    10.4MB/s
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,465|未知125
+    14.9MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.163
@@ -40,40 +49,23 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,98,108,191,312,326,329,336,342,463|CH-156.146.62.164-3219
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342,463|CH-156.146.62.164-3219
     | 33.988MB
   password: shadowsocks
   port: 443
   server: 156.146.62.164
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248 #3'
-  password: wix19beF2dwWIBfgGdsEeP
-  port: 4248
-  server: 45.95.232.236
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: '35,36,37,38,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342|🇨CH-84.17.53.160-0458
+  name: '21,22,35,36,37,38,41,42,46,47,53,54,55,68,69,108,191,312,326,329,336,342|🇨CH-84.17.53.160-0458
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 84.17.53.160
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,39,40,46,47,465|未知118
-  password: L1zHXjS5QKL1NI5gRaiwpm
-  port: 19057
-  server: 91.103.253.151
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- name: '35,36,48,49|[Trojan] TR-WS-TLS 🇨🇭 CH-51.107.9.31:8443 #3'
+- name: '33,34,35,36,48,49|[Trojan] TR-WS-TLS 🇨🇭 CH-51.107.9.31:8443 #3'
   network: ws
   password: Aimer
   port: 8443
@@ -86,13 +78,21 @@ proxies:
     headers:
       Host: ngepy.ambercc.filegear-sg.me
     path: ''
-- cipher: aes-128-gcm
-  country: 🇺🇸 US
-  name: '37,38,39,40,41,42,53,54,55,68,69,80,82,98,108,191,312,326,329,336,342|🇭CH-156.146.62.162-0504
-    #1'
-  password: shadowsocks
-  port: 443
-  server: 156.146.62.162
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,46,47,465|未知77
+  password: wix19beF2dwWIBfgGdsEeP
+  port: 4248
+  server: 45.95.232.236
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,39,40,46,47|[SS] SS-TCP-NA 🇨🇭 CH-91.103.253.151:19057 #5'
+  password: L1zHXjS5QKL1NI5gRaiwpm
+  port: 19057
+  server: 91.103.253.151
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -104,7 +104,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '60,484|@Vip_Security join us - 275
+  name: '60,484|@Vip_Security join us - 282
 
     '
   network: tcp
@@ -295,399 +295,6 @@ proxies:
     headers:
       Host: 186.190.215.149
     path: linkvws
-- alterId: 0
-  cipher: auto
-  name: '281,282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:443 ◈ GTHost / objx.net ◈ 242db
-    #3'
-  network: ws
-  port: 443
-  server: speed.cloudflare.com
-  servername: hknbyivfffj.site
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: hknbyivfffj.site
-    path: /rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '281,282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:443 ◈ GTHost / objx.net ◈ bf37c
-    #3'
-  network: ws
-  port: '443'
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '281,282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:443 ◈ GTHost / objx.net ◈ 325dd
-    #3'
-  network: ws
-  port: 443
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '281,282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:80 ◈ GTHost / objx.net ◈ 7c42b
-    #3'
-  network: ws
-  port: 80
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '281,282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:80 ◈ GTHost / objx.net ◈ 10fcb
-    #3'
-  network: ws
-  port: 80
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:2053 ◈ GTHost / objx.net ◈ 15739
-    #2'
-  network: ws
-  port: 2053
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:2053 ◈ GTHost / objx.net ◈ f8a01
-    #2'
-  network: ws
-  port: 2053
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:2083 ◈ GTHost / objx.net ◈ 975ec
-    #2'
-  network: ws
-  port: 2083
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:2083 ◈ GTHost / objx.net ◈ ef6f6
-    #2'
-  network: ws
-  port: 2083
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:2087 ◈ GTHost / objx.net ◈ b7e49
-    #2'
-  network: ws
-  port: 2087
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:2087 ◈ GTHost / objx.net ◈ a94c1
-    #2'
-  network: ws
-  port: 2087
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:2096 ◈ GTHost / objx.net ◈ 4addb
-    #2'
-  network: ws
-  port: 2096
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:2096 ◈ GTHost / objx.net ◈ aba4a
-    #2'
-  network: ws
-  port: 2096
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.100 ◈ ws:8443 ◈ GTHost / objx.net ◈ b6493
-    #2'
-  network: ws
-  port: 8443
-  server: speed.cloudflare.com
-  servername: ayanjlizi.yiwis32762.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🔒🇨🇭 CH 186.190.215.186 ◈ ws:8443 ◈ GTHost / objx.net ◈ 53c99
-    #2'
-  network: ws
-  port: 8443
-  server: speed.cloudflare.com
-  servername: join---bede.mosiv2-com.workers.dev
-  tls: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:2052 ◈ GTHost / objx.net ◈ 10818 #2'
-  network: ws
-  port: 2052
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:2052 ◈ GTHost / objx.net ◈ 55d65 #2'
-  network: ws
-  port: 2052
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:2082 ◈ GTHost / objx.net ◈ f7761 #2'
-  network: ws
-  port: 2082
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:2082 ◈ GTHost / objx.net ◈ f7db3 #2'
-  network: ws
-  port: 2082
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:2086 ◈ GTHost / objx.net ◈ b501e #2'
-  network: ws
-  port: 2086
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:2086 ◈ GTHost / objx.net ◈ c3154 #2'
-  network: ws
-  port: 2086
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:2095 ◈ GTHost / objx.net ◈ 50d94 #2'
-  network: ws
-  port: 2095
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:2095 ◈ GTHost / objx.net ◈ 59740 #2'
-  network: ws
-  port: 2095
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:8080 ◈ GTHost / objx.net ◈ 813b8 #2'
-  network: ws
-  port: 8080
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:8080 ◈ GTHost / objx.net ◈ 75b27 #2'
-  network: ws
-  port: 8080
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.100 ◈ ws:8880 ◈ GTHost / objx.net ◈ 09c0f #2'
-  network: ws
-  port: 8880
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: ayanjlizi.yiwis32762.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|🇨🇭 CH 186.190.215.186 ◈ ws:8880 ◈ GTHost / objx.net ◈ 22e79 #2'
-  network: ws
-  port: 8880
-  server: speed.cloudflare.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  ws-opts:
-    headers:
-      Host: join---bede.mosiv2-com.workers.dev
-    path: /sgfqkqmltcy.site/rbqqvws
 - cipher: aes-256-cfb
   name: '326,342|🇨CH-185.126.116.125-0226 #1'
   password: aLpQtfEZe445QyHk
