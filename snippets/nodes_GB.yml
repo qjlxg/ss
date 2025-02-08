@@ -1,28 +1,17 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,223,227,228,354,355,356,357|🇬🇧 英国 V2CROSS.COM #14'
-  network: tcp
-  port: '443'
-  server: 141.94.237.82
+  name: '18,223,227,228,354,355,356,357|🇬🇧 英国 V2CROSS.COM #7'
+  network: ws
+  port: '8443'
+  server: 158.180.230.4
   tls: true
   type: vmess
-  uuid: a79a4bc8-6980-4fef-8507-01f4bb5e81af
-- alterId: 0
-  cipher: auto
-  name: '18,25,28,84,85,223,227,228,354,355,356,357|🇬🇧 英国 V2CROSS.COM #15'
-  network: ws
-  port: '20312'
-  server: 185.121.134.12
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 21727760-2f1e-4c7a-bb89-080b96e2ac34
+  uuid: 97a21172-89a0-411e-b017-6a27c61c743d
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: fatcat.nevergonnagiveyouup.top
+    path: /vmess-argo?ed=2048
 - alpn:
   - http/1.1
   alterId: 0
@@ -33,8 +22,8 @@ proxies:
     grpc-service-name: 1654431
   h2-opts: {}
   http-opts: {}
-  name: 21,22,25,27,28,30,31,32,33,34,35,36,37,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53,54,55,57,65,84,97,98,101,108,112,118,144,174,177,181,183,191,206,210,237,239,240,242,277,287,293,297,299,300,308,311,318,326,329,336,342,343,345,346,352,364,365,368,375,392,398,403,463,465,467,469,479,487,488|Relay_🏁ZZ-🏁ZZ_1452
-  network: ws
+  name: Relay_🏁ZZ-🏁ZZ_1452
+  network: grpc
   password: bbab60b8-779f-31e2-916e-571f7d7023c4
   port: 35115
   server: jd5.zahuopu.top
@@ -42,14 +31,10 @@ proxies:
   skip-cert-verify: true
   sni: jd5.zahuopu.top
   tfo: false
-  tls: false
+  tls: true
   type: trojan
   udp: true
   uuid: 68512223-ea66-46fc-82f4-e22b597cdd5e
-  ws-opts:
-    headers:
-      Host: None
-    path: 12306
   ws-path: /
 - cipher: aes-128-gcm
   country: 🇬🇧 GB
@@ -201,7 +186,7 @@ proxies:
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🏁 ZZ
-  name: '21,22,35,36,37,38,39,40,46,47,53,68,69,108,191,287,308,312,326,329,336,342|🇬🇧GB-62.100.205.48-0437
+  name: '21,22,35,36,37,38,39,40,46,47,53,69,108,191,287,312,326,329,336,342|🇬🇧GB-62.100.205.48-0437
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -235,6 +220,22 @@ proxies:
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: '25,28,84,85,437,443,447,448,451,456|🔒 VM-WS-NA 🇩🇪 DE-185.121.134.12:20312
+    #5'
+  network: ws
+  port: '20312'
+  server: 185.121.134.12
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 21727760-2f1e-4c7a-bb89-080b96e2ac34
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: '27,44|[VMess] 🇬🇧 VM-WS-NA 🇬🇧 GB-5.39.254.196:23985 #1'
@@ -350,7 +351,8 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇫🇷 FR
-  name: '41,42,54,55,69,80,115,183,191,303,312,326,342|🇧GB-85.210.138.209-5876 #1'
+  name: '41,42,54,55,68,69,80,115,183,191,303,312,326,342|🇧GB-85.210.138.209-5876
+    #1'
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a1.samanehha.co
@@ -358,7 +360,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇬🇧GB
-  name: '41,42,54,55,68,69,80,115,181,183,191,312,326,342|GB-85.210.138.209-6413 #1'
+  name: '41,42,54,55,69,80,115,181,183,191,312,326,342|GB-85.210.138.209-6413 #1'
   password: mps3FwmDjLrWaOVg
   port: 443
   server: series-a2.varzesh360.co
@@ -494,6 +496,13 @@ proxies:
   password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
   port: 55988
   server: mx2.drawnrisha.one
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧 GB
+  name: '98,191,326,342|🇪EC-185.47.253.227-5938 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
   type: ss
 - name: 115|GB(AzadNet.t.me)_001
   network: tcp
@@ -1603,13 +1612,6 @@ proxies:
     headers:
       Host: uk-1.sharecentre.online
     path: /shirker
-- cipher: chacha20-ietf-poly1305
-  country: 🇬🇧 GB
-  name: '191,326,342|🇪EC-185.47.253.227-5938 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
 - country: 🇬🇧GB
   name: 191|🇬🇧GB_10_5@9
   network: tcp
@@ -2241,7 +2243,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342,348|0|--38 #2'
+  name: '254,304,325,326,332,333,337,340,341,342,348|0|--38 #3'
   network: ws
   port: 443
   server: 149.7.16.102
@@ -2286,7 +2288,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342,348|[🏁]t.me/ConfigsHub #15'
+  name: '254,304,325,326,332,333,337,340,341,342,348|[🏁]t.me/ConfigsHub #14'
   network: ws
   port: '20292'
   server: 8.211.192.102
