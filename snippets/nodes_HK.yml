@@ -1,13 +1,14 @@
 proxies:
 - cipher: aes-256-gcm
-  name: '21,22,25,28,296,326,342|🇨🇳CN-183.61.177.235-1557 #1'
+  name: '21,22,25,28,326,342|🇨🇳CN-183.61.177.235-1557 #1'
   password: OJCMTKCU4OMRTZB0
   port: 15007
   server: qh62onjn.slashdevslashnetslashtun.net
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '21,22,41,42,326,342|🇨🇳CN-120.232.81.50-1562 #1'
+  country: 🇨🇳CN
+  name: '21,22,41,42,82,326,342|🇨🇳CN-120.232.81.50-1562 #1'
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
@@ -15,7 +16,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: '21,22,39,40,41,42,54,55,80,98,191,326,342|🇰HK-141.98.234.93-5571 #1'
+  name: '21,22,39,40,41,42,54,55,80,82,191,326,342|🇰HK-141.98.234.93-5571 #1'
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
@@ -36,7 +37,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '25,28,37,38,39,40,45,174,191,326,342|🇷KR-154.90.62.168-5622 #1'
+  country: 🇰🇷KR
+  name: '25,28,35,36,39,40,46,47,82,191,326,342|🇷KR-154.90.62.168-5622 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
@@ -78,7 +80,7 @@ proxies:
     path: /
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: 35,36,39,40,46,47,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
+  name: 35,36,39,40,46,47,82,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
   password: qwerREWQ@@
   port: 4231
   server: 112.213.102.228
@@ -113,7 +115,8 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '39,40|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-154.223.21.221:989 #1'
+  country: 🇸🇨SC
+  name: 39,40,82|🇸🇨SC_911
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.21.221
@@ -177,6 +180,58 @@ proxies:
     headers:
       Host: hk1.xv2ray.net
     path: /vmess
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: '82,191,326,342|🇰HK-103.149.183.61-5626 #1'
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: '82,98,191,303,326,342|🇰HK-203.23.128.33-5868 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: '82,98,191,326,342|🇸US-103.36.91.23-5532 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- country: 🇭🇰HK
+  name: 82,191|disney_HK_6@8
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 80
+  server: 203.23.128.167
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- country: 🇭🇰HK
+  name: 82,191|disney_HK_6@7
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 80
+  server: 62.72.163.215
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: '82,191,326,342|🇰HK-154.197.26.237-6262 #1'
+  password: asd123456
+  port: 8388
+  server: 154.197.26.237
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 84|线1-香港HK 50MBPS-1Q
+  password: f25deaad-8426-48fd-bad6-4b0b464d208c
+  port: 49709
+  server: jg647hf446ghvw.eucs.cn
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 85|香港
@@ -241,20 +296,6 @@ proxies:
   server: 8.210.87.130
   type: vmess
   uuid: bc75a7aa-fbd0-4fc3-a08c-c21192cfca43
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '98,191,326,342|🇸US-103.36.91.23-5532 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '98,191,303,326,342|🇰HK-203.23.128.33-5868 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - alterId: 0
   cipher: auto
   name: '100|🇨🇳中国【YouTube-由零開始】 #7'
@@ -299,7 +340,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '116,117,248,484|@Vip_Security join us - 191
+  name: '116,117,248,484|@Vip_Security join us - 186
 
     '
   network: tcp
@@ -633,7 +674,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '124,403,484|@Vip_Security join us - 316
+  name: '124,403,484|@Vip_Security join us - 310
 
     '
   network: ws
@@ -1949,37 +1990,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: '191,326,342|🇭🇰HK-194.41.59.80-5653 #1'
-  password: asd123456
-  port: 8388
-  server: 194.41.59.80
-  type: ss
-- country: 🇫🇷FR
-  name: 191|disney_netflix_HK_6@3
-  password: a0605527-28e4-449c-80ee-5642cc16a8af
-  port: 8080
-  server: 51.158.148.53
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- country: 🇭🇰HK
-  name: 191|disney_HK_6@7
-  password: a0605527-28e4-449c-80ee-5642cc16a8af
-  port: 80
-  server: 62.72.163.215
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- country: 🇭🇰HK
-  name: 191|disney_HK_6@8
-  password: a0605527-28e4-449c-80ee-5642cc16a8af
-  port: 80
-  server: 203.23.128.167
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
 - alterId: 0
   cipher: auto
   name: 210|🇭🇰_HK_香港_2@54
@@ -3645,20 +3655,6 @@ proxies:
     path: /hk10/getData
 - alterId: 0
   cipher: auto
-  name: 304,325,332,333,337,340,341,489|香港_0208010
-  network: ws
-  port: '42360'
-  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    headers:
-      Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-    path: /
-- alterId: 0
-  cipher: auto
   name: '304,325,326,332,333,337,340,341,342|🇰HK-43.199.133.242-6197 #1'
   network: ws
   port: 443
@@ -4885,7 +4881,7 @@ proxies:
   uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
 - alterId: 64
   cipher: auto
-  name: '351,484|@Vip_Security join us - 139
+  name: '351,484|@Vip_Security join us - 136
 
     '
   network: tcp
@@ -4928,6 +4924,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+- alterId: 0
+  cipher: auto
+  name: 352|TG频道@mfbpn-570-HK
+  network: tcp
+  port: 46963
+  server: 47.238.43.11
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2d8c330d-9f1e-47d6-a721-6d6405c15b26
 - alterId: 0
   cipher: auto
   name: '353,374|@VMESSIRAN سرور ۲۰ آذر #4'
@@ -4984,7 +4990,7 @@ proxies:
     path: /biteb
 - alterId: 0
   cipher: auto
-  name: '362,374,399,421,484|@Vip_Security join us - 279
+  name: '362,374,399,421,484|@Vip_Security join us - 273
 
     '
   network: tcp
@@ -6328,6 +6334,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  name: 465|HK
+  network: tcp
+  password: Aimer
+  port: 52001
+  server: 45.87.103.154
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK3
+  network: tcp
+  password: Aimer
+  port: 443
+  server: 219.76.13.166
+  skip-cert-verify: true
+  sni: ngepz.ambercc.filegear-sg.me
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
