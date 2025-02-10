@@ -4,7 +4,7 @@ proxies:
   country: US
   h2-opts: {}
   http-opts: {}
-  name: 18,82,98,129,135,142,191,223,227,231,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456,467|21|🇺🇸US_1088
+  name: 18,82,129,135,142,191,223,227,231,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456,467|21|🇺🇸US_1088
   network: tcp
   port: 8099
   server: 154.47.21.27
@@ -15,7 +15,7 @@ proxies:
   uuid: fa1897db-1925-4c86-a495-939a959af900
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,81,82,98,191,308,312,326,329,336,342|🇷FR-45.158.171.146-1190
+  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,81,82,191,308,312,326,329,336,342|🇷FR-45.158.171.146-1190
     #1'
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
@@ -23,7 +23,7 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-128-cfb
-  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,98,108,115,161,183,191,312,326,329,336,342,463,467|21|_372
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,115,161,183,191,312,326,329,336,342,463,467|21|_372
   password: shadowsocks
   port: 443
   server: 109.201.152.181
@@ -38,13 +38,15 @@ proxies:
   server: 149.34.244.68
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇺🇸US
-  name: '21,22,35,36,37,38,46,47,53,68,69,82,108,191,312,326,329,336,342|🇳🇱NL-149.34.244.72-0389
-    #2'
+  name: 21,22,35,36,37,38,46,47,53,68,69,82,108,191,312,326,329,336,342,465|未知2 1.4MB/s
   password: shadowsocks
   port: 443
   server: 149.34.244.72
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -74,13 +76,16 @@ proxies:
   server: 193.29.139.133
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇳🇱 NL
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,69,82,98,108,191,312,326,329,336,342|🇱NL-193.29.139.138-0501
-    #1'
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,69,82,108,191,312,326,329,336,342,465|未知25
+    1.6MB/s
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.138
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -100,35 +105,35 @@ proxies:
   server: 193.29.139.162
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,82,108,191,326,329,336,342,465|未知67
-    11.0MB/s
+  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,82,108,191,326,329,336,342|🇳🇱NL-193.29.139.164-0437
+    #2'
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 193.29.139.164
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,82,191,326,329,336,342,465|未知59
+    135.5KB/s
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
   skip-cert-verify: true
   tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱 NL
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,82,98,191,326,329,336,342|🇳🇱NL-193.29.139.179-1237
-    #2'
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.179
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇳🇱 NL
   ip-version: dual
-  name: 21,22,25,28,35,36,39,40,41,42,46,47,54,55,82,98,144,191,293,296,326,342,487|NL_speednode_0019
+  name: '21,22,25,28,35,36,39,40,41,42,46,47,54,55,82,191,293,296,326,342|🇱NL-193.29.139.189-0692
+    #1'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.189
-  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -140,13 +145,15 @@ proxies:
   server: 193.29.139.206
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342|🇱NL-193.29.139.227-0447
-    #1'
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,191,312,326,329,336,342,465|未知128
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 193.29.139.227
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -158,8 +165,8 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,191,312,326,329,336,342|🇳🇱NL-213.109.147.242-1243
-    #2'
+  name: '21,22,37,38,39,40,41,42,53,54,55,69,82,191,312,326,329,336,342|🇳🇱NL-213.109.147.242-1243
+    #1'
   password: VpKABcOpNNA0l5G2AVOmw8
   port: 62685
   server: 213.109.147.242
@@ -167,7 +174,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 21,22,35,36,37,38,41,42,46,47,53,54,55,68,69,80,82,98,191,312,326,329,336,342,463|🇳🇱NL-5.35.47.122-3409
+  name: 21,22,37,38,41,42,53,54,55,69,80,191,312,326,329,336,342,463|🇳🇱NL-5.35.47.122-3409
     | 33.294MB
   password: CLphyEMQT8nbG8EImX0A2D
   port: 45635
@@ -176,7 +183,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 21,22,35,36,37,38,39,40,46,47,53,68,69,80,82,98,191,312,326,329,336,342,463|🇳🇱NL-89.23.103.125-3195
+  name: 21,22,35,36,37,38,39,40,46,47,53,68,69,80,82,191,312,326,329,336,342,463|🇳🇱NL-89.23.103.125-3195
     | 21.319MB
   password: uQS5ntVqC00sSKkeNzUiD3
   port: 42090
@@ -195,6 +202,19 @@ proxies:
   ws-opts:
     headers:
       Host: ngepo.ambercc.filegear-sg.me
+    path: /
+- name: '33,34,39,40,46,47|[Trojan] 🇳🇱 TR-WS-TLS 🇳🇱 NL-45.131.209.89:443 #3'
+  network: ws
+  password: NISHIKUITAN111
+  port: 443
+  server: 45.131.209.89
+  skip-cert-verify: false
+  sni: za.ylks.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: za.ylks.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
@@ -227,23 +247,26 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱NL
-  name: '35,36,37,38,39,40,46,47,53,69,82,98,191,312,326,329,336,342|🇳🇱NL-193.29.139.202-1239
+  name: '35,36,37,38,39,40,46,47,53,69,82,191,312,326,329,336,342|🇳🇱NL-193.29.139.202-1239
     #1'
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.202
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 35,36,39,40,46,47,82|_554
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,39,40,46,47,82,465|未知31 1.6MB/s
+  password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 193.29.139.217
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱NL
-  name: 35,36,37,38,46,47,53,69,82,98,191,312,326,329,336,342,467|21|🇳🇱NL_610
+  name: 35,36,37,38,46,47,53,69,82,191,312,326,329,336,342,467|21|🇳🇱NL_610
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 193.29.139.251
@@ -259,7 +282,7 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   country: 🇺🇸 US
-  name: '35,36,46,47,82,98,191,287,326,342|🇳🇱NL-208.67.105.87-5625 #1'
+  name: '35,36,46,47,82,191,287,326,342|🇳🇱NL-208.67.105.87-5625 #1'
   password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
   port: 42501
   server: 208.67.105.87
@@ -272,29 +295,13 @@ proxies:
   server: 77.239.100.183
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,46,47,465|未知25
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,46,47|[SS] 🇳🇱 SS-TCP-NA 🇳🇱 NL-80.242.56.218:50042 #3'
   password: W2ntIaIjyoh6bVFlXvQrYs
   port: 50042
   server: 80.242.56.218
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
-- name: '35,36,37,38,39,40,50,51|[Trojan] 🇳🇱 TR-WS-TLS 🇳🇱 NL-45.131.209.89:443 #3'
-  network: ws
-  password: NISHIKUITAN111
-  port: 443
-  server: 45.131.209.89
-  skip-cert-verify: false
-  sni: za.ylks.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: za.ylks.xyz
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: '39,40|[SS] 🇳🇱 SS-TCP-NA 🇳🇱 NL-136.244.103.212:4030 #1'
   password: jH8J8UjBVypz4T8SXIKYCg
@@ -332,7 +339,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇳🇱 NL
-  name: 39,40,80,82|🇳🇱 NL_1171
+  name: 39,40,80,82|🇳🇱 NL_784
   password: oYQ8JwEldYn4KT2gfZ6eNl
   port: 51584
   server: 89.23.103.21
@@ -477,24 +484,6 @@ proxies:
     path: /WgCmp8pxRWBtLTlTL
 - alterId: 0
   cipher: auto
-  country: 🇳🇱NL
-  h2-opts: {}
-  http-opts: {}
-  name: '82,115,281,282,283,284|🔒🇳🇱 NL warp ◈ ws:443 ◈ 11c5b #3'
-  network: ws
-  port: '443'
-  server: 95.179.186.161
-  servername: ''
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /WgCmp8pxRWBtLTlTL
-- alterId: 0
-  cipher: auto
   name: '97,210,353|🇳🇱 _NL_荷兰 #2'
   network: tcp
   port: '19389'
@@ -503,13 +492,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 7564de07-a8de-4047-b635-8184cdd42a5e
-- cipher: chacha20-ietf-poly1305
-  country: 🇳🇱 NL
-  name: '98,191,326,342|NG-185.255.123.92-5562 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.255.123.92
-  type: ss
 - name: 115|🇱NL(AzadNet.t.me)_001
   network: tcp
   password: 0cb2cd1f-870b-485c-914a-60aba39eed39
@@ -531,12 +513,6 @@ proxies:
   type: vmess
   uuid: bc8e1235-6cef-4bdd-f3f2-0b4f3c8a7b70
 - cipher: aes-256-cfb
-  name: 115,467|21|_57
-  password: dU3DSNS8wYPXzEKw
-  port: 9029
-  server: 45.89.52.66
-  type: ss
-- cipher: aes-256-cfb
   country: 🇷🇺RU
   name: 115,467|21|🇷🇺RU_651
   password: ZET59LF6DvCC8KVt
@@ -547,13 +523,6 @@ proxies:
   name: 115,183,467|21|_328
   password: UkXRsXvR6buDMG2Y
   port: 9001
-  server: 45.89.52.66
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 115,161,183,326,342,467|21|_326
-  password: BwcAUZk8hUFAkDGN
-  port: 9031
   server: 45.89.52.66
   type: ss
   udp: true
@@ -586,6 +555,21 @@ proxies:
     headers:
       Host: ''
     path: /zBLPou
+- alterId: 0
+  cipher: auto
+  name: '115,281,282,283,284|🔒🇳🇱 NL warp ◈ ws:443 ◈ 11c5b #3'
+  network: ws
+  port: '443'
+  server: 95.179.186.161
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+  ws-opts:
+    headers:
+      Host: ''
+    path: /WgCmp8pxRWBtLTlTL
 - alterId: 0
   cipher: auto
   name: 116,117,183,467,468|NL 2|openitr
@@ -1438,6 +1422,13 @@ proxies:
   tls: false
   type: vmess
   uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: '191,326,342|NG-185.255.123.92-5562 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.255.123.92
+  type: ss
 - alterId: 0
   cipher: auto
   name: 194,273|🆔oneclickvpnkeys 🔓 VM-WS-N/A 🆥🆥  18ms
@@ -1743,7 +1734,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '248,484|@Vip_Security join us - 309
+  name: '248,484|@Vip_Security join us - 324
 
     '
   network: ws
@@ -2320,20 +2311,20 @@ proxies:
     headers:
       Host: www.9996013755.xyz
     path: /footers
-- name: 296|🇳🇱_荷兰_13
-  network: tcp
-  password: Aimer
-  port: 2053
-  server: 185.51.246.121
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-- name: 296|🇳🇱_荷兰_8
+- name: 296|🇳🇱_荷兰_18
   network: tcp
   password: Aimer
   port: 2053
   server: 45.134.21.8
+  skip-cert-verify: true
+  sni: ngepo.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+- name: 296|🇳🇱_荷兰_19
+  network: tcp
+  password: Aimer
+  port: 2053
+  server: 185.51.246.121
   skip-cert-verify: true
   sni: ngepo.ambercc.filegear-sg.me
   type: trojan
@@ -3800,16 +3791,6 @@ proxies:
     path: /path/051111230910
 - alterId: 0
   cipher: auto
-  name: '450,456|🔒 VM-TCP-NA 🇳🇱 NL-181.41.194.58:30952 #1'
-  network: tcp
-  port: '30952'
-  server: 181.41.194.58
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f9cba0f4-3cbc-4dbf-e6f7-6bf5e98872cb
-- alterId: 0
-  cipher: auto
   name: '450,456|🔒 VM-TCP-NA 🇳🇱 NL-181.41.194.58:26138 #1'
   network: tcp
   port: '26138'
@@ -3818,6 +3799,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 9b64b832-a438-48e3-807b-5ef83d8fdaae
+- alterId: 0
+  cipher: auto
+  name: '450,456|🔒 VM-TCP-NA 🇳🇱 NL-181.41.194.58:30952 #1'
+  network: tcp
+  port: '30952'
+  server: 181.41.194.58
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9cba0f4-3cbc-4dbf-e6f7-6bf5e98872cb
 - cipher: chacha20-ietf-poly1305
   country: 🇱 NL
   name: 467|21| NL_606

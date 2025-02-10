@@ -51,11 +51,11 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '21,22|[VMess] 🇨🇦 CA-134.195.198.147-8297 #1'
+  name: 21,22,65|18-1747-CA
   network: ws
   port: 443
   server: 134.195.198.147
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
@@ -64,20 +64,17 @@ proxies:
     path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇨🇦CA
-  name: 21,22,37,38,53,68,69,80,82,98,108,115,191,312,326,329,336,342,467|21|🇨🇦CA_511
+  name: 21,22,37,38,53,68,69,80,82,108,115,191,312,326,329,336,342,467|21|🇨🇦CA_511
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: ca225.vpnbook.com
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,98,108,181,191,312,326,329,336,342,463,465,467|21|_10
+- cipher: chacha20-ietf-poly1305
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,82,108,181,191,312,326,329,336,342,463,467|21|_10
   password: JIhN6rBKkaEboLNXVSv5rq
   port: 80
   server: 142.4.216.225
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -91,7 +88,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '21,22,37,38,41,42,53,54,55,107,108,254,304,325,326,329,332,333,336,337,340,341,342|🇨CA-23.162.200.227-0371
+  name: '21,22,37,38,41,42,53,54,55,65,107,108,254,304,325,326,329,332,333,336,337,340,341,342|🇨CA-23.162.200.227-0371
     #1'
   network: ws
   port: 443
@@ -113,47 +110,47 @@ proxies:
   server: 79.127.233.170
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 21,22,25,28,82|🇺🇸US_1004
+  password: zDNVedRFPQexG9v
+  port: 6379
+  server: 142.202.49.119
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 21,22,25,28,35,36,82,144,465|CA 1.8MB/s
+  password: g5MeD6Ft3CWlJId
+  port: 5003
+  server: 142.202.49.119
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 21,22,25,28,82|🇺🇸US_1053
+  password: lGqs95QkFHo2NV
+  port: 5499
+  server: 142.202.49.119
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 21,22,25,28,82,296|🇺🇸_美国_140
+  password: e4FCWrgpkji3QY
+  port: 9101
+  server: 142.202.49.119
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: '23,24|[SS] 🇨🇦 加拿大 01 | 1x CA #1'
   password: 010c711e-43db-4e95-88f8-20de04384718
   port: 36441
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '25,28,82,144|[SS] 🇨🇦 加拿大 V2CROSS.COM 3 #2'
-  password: g5MeD6Ft3CWlJId
-  port: 5003
-  server: 142.202.49.119
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '25,28,82,144|[SS] 🇨🇦 加拿大 V2CROSS.COM 2 #2'
-  password: zDNVedRFPQexG9v
-  port: 6379
-  server: 142.202.49.119
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '25,28,82,144|[SS] 🇨🇦 加拿大 V2CROSS.COM #2'
-  password: lGqs95QkFHo2NV
-  port: 5499
-  server: 142.202.49.119
-  tfo: false
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇺🇸US
-  name: '25,28,82,144|[SS] 🇨🇦 加拿大 V2CROSS.COM 4 #2'
-  password: e4FCWrgpkji3QY
-  port: 9101
-  server: 142.202.49.119
-  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -163,33 +160,7 @@ proxies:
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  ip-version: dual
-  name: 35,36,37,38,46,47,82,465|未知31
-  password: ODZmZ
-  port: 8388
-  server: 146.19.106.5
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🇮🇹 IT
-  name: '35,36,46,47,82,98,191,326,342|🇦CA-185.213.20.227-1163 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.213.20.227
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: '35,36,39,40,46,47|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-79.127.200.162:989 #5'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.200.162
-  type: ss
-  udp: true
-- name: '35,36,50,51|[Trojan] 🇨🇦 TR-WS-TLS 🇨🇦 CA-40.233.70.7:8443 #3'
+- name: '33,34,35,36,48,49|[Trojan] 🇨🇦 TR-WS-TLS 🇨🇦 CA-40.233.70.7:8443 #3'
   network: ws
   password: Aimer
   port: 8443
@@ -202,6 +173,28 @@ proxies:
     headers:
       Host: ngepz.ambercc.filegear-sg.me
     path: ''
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,46,47|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-146.19.106.5:8388 #3'
+  password: ODZmZ
+  port: 8388
+  server: 146.19.106.5
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇮🇹 IT
+  name: '35,36,46,47,82,191,326,342|🇦CA-185.213.20.227-1163 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.213.20.227
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '35,36,39,40,46,47|[SS] 🇨🇦 SS-TCP-NA 🇨🇦 CA-79.127.200.162:989 #5'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 79.127.200.162
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 37,38,41,42,53,54,55,107,108,216,254,304,306,325,326,329,332,333,336,337,340,341,342,352|TG频道@mfbpn-501-CA
@@ -234,6 +227,17 @@ proxies:
     headers:
       Host: 23.162.200.227
     path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  country: 🇺🇸US
+  name: 37,38,82,465|🇨🇦CA加拿大2 574.2KB/s
+  password: pKEW8JPByTVTLtM
+  port: 443
+  server: 142.202.49.119
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
   name: 39,40,80,463|🇨🇦CA-158.51.123.253-3676 | 9.016MB
   password: g5MeD6Ft3CWlJId
@@ -305,21 +309,20 @@ proxies:
     path: /6c8e5a1b
 - alterId: 0
   cipher: auto
-  country: 🇨🇦CA
+  country: 🇨🇦 CA
   h2-opts: {}
   http-opts: {}
-  name: 82,115|🇺🇸US(AzadNet.t.me)_436
+  name: '82,115,254,282,283,284,304,325,326,332,333,337,340,341,342|🇧GB-68.168.31.196-5443
+    #1'
   network: ws
   port: 443
-  server: 172.111.36.108
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  skip-cert-verify: true
+  server: 68.168.31.196
+  servername: 68.168.31.196
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
-    headers:
-      host: irene.lat
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -338,6 +341,24 @@ proxies:
   ws-opts:
     headers:
       host: inna.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦CA
+  h2-opts: {}
+  http-opts: {}
+  name: 82,115|🇺🇸US(AzadNet.t.me)_436
+  network: ws
+  port: 443
+  server: 172.111.36.108
+  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      host: irene.lat
     path: /linkvws
 - alterId: 0
   cipher: auto
@@ -399,23 +420,6 @@ proxies:
     headers:
       host: lg1.trump2023.us
     path: /ECTCJ0DF
-- alterId: 0
-  cipher: auto
-  country: 🇨🇦 CA
-  h2-opts: {}
-  http-opts: {}
-  name: 98,191|🇨🇦 CA_215_0@214
-  network: ws
-  port: 443
-  server: 68.168.31.196
-  servername: 68.168.31.196
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-headers:
-    HOST: 68.168.31.196
-  ws-path: /linkvws
 - alterId: 0
   cipher: auto
   name: 100|🇨🇦CA加拿大(youtube阿伟科技)
@@ -553,20 +557,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '115,254,282,283,284,304,325,326,332,333,337,340,341,342|🇧GB-68.168.31.196-5443
-    #1'
-  network: ws
-  port: 443
-  server: 68.168.31.196
-  servername: 68.168.31.196
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
     path: /linkvws
 - cipher: aes-256-gcm
   name: 115|🇨🇦CA(AzadNet.t.me)_015
@@ -952,7 +942,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '120,121,123,248,467,484|@Vip_Security join us - 122
+  name: '120,121,123,248,467,484|@Vip_Security join us - 123
 
     '
   network: ws
@@ -1255,7 +1245,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '120,121,181,248,253,254,255,271,273,304,325,326,332,333,337,340,341,342,348,351,484|@Vip_Security
-    join us - 211
+    join us - 217
 
     '
   network: ws
@@ -1426,7 +1416,7 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '120,121,143,194,254,273,274,275,304,325,326,332,333,337,340,341,342,348,351,484|@Vip_Security
-    join us - 212
+    join us - 218
 
     '
   network: ws
@@ -1560,7 +1550,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '120,121,248,348,484|@Vip_Security join us - 209
+  name: '120,121,248,348,484|@Vip_Security join us - 214
 
     '
   network: ws
@@ -1576,7 +1566,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '120,121,273,274,484|@Vip_Security join us - 107
+  name: '120,121,273,274,484|@Vip_Security join us - 109
 
     '
   network: ws
@@ -1608,7 +1598,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '120,121,348,484|@Vip_Security join us - 110
+  name: '120,121,348,484|@Vip_Security join us - 112
 
     '
   network: ws
@@ -1638,7 +1628,7 @@ proxies:
     path: /linde06.indiavideo.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: '120,121,484|@Vip_Security join us - 485
+  name: '120,121,484|@Vip_Security join us - 507
 
     '
   network: ws
@@ -1892,7 +1882,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '120,121,484|@Vip_Security join us - 476
+  name: '120,121,484|@Vip_Security join us - 498
 
     '
   network: ws
@@ -3514,6 +3504,23 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 177|9a06d66014df48c6b0974d80a93e9503_@_[🇨🇦]t.me/ConfigsHub
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: eu-2.hihu.net
+  tls: true
+  type: vmess
+  udp: false
+  uuid: e75ed5a0-e32c-11ef-b535-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: eu-2.hihu.net
+    path: /nd9emita
 - cipher: aes-256-cfb
   name: 183|🇨🇦 CA 1 → tg@nicevpn123
   password: amazonskr05
@@ -4473,6 +4480,23 @@ proxies:
     headers:
       Host: YTB-awkj
     path: /ws-path
+- alterId: 0
+  cipher: auto
+  country: 🇨🇦 CA
+  h2-opts: {}
+  http-opts: {}
+  name: 191|🇨🇦 CA_215_0@214
+  network: ws
+  port: 443
+  server: 68.168.31.196
+  servername: 68.168.31.196
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-headers:
+    HOST: 68.168.31.196
+  ws-path: /linkvws
 - cipher: aes-256-gcm
   name: 206|🇨🇦CA-134.195.196.51-063_1@63
   password: pKEW8JPByTVTLtM
@@ -4533,7 +4557,7 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: '206,273,274,348,484|@Vip_Security join us - 109
+  name: '206,273,274,348,484|@Vip_Security join us - 111
 
     '
   network: ws
@@ -4983,52 +5007,6 @@ proxies:
     path: /clientarea
 - alterId: 0
   cipher: auto
-  name: '216,304,325,326,332,333,337,340,341,342,352,478|🏁RELAY-104.17.213.241-0817
-    #3'
-  network: ws
-  port: 8080
-  server: s1.cn-db.top
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-174-159-210.s1.cn-db.top
-    path: /dabai.in104.21.156.105
-- alterId: 0
-  cipher: auto
-  name: 216,304,325,326,332,333,337,340,341,342,352,478|🏁RELAY-104.17.213.241-0818
-  network: ws
-  port: 2086
-  server: s2.db-link01.top
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-110-189-146.s2.db-link01.top
-    path: /dabai.in104.21.112.58
-- alterId: 0
-  cipher: auto
-  name: 216,304,325,326,332,333,337,340,341,342,352,478|🏁RELAY-104.17.221.248-0819
-  network: ws
-  port: 80
-  server: s2.cn-db.top
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-110-239-147.s2.cn-db.top
-    path: /dabai.in172.67.81.78
-- alterId: 0
-  cipher: auto
   name: 216,304,325,326,332,333,337,340,341,342,352|TG频道@mfbpn-444-RELAY
   network: ws
   port: 2082
@@ -5042,21 +5020,6 @@ proxies:
     headers:
       Host: 100-39-195-198.s1.db-link01.top
     path: /dabai.in104.16.26.37
-- alterId: 0
-  cipher: auto
-  name: 216,304,325,326,332,333,337,340,341,342,352|TG频道@mfbpn-445-RELAY
-  network: ws
-  port: 2095
-  server: s1.db-link01.top
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-  ws-opts:
-    headers:
-      Host: 100-105-92-158.s1.db-link01.top
-    path: /dabai.in104.24.89.11
 - alterId: 0
   cipher: auto
   name: 216,352|TG频道@mfbpn-529-RELAY
@@ -5711,7 +5674,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 310|US_youtube@资源分享师_9
+  name: '310|US_youtube@资源分享师_9 #1'
   network: ws
   port: '12345'
   server: 23.170.40.116
