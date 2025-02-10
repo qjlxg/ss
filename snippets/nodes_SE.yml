@@ -1,8 +1,43 @@
 proxies:
+- cipher: aes-256-cfb
+  country: 🇦🇫AF
+  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
+    | 35.251MB
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 121.127.46.147
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: '21,22,37,38,41,42,53,54,55,80,108,191,326,329,336,342|🇪SE-46.246.98.155-0464
+    #1'
+  password: UDcjYQ6Z6AIWxViZpqyOmO
+  port: 44013
+  server: 46.246.98.155
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: '21,22,37,38,53,69,108,191,312,326,329,336,342|🇸🇪SE-62.60.151.134-0497 #1'
+  password: vkQP4Fe2dFEA1rdWx0lAjH
+  port: 60758
+  server: 62.60.151.134
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🏁 ZZ
+  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,80,108,191,326,329,336,342|🇪SE-94.228.165.178-0540
+    #1'
+  password: afKAHp1VfRWZu91LIi9o0D
+  port: 58176
+  server: 94.228.165.178
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '18,31,32,52,54,55,129,135,142,223,227,230,248,434,437,443,446,447,448,451,456|🔒
-    VM-WS-NA 🇸🇪 SE-185.146.173.91:2052 #14'
+  name: '31,32,52,54,55,248,437,443,447,448,451,456|🔒 VM-WS-NA 🇸🇪 SE-185.146.173.91:2052
+    #5'
   network: ws
   port: '2052'
   server: 185.146.173.91
@@ -16,42 +51,6 @@ proxies:
     headers:
       Host: De1.vmess.site.
     path: /vmess
-- cipher: aes-256-cfb
-  country: 🇦🇫AF
-  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,82,108,115,161,183,191,312,326,329,336,342,463|SE-121.127.46.147-3160
-    | 35.251MB
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '21,22,37,38,41,42,53,54,55,68,80,98,108,191,326,329,336,342|🇪SE-46.246.98.155-0464
-    #1'
-  password: UDcjYQ6Z6AIWxViZpqyOmO
-  port: 44013
-  server: 46.246.98.155
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '21,22,37,38,53,69,82,98,108,191,312,326,329,336,342|🇸🇪SE-62.60.151.134-0497
-    #1'
-  password: vkQP4Fe2dFEA1rdWx0lAjH
-  port: 60758
-  server: 62.60.151.134
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  country: 🏁 ZZ
-  name: '21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,80,98,108,191,326,329,336,342|🇪SE-94.228.165.178-0540
-    #1'
-  password: afKAHp1VfRWZu91LIi9o0D
-  port: 58176
-  server: 94.228.165.178
-  type: ss
-  udp: true
 - name: '33,34,48,49|[Trojan] TR-WS-TLS 🇸🇪 SE-185.146.173.158:443 #3'
   network: ws
   password: auto
@@ -68,7 +67,7 @@ proxies:
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: 35,36,37,38,46,47,53,69,82,98,108,191,312,326,329,336,342,465|未知89 91.0KB/s
+  name: 35,36,37,38,46,47,53,69,108,191,312,326,329,336,342,465|未知89 91.0KB/s
   password: a0605527-28e4-449c-80ee-5642cc16a8af
   port: 81
   server: 176.124.202.137
@@ -83,18 +82,6 @@ proxies:
   server: 46.246.98.130
   type: ss
   udp: true
-- alterId: 0
-  country: 🇸🇪SE
-  name: 82,465|未知67
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 13.51.78.35
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
 - name: 115|SE(AzadNet.t.me)_001
   network: tcp
   password: 6455f944-7c07-4ab0-b88f-440e581f41d9
@@ -102,6 +89,13 @@ proxies:
   server: jp2.twincloud.xyz
   skip-cert-verify: true
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 115,183,326,342,343|Aloha+Greece+🇬🇷+Thessaloniki_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.102
+  type: ss
   udp: true
 - alterId: 0
   cipher: auto
@@ -117,6 +111,14 @@ proxies:
     headers:
       host: jahfkjha.cfd
     path: /linkws
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: '115,183,191,326,342|🇬GR-192.71.166.100-5831 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   name: 115,183,467|21|_437
   password: f8f7aCzcPKbsF8p3
