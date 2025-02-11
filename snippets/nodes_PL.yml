@@ -1,26 +1,4 @@
 proxies:
-- cipher: aes-256-cfb
-  name: '21,22,41,42,54,55,115,161,191,326,342|🇱PL-217.30.10.70-5364 #1'
-  password: KBGjZYcy4SyRShmA
-  port: 9044
-  server: 217.30.10.70
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '21,22|[VMess] 🇵🇱 PL-45.144.48.128-5963 #1'
-  network: ws
-  port: 8443
-  server: 3h-poland1.09vpn.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-  ws-opts:
-    headers:
-      Host: 3h-poland1.09vpn.com
-    path: /
 - alterId: 0
   cipher: auto
   name: '21,22,41,42,54,55|[VMess] 🇵🇱 PL-45.144.48.128-1271 #3'
@@ -34,81 +12,86 @@ proxies:
   uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
   ws-opts:
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 21,22,37,38,41,42,53,54,55,82,108,191,326,329,336,342,467|21|_41
-  password: d3837224ed465f00
-  port: 57456
-  server: war.ssvpnapp.win
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 21,22,35,36,37,38,39,40,41,42,46,47,53,54,55,68,80,82,108,191,326,329,336,342,467|21|_34
-  password: d3837224ed465f00
-  port: 57456
-  server: 45.144.48.63
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 25,28,183,206,326,342,403|France_Gravelines_ss_1354
-  password: 7BcLdsO1WweoGD0X
-  port: 40368
-  server: 193.243.147.128
+- cipher: aes-256-cfb
+  country: 🇵🇱PL
+  name: '35,36,46,47,82,183,191,326,342|🇱PL-217.30.10.18-5386 #1'
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: 🇵🇱PL
-  name: '35,36,39,40,46,47,82,191,326,342|🇱PL-217.30.10.18-6185 #1'
+  name: '35,36,39,40,46,47,82,191,326,342|🇵🇱PL-217.30.10.18-5568 #1'
   password: BNmAXXxAHYpTRdzu
   port: 9020
   server: 217.30.10.18
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇵🇱PL
-  name: '35,36,46,47,82,191,326,342|🇱PL-217.30.10.18-5966 #1'
-  password: BejrQvtu9sqUeNuZ
-  port: 9024
-  server: 217.30.10.18
+  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,98,191,312,326,342,467|21|_34
+  password: d3837224ed465f00
+  port: 57456
+  server: 45.144.48.63
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇵🇱PL
-  name: '35,36,46,47,82,191,326,342|🇵🇱PL-217.30.10.18-5973 #1'
-  password: c3NtHJ5ujV2tGDfj
-  port: 9084
-  server: 217.30.10.18
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,37,38,46,47|[SS] 🇵🇱 SS-TCP-NA 🇵🇱 PL-5.187.51.212:40030 #3'
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40030
+  server: 5.187.51.212
   type: ss
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 35,36,37,38,39,40,46,47,115,183,191,326,342,467|21|🇱PL_636
+  name: 35,36,39,40,46,47,98,115,183,191,326,342,467|21|🇱PL_636
   password: pKEW8JPByTVTLtM
   port: 4444
   server: 51.77.53.200
   type: ss
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
+- cipher: aes-256-gcm
+  name: 35,36,46,47,80|🇵🇱 波兰_3
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 35,36,39,40,46,47,82,115,183,191,300,326,342,465,467|21|🇱PL_622
+  name: 35,36,46,47,98,115,183,191,300,326,342,403,467|21|🇱PL_637
+  password: FoOiGlkAA9yPEGP
+  port: 7306
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 35,36,39,40,46,47,98,115,183,191,300,326,342,467|21|🇱PL_622
   password: PCnnH6SQSnfoS27
   port: 8090
   server: 51.77.53.200
-  skip-cert-verify: true
-  tls: true
   type: ss
   udp: true
 - cipher: aes-256-gcm
   country: PL
-  name: 35,36,39,40,46,47,82,115,183,191,326,342,403,467|21|_338
+  name: 35,36,39,40,46,47,98,115,183,191,326,342,403,467|21|_338
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 51.77.53.200
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 35,36,46,47,80,463|🇵🇱PL-77.83.246.74-3165 | 10.162MB
+  password: 91QVXCScunn9tYNIDccSyx
+  port: 443
+  server: 77.83.246.74
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   country: 🇩🇪 DE
-  name: 35,36,37,38,39,40,46,47,53,68,69,80,82,108,191,312,326,329,336,342,463|🇵🇱PL-92.118.205.228-3202
+  name: 35,36,37,38,39,40,46,47,68,69,80,98,108,191,312,326,329,336,342,463|🇵🇱PL-92.118.205.228-3202
     | 23.037MB
   password: f8f7aCzcPKbsF8p3
   port: 990
@@ -122,17 +105,40 @@ proxies:
   server: 94.131.96.213
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   country: 🇵🇱PL
-  name: '39,40,82,191,293,326,342|🇱PL-217.30.10.18-5706 #1'
-  password: UTJA57ypk2XKQpnm
-  port: 9033
+  name: 37,38,41,42,54,55,68,69,98,191,312,326,342,467|21|_41
+  password: d3837224ed465f00
+  port: 57456
+  server: war.ssvpnapp.win
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: '37,38,46,47,191,326,342|🇵PL-217.30.10.18-6039 #1'
+  password: BejrQvtu9sqUeNuZ
+  port: 9024
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '37,38,46,47,191,326,342|🇱PL-217.30.10.18-5461 #1'
+  password: c3NtHJ5ujV2tGDfj
+  port: 9084
+  server: 217.30.10.18
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: '39,40,81,191,287,308,326,342|🇵🇱PL-217.30.10.18-5486 #1'
+  password: FG5ddLsMPbV5CutE
+  port: 9050
   server: 217.30.10.18
   type: ss
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 39,40,82,115,183,191,206,326,342,403,467|21|🇱PL_624
+  name: 39,40,98,115,183,191,206,326,342,403,467|21|🇱PL_624
   password: g5MeD6Ft3CWlJId
   port: 5004
   server: 51.77.53.200
@@ -140,14 +146,15 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: PL
-  name: 39,40,82,115,183,191,326,342,403,467|21|_358
+  name: 39,40,98,115,183,191,326,342,403,467|21|_358
   password: TEzjfAYq2IjtuoS
   port: 6679
   server: 51.77.53.200
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 39,40,82,183,191,326,342,403,467|21|_337
+  country: 🇵🇱PL
+  name: 39,40,98,183,191,326,342,403,467|21|_337
   password: KixLvKzwjekG00rm
   port: 8080
   server: 51.77.53.200
@@ -155,7 +162,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 39,40,82,115,183,191,206,300,326,342,403,467|21|🇱PL_620
+  name: 39,40,98,115,183,191,206,300,326,342,403,467|21|🇱PL_620
   password: PCnnH6SQSnfoS27
   port: 8091
   server: 51.77.53.200
@@ -163,7 +170,7 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 39,40,82,115,191,326,342,403,467|21|🇱PL_619
+  name: 39,40,98,115,191,326,342,403,467|21|🇱PL_619
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 51.77.53.200
@@ -171,17 +178,25 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 39,40,80,82,183,191,326,342,403,467|21|🇱PL_626
+  name: 39,40,80,98,183,191,326,342,403,467|21|🇱PL_626
   password: cdBIDV42DCwnfIN
   port: 8119
   server: 51.77.53.200
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 39,40,82,115,183,191,326,342,366,467|21|_340
+  country: 🇵🇱PL
+  name: 39,40,98,115,183,191,326,342,366,467|21|_340
   password: e4FCWrgpkji3QY
   port: 9102
   server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '41,42,54,55,115,161,326,342|🇱PL-217.30.10.70-9649 #1'
+  password: KBGjZYcy4SyRShmA
+  port: 9044
+  server: 217.30.10.70
   type: ss
   udp: true
 - alterId: 0
@@ -216,91 +231,59 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-gcm
-  name: 80|🇵🇱 波兰_3
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 80,82,115,191,326,342,467|21|🇱PL_623
+  name: 80,98,115,191,326,342,467|21|🇱PL_623
   password: RexnBgU7EV5ADxG
   port: 7002
   server: 51.77.53.200
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱 PL
+  name: 82,98|🇱 PL_347
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   country: 🇵🇱PL
-  name: '82,287|🇵 _1 #1'
+  name: '82,191,287,326,342|🇱PL-217.30.10.18-5574 #1'
   password: S7KwUu7yBy58S3Ga
   port: 9042
   server: 217.30.10.18
   type: ss
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 82|Relay_-🇵🇱PL_800
-  network: ws
-  port: 80
-  server: 3h-poland1.09vpn.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 10e2ff65-0e20-462d-a282-164e48b955a9
-  ws-opts:
-    headers:
-      Host: 3h-poland1.09vpn.com
-    path: /vmess/
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,191,326,342,467|21|🇱PL_629
+  name: 98,115,191,326,342,467|21|🇱PL_632
+  password: Y6R9pAtvxxzmGC
+  port: 5601
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 98,115,191,326,342,467|21|🇱PL_629
   password: e4FCWrgpkji3QY
   port: 9101
   server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,183,191,300,326,342,403,467|21|🇱PL_625
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,183,191,326,342,403,467|21|🇱PL_628
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,191,326,342,467|21|🇱PL_631
-  password: XKFKl2rULjIp74
-  port: 8008
+  name: 98,115,191,206,326,342,467|21|🇵🇱PL_635
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,183,191,326,342,467|21|🇱PL_621
-  password: XKFKl2rULjIp74
-  port: 8009
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,191,326,342,467|21|🇱PL_630
+  name: 98,115,191,326,342,467|21|🇱PL_630
   password: KixLvKzwjekG00rm
   port: 8000
   server: 51.77.53.200
   type: ss
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,183,191,326,342,403,467|21|🇱PL_633
+  name: 98,115,183,191,326,342,403,467|21|🇱PL_633
   password: kDWvXYZoTBcGkC4
   port: 8881
   server: 51.77.53.200
@@ -308,44 +291,15 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,183,191,300,326,342,403,467|21|🇱PL_637
-  password: FoOiGlkAA9yPEGP
-  port: 7306
-  server: 51.77.53.200
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,183,191,326,342,403,467|21|🇱PL_618
+  name: 98,115,183,191,326,342,403,467|21|🇱PL_618
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 51.77.53.200
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  country: 🇱PL
-  name: 82,115,191,300,326,342,467|21|🇱PL_617
-  password: FoOiGlkAA9yPEGP
-  port: 7307
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,191,326,342,467|21|🇱PL_632
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,191,206,326,342,467|21|🇵🇱PL_635
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 51.77.53.200
-  type: ss
-- cipher: aes-256-gcm
-  country: 🇵🇱PL
-  name: 82,115,183,191,326,342,467|21|🇱PL_634
+  name: 98,115,183,191,326,342,467|21|🇱PL_634
   password: KixLvKzwjekG00rm
   port: 5500
   server: 51.77.53.200
@@ -353,14 +307,52 @@ proxies:
   udp: true
 - cipher: aes-256-gcm
   country: 🇵🇱PL
-  name: 82,115,191,326,342,403,467|21|🇱PL_627
+  name: 98,115,191,326,342,467|21|🇱PL_631
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 51.77.53.200
+  type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 98,115,191,326,342,403,467|21|🇱PL_627
   password: Y6R9pAtvxxzmGC
   port: 5001
   server: 51.77.53.200
   type: ss
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 98,115,183,191,326,342,403,467|21|🇱PL_628
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 98,183,191,326,342,467|21|🇱PL_621
+  password: XKFKl2rULjIp74
+  port: 8009
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇵🇱PL
+  name: 98,115,183,191,300,326,342,403,467|21|🇱PL_625
+  password: faBAoD54k87UJG7
+  port: 2375
+  server: 51.77.53.200
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇱PL
+  name: 98,115,191,300,326,342,467|21|🇱PL_617
+  password: FoOiGlkAA9yPEGP
+  port: 7307
+  server: 51.77.53.200
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 116,117,254,281,282,283,284,304,319,325,326,332,333,337,340,341,342,348|0|-https://t.me/MrXbin-97
+  name: 116,117,254,304,319,325,326,332,333,337,340,341,342,348|0|-https://t.me/MrXbin-97
   network: ws
   port: 443
   server: 146.59.55.50
@@ -375,7 +367,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 116,117,194,281,282,283,284,319,348|🇫🇷FR-51.77.20.136-2823
+  name: 116,117,281,282,283,284,319,348|🇫🇷FR-51.77.20.136-2823
   network: ws
   port: 443
   server: 51.77.20.136
@@ -389,7 +381,7 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '116,117,120,121,194,281,282,283,284,348|🇬🇧GB-51.77.20.132-2878 #1'
+  name: 116,117,120,121,348|🇬🇧GB-51.77.20.132-2878
   network: ws
   port: 443
   server: 51.77.20.132
@@ -512,159 +504,159 @@ proxies:
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-5.188.108.10-9434 #1'
+  name: '161,326,342|🇵🇱PL-5.188.108.10-9488 #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 5.188.108.10
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9596 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9650 #1'
   password: wjTugX3ZtHMB9c3Z
   port: 9057
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,183,326,342|🇵🇱PL-217.30.10.68-9597 #1'
+  name: '161,183,326,342|🇵🇱PL-217.30.10.68-9651 #1'
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 217.30.10.68
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9598 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9652 #1'
   password: a3GFYt36Sm82Vys9
   port: 9000
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9599 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9653 #1'
   password: f63gg8EruDnUrmz4
   port: 9010
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9600 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9654 #1'
   password: GA9KzeEgvfxNrgmM
   port: 9019
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9601 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9655 #1'
   password: kSPmvwdFzGMMW5pY
   port: 9007
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9602 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9656 #1'
   password: Lp27rqyJq72bZsqX
   port: 9045
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9603 #1'
+  name: '161,326,342|🇱PL-217.30.10.68-9657 #1'
   password: M3t2ZEQcMGRWBjRa
   port: 9011
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,183,326,342|🇱PL-217.30.10.68-9604 #1'
+  name: '161,183,326,342|🇱PL-217.30.10.68-9658 #1'
   password: TPqX8edgbAURcAMb
   port: 9079
   server: 217.30.10.68
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9605 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9659 #1'
   password: EXN3S3eQpjE7EJu8
   port: 9027
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9606 #1'
+  name: '161,326,342|🇱PL-217.30.10.68-9660 #1'
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9607 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9661 #1'
   password: daFYagqDdBdA6VTX
   port: 9073
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,183,326,342|🇵🇱PL-217.30.10.68-9608 #1'
+  name: '161,183,326,342|🇵🇱PL-217.30.10.68-9662 #1'
   password: UTJA57ypk2XKQpnm
   port: 9033
   server: 217.30.10.68
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9609 #1'
+  name: '161,326,342|🇱PL-217.30.10.68-9663 #1'
   password: BwcAUZk8hUFAkDGN
   port: 9031
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇱PL-217.30.10.68-9610 #1'
+  name: '161,326,342|🇱PL-217.30.10.68-9664 #1'
   password: KnJGad3FqTvjqbaX
   port: 9014
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9611 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9665 #1'
   password: QWDDvVE9npNurQfA
   port: 9026
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9612 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9666 #1'
   password: wfLC2y7rzZyCmuyt
   port: 9093
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9613 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9667 #1'
   password: fG2artUmHfNT2cX7
   port: 9018
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9614 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9668 #1'
   password: bf7v334KKDV3YDhH
   port: 9070
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9615 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9669 #1'
   password: UkXRsXvR6buDMG2Y
   port: 9001
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9616 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9670 #1'
   password: Sn5B7jTqr76aCJT8
   port: 9097
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9617 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9671 #1'
   password: SBM7R883jBmnqe6C
   port: 9053
   server: 217.30.10.68
   type: ss
 - cipher: aes-256-cfb
-  name: '161,326,342|🇵🇱PL-217.30.10.68-9618 #1'
+  name: '161,326,342|🇵🇱PL-217.30.10.68-9672 #1'
   password: FAdUvMJUq5vDgKEq
   port: 9006
   server: 217.30.10.68
   type: ss
-- cipher: chacha20-ietf-poly1305
-  country: 🇵🇱 PL
-  name: '191,326,342|🇱PL-5.187.51.212-5700 #1'
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40030
-  server: pr.fastsoonlink.com
+- cipher: aes-256-gcm
+  name: 183,206,326,342,403|France_Gravelines_ss_1354
+  password: 7BcLdsO1WweoGD0X
+  port: 40368
+  server: 193.243.147.128
   type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 213|US_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/xiaoxiange88_12
@@ -706,8 +698,18 @@ proxies:
   server: 194.15.196.78
   type: ss
 - alterId: 0
+  cipher: chacha20-poly1305
+  name: 248|PL🇵🇱 | 147.135.211.61-8080 | 103.71ms
+  network: tcp
+  port: '8080'
+  server: 147.135.211.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 42e25353-b1ae-59f3-bd59-d86d2737b814
+- alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇱PL-70.34.252.176-4568 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇱PL-70.34.252.176-4555 #1'
   network: ws
   port: 8081
   server: 70.34.252.176
@@ -720,7 +722,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '254,304,325,326,332,333,337,340,341,342|🇱PL-51.68.139.22-0605 #1'
+  name: '254,304,325,326,332,333,337,340,341,342|🇱PL-51.68.139.22-0595 #1'
   network: ws
   port: 80
   server: 51.68.139.22
@@ -762,6 +764,20 @@ proxies:
     path: /vmess/
 - alterId: 0
   cipher: auto
+  name: '281,282,283,284|🔒🇵🇱 PL warp ◈ ws:443 ◈ 7a34c #3'
+  network: ws
+  port: '443'
+  server: speed.cloudflare.com
+  servername: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  tls: true
+  type: vmess
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  ws-opts:
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  cipher: auto
   name: '281,282,284|💰🇵🇱 PL 45.144.48.128 ◈ ws:80 ◈ 3hcloud / Limited liability company
     ◈ 18831 #2'
   network: ws
@@ -790,20 +806,6 @@ proxies:
     headers:
       Host: ''
     path: /vmess/
-- alterId: 0
-  cipher: auto
-  name: '282,283,284|💰💥🇵🇱 PL 146.59.55.50 ◈ ws:443 ◈ OVH Sp. z o. o ◈ c014f #2'
-  network: ws
-  port: '443'
-  server: 146.59.55.50
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: max.mankadmu.com
-    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 283|🔒🇵🇱 PL 45.144.48.128 ◈ ws:8443 ◈ 3hcloud / Limited liability company ◈
@@ -872,25 +874,25 @@ proxies:
       Host: ''
     path: /blue06
 - cipher: aes-256-cfb
-  name: '326,342|🇱PL-217.30.10.63-4655 #1'
+  name: '326,342|🇱PL-217.30.10.63-4642 #1'
   password: FG5ddLsMPbV5CutE
   port: 9050
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇵🇱PL-217.30.10.65-4656 #1'
+  name: '326,342|🇵🇱PL-217.30.10.65-4643 #1'
   password: 4R3hUfZ2FHhDmNcP
   port: 9061
   server: 217.30.10.65
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇵🇱PL-217.30.10.63-4657 #1'
+  name: '326,342|🇵🇱PL-217.30.10.63-4644 #1'
   password: gYCYXfkUQEs2TaJQ
   port: 9038
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇱PL-217.30.10.63-4658 #1'
+  name: '326,342|🇱PL-217.30.10.63-4645 #1'
   password: f63gg8EruDnUrmz4
   port: 9010
   server: 217.30.10.63
@@ -914,25 +916,25 @@ proxies:
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇱PL-217.30.10.63-4662 #1'
+  name: '326,342|🇱PL-217.30.10.63-4649 #1'
   password: UWZQeLRWnkqgkseq
   port: 9032
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇱PL-217.30.10.63-4663 #1'
+  name: '326,342|🇱PL-217.30.10.63-4650 #1'
   password: p9z5BVADH2YFs3MN
   port: 9040
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇱PL-217.30.10.63-4664 #1'
+  name: '326,342|🇱PL-217.30.10.63-4651 #1'
   password: wfLC2y7rzZyCmuyt
   port: 9093
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇵🇱PL-217.30.10.63-4665 #1'
+  name: '326,342|🇵🇱PL-217.30.10.63-4652 #1'
   password: HSZuyJQcWe8dxNdF
   port: 9043
   server: 217.30.10.63
@@ -950,13 +952,13 @@ proxies:
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇵🇱PL-217.30.10.63-4668 #1'
+  name: '326,342|🇵🇱PL-217.30.10.63-4655 #1'
   password: JdmRK9gMEqFgs8nP
   port: 9003
   server: 217.30.10.63
   type: ss
 - cipher: aes-256-cfb
-  name: '326,342|🇵🇱PL-217.30.10.63-4669 #1'
+  name: '326,342|🇵🇱PL-217.30.10.63-4656 #1'
   password: UkXRsXvR6buDMG2Y
   port: 9001
   server: 217.30.10.63
@@ -985,10 +987,10 @@ proxies:
   uuid: e29641c2-4cfe-41b5-b507-cf9df9e81f36
 - alterId: 0
   cipher: auto
-  name: 352|TG频道@mfbpn-552-PL
+  name: 352|TG频道@mfbpn-475-PL
   network: ws
   port: 8443
-  server: 3h-poland1.09vpn.com
+  server: 45.144.48.128
   servername: ''
   tls: false
   type: vmess
