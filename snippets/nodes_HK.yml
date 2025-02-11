@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,94,129,135,142,165,166,171,223,227,231,248,249,250,281,282,283,284,319,425,426,434,436,443,445,446,447,448,450,456,462,480|@Vip_Security
-    join us - 3
-
-    '
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
-- alterId: 0
-  cipher: auto
   delay: 599
   name: '18,33,34,53,129,135,142,184,216,223,227,231,283,284,352,425,427,429,434,437,444,445,446|🔒
     VM-WS-TLS 🇭🇰 HK-20.6.155.159:2080 #14'
@@ -32,8 +19,8 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '18,94,129,135,142,165,166,171,223,227,231,233,248,249,250,281,282,283,284,319,434,436,443,446,447,448,450,456,462,466,480|@Vip_Security
-    join us - 4
+  name: '18,94,129,135,142,165,171,194,223,227,231,248,249,250,281,282,283,284,319,425,426,434,436,443,445,446,447,448,450,456,462,480|@Vip_Security
+    join us - 355
 
     '
   network: tcp
@@ -43,6 +30,19 @@ proxies:
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
+- alterId: 0
+  cipher: auto
+  name: '18,94,129,135,142,165,171,194,223,227,231,248,249,250,281,282,283,284,319,425,426,434,436,443,445,446,447,448,450,456,462,480|@Vip_Security
+    join us - 354
+
+    '
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - cipher: aes-256-gcm
   name: '21,22|[SS] 🇭🇰 13|🇭🇰 香港4|%40ripaojiedian #1'
   password: FPJ3XYH5EY246SXU
@@ -52,10 +52,11 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰HK
-  name: '21,22,35,36,46,47,98,191,326,342|🇭🇰HK-216.250.97.118-5536 #1'
+  name: '21,22,35,36,46,47,98,144,191,326,342|🇭🇰HK-216.250.97.118-5536 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 216.250.97.118
+  tfo: false
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -93,13 +94,15 @@ proxies:
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇺🇸 US
-  name: '25,28,35,36,46,47,98,144,191,326,342|🇵PH-154.90.37.139-5926 #1'
+  name: 25,28,35,36,37,38,46,47,98,191,326,342,465|🇭🇰HK香港2 184.1KB/s
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 154.90.37.139
-  tfo: false
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf
@@ -139,22 +142,26 @@ proxies:
   uuid: c4d65354-5321-3036-a611-6c42e88b7251
   ws-opts:
     path: /
-- cipher: aes-256-gcm
-  name: '35,36,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-103.253.43.210:8388 #3'
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 35,36,37,38,46,47,465|HK8
   password: wJGsonf9xIUUgTIh
   port: 8388
   server: 103.253.43.210
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '35,36,37,38,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-141.98.234.195:36766 #3'
+  name: '35,36,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-141.98.234.195:36766 #3'
   password: 4um2MZppzMpyA7rC0pJLEv
   port: 36766
   server: 141.98.234.195
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '35,36,39,40,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-154.223.21.221:989 #5'
+  country: 🇭🇰HK
+  name: 35,36,39,40,46,47,82|🇭🇰HK_93
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.21.221
@@ -167,7 +174,7 @@ proxies:
   server: 89.213.150.45
   type: ss
   udp: true
-- name: '35,36,50,51|[Trojan] 🇭🇰 TR-WS-TLS 🇭🇰 HK-58.176.95.46:443 #3'
+- name: '35,36,48,49|[Trojan] 🇭🇰 TR-WS-TLS 🇭🇰 HK-58.176.95.46:443 #3'
   network: ws
   password: amclubs2024
   port: 443
@@ -180,19 +187,6 @@ proxies:
     headers:
       Host: tr.amclub.us.kg
     path: ''
-- name: '37,38|[Trojan] HK5 #1'
-  network: ws
-  password: amclubs2024
-  port: 443
-  server: 58.176.95.46
-  skip-cert-verify: false
-  sni: tr.amclub.us.kg
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tr.amclub.us.kg
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   name: '39,40|[SS] 🇭🇰 HK #1'
   password: ba8d6492-f3f5-4376-aa88-1c3bda57a6d9
@@ -202,7 +196,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇭🇰HK
-  name: 39,40,82,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
+  name: 39,40,68,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
   password: qwerREWQ@@
   port: 4231
   server: 112.213.102.228
@@ -210,7 +204,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺RU
-  name: '39,40,41,42,54,55,69,80,98,191,312,326,342|HK-141.98.234.93-1248 #1'
+  name: '39,40,41,42,54,55,68,69,80,191,312,326,342|HK-141.98.234.93-1248 #1'
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
@@ -281,8 +275,21 @@ proxies:
     headers:
       Host: hk1.xv2ray.net
     path: /vmess
+- cipher: chacha20-ietf-poly1305
+  name: 65|16-0600-HK
+  password: 3021f945-f078-4635-adc6-185d3152e0a1
+  port: 8888
+  server: cainiao999.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: '68,191,326,342|🇰HK-154.197.26.237-6106 #1'
+  password: asd123456
+  port: 8388
+  server: 154.197.26.237
+  type: ss
 - cipher: aes-128-gcm
-  name: 81,82|Relay_-🇺🇸US_25
+  name: 81|HK香港(mibei77.com 米贝节点分享)
   password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
   port: 46595
   server: bj.xissyun.com
@@ -309,17 +316,6 @@ proxies:
   server: 4947.03.ddns-dm.cc
   type: ss
   udp: true
-- name: '82|disney_HK #1'
-  network: ws
-  password: ouo
-  port: 443
-  server: 103.44.255.81
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
   country: 🇭🇰HK
@@ -388,19 +384,19 @@ proxies:
   server: 8.210.87.130
   type: vmess
   uuid: bc75a7aa-fbd0-4fc3-a08c-c21192cfca43
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: '98,191,303,326,342|HK-203.23.128.33-5872 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
 - cipher: chacha20-ietf
   country: 🇭🇰HK
   name: '98,191,326,342|🇺🇸US-103.36.91.23-5359 #1'
   password: asd123456
   port: 8388
   server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: '98,191,303,326,342|HK-203.23.128.33-5872 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
   type: ss
 - alterId: 0
   cipher: auto
@@ -446,7 +442,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '116,117,248,484|@Vip_Security join us - 194
+  name: '116,117,248,484|@Vip_Security join us - 201
 
     '
   network: tcp
@@ -589,7 +585,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 124,165,166,171,183|🇨🇳 CN 123 → tg@nicevpn123
+  name: 124,165,171,183|🇨🇳 CN 123 → tg@nicevpn123
   network: ws
   port: 20206
   server: data-hk-v1.usabooks.com.cn
@@ -780,7 +776,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '124,403,484|@Vip_Security join us - 334
+  name: '124,403,484|@Vip_Security join us - 340
 
     '
   network: ws
@@ -1967,6 +1963,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  delay: 2652
+  name: 184,216,352|TG频道@mfbpn-903-HK
+  network: ws
+  port: 2080
+  server: hk4.556855.xyz
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 63769deb-4153-4b98-aba3-31bc07e53a2d
+  ws-opts:
+    headers:
+      Host: hk4.556855.xyz
+    path: /
+- alterId: 0
+  cipher: auto
   name: 184|福星公益节点 香港 01 1x
   network: ws
   port: '8080'
@@ -2696,7 +2708,7 @@ proxies:
 - alterId: 64
   cipher: auto
   name: '248,254,304,325,326,332,333,337,340,341,342,348,351,484|@Vip_Security join
-    us - 296
+    us - 302
 
     '
   network: ws
@@ -5010,7 +5022,7 @@ proxies:
   uuid: 98b193f3-8056-4f48-bc4a-f1e893486548
 - alterId: 0
   cipher: auto
-  name: '362,374,399,421,484|@Vip_Security join us - 290
+  name: '362,374,399,421,484|@Vip_Security join us - 296
 
     '
   network: tcp
@@ -6354,6 +6366,94 @@ proxies:
   tls: false
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
+- alterId: 0
+  name: 465|HK3
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 42881
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK4
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 43396
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK5
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27101
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK6
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27401
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK7
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27101
+  server: 45.146.232.173
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK9
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 46668
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK10
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27401
+  server: 45.146.232.171
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 465|HK11
+  network: tcp
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27103
+  server: 45.146.232.172
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome

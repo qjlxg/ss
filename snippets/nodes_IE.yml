@@ -1,18 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   country: 🇮🇪IE
-  name: 25,28,35,36,46,47,82,144,191,326,342,487|IE_speednode_0030
+  name: 25,28,35,36,46,47,82,98,144,191,326,342,487|IE_speednode_0019
   password: cEZPI4PrVloPulwPHRYi5G
   port: 42658
   server: 52.138.234.185
   tfo: false
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '37,38,39,40,46,47|[SS] SS-TCP-NA 🇮🇪 IE-95.164.44.221:8388 #5'
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,39,40,46,47,465|未知26
   password: ZDAxZDE2
   port: 8388
   server: 95.164.44.221
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - name: 80|🇮🇪 爱尔兰_1
@@ -30,25 +33,6 @@ proxies:
   port: 22222
   server: 54.75.49.245
   skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇮🇪IE
-  name: 82|🇮🇪IE_128
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 34.243.112.26
-  sni: trojan.burgerip.co.uk
-  type: trojan
-  udp: true
-- country: 🇮🇪IE
-  delay: 1052
-  name: 82,191,216|爱尔兰 001
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 99.81.99.248
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
@@ -108,6 +92,16 @@ proxies:
   port: 28612
   server: 52.169.202.174
   type: ss
+  udp: true
+- country: 🇮🇪IE
+  delay: 1052
+  name: 191,216|爱尔兰 001
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 99.81.99.248
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
 - country: 🇮🇪IE
   name: 191|🇮🇪IE_16_7@15
@@ -184,6 +178,15 @@ proxies:
   uuid: 5aab3936-16d7-4377-8c33-0d77f2d295ee
   ws-opts:
     path: /
+- alpn:
+  - http/1.1
+  name: 308|🇪_IE_兰
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 34.250.225.60
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 315|🇮🇪 爱尔兰(TG频道@kxswa)
