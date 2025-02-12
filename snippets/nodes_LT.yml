@@ -15,13 +15,11 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '18,25,28,144,223,227,228,352,354,355,356,357|🇱🇹 立陶宛 V2CROSS.COM #7'
+  name: '18,25,28,223,227,228,354,355,356,357|🇱🇹 立陶宛 V2CROSS.COM #7'
   network: ws
   port: '8443'
   server: 89.117.112.235
-  servername: ''
-  skip-cert-verify: true
-  tfo: false
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -30,6 +28,19 @@ proxies:
     headers:
       Host: lax1.ibgfw.top
     path: /xrenvws
+- alterId: 0
+  cipher: auto
+  name: '21,22|[VMess] 🇱🇹 立陶宛 V2CROSS.COM #1'
+  network: ws
+  port: 8443
+  server: 89.117.112.235
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 21,22,216,304,325,326,332,333,337,340,341,342,352,489|立陶宛_0212006
@@ -47,27 +58,27 @@ proxies:
     headers:
       Host: lax2.ibgfw.top
     path: /dyajvws
-- alterId: 0
-  cipher: auto
-  name: '21,22|[VMess] 🇱🇹 立陶宛 V2CROSS.COM 2 #1'
-  network: ws
-  port: 8443
-  server: 89.117.112.235
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   country: 🇲🇽MX
-  name: '25,28,35,36,46,47,82,191,296,326,342|MX-147.78.1.27-6029 #1'
+  name: '25,28,35,36,46,47,191,296,326,342|MX-147.78.1.27-6029 #1'
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 147.78.1.27
   type: ss
   udp: true
+- name: '33,34,39,40,46,47|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #3'
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 89.116.250.94
+  skip-cert-verify: false
+  sni: bpb.my79801.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: bpb.my79801.com
+    path: /tr?ed
 - cipher: chacha20-ietf-poly1305
   country: 🏁 ZZ
   name: '35,36,39,40,41,42,46,47,54,55,191,326,342|🇹LT-192.36.61.59-6132 #1'
@@ -92,6 +103,15 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
+  name: '35,36,37,38,46,47,53,54,55,68,69,108,191,312,326,329,336,342|🇹LT-45.87.175.154-0222
+    #1'
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.154
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
   name: '35,36,37,38,39,40,41,42,46,47,54,55,68,69,191,312,326,342|🇱🇹LT-45.87.175.157-5451
     #1'
   password: QCXDxuDlTTMD7jtgHUjIoj
@@ -101,7 +121,7 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,69,108,191,312,326,329,336,342,463|LT-45.87.175.164-3214
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,69,98,108,191,312,326,329,336,342,463|LT-45.87.175.164-3214
     | 40.556MB
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -110,28 +130,34 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 35,36,46,47,68,80,108,191,303,326,329,336,342,463|LT-45.87.175.166-3316 |
+  name: 35,36,46,47,80,98,108,191,303,326,329,336,342,463|LT-45.87.175.166-3316 |
     40.485MB
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.166
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: 35,36,37,38,41,42,46,47,53,54,55,69,80,108,191,312,326,329,336,342,465|未知16
-    8.4MB/s
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  name: '35,36,37,38,41,42,46,47,53,54,55,69,98,191,312,326,342|🇹LT-45.87.175.171-5456
+    #1'
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.178
-  skip-cert-verify: true
-  tls: true
+  server: 45.87.175.171
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,191,303,312,326,342|LT-45.87.175.181-0221
+  name: '35,36,37,38,41,42,46,47,53,54,55,69,80,98,108,191,312,326,329,336,342|🇹LT-45.87.175.178-0361
+    #1'
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: '35,36,37,38,39,40,41,42,46,47,53,54,55,69,80,98,191,303,312,326,342|LT-45.87.175.181-0221
     #1'
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -140,26 +166,31 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '35,36,39,40,41,42,46,47,54,55,80,191,303,326,342|🇹LT-45.87.175.192-5450 #1'
-  password: 1RWwXhwfAB5gAEozU4G2Pg
+  name: '35,36,39,40,41,42,46,47,54,55,98,108,326,329,336,342|🇹LT-45.87.175.188-0367
+    #1'
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 35,36,37,38,39,40,41,42,46,47,54,55,80,98,191,303,326,342,465|未知93 188.8KB/s
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.192
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇱🇹 LT
-  name: '35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,108,191,312,326,329,336,342|🇹LT-45.87.175.199-0372
+  name: '35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,98,108,191,312,326,329,336,342|🇹LT-45.87.175.199-0372
     #1'
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 45.87.175.199
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] SS-TCP-NA 🇱🇹 LT-45.87.175.22:8080 #3'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.22
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -176,19 +207,13 @@ proxies:
   server: 45.87.175.92
   type: ss
   udp: true
-- name: '35,36,39,40,48,49|[Trojan] TR-WS-TLS 🇱🇹 LT-89.116.250.94:443 #3'
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: 89.116.250.94
-  skip-cert-verify: false
-  sni: bpb.my79801.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: '37,38,46,47|[SS] SS-TCP-NA 🇱🇹 LT-45.87.175.22:8080 #3'
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.87.175.22
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: bpb.my79801.com
-    path: /tr?ed
 - cipher: aes-256-cfb
   country: 🏁 ZZ
   name: 39,40,41,42,54,55,191,326,342,463|LT-192.36.61.59-3293 | 33.251MB
@@ -197,6 +222,24 @@ proxies:
   server: 192.36.61.59
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇱🇹LT
+  h2-opts: {}
+  http-opts: {}
+  name: 82|🇱🇹LT_107
+  network: ws
+  port: 8443
+  server: 89.116.180.69
+  servername: lax1.ibgfw.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      HOST: lax1.ibgfw.top
+    path: /xrenvws
 - alterId: 0
   cipher: auto
   name: '129,135,142,304|D-WEALTH-2386 #3'

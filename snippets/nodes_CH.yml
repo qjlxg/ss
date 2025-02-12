@@ -4,7 +4,7 @@ proxies:
   country: 🏁 ZZ
   h2-opts: {}
   http-opts: {}
-  name: '18,80,116,117,129,135,142,191,207,223,227,231,248,249,250,255,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456|🔒
+  name: '18,80,116,117,129,135,142,191,194,207,223,227,231,248,249,250,255,281,282,283,284,348,425,426,434,436,443,445,446,447,448,450,456|🔒
     VM-TCP-NA 🇨🇭 CH-23.166.88.183:22324 #17'
   network: tcp
   port: '22324'
@@ -32,7 +32,7 @@ proxies:
     path: ''
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
+  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.161-3225
     | 32.887MB
   password: shadowsocks
   port: 443
@@ -41,25 +41,28 @@ proxies:
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: '35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,108,191,312,326,329,336,342|🇨CH-156.146.62.162-0392
+  name: '35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,98,108,191,312,326,329,336,342|🇨CH-156.146.62.162-0392
     #1'
   password: shadowsocks
   port: 443
   server: 156.146.62.162
   type: ss
   udp: true
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: '35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,108,191,312,326,329,336,342|🇭CH-156.146.62.163-0396
-    #1'
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,98,108,191,312,326,329,336,342,465|未知63
+    15.0MB/s
   password: shadowsocks
   port: 443
   server: 156.146.62.163
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: aes-128-gcm
   country: 🇺🇸 US
-  name: 35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,108,191,312,326,329,336,342,463|CH-156.146.62.164-3219
+  name: 35,36,37,38,39,40,41,42,46,47,53,54,55,68,69,80,98,108,191,312,326,329,336,342,463|CH-156.146.62.164-3219
     | 33.988MB
   password: shadowsocks
   port: 443
@@ -73,19 +76,16 @@ proxies:
   server: 178.209.50.206
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 35,36,37,38,39,40,46,47,465|未知87
-  password: L1zHXjS5QKL1NI5gRaiwpm
-  port: 19057
-  server: 91.103.253.151
-  skip-cert-verify: true
-  tls: true
+- cipher: chacha20-ietf-poly1305
+  name: '35,36,46,47|[SS] SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248 #3'
+  password: wix19beF2dwWIBfgGdsEeP
+  port: 4248
+  server: 45.95.232.236
   type: ss
   udp: true
 - cipher: aes-256-cfb
   country: 🏁 ZZ
-  name: '37,38,41,42,46,47,54,55,68,69,108,191,312,326,329,336,342|🇨CH-84.17.53.160-0366
+  name: '35,36,37,38,41,42,46,47,54,55,68,69,108,191,312,326,329,336,342|🇨CH-84.17.53.160-0366
     #1'
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -93,10 +93,10 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '37,38,46,47|[SS] SS-TCP-NA 🇨🇭 CH-45.95.232.236:4248 #3'
-  password: wix19beF2dwWIBfgGdsEeP
-  port: 4248
-  server: 45.95.232.236
+  name: '35,36,39,40,46,47|[SS] SS-TCP-NA 🇨🇭 CH-91.103.253.151:19057 #5'
+  password: L1zHXjS5QKL1NI5gRaiwpm
+  port: 19057
+  server: 91.103.253.151
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -108,7 +108,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '60,484|@Vip_Security join us - 290
+  name: '60,484|@Vip_Security join us - 293
 
     '
   network: tcp

@@ -1,8 +1,8 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '18,94,129,135,142,165,171,223,227,231,248,249,250,281,282,283,284,319,425,426,434,436,443,445,446,447,448,450,456,462,480|@Vip_Security
-    join us - 355
+  name: '18,94,129,135,142,165,166,171,223,227,231,248,249,250,281,282,283,284,319,425,426,434,436,443,445,446,447,448,450,456,462,480|@Vip_Security
+    join us - 440
 
     '
   network: tcp
@@ -12,19 +12,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
-- alterId: 0
-  cipher: auto
-  name: '18,94,129,135,142,165,171,223,227,231,248,249,250,281,282,283,284,319,434,436,443,446,447,448,450,456,462,480|@Vip_Security
-    join us - 354
-
-    '
-  network: tcp
-  port: '54675'
-  server: 103.149.183.178
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
   delay: 599
@@ -42,6 +29,19 @@ proxies:
     headers:
       Host: hk4.556855.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: '18,94,129,135,142,165,166,171,223,227,231,248,249,250,281,282,283,284,319,434,436,443,446,447,448,450,456,462,480|@Vip_Security
+    join us - 439
+
+    '
+  network: tcp
+  port: '54675'
+  server: 103.149.183.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - cipher: aes-256-gcm
   name: '21,22|[SS] 🇭🇰 13|🇭🇰 香港4|%40ripaojiedian #1'
   password: FPJ3XYH5EY246SXU
@@ -70,12 +70,15 @@ proxies:
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: '21,22,37,38,46,47,68,191,326,342|🇰HK-216.250.97.118-5440 #1'
+  name: 21,22,35,36,37,38,46,47,68,98,191,326,342,465|HK3 443.5KB/s
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 216.250.97.118
+  skip-cert-verify: true
+  tls: true
   type: ss
   udp: true
 - cipher: chacha20-ietf
@@ -137,7 +140,25 @@ proxies:
   uuid: c4d65354-5321-3036-a611-6c42e88b7251
   ws-opts:
     path: /
-- name: '33,34,48,49|[Trojan] 🇭🇰 TR-WS-TLS 🇭🇰 HK-58.176.95.46:443 #3'
+- cipher: aes-256-cfb
+  country: 🇸🇨SC
+  name: '35,36,39,40,46,47,191,326,342|🇰HK-154.223.21.221-6087 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.21.221
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 35,36,37,38,46,47,465|HK6 68.6KB/s
+  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
+  port: 40000
+  server: 89.213.150.45
+  skip-cert-verify: true
+  tls: true
+  type: ss
+  udp: true
+- name: '35,36,48,49|[Trojan] 🇭🇰 TR-WS-TLS 🇭🇰 HK-58.176.95.46:443 #3'
   network: ws
   password: amclubs2024
   port: 443
@@ -150,50 +171,28 @@ proxies:
     headers:
       Host: tr.amclub.us.kg
     path: ''
-- cipher: aes-256-gcm
-  name: '35,36,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-103.253.43.210:8388 #3'
-  password: wJGsonf9xIUUgTIh
-  port: 8388
-  server: 103.253.43.210
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-141.98.234.195:36766 #3'
-  password: 4um2MZppzMpyA7rC0pJLEv
-  port: 36766
-  server: 141.98.234.195
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇷🇺 RU
-  name: '35,36,37,38,39,40,41,42,46,47,54,55,68,69,80,191,312,326,342|🇰HK-141.98.234.93-5502
+  name: '37,38,39,40,41,42,46,47,54,55,68,69,80,191,312,326,342|🇰HK-141.98.234.93-5502
     #1'
   password: WfmxKX2FBJRU0Ie9VLIYDL
   port: 20012
   server: 141.98.234.93
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  country: 🇸🇨SC
-  name: '35,36,39,40,46,47,82,191,326,342|🇰HK-154.223.21.221-6087 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.21.221
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '35,36,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-89.213.150.45:40000 #3'
-  password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
-  port: 40000
-  server: 89.213.150.45
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   country: 🇭🇰 HK
-  name: '37,38,41,42,68,69,191,312,326,342|🇰HK-216.250.97.118-5439 #1'
+  name: '37,38,41,42,68,69,98,191,312,326,342|🇰HK-216.250.97.118-5439 #1'
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '37,38,46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-103.253.43.210:8388 #3'
+  password: wJGsonf9xIUUgTIh
+  port: 8388
+  server: 103.253.43.210
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -205,7 +204,7 @@ proxies:
   udp: true
 - cipher: aes-256-cfb
   country: 🇭🇰HK
-  name: 39,40,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
+  name: 39,40,68,191,326,342,463|🇭🇰HK-112.213.102.228-3313 | 7.633MB
   password: qwerREWQ@@
   port: 4231
   server: 112.213.102.228
@@ -254,6 +253,13 @@ proxies:
   server: 120.232.81.50
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '46,47|[SS] 🇭🇰 SS-TCP-NA 🇭🇰 HK-141.98.234.195:36766 #1'
+  password: 4um2MZppzMpyA7rC0pJLEv
+  port: 36766
+  server: 141.98.234.195
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: 60|t.me/v2Line | (1405) HK
@@ -268,24 +274,33 @@ proxies:
     headers:
       Host: hk1.xv2ray.net
     path: /vmess
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: '72,165,166,171,194,450,484|@Vip_Security join us - 292
+
+    '
+  network: tcp
+  port: 52785
+  server: 203.23.128.229
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e6384328-7de2-43e5-840b-8c746efa8d5d
 - cipher: aes-128-gcm
-  name: 81|HK香港(mibei77.com 米贝节点分享)
+  name: 81,82|Relay_-🇺🇸US_03
   password: e2c62a73-3132-48a6-a020-25c3ae0d8af2
   port: 46595
   server: bj.xissyun.com
   type: ss
   udp: true
-- name: '82|disney_HK #2'
-  network: ws
-  password: ouo
-  port: 443
-  server: 103.44.255.81
-  sni: tr.koxok.us.kg
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tr.koxok.us.kg
-    path: /?ed=2560
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: '82,191,326,342|🇰HK-103.149.183.61-5813 #1'
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
 - cipher: chacha20-ietf
   country: 🇭🇰HK
   name: '82,191,326,342|🇭🇰HK-194.41.59.80-5812 #1'
@@ -357,6 +372,20 @@ proxies:
   server: 8.210.87.130
   type: vmess
   uuid: bc75a7aa-fbd0-4fc3-a08c-c21192cfca43
+- cipher: chacha20-ietf
+  country: 🇭🇰 HK
+  name: '98,191,326,342|🇸US-103.36.91.23-5442 #1'
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇭🇰 HK
+  name: '98,191,303,326,342|🇭🇰HK-203.23.128.33-5441 #1'
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
 - alterId: 0
   cipher: auto
   name: '100|🇨🇳中国【YouTube-由零開始】 #7'
@@ -401,7 +430,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '116,117,248,484|@Vip_Security join us - 206
+  name: '116,117,248,484|@Vip_Security join us - 204
 
     '
   network: tcp
@@ -544,7 +573,7 @@ proxies:
     path: /debian
 - alterId: 0
   cipher: auto
-  name: 124,165,171,183|🇨🇳 CN 123 → tg@nicevpn123
+  name: 124,165,166,171,183|🇨🇳 CN 123 → tg@nicevpn123
   network: ws
   port: 20206
   server: data-hk-v1.usabooks.com.cn
@@ -735,7 +764,7 @@ proxies:
   uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
-  name: '124,403,484|@Vip_Security join us - 345
+  name: '124,403,484|@Vip_Security join us - 348
 
     '
   network: ws
@@ -2081,20 +2110,6 @@ proxies:
     headers:
       Host: hk-gcore.sharecentre.online
     path: /shirker
-- cipher: chacha20-ietf-poly1305
-  country: 🇭🇰 HK
-  name: '191,303,326,342|🇭🇰HK-203.23.128.33-5441 #1'
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: 🇭🇰 HK
-  name: '191,326,342|🇸US-103.36.91.23-5442 #1'
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
 - cipher: aes-256-cfb
   country: 🇭🇰HK
   name: 191,254,255,304,325,326,333,337,341,342,403,469,489|6aaZ5rivXzAyMTIwMTQ
@@ -2106,14 +2121,6 @@ proxies:
   protocol-param: ''
   server: 150.107.46.21
   type: ssr
-- cipher: chacha20-ietf
-  country: 🇭🇰HK
-  name: 191,326,342,487|HK_speednode_0037
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   country: 🏁ZZ
@@ -5017,7 +5024,7 @@ proxies:
   uuid: 7ad8da0c-fda5-416b-9e72-47cc68313ffe
 - alterId: 64
   cipher: auto
-  name: '351,484|@Vip_Security join us - 141
+  name: '351,352,484|@Vip_Security join us - 141
 
     '
   network: tcp
@@ -5062,7 +5069,7 @@ proxies:
   uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
 - alterId: 2
   cipher: auto
-  name: 352|TG频道@mfbpn-008-HK
+  name: 352|TG频道@mfbpn-0008-HK
   network: tcp
   port: 52217
   server: 20.205.112.83
@@ -5072,7 +5079,7 @@ proxies:
   uuid: 08103798-414e-32b6-8748-2507732d2c51
 - alterId: 2
   cipher: auto
-  name: 352|TG频道@mfbpn-046-HK
+  name: 352|TG频道@mfbpn-0046-HK
   network: tcp
   port: 52329
   server: 104.208.64.48
@@ -5080,6 +5087,42 @@ proxies:
   tls: false
   type: vmess
   uuid: 08103798-414e-32b6-8748-2507732d2c51
+- alterId: 0
+  cipher: auto
+  name: '352,484|@Vip_Security join us - 21
+
+    '
+  network: tcp
+  port: '50111'
+  server: 45.94.68.252
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2b0c2a29-a5f6-4382-b187-a5a424b50e4b
+- alterId: 0
+  cipher: auto
+  name: '352,484|@Vip_Security join us - 12
+
+    '
+  network: tcp
+  port: '35448'
+  server: 45.94.68.144
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 37a9e3d4-08b2-4a54-92ad-e9dce926657d
+- alterId: 0
+  cipher: auto
+  name: '352,484|@Vip_Security join us - 93
+
+    '
+  network: tcp
+  port: '16785'
+  server: 103.30.76.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 086ce045-924d-4538-82ef-debb4ae9ccb5
 - alterId: 0
   cipher: auto
   name: '353,374|@VMESSIRAN سرور ۲۰ آذر #4'
@@ -5123,7 +5166,7 @@ proxies:
   uuid: 98b193f3-8056-4f48-bc4a-f1e893486548
 - alterId: 0
   cipher: auto
-  name: '362,374,399,421,484|@Vip_Security join us - 299
+  name: '362,374,399,421,484|@Vip_Security join us - 301
 
     '
   network: tcp
@@ -6468,24 +6511,13 @@ proxies:
   type: vmess
   uuid: 49933ab7-7ec2-3024-9f6e-b7ad9da24c8f
 - alterId: 0
-  name: 465|HK
+  name: 465|HK2
   network: tcp
-  password: Aimer
-  port: 443
-  server: 219.76.13.166
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27103
+  server: 45.146.232.173
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 465|HK3
-  network: tcp
-  password: Aimer
-  port: 8443
-  server: 83.229.123.36
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
@@ -6493,8 +6525,8 @@ proxies:
   name: 465|HK4
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 43396
-  server: 45.146.232.172
+  port: 27101
+  server: 45.146.232.171
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
@@ -6503,33 +6535,22 @@ proxies:
 - alterId: 0
   name: 465|HK5
   network: tcp
-  password: 3817daf8-0f2b-412f-b87b-3efa585423e8
-  port: 443
-  server: 45.158.22.33
+  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
+  port: 27101
+  server: 45.146.232.172
   skip-cert-verify: true
-  sni: us2.vpn.ong
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 465|HK6
-  network: tcp
-  password: Aimer
-  port: 58443
-  server: 58.176.10.111
-  skip-cert-verify: true
-  sni: ngepo.ambercc.filegear-sg.me
+  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
   type: trojan
   udp: true
 - alterId: 0
   name: 465|HK8
   network: tcp
-  password: Aimer
-  port: 1935
-  server: 43.154.34.74
+  password: 6557bf4a-852b-4a69-ad35-d53293386a13
+  port: 443
+  server: 20.2.153.75
   skip-cert-verify: true
-  sni: ngepz.ambercc.filegear-sg.me
+  sni: usla.mjt000.com
   tls: true
   type: trojan
   udp: true
@@ -6538,18 +6559,7 @@ proxies:
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
   port: 46668
-  server: 45.146.232.172
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 465|HK10
-  network: tcp
-  password: b2d0b65a-616c-433d-8e7b-08af61017fa8
-  port: 10465
-  server: 45.146.232.172
+  server: 45.146.232.171
   skip-cert-verify: true
   sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
