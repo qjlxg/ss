@@ -1,19 +1,29 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: '0,1,2,118,126|🇹🇼TW-2.58.241.42-5543 #1'
+  country: 🇼 TW
+  name: 0,1,2,126,200|🇼 TW_411
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: taiwan-2.keenvpn.me
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: ' TW'
-  name: 0,1,2,77,78,86,87,118,119,126|TW-2.58.241.42-5542
+  country: 🇼 TW
+  name: 0,1,2,49,77,78,86,87,118,119,126,200| TW_410
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 2.58.241.42
   type: ss
   udp: true
+- cipher: rc4-md5
+  name: 8,126,138|netflix_TW
+  password: RenzheCloudSS
+  plugin: obfs
+  plugin-opts:
+    host: 78fe8292462.microsoft.com
+    mode: http
+  port: 3036
+  server: 59.42.247.243
+  type: ss
 - alterId: 0
   cipher: auto
   name: 13,100|⚛️r@oneclickvpnkeys
@@ -741,19 +751,6 @@ proxies:
   uuid: 0fafb730-f3ec-3fd8-a637-eadf20c9febf
 - alterId: 0
   cipher: auto
-  name: 151|🇹🇼 TW 台湾 4
-  network: ws
-  port: '80'
-  server: 7cc02ab9-3478-1733-ea94-2b45d8e115a0.bugtik.ltd
-  tls: false
-  type: vmess
-  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- alterId: 0
-  cipher: auto
   grpc-opts:
     grpc-service-name: ''
   name: 151|https://t.me/VTWORAY_WOLF 🇫🇮
@@ -764,19 +761,6 @@ proxies:
   tls: true
   type: vmess
   uuid: b34e315d-9f59-4256-9c4b-46aff1ea033e
-- alterId: 0
-  cipher: auto
-  name: 151|🇹🇼 TW 台湾 5
-  network: ws
-  port: '80'
-  server: 207c13fb-83b6-2021-766b-6c95e56a4a33.bugtik.ltd
-  tls: false
-  type: vmess
-  uuid: 46cfcfe1-e450-459d-a3ab-9406011ab3eb
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - alterId: 0
   cipher: auto
   name: 151|TG频道:@MTProto_666（台湾）
@@ -925,20 +909,6 @@ proxies:
   tls: false
   type: vmess
   uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829
-- alterId: 0
-  cipher: auto
-  name: 156,599|🔒 VM-WS-NA 🇹🇼 TW-1.162.184.77:25780
-  network: ws
-  port: '25780'
-  server: 1.162.184.77
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
-  ws-opts:
-    headers:
-      Host: www.douyin.com
-    path: /?ed=1024
 - alterId: '0'
   cipher: auto
   name: 182|[🇹🇼]103.131.189.212:56967(8110ebd2-5ab8-4dfc-8776-94bc377c6be6)
@@ -1012,6 +982,20 @@ proxies:
     headers:
       host: oplg1.cfcdn2.xyz
     path: /AUIKN8AU
+- alterId: 0
+  cipher: auto
+  name: 599|🔒 VM-WS-NA 🇹🇼 TW-1.162.184.77:25780
+  network: ws
+  port: '25780'
+  server: 1.162.184.77
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6b83a28c-e872-4f7e-9b13-ffcef4b5fc44
+  ws-opts:
+    headers:
+      Host: www.douyin.com
+    path: /?ed=1024
 - alterId: 16
   cipher: auto
   name: 621|台湾_010309115 M45

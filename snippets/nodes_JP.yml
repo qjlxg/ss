@@ -1,7 +1,7 @@
 proxies:
 - cipher: aes-256-cfb
   country: ' JP'
-  name: 0,1,2,32,48,49,51,52,56,81,94,98,108,126,163,599|8J%2BHr%2FCfh7VKUC0xOC4xODIuMjcuMjMtMTg1MQ%3D%3D
+  name: 0,1,2,32,48,49,51,52,56,81,94,98,108,126,200,599|8J%2BHr%2FCfh7VKUC0xOC4xODIuMjcuMjMtMTg1MQ%3D%3D
   obfs: tls1.2_ticket_auth
   obfs-param: ''
   obfsparam: ''
@@ -18,45 +18,66 @@ proxies:
   country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: 2| JP_285
+  name: 0|Relay_ JP-JP_291
   network: ws
-  port: 42360
-  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  port: 11443
+  server: tls.17.node-for-bigairport.win
   skip-cert-verify: true
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-path: /
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
-  country: ' JP'
+  country: 🇺🇸US
   h2-opts: {}
   http-opts: {}
-  name: 2|ChatGPT  JP_286
-  network: ws
-  port: 42359
-  server: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  name: '2,9,32,38,45,48,51,55,56,136,151,156,185,196,599|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.60:1069
+    #4'
+  network: tcp
+  port: '1069'
+  server: 152.69.197.60
+  servername: ''
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  udp: true
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+  version: '2'
   ws-path: /
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   country: CN
-  name: 8,61,62,645|github.com/Ruk1ng001_1
-  password: 8886d2da-6252-468c-8e6a-6d76d0a4d5dc
-  port: 30003
-  server: gdgs.tarioblink.me
+  name: 8,49,65,68,77,78,126,645|❓_🇨🇳_📶_github.com/Ruk1ng001_1
+  password: hGkQ6915tD
+  port: 15084
+  server: 120.232.81.50
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 8,21,49,77,78,79,80,86,87,126,138|🇯🇵JP_80
+  country: 🇵JP
+  name: 8,21,49,61,62,75,76,79,80,86,87,118,126,138,196|JP_44 |18.48Mb
   password: amazonskr05
   port: 443
-  server: 13.115.39.161
+  server: 13.230.111.71
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  country: JP
+  h2-opts: {}
+  http-opts: {}
+  name: 9,38,48,100,136,620|🇦🇺AU(AzadNet.t.me)_006
+  network: tcp
+  port: 24445
+  server: 140.83.63.38
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
+  version: '2'
 - cipher: chacha20-ietf-poly1305
   name: 15,126|JP-89.31.126.150-0165
   password: G!yBwPWH3Vao
@@ -190,13 +211,6 @@ proxies:
     Host: vjp3.0bad.com
   ws-path: /chat
 - cipher: aes-256-cfb
-  name: 21,49,61,62,75,76,79,80,86,87,118,126|🇵JP-13.230.111.71-0392
-  password: amazonskr05
-  port: 443
-  server: 13.230.111.71
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
   name: 21,49,77,78,79,80,86,87,126,645|3.112.28.118_OpenAI_Claude
   password: amazonskr05
   port: 443
@@ -204,21 +218,21 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 21,49,77,78,79,80,86,87,126|🇯🇵JP-52.68.141.225-0385
+  name: 21,77,78,79,80,86,87,126|🇯🇵JP-52.68.141.225-0385
   password: amazonskr05
   port: 443
   server: 52.68.141.225
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 21,49,77,78,79,80,86,87,119,126,645|52.68.247.21_OpenAI_Claude
+  name: 21,77,78,79,80,86,87,119,126,645|52.68.247.21_OpenAI_Claude
   password: amazonskr05
   port: 443
   server: 52.68.247.21
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 21,49,75,76,79,80,86,87,119,126|🇯🇵JP-54.199.161.79-0384
+  name: 21,75,76,79,80,86,87,119,126|🇯🇵JP-54.199.161.79-0384
   password: amazonskr05
   port: 443
   server: 54.199.161.79
@@ -233,8 +247,8 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '32,44,51,55,56,72,73,74,93,94,95,103,104,156,163,599|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.110:23451
-    #5'
+  name: '32,44,45,48,49,51,55,56,72,73,74,93,94,95,103,104,156,599|🔒 VM-WS-NA 🇯🇵 JP-150.230.61.110:23451
+    #4'
   network: ws
   port: '23451'
   server: 150.230.61.110
@@ -250,7 +264,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '32,51,55,56,163,599|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.171:48897 #5'
+  name: '32,45,51,55,56,156,599|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.171:48897 #4'
   network: tcp
   port: '48897'
   server: 13.112.49.171
@@ -373,64 +387,24 @@ proxies:
   tls: false
   type: vmess
   uuid: 323d8b87-345d-4065-b7df-2af764d2d1df
-- alterId: 0
-  cipher: auto
-  name: 38,100,136,620|🇦🇺AU(AzadNet.t.me)_006
-  network: tcp
-  port: 24445
-  server: 140.83.63.38
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
-  version: '2'
 - cipher: aes-256-cfb
   name: 38,126|JP-103.75.118.27-9945
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.75.118.27
   type: ss
-- alterId: 0
-  cipher: auto
-  name: '48,51,55,56,131,156,629,630|11,16|日本3|@ripaojiedian #4'
-  network: tcp
-  port: '33184'
-  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b2d1e704-59f5-48ec-ba97-9a5e2005b37b
-- cipher: aes-256-cfb
-  country: 🇨🇳CN
-  name: 49,65,68,77,78,126,138,645|❓_🇨🇳_📶_github.com/Ruk1ng001_1
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '51,56,72,599|🔒 VM-WS-NA 🇯🇵 JP-156.246.94.94:433 #2'
-  network: ws
-  port: '433'
-  server: 156.246.94.94
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 61,62,65,68,113,115,126|🇨🇳CN-183.214.197.27-0662
   password: 95cdd785-13be-40cd-aa0e-45991b631629
   port: 34103
   server: southvip1.pkyun.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 61,62,75,76,86,87,119,126|🇯🇵JP-43.206.240.27-5796
+  password: amazonskr05
+  port: 443
+  server: 43.206.240.27
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -502,12 +476,29 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 65,68,113,115,126|CN-183.214.197.27-0661
+  name: '65,68,113,115,126,169|🇯🇵 JP 04 Laintrojan//telegram-id-privatevpns@15.237.245.15822222?allowInsecure=0&sni=trojan.burgerip.co.uk#🇸
+    国 '
   password: 95cdd785-13be-40cd-aa0e-45991b631629
   port: 34104
   server: southvip1.pkyun.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 72,599|🔒 VM-WS-NA 🇯🇵 JP-156.246.94.94:433
+  network: ws
+  port: '433'
+  server: 156.246.94.94
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: '75,76,86,87|[SS] 🇯🇵 SS-TCP-NA 🇯🇵 JP-194.105.89.58:40003 #3'
   password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00
@@ -558,6 +549,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 43.206.238.113
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 77,78,86,87,119,126|🇵JP-52.195.185.150-5842
+  password: amazonskr05
+  port: 443
+  server: 52.195.185.150
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
@@ -1029,8 +1027,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: '101,102,103,104|🔒🇯🇵 JP 206.190.234.176 ◈ ws:443 ◈ IT7 Networks Inc / Cluster
-    Logic Inc ◈ 2be2b #3'
+  name: 101,102,103,104,156|🇯🇵 日本_021310224 L0
   network: ws
   port: '443'
   server: 206.190.234.176
@@ -2566,21 +2563,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇯🇵 JP
-  h2-opts: {}
-  http-opts: {}
-  name: 138|🇯🇵 JP_79
-  network: ws
-  port: 33443
-  server: tls.19.node-for-bigairport.win
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 151|Akamai Japan _<
   network: tcp
   port: '59237'
@@ -2603,62 +2585,6 @@ proxies:
     headers:
       Host: csjp.iiio.wiki
     path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 151|🇯🇵|JP|@wxgqlfx|50
-  network: ws
-  port: '80'
-  server: www.tiktok.com.jp1.viefast.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3bcd9e33-8377-4b32-af33-217158577ff3
-  ws-opts:
-    headers:
-      Host: kdlsupport.zendesk.com
-    path: /viefast
-- alterId: 0
-  cipher: auto
-  name: 151|🇯🇵|JP|@wxgqlfx|48
-  network: ws
-  port: '80'
-  server: www.tiktok.com.jp2.viefast.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3bcd9e33-8377-4b32-af33-217158577ff3
-  ws-opts:
-    headers:
-      Host: kdlsupport.zendesk.com
-    path: /viefast
-- alterId: 0
-  cipher: auto
-  name: 151|🇯🇵|JP|@wxgqlfx|45
-  network: ws
-  port: '80'
-  server: www.tiktok.com.jp3.viefast.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3bcd9e33-8377-4b32-af33-217158577ff3
-  ws-opts:
-    headers:
-      Host: kdlsupport.zendesk.com
-    path: /viefast
-- alterId: 0
-  cipher: auto
-  name: 151|🇯🇵|JP|@wxgqlfx|51
-  network: ws
-  port: '80'
-  server: www.tiktok.com.jp4.viefast.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3bcd9e33-8377-4b32-af33-217158577ff3
-  ws-opts:
-    headers:
-      Host: kdlsupport.zendesk.com
-    path: /viefast
 - alterId: 0
   cipher: auto
   name: 151|🇯🇵 JP |@Msv2flyNG
@@ -3037,10 +2963,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 203|🇯🇵 JP_280
+  name: 203|🇯🇵 JP_304
   network: ws
-  port: 42359
-  server: 0000000000000000000000000078.cgroup-node-for-bigairport.sbs
+  port: 14443
+  server: tls.14.node-for-bigairport.win
   tls: true
   type: vmess
   uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
@@ -3050,16 +2976,16 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 203|🇯🇵 JP_281
+  name: 203|🇯🇵 JP_305
   network: ws
-  port: 11443
-  server: tls.17.node-for-bigairport.win
+  port: 443
+  server: tls.84.node-for-bigairport.win
   tls: true
   type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  uuid: ef5fca10-41bc-4623-87a3-1170a7b51827
   ws-opts:
     headers:
-      Host: ''
+      Host: tls.84.node-for-bigairport.win
     path: /
 - alterId: 0
   cipher: auto

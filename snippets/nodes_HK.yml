@@ -1,36 +1,50 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 0,1,2,126|🇭HK-203.23.128.33-5469
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 203.23.128.33
-  type: ss
-- cipher: chacha20-ietf
-  country: HK
-  name: 0,1,2,9,126|🇸US-103.36.91.23-5467
-  password: asd123456
-  port: 8388
-  server: 103.36.91.23
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 2,21,61,62,77,78,79,80,86,87,118,119,126|🇰HK-216.250.97.118-0522
+  country: 🇭🇰 HK
+  name: 0,2,21,61,62,77,78,79,80,86,87,118,119,126,200|🇰 HK_299
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: 216.250.97.118
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: ' HK'
-  name: 2,21,49,79,80,81,82,118,119,126|🇰HK-216.250.97.118-0515
+  country: 🇰 HK
+  name: 0,2,21,49,79,80,81,82,118,119,126,200| HK_297
   password: 2afbc97400ca71c8f3306f9843a6e1c2
   port: 443
   server: hong-kong.keenvpn.me
   type: ss
   udp: true
+- cipher: chacha20-ietf
+  country: 🇰 HK
+  name: 0,1,2,9,126,200|🇰 HK_298
+  password: asd123456
+  port: 8388
+  server: 103.36.91.23
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  country: 🇰 HK
+  name: 0,1,2,126,200|🇭🇰 HK_300
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 203.23.128.33
+  type: ss
+- alterId: 0
+  cipher: auto
+  country: ' ZZ'
+  h2-opts: {}
+  http-opts: {}
+  name: 0,1| ZZ_563
+  network: tcp
+  port: 15002
+  server: 15002.vpdnss.top
+  servername: 15002.vpdnss.top
+  skip-cert-verify: true
+  type: vmess
+  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+  ws-path: /
 - cipher: aes-256-cfb
-  name: 8,81,82,126,138|Relay_-🇭🇰HK_05
+  name: '8,81,82,126,138|disney_HK #1'
   password: hGkQ6915tD
   port: 16088
   server: 120.232.81.50
@@ -138,6 +152,14 @@ proxies:
   tls: true
   type: vmess
   uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d
+- country: FR
+  name: 23|disney_netflix_HK
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 8080
+  server: 51.158.148.53
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
 - country: HK
   name: 23|disney_HK
   password: a0605527-28e4-449c-80ee-5642cc16a8af
@@ -146,10 +168,18 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
   udp: true
+- country: HK
+  name: '23|disney_netflix_HK #1'
+  password: a0605527-28e4-449c-80ee-5642cc16a8af
+  port: 80
+  server: 62.72.163.215
+  skip-cert-verify: true
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '32,44,51,55,56,101,102,103,104,151,156,163,164,599|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.178:54675
-    #5'
+  name: '32,44,45,51,55,56,101,102,103,104,151,164,599|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.178:54675
+    #4'
   network: tcp
   port: '54675'
   server: 103.149.183.178
@@ -159,8 +189,8 @@ proxies:
   uuid: 3a907956-f668-4e6b-ea03-0949f0c9c0a5
 - alterId: 0
   cipher: auto
-  name: '32,44,51,55,56,101,102,103,104,151,163,164,599|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.178:27512
-    #5'
+  name: '32,44,45,51,55,56,101,102,103,104,151,164,599|🔒 VM-TCP-NA 🇭🇰 HK-103.149.183.178:27512
+    #4'
   network: tcp
   port: '27512'
   server: 103.149.183.178
@@ -170,7 +200,7 @@ proxies:
   uuid: 96d38683-0817-4d91-bffa-6f03df18d9dc
 - alterId: 0
   cipher: auto
-  name: '32,51,55,56,73,74,93,163,599|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159:2080 #5'
+  name: '32,45,51,55,56,73,74,93,599|🔒 VM-WS-TLS 🇭🇰 HK-20.6.155.159:2080 #4'
   network: ws
   port: '2080'
   server: 20.6.155.159
@@ -889,6 +919,20 @@ proxies:
     headers:
       host: 081d1aad-rwcsg0-1n7jq.bn.p5pv.com
     path: /
+- cipher: chacha20-ietf
+  country: 🇰HK
+  name: 49,118,126,138,181,196|HK_36 |10.58Mb
+  password: asd123456
+  port: 8388
+  server: 103.149.183.61
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 49,65,68,77,78,113,115,126,649|中国【付费推荐：https://socks.news】2
+  password: 7c28b43c-41c4-4af1-81c4-48690133d1cd
+  port: 52149
+  server: 0.o.0.cdn-node.ss.one.57.gmaes-cdn-usercontent.com
+  type: ss
+  udp: true
 - cipher: aes-128-gcm
   name: 49,65,68,77,78,126|CN-183.236.51.6-1346
   password: 8f9ee4d3-f070-43ab-a0cd-b708d9e8de10
@@ -2393,6 +2437,13 @@ proxies:
   port: 10074
   server: hk8.lvuy.xyz
   type: ss
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 138|🇭🇰HK_91
+  password: asd123456
+  port: 8388
+  server: 194.41.59.80
+  type: ss
 - alterId: 0
   cipher: auto
   name: 151|BESHKAN
@@ -3013,15 +3064,6 @@ proxies:
   type: vmess
   uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829
 - alterId: 0
-  cipher: auto
-  name: 156|🇭🇰 16|香港|@ripaojiedian
-  network: tcp
-  port: '49691'
-  server: 193.42.25.242
-  tls: false
-  type: vmess
-  uuid: c7e04382-01be-40ab-b174-4dbff44b5cf4
-- alterId: 0
   name: 166|HK
   network: tcp
   password: b2d0b65a-616c-433d-8e7b-08af61017fa8
@@ -3076,40 +3118,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 168|VMESS-未知>-NF解锁香港地区非自制剧-ChatGPT-YouTube-hkwapcdn.899994.xyz:443
-  network: ws
-  port: 443
-  server: hkwapcdn.899994.xyz
-  servername: hkwapcdn.899994.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      HOST: hkwapcdn.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 168|VMESS-未知>国-NF解锁香港地区非自制剧-ChatGPT-TikTok-YouTube-nl.899994.xyz:8443
-  network: ws
-  port: 8443
-  server: nl.899994.xyz
-  servername: nl.899994.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      HOST: nl.899994.xyz
-    path: /index
 - alterId: 0
   cipher: auto
   name: '169,607,608|💻 Channel 🆔 : @AlienVPN402 👽_507'
