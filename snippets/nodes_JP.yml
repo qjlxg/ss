@@ -1,38 +1,52 @@
 proxies:
+- cipher: aes-256-cfb
+  country: ' JP'
+  name: 0,1,2,48,49,81,94,98,108,126,599|8J%2BHr%2FCfh7VKUC0xMy4xMTIuMTE0LjEzNy0xODg1
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  obfsparam: ''
+  password: eAokbaDN6
+  port: '8081'
+  protocol: origin
+  protocol-param: ''
+  protocolparam: ''
+  server: jp-am48-6.eqnode.net
+  type: ssr
+  udp: true
 - alterId: 0
   cipher: auto
-  country: US
+  country: ' JP'
   h2-opts: {}
   http-opts: {}
-  name: '2,9,32,38,51,55,56,101,102,103,104,136,151,156,163,185,599|🔒 VM-TCP-NA 🇯🇵
-    JP-152.69.197.60:1069 #5'
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
+  name: 0,203|🇯🇵 JP_311
+  network: ws
+  port: 11443
+  server: tls.01.node-for-bigairport.win
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  udp: true
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-  version: '2'
-  ws-path: /
-- cipher: aes-256-cfb
-  country: CN
-  name: 8,126|🇨🇳CN-120.232.81.50-5967
-  password: hGkQ6915tD
-  port: 15084
-  server: 120.232.81.50
-  type: ss
-- cipher: aes-256-cfb
-  country: 🇵JP
-  name: 8,49,65,68,77,78,126,196,627,645|52.195.220.7_Claude
-  password: amazonskr05
-  port: 443
-  server: 52.195.220.7
-  tfo: false
-  type: ss
-  udp: true
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  country: ZZ
+  h2-opts: {}
+  http-opts: {}
+  name: 8|Relay_ZZ-JP_186
+  network: ws
+  port: 80
+  server: cf.0sm.com
+  servername: us.cfyyds.filegear-sg.me
+  skip-cert-verify: true
+  type: vmess
+  uuid: b9a3206d-278c-4614-b352-eef632d1c8d5
+  ws-opts:
+    headers:
+      HOST: us.cfyyds.filegear-sg.me
+    path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
   country: JP
@@ -183,7 +197,9 @@ proxies:
   ws-path: /chat
 - alterId: 0
   cipher: auto
-  name: '32,51,55,56,163,166,599|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.171:48897 #5'
+  client-fingerprint: chrome
+  name: '27,32,51,55,56,122,151,163,166,599|🔒 VM-TCP-NA 🇯🇵 JP-13.112.49.171:48897
+    #5'
   network: tcp
   port: '48897'
   server: 13.112.49.171
@@ -277,24 +293,21 @@ proxies:
   server: 43.207.83.221
   type: ss
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
-  name: 38,98,99,126,138|Pool_🇯🇵JP_74
+  name: 38,98,99,126|🇵JP-185.172.113.182-9671
   password: G!yBwPWH3Vao
   port: 811
   server: 185.172.113.182
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
-  name: 38,98,99,126,138|Pool_🇯🇵JP_73
+  name: 38,98,99,126|🇵JP-185.172.113.182-9672
   password: G!yBwPWH3Vao
   port: 800
   server: 185.172.113.182
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  country: 🇯🇵JP
-  name: 38,98,99,126,138|Pool_🇯🇵JP_70
+  name: 38,98,99,126|🇯🇵JP-185.172.113.182-9673
   password: G!yBwPWH3Vao
   port: 804
   server: 185.172.113.182
@@ -332,16 +345,15 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   country: 🇯🇵JP
-  name: 49,65,68,77,78,86,87,119,126,196,627,645|35.77.91.116_OpenAI_Claude
+  name: 49,75,76,86,87,118,119,126,196|🇯🇵JP_53 |22.70Mb
   password: amazonskr05
   port: 443
-  server: 35.77.91.116
-  tfo: false
+  server: 13.230.111.71
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '51,55,56,131,151,156,599,601,628,629,630|11|11|11|11|11,16|日本3|@ripaojiedi...
+  name: '51,55,56,131,156,599,601,628,629,630|11|11|11|11|11|11,16|日本3|@ripaoji...
     #4'
   network: tcp
   port: '33184'
@@ -416,24 +428,6 @@ proxies:
   uuid: bebdb5c1-e0cb-4319-b614-a0581fdd3158
   ws-opts:
     path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 75,76,86,87,136,166|未知81 4.6MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 103.106.228.132
-  skip-cert-verify: true
-  tls: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  country: 🇯🇵JP
-  name: 75,76,86,87,119,126,196|🇯🇵JP_48 |33.75Mb
-  password: amazonskr05
-  port: 443
-  server: 13.230.111.71
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
   name: '75,76,86,87|[SS] 🇯🇵 SS-TCP-NA 🇯🇵 JP-57.180.246.231:443 #3'
   password: amazonskr05
@@ -443,7 +437,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-gcm
-  name: 77,78,86,87,166|未知75
+  name: '77,78,86,87,166|未知75 #1'
   password: QFR3FSQMQRZL4HQ2
   port: 18002
   server: 156.231.104.12
@@ -488,19 +482,6 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 81,94,98,108,126,599|8J%2BHr%2FCfh7VKUC0xMy4xMTIuMTE0LjEzNy0xODg1
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  obfsparam: ''
-  password: eAokbaDN6
-  port: '8081'
-  protocol: origin
-  protocol-param: ''
-  protocolparam: ''
-  server: jp-am48-6.eqnode.net
-  type: ssr
   udp: true
 - cipher: aes-256-cfb
   name: '81,82|[SS] 🇯🇵 0,13|🇯🇵 日本特殊|@ripaojiedian #1'
@@ -977,21 +958,6 @@ proxies:
     path: /cctv13/vmess_jpcf
 - alterId: 0
   cipher: auto
-  name: '101,102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:443 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ bc0f3 #3'
-  network: ws
-  port: 443
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
   name: '101,102,104|💰🇯🇵 JP 150.230.61.110 ◈ ws:23451 ◈ Oracle Cloud (ap-osaka-1)
     ◈ efc33 #2'
   network: ws
@@ -1005,81 +971,6 @@ proxies:
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
     path: /
-- alterId: 0
-  cipher: auto
-  name: '102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:2053 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ 74efc #2'
-  network: ws
-  port: 2053
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: '102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:2083 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ af209 #2'
-  network: ws
-  port: 2083
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: '102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:2087 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ db261 #2'
-  network: ws
-  port: 2087
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: '102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:2096 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ f496c #2'
-  network: ws
-  port: 2096
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
-- alterId: 0
-  cipher: auto
-  name: '102,103,104|🔒🇯🇵 JP 168.138.210.134 ◈ ws:8443 ◈ Oracle Cloud (ap-tokyo-1)
-    ◈ 6529f #2'
-  network: ws
-  port: 8443
-  server: speed.cloudflare.com
-  servername: tokyo.899994.xyz
-  tls: true
-  type: vmess
-  uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-  ws-opts:
-    headers:
-      Host: tokyo.899994.xyz
-    path: /index
 - alterId: 0
   cipher: auto
   name: '102,104|🇯🇵 JP 150.230.61.110 ◈ ws:23451 ◈ Oracle Cloud (ap-osaka-1) ◈ cae99
@@ -2496,23 +2387,6 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  country: 🇯🇵JP
-  h2-opts: {}
-  http-opts: {}
-  name: 138|🇯🇵JP_277
-  network: ws
-  port: 23451
-  server: 150.230.61.110
-  servername: 1-osaka-p.aboutanime.eu.org
-  skip-cert-verify: true
-  type: vmess
-  uuid: 39973186-8925-492a-8bce-13b0a1a93f59
-  ws-opts:
-    headers:
-      HOST: 1-osaka-p.aboutanime.eu.org
-    path: /
-- alterId: 0
-  cipher: auto
   name: 151|Akamai Japan _<
   network: tcp
   port: '59237'
@@ -2776,24 +2650,6 @@ proxies:
   uuid: acfe1d0c-28aa-43b6-b8aa-1cbbfd2b1829
 - alterId: 0
   cipher: auto
-  name: '156|🇯🇵 日本_1 #1'
-  network: tcp
-  port: '20808'
-  server: AZHJ001.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
-  name: '156|🇯🇵 日本_2 #1'
-  network: tcp
-  port: '20806'
-  server: AZHJ001.dmak.cyou
-  tls: false
-  type: vmess
-  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
-- alterId: 0
-  cipher: auto
   name: 156|🇯🇵 github.com/freefq - 日本东京Linode数据中心 1
   network: ws
   port: '80'
@@ -2805,6 +2661,33 @@ proxies:
     headers:
       Host: v6.583181.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 156|🇯🇵 日本_9
+  network: tcp
+  port: '20806'
+  server: AZHJ001.dmak.cyou
+  tls: false
+  type: vmess
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: 156|🇯🇵 日本_4
+  network: tcp
+  port: '20804'
+  server: AZHJ.dmak.cyou
+  tls: false
+  type: vmess
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
+- alterId: 0
+  cipher: auto
+  name: '156|🇯🇵 日本_3 #1'
+  network: tcp
+  port: '20808'
+  server: AZHJ001.dmak.cyou
+  tls: false
+  type: vmess
+  uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9
 - alterId: 0
   cipher: auto
   name: 169|🇯🇵 日本_121320009
@@ -2888,6 +2771,19 @@ proxies:
   type: vmess
   uuid: 8700cfbd-71dc-42b0-84f2-53cd7fe5645a
   ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 203|🇯🇵 JP_312
+  network: ws
+  port: 22357
+  server: 0000000000000000000000000073.cgroup-node-for-bigairport.sbs
+  tls: true
+  type: vmess
+  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
+  ws-opts:
+    headers:
+      Host: ''
     path: /
 - name: 620|🇯🇵JP(AzadNet.t.me)_003
   network: tcp
